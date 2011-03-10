@@ -1,3 +1,6 @@
 MBa, 10 Mar 2011:
     The real web page has been renamed to index-main.html
     The index.html is the under construction page.
+
+The CNAME file contains just one line with the domain name (i.e wolframe.org).
+github creates the server name out of it and adds also www.domain.name
