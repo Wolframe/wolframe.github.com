@@ -30,7 +30,8 @@ textarea { overflow: auto; }
 .shell  { width: 980px; margin: 0 auto; }
 
 .top-nav .shell { position: relative; }
-.top-nav { background: #b6dde7; height: 59px;  }
+/* .top-nav { background: #b6dde7; height: 59px;  } */
+.top-nav { background: #ddd; height: 59px;  }
 .top-nav ul { list-style: none; list-style-position: outside; font-family: 'Ubuntu', sans-serif; font-size: 16px; text-transform: uppercase; line-height: 58px; font-weight: 700;  }
 .top-nav ul li { float: left; padding: 0 0 0 0; border-right: 1px solid #dbeef3;  }
 .top-nav ul li.active  { border-right: 0;  }
@@ -118,13 +119,13 @@ html, body { height: 100%; }
 .footer-cols ul li { color: #fff; padding-bottom: 6px; padding-left: 9px; background: url(images/bullet-footer-col.png) no-repeat 0 8px; }
 .footer-cols ul li a { color: #fff; }
 
-.footer-bottom { background: #b3dce6; height: 14px; padding: 22px 0 18px 0; }
+.footer-bottom { background: #ddd; height: 14px; padding: 22px 0 18px 0; }
 .footer-nav { float: left; font-size: 11px; line-height: 11px;  }
 .footer-nav ul { list-style: none; list-style-position: outside; }
 .footer-nav ul li { float: left; padding: 0 10px; background: url(images/footer-nav-border.png) no-repeat 0 0; }
 .footer-nav ul li.first { background: transparent; padding-left: 0;  }
-.footer-nav ul a { color: #6b848a; }
-.footer-bottom p.copy { float: right; color: #6b848a;  line-height: 11px; }
+.footer-nav ul a { color: #467aa7; }
+.footer-bottom p.copy { float: right; color: #467aa7;  line-height: 11px; }
 .footer-bottom p.copy span  { padding: 0 9px;  }
 .footer-bottom p.copy a { text-decoration: underline; }
 .footer-bottom p.copy a:hover { text-decoration: none; }
