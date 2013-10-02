@@ -136,7 +136,7 @@ html, body { height: 100%; }
 @media only screen and ( min-width: 768px) and ( max-width: 980px ) {
 	body { min-width: 768px; }
 	.shell { max-width: 768px; }
-	
+
 	#header { background: url(images/header-tablet.png) repeat-x 0 0; height: 257px; }
 	.header-cnt #logo { width: 277px; font-size: 0; line-height: 0; }
 	.header-cnt #logo a { height: 93px; background: url(images/logo-tablet.png) no-repeat 0 0; text-indent: -4000px; display: block;  }
@@ -162,15 +162,15 @@ html, body { height: 100%; }
 	.container { padding: 0 20px; width: 728px; }
 
 	.main section { background: url(images/tablet-section-shadow.png) no-repeat 0 bottom  !important; }
-.main section.blog { padding-bottom: 60px; }
+	.main section.blog { padding-bottom: 60px; }
 	.main section.blog { background: transparent  !important; padding-bottom: 0;  }
 	.main .cols { background: transparent  !important; padding-bottom: 0; }
 	.main .cols .col { width: 232px; padding-right: 15px; margin-right: 0; background: transparent;}
 	.main .cols .col.last { padding-right: 0; width: 232px }
 	.main .cols .col img { float: none; display: block; margin: 0 auto 0 auto !important;  }
-	
+
 	.main .content { width: 100%; float: none; display: block; padding-bottom: 40px; }
-	
+
 	.main .sidebar { width: 100%; float: none; display: block; }
 	.main .sidebar ul li { margin: 0 0 0 0; background: url(images/tablet-section-shadow.png) no-repeat center bottom; display: block; min-height: 70px; }
 	.main .sidebar ul li .mobile { display: inline;  }
@@ -185,8 +185,8 @@ html, body { height: 100%; }
 	.footer-bottom .shell { padding-left: 20px; width: 748px; }
 }
 
-	
-@media only screen and ( max-width: 767px) { 
+
+@media only screen and ( max-width: 767px) {
 	body { min-width: 320px;}
 	.shell { max-width: 100%; }
 	.main { padding-top: 220px !important; margin-top: 0; }
@@ -222,7 +222,7 @@ html, body { height: 100%; }
 	.header-cnt h3 { font-size: 30px; line-height: 32px; }
 	.header-cnt p .desktop { display: inline; }
 	.header-cnt p .mobile { display: none; }
-	
+
 	.slider-holder { width: 280px !important; height: 163px  !important; background: url(images/slider-mobile.png) no-repeat 0 0; padding: 20px; top: 230px; left: 50%; margin-left: -160px; }
 	.slider-holder .flexslider { width: 280px; height: 163px; }
 	.slider-holder .flexslider ul.slides li { width: 100%; height: 100%; }
@@ -248,7 +248,7 @@ html, body { height: 100%; }
 	.main .sidebar ul li { margin: 0 0 0 0; background: url(images/mobile-section-shadow.png) no-repeat center bottom; display: block; min-height: 70px; }
 	.main .sidebar ul li .mobile { display: inline; }
 	.main .sidebar a.view { margin-right: 20px; }
-	
+
 	.footer-cols .shell { padding-left: 20px; padding-right: 20px; width: 100%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 	.footer-cols .col { width: 100%; display: block; padding-right: 0;  }
 	.footer-cols .col ul li { padding-right: 0; }
@@ -263,7 +263,7 @@ html, body { height: 100%; }
 
 @media only screen and ( max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi)  { 
 	.slider-holder { background: url(images/slider-mobile@2x.png) no-repeat 0 0;   -webkit-background-size: 320px 202px; -moz-background-size: 320px 202px; background-size: 320px 202px; }
-	.main section, 	
-	.main .cols .col, 
+	.main section,
+	.main .cols .col,
 	.main .sidebar ul li { margin: 0 0 0 0; background: url(images/mobile-section-shadow@2x.png) no-repeat center bottom;  -webkit-background-size: 299px 14px; -moz-background-size: 299px 14px; background-size: 299px 14px; }
 }
