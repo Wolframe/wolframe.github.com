@@ -105,8 +105,9 @@ html, body { height: 100%; }
 #footer, #footer-push { height: 286px; }
 #footer span.shadow-bottom { background: url(images/main-shadow-bottom.png) repeat-x 0 0;  top: -46px; left: 0; position: absolute; width: 100%; height: 46px; z-index: 20; display: block;  }
 
-#footer { border-top: 1px solid #fff; position: relative; height: 285px; }
+#footer { border-top: 1px solid #fff; position: relative; height: 85px; }
 .footer-cols { background: url(images/footer-cols.png) repeat-x 0 0; padding: 26px 0; }
+/*.footer-cols { background: #467aa7 repeat-x 0 0; padding: 26px 0; }*/
 .footer-cols .col { float: left; width: 226px; padding-right: 24px; }
 .footer-cols .col.last { padding-right: 0; }
 .footer-cols h3 { color: #fff; text-shadow: rgba(0,0,0,0.6) 0px 1px 2px; font-size: 21px; line-height: 28px; font-family: 'Ubuntu', sans-serif; font-weight: 500; padding-bottom: 12px; }
