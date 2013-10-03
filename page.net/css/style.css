@@ -42,7 +42,9 @@ textarea { overflow: auto; }
 .top-nav ul li.active span { background: url(images/active-nav-border.png) no-repeat 0 0; padding-left: 2px; }
 .top-nav span.top-nav-shadow { background: url(images/top-nav-shadow.png) no-repeat 0 0; width: 959px; height: 7px; position: absolute; top: 59px; left: 50%; margin-left: -480px; }
 .top-nav a.nav-btn { display: none; } 
-#header { background: url(images/header.png) repeat-x 0 0; height: 285px; }
+
+/*#header { background: url(images/header.png) repeat-x 0 0; height: 285px; }*/
+#header { background: url(images/header.png) repeat-x 0 0; }
 
 .header-inner { position: relative;  background: url(images/header-cnt.png) no-repeat center 0;  }
 
