@@ -165,7 +165,7 @@ html, body { height: 100%; }
 	.slider-holder .flexslider ul.slides li { width: 100%; height: 100%; }
 	.slider-holder .flexslider ul.slides li img { width: 100%; height: 100%; }
 
-	.header-page { font-size: 56px; line-height: 60px; color: #00c000; }
+	.header-page { font-size: 56px; line-height: 60px; color: #00ff00; } /* GREEN */
 
 	.container { padding: 0 20px; width: 728px; }
 
@@ -233,7 +233,7 @@ html, body { height: 100%; }
 	.header-cnt p .desktop { display: inline; }
 	.header-cnt p .mobile { display: none; }
 
-	.header-page { font-size: 56px; line-height: 60px; color: #c00000; }
+	.header-page { font-size: 56px; line-height: 60px; color: #ff0000; } /* RED */
 
 	.slider-holder { width: 280px !important; height: 163px !important; background: url(images/slider-mobile.png) no-repeat 0 0; padding: 20px; top: 230px; left: 50%; margin-left: -160px; }
 	.slider-holder .flexslider { width: 280px; height: 163px; }
@@ -278,5 +278,5 @@ html, body { height: 100%; }
 	.main section,
 	.main .cols .col,
 	.main .sidebar ul li { margin: 0 0 0 0; background: url(images/mobile-section-shadow@2x.png) no-repeat center bottom; -webkit-background-size: 299px 14px; -moz-background-size: 299px 14px; background-size: 299px 14px; }
-	.header-page { font-size: 56px; line-height: 60px; color: #c0c000; }
+	.header-page { font-size: 56px; line-height: 60px; color: #ffff00; } /* YELLOW */
 }
