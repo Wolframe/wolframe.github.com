@@ -43,13 +43,20 @@ textarea { overflow: auto; }
 .top-nav span.top-nav-shadow { background: url(images/top-nav-shadow.png) no-repeat 0 0; width: 959px; height: 7px; position: absolute; top: 59px; left: 50%; margin-left: -480px; }
 .top-nav a.nav-btn { display: none; } 
 
-/*#header { background: url(images/header.png) repeat-x 0 0; height: 285px; } CHANGING */
-#header { background: url(images/header.png) repeat-x 0 0; }
+#header { background: url(images/header.png) repeat-x 0 0; height: 285px; }
+/*#header { background: url(images/header.png) repeat-x 0 0; }*/
 
 .header-inner { position: relative; background: url(images/header-cnt.png) no-repeat center 0; }
 
-.header-cnt #logo { width: 397px; font-size: 0; line-height: 0; }
+.header-cnt #logo { width: 412px; font-size: 0; line-height: 0; }
 .header-cnt #logo a { height: 134px; background: url(images/logo.png) no-repeat 0 0; text-indent: -4000px; display: block; }
+/* Alternate logo */
+.header-cnt #logo-flat { width: 397px; font-size: 0; line-height: 0; }
+.header-cnt #logo-flat a { height: 134px; background: url(images/logo-flat.png) no-repeat 0 0; text-indent: -4000px; display: block; }
+/* END alternate logo, old logo start */
+.header-cnt #logo-old { width: 397px; font-size: 0; line-height: 0; }
+.header-cnt #logo-old a { height: 134px; background: url(images/logo-old.png) no-repeat 0 0; text-indent: -4000px; display: block; }
+/* END alternate logo, old logo start */
 .header-cnt { width: 422px; padding-top: 30px; }
 .header-cnt h2 { font-size: 74px; line-height: 83px; color: #fff; text-shadow: rgba(0,0,0,0.5) 0px 1px 2px; font-weight: bolder; }
 .header-cnt h3 { font-size: 40px; padding-bottom: 8px; line-height: 50px; font-weight: normal; color: #fff; text-shadow: rgba(0,0,0,0.5) 0px 1px 2px; font-family: tahoma, arial, helvetica, serif; } 
@@ -101,6 +108,7 @@ textarea { overflow: auto; }
 .main .cols a.view { margin-right: 16px; position: absolute; bottom: 0; right: 45px; }
 .main .cols .col { width: 292px; float: left; background: url(images/col-separator.png) no-repeat right 0; padding-right: 45px; margin-right: 12px; padding-bottom: 16px; position: relative; }
 .main .cols .col-cnt { padding-top: 7px; height: 100%; overflow: hidden }
+.main .cols .col img.aligntop { margin-right: 7px; width: 280px; }
 .main .cols .col img.alignleft { margin-right: 7px; }
 .main .cols .col.last { width: 280px; padding-right: 0; margin-right: 0; background: transparent; }
 
