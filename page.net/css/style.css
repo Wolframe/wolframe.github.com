@@ -57,8 +57,8 @@ textarea { overflow: auto; }
 .header-cnt #logo-old { width: 397px; font-size: 0; line-height: 0; }
 .header-cnt #logo-old a { height: 134px; background: url(images/logo-old.png) no-repeat 0 0; text-indent: -4000px; display: block; }
 /* END old logo, flat old logo start */
-.header-cnt #logo-old-flat { width: 414px; font-size: 0; line-height: 0; }
-.header-cnt #logo-old-flat a { height: 138px; background: url(images/logo-old-flat.png) no-repeat 0 0; text-indent: -4000px; display: block; }
+.header-cnt #logo-old-flat { width: 416px; font-size: 0; line-height: 0; }
+.header-cnt #logo-old-flat a { height: 140px; background: url(images/logo-old-flat.png) no-repeat 0 0; text-indent: -4000px; display: block; }
 /* END flat old logo start */
 .header-cnt { width: 422px; padding-top: 30px; }
 .header-cnt h2 { font-size: 74px; line-height: 83px; color: #fff; text-shadow: rgba(0,0,0,0.5) 0px 1px 2px; font-weight: bolder; }
