@@ -56,7 +56,10 @@ textarea { overflow: auto; }
 /* END alternate logo, old logo start */
 .header-cnt #logo-old { width: 397px; font-size: 0; line-height: 0; }
 .header-cnt #logo-old a { height: 134px; background: url(images/logo-old.png) no-repeat 0 0; text-indent: -4000px; display: block; }
-/* END alternate logo, old logo start */
+/* END old logo, flat old logo start */
+.header-cnt #logo-old-flat { width: 397px; font-size: 0; line-height: 0; }
+.header-cnt #logo-old-flat a { height: 134px; background: url(images/logo-old-flat.png) no-repeat 0 0; text-indent: -4000px; display: block; }
+/* END flat old logo start */
 .header-cnt { width: 422px; padding-top: 30px; }
 .header-cnt h2 { font-size: 74px; line-height: 83px; color: #fff; text-shadow: rgba(0,0,0,0.5) 0px 1px 2px; font-weight: bolder; }
 .header-cnt h3 { font-size: 40px; padding-bottom: 8px; line-height: 50px; font-weight: normal; color: #fff; text-shadow: rgba(0,0,0,0.5) 0px 1px 2px; font-family: tahoma, arial, helvetica, serif; } 
