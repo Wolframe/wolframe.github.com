@@ -3,12 +3,12 @@
 body, html { height: 100%; }
 
 body {
-    font-size: 12px;
-    line-height: 22px;
-    font-family: verdana, arial, sans-serif;
-    color: #727272;
-    background: url(images/body-pattern.png) repeat 0 0;
-    min-width: 100%;
+	font-size: 12px;
+	line-height: 22px;
+	font-family: verdana, arial, sans-serif;
+	color: #727272;
+	background: url(images/body-pattern.png) repeat 0 0;
+	min-width: 100%;
 }
 
 /*font-family: 'Raleway', sans-serif;*/
@@ -183,7 +183,7 @@ textarea { overflow: auto; }
 
 	.search { display:none; }
 	#logo { position:relative; margin:0 auto; top: 0px; left:0;  }
-	
+
 	#header { background: transparent; margin-bottom:0; }
 
 	#navigation { position:relative; z-index: 100; padding:0 0px; margin:0 10px;  }
@@ -231,7 +231,7 @@ textarea { overflow: auto; }
 	.featured h4 { line-height: 26px; padding-bottom: 6px; }
 	.featured a.blue-btn { float: none; display:block; right:0; left:0;  position:relative; margin: 0 auto; top:0;  width: 260px; }
 	.featured { padding: 10px; }
-	
+
 	#footer { padding-left: 0; padding-right:0;  }
 	.footer-nav { float:none; display:block; height: 12px; margin:0 auto; width: 310px; vpadding-bottom: 8px; text-transform: uppercase; }
 	.footer-nav ul li { font-size: 8px; border-right:0; padding:0 2px; }
