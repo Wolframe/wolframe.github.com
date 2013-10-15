@@ -88,8 +88,7 @@ nav ul{margin:0; padding:0; list-style:none;}
 .font-medium, #container .font-medium{font-size:1.2em;}
 .font-large, #container .font-large{font-size:1.4em;}
 .font-xl, #container .xl-large{font-size:4em; line-height:1.2em;}
-.font-xxl, #container .xxl-large{font-size:6em; font-weight:normal; line-height:1.2em;}
-
+.font-xxl, #container .xxl-large{font-size:6em; font-weight:normal; line-height:1.2em
 /* Sidebar */
 
 .sidebar aside{line-height:1.2em;}
