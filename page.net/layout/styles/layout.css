@@ -70,11 +70,11 @@ nav ul{margin:0; padding:0; list-style:none;}
 
 /*----------------------------------------------Header-------------------------------------*/
 
-#header{padding:40px 0;}
+#header{padding:30px 0;}
 
 #header hgroup{display:block; float:left; width:auto; clear:right;}
 #header hgroup h1, #header hgroup h2{margin:0; font-weight:normal; text-transform:none;}
-#header hgroup h1{font-size:2em;}
+#header hgroup h1{font-family:"Times New Roman", Times, serif; text-shadow:1px 1px 2px #1F1F1F; font-weight:bold; font-size:4em;}
 #header hgroup h2{font-size:1em;}
 
 #header #header-contact{display:block; float:right; width:auto; clear:right;}
