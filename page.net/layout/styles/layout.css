@@ -132,7 +132,7 @@ nav ul{margin:0; padding:0; list-style:none;}
 #topnav{padding:0; color:#C0BAB6; background-color:#232323; clear:both; word-wrap:normal; white-space:nowrap;}
 */
 #topnav{padding:0; color:#C0BAB6; background-color:#2a5a7a; clear:both; word-wrap:normal; white-space:nowrap;}
-#topnav ul{margin:0; padding:0; list-style:none; text-transform:uppercase; font-size:12px;}
+#topnav ul{margin:0; padding:0; list-style:none; text-transform:uppercase; font-size:16px;}
 #topnav ul ul{z-index:9999; position:absolute; width:190px; text-transform:none;}
 #topnav ul ul ul, #topnav ul ul ul ul{left:190px; top:0;}
 #topnav ul:first-child li:last-child > ul{right:0;}
@@ -154,9 +154,10 @@ nav ul{margin:0; padding:0; list-style:none;}
 /* - MBa
 #topnav li.active a, #topnav a:hover{color:#FF9900; background-color:#232323;}
 */
-#topnav li.active a, #topnav a:hover{color:#FF9900; background-color:#2a5a7a;}
+#topnav li.active a{color:#FFFFFF; background-color:#2a5a7a;}
+#topnav a:hover{color:#467aa7; background-color:#2a5a7a;}
 
-#topnav ul li li:hover > a{color:#FFFFFF; background-color:#FF9900;}
+#topnav ul li li:hover > a{color:#FFFFFF; background-color:#467aa7;}
 #topnav li a.drop, #topnav li.active a.drop{padding-left:15px; background-image:url("images/dropdown_side.gif"); background-position:5px center; background-repeat:no-repeat;}
 
 /* Top navigation for smaller resolutions */
