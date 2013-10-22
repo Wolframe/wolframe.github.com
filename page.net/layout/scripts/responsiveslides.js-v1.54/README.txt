@@ -1,5 +1,6 @@
-# ResponsiveSlides.js v1.53
+# ResponsiveSlides.js v1.54
 ### Simple & lightweight responsive slider plugin (in 1kb)
+
 
 
 [ResponsiveSlides.js](http://responsiveslides.com/) is a tiny jQuery plugin that creates a responsive slider using elements inside a container. It has been used on sites like [Microsoft's Build 2012](http://www.buildwindows.com/launch) and [Gridset App](https://gridsetapp.com). ResponsiveSlides.js works with wide range of browsers including all IE versions from IE6 and up. It also adds CSS max-width support for IE6 and other browsers that don't natively support it. Only dependency is [jQuery](http://jquery.com/) (1.6 and up supported, tested up to 1.8.3) and that all the images are the same size.
@@ -29,7 +30,10 @@ Biggest difference to other responsive slider plugins is the file size (1.4kb mi
 Usage Instructions and demo
 ======
 
-For instructions and demo go to [http://responsiveslides.com/](http://responsiveslides.com/), or [download this repository as a zip file](https://github.com/viljamis/ResponsiveSlides.js/zipball/master) and and open "index.html" from the "example" folder. There's also a file called "themes.html" inside the "themes" folder which has [more examples about the usage](http://viljamis.com/responsive-slides/themes/).
+For instructions and demo go to [http://responsiveslides.com/](http://responsiveslides.com/), or [download this repository as a zip file](https://github.com/viljamis/ResponsiveSlides.js/zipball/master) and and open "index.html" from the "example" folder. 
+
+* View [additional usage examples online](http://responsiveslides.com/themes/themes.html). 
+* View [a demo with captions](http://responsiveslides.com/with-captions/themes.html). 
 
 Currently jQuery 1.6 and up is supported.
 
@@ -53,6 +57,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 Changelog
 ======
 
+
+v1.54 (2013-04-26) - Fixes few bugs with the before and after callbacks.
 
 v1.53 (2013-01-14) - Minor speed optimization (thanks [@bazineta](https://github.com/bazineta)!).
 
@@ -78,7 +84,7 @@ v1.22 (2012-03-27) - Adds callback events which are similar as in [@Wilto](https
 
 v1.21 (2012-03-23) - Added two new options: 'nextText' and 'prevText'.
 
-v1.20 (2012-03-21) - New option called 'nav', which enables next and previous buttons. Can be used with 'pagination' and 'auto' options. Adds also new [themes folder](http://viljamis.com/responsive-slides/themes/) with three different ways to use the new next and previous buttons.
+v1.20 (2012-03-21) - New option called 'nav', which enables next and previous buttons. Can be used with 'pagination' and 'auto' options. Adds also new [themes folder](http://responsiveslides.com/themes/themes.html) with three different ways to use the new next and previous buttons.
 
 v1.10 (2012-03-12) - Refactoring, New markup style, CSS is now separated from the plugin, you can have links around images and other elements inside slides (not just images, but also captions etc.) + New option called "pagination", which enables to choose both "pagination" and "auto" at the same time. Shout outs for the help to [@bgutschke](https://github.com/bgutschke)
 
