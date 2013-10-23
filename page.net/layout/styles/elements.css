@@ -13,10 +13,16 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 .calltoaction p{margin:0; padding:0; line-height:1.4em; text-transform:none;}
 .calltoaction .button{display:block; text-align:center; line-height:1.4em;}
 
+/* MBa -
 .calltoaction.opt1{border:solid #FF9900; border-width:0 0 0 5px;}
 .calltoaction.opt2{border:solid #FF9900; border-width:0 5px 0 0;}
 .calltoaction.opt3{border:solid #FF9900; border-width:0 5px;}
 .calltoaction.opt4{border:solid #FF9900; border-width:2px 0; font-size:1.8em;}
+*/
+.calltoaction.opt1{border:solid #467aa7; border-width:0 0 0 5px;}
+.calltoaction.opt2{border:solid #467aa7; border-width:0 5px 0 0;}
+.calltoaction.opt3{border:solid #467aa7; border-width:0 5px;}
+.calltoaction.opt4{border:solid #467aa7; border-width:2px 0; font-size:1.8em;}
 #container .calltoaction.opt4 h1{margin:15px 0 0 0;}
 
 /* Lists - For ul + ol */
@@ -44,7 +50,8 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 
 .list.tagcloud li{display:inline-block; margin:0 5px 5px 0;}
 .list.tagcloud li a{display:block; padding:4px 10px; color:#FFFFFF; background-color:#A8A8A8; text-transform:capitalize;}
-.list.tagcloud li a:hover{color:#FFFFFF; background-color:#FF9900;}
+/* MBa - .list.tagcloud li a:hover{color:#FFFFFF; background-color:#FF9900;} */
+.list.tagcloud li a:hover{color:#FFFFFF; background-color:#467aa7;}
 
 /* Base Colours */
 
@@ -56,6 +63,7 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 .purple{color:#9F81A9;}
 .red{color:#D54346;}
 .yellow{color:#FDE803;}
+.wolfblue{color:#467aa7}
 
 .bg_blue{color:#FFFFFF; background-color:#56AED4;}
 .bg_green{color:#FFFFFF; background-color:#C0E079;}
@@ -65,6 +73,7 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 .bg_purple{color:#FFFFFF; background-color:#9F81A9;}
 .bg_red{color:#FFFFFF; background-color:#D54346;}
 .bg_yellow{color:#666666; background-color:#FDE803;}
+.bg_wolfblue{color:#FFFFFF; background-color:#2a5a7a;}
 
 /* Dividers */
 
