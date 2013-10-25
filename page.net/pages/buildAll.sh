@@ -16,6 +16,9 @@
 ./build-downloads-wolframe-sasl.sh
 ./build-downloads-wolframe-sqlite3.sh
 ./build-downloads-wolframe-textwolf.sh
+./build-contact.sh
+./build-documentation.sh
+./build-solutions.sh
 
 mv -f *.html ..
 
