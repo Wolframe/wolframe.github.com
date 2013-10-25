@@ -38,8 +38,8 @@
 		<ul class="clear">
 			<li><a href="/index.html" title="Home">Home</a></li>
 			<li><a href="/solutions.html" title="Solutions">Solutions</a></li>
-			<li class="active"><a href="/downloads.html" title="Downloads">Downloads</a></li>
-			<li><a href="/documentation.html" title="Documentation">Documentation</a></li>
+			<li><a href="/downloads.html" title="Downloads">Downloads</a></li>
+			<li class="active"><a href="/documentation.html" title="Documentation">Documentation</a></li>
 			<li><a class="drop" title="Support">Support</a>
 				<ul>
 					<li><a href="/404.html" title="404 page">404</a></li>
@@ -53,13 +53,13 @@
 </div>
 <!-- ################################################################################################ -->
 
-<div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">5.3. XSLT Filter</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk03ch05s02.html">Prev</a> </td><th width="60%" align="center">Chapter 5. Filters</th><td width="20%" align="right"> <a accesskey="n" href="bk03ch06.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1381966084"></a>5.3. XSLT Filter</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1381966420"></a>5.3.1. Introduction</h3></div></div></div><p>You can use <code class="code">XSLT</code> for data filters in the logic tier of <span class="application">Wolframe</span>.
+<div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">5.3. XSLT Filter</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk03ch05s02.html">Prev</a> </td><th width="60%" align="center">Chapter 5. Filters</th><td width="20%" align="right"> <a accesskey="n" href="bk03ch06.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1376841316"></a>5.3. XSLT Filter</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376841652"></a>5.3.1. Introduction</h3></div></div></div><p>You can use <code class="code">XSLT</code> for data filters in the logic tier of <span class="application">Wolframe</span>.
 	The <code class="code">XSLT</code> filter of <span class="application">Wolframe</span> for is based on <code class="code">libxml2</code> 
 	(http://www.xmlsoft.org).
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1381964508"></a>5.3.2. Character Set Encodings</h3></div></div></div><p>Without explicitely specified, the <code class="code">XSLT</code> filter support the following character set 
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376839740"></a>5.3.2. Character Set Encodings</h3></div></div></div><p>Without explicitely specified, the <code class="code">XSLT</code> filter support the following character set 
 	encodings. For character set encodings that are not in the list, please ask the <span class="application">Wolframe</span> team.
 	</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><code class="code">UTF-8</code> or</p></li><li class="listitem"><p><code class="code">UTF-16LE</code> or</p></li><li class="listitem"><p><code class="code">UTF-16</code> (<code class="code">UTF-16BE</code>) or</p></li><li class="listitem"><p><code class="code">UTF-32LE</code> (<code class="code">UCS-4LE</code>) or</p></li><li class="listitem"><p><code class="code">UTF-32</code> (<code class="code">UTF-32BE</code> or <code class="code">UCS-4BE</code>) or</p></li></ul></div><p>
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1381999428"></a>5.3.3. Configuration</h3></div></div></div><p>For using an XSLT filter based <code class="code">libxml2</code>, you have to load the module 'mod_filter_libxml2'.
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376874652"></a>5.3.3. Configuration</h3></div></div></div><p>For using an XSLT filter based <code class="code">libxml2</code>, you have to load the module 'mod_filter_libxml2'.
 	For this you add the following line to the LoadModules section of your <span class="application">Wolframe</span> configuration:
 		</p><pre class="programlisting">
 		
