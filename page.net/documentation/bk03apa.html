@@ -15,7 +15,7 @@
 		<script src="/layout/scripts/ie/html5shiv.min.js"></script>
 	<![endif]-->
 	
-<div class="wrapper row3"><div id="container"></head><body>
+</head><body>
 
 <div xmlns="" class="wrapper row1">
 	<header id="header" class="full_width clear">
@@ -53,8 +53,8 @@
 </div>
 <!-- ################################################################################################ -->
 
-<div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Appendix A. Language Grammars</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk03ix01.html">Prev</a> </td><th width="60%" align="center">Building Wolframe Services</th><td width="20%" align="right"> <a accesskey="n" href="bk03apb.html">Next</a></td></tr></table><hr /></div><div class="appendix"><div class="titlepage"><div><div><h1 class="title"><a id="idp1376918460"></a>Appendix A. Language Grammars</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="bk03apa.html#idp1376918780">A.1. Grammars</a></span></dt></dl></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1376918780"></a>A.1. Grammars</h2></div></div></div><p>
-			</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376908380"></a>.1. EBNF of the Transaction Definition Language</h3></div></div></div><table width="100%" cellpadding="5" bgcolor="#F5DCB3" border="1" class="productionset" summary="EBNF for Tokens"><tr><th align="left" valign="top" class="productionset">Tokens</th></tr><tr><td><table border="0" width="99%" cellpadding="0" bgcolor="#F5DCB3" class="productionset" summary="EBNF productions"><tr><td align="left" valign="top" width="3%">[1]</td><td align="right" valign="top" width="10%"><a id="Identifier"></a>Identifier</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Appendix A. Language Grammars</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk03ix01.html">Prev</a> </td><th width="60%" align="center">Building Wolframe Services</th><td width="20%" align="right"> <a accesskey="n" href="bk03apb.html">Next</a></td></tr></table><hr /></div><div class="appendix"><div class="titlepage"><div><div><h1 class="title"><a id="idp1376289500"></a>Appendix A. Language Grammars</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="bk03apa.html#idp1376289820">A.1. Grammars</a></span></dt></dl></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1376289820"></a>A.1. Grammars</h2></div></div></div><p>
+			</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376279420"></a>.1. EBNF of the Transaction Definition Language</h3></div></div></div><table width="100%" cellpadding="5" bgcolor="#F5DCB3" border="1" class="productionset" summary="EBNF for Tokens"><tr><th align="left" valign="top" class="productionset">Tokens</th></tr><tr><td><table border="0" width="99%" cellpadding="0" bgcolor="#F5DCB3" class="productionset" summary="EBNF productions"><tr><td align="left" valign="top" width="3%">[1]</td><td align="right" valign="top" width="10%"><a id="Identifier"></a>Identifier</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
 			( ['A'-'Z'] | ['a'-'z'] | ['0'-'9'] | '_' ) +
 		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[2]</td><td align="right" valign="top" width="10%"><a id="Number"></a>Number</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
 			( ['0'-'9'] ) +
@@ -182,7 +182,7 @@
 			| )
 		</td><td align="left" valign="top" width="30%"> </td></tr></table></td></tr></table></div><p>
 
-			</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1377056652"></a>.2. EBNF of the Normalizer Function Declarations</h3></div></div></div><p>The declaration of a type starts with an identifier followed by an assignment operator '='
+			</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376427692"></a>.2. EBNF of the Normalizer Function Declarations</h3></div></div></div><p>The declaration of a type starts with an identifier followed by an assignment operator '='
 		and a comma separated sequence of ':' separated identifier tuples, defining the name
 		of the normalization module (1st) and the name of the function (2nd).
 		The type declaration is closed with a semicolon ';'.</p><table width="100%" cellpadding="5" bgcolor="#F5DCB3" border="1" class="productionset" summary="EBNF for Tokens"><tr><th align="left" valign="top" class="productionset">Tokens</th></tr><tr><td><table border="0" width="99%" cellpadding="0" bgcolor="#F5DCB3" class="productionset" summary="EBNF productions"><tr><td align="left" valign="top" width="3%">[26]</td><td align="right" valign="top" width="10%"><a id="normIdentifier"></a>Identifier</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
@@ -227,7 +227,7 @@
 
 		</p></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk03ix01.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk03.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk03apb.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Index </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> Appendix B. 
     <acronym class="acronym">GNU</acronym> General Public License version 3
-  </td></tr></table></div>
+  </td></tr></table></div></div></div>
 	
 <!-- Footer -->
 <div xmlns="" class="wrapper row2">

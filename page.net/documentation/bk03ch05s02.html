@@ -15,7 +15,7 @@
 		<script src="/layout/scripts/ie/html5shiv.min.js"></script>
 	<![endif]-->
 	
-<div class="wrapper row3"><div id="container"></head><body>
+</head><body>
 
 <div xmlns="" class="wrapper row1">
 	<header id="header" class="full_width clear">
@@ -53,20 +53,20 @@
 </div>
 <!-- ################################################################################################ -->
 
-<div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">5.2. JSON Filter</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk03ch05.html">Prev</a> </td><th width="60%" align="center">Chapter 5. Filters</th><td width="20%" align="right"> <a accesskey="n" href="bk03ch05s03.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1376836068"></a>5.2. JSON Filter</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376836404"></a>5.2.1. Introduction</h3></div></div></div><p>You can use <code class="code">JSON</code> for data filters in the logic tier of <span class="application">Wolframe</span>.
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">5.2. JSON Filter</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk03ch05.html">Prev</a> </td><th width="60%" align="center">Chapter 5. Filters</th><td width="20%" align="right"> <a accesskey="n" href="bk03ch05s03.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1376207100"></a>5.2. JSON Filter</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376207436"></a>5.2.1. Introduction</h3></div></div></div><p>You can use <code class="code">JSON</code> for data filters in the logic tier of <span class="application">Wolframe</span>.
 	The standard <code class="code">JSON</code> filter of <span class="application">Wolframe</span> is called <code class="code">cjson</code> and 
 	based on the library <code class="code">cJSON</code> (http://sourceforge.net/projects/cjson) from Dave Gamble.
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376826652"></a>5.2.2. Character Set Encodings</h3></div></div></div><p>Without explicitely specified, the <code class="code">cjson</code> filter support the following character set 
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376197660"></a>5.2.2. Character Set Encodings</h3></div></div></div><p>Without explicitely specified, the <code class="code">cjson</code> filter support the following character set 
 	encodings. For character set encodings that are not in the list, please ask the <span class="application">Wolframe</span> team.
 	</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><code class="code">UTF-8</code> or</p></li><li class="listitem"><p><code class="code">UTF-16LE</code> or</p></li><li class="listitem"><p><code class="code">UTF-16</code> (<code class="code">UTF-16BE</code>) or</p></li><li class="listitem"><p><code class="code">UTF-32LE</code> (<code class="code">UCS-4LE</code>) or</p></li><li class="listitem"><p><code class="code">UTF-32</code> (<code class="code">UTF-32BE</code> or <code class="code">UCS-4BE</code>) or</p></li></ul></div><p>
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376849420"></a>5.2.3. Configuration</h3></div></div></div><p>For using the JSON filter based <code class="code">cJSON</code>, you have to load the module 'mod_filter_cjson'. 
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376220452"></a>5.2.3. Configuration</h3></div></div></div><p>For using the JSON filter based <code class="code">cJSON</code>, you have to load the module 'mod_filter_cjson'. 
 	For this you add the following line to the LoadModules section of your <span class="application">Wolframe</span> configuration:
 		</p><pre class="programlisting">
 		
     module mod_filter_cjson
 
 		</pre><p>
-	</p></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk03ch05.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk03ch05.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk03ch05s03.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter 5. Filters </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 5.3. XSLT Filter</td></tr></table></div>
+	</p></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk03ch05.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk03ch05.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk03ch05s03.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter 5. Filters </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 5.3. XSLT Filter</td></tr></table></div></div></div>
 	
 <!-- Footer -->
 <div xmlns="" class="wrapper row2">
