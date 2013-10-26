@@ -53,7 +53,7 @@
 </div>
 <!-- ################################################################################################ -->
 
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.5. Defining DDL Data Types</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk03ch03s04.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Functions</th><td width="20%" align="right"> <a accesskey="n" href="bk03ch03s06.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1375625052"></a>3.5. Defining DDL Data Types</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1375625372"></a>3.5.1. Introduction</h3></div></div></div><p>Forms defined by DDLs are typed. The only predefined type is 'string' that is neither
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.5. Defining DDL Data Types</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk03ch03s04.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Functions</th><td width="20%" align="right"> <a accesskey="n" href="bk03ch03s06.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1392415044"></a>3.5. Defining DDL Data Types</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1392415364"></a>3.5.1. Introduction</h3></div></div></div><p>Forms defined by DDLs are typed. The only predefined type is 'string' that is neither
 		validated nor transformed for processing in any way. The types that can be used in DDLs are
 		defined in files with the extension ".wnmp" and defined as programs in the configuration.
 	</p><p>
@@ -62,7 +62,7 @@
 		in the sequence gets the input of the next one and the final output for the last one.
 		Each normalization step validates the input as atomic type (arithmetic,string,etc.)
 		and transforms it to another atomic type.
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1375614276"></a>3.5.2. Example</h3></div></div></div><p>
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1392404268"></a>3.5.2. Example</h3></div></div></div><p>
 		The example defines 3 numeric types including trimming of the input string for mode tolerant
 		parsing and a string type that is converted to lowercase as normalization.
 	</p><p>
@@ -74,7 +74,7 @@ float=string:trim,number:float;
 name=string:trim,lcname;
 
 		</pre><p>
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1375658332"></a>3.5.3. Language Description</h3></div></div></div><p>
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1392448324"></a>3.5.3. Language Description</h3></div></div></div><p>
 		Each type declaration in a <code class="code">.wnmp</code> file starts with an identifier followed by a an assignment 
 		operator '='. The left side identifier specifies the name of the type. This type name can be used
 		in a DDL as name instead of the built in type <code class="code">string</code>. When doing so the referenced token is validated
@@ -90,7 +90,7 @@ name=string:trim,lcname;
 	</p><p>Functions can have a comma separated list of constant arguments in brackets ('(' and ')') 
 		depending on the function type. An integer type for example could have 
 		the maximum number of digits of the integer type.
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1375660948"></a>3.5.4. Configuration</h3></div></div></div><p>For declaring and using a the .wnmp file of our example above, you have to load the module 'mod_normalize_string'
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1392450900"></a>3.5.4. Configuration</h3></div></div></div><p>For declaring and using a the .wnmp file of our example above, you have to load the module 'mod_normalize_string'
 	and the module 'mod_normalize_number'.
 	For this you add the following two lines to the LoadModules section of your <span class="application">Wolframe</span> configuration:
 		</p><pre class="programlisting">

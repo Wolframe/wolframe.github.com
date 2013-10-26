@@ -53,21 +53,21 @@
 </div>
 <!-- ################################################################################################ -->
 
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 2. Command Handler</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk03ch01.html">Prev</a> </td><th width="60%" align="center">Building Wolframe Services</th><td width="20%" align="right"> <a accesskey="n" href="bk03ch03.html">Next</a></td></tr></table><hr /></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="idp1375295060"></a>Chapter 2. Command Handler</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="bk03ch02.html#idp1375255220">2.1. The Standard Command Handler</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk03ch02.html#idp1375255540">2.1.1. Introduction</a></span></dt><dt><span class="sect2"><a href="bk03ch02.html#idp1375258100">2.1.2. Example Configuration</a></span></dt><dt><span class="sect2"><a href="bk03ch02.html#idp1375261884">2.1.3. Example Command Description</a></span></dt><dt><span class="sect2"><a href="bk03ch02.html#idp1375356220">2.1.4. Command Description Language</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk03ch02.html#idp1375374628">Overview</a></span></dt></dl></dd></dl></dd></dl></div><p>This chapter introduces the standard command handler of the logic tier.
-</p><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1375255220"></a>2.1. The Standard Command Handler</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1375255540"></a>2.1.1. Introduction</h3></div></div></div><p>
-		The <span class="application">Wolframe</span> standard command handler is called <code class="code">directmap</code> and named so
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 2. Command Handler</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk03ch01.html">Prev</a> </td><th width="60%" align="center">Building Wolframe Services</th><td width="20%" align="right"> <a accesskey="n" href="bk03ch03.html">Next</a></td></tr></table><hr /></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="idp1392081508"></a>Chapter 2. Command Handler</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="bk03ch02.html#idp1392041668">2.1. The Standard Command Handler</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk03ch02.html#idp1392041988">2.1.1. Introduction</a></span></dt><dt><span class="sect2"><a href="bk03ch02.html#idp1392044548">2.1.2. Example Configuration</a></span></dt><dt><span class="sect2"><a href="bk03ch02.html#idp1392048764">2.1.3. Example Command Description</a></span></dt><dt><span class="sect2"><a href="bk03ch02.html#idp1392143100">2.1.4. Command Description Language</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk03ch02.html#idp1392161508">Overview</a></span></dt></dl></dd></dl></dd></dl></div><p>This chapter introduces the standard command handler of the logic tier.
+</p><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1392041668"></a>2.1. The Standard Command Handler</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1392041988"></a>2.1.1. Introduction</h3></div></div></div><p>
+		The <span class="application">Wolframe</span> standard command handler is called <em class="glossterm">directmap</em> and named so
 		in the configuration because it only declares a redirection of the commands to functions based on 
 		the document type and the command identifier specified by the client in the request.
 	</p><p>
-		The declarations of the <span class="application">Wolframe</span> Standard Command Handler (<code class="code">directmap</code>)
+		The declarations of the <span class="application">Wolframe</span> Standard Command Handler (<em class="glossterm">directmap</em>)
 		are specified in a program source file with the extension '.dmap' that is declared in the configuration.
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1375258100"></a>2.1.2. Example Configuration</h3></div></div></div><p>The following configuration declares a program <code class="code">example.tdl</code> written in the 
-		transaction definition language (<code class="code">TDL</code>) to contain the function
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1392044548"></a>2.1.2. Example Configuration</h3></div></div></div><p>The following configuration declares a program <code class="code">example.tdl</code> written in the 
+		transaction definition language (<acronym class="acronym">TDL</acronym>) to contain the function
 		declarations for the provider that can be called by the command handler. It declares the database with
-		name <code class="code">pgdb</code> to be used as the database for transactions. It loads a description 
+		name <span class="application">pgdb</span> to be used as the database for transactions. It loads a description 
 		<code class="code">example.dmap</code> that will declare the mappings of commands to the filters used and functions 
-		called. It specifies the filter with name <code class="code">libxml2</code> to be used for documents of format XML and
-		the filter with name <code class="code">cjson</code> to be used for documents of format JSON, if
+		called. It specifies the filter with name <span class="application">libxml2</span> to be used for documents of format XML and
+		the filter with name <span class="application">cjson</span> to be used for documents of format JSON, if
 		not specified else in <code class="code">example.dmap</code>.
 
 		</p><pre class="programlisting">
@@ -93,7 +93,7 @@ Processor
 
 
 		</pre><p>
-		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1375261884"></a>2.1.3. Example Command Description</h3></div></div></div><p>The following source example could be one of a <code class="code">example.dmap</code> in the configuration example 
+		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1392048764"></a>2.1.3. Example Command Description</h3></div></div></div><p>The following source example could be one of a <code class="code">example.dmap</code> in the configuration example 
 		introduced above. It defines two commands. The first one links a command "insert" with document type
 		"Customer" as content to a transaction function "doInsertCustomer". The content is validated 
 		automatically against a form named "Customer" if not explicitely defined else. 
@@ -109,13 +109,13 @@ COMMAND (get Employee) PASS CALL doSelectEmployee( xml ) RETURN Employee;
 
 
 		</pre><p>
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1375356220"></a>2.1.4. Command Description Language</h3></div></div></div><p>
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1392143100"></a>2.1.4. Command Description Language</h3></div></div></div><p>
 		A command map description file like our example shown consists of instructions started with 
 		<code class="code">COMMAND</code> and terminated by semicolon ';'. The first argument after <code class="code">COMMAND</code> is the name of the
 		command followed by the name of the document type of the input document. The name of the command
 		is optional. If not specified the first argument after <code class="code">COMMAND</code> names the input document type.
 
-		</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1375357676"></a>Simple Document Map</h5></div></div></div><p>
+		</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1392144556"></a>Simple Document Map</h5></div></div></div><p>
 				The following example shows the simplest possible declaration. It declares that documents with
 				document type "Document" are forwarded to a function with the same name "Document".
 				</p><pre class="programlisting">
@@ -124,7 +124,7 @@ COMMAND Document;
 
 				</pre><p>
 			</p></div><p>
-		</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1375359292"></a>Command with Action Prefix</h5></div></div></div><p>
+		</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1392146172"></a>Command with Action Prefix</h5></div></div></div><p>
 				The next example adds a action name to the declaration. The implicit name of the function called is
 				insertDocument:
 				</p><pre class="programlisting">
@@ -133,7 +133,7 @@ COMMAND insert Document;
 
 				</pre><p>
 			</p></div><p>
-		</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1375360892"></a>Explicit Function Name Declaration</h5></div></div></div><p>
+		</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1392147772"></a>Explicit Function Name Declaration</h5></div></div></div><p>
 				For declaring the function called explicitely like for example a function <code class="code">doInsertDocument</code> we need to declare it with <code class="code">CALL &lt;functionname&gt;</code>:
 				</p><pre class="programlisting">
 				
@@ -141,7 +141,7 @@ COMMAND insert Document CALL doInsertDocument;
 
 				</pre><p>
 			</p></div><p>
-		</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1375362964"></a>Returned Document Declaration</h5></div></div></div><p>
+		</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1392149844"></a>Returned Document Declaration</h5></div></div></div><p>
 				The document type returned is specified with <code class="code">RETURN &lt;doctype&gt;</code>:
 				</p><pre class="programlisting">
 				
@@ -155,7 +155,7 @@ COMMAND process Document CALL doProcessDocument RETURN Document;
 
 				</pre><p>
 			</p></div><p>
-		</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1375365732"></a>Passing Over Document Validation</h5></div></div></div><p>
+		</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1392152612"></a>Passing Over Document Validation</h5></div></div></div><p>
 				If you want to pass over the input document validation, either because you are dealing
 				with legacy software where a strict definition of a schema is not possible or
 				because the function called has strict typeing and validates input on its own (.NET,C++),
@@ -172,7 +172,7 @@ COMMAND process Document CALL doProcessDocument RETURN PASS Document;
 
 				</pre><p>
 			</p></div><p>
-		</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1375368916"></a>Explicit Filter Definitions for a Command</h5></div></div></div><p>
+		</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1392155796"></a>Explicit Filter Definitions for a Command</h5></div></div></div><p>
 				For most of the Processing the standard filters declared in the command handler configuration
 				are enough. But in certain cases you want to explictely declare a filter for a command, for
 				example for preprocessing a certain document type with an XSLT filter. Explicitely declared
@@ -188,7 +188,7 @@ COMMAND process Document FILTER INPUT myXsltInputFilter
 
 				</pre><p>
 			</p></div><p>
-		</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1375372916"></a>Using Brackets</h5></div></div></div><p>
+		</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1392159796"></a>Using Brackets</h5></div></div></div><p>
 				For better readability you can use optional '(' ')' brackets on the arguments. This way you can distinguish
 				better between keywords and arguments:
 				</p><pre class="programlisting">
@@ -199,11 +199,11 @@ COMMAND ( process Document )
 
 				</pre><p>
 			</p></div><p>
-	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1375374628"></a>Overview</h4></div></div></div><p>Each command declaration has as already explained the form
+	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1392161508"></a>Overview</h4></div></div></div><p>Each command declaration has as already explained the form
 		</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><code class="code">COMMAND &lt;doctype&gt; [OPTIONS] ;</code> or</p></li><li class="listitem"><p><code class="code">COMMAND &lt;action&gt; &lt;doctype&gt; [OPTIONS] ;</code></p></li></ul></div><p>
 		The following table shows an overview of the elements that can be used in the <code class="code">[OPTIONS]</code> part of the command:
 
-		</p><div class="table"><a id="idp1375376460"></a><p class="title"><strong>Table 2.1. Options</strong></p><div class="table-contents"><table summary="Options" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th>Keywords</th><th>Arguments</th><th>Description</th></tr></thead><tbody><tr><td>CALL</td><td>Function Name</td><td>Names the function to be called for processing the request</td></tr><tr><td>RETURN</td><td>Document Type</td><td>Specifies the type of the document returned and forces validation of the output</td></tr><tr><td>RETURN PASS</td><td>Document Type</td><td>Specifies the type of the document returned but passes over validation of the output</td></tr><tr><td>PASS</td><td>(no arguments)</td><td>Specifies the input document validation to be passed over</td></tr><tr><td>FILTER INPUT</td><td>Filter Name</td><td>Specifies that the filter &lt;Name&gt; should be used as input filter</td></tr><tr><td>FILTER OUTPUT</td><td>Filter Name</td><td>Specifies that the filter &lt;Name&gt; should be used as output filter</td></tr><tr><td>FILTER</td><td>Filter Name</td><td>Specifies that the filter &lt;Name&gt; should be used as input and output filter</td></tr></tbody></table></div></div><p><br class="table-break" />
+		</p><div class="table"><a id="idp1392163340"></a><p class="title"><strong>Table 2.1. Options</strong></p><div class="table-contents"><table summary="Options" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th>Keywords</th><th>Arguments</th><th>Description</th></tr></thead><tbody><tr><td>CALL</td><td>Function Name</td><td>Names the function to be called for processing the request</td></tr><tr><td>RETURN</td><td>Document Type</td><td>Specifies the type of the document returned and forces validation of the output</td></tr><tr><td>RETURN PASS</td><td>Document Type</td><td>Specifies the type of the document returned but passes over validation of the output</td></tr><tr><td>PASS</td><td>(no arguments)</td><td>Specifies the input document validation to be passed over</td></tr><tr><td>FILTER INPUT</td><td>Filter Name</td><td>Specifies that the filter &lt;Name&gt; should be used as input filter</td></tr><tr><td>FILTER OUTPUT</td><td>Filter Name</td><td>Specifies that the filter &lt;Name&gt; should be used as output filter</td></tr><tr><td>FILTER</td><td>Filter Name</td><td>Specifies that the filter &lt;Name&gt; should be used as input and output filter</td></tr></tbody></table></div></div><p><br class="table-break" />
 
 		</p></div></div><p></p></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk03ch01.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk03.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk03ch03.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter 1. Introduction </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> Chapter 3. Functions</td></tr></table></div></div></div>
 	
