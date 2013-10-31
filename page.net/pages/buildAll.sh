@@ -19,6 +19,7 @@
 ./build-contact.sh
 ./build-documentation.sh
 ./build-solutions.sh
+./build-index.sh
 
 mv -f *.html ..
 
