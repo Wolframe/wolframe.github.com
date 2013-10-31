@@ -53,19 +53,25 @@
 </div>
 <!-- ################################################################################################ -->
 
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 4. Forms</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk03ch03s06.html">Prev</a> </td><th width="60%" align="center">Building Wolframe Services</th><td width="20%" align="right"> <a accesskey="n" href="bk03ch05.html">Next</a></td></tr></table><hr /></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="idp1390369124"></a>Chapter 4. Forms</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="bk03ch04.html#idp1390414444">4.1. Form Data Definition Languages</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk03ch04.html#idp1390414764">4.1.1. Introduction</a></span></dt><dt><span class="sect2"><a href="bk03ch04.html#idp1390447364">4.1.2. Define Forms in Simpleform DDL</a></span></dt></dl></dd></dl></div><p>This chapter describes how form data schemas are linked to the logic tier. It introduces a data description
-language (DDL) called <code class="code">simpleform</code> that allows you to specify data schemas with the validation and 
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 4. Forms</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk03ch03s06.html">Prev</a> </td><th width="60%" align="center">Building Wolframe Services</th><td width="20%" align="right"> <a accesskey="n" href="bk03ch05.html">Next</a></td></tr></table><hr /></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="idp1373729220"></a>Chapter 4. Forms</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="bk03ch04.html#idp1373775780">4.1. Form Data Definition Languages</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk03ch04.html#idp1373776100">4.1.1. Introduction</a></span></dt><dt><span class="sect2"><a href="bk03ch04.html#idp1373808700">4.1.2. Forms in Simpleform DDL</a></span></dt></dl></dd></dl></div><p>
+Forms are data structures used to validate input and output data and to do some basic normalizations
+in order to make data accessible in a uniform way. Forms are defined in a data definition language
+(<acronym class="acronym">DDL</acronym>) and translated by a compiler at startup. Compilers are defined as loadable
+modules.
+</p><p>
+This chapter describes how form data schemas are linked to the logic tier. It introduces a data description
+language (<acronym class="acronym">DDL</acronym>) called <code class="code">simpleform</code> that allows you to specify data schemas with the validation and 
 normalization of atomic types. It also describes the <span class="application">Wolframe</span> module concept for form descriptions that 
 allows you to add a compiler for your existing data schemas.
 </p><p>
 After reading this chapter you should be able to write data forms of <span class="application">Wolframe</span> of the  logic tier 
 in the <code class="code">simpleform</code> data description language on your own. You should also know how a new data description
-language (DDL) could be added.
+language (<acronym class="acronym">DDL</acronym>) could be added.
 </p><p>
-Be aware that you have to configure a data description language type (DDL compiler) of the logic tier 
+Be aware that you have to configure a data description language type (<acronym class="acronym">DDL</acronym> compiler) of the logic tier 
 in <span class="application">Wolframe</span> before using it. Each chapter introducing a data form description language will have 
 a section that describes how the server configuration of <span class="application">Wolframe</span> has to be extended for its availability.
-</p><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1390414444"></a>4.1. Form Data Definition Languages</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1390414764"></a>4.1.1. Introduction</h3></div></div></div><p>
+</p><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1373775780"></a>4.1. Form Data Definition Languages</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1373776100"></a>4.1.1. Introduction</h3></div></div></div><p>
 		Form data structures can be defined in a <acronym class="acronym">DDL</acronym> (Data Definition Language).
 		It depends very much on the application what <acronym class="acronym">DDL</acronym> is best to use.
 		Users may already have their data definitions in a certain way defined.
@@ -82,7 +88,7 @@ a section that describes how the server configuration of <span class="applicatio
 		input to output without control flow aware programming (direct map).
 	</p><p>
 		All types of data forms introduced here are equivalent in use for the programs.
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1390447364"></a>4.1.2. Define Forms in Simpleform DDL</h3></div></div></div><p>
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1373808700"></a>4.1.2. Forms in Simpleform DDL</h3></div></div></div><p>
 		As example of a form <acronym class="acronym">DDL</acronym> we provide the <em class="glossterm">simpleform</em> <acronym class="acronym">DDL</acronym> as example. The format is based on the "INFO"-format
 		introduced by Marcin Kalicinski for the boost property tree library. We used this library to show an example
 		that is easy to understand and small enough.
@@ -102,8 +108,8 @@ a section that describes how the server configuration of <span class="applicatio
 		</p><table border="0" summary="Simple list" class="simplelist"><tr><td>@</td><td>prefix of data type</td><td>Expresses that the element is an attribute and not a content element of the structure. This has only influence on the XML or similar representation of the form content</td></tr><tr><td>?</td><td>prefix of data type</td><td>Expresses that the element is optional also in strict validation</td></tr><tr><td>^</td><td>prefix of form name</td><td>Expresses that the element is optional and refers to a structure defined in the same module that is expanded only if the element is present. With this construct it is possible to define recursive structures like trees.</td></tr><tr><td>!</td><td>prefix of data type</td><td>Expresses that the element is always mandatory (also in non strict validation)</td></tr><tr><td>[]</td><td>postfix of data type</td><td>Expresses that the element is an array of this type</td></tr><tr><td>[]</td><td>without data type</td><td>Expresses this element is an array of structures and that the structure defined describes the prototype (initialization) element of the array.</td></tr><tr><td>(..)</td><td>postfix of data type</td><td>Expresses that '..' (represents any valid value not containing brackets) is the default initialization value of this element.</td></tr></table><p>
 	</p><p>
 		Using a single underscore as typename ('_') means that element is embedded into the structure
-		without beeing referencable by name. In case of an atomic value it means that value represents the
-		content value of the structure. In case of a substructure it means that the stucture inherits
+		without being referenceable by name. In case of an atomic value it means that value represents the
+		content value of the structure. In case of a substructure it means that the structure inherits
 		the embedded elements of the substructure.
 	</p><p>
 		The following example shows a form defined in <em class="glossterm">simpleform</em> <acronym class="acronym">DDL</acronym>.
