@@ -22,4 +22,3 @@
 ./build-index.sh
 
 mv -f *.html ..
-
