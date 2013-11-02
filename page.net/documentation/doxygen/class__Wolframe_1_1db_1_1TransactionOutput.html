@@ -126,8 +126,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae460ac2ed27716a458187590ca53690e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab652ccb15796bfbadf3591ff252a8ef5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class__Wolframe_1_1db_1_1TransactionOutput_1_1CommandResult.html">CommandResult</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1TransactionOutput.html#ab652ccb15796bfbadf3591ff252a8ef5">at</a> (std::size_t ii) const </td></tr>
 <tr class="separator:ab652ccb15796bfbadf3591ff252a8ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46784837133a14049c530ab0e7f19b1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1db_1_1TransactionOutput.html#ac211ca90aa9c8ae63b24e4b96224a56b">result_const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1TransactionOutput.html#a46784837133a14049c530ab0e7f19b1c">last</a> (std::size_t level) const </td></tr>
-<tr class="separator:a46784837133a14049c530ab0e7f19b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8799f5e47a7c8346ee583e6821a24366"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1db_1_1TransactionOutput.html#ac211ca90aa9c8ae63b24e4b96224a56b">result_const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1TransactionOutput.html#a8799f5e47a7c8346ee583e6821a24366">resultIterator</a> (std::size_t functionidx) const </td></tr>
+<tr class="separator:a8799f5e47a7c8346ee583e6821a24366"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ed3ce0f4ee18cb1854cec6a8edf786f"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1TransactionOutput.html#a4ed3ce0f4ee18cb1854cec6a8edf786f">size</a> () const </td></tr>
 <tr class="memdesc:a4ed3ce0f4ee18cb1854cec6a8edf786f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the size (number of elements) of the result.  <a href="#a4ed3ce0f4ee18cb1854cec6a8edf786f">More...</a><br/></td></tr>
 <tr class="separator:a4ed3ce0f4ee18cb1854cec6a8edf786f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,8 +138,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af2076cfee2386f282774d69b42e4c285"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74329f0600c0430d02817f87ab96e03e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1TransactionOutput.html#a74329f0600c0430d02817f87ab96e03e">setCaseSensitive</a> (bool v=true)</td></tr>
 <tr class="separator:a74329f0600c0430d02817f87ab96e03e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0ac460e76e3b8992b2386908531a740"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1TransactionOutput.html#aa0ac460e76e3b8992b2386908531a740">openCommandResult</a> (std::size_t functionidx, std::size_t level)</td></tr>
-<tr class="separator:aa0ac460e76e3b8992b2386908531a740"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb8c47e8d583dedf6513526e78d582bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1TransactionOutput.html#adb8c47e8d583dedf6513526e78d582bf">openCommandResult</a> (std::size_t functionidx)</td></tr>
+<tr class="separator:adb8c47e8d583dedf6513526e78d582bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99d11e44e988de2fdfd9299026348435"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1TransactionOutput.html#a99d11e44e988de2fdfd9299026348435">addCommandResult</a> (const <a class="el" href="class__Wolframe_1_1db_1_1TransactionOutput_1_1CommandResult.html">CommandResult</a> &amp;r)</td></tr>
 <tr class="separator:a99d11e44e988de2fdfd9299026348435"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae002b39b6e59a68c2510fcce7972f3cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1TransactionOutput.html#ae002b39b6e59a68c2510fcce7972f3cc">addColumn</a> (const std::string &amp;name)</td></tr>
@@ -414,31 +414,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a46784837133a14049c530ab0e7f19b1c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class__Wolframe_1_1db_1_1TransactionOutput.html#ac211ca90aa9c8ae63b24e4b96224a56b">result_const_iterator</a> _Wolframe::db::TransactionOutput::last </td>
-          <td>(</td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>level</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aa0ac460e76e3b8992b2386908531a740"></a>
+<a class="anchor" id="adb8c47e8d583dedf6513526e78d582bf"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -449,18 +425,8 @@ Private Attributes</h2></td></tr>
           <td class="memname">void _Wolframe::db::TransactionOutput::openCommandResult </td>
           <td>(</td>
           <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>functionidx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>functionidx</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>level</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -491,6 +457,22 @@ Private Attributes</h2></td></tr>
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8799f5e47a7c8346ee583e6821a24366"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class__Wolframe_1_1db_1_1TransactionOutput.html#ac211ca90aa9c8ae63b24e4b96224a56b">result_const_iterator</a> _Wolframe::db::TransactionOutput::resultIterator </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>functionidx</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>
@@ -610,7 +592,7 @@ Private Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 31 2013 23:10:34 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 2 2013 10:52:23 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

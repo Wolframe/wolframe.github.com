@@ -146,24 +146,22 @@
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="struct__Wolframe_1_1db_1_1LanguageDescription.html#a0569dbf5f5afd4cfd8536d48e916fbc8">isEmbeddedStatement</a>( std::string::const_iterator si, std::string::const_iterator se) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keyword">virtual</span> std::string <a class="code" href="struct__Wolframe_1_1db_1_1LanguageDescription.html#a89b9c1238df44512ba2b617670dff2f5">parseEmbeddedStatement</a>( std::string::const_iterator&amp; si, std::string::const_iterator se) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="struct__Wolframe_1_1db_1_1LanguageDescription.html#a99d50034e8f73a2c82e3bff81d2c0425">statementHasResult</a>( <span class="keyword">const</span> std::string&amp; stm) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="comment">// Default is according SQL standard &#39;false&#39;</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1db_1_1LanguageDescription.html#aebc61440dbdfdc47fe150198b5e740d2">   70</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="struct__Wolframe_1_1db_1_1LanguageDescription.html#aebc61440dbdfdc47fe150198b5e740d2">isCaseSensitive</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}} <span class="comment">// namespace _Wolframe::db</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="comment">// Default is according SQL standard &#39;false&#39;</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1db_1_1LanguageDescription.html#aebc61440dbdfdc47fe150198b5e740d2">   69</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="struct__Wolframe_1_1db_1_1LanguageDescription.html#aebc61440dbdfdc47fe150198b5e740d2">isCaseSensitive</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}} <span class="comment">// namespace _Wolframe::db</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="struct__Wolframe_1_1db_1_1LanguageDescription_html_af8e74fdeaafe760c11def065200af43d"><div class="ttname"><a href="struct__Wolframe_1_1db_1_1LanguageDescription.html#af8e74fdeaafe760c11def065200af43d">_Wolframe::db::LanguageDescription::stm_argument_reference</a></div><div class="ttdeci">virtual std::string stm_argument_reference(int index) const </div><div class="ttdoc">String used for declaring a reference to an argument by index (starting with 1). </div></div>
 <div class="ttc" id="struct__Wolframe_1_1db_1_1LanguageDescription_html_a81c568032b0b50ffddb4ebfaa2dd2128"><div class="ttname"><a href="struct__Wolframe_1_1db_1_1LanguageDescription.html#a81c568032b0b50ffddb4ebfaa2dd2128">_Wolframe::db::LanguageDescription::~LanguageDescription</a></div><div class="ttdeci">virtual ~LanguageDescription()</div><div class="ttdef"><b>Definition:</b> databaseLanguage.hpp:50</div></div>
 <div class="ttc" id="struct__Wolframe_1_1db_1_1LanguageDescription_html_a4061242dff22ab7d3ad928624672ab9f"><div class="ttname"><a href="struct__Wolframe_1_1db_1_1LanguageDescription.html#a4061242dff22ab7d3ad928624672ab9f">_Wolframe::db::LanguageDescription::LanguageDescription</a></div><div class="ttdeci">LanguageDescription()</div><div class="ttdef"><b>Definition:</b> databaseLanguage.hpp:49</div></div>
-<div class="ttc" id="struct__Wolframe_1_1db_1_1LanguageDescription_html_aebc61440dbdfdc47fe150198b5e740d2"><div class="ttname"><a href="struct__Wolframe_1_1db_1_1LanguageDescription.html#aebc61440dbdfdc47fe150198b5e740d2">_Wolframe::db::LanguageDescription::isCaseSensitive</a></div><div class="ttdeci">virtual bool isCaseSensitive() const </div><div class="ttdoc">Define if a database is case-insensitive. This has influence on TDL parsing. </div><div class="ttdef"><b>Definition:</b> databaseLanguage.hpp:70</div></div>
-<div class="ttc" id="struct__Wolframe_1_1db_1_1LanguageDescription_html_a99d50034e8f73a2c82e3bff81d2c0425"><div class="ttname"><a href="struct__Wolframe_1_1db_1_1LanguageDescription.html#a99d50034e8f73a2c82e3bff81d2c0425">_Wolframe::db::LanguageDescription::statementHasResult</a></div><div class="ttdeci">virtual bool statementHasResult(const std::string &amp;stm) const </div></div>
+<div class="ttc" id="struct__Wolframe_1_1db_1_1LanguageDescription_html_aebc61440dbdfdc47fe150198b5e740d2"><div class="ttname"><a href="struct__Wolframe_1_1db_1_1LanguageDescription.html#aebc61440dbdfdc47fe150198b5e740d2">_Wolframe::db::LanguageDescription::isCaseSensitive</a></div><div class="ttdeci">virtual bool isCaseSensitive() const </div><div class="ttdoc">Define if a database is case-insensitive. This has influence on TDL parsing. </div><div class="ttdef"><b>Definition:</b> databaseLanguage.hpp:69</div></div>
 <div class="ttc" id="transaction_8hpp_html"><div class="ttname"><a href="transaction_8hpp.html">transaction.hpp</a></div></div>
 <div class="ttc" id="struct__Wolframe_1_1db_1_1LanguageDescription_html_a0569dbf5f5afd4cfd8536d48e916fbc8"><div class="ttname"><a href="struct__Wolframe_1_1db_1_1LanguageDescription.html#a0569dbf5f5afd4cfd8536d48e916fbc8">_Wolframe::db::LanguageDescription::isEmbeddedStatement</a></div><div class="ttdeci">virtual bool isEmbeddedStatement(std::string::const_iterator si, std::string::const_iterator se) const </div></div>
 <div class="ttc" id="struct__Wolframe_1_1db_1_1LanguageDescription_html_a89b9c1238df44512ba2b617670dff2f5"><div class="ttname"><a href="struct__Wolframe_1_1db_1_1LanguageDescription.html#a89b9c1238df44512ba2b617670dff2f5">_Wolframe::db::LanguageDescription::parseEmbeddedStatement</a></div><div class="ttdeci">virtual std::string parseEmbeddedStatement(std::string::const_iterator &amp;si, std::string::const_iterator se) const </div></div>
@@ -175,7 +173,7 @@
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 31 2013 23:10:17 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 2 2013 10:52:09 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

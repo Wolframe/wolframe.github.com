@@ -121,9 +121,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae154a2d8178770757f9634a5e1ad3e90"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1TransactionInput_1_1Command.html#ae154a2d8178770757f9634a5e1ad3e90">Command</a> ()</td></tr>
 <tr class="memdesc:ae154a2d8178770757f9634a5e1ad3e90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#ae154a2d8178770757f9634a5e1ad3e90">More...</a><br/></td></tr>
 <tr class="separator:ae154a2d8178770757f9634a5e1ad3e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae13615e6351161020396f817f73274a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1TransactionInput_1_1Command.html#ae13615e6351161020396f817f73274a2">Command</a> (std::size_t functionidx_, std::size_t level_, const std::string &amp;name_)</td></tr>
-<tr class="memdesc:ae13615e6351161020396f817f73274a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#ae13615e6351161020396f817f73274a2">More...</a><br/></td></tr>
-<tr class="separator:ae13615e6351161020396f817f73274a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdd93cfce98328901d270e62000c51ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1TransactionInput_1_1Command.html#afdd93cfce98328901d270e62000c51ce">Command</a> (std::size_t functionidx_, std::size_t level_, const std::string &amp;name_, int foreach_functionidx_=-1)</td></tr>
+<tr class="memdesc:afdd93cfce98328901d270e62000c51ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#afdd93cfce98328901d270e62000c51ce">More...</a><br/></td></tr>
+<tr class="separator:afdd93cfce98328901d270e62000c51ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adeb23243a4566d017679eb6324ce60b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1TransactionInput_1_1Command.html#adeb23243a4566d017679eb6324ce60b2">Command</a> (const <a class="el" href="class__Wolframe_1_1db_1_1TransactionInput_1_1Command.html">Command</a> &amp;o)</td></tr>
 <tr class="memdesc:adeb23243a4566d017679eb6324ce60b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="#adeb23243a4566d017679eb6324ce60b2">More...</a><br/></td></tr>
 <tr class="separator:adeb23243a4566d017679eb6324ce60b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,6 +142,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acb59bb8575e658466872c7fb459b14f4"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="class__Wolframe_1_1db_1_1TransactionInput_1_1Command_1_1Argument.html">Argument</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1TransactionInput_1_1Command.html#acb59bb8575e658466872c7fb459b14f4">arg</a> () const </td></tr>
 <tr class="memdesc:acb59bb8575e658466872c7fb459b14f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of arguments of the command.  <a href="#acb59bb8575e658466872c7fb459b14f4">More...</a><br/></td></tr>
 <tr class="separator:acb59bb8575e658466872c7fb459b14f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab67ca024de611a670c37b1c49561f61b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1TransactionInput_1_1Command.html#ab67ca024de611a670c37b1c49561f61b">foreach_functionidx</a> () const </td></tr>
+<tr class="memdesc:ab67ca024de611a670c37b1c49561f61b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the functionidx result of the result this command is bound to.  <a href="#ab67ca024de611a670c37b1c49561f61b">More...</a><br/></td></tr>
+<tr class="separator:ab67ca024de611a670c37b1c49561f61b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc7757afe1e2dd6e4b27f5e21cc3daba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1TransactionInput_1_1Command.html#acc7757afe1e2dd6e4b27f5e21cc3daba">nonemptyResult</a> () const </td></tr>
 <tr class="memdesc:acc7757afe1e2dd6e4b27f5e21cc3daba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test if he result of this command is defined as non empty.  <a href="#acc7757afe1e2dd6e4b27f5e21cc3daba">More...</a><br/></td></tr>
 <tr class="separator:acc7757afe1e2dd6e4b27f5e21cc3daba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -188,6 +191,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a3b1b1e791eb9524de7ac01ca179a7042"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3b720ebac0cd6131bebf041e8c53c55"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1TransactionInput_1_1Command.html#ad3b720ebac0cd6131bebf041e8c53c55">m_name</a></td></tr>
 <tr class="separator:ad3b720ebac0cd6131bebf041e8c53c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d26c303d7e1903d2179e4a55d3bd7e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1TransactionInput_1_1Command.html#a2d26c303d7e1903d2179e4a55d3bd7e2">m_foreach_functionidx</a></td></tr>
+<tr class="separator:a2d26c303d7e1903d2179e4a55d3bd7e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8804685ce22b797dc1390732ce8d60f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class__Wolframe_1_1db_1_1TransactionInput_1_1Command_1_1Argument.html">Argument</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1TransactionInput_1_1Command.html#ad8804685ce22b797dc1390732ce8d60f">m_arg</a></td></tr>
 <tr class="separator:ad8804685ce22b797dc1390732ce8d60f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -273,7 +278,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae13615e6351161020396f817f73274a2"></a>
+<a class="anchor" id="afdd93cfce98328901d270e62000c51ce"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -296,7 +301,13 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>name_</em>&#160;</td>
+          <td class="paramname"><em>name_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>foreach_functionidx_</em> = <code>-1</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -522,6 +533,31 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab67ca024de611a670c37b1c49561f61b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _Wolframe::db::TransactionInput::Command::foreach_functionidx </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the functionidx result of the result this command is bound to. </p>
 
 </div>
 </div>
@@ -777,6 +813,26 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a2d26c303d7e1903d2179e4a55d3bd7e2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _Wolframe::db::TransactionInput::Command::m_foreach_functionidx</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a9981796044843996e75bb5c257a24fe9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -844,7 +900,7 @@ Private Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 31 2013 23:10:34 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 2 2013 10:52:22 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

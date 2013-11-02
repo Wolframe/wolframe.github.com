@@ -130,9 +130,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2f3f8704e23d060478417d2a59ed09a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa98c5e3827594253720de92cb4e98d0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1db_1_1TransactionInput.html#a0bc01fdce7564a6c5fb3966ae5364df3">cmd_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1TransactionInput.html#aa98c5e3827594253720de92cb4e98d0d">end</a> ()</td></tr>
 <tr class="separator:aa98c5e3827594253720de92cb4e98d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cb322d8c2c0875b21f98139f67c9ea7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1TransactionInput.html#a7cb322d8c2c0875b21f98139f67c9ea7">startCommand</a> (std::size_t functionidx, std::size_t level, const std::string &amp;stmname)</td></tr>
-<tr class="memdesc:a7cb322d8c2c0875b21f98139f67c9ea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start new command statement.  <a href="#a7cb322d8c2c0875b21f98139f67c9ea7">More...</a><br/></td></tr>
-<tr class="separator:a7cb322d8c2c0875b21f98139f67c9ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affa4cac2510279ad9c094ab300fbd0f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1TransactionInput.html#affa4cac2510279ad9c094ab300fbd0f8">startCommand</a> (std::size_t functionidx, std::size_t level, const std::string &amp;stmname, int foreach_functionidx)</td></tr>
+<tr class="memdesc:affa4cac2510279ad9c094ab300fbd0f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start new command statement.  <a href="#affa4cac2510279ad9c094ab300fbd0f8">More...</a><br/></td></tr>
+<tr class="separator:affa4cac2510279ad9c094ab300fbd0f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cd57ef5bf5a745895006a99a37482d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1TransactionInput.html#a2cd57ef5bf5a745895006a99a37482d7">bindCommandArgAsValue</a> (const <a class="el" href="class__Wolframe_1_1types_1_1Variant.html">types::Variant</a> &amp;value)</td></tr>
 <tr class="memdesc:a2cd57ef5bf5a745895006a99a37482d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind parameter value on current command statement.  <a href="#a2cd57ef5bf5a745895006a99a37482d7">More...</a><br/></td></tr>
 <tr class="separator:a2cd57ef5bf5a745895006a99a37482d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -446,7 +446,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7cb322d8c2c0875b21f98139f67c9ea7"></a>
+<a class="anchor" id="affa4cac2510279ad9c094ab300fbd0f8"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -469,7 +469,13 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>stmname</em>&#160;</td>
+          <td class="paramname"><em>stmname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>foreach_functionidx</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -524,7 +530,7 @@ Private Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 31 2013 23:10:34 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 2 2013 10:52:22 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
