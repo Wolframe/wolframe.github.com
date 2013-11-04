@@ -1,52 +1,83 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Site under construction</title>
+	<title>Project Wolframe</title>
+	<meta charset="iso-8859-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
-<link rel="stylesheet" type="text/css" href="under-construction/style.css" />
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.pack.js"></script>
-<script type="text/javascript" src="under-construction/js/jquery.countdown.js"></script>
+	<link href="layout/styles/main.css" rel="stylesheet" type="text/css" media="all">
+	<link href="layout/styles/mediaqueries.css" rel="stylesheet" type="text/css" media="all">
 
-
-<!-- jquery countdown-->
-<script type="text/javascript">
-$(function () {
-	var austDay = new Date();
-	austDay = new Date(2013, 3, 25);
-	$('#defaultCountdown').countdown({until: austDay, layout: '{dn} {dl}, {hn} {hl}, {mn} {ml}, and {sn} {sl}'});
-	$('#year').text(austDay.getFullYear());
-	});
-</script>
-
+	<!--[if lt IE 9]>
+		<link href="layout/styles/ie/ie8.css" rel="stylesheet" type="text/css" media="all">
+		<script src="layout/scripts/ie/css3-mediaqueries.min.js"></script>
+		<script src="layout/scripts/ie/html5shiv.min.js"></script>
+	<![endif]-->
 </head>
 
-<body>
+<body class="">
 
-<div class="container">
-	<div id="header">
-		<div id="contact_details">
-<!--
-			<p><a href="#">support@yoursite.com</a></p>
-			<p><a href="#">phone : 555-534-231</a></p>
--->
-		</div><!--end contact details-->
-	</div><!--end header-->
+<div class="wrapper row1">
+	<header id="header" class="full_width clear">
+		<hgroup>
+			<h1><a href="index.html">Project Wolframe</a></h1>
+			<h2>One Server to Run Them All</h2>
+		</hgroup>
+		<div id="header-contact">
+			<ul class="list none">
+				<li><span class="icon-envelope"></span> <a href="mailto:contact@wolframe.net">contact@wolframe.net</a></li>
+<!--				<li><span class="icon-phone"></span> +xx xxx xxxxxxxxxx</li> -->
+			</ul>
+		</div>
+	</header>
+</div>
 
-	<div style="clear:both"></div>
+<!-- ################################################################################################ -->
+<div class="wrapper row2">
+	<nav id="topnav">
+		<ul class="clear">
+			<li><a href="contact-build.html" title="Contact Us">Contact Us</a></li>
+		</ul>
+	</nav>
+</div>
 
-	<div id="main">
-		 <div id="content">
-			<div class="text"><h2>This website is under construction</h2></div>
-			<div class="counter">
-				<h3>Estimated Time Remaining Before Launch:</h3>
-				<div id="defaultCountdown"></div>
-			</div><!--end counter-->
-		</div><!--end content-->
-	</div><!--end main-->
-</div><!--end class container-->
+<!-- ################################################################################################ -->
+<!-- content -->
+<div class="wrapper row3">
+	<div id="container">
+		<div id="homepage" class="clear">
+			<div class="one_third first">
+				<h1>This page is still under construction</h1>
+				<h2>(But it will be here Real Soon Now&reg;)</h2>
+			</div>
+			<div class="two_third">
+				<img src="images/shipyard.jpg">
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+<!-- ################################################################################################ -->
+
+<!-- Footer -->
+<div class="wrapper row4">
+	<div id="copyright" class="clear">
+		<p class="fl_left">Copyright &copy; 2013 - <a href="#">Project Wolframe</a> - All Rights Reserved</p>
+		<p class="fl_right">Template by <a href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+	</div>
+</div>
+
+<!-- Scripts -->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.min.js"></script>
+<script>window.jQuery || document.write('<script src="layout/scripts/jquery-latest.min.js"><\/script>\
+<script src="layout/scripts/jquery-ui.min.js"><\/script>')</script>
+<script>jQuery(document).ready(function($){ $('img').removeAttr('width height'); });</script>
+<script src="layout/scripts/jquery-mobilemenu.min.js"></script>
+<script src="layout/scripts/custom.js"></script>
 
 </body>
-
 </html>

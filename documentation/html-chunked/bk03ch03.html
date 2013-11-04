@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Chapter 3. Functions</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe documentation" /><link rel="up" href="bk03.html" title="Building Wolframe Services" /><link rel="prev" href="bk03ch02.html" title="Chapter 2. Command Handler" /><link rel="next" href="bk03ch03s02.html" title="3.2. Functions in .NET" />
+	<title xmlns="">Project Wolframe</title>
+	<meta xmlns="" charset="iso-8859-1" />
+	<meta xmlns="" name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link xmlns="" rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+
+	<link xmlns="" href="/layout/styles/main.css" rel="stylesheet" type="text/css" media="all" />
+	<link xmlns="" href="/layout/styles/mediaqueries.css" rel="stylesheet" type="text/css" media="all" />
+
+	<!--[if lt IE 9]>
+		<link href="/layout/styles/ie/ie8.css" rel="stylesheet" type="text/css" media="all">
+		<script src="/layout/scripts/ie/css3-mediaqueries.min.js"></script>
+		<script src="/layout/scripts/ie/html5shiv.min.js"></script>
+	<![endif]-->
+	
+</head><body>
+
+<div xmlns="" class="wrapper row1">
+	<header id="header" class="full_width clear">
+		<hgroup>
+			<h1><a href="/index.html">Project Wolframe</a></h1>
+			<h2>Free Responsive Template</h2>
+		</hgroup>
+		<div id="header-contact">
+			<ul class="list none">
+				<li><span class="icon-envelope"></span> <a href="mailto:contact@wolframe.net">contact@wolframe.net</a></li>
+<!--				<li><span class="icon-phone"></span> +xx xxx xxxxxxxxxx</li> -->
+			</ul>
+		</div>
+	</header>
+</div>
+
+<!-- ################################################################################################ -->
+<div xmlns="" class="wrapper row2">
+	<nav id="topnav">
+		<ul class="clear">
+			<li><a href="/index.html" title="Home">Home</a></li>
+			<li><a href="/solutions.html" title="Solutions">Solutions</a></li>
+			<li><a href="/downloads.html" title="Downloads">Downloads</a></li>
+			<li class="active"><a href="/documentation.html" title="Documentation">Documentation</a></li>
+			<li><a class="drop" title="Support">Support</a>
+				<ul>
+					<li><a href="/404.html" title="404 page">404</a></li>
+					<li><a href="/faq.html" title="FAQ">FAQ</a></li>
+					<li class="last-child"><a href="http://www.google.com/?query=free%20mailing%20lists" title="Mailing lists">Mailing lists</a></li>
+				</ul>
+			</li>
+			<li class="last-child"><a href="/contact.html" title="Contact Us">Contact Us</a></li>
+		</ul>
+	</nav>
+</div>
+<!-- ################################################################################################ -->
+
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 3. Functions</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk03ch02.html">Prev</a> </td><th width="60%" align="center">Building Wolframe Services</th><td width="20%" align="right"> <a accesskey="n" href="bk03ch03s02.html">Next</a></td></tr></table><hr /></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="idp1403504428"></a>Chapter 3. Functions</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="bk03ch03.html#idp1403548756">3.1. Functions in Transaction Definition Language (TDL)</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk03ch03.html#idp1403549132">3.1.1. Introduction</a></span></dt><dt><span class="sect2"><a href="bk03ch03.html#idp1403584548">3.1.2. Examples</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk03ch03.html#idp1403584868">First Example</a></span></dt><dt><span class="sect3"><a href="bk03ch03.html#idp1403586828">Preprocessing Input</a></span></dt><dt><span class="sect3"><a href="bk03ch03.html#idp1403588452">Using Variables</a></span></dt><dt><span class="sect3"><a href="bk03ch03.html#idp1403590132">Subroutines</a></span></dt></dl></dd><dt><span class="sect2"><a href="bk03ch03.html#idp1403591740">3.1.3. Language Description</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk03ch03.html#idp1403592508">Subroutines</a></span></dt><dt><span class="sect3"><a href="bk03ch03.html#idp1403594628">Transaction Function Declarations</a></span></dt><dt><span class="sect3"><a href="bk03ch03.html#idp1403601484">Main Processing Instructions</a></span></dt><dt><span class="sect3"><a href="bk03ch03.html#idp1403609108">Preprocessing Instructions</a></span></dt><dt><span class="sect3"><a href="bk03ch03.html#idp1403614396">Selector Path</a></span></dt><dt><span class="sect3"><a href="bk03ch03.html#idp1403626380">Referencing Database Results</a></span></dt><dt><span class="sect3"><a href="bk03ch03.html#idp1403631708">Naming Database Results</a></span></dt><dt><span class="sect3"><a href="bk03ch03.html#idp1403634684">Referencing Subroutine Parameters</a></span></dt><dt><span class="sect3"><a href="bk03ch03.html#idp1403636844">Constraints on database results</a></span></dt><dt><span class="sect3"><a href="bk03ch03.html#idp1403641828">Rewriting Error Messages for the Client</a></span></dt><dt><span class="sect3"><a href="bk03ch03.html#idp1403646148">Substructures in the Result</a></span></dt><dt><span class="sect3"><a href="bk03ch03.html#idp1403648764">Explicit Definition of Elements in the Result</a></span></dt></dl></dd></dl></dd><dt><span class="sect1"><a href="bk03ch03s02.html">3.2. Functions in .NET</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk03ch03s02.html#idp1403696156">3.2.1. Introduction</a></span></dt></dl></dd><dt><span class="sect1"><a href="bk03ch03s03.html">3.3. Functions in Python</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk03ch03s03.html#idp1403688284">3.3.1. Introduction</a></span></dt></dl></dd><dt><span class="sect1"><a href="bk03ch03s04.html">3.4. Functions in Lua</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk03ch03s04.html#idp1403694436">3.4.1. Introduction</a></span></dt><dt><span class="sect2"><a href="bk03ch03s04.html#idp1403748124">3.4.2. Declaring Functions</a></span></dt><dt><span class="sect2"><a href="bk03ch03s04.html#idp1403750452">3.4.3. Wolframe Provider Library</a></span></dt><dt><span class="sect2"><a href="bk03ch03s04.html#idp1403754524">3.4.4. Wolframe Global Objects</a></span></dt><dt><span class="sect2"><a href="bk03ch03s04.html#idp1403757564">3.4.5. Using Forms</a></span></dt><dt><span class="sect2"><a href="bk03ch03s04.html#idp1403764684">3.4.6. Form Functions</a></span></dt><dt><span class="sect2"><a href="bk03ch03s04.html#idp1403769684">3.4.7. List of <span class="application">Lua</span> Objects</a></span></dt></dl></dd><dt><span class="sect1"><a href="bk03ch03s05.html">3.5. DDL Data Types</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk03ch03s05.html#idp1403832236">3.5.1. Introduction</a></span></dt><dt><span class="sect2"><a href="bk03ch03s05.html#idp1403821140">3.5.2. Example</a></span></dt><dt><span class="sect2"><a href="bk03ch03s05.html#idp1403865196">3.5.3. Language Description</a></span></dt><dt><span class="sect2"><a href="bk03ch03s05.html#idp1403867812">3.5.4. Configuration</a></span></dt></dl></dd><dt><span class="sect1"><a href="bk03ch03s06.html">3.6. Functions in C++</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk03ch03s06.html#idp1403829780">3.6.1. Introduction</a></span></dt><dt><span class="sect2"><a href="bk03ch03s06.html#idp1403857204">3.6.2. Declaring Functions</a></span></dt><dt><span class="sect2"><a href="bk03ch03s06.html#idp1403826132">3.6.3. Input/Output Data Structures</a></span></dt></dl></dd></dl></div><p>This chapter describes how functions are linked to the logic tier. It introduces a language to write
+database transaction functions and a language to describe atomic data type normalizations and gives an overview
+on the language bindings available for Wolframe.
+</p><p>
+After reading this chapter you should be able to write functions of the <span class="application">Wolframe</span> logic tier on your own.
+</p><p>
+Be aware that you have to configure a programming language of the logic tier in <span class="application">Wolframe</span>
+before using it. Each chapter introducing a programming language will have a section that describes how the server
+configuration of <span class="application">Wolframe</span> has to be extended for its availability.
+</p><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1403548756"></a>3.1. Functions in Transaction Definition Language (TDL)</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1403549132"></a>3.1.1. Introduction</h3></div></div></div><p>
+			For the description of transactions <span class="application">Wolframe</span> provides the
+			transaction definition language (<acronym class="acronym">TDL</acronym>) introduced here.
+			<span class="application">Wolframe</span> transactions in <acronym class="acronym">TDL</acronym> are defined as functions in a
+			transactional context. This means that whatever is executed in a transaction function
+			belongs by default to a database transaction with an automatic commit on function completion
+			if not explicitly defined otherwise by the caller. Errors lead to an automatic abort
+			of the database transaction.
+		</p><p>
+			A <acronym class="acronym">TDL</acronym> transaction function takes a structure as input
+			and returns a structure as output.
+			The <span class="application">Wolframe</span> database interface defines 
+			a transaction as context where the input is passed as a structure 
+			and the output is fetched from it as a structure.
+		</p><p>
+			TDL is a language to describe the building of transaction 
+			input and the building of the result structure from the database output.
+			It defines a transaction as a sequence of instructions on multiple data.
+			An instruction is either described as a single embedded database command
+			in the language of the underlying database, a name of a function declared
+			in the database (e.g. a PLSQL function) or a TDL subroutine call
+			working on multiple data.
+		</p><p>
+			Working on multiple data means that the instruction is executed
+			for every item of an input set. This set can consist of the set of
+			results of a previous instruction or a selection of the
+			input of the transaction function. A "for each" selector
+			defines the input set as part of the instruction.
+		</p><p>
+			Each instruction result can be declared as being part of the transaction
+			result structure. The language has no control structures and is 
+			therefore not a general purpose programming language.
+			It just offers some mapping of the input to commands and from the command 
+			results back to the output.
+		</p><p>
+			To convert input data the transaction definition language 
+			defines a preprocessing section where globally defined Wolframe
+			functions can be called for the selected input. To build an output 
+			structure that cannot be modeled with a language without control
+			structures and recursion, TDL provides the possibility to call a
+			globally defined function as filter for postprocessing of the
+			result of the transaction function.
+		</p><p>
+			The TDL is case insensitive. For clearness and better readability
+			TDL keywords are written in uppercase here.
+		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1403584548"></a>3.1.2. Examples</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403584868"></a>First Example</h4></div></div></div><p>Our first example selects a key from a table and inserts it into a list. The substitute "$1" refers to the first column of the query result "SELECT id FROM UserTable ..". The substitute "$(name)" in the first statement refers to the toplevel element 'name' of the input. In the second statement it refers to the "name" element of the "item" selection in the query, e.g. for each element with the path "/item/name" (name being unique per item and item describing a set of items).
+		</p><pre class="programlisting">
+		
+TRANSACTION insertItem
+BEGIN
+    INTO user
+        DO UNIQUE NONEMPTY SELECT id FROM UserTable
+            WHERE name = $(name);
+    FOREACH item
+        DO INSERT INTO ItemTable (ownerid,name)
+            VALUES ($RESULT.id,$(name));
+END
+
+		</pre><p>
+		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403586828"></a>Preprocessing Input</h4></div></div></div><p>This example selects identifiers 'id' of all users matched by their normalized name. The normalization of the name is done in a preprocessing step.
+		</p><pre class="programlisting">
+		
+TRANSACTION selectPersonId
+PREPROCESS BEGIN
+    FOREACH person INTO normalizedName
+        DO normalize_diachars( name );
+END
+BEGIN
+    FOREACH person INTO user
+        DO UNIQUE NONEMPTY
+            SELECT id FROM UserTable
+                WHERE name = $(normalizedName);
+END
+
+
+		</pre><p>
+		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403588452"></a>Using Variables</h4></div></div></div><p>This example returns the 'id' of a country matched by their normalized name.
+		The normalization of country names is done in a preprocessing step. 
+		The result is printed into a structure 'country/code'.
+		</p><pre class="programlisting">
+		
+TRANSACTION selectCountry
+PREPROCESS BEGIN
+    INTO country/normalizedName DO normalize_diachars( country/name );
+END
+BEGIN
+    DO UNIQUE NONEMPTY SELECT id FROM CountryTable
+        WHERE name = $(country/normalizedName);
+    KEEP AS COUNTRY;
+        -- assigning the result with column name
+        --   'id' to the variable 'countrycode'
+    RESULT INTO country
+        -- building a result block with name 'country'
+    BEGIN
+        INTO code PRINT $COUNTRY.id;
+        -- printing the variable 'countrycode' with tag 'code'
+        --   into the 'country' result block
+    END
+END
+
+
+		</pre><p>
+		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403590132"></a>Subroutines</h4></div></div></div><p>This example calls a subroutine with one argument to map the output.
+		</p><pre class="programlisting">
+		
+SUBROUTINE selectFamilyMembers( id)
+BEGIN
+    INTO member
+        DO SELECT surname,prename FROM PersonTable
+            WHERE id = $PARAM.id;
+END
+
+TRANSACTION getFamilyMembers
+BEGIN
+    FOREACH person INTO . DO selectFamilyMembers( id);
+END
+
+
+		</pre><p>
+		</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1403591740"></a>3.1.3. Language Description</h3></div></div></div><p>
+		A TDL program consists of subroutine declarations and exported
+		transaction function declarations. Subroutines have the same
+		structure as transaction function blocks but without pre- and postprocessing
+		and authorization method declarations.
+		</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403592508"></a>Subroutines</h4></div></div></div><p>A subroutine declaration starts with the Keyword <code class="code">SUBROUTINE</code>
+			followed by the subroutine name. After this header and an optional 
+			result substructure name declaration, the code definition block
+			follows starting with <code class="code">BEGIN</code>, ending with <code class="code">END</code>.
+			</p><pre class="programlisting">
+			SUBROUTINE &lt;name&gt;
+			RESULT INTO &lt;result-block-name&gt;
+			BEGIN
+				...&lt;instructions&gt;...
+			END
+			</pre><p>
+			The line with the RESULT INTO declaration is optional.
+			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403594628"></a>Transaction Function Declarations</h4></div></div></div><p>A transaction function declaration starts with the Keyword <code class="code">TRANSACTION</code>
+			followed by the name of the transaction function. This name identifies the
+			function globally. The body of the function contains the following parts:
+			</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><code class="code">AUTHORIZE ( &lt;auth-function&gt;, &lt;auth-resource&gt; )</code><p>
+						This optional definition is dealing with 
+						authorization and access rights.
+					</p></li><li class="listitem"><code class="code">RESULT INTO &lt;result-block-name&gt; FILTER &lt;post-filter-name&gt;</code><p>
+						This optional declaration defines a top level tag for the 
+						result structure and optionally a postprocessing step as
+						filter referenced by name.
+						It is similar as the construct in the subroutine description
+						except that one cannot specify a postprocessing filter
+						in a subroutine.
+					</p></li><li class="listitem"><code class="code">PREPROCESS BEGIN &lt;...preprocessing instructions...&gt; END</code><p>
+						This optional block contains instructions on the transaction
+						function input. The result of these preprocessing instructions are
+						put into the input structure, so that they can be referred to in the main
+						code definition block of the transaction.
+						We can call any global normalization or form function in the 
+						preprocessing block to enrich or transform the input to process.
+					</p></li><li class="listitem"><code class="code">BEGIN &lt;...instructions...&gt; END</code><p>
+					The main processing block starts with <code class="code">BEGIN</code> and
+					ends with <code class="code">END</code>. It contains all the database instructions
+					needed for completing this transaction.
+					</p></li></ul></div><p>
+			The following pseudo code snippet shows the explained building
+			blocks together:
+			</p><pre class="programlisting">
+	
+			TRANSACTION &lt;name&gt;
+			AUTHORIZE ( &lt;auth-function&gt;, &lt;auth-resource&gt; )
+			RESULT INTO &lt;result-block-name&gt; FILTER &lt;post-filter-name&gt;
+			PREPROCESS BEGIN
+				...&lt;preprocessing instructions&gt;...
+			END
+			BEGIN
+				...&lt;instructions&gt;...
+			END
+			</pre><p>
+			The lines with AUTHORIZE and RESULT INTO and FILTER declarations are optional.
+			So is the preprocessing block PREPROCESS..BEGIN..END. A simpler transaction
+			function looks like the following:
+			</p><pre class="programlisting">
+	
+			TRANSACTION &lt;name&gt;
+			BEGIN
+				...&lt;instructions&gt;...
+			END
+			</pre><p>
+			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403601484"></a>Main Processing Instructions</h4></div></div></div><p>Main processing instructions defined in the main execution block 
+			of a subroutine or transaction function consist of three parts in the
+			following order terminated by a semicolon ';' (the order of the 
+			INTO and FOREACH expression can be switched):
+			</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><code class="code">INTO &lt;result substructure name&gt;</code><p>
+						This optional directive specifies if and where the results
+						of the database commands should be put into as part of the
+						function output. In subroutines this substructure is
+						relative to the current substructure addressed in the
+						callers context.
+						For example a subroutine with an "INTO myres"
+						directive called by a subroutine with an "INTO output"
+						directive will write its result into a substructure with path
+						"output/myres".
+					</p></li><li class="listitem"><code class="code">FOREACH &lt;selector&gt;</code><p>
+						This optional directive defines the set of 
+						elements on which the instruction is executed one by one.
+						Specifying a set of two elements will cause the function to
+						be called twice. An empty set as selection will
+						cause the instruction to be ignored. Without
+						quantifier the database command or subroutine call
+						of the instruction will be always be executed once.
+					</p><p>
+						The argument of the FOREACH expression is either
+						a reference to the result of a previous 
+						instruction or a path selecting a set of input
+						elements.
+					</p><p>
+						Results of previous instructions are referenced either with
+						the keyword RESULT referring to the result set
+						of the previous command or with a variable
+						naming a result set declared with this name before.
+						
+					</p>
+						Input elements are selected by path relative
+						to the path currently selected, starting from
+						the input root element when entering a transaction
+						function. The current path selected and the base
+						element of any relative path calculated in this scope
+						changes when a subroutine is called in a FOREACH selection
+						context. For example calling a subroutine in a
+						'FOREACH person' context will cause
+						relative paths in this subroutine to be sub elements
+						of 'person'.
+					<p>
+					</p></li><li class="listitem"><code class="code">DO &lt;command&gt;</code><p>
+						Commands in an instruction are either embedded
+						database commands, named database functions (e.g. PLSQL functions)
+						or subroutine calls. Command arguments
+						are either constants or relative paths 
+						from the selector path in the FOREACH selection
+						or referring to elements in the result of 
+						a previous command.
+						If an argument is a relative path from the 
+						selector context, its reference
+						has to be unique in the context of the 
+						element selected by the selector.
+						If an argument references a previous command
+						result it must either be unique or dependent
+						an the FOREACH argument. 
+						Results that are sets with more than one element
+						can only be referenced if they are bound to 
+						the FOREACH quantifier.
+					</p></li></ul></div><p>
+			</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1403607396"></a>Main Processing Example</h5></div></div></div><p>The following example illustrate how the FOREACH,INTO,DO
+				expressions in the main processing block work together:
+				</p><pre class="programlisting">
+				
+TRANSACTION insertCustomerAddresses
+BEGIN
+    DO SELECT id FROM Customer
+        WHERE name = $(customer/name);
+    FOREACH /customer/address
+        DO INSERT INTO Address (id,address)
+        VALUES ($RESULT.id, $(address));
+END
+
+				</pre><p>
+				</p></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403609108"></a>Preprocessing Instructions</h4></div></div></div><p>Preprocessing instructions defined in the PREPROCESS execution block 
+			of a transaction function consist similar to the instructions
+			in the main execution block of three parts in the
+			following order terminated by a semicolon ';' (the order of the INTO and FOREACH expression can be
+			switched):
+		</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><code class="code">INTO &lt;result substructure name&gt;</code><p>
+					This optional directive specifies if and where the results
+					of the preprocessing commands should be put into as part
+					of the input to be processed by the main processing
+					instructions. The relative paths of the destination structure
+					are calculated relative to a FOREACH selection element.
+				</p></li><li class="listitem"><code class="code">FOREACH &lt;selector&gt;</code><p>
+					This optional directive defines the set of 
+					elements on which the instruction is executed one by one.
+					The preprocessing command is executed once for each 
+					element in the selected set and it will not be executed 
+					at all if the selected set is empty.
+				</p></li><li class="listitem"><code class="code">DO &lt;command&gt;</code><p>
+					Commands in an instruction are function calls to
+					globally defined form functions or normalization
+					functions. Command arguments
+					are constants or relative paths from the selector
+					path in the FOREACH selection. They are uniquely
+					referencing elements in the context of a selected element.
+				</p></li></ul></div><p>
+		</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1403612724"></a>Preprocessing Example</h5></div></div></div><p>The following example illustrate how the "FOREACH, INTO, DO"
+				expressions in the main processing block work together:
+				</p><pre class="programlisting">
+				
+TRANSACTION insertPersonTerms
+PREPROCESS BEGIN
+    FOREACH //address/* INTO normalized
+        DO normalizeStructureElements(.);
+    FOREACH //id INTO normalized
+        DO normalizeNumber(.);
+END
+BEGIN
+    DO UNIQUE SELECT id FROM Person
+        WHERE name = $(person/name);
+    FOREACH //normalized DO
+        INSERT INTO SearchTerm (id, value)
+        VALUES ($RESULT.id, $(.));
+END
+
+				</pre><p>
+				</p></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403614396"></a>Selector Path</h4></div></div></div><p>An element of the input or a set of input elements can be selected by a path.
+			A path is a sequence of one of the following elements separated by slashes:
+			</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem">Identifier
+				<p>
+				An identifier uniquely selects a sub element of the current position in the tree.
+				</p></li><li class="listitem"><code class="code">*</code><p>
+				An asterisk selects any sub element of the current position in the tree.
+				</p></li><li class="listitem"><code class="code">..</code><p>
+				Two dots in a row select the parent element of the current position in the tree.
+				</p></li><li class="listitem"><code class="code">.</code><p>
+				One dots selects the current element in the tree.
+				This operator can also be useful as part of a path
+				to force the expression to be interpreted
+				as path if it could also be interpreted as a keyword of the 
+				TDL language (for example <code class="code">./RESULT</code>).
+				</p></li></ul></div><p>
+			A slash at the beginning of a path selects the root element of the transaction function input tree.
+			Two subsequent slashes express that the following node is (transitively) any descendant of the
+			current node in the tree.
+		</p><p>
+			Paths can appear as argument of a FOREACH selector where they specify
+			the set of elements on which the attached command is executed on.
+			Or they can appear as reference to an argument in a command expression
+			where they specify uniquely one element that is passed as argument 
+			to the command when it is executed.
+		</p><p>
+			When used in embedded database statements, selector paths are referenced
+			with <code class="code">$(&lt;path expression&gt;)</code>. When used as database
+			function or subroutine call arguments path expressions can be used in
+			plain without '$' and '(' ')' markers. These markers are just used to 
+			identify substitution entities.
+		</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1403619436"></a>Path Expression Examples</h5></div></div></div><p>The following list shows different ways of addressing an element by path:
+				</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><code class="code">/</code><p>Root element</p></li><li class="listitem"><code class="code">/organization</code><p>Root element with name "organization"</p></li><li class="listitem"><code class="code">/organization/address/city</code><p>Element "city" of root "organization" descendant "address"</p></li><li class="listitem"><code class="code">.//id</code><p>Any descendant element with name "id" of the current element</p></li><li class="listitem"><code class="code">//person/id</code><p>Child with name "id" of any descendant "person" of the root element</p></li><li class="listitem"><code class="code">//id</code><p>Any descendant element with name "id" of the root element</p></li><li class="listitem"><code class="code">/address/*</code><p>Any direct descendant of the root element "address"</p></li><li class="listitem"><code class="code">.</code><p>Currently selected element</p></li></ul></div><p>
+				</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1403624716"></a>Path Usage Example</h5></div></div></div><p>This example shows the usage of path expression in the
+			preprocessing and the main processing part of a transaction function:
+			</p><pre class="programlisting">
+			
+TRANSACTION selectPerson
+PREPROCESS BEGIN
+    FOREACH /person/name INTO normalized DO normalizeName( . );
+    FOREACH /person INTO citycode DO getCityCode( city );
+END
+BEGIN
+    FOREACH person
+        DO INSERT INTO Person (Name,NormalizedName,CityCode)
+            VALUES ($(name),$(name/normalized),$(citycode));
+END
+
+
+			</pre><p>
+			</p></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403626380"></a>Referencing Database Results</h4></div></div></div><p>Database results of the previous instruction are referenced 
+			with a '$RESULT.' followed by the column identifier or column number.
+			Column numbers start always from 1, independent from the database!
+			So be aware that even if the database counts column from 0 you have
+			to use 1 for the first column. 
+			</p><p>
+			As already explained before, database result sets of cardinality 
+			bigger than one cannot be addressed if not bound to a FOREACH
+			selection. In statements potentially addressing more than one 
+			result element you have to add a <code class="code">FOREACH RESULT</code> quantifier.
+			</p><p>
+			For addressing results of instructions preceding the previous instruction,
+			you have to name them (see next section). The name of the result can then
+			be used as FOREACH argument to select the elements of a set to be
+			used as base for the command arguments of the instruction. Without
+			binding instruction commands with a FOREACH quantifier the named 
+			results of an instruction can be referenced as
+			<code class="code">$&lt;name&gt;.&lt;columnref&gt;</code>,
+			for example as <code class="code">$person.id</code> for the column with name 'id' of the
+			result named as 'person'.
+			</p><p>
+			The 'RESULT.' prefix in references to the previous instruction result
+			is a default and can be omitted in instructions that are not 
+			explicitly bound to any other result than the last one. So the following
+			two instructions are equivalent:
+			</p><pre class="programlisting">
+				DO SELECT name FROM Company WHERE id = $RESULT.id
+				DO SELECT name FROM Company WHERE id = $id
+			</pre><p>
+			and so are the following two instructions:
+			</p><pre class="programlisting">
+				FOREACH RESULT DO SELECT name FROM Company WHERE id = $RESULT.id
+				FOREACH RESULT DO SELECT name FROM Company WHERE id = $id
+			</pre><p>
+			</p><p>
+			The result name prefix of any named result can also be omitted if the
+			instruction is bound to a FOREACH selector naming the result. So the 
+			following two statements in the context of an existing database
+			result named "ATTRIBUTES" are equivalent:
+			</p><pre class="programlisting">
+				FOREACH ATTRIBUTES DO SELECT name FROM Company WHERE id = $ATTRIBUTES.id
+				FOREACH ATTRIBUTES DO SELECT name FROM Company WHERE id = $id
+			</pre><p>
+			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403631708"></a>Naming Database Results</h4></div></div></div><p>Database results can be hold and made referenceable by name
+				with the declaration <code class="code">KEEP AS &lt;resultname&gt;</code>
+				following immediately the instruction with the result to be referenced.
+				The identifier &lt;resultname&gt; references the
+				result in a variable reference or a FOREACH selector expression.
+				</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1403633132"></a>Named Result Example</h5></div></div></div><p>This example illustrates how a result is declared by name and referenced:
+				</p><pre class="programlisting">
+TRANSACTION selectDevices
+BEGIN
+    SELECT id FROM DevIdMap WHERE name = $(device/name);
+    KEEP AS dev;
+    FOREACH dev SELECT key,name,registration FROM Devices WHERE sid=$id;
+END
+
+
+				</pre><p>
+				</p></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403634684"></a>Referencing Subroutine Parameters</h4></div></div></div><p>
+				Subroutine Parameters are addressed like results but with
+				the prefix <code class="code">PARAM.</code> instead of <code class="code">RESULT.</code>
+				or a named result prefix. "PARAM." is reserved for parameters.
+				The first instruction without FOREACH quantifier can reference
+				the parameters without prefix by name.
+				</p><pre class="programlisting">SUBROUTINE selectDevice( id)
+BEGIN
+	INTO device
+		DO SELECT name FROM DevIdMap
+			WHERE id = $PARAM.id;
+END
+
+TRANSACTION selectDevices
+BEGIN
+	DO selectDevice( id );
+END
+
+				</pre><p>
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403636844"></a>Constraints on database results</h4></div></div></div><p>Database commands returning results can have constraints to catch
+			certain errors that would not be recognized at all or too late otherwise.
+			For example a transaction having a result of a previous command as argument
+			would not be executed if the result of the previous command is empty.
+			Nevertheless the overall transaction would succeed because no database
+			error occurring during execution of the commands defined for the 
+			transaction.
+			</p><p>
+			Constraints on database results are expressed as keywords following
+			the DO keyword of an instruction in the main processing section.
+			</p><p>
+			The following list explains the result constraints available:
+			</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><code class="code">NONEMPTY</code><p>Declares that the database result for each element of the input
+					must not be empty.</p></li><li class="listitem"><code class="code">UNIQUE</code><p>Declares that the database result for each element of the input 
+					must be unique, if it exists.
+					Result sets with more than one element are refused 
+					but empty sets are accepted. If you
+					want to declare each result to have to exist, 
+					you have to put the double constraint
+					"UNIQUE NONEMPTY" or "NONEMPTY UNIQUE".</p></li></ul></div><p>
+			</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1403640132"></a>Example with Result Constraints</h5></div></div></div><p>
+				This example illustrates how to add result constraint for
+				database commands returning results:
+				</p><pre class="programlisting">
+				
+TRANSACTION selectCustomerAddress
+BEGIN
+    DO NONEMPTY UNIQUE SELECT id FROM Customer
+        WHERE name = $(customer/name);
+    INTO address DO NONEMPTY SELECT street,city,country
+        FROM Address WHERE id = $id;
+END
+
+
+				</pre><p>
+				</p></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403641828"></a>Rewriting Error Messages for the Client</h4></div></div></div><p>Sometimes internal error messages are confusing and are not helpful
+			to the user that does not have a deeper knowledge about the database
+			internals. For a set of error types it is possible to add a message
+			to be shown to the user if an error of a certain class happens.
+			The instruction <code class="code">ON ERROR &lt;errorclass&gt; HINT &lt;message&gt;;</code>
+			following a database instruction catches the errors of class &lt;errorclass&gt;
+			and add the string &lt;message&gt; to the error message show to the user.
+			</p><p>We can have many subsequent ON ERROR definitions in a row if the
+			error classes to be caught are various.
+			</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1403643572"></a>Database Error HINT Example</h5></div></div></div><p>The following example shows the usage HINTs in error cases. It
+			catches errors that are constraint violations (error class CONSTRAINT)
+			and extends the error message with a hint that will be shown to the client as error message:
+			</p><pre class="programlisting">
+			
+TRANSACTION insertCustomer
+BEGIN
+    DO INSERT INTO Customer (name) VALUES ($(name));
+    ON ERROR CONSTRAINT HINT ". Customers must have a unique name.";
+END
+
+			</pre><p>
+			</p><p>
+			On the client side the following message will be shown:
+			</p><pre class="programlisting">unique constaint validation in transaction 'insertCustomer'. Customers must have a unique name.
+			</pre><p>
+			</p></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403646148"></a>Substructures in the Result</h4></div></div></div><p>We already learned how to define substructures of the 
+			transaction function result with
+			the <code class="code">RESULT INTO</code> directive of an OPERATION or 
+			TRANSACTION. But <code class="code">RESULT INTO</code> blocks can also be
+			defined locally as sub blocks in the main processing block.
+			A sub-block in the result is declared with 
+			</p><pre class="programlisting">
+
+				RESULT INTO &lt;resulttag&gt;
+				BEGIN
+					...&lt;instruction list&gt;...
+				END
+			</pre><p>
+			All the results of the instruction list that get into the final result
+			will be attached to the substructure with name &lt;resulttag&gt;.
+			The nesting of result blocks can be arbitrary and the path of the 
+			elements in the result follows the scope of the sub-blocks.
+			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403648764"></a>Explicit Definition of Elements in the Result</h4></div></div></div><p>The result of a transaction consists normally of database command 
+			results that are mapped into the result with the attached INTO directive.
+			For printing variable values or constant values you can in certain
+			SQL databases use a select constant statement without specifying a table.
+			Unfortunately select of constants might not be supported in your 
+			database of choice. Besides that explicit printing seems to be much
+			more readable. The statement <code class="code">INTO &lt;resulttag&gt; PRINT &lt;value&gt;;</code>
+			prints a value that can be a constant, variable or an input or result reference
+			into the substructure named &lt;resulttag&gt;. The following artificial 
+			example illustrates this.
+			</p><pre class="programlisting">
+			
+TRANSACTION doPrintX
+RESULT INTO person
+BEGIN
+    INTO name PRINT 'jussi';
+    INTO id PRINT '1';
+END
+
+			</pre><p>
+			</p></div></div></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk03ch02.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk03.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk03ch03s02.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter 2. Command Handler </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 3.2. Functions in .NET</td></tr></table></div></div></div>
+	
+<!-- Footer -->
+<div xmlns="" class="wrapper row2">
+	<div id="footer" class="clear">
+		<div class="one_quarter first">
+			<h2 class="footer_title">Solutions</h2>
+			<nav class="footer_nav">
+				<ul class="nospace">
+					<li><a href="#">Simple CRM</a></li>
+					<li><a href="#">Bug reporting tool</a></li>
+					<li><a href="#">Message broker</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="one_quarter">
+			<h2 class="footer_title">Documentation</h2>
+			<nav class="footer_nav">
+				<ul class="nospace">
+					<li><a href="/documentation.html">User documentation</a></li>
+					<li><a href="/documentation.html">Developer documentation</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="one_quarter">
+			<h2 class="footer_title">Downloads</h2>
+			<nav class="footer_nav">
+				<ul class="nospace">
+					<li><a href="/downloads_wolframe.html">Wolframe server</a></li>
+					<li><a href="/downloads_wolfclient.html">Wolframe client</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="one_quarter">
+			<h2 class="footer_title">Contact Us</h2>
+			<p><strong>Email:</strong> <a href="mailto:contact@wolframe.net">contact@wolframe.net</a></p>
+		</div>
+  </div>
+</div>
+
+<div xmlns="" class="wrapper row4">
+	<div id="copyright" class="clear">
+		<p class="fl_left">Copyright © 2013 - <a href="#">Project Wolframe</a> - All Rights Reserved</p>
+		<p class="fl_right">Template by <a href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+	</div>
+</div>
+
+<!-- Scripts -->
+<script xmlns="" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script xmlns="" src="http://code.jquery.com/ui/1.10.1/jquery-ui.min.js"></script>
+<script xmlns="" src="layout/scripts/jquery-mobilemenu.min.js"></script>
+<script xmlns="" src="layout/scripts/custom.js"></script>
+
+</body></html>
