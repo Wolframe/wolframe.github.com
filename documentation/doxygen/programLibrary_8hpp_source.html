@@ -40,7 +40,9 @@
 	<nav id="topnav">
 		<ul class="clear">
 			<li><a href="/index.html" title="Home">Home</a></li>
+<!--
 			<li><a href="/solutions.html" title="Solutions">Solutions</a></li>
+-->
 			<li><a href="/downloads.html" title="Downloads">Downloads</a></li>
 			<li class="active"><a href="/documentation.html" title="Documentation">Documentation</a></li>
 			<li><a class="drop" title="Support">Support</a>
@@ -123,7 +125,7 @@
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="filter_8hpp.html">filter/filter.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="filterBuilder_8hpp.html">module/filterBuilder.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="database_8hpp.html">database/database.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="builtInFunction_8hpp.html">langbind/builtInFunction.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cppFormFunction_8hpp.html">langbind/cppFormFunction.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ddlCompilerInterface_8hpp.html">langbind/ddlCompilerInterface.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="form_8hpp.html">types/form.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="types_2normalizeFunction_8hpp.html">types/normalizeFunction.hpp</a>&quot;</span></div>
@@ -147,7 +149,7 @@
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="class__Wolframe_1_1prgbind_1_1ProgramLibrary.html#ae26a0dca29a72226ed5fe3fb94fb2939">ProgramLibrary</a>( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1prgbind_1_1ProgramLibrary.html">ProgramLibrary</a>&amp; o);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class__Wolframe_1_1prgbind_1_1ProgramLibrary.html#a5e4da495f2856569fbbfa23439595443">~ProgramLibrary</a>();</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class__Wolframe_1_1prgbind_1_1ProgramLibrary.html#a72f6918ac6581932baa5a82693998b1f">defineBuiltInFunction</a>( <span class="keyword">const</span> std::string&amp; name, <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1langbind_1_1BuiltInFunction.html">langbind::BuiltInFunction</a>&amp; f);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class__Wolframe_1_1prgbind_1_1ProgramLibrary.html#a4838eca16c80d18d27cb08b072939654">defineCppFormFunction</a>( <span class="keyword">const</span> std::string&amp; name, <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1langbind_1_1CppFormFunction.html">langbind::CppFormFunction</a>&amp; f);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class__Wolframe_1_1prgbind_1_1ProgramLibrary.html#ac083f8b8f19dcbcfc2ab2c7d4aab4bb4">defineFormFunction</a>( <span class="keyword">const</span> std::string&amp; name, <a class="code" href="class__Wolframe_1_1types_1_1CountedReference.html">langbind::FormFunctionR</a> f);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class__Wolframe_1_1prgbind_1_1ProgramLibrary.html#a4d8b1a31f1a4665fb61f969a9b60cb82">definePrivateForm</a>( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1types_1_1CountedReference.html">types::FormDescriptionR</a>&amp; f);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class__Wolframe_1_1prgbind_1_1ProgramLibrary.html#adbe67ae838f0ca26d43e17b93b0b396a">defineForm</a>( <span class="keyword">const</span> std::string&amp; name, <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1types_1_1CountedReference.html">types::FormDescriptionR</a>&amp; f);</div>
@@ -183,14 +185,15 @@
 <div class="ttc" id="class__Wolframe_1_1prgbind_1_1ProgramLibrary_html_ae092318df92aee7e16eb1d9320d770ec"><div class="ttname"><a href="class__Wolframe_1_1prgbind_1_1ProgramLibrary.html#ae092318df92aee7e16eb1d9320d770ec">_Wolframe::prgbind::ProgramLibrary::getNormalizeFunction</a></div><div class="ttdeci">virtual const types::NormalizeFunction * getNormalizeFunction(const std::string &amp;name) const </div></div>
 <div class="ttc" id="class__Wolframe_1_1prgbind_1_1ProgramLibrary_html_a024dc561592c97ee771c0fbdc7c9c86e"><div class="ttname"><a href="class__Wolframe_1_1prgbind_1_1ProgramLibrary.html#a024dc561592c97ee771c0fbdc7c9c86e">_Wolframe::prgbind::ProgramLibrary::defineFilterConstructor</a></div><div class="ttdeci">virtual void defineFilterConstructor(const module::FilterConstructorR &amp;f)</div></div>
 <div class="ttc" id="struct__Wolframe_1_1types_1_1keymap_html"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keymap.html">_Wolframe::types::keymap</a></div><div class="ttdef"><b>Definition:</b> keymap.hpp:60</div></div>
+<div class="ttc" id="cppFormFunction_8hpp_html"><div class="ttname"><a href="cppFormFunction_8hpp.html">cppFormFunction.hpp</a></div><div class="ttdoc">Interface to the built-in function for processor language bindings. </div></div>
 <div class="ttc" id="class__Wolframe_1_1prgbind_1_1ProgramLibrary_html_a51ed28b5f186933ab3f2216ce130fa35"><div class="ttname"><a href="class__Wolframe_1_1prgbind_1_1ProgramLibrary.html#a51ed28b5f186933ab3f2216ce130fa35">_Wolframe::prgbind::ProgramLibrary::existsFilter</a></div><div class="ttdeci">virtual bool existsFilter(const std::string &amp;name) const </div></div>
 <div class="ttc" id="class__Wolframe_1_1prgbind_1_1ProgramLibrary_html_a32f9883cc1bf0d6d4b73d50bb1a8affa"><div class="ttname"><a href="class__Wolframe_1_1prgbind_1_1ProgramLibrary.html#a32f9883cc1bf0d6d4b73d50bb1a8affa">_Wolframe::prgbind::ProgramLibrary::defineNormalizeFunction</a></div><div class="ttdeci">virtual void defineNormalizeFunction(const std::string &amp;name, const types::NormalizeFunctionR &amp;f) const </div></div>
+<div class="ttc" id="class__Wolframe_1_1langbind_1_1CppFormFunction_html"><div class="ttname"><a href="class__Wolframe_1_1langbind_1_1CppFormFunction.html">_Wolframe::langbind::CppFormFunction</a></div><div class="ttdoc">Function of language bindings implemented in C++ with a form as argument and as result. The forms are defined by a serialization description. </div><div class="ttdef"><b>Definition:</b> cppFormFunction.hpp:43</div></div>
 <div class="ttc" id="class__Wolframe_1_1prgbind_1_1ProgramLibrary_html_adbe67ae838f0ca26d43e17b93b0b396a"><div class="ttname"><a href="class__Wolframe_1_1prgbind_1_1ProgramLibrary.html#adbe67ae838f0ca26d43e17b93b0b396a">_Wolframe::prgbind::ProgramLibrary::defineForm</a></div><div class="ttdeci">virtual void defineForm(const std::string &amp;name, const types::FormDescriptionR &amp;f)</div></div>
 <div class="ttc" id="printFunctionBuilder_8hpp_html"><div class="ttname"><a href="printFunctionBuilder_8hpp.html">printFunctionBuilder.hpp</a></div><div class="ttdoc">Interface template for object builder of print functions from a layout description. </div></div>
 <div class="ttc" id="printFunction_8hpp_html"><div class="ttname"><a href="printFunction_8hpp.html">printFunction.hpp</a></div><div class="ttdoc">Defines the interface for printing structures to a string of printable format (e.g. PDF) </div></div>
 <div class="ttc" id="namespace__Wolframe_1_1module_html_a8f87f78093d4e5f240da5ffffc759860"><div class="ttname"><a href="namespace__Wolframe_1_1module.html#a8f87f78093d4e5f240da5ffffc759860">_Wolframe::module::PrintFunctionConstructorR</a></div><div class="ttdeci">boost::shared_ptr&lt; module::PrintFunctionConstructor &gt; PrintFunctionConstructorR</div><div class="ttdef"><b>Definition:</b> printFunctionBuilder.hpp:86</div></div>
 <div class="ttc" id="class__Wolframe_1_1prgbind_1_1ProgramLibrary_html_a47ad7a29c1062769163e10fdefa9c088"><div class="ttname"><a href="class__Wolframe_1_1prgbind_1_1ProgramLibrary.html#a47ad7a29c1062769163e10fdefa9c088">_Wolframe::prgbind::ProgramLibrary::formtypemap</a></div><div class="ttdeci">virtual const types::NormalizeFunctionMap * formtypemap() const </div></div>
-<div class="ttc" id="builtInFunction_8hpp_html"><div class="ttname"><a href="builtInFunction_8hpp.html">builtInFunction.hpp</a></div><div class="ttdoc">Interface to the built-in function for processor language bindings. </div></div>
 <div class="ttc" id="class__Wolframe_1_1prgbind_1_1ProgramLibrary_html_a3304ca708e363887c862987815cd860b"><div class="ttname"><a href="class__Wolframe_1_1prgbind_1_1ProgramLibrary.html#a3304ca708e363887c862987815cd860b">_Wolframe::prgbind::ProgramLibrary::definePrintLayoutType</a></div><div class="ttdeci">virtual void definePrintLayoutType(const module::PrintFunctionConstructorR &amp;f)</div></div>
 <div class="ttc" id="class__Wolframe_1_1prgbind_1_1ProgramLibrary_html_ad2059485c57c1625fc7ea0a1ff37d308"><div class="ttname"><a href="class__Wolframe_1_1prgbind_1_1ProgramLibrary.html#ad2059485c57c1625fc7ea0a1ff37d308">_Wolframe::prgbind::ProgramLibrary::getFormDescription</a></div><div class="ttdeci">virtual const types::FormDescription * getFormDescription(const std::string &amp;name) const </div></div>
 <div class="ttc" id="class__Wolframe_1_1prgbind_1_1ProgramLibrary_html_abea66f0c03695e987760ee4fb4b1e170"><div class="ttname"><a href="class__Wolframe_1_1prgbind_1_1ProgramLibrary.html#abea66f0c03695e987760ee4fb4b1e170">_Wolframe::prgbind::ProgramLibrary::createFilter</a></div><div class="ttdeci">virtual langbind::Filter * createFilter(const std::string &amp;name, const std::vector&lt; langbind::FilterArgument &gt; &amp;arg) const </div></div>
@@ -212,14 +215,13 @@
 <div class="ttc" id="filterBuilder_8hpp_html"><div class="ttname"><a href="filterBuilder_8hpp.html">filterBuilder.hpp</a></div><div class="ttdoc">Interface template for object builder of filters. </div></div>
 <div class="ttc" id="class__Wolframe_1_1types_1_1FormDescription_html"><div class="ttname"><a href="class__Wolframe_1_1types_1_1FormDescription.html">_Wolframe::types::FormDescription</a></div><div class="ttdef"><b>Definition:</b> form.hpp:50</div></div>
 <div class="ttc" id="database_8hpp_html"><div class="ttname"><a href="database_8hpp.html">database.hpp</a></div></div>
-<div class="ttc" id="class__Wolframe_1_1prgbind_1_1ProgramLibrary_html_a72f6918ac6581932baa5a82693998b1f"><div class="ttname"><a href="class__Wolframe_1_1prgbind_1_1ProgramLibrary.html#a72f6918ac6581932baa5a82693998b1f">_Wolframe::prgbind::ProgramLibrary::defineBuiltInFunction</a></div><div class="ttdeci">virtual void defineBuiltInFunction(const std::string &amp;name, const langbind::BuiltInFunction &amp;f)</div></div>
 <div class="ttc" id="class__Wolframe_1_1prgbind_1_1ProgramLibrary_html_aa5f36d16a988f898a60cc1bac13a8f3e"><div class="ttname"><a href="class__Wolframe_1_1prgbind_1_1ProgramLibrary.html#aa5f36d16a988f898a60cc1bac13a8f3e">_Wolframe::prgbind::ProgramLibrary::loadPrograms</a></div><div class="ttdeci">virtual void loadPrograms(db::Database *transactionDB, const std::list&lt; std::string &gt; &amp;filenames)</div></div>
 <div class="ttc" id="class__Wolframe_1_1prgbind_1_1ProgramLibrary_html"><div class="ttname"><a href="class__Wolframe_1_1prgbind_1_1ProgramLibrary.html">_Wolframe::prgbind::ProgramLibrary</a></div><div class="ttdef"><b>Definition:</b> programLibrary.hpp:58</div></div>
 <div class="ttc" id="struct__Wolframe_1_1types_1_1NormalizeFunctionMap_html"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1NormalizeFunctionMap.html">_Wolframe::types::NormalizeFunctionMap</a></div><div class="ttdef"><b>Definition:</b> normalizeFunction.hpp:54</div></div>
+<div class="ttc" id="class__Wolframe_1_1prgbind_1_1ProgramLibrary_html_a4838eca16c80d18d27cb08b072939654"><div class="ttname"><a href="class__Wolframe_1_1prgbind_1_1ProgramLibrary.html#a4838eca16c80d18d27cb08b072939654">_Wolframe::prgbind::ProgramLibrary::defineCppFormFunction</a></div><div class="ttdeci">virtual void defineCppFormFunction(const std::string &amp;name, const langbind::CppFormFunction &amp;f)</div></div>
 <div class="ttc" id="class__Wolframe_1_1prgbind_1_1ProgramLibrary_html_a5e4da495f2856569fbbfa23439595443"><div class="ttname"><a href="class__Wolframe_1_1prgbind_1_1ProgramLibrary.html#a5e4da495f2856569fbbfa23439595443">_Wolframe::prgbind::ProgramLibrary::~ProgramLibrary</a></div><div class="ttdeci">virtual ~ProgramLibrary()</div></div>
 <div class="ttc" id="class__Wolframe_1_1prgbind_1_1ProgramLibrary_html_ac083f8b8f19dcbcfc2ab2c7d4aab4bb4"><div class="ttname"><a href="class__Wolframe_1_1prgbind_1_1ProgramLibrary.html#ac083f8b8f19dcbcfc2ab2c7d4aab4bb4">_Wolframe::prgbind::ProgramLibrary::defineFormFunction</a></div><div class="ttdeci">virtual void defineFormFunction(const std::string &amp;name, langbind::FormFunctionR f)</div></div>
 <div class="ttc" id="normalizeFunctionBuilder_8hpp_html"><div class="ttname"><a href="normalizeFunctionBuilder_8hpp.html">normalizeFunctionBuilder.hpp</a></div><div class="ttdoc">Interface template for object builder of normalize functions from a description. </div></div>
-<div class="ttc" id="class__Wolframe_1_1langbind_1_1BuiltInFunction_html"><div class="ttname"><a href="class__Wolframe_1_1langbind_1_1BuiltInFunction.html">_Wolframe::langbind::BuiltInFunction</a></div><div class="ttdoc">Function of language bindings implemented in C++ with a form as argument and as result. The forms are defined by a serialization description. </div><div class="ttdef"><b>Definition:</b> builtInFunction.hpp:43</div></div>
 <div class="ttc" id="class__Wolframe_1_1types_1_1CountedReference_html"><div class="ttname"><a href="class__Wolframe_1_1types_1_1CountedReference.html">_Wolframe::types::CountedReference</a></div><div class="ttdoc">Multiple shared reference to an object with ownership. </div><div class="ttdef"><b>Definition:</b> countedReference.hpp:48</div></div>
 <div class="ttc" id="struct__Wolframe_1_1langbind_1_1FormFunction_html"><div class="ttname"><a href="struct__Wolframe_1_1langbind_1_1FormFunction.html">_Wolframe::langbind::FormFunction</a></div><div class="ttdef"><b>Definition:</b> formFunction.hpp:71</div></div>
 <div class="ttc" id="langbind_2normalizeFunction_8hpp_html"><div class="ttname"><a href="langbind_2normalizeFunction_8hpp.html">normalizeFunction.hpp</a></div><div class="ttdoc">Interface for normalize functions. </div></div>
@@ -229,7 +231,7 @@
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 6 2013 11:14:08 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 10 2013 17:20:50 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
@@ -239,6 +241,7 @@ Generated on Wed Nov 6 2013 11:14:08 for Wolframe by &#160;<a href="http://www.d
 <!-- Footer -->
 <div class="wrapper row2">
 	<div id="footer" class="clear">
+<!--
 		<div class="one_quarter first">
 			<h2 class="footer_title">Solutions</h2>
 			<nav class="footer_nav">
@@ -249,7 +252,8 @@ Generated on Wed Nov 6 2013 11:14:08 for Wolframe by &#160;<a href="http://www.d
 				</ul>
 			</nav>
 		</div>
-		<div class="one_quarter">
+-->
+		<div class="one_quarter first">
 			<h2 class="footer_title">Documentation</h2>
 			<nav class="footer_nav">
 				<ul class="nospace">

@@ -40,7 +40,9 @@
 	<nav id="topnav">
 		<ul class="clear">
 			<li><a href="/index.html" title="Home">Home</a></li>
+<!--
 			<li><a href="/solutions.html" title="Solutions">Solutions</a></li>
+-->
 			<li><a href="/downloads.html" title="Downloads">Downloads</a></li>
 			<li class="active"><a href="/documentation.html" title="Documentation">Documentation</a></li>
 			<li><a class="drop" title="Support">Support</a>
@@ -102,8 +104,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a55299352564fd336b80dbdb7ae390cc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e4da495f2856569fbbfa23439595443"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1prgbind_1_1ProgramLibrary.html#a5e4da495f2856569fbbfa23439595443">~ProgramLibrary</a> ()</td></tr>
 <tr class="separator:a5e4da495f2856569fbbfa23439595443"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72f6918ac6581932baa5a82693998b1f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1prgbind_1_1ProgramLibrary.html#a72f6918ac6581932baa5a82693998b1f">defineBuiltInFunction</a> (const std::string &amp;name, const <a class="el" href="class__Wolframe_1_1langbind_1_1BuiltInFunction.html">langbind::BuiltInFunction</a> &amp;f)</td></tr>
-<tr class="separator:a72f6918ac6581932baa5a82693998b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4838eca16c80d18d27cb08b072939654"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1prgbind_1_1ProgramLibrary.html#a4838eca16c80d18d27cb08b072939654">defineCppFormFunction</a> (const std::string &amp;name, const <a class="el" href="class__Wolframe_1_1langbind_1_1CppFormFunction.html">langbind::CppFormFunction</a> &amp;f)</td></tr>
+<tr class="separator:a4838eca16c80d18d27cb08b072939654"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac083f8b8f19dcbcfc2ab2c7d4aab4bb4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1prgbind_1_1ProgramLibrary.html#ac083f8b8f19dcbcfc2ab2c7d4aab4bb4">defineFormFunction</a> (const std::string &amp;name, <a class="el" href="namespace__Wolframe_1_1langbind.html#aa2be0f99433df2117335bf0c9e0a93b9">langbind::FormFunctionR</a> f)</td></tr>
 <tr class="separator:ac083f8b8f19dcbcfc2ab2c7d4aab4bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d8b1a31f1a4665fb61f969a9b60cb82"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1prgbind_1_1ProgramLibrary.html#a4d8b1a31f1a4665fb61f969a9b60cb82">definePrivateForm</a> (const <a class="el" href="namespace__Wolframe_1_1types.html#a0499d3d50c52af0348962afc9b02fcde">types::FormDescriptionR</a> &amp;f)</td></tr>
@@ -241,7 +243,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a72f6918ac6581932baa5a82693998b1f"></a>
+<a class="anchor" id="a4838eca16c80d18d27cb08b072939654"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -249,7 +251,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void _Wolframe::prgbind::ProgramLibrary::defineBuiltInFunction </td>
+          <td class="memname">virtual void _Wolframe::prgbind::ProgramLibrary::defineCppFormFunction </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>name</em>, </td>
@@ -257,7 +259,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class__Wolframe_1_1langbind_1_1BuiltInFunction.html">langbind::BuiltInFunction</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="class__Wolframe_1_1langbind_1_1CppFormFunction.html">langbind::CppFormFunction</a> &amp;&#160;</td>
           <td class="paramname"><em>f</em>&#160;</td>
         </tr>
         <tr>
@@ -748,7 +750,7 @@ Private Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 6 2013 11:14:24 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 10 2013 17:21:05 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
@@ -758,6 +760,7 @@ Generated on Wed Nov 6 2013 11:14:24 for Wolframe by &#160;<a href="http://www.d
 <!-- Footer -->
 <div class="wrapper row2">
 	<div id="footer" class="clear">
+<!--
 		<div class="one_quarter first">
 			<h2 class="footer_title">Solutions</h2>
 			<nav class="footer_nav">
@@ -768,7 +771,8 @@ Generated on Wed Nov 6 2013 11:14:24 for Wolframe by &#160;<a href="http://www.d
 				</ul>
 			</nav>
 		</div>
-		<div class="one_quarter">
+-->
+		<div class="one_quarter first">
 			<h2 class="footer_title">Documentation</h2>
 			<nav class="footer_nav">
 				<ul class="nospace">
