@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-	<title>Wolframe: include/langbind/builtInFunction.hpp File Reference</title>
+	<title>Wolframe: include/module/cppFormFunctionBuilder.hpp File Reference</title>
 <!--	<meta charset="iso-8859-1">-->
 	<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 	<meta name="generator" content="Doxygen 1.8.5"/>
@@ -40,7 +40,9 @@
 	<nav id="topnav">
 		<ul class="clear">
 			<li><a href="/index.html" title="Home">Home</a></li>
+<!--
 			<li><a href="/solutions.html" title="Solutions">Solutions</a></li>
+-->
 			<li><a href="/downloads.html" title="Downloads">Downloads</a></li>
 			<li class="active"><a href="/documentation.html" title="Documentation">Documentation</a></li>
 			<li><a class="drop" title="Support">Support</a>
@@ -77,29 +79,28 @@
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_0570ea53d62126c9af479fe32f0c1178.html">langbind</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_dc1aacf9e28ad733d01de42bc03b5008.html">module</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">builtInFunction.hpp File Reference</div>  </div>
+<div class="title">cppFormFunctionBuilder.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Interface to the built-in function for processor language bindings.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="filtermapBase_8hpp_source.html">serialize/struct/filtermapBase.hpp</a>&quot;</code><br/>
+<div class="textblock"><code>#include &quot;<a class="el" href="cppFormFunction_8hpp_source.html">langbind/cppFormFunction.hpp</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="moduleInterface_8hpp_source.html">processor/moduleInterface.hpp</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="constructor_8hpp_source.html">module/constructor.hpp</a>&quot;</code><br/>
 </div>
-<p><a href="builtInFunction_8hpp_source.html">Go to the source code of this file.</a></p>
+<p><a href="cppFormFunctionBuilder_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1BuiltInFunction.html">_Wolframe::langbind::BuiltInFunction</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function of language bindings implemented in C++ with a form as argument and as result. The forms are defined by a serialization description.  <a href="class__Wolframe_1_1langbind_1_1BuiltInFunction.html#details">More...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1module_1_1CppFormFunctionConstructor.html">_Wolframe::module::CppFormFunctionConstructor</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1module_1_1CppFormFunctionBuilder.html">_Wolframe::module::CppFormFunctionBuilder</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -107,23 +108,15 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespace__Wolframe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe.html">_Wolframe</a></td></tr>
 <tr class="memdesc:namespace__Wolframe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declaration. <br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespace__Wolframe_1_1langbind"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1langbind.html">_Wolframe::langbind</a></td></tr>
+<tr class="memitem:namespace__Wolframe_1_1module"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1module.html">_Wolframe::module</a></td></tr>
+<tr class="memdesc:namespace__Wolframe_1_1module"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opaque definitions for <a class="el" href="class__Wolframe_1_1module_1_1ModulesDirectory.html">ModulesDirectory</a>. <br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a166744655fa42ebd4458cc1acac5815a"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-types::CountedReference<br class="typebreak"/>
-&lt; BuiltInFunction &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1langbind.html#a166744655fa42ebd4458cc1acac5815a">_Wolframe::langbind::BuiltInFunctionR</a></td></tr>
-<tr class="separator:a166744655fa42ebd4458cc1acac5815a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Interface to the built-in function for processor language bindings. </p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 6 2013 11:14:11 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Nov 10 2013 17:20:54 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
@@ -133,6 +126,7 @@ Generated on Wed Nov 6 2013 11:14:11 for Wolframe by &#160;<a href="http://www.d
 <!-- Footer -->
 <div class="wrapper row2">
 	<div id="footer" class="clear">
+<!--
 		<div class="one_quarter first">
 			<h2 class="footer_title">Solutions</h2>
 			<nav class="footer_nav">
@@ -143,7 +137,8 @@ Generated on Wed Nov 6 2013 11:14:11 for Wolframe by &#160;<a href="http://www.d
 				</ul>
 			</nav>
 		</div>
-		<div class="one_quarter">
+-->
+		<div class="one_quarter first">
 			<h2 class="footer_title">Documentation</h2>
 			<nav class="footer_nav">
 				<ul class="nospace">
