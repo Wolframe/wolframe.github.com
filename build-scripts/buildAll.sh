@@ -23,6 +23,12 @@ cd ..
 ./build-solutions.sh
 #./build-index.sh
 ./build-index-page.sh
+./build-faq.sh
+cd faqs
+./build-faqs-installation.sh
+./build-faqs-license.sh
+cd ..
 
 mv -f *.html ..
 mv -f downloads/*.html ../downloads/.
+mv -f faqs/*.html ../faqs/.
