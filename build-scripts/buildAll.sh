@@ -1,6 +1,7 @@
 #/bin/sh
 
 ./build-downloads.sh
+cd downloads
 ./build-downloads-wolframe.sh
 ./build-downloads-wolfclient.sh
 ./build-downloads-wolframe-cjson.sh
@@ -16,6 +17,7 @@
 ./build-downloads-wolframe-sasl.sh
 ./build-downloads-wolframe-sqlite3.sh
 ./build-downloads-wolframe-textwolf.sh
+cd ..
 ./build-contact.sh
 ./build-documentation.sh
 ./build-solutions.sh
@@ -23,3 +25,4 @@
 ./build-index-page.sh
 
 mv -f *.html ..
+mv -f downloads/*.html ../downloads/.
