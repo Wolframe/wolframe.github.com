@@ -55,8 +55,8 @@ div.wrapper, .wrapper100{display:block; width:100%; margin:0; padding:0; text-al
 
 body{font-family:Arial, Helvetica, sans-serif;}
 
-h1{margin:0 0 30px 0; font-size:1.8em; font-family:Arial, Helvetica, sans-serif; font-weight:normal; line-height:normal; text-transform:capitalize;}
-h2{margin:0 0 30px 0; font-size:1.8em; font-family:Arial, Helvetica, sans-serif; font-weight:normal; line-height:normal;}
+#h1{margin:0 0 30px 0; font-size:1.8em; font-family:Arial, Helvetica, sans-serif; font-weight:normal; line-height:normal; text-transform:capitalize;}
+h1 h2{margin:0 0 30px 0; font-size:1.8em; font-family:Arial, Helvetica, sans-serif; font-weight:normal; line-height:normal;}
 h3, h4, h5, h6{margin:0 0 20px 0; font-size:1.5em; font-family:Arial, Helvetica, sans-serif; font-weight:normal; line-height:normal;}
 
 address{margin:10px 0; font-style:normal;}
