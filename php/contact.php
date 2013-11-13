@@ -5,7 +5,7 @@ $email = $_POST["email"];
 $subject = $_POST["subject"];
 $message = $_POST["message"];
 
-$header = "From: $author <$email>";
+$header = "From: contact form <apache@475003.vps-10.com>";
 $to = "contact@wolframe.net";
 
 $timestamp = time( );
