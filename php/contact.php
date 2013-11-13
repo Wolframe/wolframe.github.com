@@ -5,7 +5,7 @@ $email = $_POST["email"];
 $subject = $_POST["subject"];
 $message = $_POST["message"];
 
-$header = "From: contact form <apache@475003.vps-10.com>";
+$header = "From: Contact form <noreply@wolframe.ch>";
 $to = "contact@wolframe.net";
 
 $timestamp = time( );
@@ -20,8 +20,8 @@ $full_message .= wordwrap( $message, 78 );
 
 $send_contact = mail( $to, $subject, $full_message, $header );
 
-if( send_contact ) {
-	echo "OKidoke";
+if( $send_contact ) {
+	echo "Thank you. We will look into your contact request shortly.";
 } else {
-	echo "ERROR";
+	echo "Error while sending your contact email.";
 }
