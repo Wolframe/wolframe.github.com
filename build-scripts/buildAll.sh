@@ -23,6 +23,7 @@ cd ..
 ./build-solutions.sh
 #./build-index.sh
 ./build-index-page.sh
+./build-support.sh
 ./build-faq.sh
 cd faqs
 ./build-faqs-installation.sh
