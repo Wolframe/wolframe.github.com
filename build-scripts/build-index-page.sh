@@ -4,4 +4,4 @@
 
 SNIPDIR="../snippets"
 
-cat $SNIPDIR/header-slider.html.snip $SNIPDIR/index.html.snip $SNIPDIR/footer.html.snip > index-page.html
+cat $SNIPDIR/header-slider.html.snip $SNIPDIR/index.html.snip $SNIPDIR/footer-slider.html.snip > index-page.html

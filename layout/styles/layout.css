@@ -46,7 +46,7 @@ div.wrapper, .wrapper100{display:block; width:100%; margin:0; padding:0; text-al
 
 .row1, .row1 a{color:#C0BAB6; background-color:#467aa7;}
 .row2{color:#919191; background-color:#2a5a7a; border-bottom:1px solid #333333;}
-.row3{color:#666666; background-color:#FFFFFF;}
+.row3{	color:#666666; background-color:#FFFFFF;}
 .row4, .row4 a{color:#919191; background-color:#303030;}
 .row5{color:#666666; background-color:#FFFFFF; border-bottom:1px solid #E5E4E3;}
 .slider_row{color:#919191; background-color:#E8E8E8;}
@@ -82,7 +82,7 @@ nav ul{margin:0; padding:0; list-style:none;}
 
 /*----------------------------------------------Content Area-------------------------------------*/
 
-#container{padding:50px 0; clear:both; font-size:1em; line-height:1.4em;}
+#container{ padding:50px 0; clear:both; font-size:1em; line-height:1.4em;}
 #container section{margin-bottom:50px;}
 #container section.last{margin-bottom:0;}
 
