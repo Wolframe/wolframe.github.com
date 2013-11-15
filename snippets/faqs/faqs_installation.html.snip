@@ -8,7 +8,8 @@
 			<div class="accordion-wrapper"><a href="javascript:void(0)" class="accordion-title wolfblue"><span>What platforms does Wolframe run on?</span></a>
 				<div class="accordion-content">
 					<p>
-					Currently we succesfully run the Wolframe server on the following platforms:
+					Currently we succesfully run the Wolframe server and client on the following platforms,
+					unless specially marked:
 					<table>
 						<thead>
 						<tr>
@@ -20,7 +21,7 @@
 						<tbody>
 						<tr>
 							<td>Redhat Enterprise Linux</td>
-							<td>5, 6</td>
+							<td>5 <sup>1)</sup>, 6</td>
 							<td>i686, x86_64</td>
 						</tr>	
 						<tr>
@@ -30,12 +31,12 @@
 						</tr>	
 						<tr>
 							<td>Centos Linux</td>
-							<td>5, 6</td>
+							<td>5 <sup>1)</sup>, 6</td>
 							<td>i686, x86_64</td>
 						</tr>	
 						<tr>
 							<td>Scientific Linux</td>
-							<td>5, 6</td>
+							<td>5 <sup>1)</sup>, 6</td>
 							<td>i686, x86_64</td>
 						</tr>	
 						<tr>
@@ -80,21 +81,28 @@
 						</tr>	
 						<tr>
 							<td>NetBSD</td>
-							<td>6.1</td>
+							<td>6.1.1 <sup>2)</sup></td>
 							<td>i686, x86_64</td>
 						</tr>	
 						<tr>
 							<td>OpenIndiana</td>
-							<td>151a8</td>
+							<td>151a8 (CSW/gcc toolchain) <sup>3)</sup></td>
 							<td>i686, x86_64</td>
 						</tr>	
 						<tr>
 							<td>Oracle Solaris</td>
-							<td>10 (CSW/gcc toolchain)</td>
+							<td>10 (CSW/gcc toolchain) <sup>3)</sup></td>
 							<td>sparc</td>
 						</tr>	
 						</tbody>											
 					</table>
+					</p>
+					<p>
+						<ul>
+							<li><sup>1)</sup>: the wolfclient is missing as Qt is far too old</li>
+							<li><sup>2)</sup>: NetBSD currently has broken ICU and boost-locale support</li>
+							<li><sup>3)</sup>: the wolfclient is currently missing, no builds with the Forte compiler are available</li>
+						</ul>
 					</p>
 				</div>
 			</div>
