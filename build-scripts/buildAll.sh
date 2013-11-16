@@ -29,6 +29,7 @@ cd faqs
 ./build-faqs-installation.sh
 ./build-faqs-license.sh
 cd ..
+./build-develop.sh
 
 mv -f *.html ..
 mv -f downloads/*.html ../downloads/.
