@@ -29,7 +29,12 @@ cd faqs
 ./build-faqs-installation.sh
 ./build-faqs-license.sh
 cd ..
+./build-develop.sh
+cd development
+./build-development_daily_builds.sh
+cd ..
 
 mv -f *.html ..
 mv -f downloads/*.html ../downloads/.
 mv -f faqs/*.html ../faqs/.
+mv -f development/*.html ../development/.
