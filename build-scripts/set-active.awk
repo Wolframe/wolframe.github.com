@@ -1,4 +1,4 @@
-#! /usr/bin/awk -f
+##! /usr/bin/awk -f
 
 BEGIN	{ inMenu = 0 }
 
@@ -8,10 +8,10 @@ BEGIN	{ inMenu = 0 }
 
 {
 	if ( inMenu )	{
-		if ( match( $0, /Documentation/ ))
-			print "Gogomarla: " $0
+		if ( match( $0, $ggg ))
+			print "Gogomarla: " $ggg $0
 		else
-			print "GOGOMARLA: " $0
+			print "GOGOMARLA: " $ggg $0
 	}
 	else	print
 }
