@@ -11,3 +11,27 @@
 	Application
 	- Make your application working
 	
+
+
+
+Main text on landing page:
+
+Wolframe started as idea in 2008 and as a project in January 2010.
+The main motivation was to build an application server that obeys system rules and
+has transparent processing and development.
+
+Wolframe obeys system rules because the system is not defined by Wolframe.
+The system (database, rights management, etc.) is given and a Wolframe application is
+built to work with the system.
+
+Wolframe processing and development is transparent because in the whole processing 
+of a users operation there is no step involved that is not explicitely defined by 
+the configurator. This means that Wolframe does not use techniques of automation that 
+merge multiple aspects of the system. The idea is that the additional effort that 
+has to be put into a system when not using for example complex code generation 
+can be compensated with simplicity. Simplicity is paying off in bigger systems
+when you compare it to intransparent automation.
+Simplicity is archieved in Wolframe with building blocks that have a clear definition
+and scope and can be combined together in a natural way.
+
+
