@@ -14,3 +14,28 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 #rslides figure figcaption h2{font-size:42px; margin-bottom:10px; font-weight:normal; font-style:italic; text-transform:none;}
 #rslides figure figcaption p{line-height:1.6em;}
 #rslides figure figcaption .more{color:#2A5A7A; margin-top:10px; line-height:normal;}
+
+#facebook-bttn { display: inline-block; width: 57px; height: 57px; background: url("images/facebook.png") no-repeat 0 0; }
+#facebook-bttn { background-position: 0 -57px; }
+#facebook-bttn:hover { background-position: 0 0px; }
+#facebook-bttn span { display: none; }
+
+#googleplus-bttn { display: inline-block; width: 57px; height: 57px; background: url("images/googleplus.png") no-repeat 0 0; }
+#googleplus-bttn { background-position: 0 -57px; }
+#googleplus-bttn:hover { background-position: 0 0px; }
+#googleplus-bttn span { display: none; }
+
+#linkedin-bttn { display: inline-block; width: 57px; height: 57px; background: url("images/linkedin.png") no-repeat 0 0; }
+#linkedin-bttn { background-position: 0 -57px; }
+#linkedin-bttn:hover { background-position: 0 0px; }
+#linkedin-bttn span { display: none; }
+
+#twitter-bttn { display: inline-block; width: 57px; height: 57px; background: url("images/twitter.png") no-repeat 0 0; }
+#twitter-bttn { background-position: 0 -57px; }
+#twitter-bttn:hover { background-position: 0 0px; }
+#twitter-bttn span { display: none; }
+
+#rss-bttn { display: inline-block; width: 57px; height: 57px; background: url("images/rss.png") no-repeat 0 0; }
+#rss-bttn { background-position: 0 -57px; }
+#rss-bttn:hover { background-position: 0 0px; }
+#rss-bttn span { display: none; }
