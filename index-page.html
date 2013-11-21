@@ -33,6 +33,17 @@
 				<li><span class="fa fa-envelope"></span> <a href="mailto:contact@wolframe.net">contact@wolframe.net</a></li>
 <!--				<li><span class="fa fa-phone"></span> +xx xxx xxxxxxxxxx</li> -->
 			</ul>
+			<ul class="list none">
+				<li class="icons"><a href="http://plus.google.com/116915890857205562872?prsrc=3" rel="publisher" target="_top" style="text-decoration:none;">
+					<img src="images/social/googleplus.png" alt="Google+" style="border:0;width:32px;height:32px;"/></a></li>
+				<li class="icons"><a href="#" target="_top" style="text-decoration:none;">
+					<img src="images/social/linkedin.png" alt="LinkedIn" style="border:0;width:32px;height:32px;"/></a></li>
+				<li class="icons"><a href="http://twitter.com/ProjectWolframe" target="_top" style="text-decoration:none;">
+					<img src="images/social/twitter.png" alt="twitter" style="border:0;width:32px;height:32px;"/></a></li>
+				<li class="icons"><a href="#" target="_top" style="text-decoration:none;">
+					<img src="images/social/rss.png" alt="rss" style="border:0;width:32px;height:32px;"/></a></li>
+			</ul>
+
 		</div>
 	</header>
 </div>
@@ -191,7 +202,12 @@
 <!--		<div class="one_quarter">-->
 		<div class="one_third">
 			<h2 class="footer_title">Contact Us</h2>
-			<p><strong>Email:</strong> <a href="mailto:contact@wolframe.net">contact@wolframe.net</a></p>
+			<nav class="footer_nav">
+				<ul class="nospace">
+					<li><strong>Email:</strong> <a href="mailto:contact@wolframe.net">contact@wolframe.net</a></li>
+					<li><a href="https://twitter.com/ProjectWolframe" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @ProjectWolframe</a></li>
+				</ul>
+			</nav>
 		</div>
 	</div>
 </div>
@@ -213,5 +229,18 @@
 <script src="/layout/scripts/jquery-mobilemenu.min.js"></script>
 <script src="/layout/scripts/custom.js"></script>
 <script src="/layout/scripts/custom-slider.js"></script>
+<!-- Tweeter follow script -->
+<script>
+	!function( d, s, id )	{
+		var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location)?'http':'https';
+		if( !d.getElementById( id ))	{
+			js = d.createElement( s );
+			js.id = id;
+			js.src = p + '://platform.twitter.com/widgets.js';
+			fjs.parentNode.insertBefore( js,fjs );
+		}
+	} ( document, 'script', 'twitter-wjs' );
+</script>
+
 </body>
 </html>
