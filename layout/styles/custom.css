@@ -40,6 +40,6 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 #rss-bttn:hover { background-position: 0 0px; }
 #rss-bttn span { display: none; }
 
-.twitter-follow-button { padding-right: 25px;}
-.g-follow { padding-right: 25px;}
-.g-plusone { padding-right: 15px;}
+.twitter-follow-button { display: inline; padding-right: 25px; }
+.g-follow { display: inline; padding-right: 25px; }
+.g-plusone { display: inline; }
