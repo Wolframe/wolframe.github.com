@@ -33,6 +33,7 @@ cd ..
 cd development
 ./build-development_daily_builds.sh
 cd ..
+./build-static-downloads.sh
 
 mv -f *.html ..
 mv -f downloads/*.html ../downloads/.
