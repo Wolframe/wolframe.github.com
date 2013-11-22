@@ -35,6 +35,7 @@ cd development
 cd ..
 ./build-static-downloads.sh
 ./build-404.sh
+./build-baddomain.sh
 
 mv -f *.html ..
 mv -f downloads/*.html ../downloads/.
