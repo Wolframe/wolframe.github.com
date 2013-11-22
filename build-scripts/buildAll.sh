@@ -34,6 +34,7 @@ cd development
 ./build-development_daily_builds.sh
 cd ..
 ./build-static-downloads.sh
+./build-404.sh
 
 mv -f *.html ..
 mv -f downloads/*.html ../downloads/.
