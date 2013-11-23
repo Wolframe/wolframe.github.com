@@ -9,5 +9,7 @@ cat $SNIPDIR/header.html.snip $SNIPDIR/index-baddomain.html.snip $SNIPDIR/footer
 	sed 's|\(src="\)|\1http://www.wolframe.ch/|g' | \
 	sed 's|href="/#|href="#|g' | \
 	sed 's|href="/\(http\)|href="\1|g' | \
-	sed 's|href="/mailto|href="mailto|g' \
+	sed 's|href="/mailto|href="mailto|g' | \
+	sed 's|href="http://www.wolframe.ch/javascript|href="javascript|g' | \
+	sed 's|http://www.wolframe.ch/http://www.wolframe.ch|http://www.wolframe.ch|g' \
 	> index-baddomain.html
