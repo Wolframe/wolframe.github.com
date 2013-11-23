@@ -12,5 +12,6 @@ cat $SNIPDIR/header.html.snip $SNIPDIR/faq.html.snip $SNIPDIR/footer.html.snip |
 	sed 's|src="/#|src="#|g' | \
 	sed 's|href="/http|href="http|g' | \
 	sed 's|src="/http|src="http|g' | \
-	sed 's|href="/mailto|href="mailto|g' \
+	sed 's|href="/mailto|href="mailto|g' | \
+	sed 's|<li><a class="drop" href="/support.html"|<li class="active"><a class="drop" href="/support.html"|g' \
 	> faq.html

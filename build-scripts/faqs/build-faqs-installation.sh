@@ -13,5 +13,6 @@ cat $SNIPDIR/header.html.snip $SNIPDIR/faqs/faqs_installation.html.snip $SNIPDIR
 	sed 's|href="/http|href="http|g' | \
 	sed 's|href="/javascript|href="javascript|g' | \
 	sed 's|src="/http|src="http|g' | \
-	sed 's|href="/mailto|href="mailto|g' \
+	sed 's|href="/mailto|href="mailto|g' | \
+	sed 's|<li><a class="drop" href="/support.html"|<li class="active"><a class="drop" href="/support.html"|g' \
 	> faqs_installation.html
