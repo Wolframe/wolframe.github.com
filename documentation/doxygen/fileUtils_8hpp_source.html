@@ -2,9 +2,8 @@
 <html lang="en" dir="ltr">
 <head>
 	<title>Wolframe: include/utils/fileUtils.hpp Source File</title>
-<!--	<meta charset="iso-8859-1">-->
-	<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 	<meta name="generator" content="Doxygen 1.8.5"/>
+	<meta charset="iso-8859-1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 	<link href="/layout/styles/main.css" rel="stylesheet" type="text/css" media="all">
@@ -22,14 +21,24 @@
 <body class="">
 <div class="wrapper row1">
 	<header id="header" class="full_width clear">
-		<hgroup>
-			<h1><a href="index.html">Project Wolframe</a></h1>
-			<h2>The Straight Path to Complex Projects</h2>
-		</hgroup>
+		<div id="header-logo">
+			<h1><a href="/index.html">Project Wolframe</a></h1>
+			<h2>The Straight Path to Successful Projects</h2>
+		</div>
 		<div id="header-contact">
 			<ul class="list none">
-				<li><span class="fa fa-envelope"></span> <a href="mailto:contact@wolframe.net">contact@wolframe.net</a></li>
+				<li><span class="fa fa-envelope"></span> <a href="/mailto:contact@wolframe.net">contact@wolframe.net</a></li>
 <!--				<li><span class="fa fa-phone"></span> +xx xxx xxxxxxxxxx</li> -->
+			</ul>
+			<ul class="list none">
+				<li class="icons"><a id="googleplus-bttn" href="http://plus.google.com/116915890857205562872?prsrc=3" rel="publisher" target="_top" style="text-decoration:none;">
+					<span>Google+</span></a></li>
+				<li class="icons"><a  id="linkedin-bttn"href="/#" target="_top" style="text-decoration:none;">
+					<span>LinkedIn</span></a></li>
+				<li class="icons"><a id="twitter-bttn" href="http://twitter.com/ProjectWolframe" target="_top" style="text-decoration:none;">
+					<span>twitter</span></a></li>
+				<li class="icons"><a id="rss-bttn" href="/#" target="_top" style="text-decoration:none;">
+					<span>rss</span></a></li>
 			</ul>
 		</div>
 	</header>
@@ -38,6 +47,7 @@
 <div class="wrapper row2">
 	<nav id="topnav">
 		<ul class="clear">
+<!-- BEGIN MENU -->
 			<li><a href="/index.html" title="Home">Home</a></li>
 <!--
 			<li><a href="/solutions.html" title="Solutions">Solutions</a></li>
@@ -51,6 +61,7 @@
 				</ul>
 			</li>
 			<li class="last-child"><a href="/contact.html" title="Contact Us">Contact Us</a></li>
+<!-- END MENU -->
 		</ul>
 	</nav>
 </div>
@@ -137,29 +148,32 @@
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;std::string <a class="code" href="namespace__Wolframe_1_1utils.html#ad815ef97cc118209607d3a91ea89d687">getFileStem</a>( <span class="keyword">const</span> std::string&amp; path);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;std::string <a class="code" href="namespace__Wolframe_1_1utils.html#a8fa99f5a91b83cacff8643bdf74ff314">getCanonicalPath</a>( <span class="keyword">const</span> std::string&amp; path, <span class="keyword">const</span> std::string&amp; refPath );</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;std::string <a class="code" href="namespace__Wolframe_1_1utils.html#a8fa99f5a91b83cacff8643bdf74ff314">getCanonicalPath</a>( <span class="keyword">const</span> std::string&amp; path, <span class="keyword">const</span> std::string&amp; refPath);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;std::string <a class="code" href="namespace__Wolframe_1_1utils.html#a2d14913fafcdc736832dbd9971bbea96">getParentPath</a>( <span class="keyword">const</span> std::string&amp; path, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> levels=1);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespace__Wolframe_1_1utils.html#ae3b548fb45cd38faa08e33c72b186f5e">fileExists</a>( <span class="keyword">const</span> std::string&amp; path);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;std::string <a class="code" href="namespace__Wolframe_1_1utils.html#ab2148652c958c608c54db37126593496">readSourceFileContent</a>( <span class="keyword">const</span> std::string&amp; filename);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;std::vector&lt;std::string&gt; <a class="code" href="namespace__Wolframe_1_1utils.html#a740cf8840e3b85e74e119147efedc063">readSourceFileLines</a>( <span class="keyword">const</span> std::string&amp; filename);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;boost::property_tree::ptree <a class="code" href="namespace__Wolframe_1_1utils.html#a89445849cd8a7d5a4d885ba81b6c6d42">readPropertyTreeFile</a>( <span class="keyword">const</span> std::string&amp; filename);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespace__Wolframe_1_1utils.html#a47307462e43d3aaebbc4d65d48c97b31">writeFile</a>( <span class="keyword">const</span> std::string&amp; filename, <span class="keyword">const</span> std::string&amp; content);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;std::string <a class="code" href="namespace__Wolframe_1_1utils.html#a412c82a70523605fea2802b2e30ba9c1">getFileType</a>( <span class="keyword">const</span> std::string&amp; filename);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;std::string <a class="code" href="namespace__Wolframe_1_1utils.html#af9224ed2307b459a2612d41a5398e693">joinPath</a>( <span class="keyword">const</span> std::string&amp; path, <span class="keyword">const</span> std::string&amp; item);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespace__Wolframe_1_1utils.html#ae3b548fb45cd38faa08e33c72b186f5e">fileExists</a>( <span class="keyword">const</span> std::string&amp; path);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;std::string <a class="code" href="namespace__Wolframe_1_1utils.html#ab2148652c958c608c54db37126593496">readSourceFileContent</a>( <span class="keyword">const</span> std::string&amp; filename);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;std::vector&lt;std::string&gt; <a class="code" href="namespace__Wolframe_1_1utils.html#a740cf8840e3b85e74e119147efedc063">readSourceFileLines</a>( <span class="keyword">const</span> std::string&amp; filename);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;boost::property_tree::ptree <a class="code" href="namespace__Wolframe_1_1utils.html#a89445849cd8a7d5a4d885ba81b6c6d42">readPropertyTreeFile</a>( <span class="keyword">const</span> std::string&amp; filename);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespace__Wolframe_1_1utils.html#a47307462e43d3aaebbc4d65d48c97b31">writeFile</a>( <span class="keyword">const</span> std::string&amp; filename, <span class="keyword">const</span> std::string&amp; content);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}} <span class="comment">//namespace _Wolframe::utils</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif // _MISC_UTILS_HPP_INCLUDED</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;std::string <a class="code" href="namespace__Wolframe_1_1utils.html#a412c82a70523605fea2802b2e30ba9c1">getFileType</a>( <span class="keyword">const</span> std::string&amp; filename);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}} <span class="comment">//namespace _Wolframe::utils</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif // _MISC_UTILS_HPP_INCLUDED</span></div>
 <div class="ttc" id="namespace__Wolframe_1_1utils_html_a8fa99f5a91b83cacff8643bdf74ff314"><div class="ttname"><a href="namespace__Wolframe_1_1utils.html#a8fa99f5a91b83cacff8643bdf74ff314">_Wolframe::utils::getCanonicalPath</a></div><div class="ttdeci">std::string getCanonicalPath(const std::string &amp;path, const std::string &amp;refPath)</div><div class="ttdoc">Get the path &amp;#39;path&amp;#39; relative to &amp;#39;refpath&amp;#39; if it is not absolute. </div></div>
 <div class="ttc" id="namespace__Wolframe_1_1utils_html_a89445849cd8a7d5a4d885ba81b6c6d42"><div class="ttname"><a href="namespace__Wolframe_1_1utils.html#a89445849cd8a7d5a4d885ba81b6c6d42">_Wolframe::utils::readPropertyTreeFile</a></div><div class="ttdeci">boost::property_tree::ptree readPropertyTreeFile(const std::string &amp;filename)</div><div class="ttdoc">Reading the content of a source file as property tree (with property tree syntax) ...</div></div>
 <div class="ttc" id="namespace__Wolframe_1_1utils_html_ab2148652c958c608c54db37126593496"><div class="ttname"><a href="namespace__Wolframe_1_1utils.html#ab2148652c958c608c54db37126593496">_Wolframe::utils::readSourceFileContent</a></div><div class="ttdeci">std::string readSourceFileContent(const std::string &amp;filename)</div><div class="ttdoc">Reading the content of a source file as one string. </div></div>
+<div class="ttc" id="namespace__Wolframe_1_1utils_html_af9224ed2307b459a2612d41a5398e693"><div class="ttname"><a href="namespace__Wolframe_1_1utils.html#af9224ed2307b459a2612d41a5398e693">_Wolframe::utils::joinPath</a></div><div class="ttdeci">std::string joinPath(const std::string &amp;path, const std::string &amp;item)</div><div class="ttdoc">Join path with an item of the path to a combined path. </div></div>
 <div class="ttc" id="namespace__Wolframe_1_1utils_html_a740cf8840e3b85e74e119147efedc063"><div class="ttname"><a href="namespace__Wolframe_1_1utils.html#a740cf8840e3b85e74e119147efedc063">_Wolframe::utils::readSourceFileLines</a></div><div class="ttdeci">std::vector&lt; std::string &gt; readSourceFileLines(const std::string &amp;filename)</div><div class="ttdoc">Reading the content of a source file as list of lines. </div></div>
 <div class="ttc" id="namespace__Wolframe_1_1utils_html_a47307462e43d3aaebbc4d65d48c97b31"><div class="ttname"><a href="namespace__Wolframe_1_1utils.html#a47307462e43d3aaebbc4d65d48c97b31">_Wolframe::utils::writeFile</a></div><div class="ttdeci">void writeFile(const std::string &amp;filename, const std::string &amp;content)</div><div class="ttdoc">Writing a file. </div></div>
 <div class="ttc" id="namespace__Wolframe_1_1utils_html_ae3b548fb45cd38faa08e33c72b186f5e"><div class="ttname"><a href="namespace__Wolframe_1_1utils.html#ae3b548fb45cd38faa08e33c72b186f5e">_Wolframe::utils::fileExists</a></div><div class="ttdeci">bool fileExists(const std::string &amp;path)</div><div class="ttdoc">Returns true, if the file with path &amp;#39;path&amp;#39; exists. </div></div>
@@ -172,7 +186,7 @@
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 20 2013 09:44:15 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 23 2013 18:09:47 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
@@ -217,7 +231,12 @@ Generated on Wed Nov 20 2013 09:44:15 for Wolframe by &#160;<a href="http://www.
 <!--		<div class="one_quarter">-->
 		<div class="one_third">
 			<h2 class="footer_title">Contact Us</h2>
-			<p><strong>Email:</strong> <a href="mailto:contact@wolframe.net">contact@wolframe.net</a></p>
+			<nav class="footer_nav">
+				<ul class="nospace">
+					<li><strong>Email:</strong> <a href="/mailto:contact@wolframe.net">contact@wolframe.net</a></li>
+					<li><a href="https://plus.google.com/116915890857205562872" rel="publisher">Google+</a></li>
+				</ul>
+			</nav>
 		</div>
 	</div>
 </div>

@@ -2,9 +2,8 @@
 <html lang="en" dir="ltr">
 <head>
 	<title>Wolframe: include/database/loadTransactionProgram.hpp Source File</title>
-<!--	<meta charset="iso-8859-1">-->
-	<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 	<meta name="generator" content="Doxygen 1.8.5"/>
+	<meta charset="iso-8859-1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 	<link href="/layout/styles/main.css" rel="stylesheet" type="text/css" media="all">
@@ -22,14 +21,24 @@
 <body class="">
 <div class="wrapper row1">
 	<header id="header" class="full_width clear">
-		<hgroup>
-			<h1><a href="index.html">Project Wolframe</a></h1>
-			<h2>The Straight Path to Complex Projects</h2>
-		</hgroup>
+		<div id="header-logo">
+			<h1><a href="/index.html">Project Wolframe</a></h1>
+			<h2>The Straight Path to Successful Projects</h2>
+		</div>
 		<div id="header-contact">
 			<ul class="list none">
-				<li><span class="fa fa-envelope"></span> <a href="mailto:contact@wolframe.net">contact@wolframe.net</a></li>
+				<li><span class="fa fa-envelope"></span> <a href="/mailto:contact@wolframe.net">contact@wolframe.net</a></li>
 <!--				<li><span class="fa fa-phone"></span> +xx xxx xxxxxxxxxx</li> -->
+			</ul>
+			<ul class="list none">
+				<li class="icons"><a id="googleplus-bttn" href="http://plus.google.com/116915890857205562872?prsrc=3" rel="publisher" target="_top" style="text-decoration:none;">
+					<span>Google+</span></a></li>
+				<li class="icons"><a  id="linkedin-bttn"href="/#" target="_top" style="text-decoration:none;">
+					<span>LinkedIn</span></a></li>
+				<li class="icons"><a id="twitter-bttn" href="http://twitter.com/ProjectWolframe" target="_top" style="text-decoration:none;">
+					<span>twitter</span></a></li>
+				<li class="icons"><a id="rss-bttn" href="/#" target="_top" style="text-decoration:none;">
+					<span>rss</span></a></li>
 			</ul>
 		</div>
 	</header>
@@ -38,6 +47,7 @@
 <div class="wrapper row2">
 	<nav id="topnav">
 		<ul class="clear">
+<!-- BEGIN MENU -->
 			<li><a href="/index.html" title="Home">Home</a></li>
 <!--
 			<li><a href="/solutions.html" title="Solutions">Solutions</a></li>
@@ -51,6 +61,7 @@
 				</ul>
 			</li>
 			<li class="last-child"><a href="/contact.html" title="Contact Us">Contact Us</a></li>
+<!-- END MENU -->
 		</ul>
 	</nav>
 </div>
@@ -134,27 +145,26 @@
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">namespace </span>db {</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;std::vector&lt;std::pair&lt;std::string,TransactionFunctionR&gt; &gt;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="namespace__Wolframe_1_1db.html#a4fefa6138be55201099a430ab7281af7">loadTransactionProgramFile</a>(</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="namespace__Wolframe_1_1db.html#a1edd510f7d017057fde267fc9c6023eb">loadTransactionProgramFile</a>(</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                <span class="keyword">const</span> std::string&amp; filename,</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                <span class="keyword">const</span> std::string&amp; databaseId,</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                <span class="keyword">const</span> LanguageDescription* langdescr,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                std::string&amp; dbsource,</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                types::keymap&lt;std::string&gt;&amp; embeddedStatementMap);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                types::keymap&lt;std::string&gt;&amp; embeddedStatementMap);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}}<span class="comment">//namespace</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}}<span class="comment">//namespace</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="databaseLanguage_8hpp_html"><div class="ttname"><a href="databaseLanguage_8hpp.html">databaseLanguage.hpp</a></div><div class="ttdoc">Language definitions for embedded commands in transactions. </div></div>
-<div class="ttc" id="namespace__Wolframe_1_1db_html_a4fefa6138be55201099a430ab7281af7"><div class="ttname"><a href="namespace__Wolframe_1_1db.html#a4fefa6138be55201099a430ab7281af7">_Wolframe::db::loadTransactionProgramFile</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; std::string, TransactionFunctionR &gt; &gt; loadTransactionProgramFile(const std::string &amp;filename, const std::string &amp;databaseId, const LanguageDescription *langdescr, std::string &amp;dbsource, types::keymap&lt; std::string &gt; &amp;embeddedStatementMap)</div></div>
 <div class="ttc" id="transactionFunction_8hpp_html"><div class="ttname"><a href="transactionFunction_8hpp.html">transactionFunction.hpp</a></div><div class="ttdoc">Interface to transactions in the database for language bindings. </div></div>
 <div class="ttc" id="countedReference_8hpp_html"><div class="ttname"><a href="countedReference_8hpp.html">countedReference.hpp</a></div><div class="ttdoc">Multiple references to an object that is freed with its last reference. </div></div>
 <div class="ttc" id="keymap_8hpp_html"><div class="ttname"><a href="keymap_8hpp.html">keymap.hpp</a></div><div class="ttdoc">template for map with case insensitive key strings </div></div>
+<div class="ttc" id="namespace__Wolframe_1_1db_html_a1edd510f7d017057fde267fc9c6023eb"><div class="ttname"><a href="namespace__Wolframe_1_1db.html#a1edd510f7d017057fde267fc9c6023eb">_Wolframe::db::loadTransactionProgramFile</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; std::string, TransactionFunctionR &gt; &gt; loadTransactionProgramFile(const std::string &amp;filename, const std::string &amp;databaseId, const LanguageDescription *langdescr, types::keymap&lt; std::string &gt; &amp;embeddedStatementMap)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 20 2013 09:44:10 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 23 2013 18:09:43 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
@@ -199,7 +209,12 @@ Generated on Wed Nov 20 2013 09:44:10 for Wolframe by &#160;<a href="http://www.
 <!--		<div class="one_quarter">-->
 		<div class="one_third">
 			<h2 class="footer_title">Contact Us</h2>
-			<p><strong>Email:</strong> <a href="mailto:contact@wolframe.net">contact@wolframe.net</a></p>
+			<nav class="footer_nav">
+				<ul class="nospace">
+					<li><strong>Email:</strong> <a href="/mailto:contact@wolframe.net">contact@wolframe.net</a></li>
+					<li><a href="https://plus.google.com/116915890857205562872" rel="publisher">Google+</a></li>
+				</ul>
+			</nav>
 		</div>
 	</div>
 </div>

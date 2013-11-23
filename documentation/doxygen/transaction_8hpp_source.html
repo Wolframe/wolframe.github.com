@@ -2,9 +2,8 @@
 <html lang="en" dir="ltr">
 <head>
 	<title>Wolframe: include/database/transaction.hpp Source File</title>
-<!--	<meta charset="iso-8859-1">-->
-	<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 	<meta name="generator" content="Doxygen 1.8.5"/>
+	<meta charset="iso-8859-1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 	<link href="/layout/styles/main.css" rel="stylesheet" type="text/css" media="all">
@@ -22,14 +21,24 @@
 <body class="">
 <div class="wrapper row1">
 	<header id="header" class="full_width clear">
-		<hgroup>
-			<h1><a href="index.html">Project Wolframe</a></h1>
-			<h2>The Straight Path to Complex Projects</h2>
-		</hgroup>
+		<div id="header-logo">
+			<h1><a href="/index.html">Project Wolframe</a></h1>
+			<h2>The Straight Path to Successful Projects</h2>
+		</div>
 		<div id="header-contact">
 			<ul class="list none">
-				<li><span class="fa fa-envelope"></span> <a href="mailto:contact@wolframe.net">contact@wolframe.net</a></li>
+				<li><span class="fa fa-envelope"></span> <a href="/mailto:contact@wolframe.net">contact@wolframe.net</a></li>
 <!--				<li><span class="fa fa-phone"></span> +xx xxx xxxxxxxxxx</li> -->
+			</ul>
+			<ul class="list none">
+				<li class="icons"><a id="googleplus-bttn" href="http://plus.google.com/116915890857205562872?prsrc=3" rel="publisher" target="_top" style="text-decoration:none;">
+					<span>Google+</span></a></li>
+				<li class="icons"><a  id="linkedin-bttn"href="/#" target="_top" style="text-decoration:none;">
+					<span>LinkedIn</span></a></li>
+				<li class="icons"><a id="twitter-bttn" href="http://twitter.com/ProjectWolframe" target="_top" style="text-decoration:none;">
+					<span>twitter</span></a></li>
+				<li class="icons"><a id="rss-bttn" href="/#" target="_top" style="text-decoration:none;">
+					<span>rss</span></a></li>
 			</ul>
 		</div>
 	</header>
@@ -38,6 +47,7 @@
 <div class="wrapper row2">
 	<nav id="topnav">
 		<ul class="clear">
+<!-- BEGIN MENU -->
 			<li><a href="/index.html" title="Home">Home</a></li>
 <!--
 			<li><a href="/solutions.html" title="Solutions">Solutions</a></li>
@@ -51,6 +61,7 @@
 				</ul>
 			</li>
 			<li class="last-child"><a href="/contact.html" title="Contact Us">Contact Us</a></li>
+<!-- END MENU -->
 		</ul>
 	</nav>
 </div>
@@ -151,7 +162,7 @@
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}} <span class="comment">// namespace _Wolframe::db</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif // _TRANSACTION_HPP_INCLUDED</span></div>
-<div class="ttc" id="class__Wolframe_1_1db_1_1TransactionInput_html"><div class="ttname"><a href="class__Wolframe_1_1db_1_1TransactionInput.html">_Wolframe::db::TransactionInput</a></div><div class="ttdoc">Input of a transaction. </div><div class="ttdef"><b>Definition:</b> transactionInput.hpp:49</div></div>
+<div class="ttc" id="class__Wolframe_1_1db_1_1TransactionInput_html"><div class="ttname"><a href="class__Wolframe_1_1db_1_1TransactionInput.html">_Wolframe::db::TransactionInput</a></div><div class="ttdoc">Input of a transaction. </div><div class="ttdef"><b>Definition:</b> transactionInput.hpp:52</div></div>
 <div class="ttc" id="namespace__Wolframe_1_1db_html_a361d9fdd8c35bed787132c00995c49b7"><div class="ttname"><a href="namespace__Wolframe_1_1db.html#a361d9fdd8c35bed787132c00995c49b7">_Wolframe::db::TransactionR</a></div><div class="ttdeci">types::CountedReference&lt; Transaction &gt; TransactionR</div><div class="ttdef"><b>Definition:</b> transaction.hpp:60</div></div>
 <div class="ttc" id="struct__Wolframe_1_1db_1_1Transaction_html_afe5ce72548c77c38e5f42016e9e3a15c"><div class="ttname"><a href="struct__Wolframe_1_1db_1_1Transaction.html#afe5ce72548c77c38e5f42016e9e3a15c">_Wolframe::db::Transaction::close</a></div><div class="ttdeci">virtual void close()=0</div></div>
 <div class="ttc" id="struct__Wolframe_1_1db_1_1Transaction_html"><div class="ttname"><a href="struct__Wolframe_1_1db_1_1Transaction.html">_Wolframe::db::Transaction</a></div><div class="ttdef"><b>Definition:</b> transaction.hpp:47</div></div>
@@ -172,7 +183,7 @@
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 20 2013 09:44:10 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 23 2013 18:09:43 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
@@ -217,7 +228,12 @@ Generated on Wed Nov 20 2013 09:44:10 for Wolframe by &#160;<a href="http://www.
 <!--		<div class="one_quarter">-->
 		<div class="one_third">
 			<h2 class="footer_title">Contact Us</h2>
-			<p><strong>Email:</strong> <a href="mailto:contact@wolframe.net">contact@wolframe.net</a></p>
+			<nav class="footer_nav">
+				<ul class="nospace">
+					<li><strong>Email:</strong> <a href="/mailto:contact@wolframe.net">contact@wolframe.net</a></li>
+					<li><a href="https://plus.google.com/116915890857205562872" rel="publisher">Google+</a></li>
+				</ul>
+			</nav>
 		</div>
 	</div>
 </div>
