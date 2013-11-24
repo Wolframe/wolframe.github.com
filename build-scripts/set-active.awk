@@ -1,4 +1,8 @@
 #! /usr/bin/awk -f
+#
+# Usage example:
+#	./set-active.awk -v active_menu=contact ../snippets/header-slider.html.snip
+#
 
 BEGIN	{
 	inMenu = 0
