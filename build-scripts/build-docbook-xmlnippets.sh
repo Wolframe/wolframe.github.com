@@ -15,6 +15,7 @@ cat $SNIPDIR/header.html.snip | \
 	sed 's|\(href="\)\([^"]\)|\1/\2|g' | \
 	sed 's|href="/#|href="#|g' | \
 	sed 's|src="//|src="/|g' | \
+	sed 's|href="//|href="/|g' | \
 	sed 's|href="/http|href="http|g' | \
 	sed '/<body.*/d' | \
 	sed '/<!DOCTYPE.*/d' | \
@@ -37,6 +38,7 @@ EOF
 cat $SNIPDIR/header.html.snip | \
 	sed 's|\(href="\)\([^"]\)|\1/\2|g' | \
 	sed 's|\(src="\)\([^"]\)|\1/\2|g' | \
+	sed 's|href="//|href="/|g' | \
 	sed '/<!DOCTYPE.*/d' | \
 	sed '/<html.*/d' | \
 	sed '/<head>/d' | \
@@ -64,6 +66,7 @@ cat $SNIPDIR/footer.html.snip | \
 	sed 's|\(href="\)\([^"]\)|\1/\2|g' | \
 	sed 's|href="/#|href="#|g' | \
 	sed 's|src="//|src="/|g' | \
+	sed 's|href="//|href="/|g' | \
 	sed 's|href="/http|href="http|g' | \
 	sed '/<\/body>/d' | \
 	sed '/<\/html>/d' \
