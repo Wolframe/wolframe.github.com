@@ -10,23 +10,34 @@
 	<link xmlns="" href="/layout/styles/mediaqueries.css" rel="stylesheet" type="text/css" media="all" />
 
 	<!--[if lt IE 9]>
-		<link href="/layout/styles/ie/ie8.css" rel="stylesheet" type="text/css" media="all">
+		<link href="/layout/styles/ie/ie8.css" rel="stylesheet" type="text/css" media="all" />
 		<script src="/layout/scripts/ie/css3-mediaqueries.min.js"></script>
 		<script src="/layout/scripts/ie/html5shiv.min.js"></script>
 	<![endif]-->
-	
+
 </head><body>
+
 
 <div xmlns="" class="wrapper row1">
 	<header id="header" class="full_width clear">
-		<hgroup>
+		<div id="header-logo">
 			<h1><a href="/index.html">Project Wolframe</a></h1>
-			<h2>The Straight Path to Complex Projects</h2>
-		</hgroup>
+			<h2>The Straight Path to Successful Projects</h2>
+		</div>
 		<div id="header-contact">
 			<ul class="list none">
-				<li><span class="fa fa-envelope"></span> <a href="mailto:contact@wolframe.net">contact@wolframe.net</a></li>
+				<li><span class="fa fa-envelope"></span> <a href="/mailto:contact@wolframe.net">contact@wolframe.net</a></li>
 <!--				<li><span class="fa fa-phone"></span> +xx xxx xxxxxxxxxx</li> -->
+			</ul>
+			<ul class="list none">
+				<li class="icons"><a id="googleplus-bttn" href="http://plus.google.com/116915890857205562872?prsrc=3" rel="publisher" target="_top" style="text-decoration:none;">
+					<span>Google+</span></a></li>
+				<li class="icons"><a id="linkedin-bttn" href="#" target="_top" style="text-decoration:none;">
+					<span>LinkedIn</span></a></li>
+				<li class="icons"><a id="twitter-bttn" href="http://twitter.com/ProjectWolframe" target="_top" style="text-decoration:none;">
+					<span>twitter</span></a></li>
+				<li class="icons"><a id="rss-bttn" href="#" target="_top" style="text-decoration:none;">
+					<span>rss</span></a></li>
 			</ul>
 		</div>
 	</header>
@@ -36,6 +47,7 @@
 <div xmlns="" class="wrapper row2">
 	<nav id="topnav">
 		<ul class="clear">
+<!-- BEGIN MENU -->
 			<li><a href="/index.html" title="Home">Home</a></li>
 <!--
 			<li><a href="/solutions.html" title="Solutions">Solutions</a></li>
@@ -49,17 +61,17 @@
 				</ul>
 			</li>
 			<li class="last-child"><a href="/contact.html" title="Contact Us">Contact Us</a></li>
+<!-- END MENU -->
 		</ul>
 	</nav>
 </div>
 <!-- ################################################################################################ -->
-
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.6. Functions in C++</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch03s05.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Functions</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch04.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1377042044"></a>3.6. Functions in C++</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1377042388"></a>3.6.1. Introduction</h3></div></div></div><p>You can write functions for the logic tier of <span class="application">Wolframe</span> with <span class="application">C++</span>. 
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.6. Functions in C++</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch03s05.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Functions</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch04.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1403244764"></a>3.6. Functions in C++</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1403245108"></a>3.6.1. Introduction</h3></div></div></div><p>You can write functions for the logic tier of <span class="application">Wolframe</span> with <span class="application">C++</span>. 
 		Because <span class="application">C++</span> is supported by <span class="application">Wolframe</span> only as a compiled and not as 
 		an interpreted language, you have to build a module out of your function implementation.
-		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1377044076"></a>3.6.2. Declaring Functions</h3></div></div></div><p>
+		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1403246796"></a>3.6.2. Declaring Functions</h3></div></div></div><p>
 		...
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1377038756"></a>3.6.3. Input/Output Data Structures</h3></div></div></div><p>For defining input and output parameter structures in <span class="application">C++</span> you have to define the 
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1403241476"></a>3.6.3. Input/Output Data Structures</h3></div></div></div><p>For defining input and output parameter structures in <span class="application">C++</span> you have to define the 
 		structure and its serialization description. The serialization description is a static 
 		function <code class="code">getStructDescription</code> without arguments returning a const structure that describes 
 		what element names to bind to which structure elements.
@@ -121,7 +133,7 @@ const serialize::StructDescriptionBase* Customer::getStructDescription()
 
 		</pre></div><p>
 	</p></div><p></p></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk01ch03s05.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk01ch03.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk01ch04.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">3.5. DDL Data Types </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> Chapter 4. Forms</td></tr></table></div></div></div>
-	
+
 <!-- Footer -->
 <div xmlns="" class="wrapper row2">
 	<div id="footer" class="clear">
@@ -162,7 +174,12 @@ const serialize::StructDescriptionBase* Customer::getStructDescription()
 <!--		<div class="one_quarter">-->
 		<div class="one_third">
 			<h2 class="footer_title">Contact Us</h2>
-			<p><strong>Email:</strong> <a href="mailto:contact@wolframe.net">contact@wolframe.net</a></p>
+			<nav class="footer_nav">
+				<ul class="nospace">
+					<li><strong>Email:</strong> <a href="/mailto:contact@wolframe.net">contact@wolframe.net</a></li>
+					<li><a href="https://plus.google.com/116915890857205562872" rel="publisher">Google+</a></li>
+				</ul>
+			</nav>
 		</div>
 	</div>
 </div>
@@ -177,7 +194,9 @@ const serialize::StructDescriptionBase* Customer::getStructDescription()
 <!-- Scripts -->
 <script xmlns="" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script xmlns="" src="http://code.jquery.com/ui/1.10.1/jquery-ui.min.js"></script>
+<script xmlns="">window.jQuery || document.write('\x3Cscript src="/layout/scripts/jquery-latest.min.js"&gt;\x3C\/script&gt;\
+\x3Cscript src="/layout/scripts/jquery-ui.min.js"&gt;\x3C\/script&gt;')</script>
+<script xmlns="">jQuery(document).ready(function($){ $('img').removeAttr('width height'); });</script>
 <script xmlns="" src="/layout/scripts/jquery-mobilemenu.min.js"></script>
 <script xmlns="" src="/layout/scripts/custom.js"></script>
-
 </body></html>

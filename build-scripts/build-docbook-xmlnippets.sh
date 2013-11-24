@@ -4,10 +4,51 @@
 
 SNIPDIR="../snippets"
 
-cat $SNIPDIR/header.html.snip $SNIPDIR/docbook_start.html.snip \
-	> header-webpage.html
+# 1) The header HTML code inside the body (menu, navigation)
 
-touch head-webpage.html
+cat > header-webpage.html <<EOF
+<?xml version="1.0" encoding="UTF-8" ?>
+<htmlcode>
+EOF
+
+cat $SNIPDIR/header.html.snip | \
+	sed 's|\(href="\)\([^"]\)|\1/\2|g' | \
+	sed 's|href="/#|href="#|g' | \
+	sed 's|src="//|src="/|g' | \
+	sed 's|href="/http|href="http|g' | \
+	sed '/<body.*/d' | \
+	sed '/<!DOCTYPE.*/d' | \
+	sed '/<html.*/d' | \
+	sed '/<head>/,/<\/head>/d' | \
+	sed 's|<li><a href="/documentation.html"|<li class="active"><a href="/documentation.html"|g' \
+	>> header-webpage.html
+
+cat >> header-webpage.html <<EOF
+</htmlcode>
+EOF
+
+# 2) The content of the 'head' tag
+
+cat > head-webpage.html <<EOF
+<?xml version="1.0" encoding="UTF-8" ?>
+<htmlcode>
+EOF
+
+cat $SNIPDIR/header.html.snip | \
+	sed 's|\(href="\)\([^"]\)|\1/\2|g' | \
+	sed 's|\(src="\)\([^"]\)|\1/\2|g' | \
+	sed '/<!DOCTYPE.*/d' | \
+	sed '/<html.*/d' | \
+	sed '/<head>/d' | \
+	sed '/<\/head>/d' | \
+	sed '/<body/,//d' \
+	>> head-webpage.html
+
+cat >> head-webpage.html <<EOF
+</htmlcode>
+EOF
+
+# 3) the footer
 
 cat > footer-webpage.html <<EOF
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -19,7 +60,7 @@ cat > footer-webpage.html <<EOF
 <htmlcode>
 EOF
 
-cat $SNIPDIR/docbook_end.html.snip $SNIPDIR/footer.html.snip | \
+cat $SNIPDIR/footer.html.snip | \
 	sed 's|\(href="\)\([^"]\)|\1/\2|g' | \
 	sed 's|href="/#|href="#|g' | \
 	sed 's|src="//|src="/|g' | \

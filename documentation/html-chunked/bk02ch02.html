@@ -10,23 +10,34 @@
 	<link xmlns="" href="/layout/styles/mediaqueries.css" rel="stylesheet" type="text/css" media="all" />
 
 	<!--[if lt IE 9]>
-		<link href="/layout/styles/ie/ie8.css" rel="stylesheet" type="text/css" media="all">
+		<link href="/layout/styles/ie/ie8.css" rel="stylesheet" type="text/css" media="all" />
 		<script src="/layout/scripts/ie/css3-mediaqueries.min.js"></script>
 		<script src="/layout/scripts/ie/html5shiv.min.js"></script>
 	<![endif]-->
-	
+
 </head><body>
+
 
 <div xmlns="" class="wrapper row1">
 	<header id="header" class="full_width clear">
-		<hgroup>
+		<div id="header-logo">
 			<h1><a href="/index.html">Project Wolframe</a></h1>
-			<h2>The Straight Path to Complex Projects</h2>
-		</hgroup>
+			<h2>The Straight Path to Successful Projects</h2>
+		</div>
 		<div id="header-contact">
 			<ul class="list none">
-				<li><span class="fa fa-envelope"></span> <a href="mailto:contact@wolframe.net">contact@wolframe.net</a></li>
+				<li><span class="fa fa-envelope"></span> <a href="/mailto:contact@wolframe.net">contact@wolframe.net</a></li>
 <!--				<li><span class="fa fa-phone"></span> +xx xxx xxxxxxxxxx</li> -->
+			</ul>
+			<ul class="list none">
+				<li class="icons"><a id="googleplus-bttn" href="http://plus.google.com/116915890857205562872?prsrc=3" rel="publisher" target="_top" style="text-decoration:none;">
+					<span>Google+</span></a></li>
+				<li class="icons"><a id="linkedin-bttn" href="#" target="_top" style="text-decoration:none;">
+					<span>LinkedIn</span></a></li>
+				<li class="icons"><a id="twitter-bttn" href="http://twitter.com/ProjectWolframe" target="_top" style="text-decoration:none;">
+					<span>twitter</span></a></li>
+				<li class="icons"><a id="rss-bttn" href="#" target="_top" style="text-decoration:none;">
+					<span>rss</span></a></li>
 			</ul>
 		</div>
 	</header>
@@ -36,6 +47,7 @@
 <div xmlns="" class="wrapper row2">
 	<nav id="topnav">
 		<ul class="clear">
+<!-- BEGIN MENU -->
 			<li><a href="/index.html" title="Home">Home</a></li>
 <!--
 			<li><a href="/solutions.html" title="Solutions">Solutions</a></li>
@@ -49,13 +61,13 @@
 				</ul>
 			</li>
 			<li class="last-child"><a href="/contact.html" title="Contact Us">Contact Us</a></li>
+<!-- END MENU -->
 		</ul>
 	</nav>
 </div>
 <!-- ################################################################################################ -->
-
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 2. Presentation Tier</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk02ch01.html">Prev</a> </td><th width="60%" align="center">Wolframe Clients</th><td width="20%" align="right"> <a accesskey="n" href="bk02ix01.html">Next</a></td></tr></table><hr /></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="idp1377843884"></a>Chapter 2. Presentation Tier</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="bk02ch02.html#idp1377841372">2.1. Wolframe Standard Client (wolfclient)</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk02ch02.html#idp1377841740">2.1.1. Architecture</a></span></dt><dt><span class="sect2"><a href="bk02ch02.html#idp1377896156">2.1.2. Artifacts</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk02ch02.html#idp1377897140">UI forms</a></span></dt><dt><span class="sect3"><a href="bk02ch02.html#idp1377898756">UI form translations</a></span></dt><dt><span class="sect3"><a href="bk02ch02.html#idp1377902428">Resources</a></span></dt></dl></dd><dt><span class="sect2"><a href="bk02ch02.html#idp1377904012">2.1.3. Programming the Interface</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk02ch02.html#idp1377906572">Mapping XML Data</a></span></dt><dt><span class="sect3"><a href="bk02ch02.html#idp1377923548">Switching UI forms</a></span></dt><dt><span class="sect3"><a href="bk02ch02.html#idp1377928460">States and properties of widgets</a></span></dt><dt><span class="sect3"><a href="bk02ch02.html#idp1377930068">Widget properties as dynamic property values</a></span></dt></dl></dd><dt><span class="sect2"><a href="bk02ch02.html#idp1377931436">2.1.4. Eliminating Interface Defects</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk02ch02.html#idp1377932572">Switch the Developer Mode On</a></span></dt><dt><span class="sect3"><a href="bk02ch02.html#idp1377935740">Inspect Errors and Warnings and Debug Messages Reported</a></span></dt></dl></dd></dl></dd></dl></div><p>This chapter describes the presentation tier and how a <span class="application">Wolframe</span> user interface is built.
-</p><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1377841372"></a>2.1. Wolframe Standard Client (wolfclient)</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1377841740"></a>2.1.1. Architecture</h3></div></div></div><p>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 2. Presentation Tier</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk02ch01.html">Prev</a> </td><th width="60%" align="center">Wolframe Clients</th><td width="20%" align="right"> <a accesskey="n" href="bk02ix01.html">Next</a></td></tr></table><hr /></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="idp1404050348"></a>Chapter 2. Presentation Tier</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="bk02ch02.html#idp1404048108">2.1. Wolframe Standard Client (wolfclient)</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk02ch02.html#idp1404048428">2.1.1. Architecture</a></span></dt><dt><span class="sect2"><a href="bk02ch02.html#idp1404102588">2.1.2. Artifacts</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk02ch02.html#idp1404103636">UI forms</a></span></dt><dt><span class="sect3"><a href="bk02ch02.html#idp1404105316">UI form translations</a></span></dt><dt><span class="sect3"><a href="bk02ch02.html#idp1404109148">Resources</a></span></dt></dl></dd><dt><span class="sect2"><a href="bk02ch02.html#idp1404110772">2.1.3. Programming the Interface</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk02ch02.html#idp1404113508">Mapping XML Data</a></span></dt><dt><span class="sect3"><a href="bk02ch02.html#idp1404130484">Switching UI forms</a></span></dt><dt><span class="sect3"><a href="bk02ch02.html#idp1404135396">States and properties of widgets</a></span></dt><dt><span class="sect3"><a href="bk02ch02.html#idp1404137004">Widget properties as dynamic property values</a></span></dt></dl></dd><dt><span class="sect2"><a href="bk02ch02.html#idp1404138372">2.1.4. Eliminating Interface Defects</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk02ch02.html#idp1404139508">Switch the Developer Mode On</a></span></dt><dt><span class="sect3"><a href="bk02ch02.html#idp1404142676">Inspect Errors and Warnings and Debug Messages Reported</a></span></dt></dl></dd></dl></dd></dl></div><p>This chapter describes the presentation tier and how a <span class="application">Wolframe</span> user interface is built.
+</p><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1404048108"></a>2.1. Wolframe Standard Client (wolfclient)</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1404048428"></a>2.1.1. Architecture</h3></div></div></div><p>
 		The <span class="application">Wolframe</span> standard client <span class="application">wolfclient</span>
 		is a thin client which executes XML requests
 		via the Wolframe protocol and presents XML answers. It is written in
@@ -64,18 +76,18 @@
 		User interfaces for <span class="application">wolfclient</span> are defined as a set of forms
 		using standard Qt widgets and are if ever possible defined using the
 		<span class="application">Qt Interface Designer</span> (see <a class="ulink" href="http://qt-project.org/doc/qt-4.8/designer-manual.html" target="_top"><em class="citetitle">http://qt-project.org/doc/qt-4.8/designer-manual.html</em></a>).
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1377896156"></a>2.1.2. Artifacts</h3></div></div></div><p>
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1404102588"></a>2.1.2. Artifacts</h3></div></div></div><p>
 		The <span class="application">wolfclient</span> renders user interface forms dynamically,
 		this means no code generation or compilation is involved when creating
 		user interfaces for Wolframe.
-	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1377897140"></a>UI forms</h4></div></div></div><p>
+	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1404103636"></a>UI forms</h4></div></div></div><p>
 			The UI files follow the schema
 			'qt-ui-4.7.xsd', as documented in
 			<a class="ulink" href="http://doc.qt.digia.com/qt/designer-ui-file-format.html" target="_top"><em class="citetitle">http://doc.qt.digia.com/qt/designer-ui-file-format.html</em></a>.
 			The UI files have the extension <span class="emphasis"><em>.ui</em></span>
 		</p><p>
 			UI files are created and edited with the Qt designer.
-		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1377898756"></a>UI form translations</h4></div></div></div><p>
+		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1404105316"></a>UI form translations</h4></div></div></div><p>
 			The <span class="application">wolfclient</span> uses the Qt translation format, version 2.0 for form translations
 			as described in
 			<a class="ulink" href="http://doc.qt.digia.com/qt/linguist-ts-file-format.html" target="_top"><em class="citetitle">http://doc.qt.digia.com/qt/linguist-ts-file-format.html</em></a>.
@@ -90,13 +102,13 @@
 		</p><p>
 			Read more on translations in
 			<a class="ulink" href="http://doc.qt.digia.com/qt/linguist-manual.html" target="_top"><em class="citetitle">http://doc.qt.digia.com/qt/linguist-manual.html</em></a>.
-		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1377902428"></a>Resources</h4></div></div></div><p>
+		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1404109148"></a>Resources</h4></div></div></div><p>
 			Binary resource files contain images for the user interface.
 		</p><p>
 			Binary resource files (extension <span class="emphasis"><em>.rss</em></span>) are compiled from
 			a XML file (extension <span class="emphasis"><em>.qrc</em></span>) with the <span class="emphasis"><em>rcc</em></span>
 			resource compiler.
-		</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1377904012"></a>2.1.3. Programming the Interface</h3></div></div></div><p>
+		</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1404110772"></a>2.1.3. Programming the Interface</h3></div></div></div><p>
 			Programming means we annotate the XML of the UI form files with
 			some extra properties. They control the following things:
 			</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
@@ -110,7 +122,7 @@
 					with all the data in the text fields of the form added to the request
 					XML.
 				</p></li></ul></div><p>
-		</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1377906572"></a>Mapping XML Data</h4></div></div></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1377906892"></a>Starting Position</h5></div></div></div><p>For mapping data structures from the user interface elements to the
+		</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1404113508"></a>Mapping XML Data</h4></div></div></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1404113828"></a>Starting Position</h5></div></div></div><p>For mapping data structures from the user interface elements to the
 				data description needed to fulfill an interface for a server request we need
 				some kind of translation. An implicit mapping would only be able to describe
 				very trivial data mappings. After drawing the user interface this translation
@@ -118,7 +130,7 @@
 				has to be mapped to be shown in the user interface elements view. Here applies
 				the same: Some kind of translation is needed to map a server data structure
 				to the user interface elements.
-				</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1377908076"></a>First Example</h5></div></div></div><p>
+				</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1404115012"></a>First Example</h5></div></div></div><p>
 					Let's have a look at a <code class="classname">QLineEdit</code>
 					element of a form and a possible XML representation of the
 					data used for a request.
@@ -156,7 +168,7 @@
 				</p><pre class="programlisting">
 				Customer customer {name{{main.name}}; address{{main.address}}}
 
-				</pre></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1377915508"></a>Another Example</h5></div></div></div><p>
+				</pre></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1404122444"></a>Another Example</h5></div></div></div><p>
 					Some elements are more complicated than that.
 					They present the user a list of options or items the user to pick from, e.g. a list of cities.
 				</p><div class="screenshot"><div class="mediaobject"><img src="images/clients/complex_form.png" /></div></div><p>
@@ -201,7 +213,7 @@
 &lt;city id='6'&gt;London&lt;/city&gt;
 &lt;/cities&gt;
 
-				</pre></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1377923548"></a>Switching UI forms</h4></div></div></div><p>
+				</pre></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1404130484"></a>Switching UI forms</h4></div></div></div><p>
 				A UI form contains a set of widgets, the dynamic property
 				<code class="code">form</code> contains the name of a widget (without
 				extension <span class="emphasis"><em>.ui</em></span>) to load.
@@ -217,7 +229,7 @@
 				Before loading the next form the client terminates all current
 				requests, for instance a save request of the form data.
 				In case of an error in an action any defined switching of the form is cancelled.
-			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1377928460"></a>States and properties of widgets</h4></div></div></div><p>
+			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1404135396"></a>States and properties of widgets</h4></div></div></div><p>
 				Some properties are reserved for states steering the behavior of the user interface:
 
 				</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><code class="code">initialFocus</code>:
@@ -225,21 +237,21 @@
 					We can set a boolean value to one widget in a form which should
 					get the initial keyboard focus.
 					</p></li></ul></div><p>
-			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1377930068"></a>Widget properties as dynamic property values</h4></div></div></div><p>
+			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1404137004"></a>Widget properties as dynamic property values</h4></div></div></div><p>
 				Dynamic properties can reference properties of widgets
 				like for example <code class="code">property = {variable expression}</code>.
 			</p><p>
 				The expression can reference addressable widgets and their properties.
 				Every Qt class has its very own set of properties it understands.
-			</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1377931436"></a>2.1.4. Eliminating Interface Defects</h3></div></div></div><p>
+			</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1404138372"></a>2.1.4. Eliminating Interface Defects</h3></div></div></div><p>
 			Functional defects in the user interface like for example syntax errors in the
 			definitions of the request answer can be eliminated by inspecting the error messages
 			reported by the <span class="application">wolfclient</span> in developer mode
 			and fixing the interface accordingly.
-		</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1377932572"></a>Switch the Developer Mode On</h4></div></div></div><p>In order to inspect the internals of your client program, we have first
+		</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1404139508"></a>Switch the Developer Mode On</h4></div></div></div><p>In order to inspect the internals of your client program, we have first
 			to switch on "Developer Mode" in the "Developer" context of the "Preferences Dialog".
 			The following picture emphasizes the check box you have to enable (highlighted green).
-			</p><div class="screenshot"><div class="mediaobject"><img src="images/clients/preferences_developper_develmode.png" /></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1377935740"></a>Inspect Errors and Warnings and Debug Messages Reported</h4></div></div></div><p>To inspect internal messages reported by the <span class="application">wolfclient</span>
+			</p><div class="screenshot"><div class="mediaobject"><img src="images/clients/preferences_developper_develmode.png" /></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1404142676"></a>Inspect Errors and Warnings and Debug Messages Reported</h4></div></div></div><p>To inspect internal messages reported by the <span class="application">wolfclient</span>
 			in developer mode we have to open the debug window.
 			The debug window is opened by clicking on the bug icon in the
 			main tool bar or via the developer context menu. The following picture
@@ -259,7 +271,7 @@
 			The "Clear" button allows us to empty the recent history without closing
 			the debug window.
 			</p><div class="screenshot"><div class="mediaobject"><img src="images/clients/debug_window.png" /></div></div></div></div></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk02ch01.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk02.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk02ix01.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter 1. Introduction </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> Index</td></tr></table></div></div></div>
-	
+
 <!-- Footer -->
 <div xmlns="" class="wrapper row2">
 	<div id="footer" class="clear">
@@ -300,7 +312,12 @@
 <!--		<div class="one_quarter">-->
 		<div class="one_third">
 			<h2 class="footer_title">Contact Us</h2>
-			<p><strong>Email:</strong> <a href="mailto:contact@wolframe.net">contact@wolframe.net</a></p>
+			<nav class="footer_nav">
+				<ul class="nospace">
+					<li><strong>Email:</strong> <a href="/mailto:contact@wolframe.net">contact@wolframe.net</a></li>
+					<li><a href="https://plus.google.com/116915890857205562872" rel="publisher">Google+</a></li>
+				</ul>
+			</nav>
 		</div>
 	</div>
 </div>
@@ -315,7 +332,9 @@
 <!-- Scripts -->
 <script xmlns="" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script xmlns="" src="http://code.jquery.com/ui/1.10.1/jquery-ui.min.js"></script>
+<script xmlns="">window.jQuery || document.write('\x3Cscript src="/layout/scripts/jquery-latest.min.js"&gt;\x3C\/script&gt;\
+\x3Cscript src="/layout/scripts/jquery-ui.min.js"&gt;\x3C\/script&gt;')</script>
+<script xmlns="">jQuery(document).ready(function($){ $('img').removeAttr('width height'); });</script>
 <script xmlns="" src="/layout/scripts/jquery-mobilemenu.min.js"></script>
 <script xmlns="" src="/layout/scripts/custom.js"></script>
-
 </body></html>
