@@ -38,6 +38,7 @@ cd ..
 ./build-baddomain.sh
 ./build-doxygen-templates.sh
 ./build-docbook-xmlnippets.sh
+./build-copyright.sh
 
 mv -f *.html ..
 mv -f downloads/*.html ../downloads/.
