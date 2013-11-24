@@ -18,5 +18,6 @@ cat $SNIPDIR/header.html.snip $SNIPDIR/content_start.html.snip | \
 cat $SNIPDIR/content_end.html.snip $SNIPDIR/footer.html.snip | sed 's|\(href="\)\([^"]\)|\1/\2|g' | \
 	sed 's|href="/#|href="#|g' | \
 	sed 's|href="/\(http\)|href="\1|g' | \
+	sed 's|href="//|href="/|g' | \
 	sed 's|href="/mailto|href="mailto|g' \
 	> footer-downloads.html
