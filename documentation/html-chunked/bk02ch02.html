@@ -15,6 +15,7 @@
 		<script src="/layout/scripts/ie/html5shiv.min.js"></script>
 	<![endif]-->
 
+
 </head><body>
 
 
@@ -65,10 +66,11 @@
 		</ul>
 	</nav>
 </div>
+
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 2. The Wolframe Standard Client</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk02ch01.html">Prev</a> </td><th width="60%" align="center">Wolframe Clients</th><td width="20%" align="right"> <a accesskey="n" href="bk02ch02s02.html">Next</a></td></tr></table><hr /></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="idp1373402292"></a>Chapter 2. The Wolframe Standard Client</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="bk02ch02.html#idp1373401196">2.1. Architecture</a></span></dt><dt><span class="sect1"><a href="bk02ch02s02.html">2.2. Artifacts</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk02ch02s02.html#idp1373420316">2.2.1. UI forms</a></span></dt><dt><span class="sect2"><a href="bk02ch02s02.html#idp1373415732">2.2.2. UI form translations</a></span></dt><dt><span class="sect2"><a href="bk02ch02s02.html#idp1373464244">2.2.3. Resources</a></span></dt></dl></dd><dt><span class="sect1"><a href="bk02ch02s03.html">2.3. Programming the Interface</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk02ch02s03.html#idp1373431756">2.3.1. Mapping XML Data</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk02ch02s03.html#idp1373432100">Starting Position</a></span></dt><dt><span class="sect3"><a href="bk02ch02s03.html#idp1373459092">First Example</a></span></dt><dt><span class="sect3"><a href="bk02ch02s03.html#idp1373486444">Another Example</a></span></dt></dl></dd><dt><span class="sect2"><a href="bk02ch02s03.html#idp1373494460">2.3.2. Switching UI forms</a></span></dt><dt><span class="sect2"><a href="bk02ch02s03.html#idp1373499372">2.3.3. States and properties of widgets</a></span></dt><dt><span class="sect2"><a href="bk02ch02s03.html#idp1373500972">2.3.4. Widget properties as dynamic property values</a></span></dt></dl></dd><dt><span class="sect1"><a href="bk02ch02s04.html">2.4. Eliminating Interface Defects</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk02ch02s04.html#idp1373503460">2.4.1. Switch the Developer Mode On</a></span></dt><dt><span class="sect2"><a href="bk02ch02s04.html#idp1373506620">2.4.2. Inspect Errors and Warnings and Debug Messages Reported</a></span></dt></dl></dd><dt><span class="sect1"><a href="bk02ch02s05.html">2.5. Programming Server Requests/Answers</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk02ch02s05.html#idp1373522660">2.5.1. Adressing Widget Data</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk02ch02s05.html#idp1373511756">Biggest Common Ancestor Path</a></span></dt><dt><span class="sect3"><a href="bk02ch02s05.html#idp1373512772">Addressing Atomic Elements</a></span></dt><dt><span class="sect3"><a href="bk02ch02s05.html#idp1373562444">Special Path Elements</a></span></dt></dl></dd><dt><span class="sect2"><a href="bk02ch02s05.html#idp1373565420">2.5.2. Data Structures</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk02ch02s05.html#idp1373566068">Example</a></span></dt></dl></dd><dt><span class="sect2"><a href="bk02ch02s05.html#idp1373567700">2.5.3. Arrays</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk02ch02s05.html#idp1373568356">Description</a></span></dt><dt><span class="sect3"><a href="bk02ch02s05.html#idp1373571916">Example</a></span></dt></dl></dd><dt><span class="sect2"><a href="bk02ch02s05.html#idp1373574492">2.5.4. Indirection and Recursion</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk02ch02s05.html#idp1373575348">Description</a></span></dt><dt><span class="sect3"><a href="bk02ch02s05.html#idp1373579404">Example (Arbitrary Tree)</a></span></dt><dt><span class="sect3"><a href="bk02ch02s05.html#idp1373580948">Example (Binary Tree)</a></span></dt></dl></dd></dl></dd></dl></div><p>This chapter describes the standard <span class="application">Wolframe</span> client
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 2. The Wolframe Standard Client</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk02ch01.html">Prev</a> </td><th width="60%" align="center">Wolframe Clients</th><td width="20%" align="right"> <a accesskey="n" href="bk02ch02s02.html">Next</a></td></tr></table><hr /></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="idp1402429660"></a>Chapter 2. The Wolframe Standard Client</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="bk02ch02.html#idp1402428564">2.1. Architecture</a></span></dt><dt><span class="sect1"><a href="bk02ch02s02.html">2.2. Artifacts</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk02ch02s02.html#idp1402447684">2.2.1. UI forms</a></span></dt><dt><span class="sect2"><a href="bk02ch02s02.html#idp1402443100">2.2.2. UI form translations</a></span></dt><dt><span class="sect2"><a href="bk02ch02s02.html#idp1402491612">2.2.3. Resources</a></span></dt></dl></dd><dt><span class="sect1"><a href="bk02ch02s03.html">2.3. Programming the Interface</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk02ch02s03.html#idp1402459124">2.3.1. Mapping XML Data</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk02ch02s03.html#idp1402459468">Starting Position</a></span></dt><dt><span class="sect3"><a href="bk02ch02s03.html#idp1402486460">First Example</a></span></dt><dt><span class="sect3"><a href="bk02ch02s03.html#idp1402513812">Another Example</a></span></dt></dl></dd><dt><span class="sect2"><a href="bk02ch02s03.html#idp1402521828">2.3.2. Switching UI forms</a></span></dt><dt><span class="sect2"><a href="bk02ch02s03.html#idp1402526740">2.3.3. States and properties of widgets</a></span></dt><dt><span class="sect2"><a href="bk02ch02s03.html#idp1402528340">2.3.4. Widget properties as dynamic property values</a></span></dt></dl></dd><dt><span class="sect1"><a href="bk02ch02s04.html">2.4. Eliminating Interface Defects</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk02ch02s04.html#idp1402530828">2.4.1. Switch the Developer Mode On</a></span></dt><dt><span class="sect2"><a href="bk02ch02s04.html#idp1402533988">2.4.2. Inspect Errors and Warnings and Debug Messages Reported</a></span></dt></dl></dd><dt><span class="sect1"><a href="bk02ch02s05.html">2.5. Programming Server Requests/Answers</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk02ch02s05.html#idp1402550028">2.5.1. Adressing Widget Data</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk02ch02s05.html#idp1402539124">Biggest Common Ancestor Path</a></span></dt><dt><span class="sect3"><a href="bk02ch02s05.html#idp1402540140">Addressing Atomic Elements</a></span></dt><dt><span class="sect3"><a href="bk02ch02s05.html#idp1402589812">Special Path Elements</a></span></dt></dl></dd><dt><span class="sect2"><a href="bk02ch02s05.html#idp1402592788">2.5.2. Data Structures</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk02ch02s05.html#idp1402593436">Example</a></span></dt></dl></dd><dt><span class="sect2"><a href="bk02ch02s05.html#idp1402595068">2.5.3. Arrays</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk02ch02s05.html#idp1402595724">Description</a></span></dt><dt><span class="sect3"><a href="bk02ch02s05.html#idp1402599284">Example</a></span></dt></dl></dd><dt><span class="sect2"><a href="bk02ch02s05.html#idp1402601860">2.5.4. Indirection and Recursion</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk02ch02s05.html#idp1402602716">Description</a></span></dt><dt><span class="sect3"><a href="bk02ch02s05.html#idp1402606772">Example (Arbitrary Tree)</a></span></dt><dt><span class="sect3"><a href="bk02ch02s05.html#idp1402608316">Example (Binary Tree)</a></span></dt></dl></dd></dl></dd></dl></div><p>This chapter describes the standard <span class="application">Wolframe</span> client
 	called wolfclient and how a user interface is built.
-	</p><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1373401196"></a>2.1. Architecture</h2></div></div></div><p>
+	</p><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1402428564"></a>2.1. Architecture</h2></div></div></div><p>
 	The <span class="application">Wolframe</span> standard client <span class="application">wolfclient</span>
 	is a thin client which executes XML requests
 	via the Wolframe protocol and presents XML answers. It is written in
@@ -122,7 +124,11 @@
 			<nav class="footer_nav">
 				<ul class="nospace">
 					<li><strong>Email:</strong> <a href="/mailto:contact@wolframe.net">contact@wolframe.net</a></li>
-					<li><a href="https://plus.google.com/116915890857205562872" rel="publisher">Google+</a></li>
+					<li>
+						<a href="https://twitter.com/ProjectWolframe" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @ProjectWolframe</a>
+						<div class="g-follow" data-annotation="none" data-height="20" data-href="http://plus.google.com/116915890857205562872" data-rel="publisher"></div>
+						<div class="g-plusone" data-href="http://www.wolframe.net" data-size="tall" data-annotation="none"></div>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -144,4 +150,29 @@
 <script xmlns="">jQuery(document).ready(function($){ $('img').removeAttr('width height'); });</script>
 <script xmlns="" src="/layout/scripts/jquery-mobilemenu.min.js"></script>
 <script xmlns="" src="/layout/scripts/custom.js"></script>
+<!-- Tweeter follow script -->
+<script xmlns="">
+	!function( d, s, id )	{
+		var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location)?'http':'https';
+		if( !d.getElementById( id ))	{
+			js = d.createElement( s );
+			js.id = id;
+			js.src = p + '://platform.twitter.com/widgets.js';
+			fjs.parentNode.insertBefore( js,fjs );
+		}
+	} ( document, 'script', 'twitter-wjs' );
+</script>
+<!-- Google +1, follow -->
+<script xmlns="" type="text/javascript">
+	window.___gcfg = {
+		lang: 'en-US',
+		parsetags: 'onload'
+	};
+	( function()	{
+		var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		po.src = 'https://apis.google.com/js/plusone.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	}) ();
+</script>
+
 </body></html>

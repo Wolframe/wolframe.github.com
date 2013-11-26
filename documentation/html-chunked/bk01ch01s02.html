@@ -15,6 +15,7 @@
 		<script src="/layout/scripts/ie/html5shiv.min.js"></script>
 	<![endif]-->
 
+
 </head><body>
 
 
@@ -65,14 +66,15 @@
 		</ul>
 	</nav>
 </div>
+
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">1.2. Architecture</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch01.html">Prev</a> </td><th width="60%" align="center">Chapter 1. Introduction</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch02.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1368868012"></a>1.2. Architecture</h2></div></div></div><p><span class="application">Wolframe</span> is a 3-tier application server.
-		</p><div class="figure"><a id="idp1368910420"></a><p class="title"><strong>Figure 1.2. Overview</strong></p><div class="figure-contents"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0; cellspacing: 0;" width="100%"><tr><td><object type="image/svg+xml" data="images/3-tier.svg" height="360"></object></td></tr></table><div class="caption"><p></p></div></div></div></div><br class="figure-break" /><p></p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1368912420"></a>1.2.1. Presentation tier</h3></div></div></div><p>The presentation tier of <span class="application">Wolframe</span> is implemented as a thin client.
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">1.2. Architecture</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch01.html">Prev</a> </td><th width="60%" align="center">Chapter 1. Introduction</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch02.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1397986084"></a>1.2. Architecture</h2></div></div></div><p><span class="application">Wolframe</span> is a 3-tier application server.
+		</p><div class="figure"><a id="idp1397986940"></a><p class="title"><strong>Figure 1.2. Overview</strong></p><div class="figure-contents"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0; cellspacing: 0;" width="100%"><tr><td><object type="image/svg+xml" data="images/3-tier.svg" height="360"></object></td></tr></table><div class="caption"><p></p></div></div></div></div><br class="figure-break" /><p></p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1397988964"></a>1.2.1. Presentation tier</h3></div></div></div><p>The presentation tier of <span class="application">Wolframe</span> is implemented as a thin client.
 			It maps the presentation of the application from the request answers it gets from the server.
 			Also the data describing this mapping is loaded from the server when connecting to it.
 			So the whole application is driven by the server.
 			Special use cases are designers of user interfaces that upload the presentation data for other users
-			to the server.</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1368913764"></a>1.2.2. Logic tier</h3></div></div></div><p>The logic tier of <span class="application">Wolframe</span> describes the transformation of input of the presentation tier to a set of instructions
+			to the server.</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1397990308"></a>1.2.2. Logic tier</h3></div></div></div><p>The logic tier of <span class="application">Wolframe</span> describes the transformation of input of the presentation tier to a set of instructions
 			for the data tier. The input to the logic tier  consists of a command name plus a
 			structured content also referred to as document. The
 			logic tier returns a single document to the presentation tier.
@@ -81,7 +83,7 @@
 			<span class="application">Wolframe</span> introduces three concepts as building blocks of the logic tier:
 				</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><em class="glossterm">Filters</em>: Filters are transforming serialized input data (XML,JSON,CSV,etc.) to a unified serialization of hierarchically structured data and to serialize any form of processed data for output. Filters are implemented as loadable modules (e.g. XML filter based on libxml2, JSON filter based on cJSON) or as scripts based on a filter module (XSLT filter script for rewriting input or output)</p></li><li class="listitem"><p><em class="glossterm">Forms</em>: Forms are data structures defined in a data definition language (DDL). Forms are used to validate and normalize input (XML validation, token normalization, structure definition). The recommended definition of a command in the logic tier has a form to validate its input and a form to validate its output before returning it to the caller.</p></li><li class="listitem"><p><em class="glossterm">Functions</em>: Functions delegate processing to the data tier (transactions) or they are simple data transformations or they serve as interface to integrate with other environments (e.g. <span class="application">.NET</span>). Functions have a unique name and are called with a structure as argument and a structure as result. Functions can call other functions for delegation, e.g. a transaction definition can call a .NET function for preprocessing its input or a .NET function can call a Python function to do parts of the processing.</p></li></ul></div><p>
 			You find a detailed description of the Logic tier and how to use it in the SDK manual.
-			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1368789116"></a>1.2.3. Data tier</h3></div></div></div><p>The data tier of <span class="application">Wolframe</span> defines the functions for calling a transaction.
+			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1397995196"></a>1.2.3. Data tier</h3></div></div></div><p>The data tier of <span class="application">Wolframe</span> defines the functions for calling a transaction.
 			The main transaction function gets a complete description of the transaction to execute as input and returns
 			all results of the transaction as output. The logic tier builds the result data structure out of this result.
 			The main transaction function is stateless and an abstraction of the transactional context. (The transaction
@@ -131,7 +133,11 @@
 			<nav class="footer_nav">
 				<ul class="nospace">
 					<li><strong>Email:</strong> <a href="/mailto:contact@wolframe.net">contact@wolframe.net</a></li>
-					<li><a href="https://plus.google.com/116915890857205562872" rel="publisher">Google+</a></li>
+					<li>
+						<a href="https://twitter.com/ProjectWolframe" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @ProjectWolframe</a>
+						<div class="g-follow" data-annotation="none" data-height="20" data-href="http://plus.google.com/116915890857205562872" data-rel="publisher"></div>
+						<div class="g-plusone" data-href="http://www.wolframe.net" data-size="tall" data-annotation="none"></div>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -153,4 +159,29 @@
 <script xmlns="">jQuery(document).ready(function($){ $('img').removeAttr('width height'); });</script>
 <script xmlns="" src="/layout/scripts/jquery-mobilemenu.min.js"></script>
 <script xmlns="" src="/layout/scripts/custom.js"></script>
+<!-- Tweeter follow script -->
+<script xmlns="">
+	!function( d, s, id )	{
+		var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location)?'http':'https';
+		if( !d.getElementById( id ))	{
+			js = d.createElement( s );
+			js.id = id;
+			js.src = p + '://platform.twitter.com/widgets.js';
+			fjs.parentNode.insertBefore( js,fjs );
+		}
+	} ( document, 'script', 'twitter-wjs' );
+</script>
+<!-- Google +1, follow -->
+<script xmlns="" type="text/javascript">
+	window.___gcfg = {
+		lang: 'en-US',
+		parsetags: 'onload'
+	};
+	( function()	{
+		var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		po.src = 'https://apis.google.com/js/plusone.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	}) ();
+</script>
+
 </body></html>
