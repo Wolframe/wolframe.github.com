@@ -30,16 +30,6 @@
 				<li><span class="fa fa-envelope"></span> <a href="/mailto:contact@wolframe.net">contact@wolframe.net</a></li>
 <!--				<li><span class="fa fa-phone"></span> +xx xxx xxxxxxxxxx</li> -->
 			</ul>
-			<ul class="list none">
-				<li class="icons"><a id="googleplus-bttn" href="http://plus.google.com/116915890857205562872?prsrc=3" rel="publisher" target="_top" style="text-decoration:none;">
-					<span>Google+</span></a></li>
-				<li class="icons"><a id="linkedin-bttn" href="#" target="_top" style="text-decoration:none;">
-					<span>LinkedIn</span></a></li>
-				<li class="icons"><a id="twitter-bttn" href="http://twitter.com/ProjectWolframe" target="_top" style="text-decoration:none;">
-					<span>twitter</span></a></li>
-				<li class="icons"><a id="rss-bttn" href="#" target="_top" style="text-decoration:none;">
-					<span>rss</span></a></li>
-			</ul>
 		</div>
 	</header>
 </div>
@@ -68,12 +58,12 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.6. Functions in C++</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch03s05.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Functions</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch04.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1401623844"></a>3.6. Functions in C++</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1401624188"></a>3.6.1. Introduction</h3></div></div></div><p>You can write functions for the logic tier of <span class="application">Wolframe</span> with <span class="application">C++</span>. 
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.6. Functions in C++</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch03s05.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Functions</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch04.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1384825412"></a>3.6. Functions in C++</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1384825756"></a>3.6.1. Introduction</h3></div></div></div><p>You can write functions for the logic tier of <span class="application">Wolframe</span> with <span class="application">C++</span>. 
 		Because <span class="application">C++</span> is supported by <span class="application">Wolframe</span> only as a compiled and not as 
 		an interpreted language, you have to build a module out of your function implementation.
-		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1401625836"></a>3.6.2. Declaring Functions</h3></div></div></div><p>
+		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1384827404"></a>3.6.2. Declaring Functions</h3></div></div></div><p>
 		...
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1401620572"></a>3.6.3. Input/Output Data Structures</h3></div></div></div><p>For defining input and output parameter structures in <span class="application">C++</span> you have to define the 
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1384822140"></a>3.6.3. Input/Output Data Structures</h3></div></div></div><p>For defining input and output parameter structures in <span class="application">C++</span> you have to define the 
 		structure and its serialization description. The serialization description is a static 
 		function <code class="code">getStructDescription</code> without arguments returning a const structure that describes 
 		what element names to bind to which structure elements.
@@ -180,9 +170,19 @@ const serialize::StructDescriptionBase* Customer::getStructDescription()
 				<ul class="nospace">
 					<li><strong>Email:</strong> <a href="/mailto:contact@wolframe.net">contact@wolframe.net</a></li>
 					<li>
+						<a id="googleplus-bttn" href="http://plus.google.com/116915890857205562872?prsrc=3" rel="publisher" target="_top" style="text-decoration:none;">
+							<span>Google+</span></a>
+						<a id="linkedin-bttn" href="#" target="_top" style="text-decoration:none;">
+							<span>LinkedIn</span></a>
+						<a id="twitter-bttn" href="http://twitter.com/ProjectWolframe" target="_top" style="text-decoration:none;">
+							<span>twitter</span></a>
+						<a id="rss-bttn" href="#" target="_top" style="text-decoration:none;">
+							<span>rss</span></a>
+					</li>
+					<li>
 						<a href="https://twitter.com/ProjectWolframe" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @ProjectWolframe</a>
 						<div class="g-follow" data-annotation="none" data-height="20" data-href="http://plus.google.com/116915890857205562872" data-rel="publisher"></div>
-						<div class="g-plusone" data-href="http://www.wolframe.net" data-size="tall" data-annotation="none"></div>
+						<div class="g-plusone" data-href="http://www.wolframe.net" data-size="medium"></div>
 					</li>
 				</ul>
 			</nav>

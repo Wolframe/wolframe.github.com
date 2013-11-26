@@ -30,16 +30,6 @@
 				<li><span class="fa fa-envelope"></span> <a href="/mailto:contact@wolframe.net">contact@wolframe.net</a></li>
 <!--				<li><span class="fa fa-phone"></span> +xx xxx xxxxxxxxxx</li> -->
 			</ul>
-			<ul class="list none">
-				<li class="icons"><a id="googleplus-bttn" href="http://plus.google.com/116915890857205562872?prsrc=3" rel="publisher" target="_top" style="text-decoration:none;">
-					<span>Google+</span></a></li>
-				<li class="icons"><a id="linkedin-bttn" href="#" target="_top" style="text-decoration:none;">
-					<span>LinkedIn</span></a></li>
-				<li class="icons"><a id="twitter-bttn" href="http://twitter.com/ProjectWolframe" target="_top" style="text-decoration:none;">
-					<span>twitter</span></a></li>
-				<li class="icons"><a id="rss-bttn" href="#" target="_top" style="text-decoration:none;">
-					<span>rss</span></a></li>
-			</ul>
 		</div>
 	</header>
 </div>
@@ -68,13 +58,13 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">5.2. JSON Filter</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch05.html">Prev</a> </td><th width="60%" align="center">Chapter 5. Filters</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch05s03.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1401902460"></a>5.2. JSON Filter</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1401914772"></a>5.2.1. Introduction</h3></div></div></div><p>You can use <span class="application">JSON</span> for data filters in the logic tier of <span class="application">Wolframe</span>.
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">5.2. JSON Filter</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch05.html">Prev</a> </td><th width="60%" align="center">Chapter 5. Filters</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch05s03.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1385104004"></a>5.2. JSON Filter</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1385116316"></a>5.2.1. Introduction</h3></div></div></div><p>You can use <span class="application">JSON</span> for data filters in the logic tier of <span class="application">Wolframe</span>.
 	The standard <span class="application">JSON</span> filter of <span class="application">Wolframe</span> is called <span class="application">cjson</span> and 
 	based on the library <span class="application">cJSON</span> (<a class="ulink" href="http://sourceforge.net/projects/cjson" target="_top">http://sourceforge.net/projects/cjson</a>) from Dave Gamble.
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1401906348"></a>5.2.2. Character Set Encodings</h3></div></div></div><p>Without explicitly specified, the <span class="application">cjson</span> filter support the following character set 
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1385107892"></a>5.2.2. Character Set Encodings</h3></div></div></div><p>Without explicitly specified, the <span class="application">cjson</span> filter support the following character set 
 	encodings. For character set encodings that are not in the list, please ask the <span class="application">Wolframe</span> team.
 	</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><abbr class="abbrev">UTF-8</abbr> or</p></li><li class="listitem"><p><abbr class="abbrev">UTF-16LE</abbr> or</p></li><li class="listitem"><p><abbr class="abbrev">UTF-16</abbr> (<abbr class="abbrev">UTF-16BE</abbr>) or</p></li><li class="listitem"><p><abbr class="abbrev">UTF-32LE</abbr> (<abbr class="abbrev">UCS-4LE</abbr>) or</p></li><li class="listitem"><p><abbr class="abbrev">UTF-32</abbr> (<abbr class="abbrev">UTF-32BE</abbr> or <abbr class="abbrev">UCS-4BE</abbr>) or</p></li></ul></div><p>
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1401928316"></a>5.2.3. Configuration</h3></div></div></div><p>For using the JSON filter based <span class="application">cJSON</span>, you have to load the module 'mod_filter_cjson'. 
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1385129860"></a>5.2.3. Configuration</h3></div></div></div><p>For using the JSON filter based <span class="application">cJSON</span>, you have to load the module 'mod_filter_cjson'. 
 	For this you add the following line to the LoadModules section of your <span class="application">Wolframe</span> configuration:
 		</p><pre class="programlisting">
 		
@@ -127,9 +117,19 @@
 				<ul class="nospace">
 					<li><strong>Email:</strong> <a href="/mailto:contact@wolframe.net">contact@wolframe.net</a></li>
 					<li>
+						<a id="googleplus-bttn" href="http://plus.google.com/116915890857205562872?prsrc=3" rel="publisher" target="_top" style="text-decoration:none;">
+							<span>Google+</span></a>
+						<a id="linkedin-bttn" href="#" target="_top" style="text-decoration:none;">
+							<span>LinkedIn</span></a>
+						<a id="twitter-bttn" href="http://twitter.com/ProjectWolframe" target="_top" style="text-decoration:none;">
+							<span>twitter</span></a>
+						<a id="rss-bttn" href="#" target="_top" style="text-decoration:none;">
+							<span>rss</span></a>
+					</li>
+					<li>
 						<a href="https://twitter.com/ProjectWolframe" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @ProjectWolframe</a>
 						<div class="g-follow" data-annotation="none" data-height="20" data-href="http://plus.google.com/116915890857205562872" data-rel="publisher"></div>
-						<div class="g-plusone" data-href="http://www.wolframe.net" data-size="tall" data-annotation="none"></div>
+						<div class="g-plusone" data-href="http://www.wolframe.net" data-size="medium"></div>
 					</li>
 				</ul>
 			</nav>
