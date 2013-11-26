@@ -30,16 +30,6 @@
 				<li><span class="fa fa-envelope"></span> <a href="/mailto:contact@wolframe.net">contact@wolframe.net</a></li>
 <!--				<li><span class="fa fa-phone"></span> +xx xxx xxxxxxxxxx</li> -->
 			</ul>
-			<ul class="list none">
-				<li class="icons"><a id="googleplus-bttn" href="http://plus.google.com/116915890857205562872?prsrc=3" rel="publisher" target="_top" style="text-decoration:none;">
-					<span>Google+</span></a></li>
-				<li class="icons"><a id="linkedin-bttn" href="#" target="_top" style="text-decoration:none;">
-					<span>LinkedIn</span></a></li>
-				<li class="icons"><a id="twitter-bttn" href="http://twitter.com/ProjectWolframe" target="_top" style="text-decoration:none;">
-					<span>twitter</span></a></li>
-				<li class="icons"><a id="rss-bttn" href="#" target="_top" style="text-decoration:none;">
-					<span>rss</span></a></li>
-			</ul>
 		</div>
 	</header>
 </div>
@@ -68,7 +58,7 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.3. Programming the Interface</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk02ch02s02.html">Prev</a> </td><th width="60%" align="center">Chapter 2. The Wolframe Standard Client</th><td width="20%" align="right"> <a accesskey="n" href="bk02ch02s04.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1402469244"></a>2.3. Programming the Interface</h2></div></div></div><p>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.3. Programming the Interface</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk02ch02s02.html">Prev</a> </td><th width="60%" align="center">Chapter 2. The Wolframe Standard Client</th><td width="20%" align="right"> <a accesskey="n" href="bk02ch02s04.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1385670692"></a>2.3. Programming the Interface</h2></div></div></div><p>
 		Programming means we annotate the XML of the UI form files with
 		some extra properties. They control the following things:
 		</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
@@ -82,7 +72,7 @@
 				with all the data in the text fields of the form added to the request
 				XML.
 			</p></li></ul></div><p>
-	</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1402459124"></a>2.3.1. Mapping XML Data</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1402459468"></a>Starting Position</h4></div></div></div><p>For mapping data structures from the user interface elements to the
+	</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1385660596"></a>2.3.1. Mapping XML Data</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1385660940"></a>Starting Position</h4></div></div></div><p>For mapping data structures from the user interface elements to the
 			data description needed to fulfill an interface for a server request we need
 			some kind of translation. An implicit mapping would only be able to describe
 			very trivial data mappings. After drawing the user interface this translation
@@ -90,7 +80,7 @@
 			has to be mapped to be shown in the user interface elements view. Here applies
 			the same: Some kind of translation is needed to map a server data structure
 			to the user interface elements.
-			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1402486460"></a>First Example</h4></div></div></div><p>
+			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1385687908"></a>First Example</h4></div></div></div><p>
 				Let's have a look at a <code class="classname">QLineEdit</code>
 				element of a form and a possible XML representation of the
 				data used for a request.
@@ -130,7 +120,7 @@
 			</p><pre class="programlisting">
 			Customer customer {name{{main.name}}; address{{main.address}}}
 
-			</pre></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1402513812"></a>Another Example</h4></div></div></div><p>
+			</pre></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1385715316"></a>Another Example</h4></div></div></div><p>
 				Some elements are more complicated than that.
 				They present the user a list of options or items the user to pick from, e.g. a list of cities.
 			</p><div class="screenshot"><div class="mediaobject"><img src="images/clients/complex_form.png" /></div></div><p>
@@ -175,7 +165,7 @@
 &lt;city id='6'&gt;London&lt;/city&gt;
 &lt;/cities&gt;
 
-			</pre></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1402521828"></a>2.3.2. Switching UI forms</h3></div></div></div><p>
+			</pre></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1385723332"></a>2.3.2. Switching UI forms</h3></div></div></div><p>
 			A UI form contains a set of widgets, the dynamic property
 			<code class="code">form</code> contains the name of a widget (without
 			extension <span class="emphasis"><em>.ui</em></span>) to load.
@@ -191,7 +181,7 @@
 			Before loading the next form the client terminates all current
 			requests, for instance a save request of the form data.
 			In case of an error in an action any defined switching of the form is cancelled.
-		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1402526740"></a>2.3.3. States and properties of widgets</h3></div></div></div><p>
+		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1385728244"></a>2.3.3. States and properties of widgets</h3></div></div></div><p>
 			Some properties are reserved for states steering the behavior of the user interface:
 
 			</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><code class="code">initialFocus</code>:
@@ -199,7 +189,7 @@
 				We can set a boolean value to one widget in a form which should
 				get the initial keyboard focus.
 				</p></li></ul></div><p>
-		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1402528340"></a>2.3.4. Widget properties as dynamic property values</h3></div></div></div><p>
+		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1385729844"></a>2.3.4. Widget properties as dynamic property values</h3></div></div></div><p>
 			Dynamic properties can reference properties of widgets
 			like for example <code class="code">property = {variable expression}</code>.
 		</p><p>
@@ -251,9 +241,19 @@
 				<ul class="nospace">
 					<li><strong>Email:</strong> <a href="/mailto:contact@wolframe.net">contact@wolframe.net</a></li>
 					<li>
+						<a id="googleplus-bttn" href="http://plus.google.com/116915890857205562872?prsrc=3" rel="publisher" target="_top" style="text-decoration:none;">
+							<span>Google+</span></a>
+						<a id="linkedin-bttn" href="#" target="_top" style="text-decoration:none;">
+							<span>LinkedIn</span></a>
+						<a id="twitter-bttn" href="http://twitter.com/ProjectWolframe" target="_top" style="text-decoration:none;">
+							<span>twitter</span></a>
+						<a id="rss-bttn" href="#" target="_top" style="text-decoration:none;">
+							<span>rss</span></a>
+					</li>
+					<li>
 						<a href="https://twitter.com/ProjectWolframe" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @ProjectWolframe</a>
 						<div class="g-follow" data-annotation="none" data-height="20" data-href="http://plus.google.com/116915890857205562872" data-rel="publisher"></div>
-						<div class="g-plusone" data-href="http://www.wolframe.net" data-size="tall" data-annotation="none"></div>
+						<div class="g-plusone" data-href="http://www.wolframe.net" data-size="medium"></div>
 					</li>
 				</ul>
 			</nav>
