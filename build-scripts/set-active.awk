@@ -22,16 +22,19 @@ BEGIN	{
 		if ( match( $0, active_menu ))	{
 #			print "The line for " active_menu ":" $0
 			replacements += gsub( "<li>", "<li class=\"active\">" )
-			replacements += gsub( "<li class=\"last-child\">", "<li class=\"active last-child\">" )
+			replacements += gsub( "<li class=\"last-child\">", "<li class=\"last-child active\">" )
 			if ( replacemnts > 1 )	{
 				print "ERROR: Replaced " replacements " elements. Last line: " $0
 				exit 2
 			}
 #			print "Replaced " replacements " element on line: " $0
-			print
 		}
-		else
-			print
+		else	{
+			gsub( "<li class=\"active\">", "<li>" )
+			gsub( "<li class=\"active last-child\">", "<li class=\"last-child\">" )
+			gsub( "<li class=\"last-child active\">", "<li class=\"last-child\">" )
+		}
+		print
 	}
 	else
 		print

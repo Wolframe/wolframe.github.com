@@ -4,6 +4,7 @@
 
 ./build-page.sh -f ../snippets/index.html.snip -a Home -s > index-page.html
 ./build-page.sh -f ../snippets/gsearch.html.snip -n > gsearch.html
+./build-page.sh -f ../snippets/contact.html.snip -a Contact > contact.html
 
 ./build-downloads.sh
 cd downloads
@@ -23,9 +24,7 @@ cd downloads
 ./build-downloads-wolframe-sqlite3.sh
 ./build-downloads-wolframe-textwolf.sh
 cd ..
-./build-contact.sh
 ./build-documentation.sh
-./build-solutions.sh
 #./build-index.sh
 ./build-support.sh
 ./build-faq.sh
