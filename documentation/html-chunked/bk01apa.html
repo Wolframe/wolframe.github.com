@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Appendix A. Language Grammars</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe documentation" /><link rel="up" href="bk01.html" title="Developing Wolframe Server Applications" /><link rel="prev" href="bk01ix01.html" title="Index" /><link rel="next" href="bk01apb.html" title="Appendix B.  GNU General Public License version 3" />
 	<title xmlns="">Project Wolframe</title>
-	<meta xmlns="" charset="iso-8859-1" />
+	<meta xmlns="" charset="utf-8" />
 	<meta xmlns="" name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<link xmlns="" rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
@@ -25,11 +25,13 @@
 			<h1><a href="/index.html">Project Wolframe</a></h1>
 			<h2>The Straight Path to Successful Projects</h2>
 		</div>
-		<div id="header-contact">
-			<ul class="list none">
-				<li><span class="fa fa-envelope"></span> <a href="/mailto:contact@wolframe.net">contact@wolframe.net</a></li>
-<!--				<li><span class="fa fa-phone"></span> +xx xxx xxxxxxxxxx</li> -->
-			</ul>
+		<div id="header-search">
+			<form id="cse-search-box" action="http://www.wolframe.org/gsearch.html">
+				<input type="hidden" name="cx" value="007231504736047898702:wrnjvfljzvu" />
+				<input type="hidden" name="ie" value="UTF-8" />
+				<input type="text" name="q" size="31" />
+				<input type="submit" name="sa" value="" />
+			</form>
 		</div>
 	</header>
 </div>
@@ -58,8 +60,8 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Appendix A. Language Grammars</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ix01.html">Prev</a> </td><th width="60%" align="center">Developing Wolframe Server Applications</th><td width="20%" align="right"> <a accesskey="n" href="bk01apb.html">Next</a></td></tr></table><hr /></div><div class="appendix"><div class="titlepage"><div><div><h1 class="title"><a id="idp1385232804"></a>Appendix A. Language Grammars</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="bk01apa.html#idp1385274508">A.1. Grammars</a></span></dt></dl></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1385274508"></a>A.1. Grammars</h2></div></div></div><p>
-			</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1385231748"></a>.1. EBNF of the Transaction Definition Language</h3></div></div></div><table width="100%" cellpadding="5" bgcolor="#F5DCB3" border="1" class="productionset" summary="EBNF for Tokens"><tr><th align="left" valign="top" class="productionset">Tokens</th></tr><tr><td><table border="0" width="99%" cellpadding="0" bgcolor="#F5DCB3" class="productionset" summary="EBNF productions"><tr><td align="left" valign="top" width="3%">[1]</td><td align="right" valign="top" width="10%"><a id="Identifier"></a>Identifier</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Appendix A. Language Grammars</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ix01.html">Prev</a> </td><th width="60%" align="center">Developing Wolframe Server Applications</th><td width="20%" align="right"> <a accesskey="n" href="bk01apb.html">Next</a></td></tr></table><hr /></div><div class="appendix"><div class="titlepage"><div><div><h1 class="title"><a id="idp1387066524"></a>Appendix A. Language Grammars</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="bk01apa.html#idp1387108172">A.1. Grammars</a></span></dt></dl></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1387108172"></a>A.1. Grammars</h2></div></div></div><p>
+			</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1387065444"></a>.1. EBNF of the Transaction Definition Language</h3></div></div></div><table width="100%" cellpadding="5" bgcolor="#F5DCB3" border="1" class="productionset" summary="EBNF for Tokens"><tr><th align="left" valign="top" class="productionset">Tokens</th></tr><tr><td><table border="0" width="99%" cellpadding="0" bgcolor="#F5DCB3" class="productionset" summary="EBNF productions"><tr><td align="left" valign="top" width="3%">[1]</td><td align="right" valign="top" width="10%"><a id="Identifier"></a>Identifier</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
 			( ['A'-'Z'] | ['a'-'z'] | ['0'-'9'] | '_' ) +
 		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[2]</td><td align="right" valign="top" width="10%"><a id="Number"></a>Number</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
 			( ['0'-'9'] ) +
@@ -187,7 +189,7 @@
 			| )
 		</td><td align="left" valign="top" width="30%"> </td></tr></table></td></tr></table></div><p>
 
-			</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1385394140"></a>.2. EBNF of the Normalizer Function Declarations</h3></div></div></div><table width="100%" cellpadding="5" bgcolor="#F5DCB3" border="1" class="productionset" summary="EBNF for Tokens"><tr><th align="left" valign="top" class="productionset">Tokens</th></tr><tr><td><table border="0" width="99%" cellpadding="0" bgcolor="#F5DCB3" class="productionset" summary="EBNF productions"><tr><td align="left" valign="top" width="3%">[26]</td><td align="right" valign="top" width="10%"><a id="normIdentifier"></a>Identifier</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
+			</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1387227732"></a>.2. EBNF of the Normalizer Function Declarations</h3></div></div></div><table width="100%" cellpadding="5" bgcolor="#F5DCB3" border="1" class="productionset" summary="EBNF for Tokens"><tr><th align="left" valign="top" class="productionset">Tokens</th></tr><tr><td><table border="0" width="99%" cellpadding="0" bgcolor="#F5DCB3" class="productionset" summary="EBNF productions"><tr><td align="left" valign="top" width="3%">[26]</td><td align="right" valign="top" width="10%"><a id="normIdentifier"></a>Identifier</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
 			( ['A'-'Z'] | ['a'-'z'] | ['0'-'9'] | '_' ) +
 		</td><td align="left" valign="top" width="30%"> </td></tr></table></td></tr></table><table width="100%" cellpadding="5" bgcolor="#F5DCB3" border="1" class="productionset" summary="EBNF for Declarations"><tr><th align="left" valign="top" class="productionset">Declarations</th></tr><tr><td><table border="0" width="99%" cellpadding="0" bgcolor="#F5DCB3" class="productionset" summary="EBNF productions"><tr><td align="left" valign="top" width="3%">[27]</td><td align="right" valign="top" width="10%"><a id="normNamespace"></a>Namespace</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
 			<a href="bk01apa.html#normIdentifier">Identifier</a>
@@ -322,6 +324,7 @@
 		}
 	} ( document, 'script', 'twitter-wjs' );
 </script>
+
 <!-- Google +1, follow -->
 <script xmlns="" type="text/javascript">
 	window.___gcfg = {
