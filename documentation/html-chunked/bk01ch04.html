@@ -30,7 +30,8 @@
 				<input type="hidden" name="cx" value="007231504736047898702:wrnjvfljzvu" />
 				<input type="hidden" name="ie" value="UTF-8" />
 				<input type="text" name="q" size="31" />
-				<input type="submit" name="sa" value="" />
+<!--				<input type="submit" name="sa" value="&#xf002;" /> -->
+				<input type="submit" name="sa" class="search-bttn" value="" />
 			</form>
 		</div>
 	</header>
@@ -42,9 +43,6 @@
 		<ul class="clear">
 <!-- BEGIN MENU -->
 			<li><a href="/index.html" title="Home">Home</a></li>
-<!--
-			<li><a href="/solutions.html" title="Solutions">Solutions</a></li>
--->
 			<li><a href="/downloads.html" title="Downloads">Downloads</a></li>
 			<li class="active"><a href="/documentation.html" title="Documentation">Documentation</a></li>
 			<li><a class="drop" href="/support.html" title="Support">Support</a>
@@ -60,7 +58,7 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 4. Forms</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch03s06.html">Prev</a> </td><th width="60%" align="center">Developing Wolframe Server Applications</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch05.html">Next</a></td></tr></table><hr /></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="idp1386824228"></a>Chapter 4. Forms</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="bk01ch04.html#idp1386870932">4.1. Form Data Definition Languages</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk01ch04.html#idp1386871252">4.1.1. Introduction</a></span></dt><dt><span class="sect2"><a href="bk01ch04.html#idp1386861612">4.1.2. Forms in Simpleform DDL</a></span></dt></dl></dd></dl></div><p>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 4. Forms</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch03s06.html">Prev</a> </td><th width="60%" align="center">Developing Wolframe Server Applications</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch05.html">Next</a></td></tr></table><hr /></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="idp1401483148"></a>Chapter 4. Forms</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="bk01ch04.html#idp1401529836">4.1. Form Data Definition Languages</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk01ch04.html#idp1401530156">4.1.1. Introduction</a></span></dt><dt><span class="sect2"><a href="bk01ch04.html#idp1401520516">4.1.2. Forms in Simpleform DDL</a></span></dt></dl></dd></dl></div><p>
 Forms are data structures used to validate input and output data and to do some basic normalization
 in order to make data accessible in a uniform way. Forms are defined in a data definition language
 (<acronym class="acronym">DDL</acronym>) and translated by a compiler at startup. Those compilers are defined as loadable
@@ -78,7 +76,7 @@ language (<acronym class="acronym">DDL</acronym>) could be added.
 Be aware that you have to configure a data description language type (<acronym class="acronym">DDL</acronym> compiler) of the logic tier 
 in <span class="application">Wolframe</span> before using it. Each chapter introducing a data form description language will have 
 a section that describes how the server configuration of <span class="application">Wolframe</span> has to be extended for its availability.
-</p><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1386870932"></a>4.1. Form Data Definition Languages</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1386871252"></a>4.1.1. Introduction</h3></div></div></div><p>
+</p><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1401529836"></a>4.1. Form Data Definition Languages</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1401530156"></a>4.1.1. Introduction</h3></div></div></div><p>
 		Form data structures can be defined in a <acronym class="acronym">DDL</acronym> (Data Definition Language).
 		It depends very much on the application what <acronym class="acronym">DDL</acronym> is best to use.
 		Users may already have their data definitions defined in a certain way.
@@ -95,7 +93,7 @@ a section that describes how the server configuration of <span class="applicatio
 		input to output without control flow aware programming (direct map).
 	</p><p>
 		All types of data forms introduced here are equivalent in use for all programs.
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1386861612"></a>4.1.2. Forms in Simpleform DDL</h3></div></div></div><p>
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1401520516"></a>4.1.2. Forms in Simpleform DDL</h3></div></div></div><p>
 		As example of a form <acronym class="acronym">DDL</acronym> we provide the <em class="glossterm">simpleform</em> <acronym class="acronym">DDL</acronym>. The format is based on the "INFO"-format
 		introduced by Marcin Kalicinski for the boost property tree library. We used this library to show an example
 		that is easy to understand and small enough.
@@ -113,7 +111,7 @@ a section that describes how the server configuration of <span class="applicatio
 	</p><p>
 		The following element attributes are known in <em class="glossterm">simpleform</em> <acronym class="acronym">DDL</acronym>:
 		
-		</p><div class="table"><a id="idp1386907636"></a><p class="title"><strong>Table 4.1. element attributes in simpleform</strong></p><div class="table-contents"><table summary="element attributes in simpleform" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th>Attribute</th><th>Location</th><th>Description</th></tr></thead><tbody><tr><td>@</td><td>prefix of data type</td><td>Expresses that the element is an attribute and not a content element of the structure. This has only influence on the XML or similar representation of the form content</td></tr><tr><td>?</td><td>prefix of data type</td><td>Expresses that the element is optional also in strict validation</td></tr><tr><td>^</td><td>prefix of form name</td><td>Expresses that the element is optional and refers to a structure defined in the same module that is expanded only if the element is present. With this construct it is possible to define recursive structures like trees.</td></tr><tr><td>!</td><td>prefix of data type</td><td>Expresses that the element is always mandatory (also in non strict validation)</td></tr><tr><td>[]</td><td>prefix of data type</td><td>Expresses that the element is an array of this type</td></tr><tr><td>[]</td><td>without data type</td><td>Expresses this element is an array of structures and that the structure defined describes the prototype (initialization) element of the array.</td></tr><tr><td>(..)</td><td>postfix of data type</td><td>Expresses that '..' (represents any valid value not containing brackets) is the default initialization value of this element.</td></tr></tbody></table></div></div><p><br class="table-break" />
+		</p><div class="table"><a id="idp1401566540"></a><p class="title"><strong>Table 4.1. element attributes in simpleform</strong></p><div class="table-contents"><table summary="element attributes in simpleform" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th>Attribute</th><th>Location</th><th>Description</th></tr></thead><tbody><tr><td>@</td><td>prefix of data type</td><td>Expresses that the element is an attribute and not a content element of the structure. This has only influence on the XML or similar representation of the form content</td></tr><tr><td>?</td><td>prefix of data type</td><td>Expresses that the element is optional also in strict validation</td></tr><tr><td>^</td><td>prefix of form name</td><td>Expresses that the element is optional and refers to a structure defined in the same module that is expanded only if the element is present. With this construct it is possible to define recursive structures like trees.</td></tr><tr><td>!</td><td>prefix of data type</td><td>Expresses that the element is always mandatory (also in non strict validation)</td></tr><tr><td>[]</td><td>prefix of data type</td><td>Expresses that the element is an array of this type</td></tr><tr><td>[]</td><td>without data type</td><td>Expresses this element is an array of structures and that the structure defined describes the prototype (initialization) element of the array.</td></tr><tr><td>(..)</td><td>postfix of data type</td><td>Expresses that '..' (represents any valid value not containing brackets) is the default initialization value of this element.</td></tr></tbody></table></div></div><p><br class="table-break" />
 	</p><p>
 		Using a single underscore as typename ('_') means that element is embedded into the structure
 		without being referenceable by name. In case of an atomic value it means that value represents the
@@ -141,19 +139,6 @@ FORM Customer
 <!-- Footer -->
 <div xmlns="" class="wrapper row2">
 	<div id="footer" class="clear">
-<!--
-		<div class="one_quarter first">
-			<h2 class="footer_title">Solutions</h2>
-			<nav class="footer_nav">
-				<ul class="nospace">
-					<li><a href="#">Simple CRM</a></li>
-					<li><a href="#">Bug reporting tool</a></li>
-					<li><a href="#">Message broker</a></li>
-				</ul>
-			</nav>
-		</div>
--->
-<!--		<div class="one_quarter">-->
 		<div class="one_third first">
 			<h2 class="footer_title">Documentation</h2>
 			<nav class="footer_nav">
@@ -164,7 +149,6 @@ FORM Customer
 			</nav>
 		</div>
 
-<!--		<div class="one_quarter">-->
 		<div class="one_third">
 			<h2 class="footer_title">Downloads</h2>
 			<nav class="footer_nav">
@@ -175,7 +159,6 @@ FORM Customer
 			</nav>
 		</div>
 
-<!--		<div class="one_quarter">-->
 		<div class="one_third">
 			<h2 class="footer_title">Contact Us</h2>
 			<nav class="footer_nav">

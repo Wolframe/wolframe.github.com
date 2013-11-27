@@ -30,7 +30,8 @@
 				<input type="hidden" name="cx" value="007231504736047898702:wrnjvfljzvu" />
 				<input type="hidden" name="ie" value="UTF-8" />
 				<input type="text" name="q" size="31" />
-				<input type="submit" name="sa" value="&#xf002;" />
+<!--				<input type="submit" name="sa" value="&#xf002;" /> -->
+				<input type="submit" name="sa" class="search-bttn" value="" />
 			</form>
 		</div>
 	</header>
@@ -41,9 +42,6 @@
 		<ul class="clear">
 <!-- BEGIN MENU -->
 			<li><a href="/index.html" title="Home">Home</a></li>
-<!--
-			<li><a href="/solutions.html" title="Solutions">Solutions</a></li>
--->
 			<li><a href="/downloads.html" title="Downloads">Downloads</a></li>
 			<li class="active"><a href="/documentation.html" title="Documentation">Documentation</a></li>
 			<li><a class="drop" href="/support.html" title="Support">Support</a>
@@ -167,8 +165,7 @@
 : <a class="el" href="class__Wolframe_1_1module_1_1ModulesDirectory.html#a7bc79829b7498caf7c5dfec4cbd34941">_Wolframe::module::ModulesDirectory</a>
 </li>
 <li>objectType()
-: <a class="el" href="class__Wolframe_1_1module_1_1CppFormFunctionBuilder.html#a1033983e226b237bba7f522266aa64c6">_Wolframe::module::CppFormFunctionBuilder</a>
-, <a class="el" href="class__Wolframe_1_1module_1_1DDLCompilerConstructor.html#a232336c249ff5969f24029d9d2648498">_Wolframe::module::DDLCompilerConstructor</a>
+: <a class="el" href="class__Wolframe_1_1module_1_1DDLCompilerConstructor.html#a232336c249ff5969f24029d9d2648498">_Wolframe::module::DDLCompilerConstructor</a>
 , <a class="el" href="class__Wolframe_1_1module_1_1DDLCompilerBuilder.html#a0ee010114afbf595e77702375dc321c8">_Wolframe::module::DDLCompilerBuilder</a>
 , <a class="el" href="class__Wolframe_1_1module_1_1FilterConstructor.html#a2b56ee9823de4defa6966b961687514c">_Wolframe::module::FilterConstructor</a>
 , <a class="el" href="class__Wolframe_1_1module_1_1FilterBuilder.html#a25d3fff42356ede800131760d167c7b1">_Wolframe::module::FilterBuilder</a>
@@ -191,6 +188,7 @@
 : <a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandlerConstructor.html#a097c4b206e48e038fc542e251d5059f4">_Wolframe::cmdbind::CommandHandlerConstructor</a>
 , <a class="el" href="class__Wolframe_1_1ObjectConstructorBase.html#a8725c560c399fab15d6576e01d4b700a">_Wolframe::ObjectConstructorBase</a>
 , <a class="el" href="class__Wolframe_1_1module_1_1CppFormFunctionConstructor.html#a2d19d46c87bdd6f37442df4ff030a258">_Wolframe::module::CppFormFunctionConstructor</a>
+, <a class="el" href="class__Wolframe_1_1module_1_1CppFormFunctionBuilder.html#a1033983e226b237bba7f522266aa64c6">_Wolframe::module::CppFormFunctionBuilder</a>
 </li>
 <li>objectTypeName()
 : <a class="el" href="class__Wolframe_1_1ObjectConstructorBase.html#a91532b54626f32e15de631a43bc22105">_Wolframe::ObjectConstructorBase</a>
@@ -234,13 +232,11 @@
 : <a class="el" href="class__Wolframe_1_1langbind_1_1LuaTableOutputFilter.html#a7b62b35e7ae9e64f086807f99680e811">_Wolframe::langbind::LuaTableOutputFilter</a>
 </li>
 <li>Operation
-: <a class="el" href="class__Wolframe_1_1net_1_1NetworkOperation.html#a4c4ab7c51d8bc7bbf984f22d86a93d0f">_Wolframe::net::NetworkOperation</a>
+: <a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#ae444085bce521d157642df59085f7d9d">_Wolframe::cmdbind::CommandHandler</a>
+, <a class="el" href="class__Wolframe_1_1net_1_1NetworkOperation.html#a4c4ab7c51d8bc7bbf984f22d86a93d0f">_Wolframe::net::NetworkOperation</a>
 </li>
 <li>operation()
 : <a class="el" href="class__Wolframe_1_1net_1_1NetworkOperation.html#a73680f41e5150e6ba07aa0950a13d468">_Wolframe::net::NetworkOperation</a>
-</li>
-<li>Operation
-: <a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#ae444085bce521d157642df59085f7d9d">_Wolframe::cmdbind::CommandHandler</a>
 </li>
 <li>operation_
 : <a class="el" href="class__Wolframe_1_1net_1_1NetworkOperation.html#a800fc4f88dbeec85d3f202a5cafc52e9">_Wolframe::net::NetworkOperation</a>
@@ -557,7 +553,7 @@
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 27 2013 09:50:52 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 27 2013 17:03:25 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
@@ -567,19 +563,6 @@ Generated on Wed Nov 27 2013 09:50:52 for Wolframe by &#160;<a href="http://www.
 <!-- Footer -->
 <div class="wrapper row2">
 	<div id="footer" class="clear">
-<!--
-		<div class="one_quarter first">
-			<h2 class="footer_title">Solutions</h2>
-			<nav class="footer_nav">
-				<ul class="nospace">
-					<li><a href="#">Simple CRM</a></li>
-					<li><a href="#">Bug reporting tool</a></li>
-					<li><a href="#">Message broker</a></li>
-				</ul>
-			</nav>
-		</div>
--->
-<!--		<div class="one_quarter">-->
 		<div class="one_third first">
 			<h2 class="footer_title">Documentation</h2>
 			<nav class="footer_nav">
@@ -589,7 +572,6 @@ Generated on Wed Nov 27 2013 09:50:52 for Wolframe by &#160;<a href="http://www.
 				</ul>
 			</nav>
 		</div>
-<!--		<div class="one_quarter">-->
 		<div class="one_third">
 			<h2 class="footer_title">Downloads</h2>
 			<nav class="footer_nav">
@@ -599,7 +581,6 @@ Generated on Wed Nov 27 2013 09:50:52 for Wolframe by &#160;<a href="http://www.
 				</ul>
 			</nav>
 		</div>
-<!--		<div class="one_quarter">-->
 		<div class="one_third">
 			<h2 class="footer_title">Contact Us</h2>
 			<nav class="footer_nav">

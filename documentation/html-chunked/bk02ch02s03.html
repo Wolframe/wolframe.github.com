@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>2.3. Programming the Interface</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe documentation" /><link rel="up" href="bk02ch02.html" title="Chapter 2. The Wolframe Standard Client" /><link rel="prev" href="bk02ch02s02.html" title="2.2. Artifacts" /><link rel="next" href="bk02ch02s04.html" title="2.4. Eliminating Interface Defects" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>2.3. Programming the Interface</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe documentation" /><link rel="up" href="bk02ch02.html" title="Chapter 2. The Wolframe Standard Client" /><link rel="prev" href="bk02ch02s02.html" title="2.2. Artifacts" /><link rel="next" href="bk02ch02s04.html" title="2.4. Programming Server Requests/Answers" />
 	<title xmlns="">Project Wolframe</title>
 	<meta xmlns="" charset="utf-8" />
 	<meta xmlns="" name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,7 +30,8 @@
 				<input type="hidden" name="cx" value="007231504736047898702:wrnjvfljzvu" />
 				<input type="hidden" name="ie" value="UTF-8" />
 				<input type="text" name="q" size="31" />
-				<input type="submit" name="sa" value="" />
+<!--				<input type="submit" name="sa" value="&#xf002;" /> -->
+				<input type="submit" name="sa" class="search-bttn" value="" />
 			</form>
 		</div>
 	</header>
@@ -42,9 +43,6 @@
 		<ul class="clear">
 <!-- BEGIN MENU -->
 			<li><a href="/index.html" title="Home">Home</a></li>
-<!--
-			<li><a href="/solutions.html" title="Solutions">Solutions</a></li>
--->
 			<li><a href="/downloads.html" title="Downloads">Downloads</a></li>
 			<li class="active"><a href="/documentation.html" title="Documentation">Documentation</a></li>
 			<li><a class="drop" href="/support.html" title="Support">Support</a>
@@ -60,7 +58,7 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.3. Programming the Interface</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk02ch02s02.html">Prev</a> </td><th width="60%" align="center">Chapter 2. The Wolframe Standard Client</th><td width="20%" align="right"> <a accesskey="n" href="bk02ch02s04.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1387504340"></a>2.3. Programming the Interface</h2></div></div></div><p>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.3. Programming the Interface</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk02ch02s02.html">Prev</a> </td><th width="60%" align="center">Chapter 2. The Wolframe Standard Client</th><td width="20%" align="right"> <a accesskey="n" href="bk02ch02s04.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1402163300"></a>2.3. Programming the Interface</h2></div></div></div><p>
 		Programming means we annotate the XML of the UI form files with
 		some extra properties. They control the following things:
 		</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
@@ -74,7 +72,7 @@
 				with all the data in the text fields of the form added to the request
 				XML.
 			</p></li></ul></div><p>
-	</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1387494308"></a>2.3.1. Mapping XML Data</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1387494652"></a>Starting Position</h4></div></div></div><p>For mapping data structures from the user interface elements to the
+	</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1402153180"></a>2.3.1. Mapping XML Data</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1402153524"></a>Starting Position</h4></div></div></div><p>For mapping data structures from the user interface elements to the
 			data description needed to fulfill an interface for a server request we need
 			some kind of translation. An implicit mapping would only be able to describe
 			very trivial data mappings. After drawing the user interface this translation
@@ -82,7 +80,7 @@
 			has to be mapped to be shown in the user interface elements view. Here applies
 			the same: Some kind of translation is needed to map a server data structure
 			to the user interface elements.
-			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1387521556"></a>First Example</h4></div></div></div><p>
+			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1402180516"></a>First Example</h4></div></div></div><p>
 				Let's have a look at a <code class="classname">QLineEdit</code>
 				element of a form and a possible XML representation of the
 				data used for a request.
@@ -113,16 +111,14 @@
 				of the form.
 				The translation is defined as dynamic property "answer"
 				or "answer." plus a suffix for the action identifier.
-				As in the request example we postpone a detailed explanation
-				of this action naming semantics.
-				The value of the property is describing the answer
-				in the same language as a request and could look as follows.
-				A detailed description of the language used to describe requests
-				and answers will follow later.
+				A detailed description of the language in the request
+				and answer property value that describes requests and answers 
+				will presented in the next chapter. We provide here just an
+				example:
 			</p><pre class="programlisting">
 			Customer customer {name{{main.name}}; address{{main.address}}}
 
-			</pre></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1387548972"></a>Another Example</h4></div></div></div><p>
+			</pre></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1402207748"></a>Another Example</h4></div></div></div><p>
 				Some elements are more complicated than that.
 				They present the user a list of options or items the user to pick from, e.g. a list of cities.
 			</p><div class="screenshot"><div class="mediaobject"><img src="images/clients/complex_form.png" /></div></div><p>
@@ -147,7 +143,7 @@
 
 			</pre><p>
 				and the corresponding domain load request answer definition in the dynamic property "answer"
-				could look like follows:
+				could look like this:
 			</p><pre class="programlisting">
 			CityList cities {city[] {id={main.city.id}; {main.city.value}}}
 
@@ -167,7 +163,7 @@
 &lt;city id='6'&gt;London&lt;/city&gt;
 &lt;/cities&gt;
 
-			</pre></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1387556988"></a>2.3.2. Switching UI forms</h3></div></div></div><p>
+			</pre></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1402215764"></a>2.3.2. Switching UI forms</h3></div></div></div><p>
 			A UI form contains a set of widgets, the dynamic property
 			<code class="code">form</code> contains the name of a widget (without
 			extension <span class="emphasis"><em>.ui</em></span>) to load.
@@ -183,7 +179,7 @@
 			Before loading the next form the client terminates all current
 			requests, for instance a save request of the form data.
 			In case of an error in an action any defined switching of the form is cancelled.
-		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1387561900"></a>2.3.3. States and properties of widgets</h3></div></div></div><p>
+		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1402220676"></a>2.3.3. States and properties of widgets</h3></div></div></div><p>
 			Some properties are reserved for states steering the behavior of the user interface:
 
 			</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><code class="code">initialFocus</code>:
@@ -191,30 +187,17 @@
 				We can set a boolean value to one widget in a form which should
 				get the initial keyboard focus.
 				</p></li></ul></div><p>
-		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1387563500"></a>2.3.4. Widget properties as dynamic property values</h3></div></div></div><p>
+		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1402222276"></a>2.3.4. Widget properties as dynamic property values</h3></div></div></div><p>
 			Dynamic properties can reference properties of widgets
 			like for example <code class="code">property = {variable expression}</code>.
 		</p><p>
 			The expression can reference addressable widgets and their properties.
 			Every Qt class has its very own set of properties it understands.
-		</p></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk02ch02s02.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk02ch02.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk02ch02s04.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">2.2. Artifacts </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 2.4. Eliminating Interface Defects</td></tr></table></div></div></div>
+		</p></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk02ch02s02.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk02ch02.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk02ch02s04.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">2.2. Artifacts </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 2.4. Programming Server Requests/Answers</td></tr></table></div></div></div>
 
 <!-- Footer -->
 <div xmlns="" class="wrapper row2">
 	<div id="footer" class="clear">
-<!--
-		<div class="one_quarter first">
-			<h2 class="footer_title">Solutions</h2>
-			<nav class="footer_nav">
-				<ul class="nospace">
-					<li><a href="#">Simple CRM</a></li>
-					<li><a href="#">Bug reporting tool</a></li>
-					<li><a href="#">Message broker</a></li>
-				</ul>
-			</nav>
-		</div>
--->
-<!--		<div class="one_quarter">-->
 		<div class="one_third first">
 			<h2 class="footer_title">Documentation</h2>
 			<nav class="footer_nav">
@@ -225,7 +208,6 @@
 			</nav>
 		</div>
 
-<!--		<div class="one_quarter">-->
 		<div class="one_third">
 			<h2 class="footer_title">Downloads</h2>
 			<nav class="footer_nav">
@@ -236,7 +218,6 @@
 			</nav>
 		</div>
 
-<!--		<div class="one_quarter">-->
 		<div class="one_third">
 			<h2 class="footer_title">Contact Us</h2>
 			<nav class="footer_nav">
