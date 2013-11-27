@@ -3,9 +3,10 @@
 # Build the page out of the snipets
 #
 # Invocation:
-#	build-page snippet options...
+#	build-page -p page options...
 # Options:
-#	-s	snippet name
+#	-p	page name
+#	-s	with slider
 #	-a	active menu
 #	-n	no active menu
 #	-h	help
@@ -15,8 +16,8 @@ SNIPDIR="../snippets"
 # print the help
 function printHelp	{
 	echo "Usage:"
-	echo "    $0 -s <snippet> -a <menu>	generate page with <menu> active"
-	echo "    $0 -s <snippet> -n		generate page with no active menu"
+	echo "    $0 -p <snippet> -a <menu> [-s]	generate page with <menu> active [and slider]"
+	echo "    $0 -p <snippet> -n [-s]	generate page with no active menu [and slider]"
 	echo "    $0 -h				print this help and exit"
 }
 
@@ -34,15 +35,17 @@ function buildPage	{
 
 NO_MENU=0
 # Check the arguments
-while getopts :s:a:nh option
+while getopts :p:a:nsh option
 do
 	case "${option}"
 	in
-		s)	SNIPPET=${OPTARG}
+		p)	SNIPPET=${OPTARG}
 			;;
 		a)	ACTIVE_MENU=${OPTARG}
 			;;
 		n)	NO_MENU=1
+			;;
+		s)	WITH_SLIDER=1
 			;;
 		h)	printHelp
 			exit

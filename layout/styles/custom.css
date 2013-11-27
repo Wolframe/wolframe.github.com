@@ -44,11 +44,25 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 .g-follow { display: inline-block; padding-right: 12px; }
 .g-plusone { display: inline-block; padding-left: 12px; }
 
+
+#header #header-search{ display:inline-block; float:right; width:auto; clear:right; }
+#header #header-search { margin-top:15px; }
+
+/* #header #header-logo, #header #header-contact, #header #header-search { vertical-align: bottom; }
+*/
 #cse-search-box input[type="submit"]	{
 	font-family: FontAwesome;
-	font-size: 3em;
+	font-size: 2em;
 	border: none;
+	padding: 3px;
 	color: #E0E0E0;
 	background-color: #467aa7;
-	position: relative;
+	vertical-align: bottom;
+}
+
+#cse-search-box input[type="text"]	{
+	display: inline-block;
+	width: auto;
+	vertical-align: bottom;
+	border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px;
 }
