@@ -45,11 +45,15 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 .g-plusone { display: inline-block; padding-left: 12px; }
 
 
-#header #header-search{ display:inline-block; float:right; width:auto; clear:right; }
-#header #header-search { margin-top:15px; }
+#header #header-search{ display: inline-block; float: right; width: auto; clear: right; }
+#header #header-search { margin-top: 15px; }
 
 /* #header #header-logo, #header #header-contact, #header #header-search { vertical-align: bottom; }
 */
+
+#cse-search-box input.search-bttn {	display: inline-block; font-size: 0; line-height: 0; text-indent: -4000px; cursor: pointer;
+					width: 32px; height: 32px; border: 0; background: url(images/looking-glass.png) no-repeat 0 0; }
+
 #cse-search-box input[type="submit"]	{
 	font-family: FontAwesome;
 	font-size: 2em;
