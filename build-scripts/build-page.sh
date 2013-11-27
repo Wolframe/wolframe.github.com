@@ -17,10 +17,10 @@ SNIPDIR="$SCRIPT_DIR/../snippets"
 
 # print the help
 function printHelp	{
-	echo "Usage:"
-	echo "    $0 -f <snippet file> -a <menu> [-s]	generate page with <menu> active [and slider]"
-	echo "    $0 -f <snippet file> -n [-s]		generate page with no active menu [and slider]"
-	echo "    $0 -h					print this help and exit"
+	echo "Usage:" >&2
+	echo "    $0 -f <snippet file> -a <menu> [-s]	generate page with <menu> active [and slider]" >&2
+	echo "    $0 -f <snippet file> -n [-s]		generate page with no active menu [and slider]" >&2
+	echo "    $0 -h					print this help and exit" >&2
 }
 
 function buildPage	{
@@ -30,10 +30,10 @@ function buildPage	{
 		cat $SNIPDIR/header-slider.html.snip $1 $SNIPDIR/footer-slider.html.snip | \
 			$SCRIPT_DIR/set-active.awk -v active_menu="$2"
 	else
-		echo
-#		echo "ERROR: File $SNIPDIR/$1 does not exist."
-		echo "ERROR: File $1 does not exist."
-		echo
+		echo >&2
+#		echo "ERROR: File $SNIPDIR/$1 does not exist." >&2
+		echo "ERROR: File $1 does not exist." >&2
+		echo >&2
 		exit 1
 	fi
 }
@@ -62,18 +62,18 @@ do
 done
 
 if [ "x$SNIPPET" == "x" ]; then
-	echo
-	echo "ERROR: No snippet specified."
-	echo
+	echo >&2
+	echo "ERROR: No snippet specified." >&2
+	echo >&2
 	printHelp
 	exit 1
 fi
 
 if [ "$NO_MENU" == "0" ]; then
 	if [ "x$ACTIVE_MENU" == "x" ]; then
-		echo
-		echo "ERROR: No active menu or -n option specified."
-		echo
+		echo >&2
+		echo "ERROR: No active menu or -n option specified." >&2
+		echo >&2
 		printHelp
 		exit 1
 	fi
