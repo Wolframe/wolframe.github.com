@@ -30,7 +30,8 @@
 				<input type="hidden" name="cx" value="007231504736047898702:wrnjvfljzvu" />
 				<input type="hidden" name="ie" value="UTF-8" />
 				<input type="text" name="q" size="31" />
-				<input type="submit" name="sa" value="&#xf002;" />
+<!--				<input type="submit" name="sa" value="&#xf002;" /> -->
+				<input type="submit" name="sa" class="search-bttn" value="" />
 			</form>
 		</div>
 	</header>
@@ -41,9 +42,6 @@
 		<ul class="clear">
 <!-- BEGIN MENU -->
 			<li><a href="/index.html" title="Home">Home</a></li>
-<!--
-			<li><a href="/solutions.html" title="Solutions">Solutions</a></li>
--->
 			<li><a href="/downloads.html" title="Downloads">Downloads</a></li>
 			<li class="active"><a href="/documentation.html" title="Documentation">Documentation</a></li>
 			<li><a class="drop" href="/support.html" title="Support">Support</a>
@@ -131,41 +129,47 @@
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">namespace </span>_Wolframe {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">namespace </span>cmdbind {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1cmdbind_1_1CommandHandlerConstructor.html">   48</a></span>&#160;<span class="keyword">class </span><a class="code" href="class__Wolframe_1_1cmdbind_1_1CommandHandlerConstructor.html">CommandHandlerConstructor</a></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        :<span class="keyword">public</span> <a class="code" href="class__Wolframe_1_1ConfiguredObjectConstructor.html">ConfiguredObjectConstructor</a>&lt;cmdbind::CommandHandler&gt;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1cmdbind_1_1CommandHandlerConstructor.html#aafdd0c8468c8dde4c3dff947843842c9">   53</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class__Wolframe_1_1cmdbind_1_1CommandHandlerConstructor.html#aafdd0c8468c8dde4c3dff947843842c9">~CommandHandlerConstructor</a>(){}</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1cmdbind_1_1CommandHandlerConstructor.html#a097c4b206e48e038fc542e251d5059f4">   55</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2e">ObjectConstructorBase::ObjectType</a> <a class="code" href="class__Wolframe_1_1cmdbind_1_1CommandHandlerConstructor.html#a097c4b206e48e038fc542e251d5059f4">objectType</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2ea2a5f4e7a62d51bfe0e5920bc04af99ff">ObjectConstructorBase::CMD_HANDLER_OBJECT</a>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keyword">virtual</span> std::list&lt;std::string&gt; <a class="code" href="class__Wolframe_1_1cmdbind_1_1CommandHandlerConstructor.html#a531decc18be78dffbc11953ad8c0d6fe">commands</a>( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1config_1_1NamedConfiguration.html">config::NamedConfiguration</a>&amp; cfgi) <span class="keyword">const</span>=0;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}} <span class="comment">//namespace _Wolframe::cmdbind</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif // _Wolframe_CMDBIND_COMMAND_HANDLER_UNIT_HPP_INCLUDED</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">namespace </span>proc {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">class </span>ProcessorProvider;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">namespace </span>cmdbind {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1cmdbind_1_1CommandHandlerConstructor.html">   52</a></span>&#160;<span class="keyword">class </span><a class="code" href="class__Wolframe_1_1cmdbind_1_1CommandHandlerConstructor.html">CommandHandlerConstructor</a></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        :<span class="keyword">public</span> <a class="code" href="class__Wolframe_1_1ConfiguredObjectConstructor.html">ConfiguredObjectConstructor</a>&lt;cmdbind::CommandHandler&gt;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1cmdbind_1_1CommandHandlerConstructor.html#aafdd0c8468c8dde4c3dff947843842c9">   57</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class__Wolframe_1_1cmdbind_1_1CommandHandlerConstructor.html#aafdd0c8468c8dde4c3dff947843842c9">~CommandHandlerConstructor</a>(){}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1cmdbind_1_1CommandHandlerConstructor.html#a097c4b206e48e038fc542e251d5059f4">   59</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2e">ObjectConstructorBase::ObjectType</a> <a class="code" href="class__Wolframe_1_1cmdbind_1_1CommandHandlerConstructor.html#a097c4b206e48e038fc542e251d5059f4">objectType</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2ea2a5f4e7a62d51bfe0e5920bc04af99ff">ObjectConstructorBase::CMD_HANDLER_OBJECT</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keyword">virtual</span> std::list&lt;std::string&gt; <a class="code" href="class__Wolframe_1_1cmdbind_1_1CommandHandlerConstructor.html#a531decc18be78dffbc11953ad8c0d6fe">commands</a>( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1config_1_1NamedConfiguration.html">config::NamedConfiguration</a>&amp; cfgi) <span class="keyword">const</span>=0;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class__Wolframe_1_1cmdbind_1_1CommandHandlerConstructor.html#ab077e67f4cb716ff746163df5f69282a">checkReferences</a>( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1config_1_1NamedConfiguration.html">config::NamedConfiguration</a>&amp;, <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html">proc::ProcessorProvider</a>*) <span class="keyword">const</span>=0;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}} <span class="comment">//namespace _Wolframe::cmdbind</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif // _Wolframe_CMDBIND_COMMAND_HANDLER_UNIT_HPP_INCLUDED</span></div>
 <div class="ttc" id="commandHandler_8hpp_html"><div class="ttname"><a href="commandHandler_8hpp.html">commandHandler.hpp</a></div><div class="ttdoc">Interface to a generic command handler. </div></div>
 <div class="ttc" id="constructor_8hpp_html"><div class="ttname"><a href="constructor_8hpp.html">constructor.hpp</a></div></div>
 <div class="ttc" id="class__Wolframe_1_1ObjectConstructorBase_html_a36260b1c4ec3cfbf32e9e58f86737c2e"><div class="ttname"><a href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2e">_Wolframe::ObjectConstructorBase::ObjectType</a></div><div class="ttdeci">ObjectType</div><div class="ttdef"><b>Definition:</b> constructor.hpp:48</div></div>
+<div class="ttc" id="class__Wolframe_1_1cmdbind_1_1CommandHandlerConstructor_html_ab077e67f4cb716ff746163df5f69282a"><div class="ttname"><a href="class__Wolframe_1_1cmdbind_1_1CommandHandlerConstructor.html#ab077e67f4cb716ff746163df5f69282a">_Wolframe::cmdbind::CommandHandlerConstructor::checkReferences</a></div><div class="ttdeci">virtual bool checkReferences(const config::NamedConfiguration &amp;, const proc::ProcessorProvider *) const =0</div></div>
 <div class="ttc" id="moduleInterface_8hpp_html"><div class="ttname"><a href="moduleInterface_8hpp.html">moduleInterface.hpp</a></div></div>
-<div class="ttc" id="class__Wolframe_1_1cmdbind_1_1CommandHandlerConstructor_html"><div class="ttname"><a href="class__Wolframe_1_1cmdbind_1_1CommandHandlerConstructor.html">_Wolframe::cmdbind::CommandHandlerConstructor</a></div><div class="ttdoc">Set of command handlers adressable by identifiers. </div><div class="ttdef"><b>Definition:</b> commandHandlerUnit.hpp:48</div></div>
+<div class="ttc" id="class__Wolframe_1_1cmdbind_1_1CommandHandlerConstructor_html"><div class="ttname"><a href="class__Wolframe_1_1cmdbind_1_1CommandHandlerConstructor.html">_Wolframe::cmdbind::CommandHandlerConstructor</a></div><div class="ttdoc">Set of command handlers adressable by identifiers. </div><div class="ttdef"><b>Definition:</b> commandHandlerUnit.hpp:52</div></div>
+<div class="ttc" id="class__Wolframe_1_1proc_1_1ProcessorProvider_html"><div class="ttname"><a href="class__Wolframe_1_1proc_1_1ProcessorProvider.html">_Wolframe::proc::ProcessorProvider</a></div><div class="ttdoc">Processor provider. </div><div class="ttdef"><b>Definition:</b> procProvider.hpp:80</div></div>
 <div class="ttc" id="class__Wolframe_1_1config_1_1NamedConfiguration_html"><div class="ttname"><a href="class__Wolframe_1_1config_1_1NamedConfiguration.html">_Wolframe::config::NamedConfiguration</a></div><div class="ttdef"><b>Definition:</b> configurationBase.hpp:124</div></div>
 <div class="ttc" id="class__Wolframe_1_1ObjectConstructorBase_html_a36260b1c4ec3cfbf32e9e58f86737c2ea2a5f4e7a62d51bfe0e5920bc04af99ff"><div class="ttname"><a href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2ea2a5f4e7a62d51bfe0e5920bc04af99ff">_Wolframe::ObjectConstructorBase::CMD_HANDLER_OBJECT</a></div><div class="ttdef"><b>Definition:</b> constructor.hpp:59</div></div>
-<div class="ttc" id="class__Wolframe_1_1cmdbind_1_1CommandHandlerConstructor_html_aafdd0c8468c8dde4c3dff947843842c9"><div class="ttname"><a href="class__Wolframe_1_1cmdbind_1_1CommandHandlerConstructor.html#aafdd0c8468c8dde4c3dff947843842c9">_Wolframe::cmdbind::CommandHandlerConstructor::~CommandHandlerConstructor</a></div><div class="ttdeci">virtual ~CommandHandlerConstructor()</div><div class="ttdoc">virtual destructor </div><div class="ttdef"><b>Definition:</b> commandHandlerUnit.hpp:53</div></div>
+<div class="ttc" id="class__Wolframe_1_1cmdbind_1_1CommandHandlerConstructor_html_aafdd0c8468c8dde4c3dff947843842c9"><div class="ttname"><a href="class__Wolframe_1_1cmdbind_1_1CommandHandlerConstructor.html#aafdd0c8468c8dde4c3dff947843842c9">_Wolframe::cmdbind::CommandHandlerConstructor::~CommandHandlerConstructor</a></div><div class="ttdeci">virtual ~CommandHandlerConstructor()</div><div class="ttdoc">virtual destructor </div><div class="ttdef"><b>Definition:</b> commandHandlerUnit.hpp:57</div></div>
 <div class="ttc" id="class__Wolframe_1_1cmdbind_1_1CommandHandlerConstructor_html_a531decc18be78dffbc11953ad8c0d6fe"><div class="ttname"><a href="class__Wolframe_1_1cmdbind_1_1CommandHandlerConstructor.html#a531decc18be78dffbc11953ad8c0d6fe">_Wolframe::cmdbind::CommandHandlerConstructor::commands</a></div><div class="ttdeci">virtual std::list&lt; std::string &gt; commands(const config::NamedConfiguration &amp;cfgi) const =0</div></div>
-<div class="ttc" id="class__Wolframe_1_1cmdbind_1_1CommandHandlerConstructor_html_a097c4b206e48e038fc542e251d5059f4"><div class="ttname"><a href="class__Wolframe_1_1cmdbind_1_1CommandHandlerConstructor.html#a097c4b206e48e038fc542e251d5059f4">_Wolframe::cmdbind::CommandHandlerConstructor::objectType</a></div><div class="ttdeci">virtual ObjectConstructorBase::ObjectType objectType() const </div><div class="ttdoc">The type of the object. Filter, DDL compiler, authentication etc. </div><div class="ttdef"><b>Definition:</b> commandHandlerUnit.hpp:55</div></div>
+<div class="ttc" id="class__Wolframe_1_1cmdbind_1_1CommandHandlerConstructor_html_a097c4b206e48e038fc542e251d5059f4"><div class="ttname"><a href="class__Wolframe_1_1cmdbind_1_1CommandHandlerConstructor.html#a097c4b206e48e038fc542e251d5059f4">_Wolframe::cmdbind::CommandHandlerConstructor::objectType</a></div><div class="ttdeci">virtual ObjectConstructorBase::ObjectType objectType() const </div><div class="ttdoc">The type of the object. Filter, DDL compiler, authentication etc. </div><div class="ttdef"><b>Definition:</b> commandHandlerUnit.hpp:59</div></div>
 <div class="ttc" id="class__Wolframe_1_1ConfiguredObjectConstructor_html"><div class="ttname"><a href="class__Wolframe_1_1ConfiguredObjectConstructor.html">_Wolframe::ConfiguredObjectConstructor</a></div><div class="ttdoc">Constructor of a configured object. </div><div class="ttdef"><b>Definition:</b> constructor.hpp:99</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 27 2013 09:50:06 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 27 2013 17:02:30 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
@@ -175,19 +179,6 @@ Generated on Wed Nov 27 2013 09:50:06 for Wolframe by &#160;<a href="http://www.
 <!-- Footer -->
 <div class="wrapper row2">
 	<div id="footer" class="clear">
-<!--
-		<div class="one_quarter first">
-			<h2 class="footer_title">Solutions</h2>
-			<nav class="footer_nav">
-				<ul class="nospace">
-					<li><a href="#">Simple CRM</a></li>
-					<li><a href="#">Bug reporting tool</a></li>
-					<li><a href="#">Message broker</a></li>
-				</ul>
-			</nav>
-		</div>
--->
-<!--		<div class="one_quarter">-->
 		<div class="one_third first">
 			<h2 class="footer_title">Documentation</h2>
 			<nav class="footer_nav">
@@ -197,7 +188,6 @@ Generated on Wed Nov 27 2013 09:50:06 for Wolframe by &#160;<a href="http://www.
 				</ul>
 			</nav>
 		</div>
-<!--		<div class="one_quarter">-->
 		<div class="one_third">
 			<h2 class="footer_title">Downloads</h2>
 			<nav class="footer_nav">
@@ -207,7 +197,6 @@ Generated on Wed Nov 27 2013 09:50:06 for Wolframe by &#160;<a href="http://www.
 				</ul>
 			</nav>
 		</div>
-<!--		<div class="one_quarter">-->
 		<div class="one_third">
 			<h2 class="footer_title">Contact Us</h2>
 			<nav class="footer_nav">

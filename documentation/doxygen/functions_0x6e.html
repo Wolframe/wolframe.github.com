@@ -30,7 +30,8 @@
 				<input type="hidden" name="cx" value="007231504736047898702:wrnjvfljzvu" />
 				<input type="hidden" name="ie" value="UTF-8" />
 				<input type="text" name="q" size="31" />
-				<input type="submit" name="sa" value="&#xf002;" />
+<!--				<input type="submit" name="sa" value="&#xf002;" /> -->
+				<input type="submit" name="sa" class="search-bttn" value="" />
 			</form>
 		</div>
 	</header>
@@ -41,9 +42,6 @@
 		<ul class="clear">
 <!-- BEGIN MENU -->
 			<li><a href="/index.html" title="Home">Home</a></li>
-<!--
-			<li><a href="/solutions.html" title="Solutions">Solutions</a></li>
--->
 			<li><a href="/downloads.html" title="Downloads">Downloads</a></li>
 			<li class="active"><a href="/documentation.html" title="Documentation">Documentation</a></li>
 			<li><a class="drop" href="/support.html" title="Support">Support</a>
@@ -219,18 +217,14 @@
 <li>nofRows()
 : <a class="el" href="class__Wolframe_1_1db_1_1TransactionOutput_1_1CommandResult.html#a59ddf9c2fe5d8e61d345e5e81ded69b5">_Wolframe::db::TransactionOutput::CommandResult</a>
 </li>
+<li>None
+: <a class="el" href="class__Wolframe_1_1langbind_1_1FilterBase.html#a38fc65e847310d5c4e3a7bdb64f7f138a1f0cd0ad036eb6ed18b4c1c9426567ae">_Wolframe::langbind::FilterBase</a>
+, <a class="el" href="class__Wolframe_1_1serialize_1_1Context.html#a8659689e2108ffce5f336db4df063825ab8c6d5e0d9e35275fa69994e6c2f9707">_Wolframe::serialize::Context</a>
+, <a class="el" href="class__Wolframe_1_1db_1_1TransactionInput_1_1Command.html#a432f210180e5a673405f6902fdca673dacd5b2916e543ba569c695593528012f7">_Wolframe::db::TransactionInput::Command</a>
+</li>
 <li>NONE
 : <a class="el" href="class__Wolframe_1_1config_1_1ServiceBanner.html#a77cad9bd3e651fbee720df673ca54da6a0e375681f4ac687011e1dd9ce8379b87">_Wolframe::config::ServiceBanner</a>
-</li>
-<li>None
-: <a class="el" href="class__Wolframe_1_1db_1_1TransactionInput_1_1Command.html#a432f210180e5a673405f6902fdca673dacd5b2916e543ba569c695593528012f7">_Wolframe::db::TransactionInput::Command</a>
-</li>
-<li>NONE
-: <a class="el" href="struct__Wolframe_1_1langbind_1_1CharsetClass.html#a812e5300dcc5e5ac73d0e2a977583128a5e55818fd2ea75d380cadf42be0a2009">_Wolframe::langbind::CharsetClass</a>
-</li>
-<li>None
-: <a class="el" href="class__Wolframe_1_1serialize_1_1Context.html#a8659689e2108ffce5f336db4df063825ab8c6d5e0d9e35275fa69994e6c2f9707">_Wolframe::serialize::Context</a>
-, <a class="el" href="class__Wolframe_1_1langbind_1_1FilterBase.html#a38fc65e847310d5c4e3a7bdb64f7f138a1f0cd0ad036eb6ed18b4c1c9426567ae">_Wolframe::langbind::FilterBase</a>
+, <a class="el" href="struct__Wolframe_1_1langbind_1_1CharsetClass.html#a812e5300dcc5e5ac73d0e2a977583128a5e55818fd2ea75d380cadf42be0a2009">_Wolframe::langbind::CharsetClass</a>
 </li>
 <li>NonEmptyDomain()
 : <a class="el" href="struct__Wolframe_1_1config_1_1Parser_1_1NonEmptyDomain.html#a340c7962ac90c8ad9f0f271ae988cba5">_Wolframe::config::Parser::NonEmptyDomain&lt; DomainValueType &gt;</a>
@@ -287,7 +281,7 @@
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 27 2013 09:50:52 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 27 2013 17:03:25 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
@@ -297,19 +291,6 @@ Generated on Wed Nov 27 2013 09:50:52 for Wolframe by &#160;<a href="http://www.
 <!-- Footer -->
 <div class="wrapper row2">
 	<div id="footer" class="clear">
-<!--
-		<div class="one_quarter first">
-			<h2 class="footer_title">Solutions</h2>
-			<nav class="footer_nav">
-				<ul class="nospace">
-					<li><a href="#">Simple CRM</a></li>
-					<li><a href="#">Bug reporting tool</a></li>
-					<li><a href="#">Message broker</a></li>
-				</ul>
-			</nav>
-		</div>
--->
-<!--		<div class="one_quarter">-->
 		<div class="one_third first">
 			<h2 class="footer_title">Documentation</h2>
 			<nav class="footer_nav">
@@ -319,7 +300,6 @@ Generated on Wed Nov 27 2013 09:50:52 for Wolframe by &#160;<a href="http://www.
 				</ul>
 			</nav>
 		</div>
-<!--		<div class="one_quarter">-->
 		<div class="one_third">
 			<h2 class="footer_title">Downloads</h2>
 			<nav class="footer_nav">
@@ -329,7 +309,6 @@ Generated on Wed Nov 27 2013 09:50:52 for Wolframe by &#160;<a href="http://www.
 				</ul>
 			</nav>
 		</div>
-<!--		<div class="one_quarter">-->
 		<div class="one_third">
 			<h2 class="footer_title">Contact Us</h2>
 			<nav class="footer_nav">

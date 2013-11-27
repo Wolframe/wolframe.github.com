@@ -30,7 +30,8 @@
 				<input type="hidden" name="cx" value="007231504736047898702:wrnjvfljzvu" />
 				<input type="hidden" name="ie" value="UTF-8" />
 				<input type="text" name="q" size="31" />
-				<input type="submit" name="sa" value="" />
+<!--				<input type="submit" name="sa" value="&#xf002;" /> -->
+				<input type="submit" name="sa" class="search-bttn" value="" />
 			</form>
 		</div>
 	</header>
@@ -42,9 +43,6 @@
 		<ul class="clear">
 <!-- BEGIN MENU -->
 			<li><a href="/index.html" title="Home">Home</a></li>
-<!--
-			<li><a href="/solutions.html" title="Solutions">Solutions</a></li>
--->
 			<li><a href="/downloads.html" title="Downloads">Downloads</a></li>
 			<li class="active"><a href="/documentation.html" title="Documentation">Documentation</a></li>
 			<li><a class="drop" href="/support.html" title="Support">Support</a>
@@ -60,18 +58,18 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.2. Artifacts</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk02ch02.html">Prev</a> </td><th width="60%" align="center">Chapter 2. The Wolframe Standard Client</th><td width="20%" align="right"> <a accesskey="n" href="bk02ch02s03.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1387481324"></a>2.2. Artifacts</h2></div></div></div><p>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.2. Artifacts</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk02ch02.html">Prev</a> </td><th width="60%" align="center">Chapter 2. The Wolframe Standard Client</th><td width="20%" align="right"> <a accesskey="n" href="bk02ch02s03.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1402140164"></a>2.2. Artifacts</h2></div></div></div><p>
 	The <span class="application">wolfclient</span> renders user interface forms dynamically,
 	this means no code generation or compilation is involved when creating
 	user interfaces for Wolframe.
-</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1387482900"></a>2.2.1. UI forms</h3></div></div></div><p>
+</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1402141740"></a>2.2.1. UI forms</h3></div></div></div><p>
 			The UI files follow the schema
 			'qt-ui-4.7.xsd', as documented in
 			<a class="ulink" href="http://doc.qt.digia.com/qt/designer-ui-file-format.html" target="_top"><em class="citetitle">http://doc.qt.digia.com/qt/designer-ui-file-format.html</em></a>.
 			The UI files have the extension <span class="emphasis"><em>.ui</em></span>
 		</p><p>
 			UI files are created and edited with the Qt designer.
-		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1387478252"></a>2.2.2. UI form translations</h3></div></div></div><p>
+		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1402137092"></a>2.2.2. UI form translations</h3></div></div></div><p>
 			The <span class="application">wolfclient</span> uses the Qt translation format, version 2.0 for form translations
 			as described in
 			<a class="ulink" href="http://doc.qt.digia.com/qt/linguist-ts-file-format.html" target="_top"><em class="citetitle">http://doc.qt.digia.com/qt/linguist-ts-file-format.html</em></a>.
@@ -86,7 +84,7 @@
 		</p><p>
 			Read more on translations in
 			<a class="ulink" href="http://doc.qt.digia.com/qt/linguist-manual.html" target="_top"><em class="citetitle">http://doc.qt.digia.com/qt/linguist-manual.html</em></a>.
-		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1387526764"></a>2.2.3. Resources</h3></div></div></div><p>
+		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1402185604"></a>2.2.3. Resources</h3></div></div></div><p>
 			Binary resource files contain images for the user interface.
 		</p><p>
 			Binary resource files (extension <span class="emphasis"><em>.rss</em></span>) are compiled from
@@ -97,19 +95,6 @@
 <!-- Footer -->
 <div xmlns="" class="wrapper row2">
 	<div id="footer" class="clear">
-<!--
-		<div class="one_quarter first">
-			<h2 class="footer_title">Solutions</h2>
-			<nav class="footer_nav">
-				<ul class="nospace">
-					<li><a href="#">Simple CRM</a></li>
-					<li><a href="#">Bug reporting tool</a></li>
-					<li><a href="#">Message broker</a></li>
-				</ul>
-			</nav>
-		</div>
--->
-<!--		<div class="one_quarter">-->
 		<div class="one_third first">
 			<h2 class="footer_title">Documentation</h2>
 			<nav class="footer_nav">
@@ -120,7 +105,6 @@
 			</nav>
 		</div>
 
-<!--		<div class="one_quarter">-->
 		<div class="one_third">
 			<h2 class="footer_title">Downloads</h2>
 			<nav class="footer_nav">
@@ -131,7 +115,6 @@
 			</nav>
 		</div>
 
-<!--		<div class="one_quarter">-->
 		<div class="one_third">
 			<h2 class="footer_title">Contact Us</h2>
 			<nav class="footer_nav">
