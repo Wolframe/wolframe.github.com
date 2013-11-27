@@ -5,28 +5,34 @@
 # Invocation:
 #	build-page -p page options...
 # Options:
-#	-p	page name
+#	-f	snippet file
 #	-s	with slider
 #	-a	active menu
 #	-n	no active menu
 #	-h	help
 
-SNIPDIR="../snippets"
+
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+SNIPDIR="$SCRIPT_DIR/../snippets"
 
 # print the help
 function printHelp	{
 	echo "Usage:"
-	echo "    $0 -p <snippet> -a <menu> [-s]	generate page with <menu> active [and slider]"
-	echo "    $0 -p <snippet> -n [-s]	generate page with no active menu [and slider]"
-	echo "    $0 -h				print this help and exit"
+	echo "    $0 -f <snippet file> -a <menu> [-s]	generate page with <menu> active [and slider]"
+	echo "    $0 -f <snippet file> -n [-s]		generate page with no active menu [and slider]"
+	echo "    $0 -h					print this help and exit"
 }
 
 function buildPage	{
-	if [ -f $SNIPDIR/$1 ]; then
-		cat $SNIPDIR/header_$2.html.snip $SNIPDIR/$1 $SNIPDIR/footer.html.snip
+	if [ -f $1 ]; then
+#		cat $SNIPDIR/header-slider.html.snip $SNIPDIR/$1 $SNIPDIR/footer-slider.html.snip | \
+#			./set-active.awk -v active_menu="$2"
+		cat $SNIPDIR/header-slider.html.snip $1 $SNIPDIR/footer-slider.html.snip | \
+			$SCRIPT_DIR/set-active.awk -v active_menu="$2"
 	else
 		echo
-		echo "ERROR: File $SNIPDIR/$1 does not exist."
+#		echo "ERROR: File $SNIPDIR/$1 does not exist."
+		echo "ERROR: File $1 does not exist."
 		echo
 		exit 1
 	fi
@@ -34,12 +40,14 @@ function buildPage	{
 
 
 NO_MENU=0
+WITH_SLIDER=0
+
 # Check the arguments
-while getopts :p:a:nsh option
+while getopts :f:a:nsh option
 do
 	case "${option}"
 	in
-		p)	SNIPPET=${OPTARG}
+		f)	SNIPPET=${OPTARG}
 			;;
 		a)	ACTIVE_MENU=${OPTARG}
 			;;
@@ -68,10 +76,13 @@ if [ "$NO_MENU" == "0" ]; then
 		echo
 		printHelp
 		exit 1
-	else
-		buildPage $SNIPPET.html.snip $ACTIVE_MENU > $SNIPPET.html
 	fi
 else
-	buildPage $SNIPPET.html.snip > $SNIPPET.html
+	ACTIVE_MENU="none"
 fi
 
+if [ "$WITH_SLIDER" == "0" ]; then
+	buildPage $SNIPPET $ACTIVE_MENU | $SCRIPT_DIR/no-slider.awk
+else
+	buildPage $SNIPPET $ACTIVE_MENU
+fi

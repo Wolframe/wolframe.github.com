@@ -2,13 +2,14 @@
 #
 # Usage example:
 #	./set-active.awk -v active_menu=contact ../snippets/header-slider.html.snip
+#	cat ../snippets/header-slider.html.snip | ./set-active.awk -v active_menu=contact
 #
 
 BEGIN	{
 	inMenu = 0
 	replacements = 0
 	if ( active_menu == "" )	{
-		print "USAGE: ./set-active.awk -v active_menu=<menu> <header snipet>"
+		print "USAGE: ./set-active.awk -v active_menu=<menu> [header snipet]"
 		exit 1
 	}
 }

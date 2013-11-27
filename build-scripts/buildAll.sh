@@ -1,5 +1,10 @@
 #/bin/sh
 
+# New example
+
+./build-page.sh -p ../snippets/index.html.snip -a Home -s > index-page.html
+./build-page.sh -p ../snippets/gsearch.html.snip -n > gsearch.html
+
 ./build-downloads.sh
 cd downloads
 ./build-downloads-wolframe.sh
@@ -22,7 +27,6 @@ cd ..
 ./build-documentation.sh
 ./build-solutions.sh
 #./build-index.sh
-./build-index-page.sh
 ./build-support.sh
 ./build-faq.sh
 cd faqs
