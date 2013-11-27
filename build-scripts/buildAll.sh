@@ -2,8 +2,8 @@
 
 # New example
 
-./build-page.sh -p ../snippets/index.html.snip -a Home -s > index-page.html
-./build-page.sh -p ../snippets/gsearch.html.snip -n > gsearch.html
+./build-page.sh -f ../snippets/index.html.snip -a Home -s > index-page.html
+./build-page.sh -f ../snippets/gsearch.html.snip -n > gsearch.html
 
 ./build-downloads.sh
 cd downloads
