@@ -7,7 +7,7 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 */
 
 #rslides figure{}
-#rslides figure img { display: block; float: left; margin-right: 50px; margin-left: 40px; }
+#rslides figure img { display: block; float: left; margin-right: 50px; margin-left: 40px; margin-top: 7px; margin-bottom: 7px; }
 /* #rslides figure img { max-width: 500px; width: auto; max-height: 300px; height: auto; } */
 #rslides figure img { width: 500px; height: auto; }
 #rslides figure img { width: auto; height: 300px; }

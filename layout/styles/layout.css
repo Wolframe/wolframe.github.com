@@ -44,12 +44,12 @@ address, article, aside, figcaption, figure, footer, header, hgroup, nav, sectio
 
 div.wrapper, .wrapper100{display:block; width:100%; margin:0; padding:0; text-align:left; word-wrap:break-word;}
 
-.row1, .row1 a{color:#C0BAB6; background-color:#467aa7;}
-.row2{color:#919191; background-color:#2a5a7a; border-bottom:1px solid #333333;}
-.row3{	color:#666666; background-color:#FFFFFF;}
-.row4, .row4 a{color:#919191; background-color:#303030;}
-.row5{color:#666666; background-color:#FFFFFF; border-bottom:1px solid #E5E4E3;}
-.slider_row{color:#919191; background-color:#E8E8E8;}
+.row1, .row1 a { color: #C0BAB6; background-color: #467aa7; }
+.row2 { color: #919191; background-color: #2a5a7a; border-bottom: 1px solid #333333; }
+.row3 { color: #666666; background-color: #FFFFFF; }
+.row4, .row4 a { color: #919191; background-color: #303030; }
+.row5 { color: #666666; background-color: #FFFFFF; border-bottom: 1px solid #E5E4E3; }
+.slider_row { color: #919191; background-color: #E8E8E8; background-image: url(images/paper.png)}
 
 /*----------------------------------------------Generalise-------------------------------------*/
 
