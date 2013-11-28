@@ -1,5 +1,12 @@
 #/bin/sh
 
+# New example
+
+./build-page.sh -f ../snippets/index.html.snip -a Home -s > index-page.html
+./build-page.sh -f ../snippets/gsearch.html.snip -n > gsearch.html
+./build-page.sh -f ../snippets/contact.html.snip -a Contact > contact.html
+./build-page.sh -f ../snippets/copyright.html.snip -n > copyright.html
+
 ./build-downloads.sh
 cd downloads
 ./build-downloads-wolframe.sh
@@ -18,11 +25,8 @@ cd downloads
 ./build-downloads-wolframe-sqlite3.sh
 ./build-downloads-wolframe-textwolf.sh
 cd ..
-./build-contact.sh
 ./build-documentation.sh
-./build-solutions.sh
 #./build-index.sh
-./build-index-page.sh
 ./build-support.sh
 ./build-faq.sh
 cd faqs
@@ -33,6 +37,11 @@ cd ..
 cd development
 ./build-development_daily_builds.sh
 cd ..
+./build-static-downloads.sh
+./build-404.sh
+./build-baddomain.sh
+./build-doxygen-templates.sh
+./build-docbook-xmlnippets.sh
 
 mv -f *.html ..
 mv -f downloads/*.html ../downloads/.

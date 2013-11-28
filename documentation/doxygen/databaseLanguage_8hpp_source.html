@@ -2,15 +2,14 @@
 <html lang="en" dir="ltr">
 <head>
 	<title>Wolframe: include/database/databaseLanguage.hpp Source File</title>
-<!--	<meta charset="iso-8859-1">-->
-	<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 	<meta name="generator" content="Doxygen 1.8.5"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-	<link href="/layout/styles/main.css" rel="stylesheet" type="text/css" media="all">
-	<link href="/layout/styles/mediaqueries.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/layout/styles/main.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/layout/styles/mediaqueries.css" rel="stylesheet" type="text/css" media="all" />
 	<!--[if lt IE 9]>
-		<link href="/layout/styles/ie/ie8.css" rel="stylesheet" type="text/css" media="all">
+		<link href="/layout/styles/ie/ie8.css" rel="stylesheet" type="text/css" media="all" />
 		<script src="/layout/scripts/ie/css3-mediaqueries.min.js"></script>
 		<script src="/layout/scripts/ie/html5shiv.min.js"></script>
 	<![endif]-->
@@ -22,15 +21,18 @@
 <body class="">
 <div class="wrapper row1">
 	<header id="header" class="full_width clear">
-		<hgroup>
-			<h1><a href="index.html">Project Wolframe</a></h1>
-			<h2>The Straight Path to Complex Projects</h2>
-		</hgroup>
-		<div id="header-contact">
-			<ul class="list none">
-				<li><span class="fa fa-envelope"></span> <a href="mailto:contact@wolframe.net">contact@wolframe.net</a></li>
-<!--				<li><span class="fa fa-phone"></span> +xx xxx xxxxxxxxxx</li> -->
-			</ul>
+		<div id="header-logo">
+			<h1><a href="/index.html">Project Wolframe</a></h1>
+			<h2>The Straight Path to Successful Projects</h2>
+		</div>
+		<div id="header-search">
+			<form id="cse-search-box" action="http://www.wolframe.org/gsearch.html">
+				<input type="hidden" name="cx" value="007231504736047898702:wrnjvfljzvu" />
+				<input type="hidden" name="ie" value="UTF-8" />
+				<input type="text" name="q" size="31" />
+<!--				<input type="submit" name="sa" value="&#xf002;" /> -->
+				<input type="submit" name="sa" class="search-bttn" value="" />
+			</form>
 		</div>
 	</header>
 </div>
@@ -38,10 +40,8 @@
 <div class="wrapper row2">
 	<nav id="topnav">
 		<ul class="clear">
+<!-- BEGIN MENU -->
 			<li><a href="/index.html" title="Home">Home</a></li>
-<!--
-			<li><a href="/solutions.html" title="Solutions">Solutions</a></li>
--->
 			<li><a href="/downloads.html" title="Downloads">Downloads</a></li>
 			<li class="active"><a href="/documentation.html" title="Documentation">Documentation</a></li>
 			<li><a class="drop" href="/support.html" title="Support">Support</a>
@@ -51,6 +51,7 @@
 				</ul>
 			</li>
 			<li class="last-child"><a href="/contact.html" title="Contact Us">Contact Us</a></li>
+<!-- END MENU -->
 		</ul>
 	</nav>
 </div>
@@ -149,33 +150,38 @@
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keyword">virtual</span> std::string <a class="code" href="struct__Wolframe_1_1db_1_1LanguageDescription.html#a89b9c1238df44512ba2b617670dff2f5">parseEmbeddedStatement</a>( std::string::const_iterator&amp; si, std::string::const_iterator se) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="comment">// Default is according SQL standard &#39;false&#39;</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1db_1_1LanguageDescription.html#aebc61440dbdfdc47fe150198b5e740d2">   69</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="struct__Wolframe_1_1db_1_1LanguageDescription.html#aebc61440dbdfdc47fe150198b5e740d2">isCaseSensitive</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}} <span class="comment">// namespace _Wolframe::db</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1db_1_1LanguageDescription.html#a6dc9c99555b6a56647fd3a26a50a02b2">   67</a></span>&#160;        <span class="keyword">typedef</span> std::pair&lt;std::string,std::string&gt; <a class="code" href="struct__Wolframe_1_1db_1_1LanguageDescription.html#a6dc9c99555b6a56647fd3a26a50a02b2">TemplateArgumentAssignment</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keyword">virtual</span> std::string <a class="code" href="struct__Wolframe_1_1db_1_1LanguageDescription.html#adf7d420f8f6b02ed7d76031607a9f958">substituteTemplateArguments</a>( <span class="keyword">const</span> std::string&amp; cmd, <span class="keyword">const</span> std::vector&lt;TemplateArgumentAssignment&gt;&amp; arg) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="comment">// Default is according SQL standard &#39;false&#39;</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1db_1_1LanguageDescription.html#aebc61440dbdfdc47fe150198b5e740d2">   72</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="struct__Wolframe_1_1db_1_1LanguageDescription.html#aebc61440dbdfdc47fe150198b5e740d2">isCaseSensitive</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}} <span class="comment">// namespace _Wolframe::db</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="struct__Wolframe_1_1db_1_1LanguageDescription_html_af8e74fdeaafe760c11def065200af43d"><div class="ttname"><a href="struct__Wolframe_1_1db_1_1LanguageDescription.html#af8e74fdeaafe760c11def065200af43d">_Wolframe::db::LanguageDescription::stm_argument_reference</a></div><div class="ttdeci">virtual std::string stm_argument_reference(int index) const </div><div class="ttdoc">String used for declaring a reference to an argument by index (starting with 1). </div></div>
 <div class="ttc" id="struct__Wolframe_1_1db_1_1LanguageDescription_html_a81c568032b0b50ffddb4ebfaa2dd2128"><div class="ttname"><a href="struct__Wolframe_1_1db_1_1LanguageDescription.html#a81c568032b0b50ffddb4ebfaa2dd2128">_Wolframe::db::LanguageDescription::~LanguageDescription</a></div><div class="ttdeci">virtual ~LanguageDescription()</div><div class="ttdef"><b>Definition:</b> databaseLanguage.hpp:50</div></div>
 <div class="ttc" id="struct__Wolframe_1_1db_1_1LanguageDescription_html_a4061242dff22ab7d3ad928624672ab9f"><div class="ttname"><a href="struct__Wolframe_1_1db_1_1LanguageDescription.html#a4061242dff22ab7d3ad928624672ab9f">_Wolframe::db::LanguageDescription::LanguageDescription</a></div><div class="ttdeci">LanguageDescription()</div><div class="ttdef"><b>Definition:</b> databaseLanguage.hpp:49</div></div>
-<div class="ttc" id="struct__Wolframe_1_1db_1_1LanguageDescription_html_aebc61440dbdfdc47fe150198b5e740d2"><div class="ttname"><a href="struct__Wolframe_1_1db_1_1LanguageDescription.html#aebc61440dbdfdc47fe150198b5e740d2">_Wolframe::db::LanguageDescription::isCaseSensitive</a></div><div class="ttdeci">virtual bool isCaseSensitive() const </div><div class="ttdoc">Define if a database is case-insensitive. This has influence on TDL parsing. </div><div class="ttdef"><b>Definition:</b> databaseLanguage.hpp:69</div></div>
+<div class="ttc" id="struct__Wolframe_1_1db_1_1LanguageDescription_html_aebc61440dbdfdc47fe150198b5e740d2"><div class="ttname"><a href="struct__Wolframe_1_1db_1_1LanguageDescription.html#aebc61440dbdfdc47fe150198b5e740d2">_Wolframe::db::LanguageDescription::isCaseSensitive</a></div><div class="ttdeci">virtual bool isCaseSensitive() const </div><div class="ttdoc">Define if a database is case-insensitive. This has influence on TDL parsing. </div><div class="ttdef"><b>Definition:</b> databaseLanguage.hpp:72</div></div>
+<div class="ttc" id="struct__Wolframe_1_1db_1_1LanguageDescription_html_adf7d420f8f6b02ed7d76031607a9f958"><div class="ttname"><a href="struct__Wolframe_1_1db_1_1LanguageDescription.html#adf7d420f8f6b02ed7d76031607a9f958">_Wolframe::db::LanguageDescription::substituteTemplateArguments</a></div><div class="ttdeci">virtual std::string substituteTemplateArguments(const std::string &amp;cmd, const std::vector&lt; TemplateArgumentAssignment &gt; &amp;arg) const </div></div>
 <div class="ttc" id="transaction_8hpp_html"><div class="ttname"><a href="transaction_8hpp.html">transaction.hpp</a></div></div>
 <div class="ttc" id="struct__Wolframe_1_1db_1_1LanguageDescription_html_a0569dbf5f5afd4cfd8536d48e916fbc8"><div class="ttname"><a href="struct__Wolframe_1_1db_1_1LanguageDescription.html#a0569dbf5f5afd4cfd8536d48e916fbc8">_Wolframe::db::LanguageDescription::isEmbeddedStatement</a></div><div class="ttdeci">virtual bool isEmbeddedStatement(std::string::const_iterator si, std::string::const_iterator se) const </div></div>
 <div class="ttc" id="struct__Wolframe_1_1db_1_1LanguageDescription_html_a89b9c1238df44512ba2b617670dff2f5"><div class="ttname"><a href="struct__Wolframe_1_1db_1_1LanguageDescription.html#a89b9c1238df44512ba2b617670dff2f5">_Wolframe::db::LanguageDescription::parseEmbeddedStatement</a></div><div class="ttdeci">virtual std::string parseEmbeddedStatement(std::string::const_iterator &amp;si, std::string::const_iterator se) const </div></div>
 <div class="ttc" id="userInterface_8hpp_html"><div class="ttname"><a href="userInterface_8hpp.html">userInterface.hpp</a></div></div>
 <div class="ttc" id="struct__Wolframe_1_1db_1_1LanguageDescription_html_a198d96b218fa3b6af5c5dfcc6e92d076"><div class="ttname"><a href="struct__Wolframe_1_1db_1_1LanguageDescription.html#a198d96b218fa3b6af5c5dfcc6e92d076">_Wolframe::db::LanguageDescription::eoln_commentopr</a></div><div class="ttdeci">virtual const char * eoln_commentopr() const </div><div class="ttdoc">Operator marking the start of an end of line comment. </div><div class="ttdef"><b>Definition:</b> databaseLanguage.hpp:54</div></div>
 <div class="ttc" id="keymap_8hpp_html"><div class="ttname"><a href="keymap_8hpp.html">keymap.hpp</a></div><div class="ttdoc">template for map with case insensitive key strings </div></div>
+<div class="ttc" id="struct__Wolframe_1_1db_1_1LanguageDescription_html_a6dc9c99555b6a56647fd3a26a50a02b2"><div class="ttname"><a href="struct__Wolframe_1_1db_1_1LanguageDescription.html#a6dc9c99555b6a56647fd3a26a50a02b2">_Wolframe::db::LanguageDescription::TemplateArgumentAssignment</a></div><div class="ttdeci">std::pair&lt; std::string, std::string &gt; TemplateArgumentAssignment</div><div class="ttdef"><b>Definition:</b> databaseLanguage.hpp:67</div></div>
 <div class="ttc" id="struct__Wolframe_1_1db_1_1LanguageDescription_html"><div class="ttname"><a href="struct__Wolframe_1_1db_1_1LanguageDescription.html">_Wolframe::db::LanguageDescription</a></div><div class="ttdef"><b>Definition:</b> databaseLanguage.hpp:47</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 20 2013 09:44:10 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 27 2013 17:02:31 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
@@ -185,19 +191,6 @@ Generated on Wed Nov 20 2013 09:44:10 for Wolframe by &#160;<a href="http://www.
 <!-- Footer -->
 <div class="wrapper row2">
 	<div id="footer" class="clear">
-<!--
-		<div class="one_quarter first">
-			<h2 class="footer_title">Solutions</h2>
-			<nav class="footer_nav">
-				<ul class="nospace">
-					<li><a href="#">Simple CRM</a></li>
-					<li><a href="#">Bug reporting tool</a></li>
-					<li><a href="#">Message broker</a></li>
-				</ul>
-			</nav>
-		</div>
--->
-<!--		<div class="one_quarter">-->
 		<div class="one_third first">
 			<h2 class="footer_title">Documentation</h2>
 			<nav class="footer_nav">
@@ -207,36 +200,77 @@ Generated on Wed Nov 20 2013 09:44:10 for Wolframe by &#160;<a href="http://www.
 				</ul>
 			</nav>
 		</div>
-<!--		<div class="one_quarter">-->
 		<div class="one_third">
 			<h2 class="footer_title">Downloads</h2>
 			<nav class="footer_nav">
 				<ul class="nospace">
-					<li><a href="/downloads_wolframe.html">Wolframe server</a></li>
-					<li><a href="/downloads_wolfclient.html">Wolframe client</a></li>
+					<li><a href="/downloads/downloads_wolframe.html">Wolframe server</a></li>
+					<li><a href="/downloads/downloads_wolfclient.html">Wolframe client</a></li>
 				</ul>
 			</nav>
 		</div>
-<!--		<div class="one_quarter">-->
 		<div class="one_third">
 			<h2 class="footer_title">Contact Us</h2>
-			<p><strong>Email:</strong> <a href="mailto:contact@wolframe.net">contact@wolframe.net</a></p>
+			<nav class="footer_nav">
+				<ul class="nospace">
+					<li><strong>Email:</strong> <a href="/mailto:contact@wolframe.net">contact@wolframe.net</a></li>
+					<li>
+						<a id="googleplus-bttn" href="http://plus.google.com/116915890857205562872?prsrc=3" rel="publisher" target="_top" style="text-decoration:none;">
+							<span>Google+</span></a>
+						<a  id="linkedin-bttn" href="#" target="_top" style="text-decoration:none;">
+							<span>LinkedIn</span></a>
+						<a id="twitter-bttn" href="http://twitter.com/ProjectWolframe" target="_top" style="text-decoration:none;">
+							<span>twitter</span></a>
+						<a id="rss-bttn" href="#" target="_top" style="text-decoration:none;">
+							<span>rss</span></a>
+					</li>
+					<li>
+						<a href="https://twitter.com/ProjectWolframe" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @ProjectWolframe</a>
+						<div class="g-follow" data-annotation="none" data-height="20" data-href="http://plus.google.com/116915890857205562872" data-rel="publisher"></div>
+						<div class="g-plusone" data-href="http://www.wolframe.net" data-size="medium"></div>
+					</li>
+				</ul>
+			</nav>
 		</div>
 	</div>
 </div>
 <div class="wrapper row4">
 	<div id="copyright" class="clear">
 		<p class="fl_left">Copyright &copy; 2013 - <a href="#">Project Wolframe</a> - All Rights Reserved</p>
-		<p class="fl_right">Template by <a href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+		<p class="fl_right"><a href="/copyright.html">Copyright and web credits</a> - Template by <a href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
 	</div>
 </div>
 <!-- Scripts -->
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.min.js"></script>
-<script>window.jQuery || document.write('<script src="/layout/scripts/jquery-latest.min.js"><\/script>\
-<script src="/layout/scripts/jquery-ui.min.js"><\/script>')</script>
+<script>window.jQuery || document.write('\x3Cscript src="/layout/scripts/jquery-latest.min.js">\x3C\/script>\
+\x3Cscript src="/layout/scripts/jquery-ui.min.js">\x3C\/script>')</script>
 <script>jQuery(document).ready(function($){ $('img').removeAttr('width height'); });</script>
 <script src="/layout/scripts/jquery-mobilemenu.min.js"></script>
 <script src="/layout/scripts/custom.js"></script>
+<!-- Tweeter follow script -->
+<script>
+	!function( d, s, id )	{
+		var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location)?'http':'https';
+		if( !d.getElementById( id ))	{
+			js = d.createElement( s );
+			js.id = id;
+			js.src = p + '://platform.twitter.com/widgets.js';
+			fjs.parentNode.insertBefore( js,fjs );
+		}
+	} ( document, 'script', 'twitter-wjs' );
+</script>
+<!-- Google +1, follow -->
+<script type="text/javascript">
+	window.___gcfg = {
+		lang: 'en-US',
+		parsetags: 'onload'
+	};
+	( function()	{
+		var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		po.src = 'https://apis.google.com/js/plusone.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	}) ();
+</script>
 </body>
 </html>

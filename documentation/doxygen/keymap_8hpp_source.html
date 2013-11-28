@@ -2,15 +2,14 @@
 <html lang="en" dir="ltr">
 <head>
 	<title>Wolframe: include/types/keymap.hpp Source File</title>
-<!--	<meta charset="iso-8859-1">-->
-	<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 	<meta name="generator" content="Doxygen 1.8.5"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-	<link href="/layout/styles/main.css" rel="stylesheet" type="text/css" media="all">
-	<link href="/layout/styles/mediaqueries.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/layout/styles/main.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/layout/styles/mediaqueries.css" rel="stylesheet" type="text/css" media="all" />
 	<!--[if lt IE 9]>
-		<link href="/layout/styles/ie/ie8.css" rel="stylesheet" type="text/css" media="all">
+		<link href="/layout/styles/ie/ie8.css" rel="stylesheet" type="text/css" media="all" />
 		<script src="/layout/scripts/ie/css3-mediaqueries.min.js"></script>
 		<script src="/layout/scripts/ie/html5shiv.min.js"></script>
 	<![endif]-->
@@ -22,15 +21,18 @@
 <body class="">
 <div class="wrapper row1">
 	<header id="header" class="full_width clear">
-		<hgroup>
-			<h1><a href="index.html">Project Wolframe</a></h1>
-			<h2>The Straight Path to Complex Projects</h2>
-		</hgroup>
-		<div id="header-contact">
-			<ul class="list none">
-				<li><span class="fa fa-envelope"></span> <a href="mailto:contact@wolframe.net">contact@wolframe.net</a></li>
-<!--				<li><span class="fa fa-phone"></span> +xx xxx xxxxxxxxxx</li> -->
-			</ul>
+		<div id="header-logo">
+			<h1><a href="/index.html">Project Wolframe</a></h1>
+			<h2>The Straight Path to Successful Projects</h2>
+		</div>
+		<div id="header-search">
+			<form id="cse-search-box" action="http://www.wolframe.org/gsearch.html">
+				<input type="hidden" name="cx" value="007231504736047898702:wrnjvfljzvu" />
+				<input type="hidden" name="ie" value="UTF-8" />
+				<input type="text" name="q" size="31" />
+<!--				<input type="submit" name="sa" value="&#xf002;" /> -->
+				<input type="submit" name="sa" class="search-bttn" value="" />
+			</form>
 		</div>
 	</header>
 </div>
@@ -38,10 +40,8 @@
 <div class="wrapper row2">
 	<nav id="topnav">
 		<ul class="clear">
+<!-- BEGIN MENU -->
 			<li><a href="/index.html" title="Home">Home</a></li>
-<!--
-			<li><a href="/solutions.html" title="Solutions">Solutions</a></li>
--->
 			<li><a href="/downloads.html" title="Downloads">Downloads</a></li>
 			<li class="active"><a href="/documentation.html" title="Documentation">Documentation</a></li>
 			<li><a class="drop" href="/support.html" title="Support">Support</a>
@@ -51,6 +51,7 @@
 				</ul>
 			</li>
 			<li class="last-child"><a href="/contact.html" title="Contact Us">Contact Us</a></li>
+<!-- END MENU -->
 		</ul>
 	</nav>
 </div>
@@ -159,36 +160,60 @@
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
 <div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1keymap.html#a070535420d00cec55f4edd66d44219ed">   73</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="struct__Wolframe_1_1types_1_1keymap.html#a070535420d00cec55f4edd66d44219ed">insert</a>( <span class="keyword">const</span> <a class="code" href="struct__Wolframe_1_1types_1_1keystring.html">keystring</a>&amp; key, <span class="keyword">const</span> ValueType&amp; value)</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                <span class="keywordflow">if</span> (Parent::find( key) != this-&gt;end()) <span class="keywordflow">throw</span> std::runtime_error( std::string( <span class="stringliteral">&quot;duplicate definition of &#39;&quot;</span>) + key + <span class="stringliteral">&quot;&#39;&quot;</span>);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                Parent::operator[](key) = value;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        }</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1keymap.html#a22abb39eda28b7108087c3fa424a4a4b">   79</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="struct__Wolframe_1_1types_1_1keymap.html#a22abb39eda28b7108087c3fa424a4a4b">insert</a>( <span class="keyword">const</span> <a class="code" href="struct__Wolframe_1_1types_1_1keymap.html">keymap</a>&amp; m)</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                <span class="keyword">typename</span> Parent::const_iterator ki = m.begin(), ke = m.end();</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                <span class="keywordflow">for</span> (; ki != ke; ++ki) <a class="code" href="struct__Wolframe_1_1types_1_1keymap.html#a070535420d00cec55f4edd66d44219ed">insert</a>( ki-&gt;first, ki-&gt;second);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">class</span> KeyList&gt;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keyword">typename</span> boost::enable_if_c&lt;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                <a class="code" href="struct__Wolframe_1_1types_1_1traits_1_1is__back__insertion__sequence.html">types::traits::is_back_insertion_sequence&lt;KeyList&gt;::value</a></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                ,KeyList&gt;::type</div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1keymap.html#a5e6f9d954d382204896bad79925ea301">   89</a></span>&#160;        <a class="code" href="struct__Wolframe_1_1types_1_1keymap.html#a5e6f9d954d382204896bad79925ea301">getkeys</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                KeyList rt;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                <span class="keyword">typename</span> Parent::const_iterator ki = Parent::begin(), ke = Parent::end();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                <span class="keywordflow">for</span> (; ki != ke; ++ki) rt.push_back( ki-&gt;first);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                <span class="keywordflow">return</span> rt;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        }</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;};</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}} <span class="comment">//namespace</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                <span class="keywordflow">if</span> (Parent::find( key) != this-&gt;end())</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                        <span class="keywordflow">throw</span> std::runtime_error( std::string( <span class="stringliteral">&quot;duplicate definition of &#39;&quot;</span>) + key + <span class="stringliteral">&quot;&#39;&quot;</span>);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                Parent::operator[](key) = value;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1keymap.html#a22abb39eda28b7108087c3fa424a4a4b">   82</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="struct__Wolframe_1_1types_1_1keymap.html#a22abb39eda28b7108087c3fa424a4a4b">insert</a>( <span class="keyword">const</span> <a class="code" href="struct__Wolframe_1_1types_1_1keymap.html">keymap</a>&amp; m)</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                <span class="keyword">typename</span> Parent::const_iterator ki = m.begin(), ke = m.end();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                <span class="keywordflow">for</span> (; ki != ke; ++ki) <a class="code" href="struct__Wolframe_1_1types_1_1keymap.html#a070535420d00cec55f4edd66d44219ed">insert</a>( ki-&gt;first, ki-&gt;second);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1keymap.html#ab35404d5f0018a45bcde48908ba471eb">   88</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="struct__Wolframe_1_1types_1_1keymap.html#ab35404d5f0018a45bcde48908ba471eb">join</a>( <span class="keyword">const</span> <a class="code" href="struct__Wolframe_1_1types_1_1keymap.html">keymap</a>&amp; m)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                <span class="keyword">typename</span> Parent::const_iterator ki = m.begin(), ke = m.end();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                <span class="keywordflow">for</span> (; ki != ke; ++ki)</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                        <span class="keyword">typename</span> Parent::const_iterator fi = Parent::find( ki-&gt;first);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                        <span class="keywordflow">if</span> (fi != this-&gt;end())</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                        {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                                <span class="keywordflow">if</span> (ki-&gt;second != fi-&gt;second)</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                                {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                                        <span class="keywordflow">throw</span> std::runtime_error( std::string( <span class="stringliteral">&quot;duplicate definition of &#39;&quot;</span>) + ki-&gt;first + <span class="stringliteral">&quot;&#39;&quot;</span>);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                                }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                        }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                        {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                                Parent::operator[](ki-&gt;first) = ki-&gt;second;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                        }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">class</span> KeyList&gt;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keyword">typename</span> boost::enable_if_c&lt;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                <a class="code" href="struct__Wolframe_1_1types_1_1traits_1_1is__back__insertion__sequence.html">types::traits::is_back_insertion_sequence&lt;KeyList&gt;::value</a></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                ,KeyList&gt;::type</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1keymap.html#a5e6f9d954d382204896bad79925ea301">  112</a></span>&#160;        <a class="code" href="struct__Wolframe_1_1types_1_1keymap.html#a5e6f9d954d382204896bad79925ea301">getkeys</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                KeyList rt;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                <span class="keyword">typename</span> Parent::const_iterator ki = Parent::begin(), ke = Parent::end();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                <span class="keywordflow">for</span> (; ki != ke; ++ki) rt.push_back( ki-&gt;first);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                <span class="keywordflow">return</span> rt;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;};</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}} <span class="comment">//namespace</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="struct__Wolframe_1_1types_1_1keystring_html"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keystring.html">_Wolframe::types::keystring</a></div><div class="ttdef"><b>Definition:</b> keymap.hpp:49</div></div>
 <div class="ttc" id="struct__Wolframe_1_1types_1_1keymap_html"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keymap.html">_Wolframe::types::keymap</a></div><div class="ttdef"><b>Definition:</b> keymap.hpp:60</div></div>
+<div class="ttc" id="struct__Wolframe_1_1types_1_1keymap_html_ab35404d5f0018a45bcde48908ba471eb"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keymap.html#ab35404d5f0018a45bcde48908ba471eb">_Wolframe::types::keymap::join</a></div><div class="ttdeci">void join(const keymap &amp;m)</div><div class="ttdef"><b>Definition:</b> keymap.hpp:88</div></div>
 <div class="ttc" id="struct__Wolframe_1_1types_1_1keymap_html_ae69aab91a1fcd2360c2036496b9871e2"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keymap.html#ae69aab91a1fcd2360c2036496b9871e2">_Wolframe::types::keymap::keymap</a></div><div class="ttdeci">keymap(const std::map&lt; std::string, ValueType &gt; &amp;o)</div><div class="ttdef"><b>Definition:</b> keymap.hpp:68</div></div>
-<div class="ttc" id="struct__Wolframe_1_1types_1_1keymap_html_a22abb39eda28b7108087c3fa424a4a4b"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keymap.html#a22abb39eda28b7108087c3fa424a4a4b">_Wolframe::types::keymap::insert</a></div><div class="ttdeci">void insert(const keymap &amp;m)</div><div class="ttdef"><b>Definition:</b> keymap.hpp:79</div></div>
+<div class="ttc" id="struct__Wolframe_1_1types_1_1keymap_html_a22abb39eda28b7108087c3fa424a4a4b"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keymap.html#a22abb39eda28b7108087c3fa424a4a4b">_Wolframe::types::keymap::insert</a></div><div class="ttdeci">void insert(const keymap &amp;m)</div><div class="ttdef"><b>Definition:</b> keymap.hpp:82</div></div>
 <div class="ttc" id="struct__Wolframe_1_1types_1_1keymap_html_a3e7f6e170a7eca5fcaa8d2c7e1e284d0"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keymap.html#a3e7f6e170a7eca5fcaa8d2c7e1e284d0">_Wolframe::types::keymap::keymap</a></div><div class="ttdeci">keymap(const keymap &amp;o)</div><div class="ttdef"><b>Definition:</b> keymap.hpp:66</div></div>
 <div class="ttc" id="traits_8hpp_html"><div class="ttname"><a href="traits_8hpp.html">traits.hpp</a></div><div class="ttdoc">Type traits. </div></div>
 <div class="ttc" id="struct__Wolframe_1_1types_1_1keymap_html_ae5235be332a99e7d0d322a41dc846d7b"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keymap.html#ae5235be332a99e7d0d322a41dc846d7b">_Wolframe::types::keymap::Parent</a></div><div class="ttdeci">std::map&lt; keystring, ValueType &gt; Parent</div><div class="ttdef"><b>Definition:</b> keymap.hpp:63</div></div>
@@ -196,14 +221,14 @@
 <div class="ttc" id="struct__Wolframe_1_1types_1_1keystring_html_aa4de1cf85612a39b30ddacfa0f9d96b4"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keystring.html#aa4de1cf85612a39b30ddacfa0f9d96b4">_Wolframe::types::keystring::keystring</a></div><div class="ttdeci">keystring(const std::string &amp;o)</div><div class="ttdef"><b>Definition:</b> keymap.hpp:52</div></div>
 <div class="ttc" id="struct__Wolframe_1_1types_1_1keymap_html_ab87ebfd75a6e0a864b67cae56de7797f"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keymap.html#ab87ebfd75a6e0a864b67cae56de7797f">_Wolframe::types::keymap::keymap</a></div><div class="ttdeci">keymap()</div><div class="ttdef"><b>Definition:</b> keymap.hpp:65</div></div>
 <div class="ttc" id="struct__Wolframe_1_1types_1_1keystring_html_af3b506c9c23e434f788d60b4d8eeadab"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keystring.html#af3b506c9c23e434f788d60b4d8eeadab">_Wolframe::types::keystring::keystring</a></div><div class="ttdeci">keystring(const keystring &amp;o)</div><div class="ttdef"><b>Definition:</b> keymap.hpp:54</div></div>
-<div class="ttc" id="struct__Wolframe_1_1types_1_1keymap_html_a5e6f9d954d382204896bad79925ea301"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keymap.html#a5e6f9d954d382204896bad79925ea301">_Wolframe::types::keymap::getkeys</a></div><div class="ttdeci">boost::enable_if_c&lt; types::traits::is_back_insertion_sequence&lt; KeyList &gt;::value,KeyList &gt;::type getkeys() const </div><div class="ttdef"><b>Definition:</b> keymap.hpp:89</div></div>
+<div class="ttc" id="struct__Wolframe_1_1types_1_1keymap_html_a5e6f9d954d382204896bad79925ea301"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keymap.html#a5e6f9d954d382204896bad79925ea301">_Wolframe::types::keymap::getkeys</a></div><div class="ttdeci">boost::enable_if_c&lt; types::traits::is_back_insertion_sequence&lt; KeyList &gt;::value,KeyList &gt;::type getkeys() const </div><div class="ttdef"><b>Definition:</b> keymap.hpp:112</div></div>
 <div class="ttc" id="struct__Wolframe_1_1types_1_1keystring_html_a1ebbf3b785950680e302a610ddab4004"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keystring.html#a1ebbf3b785950680e302a610ddab4004">_Wolframe::types::keystring::keystring</a></div><div class="ttdeci">keystring()</div><div class="ttdef"><b>Definition:</b> keymap.hpp:56</div></div>
 <div class="ttc" id="struct__Wolframe_1_1types_1_1traits_1_1is__back__insertion__sequence_html"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1traits_1_1is__back__insertion__sequence.html">_Wolframe::types::traits::is_back_insertion_sequence</a></div><div class="ttdef"><b>Definition:</b> traits.hpp:43</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 20 2013 09:44:14 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 27 2013 17:02:39 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
@@ -213,19 +238,6 @@ Generated on Wed Nov 20 2013 09:44:14 for Wolframe by &#160;<a href="http://www.
 <!-- Footer -->
 <div class="wrapper row2">
 	<div id="footer" class="clear">
-<!--
-		<div class="one_quarter first">
-			<h2 class="footer_title">Solutions</h2>
-			<nav class="footer_nav">
-				<ul class="nospace">
-					<li><a href="#">Simple CRM</a></li>
-					<li><a href="#">Bug reporting tool</a></li>
-					<li><a href="#">Message broker</a></li>
-				</ul>
-			</nav>
-		</div>
--->
-<!--		<div class="one_quarter">-->
 		<div class="one_third first">
 			<h2 class="footer_title">Documentation</h2>
 			<nav class="footer_nav">
@@ -235,36 +247,77 @@ Generated on Wed Nov 20 2013 09:44:14 for Wolframe by &#160;<a href="http://www.
 				</ul>
 			</nav>
 		</div>
-<!--		<div class="one_quarter">-->
 		<div class="one_third">
 			<h2 class="footer_title">Downloads</h2>
 			<nav class="footer_nav">
 				<ul class="nospace">
-					<li><a href="/downloads_wolframe.html">Wolframe server</a></li>
-					<li><a href="/downloads_wolfclient.html">Wolframe client</a></li>
+					<li><a href="/downloads/downloads_wolframe.html">Wolframe server</a></li>
+					<li><a href="/downloads/downloads_wolfclient.html">Wolframe client</a></li>
 				</ul>
 			</nav>
 		</div>
-<!--		<div class="one_quarter">-->
 		<div class="one_third">
 			<h2 class="footer_title">Contact Us</h2>
-			<p><strong>Email:</strong> <a href="mailto:contact@wolframe.net">contact@wolframe.net</a></p>
+			<nav class="footer_nav">
+				<ul class="nospace">
+					<li><strong>Email:</strong> <a href="/mailto:contact@wolframe.net">contact@wolframe.net</a></li>
+					<li>
+						<a id="googleplus-bttn" href="http://plus.google.com/116915890857205562872?prsrc=3" rel="publisher" target="_top" style="text-decoration:none;">
+							<span>Google+</span></a>
+						<a  id="linkedin-bttn" href="#" target="_top" style="text-decoration:none;">
+							<span>LinkedIn</span></a>
+						<a id="twitter-bttn" href="http://twitter.com/ProjectWolframe" target="_top" style="text-decoration:none;">
+							<span>twitter</span></a>
+						<a id="rss-bttn" href="#" target="_top" style="text-decoration:none;">
+							<span>rss</span></a>
+					</li>
+					<li>
+						<a href="https://twitter.com/ProjectWolframe" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @ProjectWolframe</a>
+						<div class="g-follow" data-annotation="none" data-height="20" data-href="http://plus.google.com/116915890857205562872" data-rel="publisher"></div>
+						<div class="g-plusone" data-href="http://www.wolframe.net" data-size="medium"></div>
+					</li>
+				</ul>
+			</nav>
 		</div>
 	</div>
 </div>
 <div class="wrapper row4">
 	<div id="copyright" class="clear">
 		<p class="fl_left">Copyright &copy; 2013 - <a href="#">Project Wolframe</a> - All Rights Reserved</p>
-		<p class="fl_right">Template by <a href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+		<p class="fl_right"><a href="/copyright.html">Copyright and web credits</a> - Template by <a href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
 	</div>
 </div>
 <!-- Scripts -->
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.min.js"></script>
-<script>window.jQuery || document.write('<script src="/layout/scripts/jquery-latest.min.js"><\/script>\
-<script src="/layout/scripts/jquery-ui.min.js"><\/script>')</script>
+<script>window.jQuery || document.write('\x3Cscript src="/layout/scripts/jquery-latest.min.js">\x3C\/script>\
+\x3Cscript src="/layout/scripts/jquery-ui.min.js">\x3C\/script>')</script>
 <script>jQuery(document).ready(function($){ $('img').removeAttr('width height'); });</script>
 <script src="/layout/scripts/jquery-mobilemenu.min.js"></script>
 <script src="/layout/scripts/custom.js"></script>
+<!-- Tweeter follow script -->
+<script>
+	!function( d, s, id )	{
+		var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location)?'http':'https';
+		if( !d.getElementById( id ))	{
+			js = d.createElement( s );
+			js.id = id;
+			js.src = p + '://platform.twitter.com/widgets.js';
+			fjs.parentNode.insertBefore( js,fjs );
+		}
+	} ( document, 'script', 'twitter-wjs' );
+</script>
+<!-- Google +1, follow -->
+<script type="text/javascript">
+	window.___gcfg = {
+		lang: 'en-US',
+		parsetags: 'onload'
+	};
+	( function()	{
+		var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		po.src = 'https://apis.google.com/js/plusone.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	}) ();
+</script>
 </body>
 </html>

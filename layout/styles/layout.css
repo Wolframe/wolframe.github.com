@@ -44,12 +44,12 @@ address, article, aside, figcaption, figure, footer, header, hgroup, nav, sectio
 
 div.wrapper, .wrapper100{display:block; width:100%; margin:0; padding:0; text-align:left; word-wrap:break-word;}
 
-.row1, .row1 a{color:#C0BAB6; background-color:#467aa7;}
-.row2{color:#919191; background-color:#2a5a7a; border-bottom:1px solid #333333;}
-.row3{	color:#666666; background-color:#FFFFFF;}
-.row4, .row4 a{color:#919191; background-color:#303030;}
-.row5{color:#666666; background-color:#FFFFFF; border-bottom:1px solid #E5E4E3;}
-.slider_row{color:#919191; background-color:#E8E8E8;}
+.row1, .row1 a { color: #C0BAB6; background-color: #467aa7; }
+.row2 { color: #919191; background-color: #2a5a7a; border-bottom: 1px solid #333333; }
+.row3 { color: #666666; background-color: #FFFFFF; }
+.row4, .row4 a { color: #919191; background-color: #303030; }
+.row5 { color: #666666; background-color: #FFFFFF; border-bottom: 1px solid #E5E4E3; }
+.slider_row { color: #919191; background-color: #E8E8E8; background-image: url(images/paper.png)}
 
 /*----------------------------------------------Generalise-------------------------------------*/
 
@@ -67,13 +67,19 @@ nav ul{margin:0; padding:0; list-style:none;}
 
 /*----------------------------------------------Header-------------------------------------*/
 
-#header{padding:30px 0;}
+#header{padding:20px 0;}
 
 #header hgroup{display:block; float:left; width:auto; clear:right;}
 #header hgroup h1, #header hgroup h2{margin:0; font-weight:normal; text-transform:none;}
 #header hgroup h1{font-family:"Times New Roman", Times, serif; text-shadow:1px 1px 2px #1F1F1F; font-weight:bold; font-size:4em;}
 #header hgroup h1 a{color:#E0E0E0;}
 #header hgroup h2{font-size:1.2em;}
+
+#header #header-logo{display:block; float:left; width:auto; clear:right;}
+#header #header-logo h1, #header #header-logo h2{margin:0; font-weight:normal; text-transform:none;}
+#header #header-logo h1{font-family:"Times New Roman", Times, serif; text-shadow:1px 1px 2px #1F1F1F; font-weight:bold; font-size:4em;}
+#header #header-logo h1 a{color:#E0E0E0;}
+#header #header-logo h2{font-size:1.2em;}
 
 #header #header-contact{display:block; float:right; width:auto; clear:right;}
 #header #header-contact ul{margin-top:15px;}
@@ -103,7 +109,7 @@ nav ul{margin:0; padding:0; list-style:none;}
 /*----------------------------------------------Footer-------------------------------------*/
 
 #footer{padding:30px 0;}
-#footer .footer_title{font-size:1.2em; margin-bottom:40px; padding-bottom:10px; border-bottom:1px solid #919191;}
+#footer .footer_title{font-size:1.2em; margin-bottom:25px; padding-bottom:10px; border-bottom:1px solid #919191;}
 #footer div{margin-bottom:0;}
 #footer .tweet-container li{margin-top:18px; padding-top:18px; border-top:1px solid #333333;}
 #footer .tweet-container li:first-child{margin-top:0; padding-top:0; border-top:none;}

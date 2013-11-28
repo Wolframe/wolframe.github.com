@@ -1,2 +1,22 @@
 The CNAME file contains just one line with the domain name (i.e wolframe.org).
 github creates the server name out of it and adds also www.domain.name
+
+How to build:
+------------
+
+cd build-scripts
+./no-slider.awk ../snippets/header-slider.html.snip > ../snippets/header.html.snip
+./no-slider.awk ../snippets/footer-slider.html.snip > ../snippets/footer.html.snip
+./buildAll.sh
+
+cp *webpage* ~/projects/Wolframe/docs/
+
+in 'Wolframe/docs':
+make clean doc-doxygen-webpage doc-html-webpage doc-pdf doc-epub
+(on Windows make doc for CHM)
+rsync -av doxygen/html-webpage/ XXX/wolframe.github.com/documentation/doxygen/
+rsync -av html-webpage/ XXX/wolframe.github.com/documentation/html-chunked/
+
+back in here:
+build-scripts/deploy-wolframe-ch.sh
+

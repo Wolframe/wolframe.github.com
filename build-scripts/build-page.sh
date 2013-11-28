@@ -3,46 +3,57 @@
 # Build the page out of the snipets
 #
 # Invocation:
-#	build-page snippet options...
+#	build-page -p page options...
 # Options:
-#	-s	snippet name
+#	-f	snippet file
+#	-s	with slider
 #	-a	active menu
 #	-n	no active menu
 #	-h	help
 
-SNIPDIR="../snippets"
+
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+SNIPDIR="$SCRIPT_DIR/../snippets"
 
 # print the help
 function printHelp	{
-	echo "Usage:"
-	echo "    $0 -s <snippet> -a <menu>	generate page with <menu> active"
-	echo "    $0 -s <snippet> -n		generate page with no active menu"
-	echo "    $0 -h				print this help and exit"
+	echo "Usage:" >&2
+	echo "    $0 -f <snippet file> -a <menu> [-s]	generate page with <menu> active [and slider]" >&2
+	echo "    $0 -f <snippet file> -n [-s]		generate page with no active menu [and slider]" >&2
+	echo "    $0 -h					print this help and exit" >&2
 }
 
 function buildPage	{
-	if [ -f $SNIPDIR/$1 ]; then
-		cat $SNIPDIR/header_$2.html.snip $SNIPDIR/$1 $SNIPDIR/footer.html.snip
+	if [ -f $1 ]; then
+#		cat $SNIPDIR/header-slider.html.snip $SNIPDIR/$1 $SNIPDIR/footer-slider.html.snip | \
+#			./set-active.awk -v active_menu="$2"
+		cat $SNIPDIR/header-slider.html.snip $1 $SNIPDIR/footer-slider.html.snip | \
+			$SCRIPT_DIR/set-active.awk -v active_menu="$2"
 	else
-		echo
-		echo "ERROR: File $SNIPDIR/$1 does not exist."
-		echo
+		echo >&2
+#		echo "ERROR: File $SNIPDIR/$1 does not exist." >&2
+		echo "ERROR: File $1 does not exist." >&2
+		echo >&2
 		exit 1
 	fi
 }
 
 
 NO_MENU=0
+WITH_SLIDER=0
+
 # Check the arguments
-while getopts :s:a:nh option
+while getopts :f:a:nsh option
 do
 	case "${option}"
 	in
-		s)	SNIPPET=${OPTARG}
+		f)	SNIPPET=${OPTARG}
 			;;
 		a)	ACTIVE_MENU=${OPTARG}
 			;;
 		n)	NO_MENU=1
+			;;
+		s)	WITH_SLIDER=1
 			;;
 		h)	printHelp
 			exit
@@ -51,24 +62,27 @@ do
 done
 
 if [ "x$SNIPPET" == "x" ]; then
-	echo
-	echo "ERROR: No snippet specified."
-	echo
+	echo >&2
+	echo "ERROR: No snippet specified." >&2
+	echo >&2
 	printHelp
 	exit 1
 fi
 
 if [ "$NO_MENU" == "0" ]; then
 	if [ "x$ACTIVE_MENU" == "x" ]; then
-		echo
-		echo "ERROR: No active menu or -n option specified."
-		echo
+		echo >&2
+		echo "ERROR: No active menu or -n option specified." >&2
+		echo >&2
 		printHelp
 		exit 1
-	else
-		buildPage $SNIPPET.html.snip $ACTIVE_MENU > $SNIPPET.html
 	fi
 else
-	buildPage $SNIPPET.html.snip > $SNIPPET.html
+	ACTIVE_MENU="none"
 fi
 
+if [ "$WITH_SLIDER" == "0" ]; then
+	buildPage $SNIPPET $ACTIVE_MENU | $SCRIPT_DIR/no-slider.awk
+else
+	buildPage $SNIPPET $ACTIVE_MENU
+fi

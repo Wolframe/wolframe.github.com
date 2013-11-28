@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>2.4. Programming Server Requests/Answers</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe documentation" /><link rel="up" href="bk02ch02.html" title="Chapter 2. The Wolframe Standard Client" /><link rel="prev" href="bk02ch02s03.html" title="2.3. Programming the Interface" /><link rel="next" href="bk02ch02s05.html" title="2.5. Eliminating Interface Defects" />
+	<title xmlns="">Project Wolframe</title>
+	<meta xmlns="" charset="utf-8" />
+	<meta xmlns="" name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link xmlns="" rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+
+	<link xmlns="" href="/layout/styles/main.css" rel="stylesheet" type="text/css" media="all" />
+	<link xmlns="" href="/layout/styles/mediaqueries.css" rel="stylesheet" type="text/css" media="all" />
+
+	<!--[if lt IE 9]>
+		<link href="/layout/styles/ie/ie8.css" rel="stylesheet" type="text/css" media="all" />
+		<script src="/layout/scripts/ie/css3-mediaqueries.min.js"></script>
+		<script src="/layout/scripts/ie/html5shiv.min.js"></script>
+	<![endif]-->
+
+
+</head><body>
+
+
+<div xmlns="" class="wrapper row1">
+	<header id="header" class="full_width clear">
+		<div id="header-logo">
+			<h1><a href="/index.html">Project Wolframe</a></h1>
+			<h2>The Straight Path to Successful Projects</h2>
+		</div>
+		<div id="header-search">
+			<form id="cse-search-box" action="http://www.wolframe.org/gsearch.html">
+				<input type="hidden" name="cx" value="007231504736047898702:wrnjvfljzvu" />
+				<input type="hidden" name="ie" value="UTF-8" />
+				<input type="text" name="q" size="31" />
+<!--				<input type="submit" name="sa" value="&#xf002;" /> -->
+				<input type="submit" name="sa" class="search-bttn" value="" />
+			</form>
+		</div>
+	</header>
+</div>
+
+<!-- ################################################################################################ -->
+<div xmlns="" class="wrapper row2">
+	<nav id="topnav">
+		<ul class="clear">
+<!-- BEGIN MENU -->
+			<li><a href="/index.html" title="Home">Home</a></li>
+			<li><a href="/downloads.html" title="Downloads">Downloads</a></li>
+			<li class="active"><a href="/documentation.html" title="Documentation">Documentation</a></li>
+			<li><a class="drop" href="/support.html" title="Support">Support</a>
+				<ul>
+					<li><a href="/faq.html" title="FAQ">FAQ</a></li>
+					<li><a href="http://www.wolframe.ch/mailman/listinfo" title="Mailing lists">Mailing lists</a></li>
+				</ul>
+			</li>
+			<li class="last-child"><a href="/contact.html" title="Contact Us">Contact Us</a></li>
+<!-- END MENU -->
+		</ul>
+	</nav>
+</div>
+
+<!-- ################################################################################################ -->
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.4. Programming Server Requests/Answers</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk02ch02s03.html">Prev</a> </td><th width="60%" align="center">Chapter 2. The Wolframe Standard Client</th><td width="20%" align="right"> <a accesskey="n" href="bk02ch02s05.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1402196052"></a>2.4. Programming Server Requests/Answers</h2></div></div></div><p>
+</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1402196564"></a>2.4.1. Adressing Widget Data</h3></div></div></div><p>
+	Widget data elements elements are addressed by using the relative path of the element
+	from the widget where the request or answer was specified. The relative path is 
+	a sequence of widget object names separated by dots ('.'). Only atomic element 
+	references are specified in request/answer structure.
+	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1402192812"></a>Biggest Common Ancestor Path</h4></div></div></div><p>
+	The grouping of elements into structures is
+	done by the biggest common ancestor path of all atomic element references in
+	a structure. It is assumed that this biggest common ancestor is addressing the structure.
+	If for example a structure has the atomic widget element references "home.user.name"
+	and "home.user.id" then we assume that "home.user" is adressing the structure 
+	containing "name" and "id" in the widget data.
+	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1402193828"></a>Addressing Atomic Elements</h4></div></div></div><div class="table"><a id="idp1402194372"></a><p class="title"><strong>Table 2.1. Basic Elements of Request/Answer</strong></p><div class="table-contents"><table summary="Basic Elements of Request/Answer" border="1"><colgroup><col /><col /></colgroup><thead><tr><th>Description</th><th>Syntax</th></tr></thead><tbody><tr><td>Constant (server request only)</td><td>string with single (') or double (") quotes or numeric integral constant</td></tr><tr><td>Mandatory attribute</td><td>name={variablepath}</td></tr><tr><td>Mandatory content value</td><td>name{{variablepath}}</td></tr><tr><td>Optional attribute</td><td>name={variablepath:?}</td></tr><tr><td>Optional content value</td><td>name{{variablepath:?}}</td></tr><tr><td>Optional attribute with default</td><td>name={variablepath:default}</td></tr><tr><td>Optional content with default value</td><td>name{{variablepath:default}}</td></tr><tr><td>Ignored attribute</td><td>name={?}</td></tr><tr><td>Ignored content value</td><td>name{{?}}</td></tr><tr><td>Ignored sub structure</td><td>name{?}</td></tr></tbody></table></div></div><br class="table-break" /></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1402264828"></a>Special Path Elements</h4></div></div></div><p>Variable references can address other widgets than sub widgets of the current widget.
+	</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1402265436"></a>Addressing the Form Widget</h5></div></div></div><p>The reserved path element 'main' addresses the form widget root.</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1402266084"></a>Widget Links</h5></div></div></div><p>A dynamic property with the prefix 'link:' followed by an identifier
+		as name declares the widget with the widget id as dynamic property value of
+		the link definition to be referencable by name. The referencing name 
+		is the identifier after the prefix 'link:'. So if we for example define
+		a dynamic property 'link:myform' with a widget id as value, then we can
+		use the variable 'myform' in a widget path to address the widget.</p><p>
+		The mechanism of widget links is mainly used for implementing form/sub-form
+		relationships. A form opens a subform and passes its widget id to it with the
+		form parameter 'widgetid=..'.
+		A link is defined to the sub-form with the widget id passed to it. 
+		The subform signals some action to the parent that can address the data
+		entered in the subform via this link.
+		</p></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1402267804"></a>2.4.2. Data Structures</h3></div></div></div><p>Structure elements are separated by semicolon ';' and put into '{' brackets '}' 
+	with the name of the structure in front.
+	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1402268452"></a>Example</h4></div></div></div><p>The following example shows an address as structure:
+		</p><pre class="programlisting">
+		
+address{
+  tag=1;
+  surname{{person.surname}};
+  prename{{person.prename}};
+  street{{address.street}}
+}
+
+		</pre></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1402270036"></a>2.4.3. Arrays</h3></div></div></div><p>Arrays are marked with opened and closed square brackets '[' ']' without specifying dimension (arbitrary size or empty when missing).
+	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1402270692"></a>Description</h4></div></div></div><div class="table"><a id="idp1402271012"></a><p class="title"><strong>Table 2.2. Types of Arrays</strong></p><div class="table-contents"><table summary="Types of Arrays" border="1"><colgroup><col /><col /></colgroup><thead><tr><th>Description</th><th>Syntax</th></tr></thead><tbody><tr><td>Arbitrary Size Array of Content Values</td><td>name[]{{variablepath}}</td></tr><tr><td>Arbitrary Size Array of Structures</td><td>name[]{structure definition}</td></tr></tbody></table></div></div><br class="table-break" /></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1402274252"></a>Example</h4></div></div></div><p>
+		The following example shows an array of addresses:
+		</p><pre class="programlisting">
+		address[]{
+  surname{{address.surname}};
+  prename{{address.prename}};
+  street{{address.street}}
+}
+
+		</pre></div><p>
+		The widget element paths used to address the widget elements have to have a common ancestor path.
+		In our example this would be 'address'. The common ancestor path is determining how elements
+		are grouped together in the widget. It tells what belongs together to the same array element
+		in the widget. Without common common ancestor path it would be impossible to determine what 
+		is forming a structure in the widget data. It distinguishes the case of having an array of
+		adresses and the case of having an array of surnames, and array of prenames and an array
+		of streets. The later makes not much sense here. With the common prefix we state how entities
+		are grouped together to structures in the representation in the widget.
+		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1402276828"></a>2.4.4. Indirection and Recursion</h3></div></div></div><p>Indirection allows to define recursive structures. Indirection means that an element is 
+	specified as reference that is expanded when the element appears in the data structure to map.
+	The grouping element of the indirection elements is the common ancestor of all non indirection 
+	elements in the structure containing the indirection.
+	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1402277684"></a>Description</h4></div></div></div><div class="table"><a id="idp1402278004"></a><p class="title"><strong>Table 2.3. Types of Indirections</strong></p><div class="table-contents"><table summary="Types of Indirections" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th>Description</th><th>Syntax (name equals ancestor name)</th><th>Syntax (name differs from ancestor name)</th></tr></thead><tbody><tr><td>Single Element Indirection</td><td>^ancestor</td><td>^item:ancestor</td></tr><tr><td>Multiple Indirection</td><td>^ancestor[]</td><td>^item:ancestor[]</td></tr></tbody></table></div></div><br class="table-break" /></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1402281740"></a>Example (Arbitrary Tree)</h4></div></div></div><p>Example representing a tree with arbitrary number of children per node:
+		</p><pre class="programlisting">
+		
+item{
+  id={treewidget.id};
+  name{{treewidget.name}};
+  ^item[]
+}
+
+		</pre></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1402283284"></a>Example (Binary Tree)</h4></div></div></div><p>Example representing a binary tree:
+		</p><pre class="programlisting">
+		
+item{
+  id={treewidget.id};
+  name{{treewidget.name}};
+  ^left:item;
+  ^right:item
+}
+
+		</pre></div></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk02ch02s03.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk02ch02.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk02ch02s05.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">2.3. Programming the Interface </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 2.5. Eliminating Interface Defects</td></tr></table></div></div></div>
+
+<!-- Footer -->
+<div xmlns="" class="wrapper row2">
+	<div id="footer" class="clear">
+		<div class="one_third first">
+			<h2 class="footer_title">Documentation</h2>
+			<nav class="footer_nav">
+				<ul class="nospace">
+					<li><a href="/documentation.html">User documentation</a></li>
+					<li><a href="/documentation.html">Developer documentation</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="one_third">
+			<h2 class="footer_title">Downloads</h2>
+			<nav class="footer_nav">
+				<ul class="nospace">
+					<li><a href="/downloads/downloads_wolframe.html">Wolframe server</a></li>
+					<li><a href="/downloads/downloads_wolfclient.html">Wolframe client</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="one_third">
+			<h2 class="footer_title">Contact Us</h2>
+			<nav class="footer_nav">
+				<ul class="nospace">
+					<li><strong>Email:</strong> <a href="/mailto:contact@wolframe.net">contact@wolframe.net</a></li>
+					<li>
+						<a id="googleplus-bttn" href="http://plus.google.com/116915890857205562872?prsrc=3" rel="publisher" target="_top" style="text-decoration:none;">
+							<span>Google+</span></a>
+						<a id="linkedin-bttn" href="#" target="_top" style="text-decoration:none;">
+							<span>LinkedIn</span></a>
+						<a id="twitter-bttn" href="http://twitter.com/ProjectWolframe" target="_top" style="text-decoration:none;">
+							<span>twitter</span></a>
+						<a id="rss-bttn" href="#" target="_top" style="text-decoration:none;">
+							<span>rss</span></a>
+					</li>
+					<li>
+						<a href="https://twitter.com/ProjectWolframe" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @ProjectWolframe</a>
+						<div class="g-follow" data-annotation="none" data-height="20" data-href="http://plus.google.com/116915890857205562872" data-rel="publisher"></div>
+						<div class="g-plusone" data-href="http://www.wolframe.net" data-size="medium"></div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+
+<div xmlns="" class="wrapper row4">
+	<div id="copyright" class="clear">
+		<p class="fl_left">Copyright © 2013 - <a href="#">Project Wolframe</a> - All Rights Reserved</p>
+		<p class="fl_right"><a href="/copyright.html">Copyright and web credits</a> - Template by <a href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+	</div>
+</div>
+
+<!-- Scripts -->
+<script xmlns="" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script xmlns="" src="http://code.jquery.com/ui/1.10.1/jquery-ui.min.js"></script>
+<script xmlns="">window.jQuery || document.write('\x3Cscript src="/layout/scripts/jquery-latest.min.js"&gt;\x3C\/script&gt;\
+\x3Cscript src="/layout/scripts/jquery-ui.min.js"&gt;\x3C\/script&gt;')</script>
+<script xmlns="">jQuery(document).ready(function($){ $('img').removeAttr('width height'); });</script>
+<script xmlns="" src="/layout/scripts/jquery-mobilemenu.min.js"></script>
+<script xmlns="" src="/layout/scripts/custom.js"></script>
+<!-- Tweeter follow script -->
+<script xmlns="">
+	!function( d, s, id )	{
+		var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location)?'http':'https';
+		if( !d.getElementById( id ))	{
+			js = d.createElement( s );
+			js.id = id;
+			js.src = p + '://platform.twitter.com/widgets.js';
+			fjs.parentNode.insertBefore( js,fjs );
+		}
+	} ( document, 'script', 'twitter-wjs' );
+</script>
+
+<!-- Google +1, follow -->
+<script xmlns="" type="text/javascript">
+	window.___gcfg = {
+		lang: 'en-US',
+		parsetags: 'onload'
+	};
+	( function()	{
+		var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		po.src = 'https://apis.google.com/js/plusone.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	}) ();
+</script>
+
+</body></html>
