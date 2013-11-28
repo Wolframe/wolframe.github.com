@@ -5,6 +5,7 @@
 ./build-page.sh -f ../snippets/index.html.snip -a Home -s > index-page.html
 ./build-page.sh -f ../snippets/gsearch.html.snip -n > gsearch.html
 ./build-page.sh -f ../snippets/contact.html.snip -a Contact > contact.html
+./build-page.sh -f ../snippets/copyright.html.snip -n > copyright.html
 
 ./build-downloads.sh
 cd downloads
@@ -41,7 +42,6 @@ cd ..
 ./build-baddomain.sh
 ./build-doxygen-templates.sh
 ./build-docbook-xmlnippets.sh
-./build-copyright.sh
 
 mv -f *.html ..
 mv -f downloads/*.html ../downloads/.
