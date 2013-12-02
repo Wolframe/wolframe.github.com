@@ -12,10 +12,11 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 #rslides figure img { width: 500px; height: auto; }
 #rslides figure img { width: auto; height: 300px; }
 #rslides figure img.with-shadow { box-shadow: 0px 0px 15px; -moz-box-shadow: 0px 0px 15px; -webkit-box-shadow: 0px 0px 15px; }
-#rslides figure figcaption{display:block; float:left; width:auto; padding:30px; overflow:auto;}
+#rslides figure figcaption{ height: 220px; width: 485px; padding: 30px; }
+#rslides figure figcaption{ display: block; position: relative; float: right; overflow: hidden; }
 #rslides figure figcaption h2{font-size:42px; margin-bottom:10px; font-weight:normal; font-style:italic; text-transform:none;}
-#rslides figure figcaption p{line-height:1.6em;}
-#rslides figure figcaption .more{color:#2A5A7A; margin-top:10px; line-height:normal;}
+#rslides figure figcaption p{ line-height:1.6em; }
+#rslides figure figcaption .more{ color: #2A5A7A; margin-top: 10px; line-height: normal; }
 
 #facebook-bttn { display: inline-block; width: 24px; height: 24px; background: url("images/facebook.png") no-repeat 0 0; }
 #facebook-bttn { background-position: 0 -24px; background-size: 24px, 24px; padding-right: 4px; }
