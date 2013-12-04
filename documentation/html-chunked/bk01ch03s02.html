@@ -58,7 +58,7 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.2. Functions in .NET</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch03.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Functions</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch03s03.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1389623356"></a>3.2. Functions in .NET</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1389623676"></a>3.2.1. Introduction</h3></div></div></div><p>You can write functions for the logic tier of <span class="application">Wolframe</span> in languages based
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.2. Functions in .NET</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch03.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Functions</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch03s03.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1381459740"></a>3.2. Functions in .NET</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1381460060"></a>3.2.1. Introduction</h3></div></div></div><p>You can write functions for the logic tier of <span class="application">Wolframe</span> in languages based
 		on <span class="application">.NET</span> (<a class="ulink" href="http://www.microsoft.com/net" target="_top">http://www.microsoft.com/net</a>) like for example
 		<span class="application">C#</span> and <span class="application">VB.NET</span>.  
 		Because <span class="application">.NET</span> based libraries can only be called 
@@ -70,35 +70,35 @@
 		The implementation exists as prove of concept in a test program. 
 		But <span class="application">Wolframe</span> will provide
 		<span class="application">.NET</span> functions soon.
-		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1389657764"></a>3.2.2. Prepare .NET Modules for Wolframe</h3></div></div></div><p>
+		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1381494148"></a>3.2.2. Prepare .NET Modules for Wolframe</h3></div></div></div><p>
 	To make functions written in .NET callable by Wolframe, several steps have to be performed.
 	First the asseblies with the functions exported to Wolframe have to be build COM visible.
 	Wolframe itself is not a .NET application. Therefore it has to call .NET functions via
 	COM/.NET interop interface of the CLR.
-	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1389658636"></a>Make Assemblies COM visible</h4></div></div></div><p>To make the .NET functions called from Wolframe COM visible, you have to tick
+	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1381495020"></a>Make Assemblies COM visible</h4></div></div></div><p>To make the .NET functions called from Wolframe COM visible, you have to tick
 		"Properties/Assembly Information" the switch "Make assembly COM visible". Furthermore
 		every object and method that is part of the exported API (also objects used as parameters)
 		has to be tagged in the source as COM visible with <code class="code">[ComVisible(true)]</code>.
-		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1389659724"></a>Tag Exported Objects with a Guid</h4></div></div></div><p>Each object that is part of the exported API has to be tagged with a global unique
+		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1381496108"></a>Tag Exported Objects with a Guid</h4></div></div></div><p>Each object that is part of the exported API has to be tagged with a global unique
 		identifier (Guid) in order to be adressable. Modules with .NET functions will have to be globally
 		registered and the objects need to be identified by the Guid because that's the only way
 		to make the record info structure visible for Wolframe. The record info structure is
 		needed to serialize/deserialize .NET objects from another interpreter context that
 		is not registered for .NET. There are many ways to create a Guid and
 		tag an object like this: <code class="code">[Guid("390E047F-36FD-4F23-8CE8-3A4C24B33AD3")]</code>.
-		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1389661140"></a>Add Marshalling Tags to Values</h4></div></div></div><p>For marshalling function calls correctly, Wolframe needs
+		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1381497524"></a>Add Marshalling Tags to Values</h4></div></div></div><p>For marshalling function calls correctly, Wolframe needs
 		tags for every parameter and member of a sub structure of a parameter
 		of methods exported as functions.
 		The following table lists the supported types and their marshalling tags:
-		</p><div class="table"><a id="idp1389661940"></a><p class="title"><strong>Table 3.1. Marshalling Tags</strong></p><div class="table-contents"><table summary="Marshalling Tags" border="1"><colgroup><col /><col /></colgroup><thead><tr><th>.NET Type</th><th>Marshalling Tag</th></tr></thead><tbody><tr><td>I2</td><td><code class="code">[MarshalAs(UnmanagedType.I2)]</code></td></tr><tr><td>I4</td><td><code class="code">[MarshalAs(UnmanagedType.I4)]</code></td></tr><tr><td>I8</td><td><code class="code">[MarshalAs(UnmanagedType.I8)]</code></td></tr><tr><td>UI2</td><td><code class="code">[MarshalAs(UnmanagedType.UI2)]</code></td></tr><tr><td>UI4</td><td><code class="code">[MarshalAs(UnmanagedType.UI4)]</code></td></tr><tr><td>UI8</td><td><code class="code">[MarshalAs(UnmanagedType.UI8)]</code></td></tr><tr><td>R4</td><td><code class="code">[MarshalAs(UnmanagedType.R4)]</code></td></tr><tr><td>R8</td><td><code class="code">[MarshalAs(UnmanagedType.R8)]</code></td></tr><tr><td>BOOL</td><td><code class="code">[MarshalAs(UnmanagedType.BOOL)]</code></td></tr><tr><td>string</td><td><code class="code">[MarshalAs(UnmanagedType.BStr)]</code></td></tr><tr><td>RECORD</td><td><p>no tag needed</p></td></tr><tr><td>array of structures</td><td><code class="code">[MarshalAs(UnmanagedType.SafeArray, SafeArraySubType = VarEnum.VT_RECORD)]</code></td></tr><tr><td>array of strings</td><td><code class="code">[MarshalAs(UnmanagedType.SafeArray, SafeArraySubType = VarEnum.VT_BSTR)]</code></td></tr><tr><td>array of XX (XX=I2,I4,I8,..)</td><td><code class="code">[MarshalAs(UnmanagedType.SafeArray, SafeArraySubType = VarEnum.VT_XX)]</code></td></tr></tbody></table></div></div><br class="table-break" /><p>Decimal floating point and numeric types (DECIMAL) are not yet supported, but
-		will soon be available.</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1389674580"></a>Create a Type Library</h4></div></div></div><p>For making the API introspectable by Wolframe, we have to create a TLB
+		</p><div class="table"><a id="idp1381498324"></a><p class="title"><strong>Table 3.1. Marshalling Tags</strong></p><div class="table-contents"><table summary="Marshalling Tags" border="1"><colgroup><col /><col /></colgroup><thead><tr><th>.NET Type</th><th>Marshalling Tag</th></tr></thead><tbody><tr><td>I2</td><td><code class="code">[MarshalAs(UnmanagedType.I2)]</code></td></tr><tr><td>I4</td><td><code class="code">[MarshalAs(UnmanagedType.I4)]</code></td></tr><tr><td>I8</td><td><code class="code">[MarshalAs(UnmanagedType.I8)]</code></td></tr><tr><td>UI2</td><td><code class="code">[MarshalAs(UnmanagedType.UI2)]</code></td></tr><tr><td>UI4</td><td><code class="code">[MarshalAs(UnmanagedType.UI4)]</code></td></tr><tr><td>UI8</td><td><code class="code">[MarshalAs(UnmanagedType.UI8)]</code></td></tr><tr><td>R4</td><td><code class="code">[MarshalAs(UnmanagedType.R4)]</code></td></tr><tr><td>R8</td><td><code class="code">[MarshalAs(UnmanagedType.R8)]</code></td></tr><tr><td>BOOL</td><td><code class="code">[MarshalAs(UnmanagedType.BOOL)]</code></td></tr><tr><td>string</td><td><code class="code">[MarshalAs(UnmanagedType.BStr)]</code></td></tr><tr><td>RECORD</td><td><p>no tag needed</p></td></tr><tr><td>array of structures</td><td><code class="code">[MarshalAs(UnmanagedType.SafeArray, SafeArraySubType = VarEnum.VT_RECORD)]</code></td></tr><tr><td>array of strings</td><td><code class="code">[MarshalAs(UnmanagedType.SafeArray, SafeArraySubType = VarEnum.VT_BSTR)]</code></td></tr><tr><td>array of XX (XX=I2,I4,I8,..)</td><td><code class="code">[MarshalAs(UnmanagedType.SafeArray, SafeArraySubType = VarEnum.VT_XX)]</code></td></tr></tbody></table></div></div><br class="table-break" /><p>Decimal floating point and numeric types (DECIMAL) are not yet supported, but
+		will soon be available.</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1381510964"></a>Create a Type Library</h4></div></div></div><p>For making the API introspectable by Wolframe, we have to create a TLB
 		(Type Library) file from the assembly (DLL) after build. The type library has
 		to be recreated every time the module interface (API) changes. The type library is
-		created with the program <code class="code">tlbexp</code>.</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1389675620"></a>Register the Type Library</h4></div></div></div><p>The type library created with <code class="code">tlbexp</code> has also to be registered.
+		created with the program <code class="code">tlbexp</code>.</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1381512004"></a>Register the Type Library</h4></div></div></div><p>The type library created with <code class="code">tlbexp</code> has also to be registered.
 		For this you call the program <code class="code">regtlibv12</code> with your type library file
 		(.tlb file) as argument. The type libary fegistration has to be repeated when
 		the the module interface (API) changes.
-		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1389676852"></a>Register the Assembly in the GAC</h4></div></div></div><p>Wolframe does not accept local assemblies. In order to be addressable over
+		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1381513236"></a>Register the Assembly in the GAC</h4></div></div></div><p>Wolframe does not accept local assemblies. In order to be addressable over
 		the type library interface assemblies need to be put into the global assembly cache (GAC).
 		Unfortunately this has to be repeated every time the assembly binary changes.
 		There is no way around. For registration in the GAC you have to call the program
@@ -124,8 +124,8 @@
 			<h2 class="footer_title">Downloads</h2>
 			<nav class="footer_nav">
 				<ul class="nospace">
-					<li><a href="/downloads/downloads_wolframe.html">Wolframe server</a></li>
-					<li><a href="/downloads/downloads_wolfclient.html">Wolframe client</a></li>
+					<li><a href="/downloads.html">Hosted on Github</a></li>
+					<li><a href="/downloads.html">Packages on Sourceforge</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -147,8 +147,8 @@
 					</li>
 					<li>
 						<a href="https://twitter.com/ProjectWolframe" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @ProjectWolframe</a>
-						<div class="g-follow" data-annotation="none" data-height="20" data-href="http://plus.google.com/116915890857205562872" data-rel="publisher"></div>
-						<div class="g-plusone" data-href="http://www.wolframe.net" data-size="medium"></div>
+						<div class="google-follow-button"><div class="g-follow" data-annotation="none" data-height="20" data-href="http://plus.google.com/116915890857205562872" data-rel="publisher"></div></div>
+						<div class="google-plusone-button"><div class="g-plusone" data-href="http://www.wolframe.net" data-size="medium"></div></div>
 					</li>
 				</ul>
 			</nav>
@@ -159,7 +159,7 @@
 <div xmlns="" class="wrapper row4">
 	<div id="copyright" class="clear">
 		<p class="fl_left">Copyright © 2013 - <a href="#">Project Wolframe</a> - All Rights Reserved</p>
-		<p class="fl_right"><a href="/copyright.html">Copyright and web credits</a> - Template by <a href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+		<p class="fl_right"><a href="/copyright.html">Copyrights and credits</a></p>
 	</div>
 </div>
 
@@ -171,6 +171,7 @@
 <script xmlns="">jQuery(document).ready(function($){ $('img').removeAttr('width height'); });</script>
 <script xmlns="" src="/layout/scripts/jquery-mobilemenu.min.js"></script>
 <script xmlns="" src="/layout/scripts/custom.js"></script>
+
 <!-- Tweeter follow script -->
 <script xmlns="">
 	!function( d, s, id )	{

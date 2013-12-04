@@ -58,7 +58,7 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 5. Filters</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch04.html">Prev</a> </td><th width="60%" align="center">Developing Wolframe Server Applications</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch05s02.html">Next</a></td></tr></table><hr /></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="idp1390057252"></a>Chapter 5. Filters</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="bk01ch05.html#idp1390100100">5.1. XML Filter</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk01ch05.html#idp1390100420">5.1.1. Introduction</a></span></dt><dt><span class="sect2"><a href="bk01ch05.html#idp1390133316">5.1.2. Character Set Encodings</a></span></dt><dt><span class="sect2"><a href="bk01ch05.html#idp1390138548">5.1.3. Configuration</a></span></dt></dl></dd><dt><span class="sect1"><a href="bk01ch05s02.html">5.2. JSON Filter</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk01ch05s02.html#idp1390111964">5.2.1. Introduction</a></span></dt><dt><span class="sect2"><a href="bk01ch05s02.html#idp1390103540">5.2.2. Character Set Encodings</a></span></dt><dt><span class="sect2"><a href="bk01ch05s02.html#idp1390125508">5.2.3. Configuration</a></span></dt></dl></dd><dt><span class="sect1"><a href="bk01ch05s03.html">5.3. XSLT Filter</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk01ch05s03.html#idp1390109020">5.3.1. Introduction</a></span></dt><dt><span class="sect2"><a href="bk01ch05s03.html#idp1390105220">5.3.2. Character Set Encodings</a></span></dt><dt><span class="sect2"><a href="bk01ch05s03.html#idp1390161476">5.3.3. Configuration</a></span></dt></dl></dd></dl></div><p>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 5. Filters</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch04.html">Prev</a> </td><th width="60%" align="center">Developing Wolframe Server Applications</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch05s02.html">Next</a></td></tr></table><hr /></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="idp1381893628"></a>Chapter 5. Filters</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="bk01ch05.html#idp1381936524">5.1. XML Filter</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk01ch05.html#idp1381936860">5.1.1. Introduction</a></span></dt><dt><span class="sect2"><a href="bk01ch05.html#idp1381969804">5.1.2. Character Set Encodings</a></span></dt><dt><span class="sect2"><a href="bk01ch05.html#idp1381975036">5.1.3. Configuration</a></span></dt></dl></dd><dt><span class="sect1"><a href="bk01ch05s02.html">5.2. JSON Filter</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk01ch05s02.html#idp1381948356">5.2.1. Introduction</a></span></dt><dt><span class="sect2"><a href="bk01ch05s02.html#idp1381939932">5.2.2. Character Set Encodings</a></span></dt><dt><span class="sect2"><a href="bk01ch05s02.html#idp1381961900">5.2.3. Configuration</a></span></dt></dl></dd><dt><span class="sect1"><a href="bk01ch05s03.html">5.3. XSLT Filter</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk01ch05s03.html#idp1381945412">5.3.1. Introduction</a></span></dt><dt><span class="sect2"><a href="bk01ch05s03.html#idp1381941612">5.3.2. Character Set Encodings</a></span></dt><dt><span class="sect2"><a href="bk01ch05s03.html#idp1381997916">5.3.3. Configuration</a></span></dt></dl></dd></dl></div><p>
 Filters describe the transformation of serialized data to a unified serialization of hierarchical structured data and back.
 The application does not care about data formats as long as there exists a filter providing
 the unified form of serialization.
@@ -73,14 +73,14 @@ like <acronym class="acronym">XSLT</acronym>.
 Be aware that you have to configure a data filter of the logic tier in <span class="application">Wolframe</span> before using it.
 Each chapter introducing a filter type will have a section that describes how the server configuration 
 of <span class="application">Wolframe</span> has to be extended for its availability.
-</p><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1390100100"></a>5.1. XML Filter</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1390100420"></a>5.1.1. Introduction</h3></div></div></div><p>You can use <acronym class="acronym">TDL</acronym> for data filters in the logic tier of <span class="application">Wolframe</span>.
+</p><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1381936524"></a>5.1. XML Filter</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1381936860"></a>5.1.1. Introduction</h3></div></div></div><p>You can use <acronym class="acronym">TDL</acronym> for data filters in the logic tier of <span class="application">Wolframe</span>.
 	There are the following variants of <acronym class="acronym">TDL</acronym> filters available:
 	</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><span class="application">libxml2</span> (<a class="ulink" href="http://www.xmlsoft.org" target="_top">http://www.xmlsoft.org</a>) or</p></li><li class="listitem"><p><span class="application">textwolf</span> (<a class="ulink" href="http://www.textwolf.net" target="_top">http://www.textwolf.net</a>)</p></li></ul></div><p>	
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1390133316"></a>5.1.2. Character Set Encodings</h3></div></div></div><p>The <span class="application">libxml2</span> and the <span class="application">textwolf</span> filter support at least 
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1381969804"></a>5.1.2. Character Set Encodings</h3></div></div></div><p>The <span class="application">libxml2</span> and the <span class="application">textwolf</span> filter support at least 
 	the following character set encodings. For character set encodings that are not in the list, 
 	please ask the <span class="application">Wolframe</span> team.
 	</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><abbr class="abbrev">UTF-8</abbr> or</p></li><li class="listitem"><p><abbr class="abbrev">UTF-16LE</abbr> or</p></li><li class="listitem"><p><abbr class="abbrev">UTF-16</abbr> (<abbr class="abbrev">UTF-16BE</abbr>) or</p></li><li class="listitem"><p><abbr class="abbrev">UTF-32LE</abbr> (<abbr class="abbrev">UCS-4LE</abbr>) but only with <span class="application">textwolf</span> or</p></li><li class="listitem"><p><abbr class="abbrev">UTF-32</abbr> (<abbr class="abbrev">UTF-32BE</abbr> or <abbr class="abbrev">UCS-4BE</abbr>) or</p></li><li class="listitem"><p><abbr class="abbrev">ISO 8859</abbr> (code pages '1' to '9')</p></li></ul></div><p>
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1390138548"></a>5.1.3. Configuration</h3></div></div></div><p>For using an <acronym class="acronym">XML</acronym> filter based <span class="application">libxml2</span>, you have to load the module 'mod_filter_libxml2'.
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1381975036"></a>5.1.3. Configuration</h3></div></div></div><p>For using an <acronym class="acronym">XML</acronym> filter based <span class="application">libxml2</span>, you have to load the module 'mod_filter_libxml2'.
 	For this you add the following line to the LoadModules section of your <span class="application">Wolframe</span> configuration:
 		</p><pre class="programlisting">
 		
@@ -115,8 +115,8 @@ of <span class="application">Wolframe</span> has to be extended for its availabi
 			<h2 class="footer_title">Downloads</h2>
 			<nav class="footer_nav">
 				<ul class="nospace">
-					<li><a href="/downloads/downloads_wolframe.html">Wolframe server</a></li>
-					<li><a href="/downloads/downloads_wolfclient.html">Wolframe client</a></li>
+					<li><a href="/downloads.html">Hosted on Github</a></li>
+					<li><a href="/downloads.html">Packages on Sourceforge</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -138,8 +138,8 @@ of <span class="application">Wolframe</span> has to be extended for its availabi
 					</li>
 					<li>
 						<a href="https://twitter.com/ProjectWolframe" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @ProjectWolframe</a>
-						<div class="g-follow" data-annotation="none" data-height="20" data-href="http://plus.google.com/116915890857205562872" data-rel="publisher"></div>
-						<div class="g-plusone" data-href="http://www.wolframe.net" data-size="medium"></div>
+						<div class="google-follow-button"><div class="g-follow" data-annotation="none" data-height="20" data-href="http://plus.google.com/116915890857205562872" data-rel="publisher"></div></div>
+						<div class="google-plusone-button"><div class="g-plusone" data-href="http://www.wolframe.net" data-size="medium"></div></div>
 					</li>
 				</ul>
 			</nav>
@@ -150,7 +150,7 @@ of <span class="application">Wolframe</span> has to be extended for its availabi
 <div xmlns="" class="wrapper row4">
 	<div id="copyright" class="clear">
 		<p class="fl_left">Copyright © 2013 - <a href="#">Project Wolframe</a> - All Rights Reserved</p>
-		<p class="fl_right"><a href="/copyright.html">Copyright and web credits</a> - Template by <a href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+		<p class="fl_right"><a href="/copyright.html">Copyrights and credits</a></p>
 	</div>
 </div>
 
@@ -162,6 +162,7 @@ of <span class="application">Wolframe</span> has to be extended for its availabi
 <script xmlns="">jQuery(document).ready(function($){ $('img').removeAttr('width height'); });</script>
 <script xmlns="" src="/layout/scripts/jquery-mobilemenu.min.js"></script>
 <script xmlns="" src="/layout/scripts/custom.js"></script>
+
 <!-- Tweeter follow script -->
 <script xmlns="">
 	!function( d, s, id )	{
