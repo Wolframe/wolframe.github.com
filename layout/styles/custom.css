@@ -18,6 +18,11 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 #rslides figure figcaption p{ font-size: 2em; line-height: 1.6em; }
 #rslides figure figcaption .more{ color: #2A5A7A; margin-top: 10px; line-height: normal; }
 
+#rslides figure fignumber{ padding: 30px; }
+#rslides figure fignumber{ display: block; position: relative; float: left; overflow: hidden; }
+#rslides figure fignumber h2{ font-size: 3.2em; color: #467aa7; margin-bottom: 10px; font-weight: bold; text-transform: none; }
+#rslides figure fignumber p{ font-size: 2em; line-height: 1.6em; }
+
 #facebook-bttn { display: inline-block; width: 24px; height: 24px; background: url("images/facebook.png") no-repeat 0 0; }
 #facebook-bttn { background-position: 0 -24px; background-size: 24px, 24px; padding-right: 4px; }
 #facebook-bttn:hover { background-position: 0 0px; }
