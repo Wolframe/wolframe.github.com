@@ -17,6 +17,3 @@ make clean doc-doxygen-webpage doc-html-webpage doc-pdf doc-epub
 rsync -av doxygen/html-webpage/ XXX/wolframe.github.com/documentation/doxygen/
 rsync -av html-webpage/ XXX/wolframe.github.com/documentation/html-chunked/
 
-back in here:
-build-scripts/deploy-wolframe-ch.sh
-
