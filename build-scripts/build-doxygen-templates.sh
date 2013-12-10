@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# Build the contact page out of the snipets
-
 SNIPDIR="../snippets"
 
 cat $SNIPDIR/header.html.snip $SNIPDIR/doxygen_start.html.snip | \

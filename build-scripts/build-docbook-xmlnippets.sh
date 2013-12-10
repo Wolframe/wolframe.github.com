@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# Build the contact page out of the snipets
-
 SNIPDIR="../snippets"
 
 # 1) The header HTML code inside the body (menu, navigation)
