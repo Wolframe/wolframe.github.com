@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Foreword</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe Tutorial (NOT UP TO DATE!!)" /><link rel="up" href="bk01.html" title="Wolframe Application Server" /><link rel="prev" href="bk01.html" title="Wolframe Application Server" /><link rel="next" href="bk01ch01.html" title="Chapter 1. Introduction" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>4.2. Datatypes in DDLs</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe documentation" /><link rel="up" href="bk01ch04.html" title="Chapter 4. Forms" /><link rel="prev" href="bk01ch04.html" title="Chapter 4. Forms" /><link rel="next" href="bk01ch05.html" title="Chapter 5. Filters" />
 	<title xmlns="">Project Wolframe</title>
 	<meta xmlns="" charset="utf-8" />
 	<meta xmlns="" name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -58,7 +58,69 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Foreword</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01.html">Prev</a> </td><th width="60%" align="center">Wolframe Application Server</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch01.html">Next</a></td></tr></table><hr /></div><div class="preface"><div class="titlepage"><div><div><h1 class="title"><a id="idm139948741072944"></a>Foreword</h1></div></div></div><p>This is the Wolframe Tutorial.</p><p>It describes step by step how to use Wolframe to build a small demo application.</p></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk01.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk01.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk01ch01.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Wolframe Application Server </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> Chapter 1. Introduction</td></tr></table></div></div></div>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.2. Datatypes in DDLs</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch04.html">Prev</a> </td><th width="60%" align="center">Chapter 4. Forms</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch05.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idm140269471158832"></a>4.2. Datatypes in DDLs</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idm140269471191536"></a>4.2.1. Introduction</h3></div></div></div><p>The basic elements to build atomic data types in <span class="application">Wolframe</span>
+		are normalization functions. Basic normalization functions are written in C++
+		and loadable as modules.
+	</p><p>
+		As we already mentioned are atomic elements in forms typed.
+		With each type a function is associated to validate and normalize the
+		atomic element of that type. There is only one predefined type called 'string'.
+		strings are neither validated nor transformed for processing in any way.
+		The others are defined in files with the extension <code class="code">.wnmp</code>
+		that are referenced as programs in the configuration.
+	</p><p>
+		A <code class="code">.wnmp</code> file contains assignments of a type name to sequences 
+		of basic normalization function calls where the first takes the initial input.
+		The output of a function in the sequence gets the input of the next one and 
+		the final output for the last one.
+		Each normalization step validates the input as atomic type (arithmetic,string,etc.)
+		and transforms it to another atomic type.
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idm140269471158448"></a>4.2.2. Example</h3></div></div></div><p>
+		The example defines 3 numeric types including trimming of the input string for mode tolerant
+		parsing and a string type that is converted to lowercase as normalization.
+	</p><p>
+		</p><pre class="programlisting">
+		
+int=string:trim,number:integer;
+uint=string:trim,number:unsigned;
+float=string:trim,number:float;
+name=string:trim,lcname;
+
+		</pre><p>
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idm140269471155120"></a>4.2.3. Language Description</h3></div></div></div><p>
+		Each type declaration in a <code class="code">.wnmp</code> file starts with an identifier followed by an assignment 
+		operator '='. The left side identifier specifies the name of the type. This type name can be used
+		in a DDL as name instead of the built in type <code class="code">string</code>. When doing so the referenced token is validated
+		and normalized with the comma separated sequence of function references on the right side of 
+		the assignment before being assigned as value to the element in the form declared to be of this type.
+	</p><p>
+		The function names are either identifiers or have two parts separated by ':'. The left part is the name
+		of the module declaring the function. The right part is the name of the function 
+		in the module with the name in front of the ':'. If the function is 
+		declared as one single identifier then the module referred to is the previous one in the sequence 
+		before the identifier. The 4th line in the example declaration list above
+		for example refers to the 'lcname' function in the 'string' normalization module.
+	</p><p>Functions can have a comma separated list of constant arguments in brackets ('(' and ')') 
+		depending on the function type. An integer type for example could have 
+		the maximum number of digits of the integer type.
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idm140269471151152"></a>4.2.4. Configuration</h3></div></div></div><p>For declaring and using a .wnmp file in our example above, we have to load the module 'mod_normalize_string'
+	and the module 'mod_normalize_number'.
+	For this we add the following two lines to the LoadModules section of our <span class="application">Wolframe</span> configuration:
+		</p><pre class="programlisting">
+		
+    module mod_normalize_number
+    module mod_normalize_string
+
+
+		</pre><p>
+	</p><p>We also have to add the declaration of the program "example.wnmp" (listing example above) 
+	to the Processor section of the configuration.
+	</p><pre class="programlisting">
+	
+    program example.wnmp
+
+	</pre><p>
+	</p></div><p></p></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk01ch04.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk01ch04.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk01ch05.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter 4. Forms </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> Chapter 5. Filters</td></tr></table></div></div></div>
 
 <!-- Footer -->
 <div xmlns="" class="wrapper row2">

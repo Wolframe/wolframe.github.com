@@ -58,9 +58,9 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.5. Step 5 - Implement client side customer list</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch02s04.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Steps</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch02s06.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idm140219070529248"></a>2.5. Step 5 - Implement client side customer list</h2></div></div></div><p>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.5. Step 5 - Implement client side customer list</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch02s04.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Steps</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch02s06.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idm139948739771872"></a>2.5. Step 5 - Implement client side customer list</h2></div></div></div><p>
 		It's time now to get something visual working, so we start to add a first
-		simple interface to our qtclient.
+		simple interface to our wolfclient.
 	</p><p>
 		For this we need the 'Qt designer'. We open the file 
 		<code class="filename">~/tutorial/client/init.ui</code> again
@@ -69,14 +69,14 @@
 		We add a dynamic property 'form' of type String to this button, which has
 		the value 'customers':
 	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step5_customer_button_form_property.png" /></div></div><p>
-		When we save the form and start the qtclient, we get (after logging in) the
+		When we save the form and start the wolfclient, we get (after logging in) the
 		first page with the "Customer List" button. Pressing it gives the error
 		message:
 	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step5_customer_button_pressed_error.png" /></div></div><p>
 		This means we have to define a new form called
 		<code class="filename">customers.ui</code>, which will
 		show the list of customers, for now we leave it empty. When we start the
-		qtclient and press the "Customer List" button again, we see that
+		wolfclient and press the "Customer List" button again, we see that
 		the form gets changed to the "customer" form (empty).
 	</p><p>
 		We add now a <code class="classname">QTreeWidget</code> item to the
@@ -94,12 +94,12 @@
 		The request to send is the 'CustomerListRequest' with root element 'customer'
 		we have configured before in the server:
 	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step5_customer_doctype_rootelement.png" /></div></div><p>
-		When we start the qtclient, we get a funny error message:
+		When we start the wolfclient, we get a funny error message:
 	</p><pre class="programlisting">
 	Error calling procedure: unknown attribute  (id) at /customer
 	</pre><p>
 		This means we have to configure the id attribute in the server in the simpleform.
-		The qtclient adds an id automatically to the customer tag in the request.
+		The wolfclient adds an id automatically to the customer tag in the request.
 	</p><p>
 		We declare the customer to have an optional 'id' attribute in
 		<code class="filename">CustomerListRequest.simpleform</code>:
@@ -111,7 +111,7 @@
 		}
 	}
 	</pre><p>
-		If we restart the server and run qtclient again we get the desired result:
+		If we restart the server and run wolfclient again we get the desired result:
 	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step5_customers_list.png" /></div></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk01ch02s04.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk01ch02.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk01ch02s06.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">2.4. Step 4 - Implement server side customer list </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 2.6. Step 6 - Show customer</td></tr></table></div></div></div>
 
 <!-- Footer -->

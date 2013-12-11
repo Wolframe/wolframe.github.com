@@ -58,7 +58,7 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.6. Step 6 - Show customer</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch02s05.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Steps</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch02s07.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idm140219070438192"></a>2.6. Step 6 - Show customer</h2></div></div></div><p>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.6. Step 6 - Show customer</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch02s05.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Steps</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch02s07.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idm139948739680704"></a>2.6. Step 6 - Show customer</h2></div></div></div><p>
 		As next step we want to show how data is communicated between the forms
 		by implementing a simple "show me customer data" use case.
 	</p><p>
@@ -85,9 +85,9 @@
 		Finally we also need a button which brings us back to the customer list
 		by simply adding a 'form' action with the value 'customers':
 	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step6_customer_show_back_button.png" /></div></div><p>
-		If we start the qtclient and select a customer and press 'Show' we will
+		If we start the wolfclient and select a customer and press 'Show' we will
 		notice that the whole "Show Customer" form is empty, even the id. What's
-		wrong? Well, the widgets in qtclient have the default behaviour of using
+		wrong? Well, the widgets in wolfclient have the default behaviour of using
 		'id' attributes attached to the colums of a list for instance. We must
 		make sure, the server is mapping us the XML correctly with 'id' attribute
 		and not 'id' as element.
@@ -166,7 +166,7 @@
 		which searches for a single customer by customer id:
 	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step6_customer_show_initaction.png" /></div></div><p>
 		We see, that we use the value of 'global.id' again and add it to the 'initAction'
-		request as attribute 'id' (we can use the qtclient with -d to see the communication
+		request as attribute 'id' (we can use the wolfclient with -d to see the communication
 		on the wire):
 
 	</p><pre class="programlisting">
