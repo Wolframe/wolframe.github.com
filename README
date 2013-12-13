@@ -14,6 +14,6 @@ cp *webpage* ~/projects/Wolframe/docs/
 in 'Wolframe/docs':
 make clean doc-doxygen-webpage doc-html-webpage doc-pdf doc-epub
 (on Windows make doc for CHM)
-rsync -av doxygen/html-webpage/ XXX/wolframe.github.com/documentation/doxygen/
+rsync --delete-after -av doxygen/html-webpage/ XXX/wolframe.github.com/documentation/doxygen/
 rsync -av html-webpage/ XXX/wolframe.github.com/documentation/html-chunked/
 rsync -av html-tutorial-webpage/ XXX/wolframe.github.com/documentation/tutorial-html-chunked/
