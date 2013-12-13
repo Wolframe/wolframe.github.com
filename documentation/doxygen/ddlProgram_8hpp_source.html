@@ -130,45 +130,47 @@
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">namespace </span>_Wolframe {</div>
 <div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="namespace__Wolframe_1_1prgbind.html">   43</a></span>&#160;<span class="keyword">namespace </span>prgbind {</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1prgbind_1_1DDLProgram.html">   45</a></span>&#160;<span class="keyword">class </span><a class="code" href="class__Wolframe_1_1prgbind_1_1DDLProgram.html">DDLProgram</a></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        :<span class="keyword">public</span> <a class="code" href="struct__Wolframe_1_1prgbind_1_1Program.html">Program</a></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1prgbind_1_1DDLProgram.html#ae5fdca9201f0ed22df08dbb38829418f">   49</a></span>&#160;        <a class="code" href="class__Wolframe_1_1prgbind_1_1DDLProgram.html#ae5fdca9201f0ed22df08dbb38829418f">DDLProgram</a>( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1types_1_1CountedReference.html">langbind::DDLCompilerR</a>&amp; constructor_)</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                :<a class="code" href="struct__Wolframe_1_1prgbind_1_1Program.html">Program</a>( <a class="code" href="struct__Wolframe_1_1prgbind_1_1Program.html#a6094df47101ece1b2040661d5a63dd59a2a6fe44071ae6b5bfe81ed7d6e00ec40">Form</a>)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                ,<a class="code" href="class__Wolframe_1_1prgbind_1_1DDLProgram.html#a33ade8719381a320e10744159e475fce">m_constructor</a>(constructor_){}</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1prgbind_1_1DDLProgram.html#a92e5a528a8288a302bb9d91aaed95d80">   53</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class__Wolframe_1_1prgbind_1_1DDLProgram.html#a92e5a528a8288a302bb9d91aaed95d80">~DDLProgram</a>(){}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">//\class DDLProgram</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">//\brief Program type for a data definition language (DDL) for forms.</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1prgbind_1_1DDLProgram.html">   47</a></span>&#160;<span class="keyword">class </span><a class="code" href="class__Wolframe_1_1prgbind_1_1DDLProgram.html">DDLProgram</a></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        :<span class="keyword">public</span> <a class="code" href="struct__Wolframe_1_1prgbind_1_1Program.html">Program</a></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1prgbind_1_1DDLProgram.html#ae5fdca9201f0ed22df08dbb38829418f">   51</a></span>&#160;        <a class="code" href="class__Wolframe_1_1prgbind_1_1DDLProgram.html#ae5fdca9201f0ed22df08dbb38829418f">DDLProgram</a>( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1types_1_1CountedReference.html">langbind::DDLCompilerR</a>&amp; constructor_)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                :<a class="code" href="struct__Wolframe_1_1prgbind_1_1Program.html">Program</a>( <a class="code" href="struct__Wolframe_1_1prgbind_1_1Program.html#a6094df47101ece1b2040661d5a63dd59a2a6fe44071ae6b5bfe81ed7d6e00ec40">Form</a>)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                ,<a class="code" href="class__Wolframe_1_1prgbind_1_1DDLProgram.html#a33ade8719381a320e10744159e475fce">m_constructor</a>(constructor_){}</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class__Wolframe_1_1prgbind_1_1DDLProgram.html#a0fde80e227d4d2bfcecb754463d654db">is_mine</a>( <span class="keyword">const</span> std::string&amp; filename) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class__Wolframe_1_1prgbind_1_1DDLProgram.html#aa7f761357036dfb6266874c6483f8773">loadProgram</a>( <a class="code" href="class__Wolframe_1_1prgbind_1_1ProgramLibrary.html">ProgramLibrary</a>&amp; library, <a class="code" href="class__Wolframe_1_1db_1_1Database.html">db::Database</a>* transactionDB, <span class="keyword">const</span> std::string&amp; filename);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1prgbind_1_1DDLProgram.html#a33ade8719381a320e10744159e475fce">   59</a></span>&#160;        <a class="code" href="class__Wolframe_1_1types_1_1CountedReference.html">langbind::DDLCompilerR</a> <a class="code" href="class__Wolframe_1_1prgbind_1_1DDLProgram.html#a33ade8719381a320e10744159e475fce">m_constructor</a>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}}<span class="comment">//namespace</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="ttc" id="class__Wolframe_1_1prgbind_1_1DDLProgram_html_a33ade8719381a320e10744159e475fce"><div class="ttname"><a href="class__Wolframe_1_1prgbind_1_1DDLProgram.html#a33ade8719381a320e10744159e475fce">_Wolframe::prgbind::DDLProgram::m_constructor</a></div><div class="ttdeci">langbind::DDLCompilerR m_constructor</div><div class="ttdef"><b>Definition:</b> ddlProgram.hpp:59</div></div>
-<div class="ttc" id="class__Wolframe_1_1prgbind_1_1DDLProgram_html"><div class="ttname"><a href="class__Wolframe_1_1prgbind_1_1DDLProgram.html">_Wolframe::prgbind::DDLProgram</a></div><div class="ttdef"><b>Definition:</b> ddlProgram.hpp:45</div></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1prgbind_1_1DDLProgram.html#a92e5a528a8288a302bb9d91aaed95d80">   55</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class__Wolframe_1_1prgbind_1_1DDLProgram.html#a92e5a528a8288a302bb9d91aaed95d80">~DDLProgram</a>(){}</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class__Wolframe_1_1prgbind_1_1DDLProgram.html#a0fde80e227d4d2bfcecb754463d654db">is_mine</a>( <span class="keyword">const</span> std::string&amp; filename) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class__Wolframe_1_1prgbind_1_1DDLProgram.html#aa7f761357036dfb6266874c6483f8773">loadProgram</a>( <a class="code" href="class__Wolframe_1_1prgbind_1_1ProgramLibrary.html">ProgramLibrary</a>&amp; library, <a class="code" href="class__Wolframe_1_1db_1_1Database.html">db::Database</a>* transactionDB, <span class="keyword">const</span> std::string&amp; filename);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1prgbind_1_1DDLProgram.html#a33ade8719381a320e10744159e475fce">   61</a></span>&#160;        <a class="code" href="class__Wolframe_1_1types_1_1CountedReference.html">langbind::DDLCompilerR</a> <a class="code" href="class__Wolframe_1_1prgbind_1_1DDLProgram.html#a33ade8719381a320e10744159e475fce">m_constructor</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}}<span class="comment">//namespace</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="ttc" id="class__Wolframe_1_1prgbind_1_1DDLProgram_html_a33ade8719381a320e10744159e475fce"><div class="ttname"><a href="class__Wolframe_1_1prgbind_1_1DDLProgram.html#a33ade8719381a320e10744159e475fce">_Wolframe::prgbind::DDLProgram::m_constructor</a></div><div class="ttdeci">langbind::DDLCompilerR m_constructor</div><div class="ttdef"><b>Definition:</b> ddlProgram.hpp:61</div></div>
+<div class="ttc" id="class__Wolframe_1_1prgbind_1_1DDLProgram_html"><div class="ttname"><a href="class__Wolframe_1_1prgbind_1_1DDLProgram.html">_Wolframe::prgbind::DDLProgram</a></div><div class="ttdef"><b>Definition:</b> ddlProgram.hpp:47</div></div>
 <div class="ttc" id="struct__Wolframe_1_1prgbind_1_1Program_html"><div class="ttname"><a href="struct__Wolframe_1_1prgbind_1_1Program.html">_Wolframe::prgbind::Program</a></div><div class="ttdoc">Interface for programs of a program library. </div><div class="ttdef"><b>Definition:</b> program.hpp:50</div></div>
 <div class="ttc" id="class__Wolframe_1_1prgbind_1_1DDLProgram_html_aa7f761357036dfb6266874c6483f8773"><div class="ttname"><a href="class__Wolframe_1_1prgbind_1_1DDLProgram.html#aa7f761357036dfb6266874c6483f8773">_Wolframe::prgbind::DDLProgram::loadProgram</a></div><div class="ttdeci">virtual void loadProgram(ProgramLibrary &amp;library, db::Database *transactionDB, const std::string &amp;filename)</div></div>
 <div class="ttc" id="program_8hpp_html"><div class="ttname"><a href="program_8hpp.html">program.hpp</a></div><div class="ttdoc">Interface for programs loaded by the processor provider. </div></div>
 <div class="ttc" id="ddlCompilerInterface_8hpp_html"><div class="ttname"><a href="ddlCompilerInterface_8hpp.html">ddlCompilerInterface.hpp</a></div><div class="ttdoc">Defines the compiler interface for definition languages (DDL) used for specifying forms...</div></div>
 <div class="ttc" id="struct__Wolframe_1_1prgbind_1_1Program_html_a6094df47101ece1b2040661d5a63dd59a2a6fe44071ae6b5bfe81ed7d6e00ec40"><div class="ttname"><a href="struct__Wolframe_1_1prgbind_1_1Program.html#a6094df47101ece1b2040661d5a63dd59a2a6fe44071ae6b5bfe81ed7d6e00ec40">_Wolframe::prgbind::Program::Form</a></div><div class="ttdef"><b>Definition:</b> program.hpp:58</div></div>
 <div class="ttc" id="class__Wolframe_1_1prgbind_1_1DDLProgram_html_a0fde80e227d4d2bfcecb754463d654db"><div class="ttname"><a href="class__Wolframe_1_1prgbind_1_1DDLProgram.html#a0fde80e227d4d2bfcecb754463d654db">_Wolframe::prgbind::DDLProgram::is_mine</a></div><div class="ttdeci">virtual bool is_mine(const std::string &amp;filename) const </div></div>
-<div class="ttc" id="class__Wolframe_1_1prgbind_1_1ProgramLibrary_html"><div class="ttname"><a href="class__Wolframe_1_1prgbind_1_1ProgramLibrary.html">_Wolframe::prgbind::ProgramLibrary</a></div><div class="ttdef"><b>Definition:</b> programLibrary.hpp:58</div></div>
-<div class="ttc" id="class__Wolframe_1_1prgbind_1_1DDLProgram_html_a92e5a528a8288a302bb9d91aaed95d80"><div class="ttname"><a href="class__Wolframe_1_1prgbind_1_1DDLProgram.html#a92e5a528a8288a302bb9d91aaed95d80">_Wolframe::prgbind::DDLProgram::~DDLProgram</a></div><div class="ttdeci">virtual ~DDLProgram()</div><div class="ttdef"><b>Definition:</b> ddlProgram.hpp:53</div></div>
+<div class="ttc" id="class__Wolframe_1_1prgbind_1_1ProgramLibrary_html"><div class="ttname"><a href="class__Wolframe_1_1prgbind_1_1ProgramLibrary.html">_Wolframe::prgbind::ProgramLibrary</a></div><div class="ttdef"><b>Definition:</b> programLibrary.hpp:60</div></div>
+<div class="ttc" id="class__Wolframe_1_1prgbind_1_1DDLProgram_html_a92e5a528a8288a302bb9d91aaed95d80"><div class="ttname"><a href="class__Wolframe_1_1prgbind_1_1DDLProgram.html#a92e5a528a8288a302bb9d91aaed95d80">_Wolframe::prgbind::DDLProgram::~DDLProgram</a></div><div class="ttdeci">virtual ~DDLProgram()</div><div class="ttdef"><b>Definition:</b> ddlProgram.hpp:55</div></div>
 <div class="ttc" id="class__Wolframe_1_1types_1_1CountedReference_html"><div class="ttname"><a href="class__Wolframe_1_1types_1_1CountedReference.html">_Wolframe::types::CountedReference&lt; DDLCompiler &gt;</a></div></div>
 <div class="ttc" id="class__Wolframe_1_1db_1_1Database_html"><div class="ttname"><a href="class__Wolframe_1_1db_1_1Database.html">_Wolframe::db::Database</a></div><div class="ttdoc">Base class for database interface. All databases should provide this interface. </div><div class="ttdef"><b>Definition:</b> database.hpp:51</div></div>
-<div class="ttc" id="class__Wolframe_1_1prgbind_1_1DDLProgram_html_ae5fdca9201f0ed22df08dbb38829418f"><div class="ttname"><a href="class__Wolframe_1_1prgbind_1_1DDLProgram.html#ae5fdca9201f0ed22df08dbb38829418f">_Wolframe::prgbind::DDLProgram::DDLProgram</a></div><div class="ttdeci">DDLProgram(const langbind::DDLCompilerR &amp;constructor_)</div><div class="ttdef"><b>Definition:</b> ddlProgram.hpp:49</div></div>
+<div class="ttc" id="class__Wolframe_1_1prgbind_1_1DDLProgram_html_ae5fdca9201f0ed22df08dbb38829418f"><div class="ttname"><a href="class__Wolframe_1_1prgbind_1_1DDLProgram.html#ae5fdca9201f0ed22df08dbb38829418f">_Wolframe::prgbind::DDLProgram::DDLProgram</a></div><div class="ttdeci">DDLProgram(const langbind::DDLCompilerR &amp;constructor_)</div><div class="ttdef"><b>Definition:</b> ddlProgram.hpp:51</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 5 2013 17:18:04 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Dec 13 2013 09:44:42 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
@@ -235,6 +237,17 @@ Generated on Thu Dec 5 2013 17:18:04 for Wolframe by &#160;<a href="http://www.d
 <script>jQuery(document).ready(function($){ $('img').removeAttr('width height'); });</script>
 <script src="/layout/scripts/jquery-mobilemenu.min.js"></script>
 <script src="/layout/scripts/custom.js"></script>
+<!-- Google analytics tracking -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-46433226-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
 <!-- Tweeter follow script -->
 <script>
 	!function( d, s, id )	{

@@ -127,33 +127,35 @@
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">namespace </span>_Wolframe {</div>
 <div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="namespace__Wolframe_1_1cmdbind.html">   40</a></span>&#160;<span class="keyword">namespace </span>cmdbind {</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html">   42</a></span>&#160;<span class="keyword">class </span><a class="code" href="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html">AuthCommandHandler</a> :<span class="keyword">public</span> <a class="code" href="struct__Wolframe_1_1cmdbind_1_1LineCommandHandlerTemplate.html">cmdbind::LineCommandHandlerTemplate</a>&lt;AuthCommandHandler&gt;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a89dc9e519d0bdb237af98b8a9ff0fbc9">AuthCommandHandler</a>();</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#ac1a3982e0bc23e3297697301ba50c950">   46</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#ac1a3982e0bc23e3297697301ba50c950">~AuthCommandHandler</a>(){}</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#aba4288979d2dca3454dfedc3b78f7297">   48</a></span>&#160;        <span class="keyword">const</span> std::string&amp; <a class="code" href="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#aba4288979d2dca3454dfedc3b78f7297">ticket</a>()<span class="keyword"> const       </span>{<span class="keywordflow">return</span> <a class="code" href="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a770126e6de89ebcf92b6e498ce8a96ff">m_ticket</a>;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">//\class AuthCommandHandler</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">//\brief Command handler for the sub protocol for authorization</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html">   44</a></span>&#160;<span class="keyword">class </span><a class="code" href="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html">AuthCommandHandler</a> :<span class="keyword">public</span> <a class="code" href="struct__Wolframe_1_1cmdbind_1_1LineCommandHandlerTemplate.html">cmdbind::LineCommandHandlerTemplate</a>&lt;AuthCommandHandler&gt;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a89dc9e519d0bdb237af98b8a9ff0fbc9">AuthCommandHandler</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#ac1a3982e0bc23e3297697301ba50c950">   48</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#ac1a3982e0bc23e3297697301ba50c950">~AuthCommandHandler</a>(){}</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a770126e6de89ebcf92b6e498ce8a96ff">   51</a></span>&#160;        std::string <a class="code" href="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a770126e6de89ebcf92b6e498ce8a96ff">m_ticket</a>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}}<span class="comment">//namespace</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor"></span></div>
-<div class="ttc" id="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler_html"><div class="ttname"><a href="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html">_Wolframe::cmdbind::AuthCommandHandler</a></div><div class="ttdef"><b>Definition:</b> authCommandHandler.hpp:42</div></div>
-<div class="ttc" id="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler_html_ac1a3982e0bc23e3297697301ba50c950"><div class="ttname"><a href="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#ac1a3982e0bc23e3297697301ba50c950">_Wolframe::cmdbind::AuthCommandHandler::~AuthCommandHandler</a></div><div class="ttdeci">virtual ~AuthCommandHandler()</div><div class="ttdef"><b>Definition:</b> authCommandHandler.hpp:46</div></div>
-<div class="ttc" id="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler_html_a770126e6de89ebcf92b6e498ce8a96ff"><div class="ttname"><a href="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a770126e6de89ebcf92b6e498ce8a96ff">_Wolframe::cmdbind::AuthCommandHandler::m_ticket</a></div><div class="ttdeci">std::string m_ticket</div><div class="ttdef"><b>Definition:</b> authCommandHandler.hpp:51</div></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#aba4288979d2dca3454dfedc3b78f7297">   50</a></span>&#160;        <span class="keyword">const</span> std::string&amp; <a class="code" href="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#aba4288979d2dca3454dfedc3b78f7297">ticket</a>()<span class="keyword"> const       </span>{<span class="keywordflow">return</span> <a class="code" href="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a770126e6de89ebcf92b6e498ce8a96ff">m_ticket</a>;}</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a770126e6de89ebcf92b6e498ce8a96ff">   53</a></span>&#160;        std::string <a class="code" href="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a770126e6de89ebcf92b6e498ce8a96ff">m_ticket</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}}<span class="comment">//namespace</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor"></span></div>
+<div class="ttc" id="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler_html"><div class="ttname"><a href="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html">_Wolframe::cmdbind::AuthCommandHandler</a></div><div class="ttdef"><b>Definition:</b> authCommandHandler.hpp:44</div></div>
+<div class="ttc" id="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler_html_ac1a3982e0bc23e3297697301ba50c950"><div class="ttname"><a href="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#ac1a3982e0bc23e3297697301ba50c950">_Wolframe::cmdbind::AuthCommandHandler::~AuthCommandHandler</a></div><div class="ttdeci">virtual ~AuthCommandHandler()</div><div class="ttdef"><b>Definition:</b> authCommandHandler.hpp:48</div></div>
+<div class="ttc" id="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler_html_a770126e6de89ebcf92b6e498ce8a96ff"><div class="ttname"><a href="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a770126e6de89ebcf92b6e498ce8a96ff">_Wolframe::cmdbind::AuthCommandHandler::m_ticket</a></div><div class="ttdeci">std::string m_ticket</div><div class="ttdef"><b>Definition:</b> authCommandHandler.hpp:53</div></div>
 <div class="ttc" id="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler_html_a89dc9e519d0bdb237af98b8a9ff0fbc9"><div class="ttname"><a href="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a89dc9e519d0bdb237af98b8a9ff0fbc9">_Wolframe::cmdbind::AuthCommandHandler::AuthCommandHandler</a></div><div class="ttdeci">AuthCommandHandler()</div></div>
 <div class="ttc" id="lineCommandHandler_8hpp_html"><div class="ttname"><a href="lineCommandHandler_8hpp.html">lineCommandHandler.hpp</a></div><div class="ttdoc">Interface to a generic command handler for a networkHandler command with delegation of network I/O un...</div></div>
 <div class="ttc" id="struct__Wolframe_1_1cmdbind_1_1LineCommandHandlerTemplate_html"><div class="ttname"><a href="struct__Wolframe_1_1cmdbind_1_1LineCommandHandlerTemplate.html">_Wolframe::cmdbind::LineCommandHandlerTemplate</a></div><div class="ttdoc">Defines some template based extensions to line command handler. </div><div class="ttdef"><b>Definition:</b> lineCommandHandler.hpp:222</div></div>
-<div class="ttc" id="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler_html_aba4288979d2dca3454dfedc3b78f7297"><div class="ttname"><a href="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#aba4288979d2dca3454dfedc3b78f7297">_Wolframe::cmdbind::AuthCommandHandler::ticket</a></div><div class="ttdeci">const std::string &amp; ticket() const </div><div class="ttdef"><b>Definition:</b> authCommandHandler.hpp:48</div></div>
+<div class="ttc" id="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler_html_aba4288979d2dca3454dfedc3b78f7297"><div class="ttname"><a href="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#aba4288979d2dca3454dfedc3b78f7297">_Wolframe::cmdbind::AuthCommandHandler::ticket</a></div><div class="ttdeci">const std::string &amp; ticket() const </div><div class="ttdef"><b>Definition:</b> authCommandHandler.hpp:50</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 5 2013 17:18:01 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Dec 13 2013 09:44:40 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
@@ -220,6 +222,17 @@ Generated on Thu Dec 5 2013 17:18:01 for Wolframe by &#160;<a href="http://www.d
 <script>jQuery(document).ready(function($){ $('img').removeAttr('width height'); });</script>
 <script src="/layout/scripts/jquery-mobilemenu.min.js"></script>
 <script src="/layout/scripts/custom.js"></script>
+<!-- Google analytics tracking -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-46433226-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
 <!-- Tweeter follow script -->
 <script>
 	!function( d, s, id )	{

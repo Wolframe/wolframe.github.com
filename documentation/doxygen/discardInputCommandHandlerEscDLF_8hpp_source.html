@@ -128,36 +128,38 @@
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">namespace </span>_Wolframe {</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">namespace </span>cmdbind {</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF.html">   43</a></span>&#160;<span class="keyword">class </span><a class="code" href="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF.html">DiscardInputCommandHandlerEscDLF</a> :<span class="keyword">public</span> <a class="code" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html">IOFilterCommandHandlerEscDLF</a></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF.html#a2e34c9f2aeeb3a617246d7e7e7b4cc87">   46</a></span>&#160;        <a class="code" href="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF.html#a2e34c9f2aeeb3a617246d7e7e7b4cc87">DiscardInputCommandHandlerEscDLF</a>( <span class="keyword">const</span> std::string&amp; msg_)</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                :<a class="code" href="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF.html#a5cb3056a9e9c76f74ea380c1add541da">m_msg</a>(msg_){}</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF.html#a89ec74b491d3f38b84f907ce691b5f66">   48</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#aecc292c24bc75e9f0e087f2f1f8edfd1">CallResult</a> <a class="code" href="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF.html#a89ec74b491d3f38b84f907ce691b5f66">call</a>( <span class="keyword">const</span> <span class="keywordtype">char</span>*&amp; err)</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                err = <a class="code" href="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF.html#a5cb3056a9e9c76f74ea380c1add541da">m_msg</a>.c_str(); <span class="keywordflow">return</span> <a class="code" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#aecc292c24bc75e9f0e087f2f1f8edfd1aebc2011a8b1a65049a44b2ce275e660a">Error</a>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        }</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF.html#a5cb3056a9e9c76f74ea380c1add541da">   54</a></span>&#160;        std::string <a class="code" href="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF.html#a5cb3056a9e9c76f74ea380c1add541da">m_msg</a>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}}</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor"></span></div>
-<div class="ttc" id="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF_html_a5cb3056a9e9c76f74ea380c1add541da"><div class="ttname"><a href="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF.html#a5cb3056a9e9c76f74ea380c1add541da">_Wolframe::cmdbind::DiscardInputCommandHandlerEscDLF::m_msg</a></div><div class="ttdeci">std::string m_msg</div><div class="ttdef"><b>Definition:</b> discardInputCommandHandlerEscDLF.hpp:54</div></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">//\class DiscardInputCommandHandlerEscDLF</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">//\brief Command handler that does nothing but seek for the end of content marker. Used to delegate protocol input in case of an error in the protocol on a command that expects &quot;LT.LF&quot; terminated content.</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF.html">   45</a></span>&#160;<span class="keyword">class </span><a class="code" href="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF.html">DiscardInputCommandHandlerEscDLF</a> :<span class="keyword">public</span> <a class="code" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html">IOFilterCommandHandlerEscDLF</a></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF.html#a2e34c9f2aeeb3a617246d7e7e7b4cc87">   48</a></span>&#160;        <a class="code" href="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF.html#a2e34c9f2aeeb3a617246d7e7e7b4cc87">DiscardInputCommandHandlerEscDLF</a>( <span class="keyword">const</span> std::string&amp; msg_)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                :<a class="code" href="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF.html#a5cb3056a9e9c76f74ea380c1add541da">m_msg</a>(msg_){}</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF.html#a89ec74b491d3f38b84f907ce691b5f66">   50</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#aecc292c24bc75e9f0e087f2f1f8edfd1">CallResult</a> <a class="code" href="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF.html#a89ec74b491d3f38b84f907ce691b5f66">call</a>( <span class="keyword">const</span> <span class="keywordtype">char</span>*&amp; err)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                err = <a class="code" href="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF.html#a5cb3056a9e9c76f74ea380c1add541da">m_msg</a>.c_str(); <span class="keywordflow">return</span> <a class="code" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#aecc292c24bc75e9f0e087f2f1f8edfd1aebc2011a8b1a65049a44b2ce275e660a">Error</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF.html#a5cb3056a9e9c76f74ea380c1add541da">   56</a></span>&#160;        std::string <a class="code" href="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF.html#a5cb3056a9e9c76f74ea380c1add541da">m_msg</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}}</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor"></span></div>
+<div class="ttc" id="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF_html_a5cb3056a9e9c76f74ea380c1add541da"><div class="ttname"><a href="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF.html#a5cb3056a9e9c76f74ea380c1add541da">_Wolframe::cmdbind::DiscardInputCommandHandlerEscDLF::m_msg</a></div><div class="ttdeci">std::string m_msg</div><div class="ttdef"><b>Definition:</b> discardInputCommandHandlerEscDLF.hpp:56</div></div>
 <div class="ttc" id="ioFilterCommandHandlerEscDLF_8hpp_html"><div class="ttname"><a href="ioFilterCommandHandlerEscDLF_8hpp.html">ioFilterCommandHandlerEscDLF.hpp</a></div><div class="ttdoc">Filter based command handler base class that escapes patterns in input/output that could be mixeed wi...</div></div>
 <div class="ttc" id="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler_html_aecc292c24bc75e9f0e087f2f1f8edfd1aebc2011a8b1a65049a44b2ce275e660a"><div class="ttname"><a href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#aecc292c24bc75e9f0e087f2f1f8edfd1aebc2011a8b1a65049a44b2ce275e660a">_Wolframe::cmdbind::IOFilterCommandHandler::Error</a></div><div class="ttdef"><b>Definition:</b> ioFilterCommandHandler.hpp:106</div></div>
-<div class="ttc" id="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF_html_a89ec74b491d3f38b84f907ce691b5f66"><div class="ttname"><a href="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF.html#a89ec74b491d3f38b84f907ce691b5f66">_Wolframe::cmdbind::DiscardInputCommandHandlerEscDLF::call</a></div><div class="ttdeci">virtual CallResult call(const char *&amp;err)</div><div class="ttdef"><b>Definition:</b> discardInputCommandHandlerEscDLF.hpp:48</div></div>
+<div class="ttc" id="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF_html_a89ec74b491d3f38b84f907ce691b5f66"><div class="ttname"><a href="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF.html#a89ec74b491d3f38b84f907ce691b5f66">_Wolframe::cmdbind::DiscardInputCommandHandlerEscDLF::call</a></div><div class="ttdeci">virtual CallResult call(const char *&amp;err)</div><div class="ttdef"><b>Definition:</b> discardInputCommandHandlerEscDLF.hpp:50</div></div>
 <div class="ttc" id="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler_html_aecc292c24bc75e9f0e087f2f1f8edfd1"><div class="ttname"><a href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#aecc292c24bc75e9f0e087f2f1f8edfd1">_Wolframe::cmdbind::IOFilterCommandHandler::CallResult</a></div><div class="ttdeci">CallResult</div><div class="ttdoc">Enumeration of call states of this application processor instance. </div><div class="ttdef"><b>Definition:</b> ioFilterCommandHandler.hpp:103</div></div>
 <div class="ttc" id="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF_html"><div class="ttname"><a href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html">_Wolframe::cmdbind::IOFilterCommandHandlerEscDLF</a></div><div class="ttdoc">Command handler processing filter input/output with end of content marked as Dot (&amp;#39;.&amp;#39;) LF or Dot CR LF. </div><div class="ttdef"><b>Definition:</b> ioFilterCommandHandlerEscDLF.hpp:49</div></div>
-<div class="ttc" id="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF_html"><div class="ttname"><a href="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF.html">_Wolframe::cmdbind::DiscardInputCommandHandlerEscDLF</a></div><div class="ttdef"><b>Definition:</b> discardInputCommandHandlerEscDLF.hpp:43</div></div>
-<div class="ttc" id="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF_html_a2e34c9f2aeeb3a617246d7e7e7b4cc87"><div class="ttname"><a href="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF.html#a2e34c9f2aeeb3a617246d7e7e7b4cc87">_Wolframe::cmdbind::DiscardInputCommandHandlerEscDLF::DiscardInputCommandHandlerEscDLF</a></div><div class="ttdeci">DiscardInputCommandHandlerEscDLF(const std::string &amp;msg_)</div><div class="ttdef"><b>Definition:</b> discardInputCommandHandlerEscDLF.hpp:46</div></div>
+<div class="ttc" id="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF_html"><div class="ttname"><a href="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF.html">_Wolframe::cmdbind::DiscardInputCommandHandlerEscDLF</a></div><div class="ttdef"><b>Definition:</b> discardInputCommandHandlerEscDLF.hpp:45</div></div>
+<div class="ttc" id="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF_html_a2e34c9f2aeeb3a617246d7e7e7b4cc87"><div class="ttname"><a href="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF.html#a2e34c9f2aeeb3a617246d7e7e7b4cc87">_Wolframe::cmdbind::DiscardInputCommandHandlerEscDLF::DiscardInputCommandHandlerEscDLF</a></div><div class="ttdeci">DiscardInputCommandHandlerEscDLF(const std::string &amp;msg_)</div><div class="ttdef"><b>Definition:</b> discardInputCommandHandlerEscDLF.hpp:48</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 5 2013 17:18:01 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Dec 13 2013 09:44:40 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
@@ -224,6 +226,17 @@ Generated on Thu Dec 5 2013 17:18:01 for Wolframe by &#160;<a href="http://www.d
 <script>jQuery(document).ready(function($){ $('img').removeAttr('width height'); });</script>
 <script src="/layout/scripts/jquery-mobilemenu.min.js"></script>
 <script src="/layout/scripts/custom.js"></script>
+<!-- Google analytics tracking -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-46433226-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
 <!-- Tweeter follow script -->
 <script>
 	!function( d, s, id )	{

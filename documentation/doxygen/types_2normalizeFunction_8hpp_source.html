@@ -130,42 +130,48 @@
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">namespace </span>_Wolframe {</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">namespace </span>types {</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1NormalizeFunction.html">   45</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct__Wolframe_1_1types_1_1NormalizeFunction.html">NormalizeFunction</a></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1NormalizeFunction.html#a2ae943e643f0a61ae5e34fb51cc649a1">   47</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="struct__Wolframe_1_1types_1_1NormalizeFunction.html#a2ae943e643f0a61ae5e34fb51cc649a1">~NormalizeFunction</a>(){}</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="struct__Wolframe_1_1types_1_1NormalizeFunction.html#abdb0d5881ab814596473814aaefc30aa">name</a>() <span class="keyword">const</span>=0;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class__Wolframe_1_1types_1_1Variant.html">Variant</a> <a class="code" href="struct__Wolframe_1_1types_1_1NormalizeFunction.html#affc1c3c93c9e6d14cc0489aee199c179">execute</a>( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1types_1_1Variant.html">Variant</a>&amp; i) <span class="keyword">const</span>=0;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="namespace__Wolframe_1_1types.html#a82cad1f75b68951ed761f2f634af3853">   52</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="class__Wolframe_1_1types_1_1CountedReference.html">types::CountedReference&lt;NormalizeFunction&gt;</a> <a class="code" href="namespace__Wolframe_1_1types.html#a82cad1f75b68951ed761f2f634af3853">NormalizeFunctionR</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">//\class NormalizeFunction</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">//\brief Basic normalization function for atomic values (variant type)</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1NormalizeFunction.html">   47</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct__Wolframe_1_1types_1_1NormalizeFunction.html">NormalizeFunction</a></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1NormalizeFunction.html#a2ae943e643f0a61ae5e34fb51cc649a1">   49</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="struct__Wolframe_1_1types_1_1NormalizeFunction.html#a2ae943e643f0a61ae5e34fb51cc649a1">~NormalizeFunction</a>(){}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="struct__Wolframe_1_1types_1_1NormalizeFunction.html#abdb0d5881ab814596473814aaefc30aa">name</a>() <span class="keyword">const</span>=0;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class__Wolframe_1_1types_1_1Variant.html">Variant</a> <a class="code" href="struct__Wolframe_1_1types_1_1NormalizeFunction.html#affc1c3c93c9e6d14cc0489aee199c179">execute</a>( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1types_1_1Variant.html">Variant</a>&amp; i) <span class="keyword">const</span>=0;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1NormalizeFunctionMap.html">   54</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct__Wolframe_1_1types_1_1NormalizeFunctionMap.html">NormalizeFunctionMap</a></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1NormalizeFunctionMap.html#a59637c3d19c3ba2cbd0b74db9ce472c4">   56</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="struct__Wolframe_1_1types_1_1NormalizeFunctionMap.html#a59637c3d19c3ba2cbd0b74db9ce472c4">~NormalizeFunctionMap</a>(){}</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="struct__Wolframe_1_1types_1_1NormalizeFunction.html">NormalizeFunction</a>* <span class="keyword">get</span>( <span class="keyword">const</span> std::string&amp; name) <span class="keyword">const</span>=0;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="namespace__Wolframe_1_1types.html#a6bacec1bd919872bdfaafae1c489b88c">   60</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="class__Wolframe_1_1types_1_1CountedReference.html">types::CountedReference&lt;NormalizeFunctionMap&gt;</a> <a class="code" href="namespace__Wolframe_1_1types.html#a6bacec1bd919872bdfaafae1c489b88c">NormalizeFunctionMapR</a>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}}<span class="comment">//namespace</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor"></span></div>
-<div class="ttc" id="namespace__Wolframe_1_1types_html_a82cad1f75b68951ed761f2f634af3853"><div class="ttname"><a href="namespace__Wolframe_1_1types.html#a82cad1f75b68951ed761f2f634af3853">_Wolframe::types::NormalizeFunctionR</a></div><div class="ttdeci">types::CountedReference&lt; NormalizeFunction &gt; NormalizeFunctionR</div><div class="ttdef"><b>Definition:</b> normalizeFunction.hpp:52</div></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">//\brief Shared ownership reference to normalizatio functions for atomic values (variant type)</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="namespace__Wolframe_1_1types.html#a82cad1f75b68951ed761f2f634af3853">   55</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="class__Wolframe_1_1types_1_1CountedReference.html">types::CountedReference&lt;NormalizeFunction&gt;</a> <a class="code" href="namespace__Wolframe_1_1types.html#a82cad1f75b68951ed761f2f634af3853">NormalizeFunctionR</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">//\class NormalizeFunctionMap</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">//\brief Map of basic normalization functions for atomic values (variant type)</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1NormalizeFunctionMap.html">   59</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct__Wolframe_1_1types_1_1NormalizeFunctionMap.html">NormalizeFunctionMap</a></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1NormalizeFunctionMap.html#a59637c3d19c3ba2cbd0b74db9ce472c4">   61</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="struct__Wolframe_1_1types_1_1NormalizeFunctionMap.html#a59637c3d19c3ba2cbd0b74db9ce472c4">~NormalizeFunctionMap</a>(){}</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="struct__Wolframe_1_1types_1_1NormalizeFunction.html">NormalizeFunction</a>* <span class="keyword">get</span>( <span class="keyword">const</span> std::string&amp; name) <span class="keyword">const</span>=0;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">//\brief Shared ownership reference to map of basic normalization functions for atomic values (variant type)</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="namespace__Wolframe_1_1types.html#a6bacec1bd919872bdfaafae1c489b88c">   66</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="class__Wolframe_1_1types_1_1CountedReference.html">types::CountedReference&lt;NormalizeFunctionMap&gt;</a> <a class="code" href="namespace__Wolframe_1_1types.html#a6bacec1bd919872bdfaafae1c489b88c">NormalizeFunctionMapR</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}}<span class="comment">//namespace</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor"></span></div>
+<div class="ttc" id="namespace__Wolframe_1_1types_html_a82cad1f75b68951ed761f2f634af3853"><div class="ttname"><a href="namespace__Wolframe_1_1types.html#a82cad1f75b68951ed761f2f634af3853">_Wolframe::types::NormalizeFunctionR</a></div><div class="ttdeci">types::CountedReference&lt; NormalizeFunction &gt; NormalizeFunctionR</div><div class="ttdef"><b>Definition:</b> normalizeFunction.hpp:55</div></div>
 <div class="ttc" id="struct__Wolframe_1_1types_1_1NormalizeFunction_html_affc1c3c93c9e6d14cc0489aee199c179"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1NormalizeFunction.html#affc1c3c93c9e6d14cc0489aee199c179">_Wolframe::types::NormalizeFunction::execute</a></div><div class="ttdeci">virtual Variant execute(const Variant &amp;i) const =0</div></div>
-<div class="ttc" id="struct__Wolframe_1_1types_1_1NormalizeFunctionMap_html_a59637c3d19c3ba2cbd0b74db9ce472c4"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1NormalizeFunctionMap.html#a59637c3d19c3ba2cbd0b74db9ce472c4">_Wolframe::types::NormalizeFunctionMap::~NormalizeFunctionMap</a></div><div class="ttdeci">virtual ~NormalizeFunctionMap()</div><div class="ttdef"><b>Definition:</b> normalizeFunction.hpp:56</div></div>
+<div class="ttc" id="struct__Wolframe_1_1types_1_1NormalizeFunctionMap_html_a59637c3d19c3ba2cbd0b74db9ce472c4"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1NormalizeFunctionMap.html#a59637c3d19c3ba2cbd0b74db9ce472c4">_Wolframe::types::NormalizeFunctionMap::~NormalizeFunctionMap</a></div><div class="ttdeci">virtual ~NormalizeFunctionMap()</div><div class="ttdef"><b>Definition:</b> normalizeFunction.hpp:61</div></div>
 <div class="ttc" id="class__Wolframe_1_1types_1_1Variant_html"><div class="ttname"><a href="class__Wolframe_1_1types_1_1Variant.html">_Wolframe::types::Variant</a></div><div class="ttdoc">Variant value type. </div><div class="ttdef"><b>Definition:</b> variant.hpp:48</div></div>
-<div class="ttc" id="struct__Wolframe_1_1types_1_1NormalizeFunction_html"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1NormalizeFunction.html">_Wolframe::types::NormalizeFunction</a></div><div class="ttdef"><b>Definition:</b> normalizeFunction.hpp:45</div></div>
+<div class="ttc" id="struct__Wolframe_1_1types_1_1NormalizeFunction_html"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1NormalizeFunction.html">_Wolframe::types::NormalizeFunction</a></div><div class="ttdef"><b>Definition:</b> normalizeFunction.hpp:47</div></div>
 <div class="ttc" id="struct__Wolframe_1_1types_1_1NormalizeFunction_html_abdb0d5881ab814596473814aaefc30aa"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1NormalizeFunction.html#abdb0d5881ab814596473814aaefc30aa">_Wolframe::types::NormalizeFunction::name</a></div><div class="ttdeci">virtual const char * name() const =0</div></div>
 <div class="ttc" id="countedReference_8hpp_html"><div class="ttname"><a href="countedReference_8hpp.html">countedReference.hpp</a></div><div class="ttdoc">Multiple references to an object that is freed with its last reference. </div></div>
-<div class="ttc" id="namespace__Wolframe_1_1types_html_a6bacec1bd919872bdfaafae1c489b88c"><div class="ttname"><a href="namespace__Wolframe_1_1types.html#a6bacec1bd919872bdfaafae1c489b88c">_Wolframe::types::NormalizeFunctionMapR</a></div><div class="ttdeci">types::CountedReference&lt; NormalizeFunctionMap &gt; NormalizeFunctionMapR</div><div class="ttdef"><b>Definition:</b> normalizeFunction.hpp:60</div></div>
-<div class="ttc" id="struct__Wolframe_1_1types_1_1NormalizeFunctionMap_html"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1NormalizeFunctionMap.html">_Wolframe::types::NormalizeFunctionMap</a></div><div class="ttdef"><b>Definition:</b> normalizeFunction.hpp:54</div></div>
-<div class="ttc" id="struct__Wolframe_1_1types_1_1NormalizeFunction_html_a2ae943e643f0a61ae5e34fb51cc649a1"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1NormalizeFunction.html#a2ae943e643f0a61ae5e34fb51cc649a1">_Wolframe::types::NormalizeFunction::~NormalizeFunction</a></div><div class="ttdeci">virtual ~NormalizeFunction()</div><div class="ttdef"><b>Definition:</b> normalizeFunction.hpp:47</div></div>
+<div class="ttc" id="namespace__Wolframe_1_1types_html_a6bacec1bd919872bdfaafae1c489b88c"><div class="ttname"><a href="namespace__Wolframe_1_1types.html#a6bacec1bd919872bdfaafae1c489b88c">_Wolframe::types::NormalizeFunctionMapR</a></div><div class="ttdeci">types::CountedReference&lt; NormalizeFunctionMap &gt; NormalizeFunctionMapR</div><div class="ttdef"><b>Definition:</b> normalizeFunction.hpp:66</div></div>
+<div class="ttc" id="struct__Wolframe_1_1types_1_1NormalizeFunctionMap_html"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1NormalizeFunctionMap.html">_Wolframe::types::NormalizeFunctionMap</a></div><div class="ttdef"><b>Definition:</b> normalizeFunction.hpp:59</div></div>
+<div class="ttc" id="struct__Wolframe_1_1types_1_1NormalizeFunction_html_a2ae943e643f0a61ae5e34fb51cc649a1"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1NormalizeFunction.html#a2ae943e643f0a61ae5e34fb51cc649a1">_Wolframe::types::NormalizeFunction::~NormalizeFunction</a></div><div class="ttdeci">virtual ~NormalizeFunction()</div><div class="ttdef"><b>Definition:</b> normalizeFunction.hpp:49</div></div>
 <div class="ttc" id="class__Wolframe_1_1types_1_1CountedReference_html"><div class="ttname"><a href="class__Wolframe_1_1types_1_1CountedReference.html">_Wolframe::types::CountedReference</a></div><div class="ttdoc">Multiple shared reference to an object with ownership. </div><div class="ttdef"><b>Definition:</b> countedReference.hpp:48</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 5 2013 17:18:03 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Dec 13 2013 09:44:41 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
@@ -232,6 +238,17 @@ Generated on Thu Dec 5 2013 17:18:03 for Wolframe by &#160;<a href="http://www.d
 <script>jQuery(document).ready(function($){ $('img').removeAttr('width height'); });</script>
 <script src="/layout/scripts/jquery-mobilemenu.min.js"></script>
 <script src="/layout/scripts/custom.js"></script>
+<!-- Google analytics tracking -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-46433226-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
 <!-- Tweeter follow script -->
 <script>
 	!function( d, s, id )	{

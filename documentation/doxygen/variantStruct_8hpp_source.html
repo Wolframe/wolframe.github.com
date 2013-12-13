@@ -304,6 +304,8 @@
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;};</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="comment">//\class VariantStructIndirection</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="comment">//\brief Variant type as indirection: Variant value is only expanded when referenced</span></div>
 <div class="line"><a name="l00257"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1types_1_1VariantIndirection.html">  257</a></span>&#160;<span class="keyword">class </span><a class="code" href="class__Wolframe_1_1types_1_1VariantIndirection.html">VariantIndirection</a> :<span class="keyword">public</span> <a class="code" href="class__Wolframe_1_1types_1_1Variant.html">Variant</a></div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;{</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="keyword">public</span>:</div>
@@ -422,7 +424,7 @@
 <div class="ttc" id="struct__Wolframe_1_1types_1_1Variant_1_1Data_html_a0c2effe8b5988dac08f58f593bc1a0cb"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1Variant_1_1Data.html#a0c2effe8b5988dac08f58f593bc1a0cb">_Wolframe::types::Variant::Data::size</a></div><div class="ttdeci">std::size_t size</div><div class="ttdef"><b>Definition:</b> variant.hpp:98</div></div>
 <div class="ttc" id="class__Wolframe_1_1types_1_1VariantStruct_1_1const__iterator_html_af75f44d34e66f64d1210abca48818ba3"><div class="ttname"><a href="class__Wolframe_1_1types_1_1VariantStruct_1_1const__iterator.html#af75f44d34e66f64d1210abca48818ba3">_Wolframe::types::VariantStruct::const_iterator::operator-</a></div><div class="ttdeci">int operator-(const const_iterator &amp;o) const </div><div class="ttdef"><b>Definition:</b> variantStruct.hpp:178</div></div>
 <div class="ttc" id="class__Wolframe_1_1types_1_1VariantStructConst_html_aa8c38cc6819992fecce7c73524a274e6"><div class="ttname"><a href="class__Wolframe_1_1types_1_1VariantStructConst.html#aa8c38cc6819992fecce7c73524a274e6">_Wolframe::types::VariantStructConst::operator=</a></div><div class="ttdeci">VariantStructConst &amp; operator=(const VariantConst &amp;o)</div><div class="ttdef"><b>Definition:</b> variantStruct.hpp:300</div></div>
-<div class="ttc" id="struct__Wolframe_1_1utils_1_1PrintFormat_html"><div class="ttname"><a href="struct__Wolframe_1_1utils_1_1PrintFormat.html">_Wolframe::utils::PrintFormat</a></div><div class="ttdef"><b>Definition:</b> printFormats.hpp:43</div></div>
+<div class="ttc" id="struct__Wolframe_1_1utils_1_1PrintFormat_html"><div class="ttname"><a href="struct__Wolframe_1_1utils_1_1PrintFormat.html">_Wolframe::utils::PrintFormat</a></div><div class="ttdef"><b>Definition:</b> printFormats.hpp:45</div></div>
 <div class="ttc" id="class__Wolframe_1_1types_1_1VariantStruct_html_af8872f0f396a3d8eb93d3edf873c18c9"><div class="ttname"><a href="class__Wolframe_1_1types_1_1VariantStruct.html#af8872f0f396a3d8eb93d3edf873c18c9">_Wolframe::types::VariantStruct::back</a></div><div class="ttdeci">const VariantStruct &amp; back() const </div><div class="ttdoc">Get the last element (throws logic error on ABR/ABW) </div></div>
 <div class="ttc" id="class__Wolframe_1_1types_1_1VariantStruct_1_1const__iterator_html_a27cbd73b2a5c02f863dc931295afa10c"><div class="ttname"><a href="class__Wolframe_1_1types_1_1VariantStruct_1_1const__iterator.html#a27cbd73b2a5c02f863dc931295afa10c">_Wolframe::types::VariantStruct::const_iterator::operator*</a></div><div class="ttdeci">const VariantStruct &amp; operator*() const </div><div class="ttdef"><b>Definition:</b> variantStruct.hpp:176</div></div>
 <div class="ttc" id="class__Wolframe_1_1types_1_1VariantStruct_html_a7d294515f8f832121d483182e9280af4a0110fb337f6c69ea15075f1d0342926a"><div class="ttname"><a href="class__Wolframe_1_1types_1_1VariantStruct.html#a7d294515f8f832121d483182e9280af4a0110fb337f6c69ea15075f1d0342926a">_Wolframe::types::VariantStruct::Bool</a></div><div class="ttdef"><b>Definition:</b> variantStruct.hpp:65</div></div>
@@ -534,7 +536,7 @@
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 5 2013 17:18:06 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Dec 13 2013 09:44:44 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
@@ -601,6 +603,17 @@ Generated on Thu Dec 5 2013 17:18:06 for Wolframe by &#160;<a href="http://www.d
 <script>jQuery(document).ready(function($){ $('img').removeAttr('width height'); });</script>
 <script src="/layout/scripts/jquery-mobilemenu.min.js"></script>
 <script src="/layout/scripts/custom.js"></script>
+<!-- Google analytics tracking -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-46433226-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
 <!-- Tweeter follow script -->
 <script>
 	!function( d, s, id )	{

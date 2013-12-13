@@ -134,101 +134,105 @@
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">namespace </span>_Wolframe {</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">namespace </span>types {</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1keystring.html">   49</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct__Wolframe_1_1types_1_1keystring.html">keystring</a></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        :<span class="keyword">public</span> std::string</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1keystring.html#aa4de1cf85612a39b30ddacfa0f9d96b4">   52</a></span>&#160;        <a class="code" href="struct__Wolframe_1_1types_1_1keystring.html#aa4de1cf85612a39b30ddacfa0f9d96b4">keystring</a>( <span class="keyword">const</span> std::string&amp; o)</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                :std::string( boost::to_upper_copy( o)){}</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1keystring.html#af3b506c9c23e434f788d60b4d8eeadab">   54</a></span>&#160;        <a class="code" href="struct__Wolframe_1_1types_1_1keystring.html#af3b506c9c23e434f788d60b4d8eeadab">keystring</a>( <span class="keyword">const</span> <a class="code" href="struct__Wolframe_1_1types_1_1keystring.html">keystring</a>&amp; o)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                :std::string( o){}</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1keystring.html#a1ebbf3b785950680e302a610ddab4004">   56</a></span>&#160;        <a class="code" href="struct__Wolframe_1_1types_1_1keystring.html#a1ebbf3b785950680e302a610ddab4004">keystring</a>(){}</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType&gt;</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1keymap.html">   60</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct__Wolframe_1_1types_1_1keymap.html">keymap</a></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        :<span class="keyword">public</span> std::map&lt;keystring,ValueType&gt;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1keymap.html#ae5235be332a99e7d0d322a41dc846d7b">   63</a></span>&#160;        <span class="keyword">typedef</span> std::map&lt;keystring,ValueType&gt; <a class="code" href="struct__Wolframe_1_1types_1_1keymap.html#ae5235be332a99e7d0d322a41dc846d7b">Parent</a>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1keymap.html#ab87ebfd75a6e0a864b67cae56de7797f">   65</a></span>&#160;        <a class="code" href="struct__Wolframe_1_1types_1_1keymap.html#ab87ebfd75a6e0a864b67cae56de7797f">keymap</a>(){}</div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1keymap.html#a3e7f6e170a7eca5fcaa8d2c7e1e284d0">   66</a></span>&#160;        <a class="code" href="struct__Wolframe_1_1types_1_1keymap.html#a3e7f6e170a7eca5fcaa8d2c7e1e284d0">keymap</a>( <span class="keyword">const</span> <a class="code" href="struct__Wolframe_1_1types_1_1keymap.html">keymap</a>&amp; o)</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                :std::map&lt;<a class="code" href="struct__Wolframe_1_1types_1_1keystring.html">keystring</a>,ValueType&gt;(o){}</div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1keymap.html#ae69aab91a1fcd2360c2036496b9871e2">   68</a></span>&#160;        <a class="code" href="struct__Wolframe_1_1types_1_1keymap.html#ae69aab91a1fcd2360c2036496b9871e2">keymap</a>( <span class="keyword">const</span> std::map&lt;std::string,ValueType&gt;&amp; o)</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                std::copy( o.begin(), o.end(), std::inserter( *<span class="keyword">this</span>, this-&gt;end()));</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1keymap.html#a070535420d00cec55f4edd66d44219ed">   73</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="struct__Wolframe_1_1types_1_1keymap.html#a070535420d00cec55f4edd66d44219ed">insert</a>( <span class="keyword">const</span> <a class="code" href="struct__Wolframe_1_1types_1_1keystring.html">keystring</a>&amp; key, <span class="keyword">const</span> ValueType&amp; value)</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                <span class="keywordflow">if</span> (Parent::find( key) != this-&gt;end())</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                        <span class="keywordflow">throw</span> std::runtime_error( std::string( <span class="stringliteral">&quot;duplicate definition of &#39;&quot;</span>) + key + <span class="stringliteral">&quot;&#39;&quot;</span>);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                Parent::operator[](key) = value;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1keymap.html#a22abb39eda28b7108087c3fa424a4a4b">   82</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="struct__Wolframe_1_1types_1_1keymap.html#a22abb39eda28b7108087c3fa424a4a4b">insert</a>( <span class="keyword">const</span> <a class="code" href="struct__Wolframe_1_1types_1_1keymap.html">keymap</a>&amp; m)</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                <span class="keyword">typename</span> Parent::const_iterator ki = m.begin(), ke = m.end();</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                <span class="keywordflow">for</span> (; ki != ke; ++ki) <a class="code" href="struct__Wolframe_1_1types_1_1keymap.html#a070535420d00cec55f4edd66d44219ed">insert</a>( ki-&gt;first, ki-&gt;second);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1keymap.html#ab35404d5f0018a45bcde48908ba471eb">   88</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="struct__Wolframe_1_1types_1_1keymap.html#ab35404d5f0018a45bcde48908ba471eb">join</a>( <span class="keyword">const</span> <a class="code" href="struct__Wolframe_1_1types_1_1keymap.html">keymap</a>&amp; m)</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                <span class="keyword">typename</span> Parent::const_iterator ki = m.begin(), ke = m.end();</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                <span class="keywordflow">for</span> (; ki != ke; ++ki)</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                        <span class="keyword">typename</span> Parent::const_iterator fi = Parent::find( ki-&gt;first);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                        <span class="keywordflow">if</span> (fi != this-&gt;end())</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                        {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                                <span class="keywordflow">if</span> (ki-&gt;second != fi-&gt;second)</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                                {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                                        <span class="keywordflow">throw</span> std::runtime_error( std::string( <span class="stringliteral">&quot;duplicate definition of &#39;&quot;</span>) + ki-&gt;first + <span class="stringliteral">&quot;&#39;&quot;</span>);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                                }</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                        }</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                        {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                                Parent::operator[](ki-&gt;first) = ki-&gt;second;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">//\class keystring</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">//\brief Constructor for implementing implicit type reductions in key maps that store the key as upper case string.</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1keystring.html">   51</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct__Wolframe_1_1types_1_1keystring.html">keystring</a></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        :<span class="keyword">public</span> std::string</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1keystring.html#aa4de1cf85612a39b30ddacfa0f9d96b4">   54</a></span>&#160;        <a class="code" href="struct__Wolframe_1_1types_1_1keystring.html#aa4de1cf85612a39b30ddacfa0f9d96b4">keystring</a>( <span class="keyword">const</span> std::string&amp; o)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                :std::string( boost::to_upper_copy( o)){}</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1keystring.html#af3b506c9c23e434f788d60b4d8eeadab">   56</a></span>&#160;        <a class="code" href="struct__Wolframe_1_1types_1_1keystring.html#af3b506c9c23e434f788d60b4d8eeadab">keystring</a>( <span class="keyword">const</span> <a class="code" href="struct__Wolframe_1_1types_1_1keystring.html">keystring</a>&amp; o)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                :std::string( o){}</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1keystring.html#a1ebbf3b785950680e302a610ddab4004">   58</a></span>&#160;        <a class="code" href="struct__Wolframe_1_1types_1_1keystring.html#a1ebbf3b785950680e302a610ddab4004">keystring</a>(){}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">//\class keymap</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">//\brief Map with case insensitive strings as keys</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType&gt;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1keymap.html">   64</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct__Wolframe_1_1types_1_1keymap.html">keymap</a></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        :<span class="keyword">public</span> std::map&lt;keystring,ValueType&gt;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1keymap.html#ae5235be332a99e7d0d322a41dc846d7b">   67</a></span>&#160;        <span class="keyword">typedef</span> std::map&lt;keystring,ValueType&gt; <a class="code" href="struct__Wolframe_1_1types_1_1keymap.html#ae5235be332a99e7d0d322a41dc846d7b">Parent</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1keymap.html#ab87ebfd75a6e0a864b67cae56de7797f">   69</a></span>&#160;        <a class="code" href="struct__Wolframe_1_1types_1_1keymap.html#ab87ebfd75a6e0a864b67cae56de7797f">keymap</a>(){}</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1keymap.html#a3e7f6e170a7eca5fcaa8d2c7e1e284d0">   70</a></span>&#160;        <a class="code" href="struct__Wolframe_1_1types_1_1keymap.html#a3e7f6e170a7eca5fcaa8d2c7e1e284d0">keymap</a>( <span class="keyword">const</span> <a class="code" href="struct__Wolframe_1_1types_1_1keymap.html">keymap</a>&amp; o)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                :std::map&lt;<a class="code" href="struct__Wolframe_1_1types_1_1keystring.html">keystring</a>,ValueType&gt;(o){}</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1keymap.html#ae69aab91a1fcd2360c2036496b9871e2">   72</a></span>&#160;        <a class="code" href="struct__Wolframe_1_1types_1_1keymap.html#ae69aab91a1fcd2360c2036496b9871e2">keymap</a>( <span class="keyword">const</span> std::map&lt;std::string,ValueType&gt;&amp; o)</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                std::copy( o.begin(), o.end(), std::inserter( *<span class="keyword">this</span>, this-&gt;end()));</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1keymap.html#a070535420d00cec55f4edd66d44219ed">   77</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="struct__Wolframe_1_1types_1_1keymap.html#a070535420d00cec55f4edd66d44219ed">insert</a>( <span class="keyword">const</span> <a class="code" href="struct__Wolframe_1_1types_1_1keystring.html">keystring</a>&amp; key, <span class="keyword">const</span> ValueType&amp; value)</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                <span class="keywordflow">if</span> (Parent::find( key) != this-&gt;end())</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                        <span class="keywordflow">throw</span> std::runtime_error( std::string( <span class="stringliteral">&quot;duplicate definition of &#39;&quot;</span>) + key + <span class="stringliteral">&quot;&#39;&quot;</span>);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                Parent::operator[](key) = value;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1keymap.html#a22abb39eda28b7108087c3fa424a4a4b">   86</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="struct__Wolframe_1_1types_1_1keymap.html#a22abb39eda28b7108087c3fa424a4a4b">insert</a>( <span class="keyword">const</span> <a class="code" href="struct__Wolframe_1_1types_1_1keymap.html">keymap</a>&amp; m)</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                <span class="keyword">typename</span> Parent::const_iterator ki = m.begin(), ke = m.end();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                <span class="keywordflow">for</span> (; ki != ke; ++ki) <a class="code" href="struct__Wolframe_1_1types_1_1keymap.html#a070535420d00cec55f4edd66d44219ed">insert</a>( ki-&gt;first, ki-&gt;second);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1keymap.html#ab35404d5f0018a45bcde48908ba471eb">   92</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="struct__Wolframe_1_1types_1_1keymap.html#ab35404d5f0018a45bcde48908ba471eb">join</a>( <span class="keyword">const</span> <a class="code" href="struct__Wolframe_1_1types_1_1keymap.html">keymap</a>&amp; m)</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                <span class="keyword">typename</span> Parent::const_iterator ki = m.begin(), ke = m.end();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                <span class="keywordflow">for</span> (; ki != ke; ++ki)</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                        <span class="keyword">typename</span> Parent::const_iterator fi = Parent::find( ki-&gt;first);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                        <span class="keywordflow">if</span> (fi != this-&gt;end())</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                        {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                                <span class="keywordflow">if</span> (ki-&gt;second != fi-&gt;second)</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                                {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                                        <span class="keywordflow">throw</span> std::runtime_error( std::string( <span class="stringliteral">&quot;duplicate definition of &#39;&quot;</span>) + ki-&gt;first + <span class="stringliteral">&quot;&#39;&quot;</span>);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                                }</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                        }</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                }</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        }</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">class</span> KeyList&gt;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keyword">typename</span> boost::enable_if_c&lt;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                <a class="code" href="struct__Wolframe_1_1types_1_1traits_1_1is__back__insertion__sequence.html">types::traits::is_back_insertion_sequence&lt;KeyList&gt;::value</a></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                ,KeyList&gt;::type</div>
-<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1keymap.html#a5e6f9d954d382204896bad79925ea301">  112</a></span>&#160;        <a class="code" href="struct__Wolframe_1_1types_1_1keymap.html#a5e6f9d954d382204896bad79925ea301">getkeys</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                KeyList rt;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                <span class="keyword">typename</span> Parent::const_iterator ki = Parent::begin(), ke = Parent::end();</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                <span class="keywordflow">for</span> (; ki != ke; ++ki) rt.push_back( ki-&gt;first);</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                <span class="keywordflow">return</span> rt;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        }</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;};</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}} <span class="comment">//namespace</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor"></span></div>
-<div class="ttc" id="struct__Wolframe_1_1types_1_1keystring_html"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keystring.html">_Wolframe::types::keystring</a></div><div class="ttdef"><b>Definition:</b> keymap.hpp:49</div></div>
-<div class="ttc" id="struct__Wolframe_1_1types_1_1keymap_html"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keymap.html">_Wolframe::types::keymap</a></div><div class="ttdef"><b>Definition:</b> keymap.hpp:60</div></div>
-<div class="ttc" id="struct__Wolframe_1_1types_1_1keymap_html_ab35404d5f0018a45bcde48908ba471eb"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keymap.html#ab35404d5f0018a45bcde48908ba471eb">_Wolframe::types::keymap::join</a></div><div class="ttdeci">void join(const keymap &amp;m)</div><div class="ttdef"><b>Definition:</b> keymap.hpp:88</div></div>
-<div class="ttc" id="struct__Wolframe_1_1types_1_1keymap_html_ae69aab91a1fcd2360c2036496b9871e2"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keymap.html#ae69aab91a1fcd2360c2036496b9871e2">_Wolframe::types::keymap::keymap</a></div><div class="ttdeci">keymap(const std::map&lt; std::string, ValueType &gt; &amp;o)</div><div class="ttdef"><b>Definition:</b> keymap.hpp:68</div></div>
-<div class="ttc" id="struct__Wolframe_1_1types_1_1keymap_html_a22abb39eda28b7108087c3fa424a4a4b"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keymap.html#a22abb39eda28b7108087c3fa424a4a4b">_Wolframe::types::keymap::insert</a></div><div class="ttdeci">void insert(const keymap &amp;m)</div><div class="ttdef"><b>Definition:</b> keymap.hpp:82</div></div>
-<div class="ttc" id="struct__Wolframe_1_1types_1_1keymap_html_a3e7f6e170a7eca5fcaa8d2c7e1e284d0"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keymap.html#a3e7f6e170a7eca5fcaa8d2c7e1e284d0">_Wolframe::types::keymap::keymap</a></div><div class="ttdeci">keymap(const keymap &amp;o)</div><div class="ttdef"><b>Definition:</b> keymap.hpp:66</div></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                        {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                                Parent::operator[](ki-&gt;first) = ki-&gt;second;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                        }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">class</span> KeyList&gt;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keyword">typename</span> boost::enable_if_c&lt;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                <a class="code" href="struct__Wolframe_1_1types_1_1traits_1_1is__back__insertion__sequence.html">types::traits::is_back_insertion_sequence&lt;KeyList&gt;::value</a></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                ,KeyList&gt;::type</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1keymap.html#a5e6f9d954d382204896bad79925ea301">  116</a></span>&#160;        <a class="code" href="struct__Wolframe_1_1types_1_1keymap.html#a5e6f9d954d382204896bad79925ea301">getkeys</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                KeyList rt;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                <span class="keyword">typename</span> Parent::const_iterator ki = Parent::begin(), ke = Parent::end();</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                <span class="keywordflow">for</span> (; ki != ke; ++ki) rt.push_back( ki-&gt;first);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                <span class="keywordflow">return</span> rt;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;};</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}} <span class="comment">//namespace</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor"></span></div>
+<div class="ttc" id="struct__Wolframe_1_1types_1_1keystring_html"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keystring.html">_Wolframe::types::keystring</a></div><div class="ttdef"><b>Definition:</b> keymap.hpp:51</div></div>
+<div class="ttc" id="struct__Wolframe_1_1types_1_1keymap_html"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keymap.html">_Wolframe::types::keymap</a></div><div class="ttdef"><b>Definition:</b> keymap.hpp:64</div></div>
+<div class="ttc" id="struct__Wolframe_1_1types_1_1keymap_html_ab35404d5f0018a45bcde48908ba471eb"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keymap.html#ab35404d5f0018a45bcde48908ba471eb">_Wolframe::types::keymap::join</a></div><div class="ttdeci">void join(const keymap &amp;m)</div><div class="ttdef"><b>Definition:</b> keymap.hpp:92</div></div>
+<div class="ttc" id="struct__Wolframe_1_1types_1_1keymap_html_ae69aab91a1fcd2360c2036496b9871e2"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keymap.html#ae69aab91a1fcd2360c2036496b9871e2">_Wolframe::types::keymap::keymap</a></div><div class="ttdeci">keymap(const std::map&lt; std::string, ValueType &gt; &amp;o)</div><div class="ttdef"><b>Definition:</b> keymap.hpp:72</div></div>
+<div class="ttc" id="struct__Wolframe_1_1types_1_1keymap_html_a22abb39eda28b7108087c3fa424a4a4b"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keymap.html#a22abb39eda28b7108087c3fa424a4a4b">_Wolframe::types::keymap::insert</a></div><div class="ttdeci">void insert(const keymap &amp;m)</div><div class="ttdef"><b>Definition:</b> keymap.hpp:86</div></div>
+<div class="ttc" id="struct__Wolframe_1_1types_1_1keymap_html_a3e7f6e170a7eca5fcaa8d2c7e1e284d0"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keymap.html#a3e7f6e170a7eca5fcaa8d2c7e1e284d0">_Wolframe::types::keymap::keymap</a></div><div class="ttdeci">keymap(const keymap &amp;o)</div><div class="ttdef"><b>Definition:</b> keymap.hpp:70</div></div>
 <div class="ttc" id="traits_8hpp_html"><div class="ttname"><a href="traits_8hpp.html">traits.hpp</a></div><div class="ttdoc">Type traits. </div></div>
-<div class="ttc" id="struct__Wolframe_1_1types_1_1keymap_html_ae5235be332a99e7d0d322a41dc846d7b"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keymap.html#ae5235be332a99e7d0d322a41dc846d7b">_Wolframe::types::keymap::Parent</a></div><div class="ttdeci">std::map&lt; keystring, ValueType &gt; Parent</div><div class="ttdef"><b>Definition:</b> keymap.hpp:63</div></div>
-<div class="ttc" id="struct__Wolframe_1_1types_1_1keymap_html_a070535420d00cec55f4edd66d44219ed"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keymap.html#a070535420d00cec55f4edd66d44219ed">_Wolframe::types::keymap::insert</a></div><div class="ttdeci">void insert(const keystring &amp;key, const ValueType &amp;value)</div><div class="ttdef"><b>Definition:</b> keymap.hpp:73</div></div>
-<div class="ttc" id="struct__Wolframe_1_1types_1_1keystring_html_aa4de1cf85612a39b30ddacfa0f9d96b4"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keystring.html#aa4de1cf85612a39b30ddacfa0f9d96b4">_Wolframe::types::keystring::keystring</a></div><div class="ttdeci">keystring(const std::string &amp;o)</div><div class="ttdef"><b>Definition:</b> keymap.hpp:52</div></div>
-<div class="ttc" id="struct__Wolframe_1_1types_1_1keymap_html_ab87ebfd75a6e0a864b67cae56de7797f"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keymap.html#ab87ebfd75a6e0a864b67cae56de7797f">_Wolframe::types::keymap::keymap</a></div><div class="ttdeci">keymap()</div><div class="ttdef"><b>Definition:</b> keymap.hpp:65</div></div>
-<div class="ttc" id="struct__Wolframe_1_1types_1_1keystring_html_af3b506c9c23e434f788d60b4d8eeadab"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keystring.html#af3b506c9c23e434f788d60b4d8eeadab">_Wolframe::types::keystring::keystring</a></div><div class="ttdeci">keystring(const keystring &amp;o)</div><div class="ttdef"><b>Definition:</b> keymap.hpp:54</div></div>
-<div class="ttc" id="struct__Wolframe_1_1types_1_1keymap_html_a5e6f9d954d382204896bad79925ea301"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keymap.html#a5e6f9d954d382204896bad79925ea301">_Wolframe::types::keymap::getkeys</a></div><div class="ttdeci">boost::enable_if_c&lt; types::traits::is_back_insertion_sequence&lt; KeyList &gt;::value,KeyList &gt;::type getkeys() const </div><div class="ttdef"><b>Definition:</b> keymap.hpp:112</div></div>
-<div class="ttc" id="struct__Wolframe_1_1types_1_1keystring_html_a1ebbf3b785950680e302a610ddab4004"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keystring.html#a1ebbf3b785950680e302a610ddab4004">_Wolframe::types::keystring::keystring</a></div><div class="ttdeci">keystring()</div><div class="ttdef"><b>Definition:</b> keymap.hpp:56</div></div>
+<div class="ttc" id="struct__Wolframe_1_1types_1_1keymap_html_ae5235be332a99e7d0d322a41dc846d7b"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keymap.html#ae5235be332a99e7d0d322a41dc846d7b">_Wolframe::types::keymap::Parent</a></div><div class="ttdeci">std::map&lt; keystring, ValueType &gt; Parent</div><div class="ttdef"><b>Definition:</b> keymap.hpp:67</div></div>
+<div class="ttc" id="struct__Wolframe_1_1types_1_1keymap_html_a070535420d00cec55f4edd66d44219ed"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keymap.html#a070535420d00cec55f4edd66d44219ed">_Wolframe::types::keymap::insert</a></div><div class="ttdeci">void insert(const keystring &amp;key, const ValueType &amp;value)</div><div class="ttdef"><b>Definition:</b> keymap.hpp:77</div></div>
+<div class="ttc" id="struct__Wolframe_1_1types_1_1keystring_html_aa4de1cf85612a39b30ddacfa0f9d96b4"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keystring.html#aa4de1cf85612a39b30ddacfa0f9d96b4">_Wolframe::types::keystring::keystring</a></div><div class="ttdeci">keystring(const std::string &amp;o)</div><div class="ttdef"><b>Definition:</b> keymap.hpp:54</div></div>
+<div class="ttc" id="struct__Wolframe_1_1types_1_1keymap_html_ab87ebfd75a6e0a864b67cae56de7797f"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keymap.html#ab87ebfd75a6e0a864b67cae56de7797f">_Wolframe::types::keymap::keymap</a></div><div class="ttdeci">keymap()</div><div class="ttdef"><b>Definition:</b> keymap.hpp:69</div></div>
+<div class="ttc" id="struct__Wolframe_1_1types_1_1keystring_html_af3b506c9c23e434f788d60b4d8eeadab"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keystring.html#af3b506c9c23e434f788d60b4d8eeadab">_Wolframe::types::keystring::keystring</a></div><div class="ttdeci">keystring(const keystring &amp;o)</div><div class="ttdef"><b>Definition:</b> keymap.hpp:56</div></div>
+<div class="ttc" id="struct__Wolframe_1_1types_1_1keymap_html_a5e6f9d954d382204896bad79925ea301"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keymap.html#a5e6f9d954d382204896bad79925ea301">_Wolframe::types::keymap::getkeys</a></div><div class="ttdeci">boost::enable_if_c&lt; types::traits::is_back_insertion_sequence&lt; KeyList &gt;::value,KeyList &gt;::type getkeys() const </div><div class="ttdef"><b>Definition:</b> keymap.hpp:116</div></div>
+<div class="ttc" id="struct__Wolframe_1_1types_1_1keystring_html_a1ebbf3b785950680e302a610ddab4004"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keystring.html#a1ebbf3b785950680e302a610ddab4004">_Wolframe::types::keystring::keystring</a></div><div class="ttdeci">keystring()</div><div class="ttdef"><b>Definition:</b> keymap.hpp:58</div></div>
 <div class="ttc" id="struct__Wolframe_1_1types_1_1traits_1_1is__back__insertion__sequence_html"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1traits_1_1is__back__insertion__sequence.html">_Wolframe::types::traits::is_back_insertion_sequence</a></div><div class="ttdef"><b>Definition:</b> traits.hpp:43</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 5 2013 17:18:05 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Dec 13 2013 09:44:44 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
@@ -295,6 +299,17 @@ Generated on Thu Dec 5 2013 17:18:05 for Wolframe by &#160;<a href="http://www.d
 <script>jQuery(document).ready(function($){ $('img').removeAttr('width height'); });</script>
 <script src="/layout/scripts/jquery-mobilemenu.min.js"></script>
 <script src="/layout/scripts/custom.js"></script>
+<!-- Google analytics tracking -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-46433226-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
 <!-- Tweeter follow script -->
 <script>
 	!function( d, s, id )	{
