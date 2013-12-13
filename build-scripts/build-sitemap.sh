@@ -15,7 +15,7 @@ find . -type f -name '*.html' | \
 	grep -v 404.html | sed 's|^\./||g' | \
 	grep -v doxygen | \
 	xargs stat --format="%n %y" | \
-	awk 'BEGIN {FS="[ ]"} {print "\t<url>\n\t\t<loc>http://wolframe.net/"$1"</loc>\n\t\t<lastmod>"$2"</lastmod>\n\t\t<changefreq>daily</changefreq>\n\t\t<priority>0.5</priority>\n\t</url>"}' \
+	awk 'BEGIN {FS="[ ]"} {print "\t<url>\n\t\t<loc>http://www.wolframe.net/"$1"</loc>\n\t\t<lastmod>"$2"</lastmod>\n\t\t<changefreq>daily</changefreq>\n\t\t<priority>0.5</priority>\n\t</url>"}' \
 	>> sitemap.xml
 
 echo "</urlset>" >> sitemap.xml
