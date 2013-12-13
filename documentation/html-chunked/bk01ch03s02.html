@@ -58,14 +58,14 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.2. Functions in .NET</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch03.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Functions</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch03s03.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1392930780"></a>3.2. Functions in .NET</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1392931100"></a>3.2.1. Introduction</h3></div></div></div><p>You can write functions for the logic tier of <span class="application">Wolframe</span> in languages based
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.2. Functions in .NET</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch03.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Functions</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch03s03.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1384237356"></a>3.2. Functions in .NET</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1384237676"></a>3.2.1. Introduction</h3></div></div></div><p>You can write functions for the logic tier of <span class="application">Wolframe</span> in languages based
 		on <span class="application">.NET</span> (<a class="ulink" href="http://www.microsoft.com/net" target="_top">http://www.microsoft.com/net</a>) like for example
 		<span class="application">C#</span> and <span class="application">VB.NET</span>.  
 		Because <span class="application">.NET</span> based libraries can only be called 
 		by <span class="application">Wolframe</span> only as a 
 		compiled and not as an interpreted language, you have to build a module out of your function 
 		implementation.
-		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1392964004"></a>3.2.2. Configuration</h3></div></div></div><p>For enabling .NET you have to declare the loading of the module 'mod_command_dotnet'
+		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1384270580"></a>3.2.2. Configuration</h3></div></div></div><p>For enabling .NET you have to declare the loading of the module 'mod_command_dotnet'
 		in the main section of the server configuration file.
 		</p><pre class="programlisting">
 		
@@ -73,52 +73,52 @@
 
 		</pre><p>
 		For the configuration of the .NET assemblies to be loaded, see section 'Configure .NET Modules'.
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1392965724"></a>3.2.3. Restrictions</h3></div></div></div><p>
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1384272316"></a>3.2.3. Restrictions</h3></div></div></div><p>
 		Currently <span class="application">.NET</span> procedures called from Wolframe
 		cannot call other Wolframe functions.
 		But we will provide the possibility to call Wolframe global function calls
 		like for example transaction function calls from <span class="application">.NET</span>
 		soon.
-		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1392967132"></a>3.2.4. Prepare .NET Modules</h3></div></div></div><p>
+		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1384273724"></a>3.2.4. Prepare .NET Modules</h3></div></div></div><p>
 	To make functions written in .NET callable by Wolframe, several steps have to be performed.
 	First the asseblies with the functions exported to Wolframe have to be build COM visible.
 	Wolframe itself is not a .NET application. Therefore it has to call .NET functions via
 	COM/.NET interop interface of the CLR.
-	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1392967964"></a>Make Assemblies COM visible</h4></div></div></div><p>To make the .NET functions called from Wolframe COM visible, you have to tick
+	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1384274556"></a>Make Assemblies COM visible</h4></div></div></div><p>To make the .NET functions called from Wolframe COM visible, you have to tick
 		"Properties/Assembly Information" the switch "Make assembly COM visible". Furthermore
 		every object and method that is part of the exported API (also objects used as parameters)
 		has to be tagged in the source as COM visible with <code class="code">[ComVisible(true)]</code>.
-		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1392969052"></a>Tag Exported Objects with a Guid</h4></div></div></div><p>Each object that is part of the exported API has to be tagged with a global unique
+		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1384275644"></a>Tag Exported Objects with a Guid</h4></div></div></div><p>Each object that is part of the exported API has to be tagged with a global unique
 		identifier (Guid) in order to be adressable. Modules with .NET functions will have to be globally
 		registered and the objects need to be identified by the Guid because that's the only way
 		to make the record info structure visible for Wolframe. The record info structure is
 		needed to serialize/deserialize .NET objects from another interpreter context that
 		is not registered for .NET. There are many ways to create a Guid and
 		tag an object like this: <code class="code">[Guid("390E047F-36FD-4F23-8CE8-3A4C24B33AD3")]</code>.
-		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1392970468"></a>Add Marshalling Tags to Values</h4></div></div></div><p>For marshalling function calls correctly, Wolframe needs
+		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1384277020"></a>Add Marshalling Tags to Values</h4></div></div></div><p>For marshalling function calls correctly, Wolframe needs
 		tags for every parameter and member of a sub structure of a parameter
 		of methods exported as functions.
 		The following table lists the supported types and their marshalling tags:
-		</p><div class="table"><a id="idp1392971268"></a><p class="title"><strong>Table 3.1. Marshalling Tags</strong></p><div class="table-contents"><table summary="Marshalling Tags" border="1"><colgroup><col /><col /></colgroup><thead><tr><th>.NET Type</th><th>Marshalling Tag</th></tr></thead><tbody><tr><td>I2</td><td><code class="code">[MarshalAs(UnmanagedType.I2)]</code></td></tr><tr><td>I4</td><td><code class="code">[MarshalAs(UnmanagedType.I4)]</code></td></tr><tr><td>I8</td><td><code class="code">[MarshalAs(UnmanagedType.I8)]</code></td></tr><tr><td>UI2</td><td><code class="code">[MarshalAs(UnmanagedType.UI2)]</code></td></tr><tr><td>UI4</td><td><code class="code">[MarshalAs(UnmanagedType.UI4)]</code></td></tr><tr><td>UI8</td><td><code class="code">[MarshalAs(UnmanagedType.UI8)]</code></td></tr><tr><td>R4</td><td><code class="code">[MarshalAs(UnmanagedType.R4)]</code></td></tr><tr><td>R8</td><td><code class="code">[MarshalAs(UnmanagedType.R8)]</code></td></tr><tr><td>BOOL</td><td><code class="code">[MarshalAs(UnmanagedType.BOOL)]</code></td></tr><tr><td>string</td><td><code class="code">[MarshalAs(UnmanagedType.BStr)]</code></td></tr><tr><td>RECORD</td><td><p>no tag needed</p></td></tr><tr><td>array of structures</td><td><code class="code">[MarshalAs(UnmanagedType.SafeArray, SafeArraySubType = VarEnum.VT_RECORD)]</code></td></tr><tr><td>array of strings</td><td><code class="code">[MarshalAs(UnmanagedType.SafeArray, SafeArraySubType = VarEnum.VT_BSTR)]</code></td></tr><tr><td>array of XX (XX=I2,I4,I8,..)</td><td><code class="code">[MarshalAs(UnmanagedType.SafeArray, SafeArraySubType = VarEnum.VT_XX)]</code></td></tr></tbody></table></div></div><br class="table-break" /><p>Decimal floating point and numeric types (DECIMAL) are not yet supported, but
-		will soon be available.</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1392983908"></a>Create a Type Library</h4></div></div></div><p>For making the API introspectable by Wolframe, we have to create a TLB
+		</p><div class="table"><a id="idp1384277820"></a><p class="title"><strong>Table 3.1. Marshalling Tags</strong></p><div class="table-contents"><table summary="Marshalling Tags" border="1"><colgroup><col /><col /></colgroup><thead><tr><th>.NET Type</th><th>Marshalling Tag</th></tr></thead><tbody><tr><td>I2</td><td><code class="code">[MarshalAs(UnmanagedType.I2)]</code></td></tr><tr><td>I4</td><td><code class="code">[MarshalAs(UnmanagedType.I4)]</code></td></tr><tr><td>I8</td><td><code class="code">[MarshalAs(UnmanagedType.I8)]</code></td></tr><tr><td>UI2</td><td><code class="code">[MarshalAs(UnmanagedType.UI2)]</code></td></tr><tr><td>UI4</td><td><code class="code">[MarshalAs(UnmanagedType.UI4)]</code></td></tr><tr><td>UI8</td><td><code class="code">[MarshalAs(UnmanagedType.UI8)]</code></td></tr><tr><td>R4</td><td><code class="code">[MarshalAs(UnmanagedType.R4)]</code></td></tr><tr><td>R8</td><td><code class="code">[MarshalAs(UnmanagedType.R8)]</code></td></tr><tr><td>BOOL</td><td><code class="code">[MarshalAs(UnmanagedType.BOOL)]</code></td></tr><tr><td>string</td><td><code class="code">[MarshalAs(UnmanagedType.BStr)]</code></td></tr><tr><td>RECORD</td><td><p>no tag needed</p></td></tr><tr><td>array of structures</td><td><code class="code">[MarshalAs(UnmanagedType.SafeArray, SafeArraySubType = VarEnum.VT_RECORD)]</code></td></tr><tr><td>array of strings</td><td><code class="code">[MarshalAs(UnmanagedType.SafeArray, SafeArraySubType = VarEnum.VT_BSTR)]</code></td></tr><tr><td>array of XX (XX=I2,I4,I8,..)</td><td><code class="code">[MarshalAs(UnmanagedType.SafeArray, SafeArraySubType = VarEnum.VT_XX)]</code></td></tr></tbody></table></div></div><br class="table-break" /><p>Decimal floating point and numeric types (DECIMAL) are not yet supported, but
+		will soon be available.</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1384290460"></a>Create a Type Library</h4></div></div></div><p>For making the API introspectable by Wolframe, we have to create a TLB
 		(Type Library) file from the assembly (DLL) after build. The type library has
 		to be recreated every time the module interface (API) changes. The type library is
 		created with the program <code class="code">tlbexp</code>. All created type library (.tlb) file
 		that will be loaded with the same runtime environment have to be copied into
 		the same directory. They will be referenced for introspection in the 
 		configuration. The configuration of .NET will be explained later.
-		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1392985220"></a>Register the Type Library</h4></div></div></div><p>The type library created with <code class="code">tlbexp</code> has also to be registered.
+		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1384291772"></a>Register the Type Library</h4></div></div></div><p>The type library created with <code class="code">tlbexp</code> has also to be registered.
 		For this you call the program <code class="code">regtlibv12</code> with your type library file
 		(.tlb file) as argument. The type libary fegistration has to be repeated when
 		the the module interface (API) changes.
-		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1392986452"></a>Register the Assembly in the GAC</h4></div></div></div><p>Wolframe does not accept local assemblies. In order to be addressable over
+		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1384293004"></a>Register the Assembly in the GAC</h4></div></div></div><p>Wolframe does not accept local assemblies. In order to be addressable over
 		the type library interface assemblies need to be put into the global assembly cache (GAC).
 		Unfortunately this has to be repeated every time the assembly binary changes.
 		There is no way around. For registration in the GAC you have to call the program
 		<code class="code">gacutil /if &lt;assemblypath&gt;</code> with your assembly path &lt;assemblypath&gt;
 		as argument. Furthermore the command <code class="code">gacutil</code> has to be called from
 		administrator command line.
-		</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1392988116"></a>3.2.5. Configure .NET Modules</h3></div></div></div><p>
+		</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1384294668"></a>3.2.5. Configure .NET Modules</h3></div></div></div><p>
 	.NET modules are grouped together in a configuration block that specifies the configuration
 	of the Microsoft Common Language Runtime (CLR) used for .NET interop calls. The configuration
 	block has the header <code class="code">runtimeEnv dotNET</code> and configures the version of the 

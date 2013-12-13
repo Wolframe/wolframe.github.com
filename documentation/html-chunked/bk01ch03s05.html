@@ -58,12 +58,12 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.5. Functions in Native C++</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch03s04.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Functions</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch04.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1393124276"></a>3.5. Functions in Native C++</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1393124596"></a>3.5.1. Introduction</h3></div></div></div><p>You can write functions for the logic tier of <span class="application">Wolframe</span> with <span class="application">C++</span>. 
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.5. Functions in Native C++</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch03s04.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Functions</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch04.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1384430908"></a>3.5. Functions in Native C++</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1384431228"></a>3.5.1. Introduction</h3></div></div></div><p>You can write functions for the logic tier of <span class="application">Wolframe</span> with <span class="application">C++</span>. 
 		Because native <span class="application">C++</span> is by nature a compiled and not an
 		interpreted language, you have to build a module out of your function implementation.
-		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1393114036"></a>3.5.2. Prerequisites</h3></div></div></div><p>For native C++ you need a C++ build system with compiler and linker or an integrated
+		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1384420668"></a>3.5.2. Prerequisites</h3></div></div></div><p>For native C++ you need a C++ build system with compiler and linker or an integrated
 	development environment for C++. 
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1393114764"></a>3.5.3. Declaring Functions</h3></div></div></div><p>
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1384421396"></a>3.5.3. Declaring Functions</h3></div></div></div><p>
 		Form functions declared in C++ have two arguments. The output structure to fill
 		is passed by reference as first and the input structure passed is by value.
 		The input structure copy should not be modified by the callee. 
@@ -75,7 +75,7 @@
 		is not complete because the input output structures need to be declared with some
 		additional attributes needed for introspection. We will explain this in the following
 		section.
-	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1393158412"></a>Example Function Declaration</h4></div></div></div><p>The function takes a structure as input and writes the result into an
+	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1384465044"></a>Example Function Declaration</h4></div></div></div><p>The function takes a structure as input and writes the result into an
 		output structure. In this example input and output type are the same, but this
 		is not required. It's just the same here for simplicity. 
 		</p><p>
@@ -103,13 +103,13 @@ struct ProcessCustomer
 };
 
 
-		</pre></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1393161932"></a>3.5.4. Input/Output Data Structures</h3></div></div></div><p>For defining input and output parameter structures in <span class="application">C++</span> you have to define the 
+		</pre></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1384468564"></a>3.5.4. Input/Output Data Structures</h3></div></div></div><p>For defining input and output parameter structures in <span class="application">C++</span> you have to define the 
 		structure and its serialization description. The serialization description is a static 
 		function <code class="code">getStructDescription</code> without arguments returning a const structure that describes 
 		what element names to bind to which structure elements.
 	</p><p>
 		The following example shows a form function parameter structure defined in C++.
-	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1393163604"></a>Header File</h4></div></div></div><p>Declares the structure and the serialization description of the structure.
+	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1384470236"></a>Header File</h4></div></div></div><p>Declares the structure and the serialization description of the structure.
 		Structures may contain structures with their own serialization description.</p><pre class="programlisting">
 		
 #include "serialize/struct/filtermapBase.hpp"
@@ -132,7 +132,7 @@ struct Customer
 }}//namespace
 
 
-		</pre></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1393165268"></a>Source File</h4></div></div></div><p>Declares 'ID' as attribute and name, canonical_Name, country, locality as tags. 
+		</pre></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1384471900"></a>Source File</h4></div></div></div><p>Declares 'ID' as attribute and name, canonical_Name, country, locality as tags. 
 		The '--' operator marks the end of attributes section and the start of content 
 		section.</p><pre class="programlisting">
 		
@@ -164,10 +164,10 @@ const serialize::StructDescriptionBase* Customer::getStructDescription()
 }
 
 
-		</pre></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1393166972"></a>3.5.5. Writing the Module</h3></div></div></div><p>Now we have all pieces together to build a loadable
+		</pre></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1384473604"></a>3.5.5. Writing the Module</h3></div></div></div><p>Now we have all pieces together to build a loadable
 	<span class="application">Wolframe</span> module with our example C++ function. The following example shows what you have to
 	declare in the main module source file.
-	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1393167996"></a>Module Declaration</h4></div></div></div><p>The module declaration needs to inlcude <code class="code">appdevel.hpp</code> and
+	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1384474628"></a>Module Declaration</h4></div></div></div><p>The module declaration needs to inlcude <code class="code">appdevel.hpp</code> and
 		of course all headers with the function and data structure declarations needed.
 		The module starts with a header macro and ends with a footer macro.
 		Inbetween is the declaration of an array of functions of type <code class="code">module::createBuilderFunc</code>.
@@ -190,10 +190,10 @@ static module::createBuilderFunc objdef[] =
 CPP_APPLICATION_FORM_FUNCTION_MODULE_END(1,objdef)
 
 
-		</pre></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1393170292"></a>3.5.6. Building the Module</h3></div></div></div><p>For building the module we have to include all modules introduced here and
+		</pre></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1384476924"></a>3.5.6. Building the Module</h3></div></div></div><p>For building the module we have to include all modules introduced here and
 	to link at against the wolframe serialization library (wolframe_serialize)
 	and the wolframe core library (wolframe).
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1393171068"></a>3.5.7. Using the Module</h3></div></div></div><p>The module built can be loaded as the other modules by declaring it in the wolframe
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1384477700"></a>3.5.7. Using the Module</h3></div></div></div><p>The module built can be loaded as the other modules by declaring it in the wolframe
 	LoadModules section of the configuration. Simply list it there with 
 	<code class="code">module &lt;yourModuleName&gt;</code> with &lt;yourModuleName&gt; being the name
 	or path to your module.
