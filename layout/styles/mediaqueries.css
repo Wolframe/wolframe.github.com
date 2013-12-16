@@ -29,6 +29,11 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 	#header #header-contact li{display:block; margin:15px 0 0 0; padding:0; border:none;}
 	#header #header-contact li:first-child{margin:0;}
 
+	#rslides imgcontainer { display: block; float: left; width: 95%; height: 180px; }
+	#rslides imgcontainer figimage img { width: 100%; height: auto; }
+	#rslides imgcontainer figimage img { width: auto; height: 165px; }
+	#rslides textcontainer{ width: 95%; padding: 10px; }
+
 	.calltoaction div{margin-top:30px;}
 	.calltoaction div:first-child{margin-top:0;}
 	.calltoaction.opt4{font-size:1.5em;}
@@ -69,6 +74,11 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 	#header #header-contact, #header #header-search{display:block; width:100%; float:none; margin:0 0 15px 0; padding:0;}
 	#header #header-contact, #header #header-search{margin:30px 0 0 0;}
 
+	#rslides imgcontainer { display: block; float: left; width: 95%; height: 180px; }
+	#rslides imgcontainer figimage img { width: 100%; height: auto; }
+	#rslides imgcontainer figimage img { width: auto; height: 165px; }
+	#rslides textcontainer{ width: 95%; padding: 15px; }
+
 	#sidebar_2 ul.nospace li{display:inline; float:left; width:30%; margin:0 0 0 5%;}
 	#sidebar_2 ul.nospace li:first-child{margin-left:0;}
 
@@ -92,6 +102,11 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 
 @media screen and (min-width:616px) and (max-width:800px) {
 	#header, #topnav, #intro, #container, #footer, #copyright{max-width:95%; margin:0 auto;}
+
+	#rslides imgcontainer { display: block; float: left; width: 95%; height: 205px; }
+	#rslides imgcontainer figimage img { width: 100%; height: auto; }
+	#rslides imgcontainer figimage img { width: auto; height: 180px; }
+	#rslides textcontainer{ width: 95%; padding: 20px; }
 
 	#topnav ul{display:none;}
 	form input[type="submit"]{margin-bottom:10px;}
