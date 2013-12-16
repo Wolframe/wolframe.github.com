@@ -33,6 +33,7 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 	#rslides imgcontainer figimage img { width: 100%; height: auto; }
 	#rslides imgcontainer figimage img { width: auto; height: 165px; }
 	#rslides textcontainer{ width: 95%; padding: 10px; }
+	#rslides imgcontainer fignumber{ padding: 10px; }
 
 	.calltoaction div{margin-top:30px;}
 	.calltoaction div:first-child{margin-top:0;}
@@ -78,6 +79,7 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 	#rslides imgcontainer figimage img { width: 100%; height: auto; }
 	#rslides imgcontainer figimage img { width: auto; height: 165px; }
 	#rslides textcontainer{ width: 95%; padding: 15px; }
+	#rslides imgcontainer fignumber{ padding: 15px; }
 
 	#sidebar_2 ul.nospace li{display:inline; float:left; width:30%; margin:0 0 0 5%;}
 	#sidebar_2 ul.nospace li:first-child{margin-left:0;}
@@ -107,6 +109,7 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 	#rslides imgcontainer figimage img { width: 100%; height: auto; }
 	#rslides imgcontainer figimage img { width: auto; height: 180px; }
 	#rslides textcontainer{ width: 95%; padding: 20px; }
+	#rslides imgcontainer fignumber{ padding: 20px; }
 
 	#topnav ul{display:none;}
 	form input[type="submit"]{margin-bottom:10px;}
@@ -125,12 +128,14 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 
 @media screen and (min-width:960px) {
 	#header, #topnav, #intro, #container, #footer, #copyright{max-width:95%; margin:0 auto;}
+	#rslides imgcontainer fignumber{ padding: 25px; }
 }
 
 /* 1028px */
 
 @media screen and (min-width:1028px) {
 	#header, #topnav, #intro, #container, #footer, #copyright{max-width:95%; margin:0 auto;}
+	#rslides imgcontainer fignumber{ padding: 25px; }
 }
 
 /* 1200px */
