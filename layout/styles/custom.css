@@ -17,9 +17,9 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 #rslides imgcontainer fignumber{ display: block; position: relative; float: left; overflow: hidden; }
 #rslides imgcontainer fignumber h2{ font-size: 3.2em; color: #467aa7; margin-bottom: 10px; font-weight: bold; text-transform: none; }
 
-#rslides textcontainer{ width: 45%; padding: 30px; }
+#rslides textcontainer{ width: 45%; }
 #rslides textcontainer{ display: block; position: relative; float: right; overflow: hidden; }
-#rslides textcontainer h2{ font-size: 3.2em; color: #467aa7; margin-bottom: 10px; font-weight: bold; text-transform: none; }
+#rslides textcontainer h2{ font-size: 3.2em; color: #467aa7; margin-bottom: 10px; font-weight: bold; text-transform: none; padding: 30px; }
 #rslides textcontainer p{ font-size: 2em; line-height: 1.6em; }
 #rslides textcontainer .more{ color: #2A5A7A; margin-top: 10px; line-height: normal; }
 
