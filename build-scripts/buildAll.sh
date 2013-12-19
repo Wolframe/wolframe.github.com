@@ -17,4 +17,6 @@
 ./build-doxygen-templates.sh
 ./build-docbook-xmlnippets.sh
 
+./build-sitemap.sh
+
 mv -f *.html ..
