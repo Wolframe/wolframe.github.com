@@ -58,17 +58,17 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.4. Step 4 - Implement server side customer list</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch02s03.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Steps</th><td width="20%" align="right"> <a accesskey="n" href="ch02s05.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1404953828"></a>2.4. Step 4 - Implement server side customer list</h2></div></div></div><p>
-		We want to store the customer data in a sqlite database, so we have to
-		prepare the server:
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.4. Step 4 - Implement server side customer list</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch02s03.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Steps</th><td width="20%" align="right"> <a accesskey="n" href="ch02s05.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1400382684"></a>2.4. Step 4 - Implement server side customer list</h2></div></div></div><p>
+		We want to store the customer data in a Sqlite database, so we have to
+		tell the server to load the database module for Sqlite:
 		</p><pre class="programlisting">
 	LoadModules {
 		module mod_db_sqlite3
 	}
 		</pre><p>
 	</p><p>
-		This loads the database driver for Sqlite3. Now we also have to create
-		a database and populate the following schema:
+		Now we also have to create a database and populate it with the
+		following schema:
 
 		</p><pre class="programlisting">
 	CREATE TABLE Customer (
@@ -118,7 +118,7 @@
 		use:
 
 		</p><pre class="programlisting">
-	wolframed -p -c tutorial.conf
+	/usr/sbin/wolframed -p -c tutorial.conf
 		</pre><p>
 	</p><p>
 		We see:
@@ -148,17 +148,21 @@
 		database sqlitedb
 		cmdhandler {
 			directmap {
-				program tutorial.directmap
+				filter libxml2
+				program tutorial.dmap
 			}
 		}
 	}
 		</pre><p>
 	</p><p>
-		Now we have to a file <code class="filename">tutorial.directmap</code>.
+		The "filter" directory specifies that the command handler should
+		use the libxml2 module to parse XML requests.
+	</p><p>
+		Now we have to create a file <code class="filename">tutorial.dmap</code>.
 		This file maps the requests to the corresponding transaction definitions:
 
 		</p><pre class="programlisting">
-	CustomerListRequest = SelectCustomerList( xml );
+	COMMAND CustomerListRequest CALL SelectCustomerList;
 		</pre><p>
 
 		This means that we map the 'CustomerListRequest' request which gives us a list
@@ -195,12 +199,12 @@
 
 	Processor {
 		..
-		program CustomerListRequest.simpleform	
+		program CustomerListRequest.sfrm	
 		..
 	}
 		</pre><p>
 
-	and we add a simple form file <code class="filename">CustomerListRequest.simpleform</code>,
+	and we add a simple form file <code class="filename">CustomerListRequest.sfrm</code>,
 	for now we can leave it empty but for the root element:
 
 		</p><pre class="programlisting">
@@ -211,9 +215,16 @@
 	}
 		</pre><p>
 	</p><p>
-		Now we create a telnet request, which contains basic authentication and
-		a request for the list of customers, called
-		<code class="filename">CustomerListRequest.netcat</code>:
+		The server shows now a message about the transaction function it
+		loaded:
+		
+		</p><pre class="programlisting">
+	DEBUG: Loaded transaction function 'SelectCustomerList'
+		</pre><p>
+	</p><p>
+		Now we create a telnet request which contains pseudo authentication credentials 
+		and a request for the list of customers, called
+		<code class="filename">~/tutorial/client/CustomerListRequest.netcat</code>:
 
 		</p><pre class="programlisting">
 	AUTH
@@ -236,16 +247,17 @@
 		and we get:
 
 		</p><pre class="programlisting">
-	Wolframe version 0.0.5 OS
+	Wolframe
 	OK
 	MECHS NONE
 	OK authorization
 	ANSWER
 	&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
 	&lt;list/&gt;
-
+	
 	.
 	OK REQUEST CustomerListRequest
+	BYE
 
 		</pre><p>
 	</p><p>
@@ -263,7 +275,8 @@
 	sqlite3 tutorial.db &lt; data.sql
 		</pre><p>
 	</p><p>
-		When we reexecute the netcat command we see:
+		When we reexecute the netcat command we see that the answer contains now
+		the list of customers:
 
 		</p><pre class="programlisting">
 	&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
