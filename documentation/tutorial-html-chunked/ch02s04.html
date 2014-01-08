@@ -58,7 +58,7 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.4. Step 4 - Implement server side customer list</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch02s03.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Steps</th><td width="20%" align="right"> <a accesskey="n" href="ch02s05.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1400382684"></a>2.4. Step 4 - Implement server side customer list</h2></div></div></div><p>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.4. Step 4 - Implement server side customer list</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch02s03.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Steps</th><td width="20%" align="right"> <a accesskey="n" href="ch02s05.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1403007924"></a>2.4. Step 4 - Implement server side customer list</h2></div></div></div><p>
 		We want to store the customer data in a Sqlite database, so we have to
 		tell the server to load the database module for Sqlite:
 		</p><pre class="programlisting">
@@ -155,8 +155,8 @@
 	}
 		</pre><p>
 	</p><p>
-		The "filter" directory specifies that the command handler should
-		use the libxml2 module to parse XML requests.
+		The "filter" directive denotes that the command handler should
+		use the "libxml2" module to parse XML requests.
 	</p><p>
 		Now we have to create a file <code class="filename">tutorial.dmap</code>.
 		This file maps the requests to the corresponding transaction definitions:
@@ -167,7 +167,7 @@
 
 		This means that we map the 'CustomerListRequest' request which gives us a list
 		of customers to the TDL transaction 'SelectCustomerList'. This also means
-		we need to configure the TDL program in the server:
+		we need to configure a TDL program in the server:
 
 		</p><pre class="programlisting">
 	Processor {
@@ -264,7 +264,7 @@
 		We got an empty list of customers. So we have successfully configured
 		the server for our first command.
 	</p><p>
-		Let's also add some demo data now:
+		Let's add some customer data now:
 
 		</p><pre class="programlisting">
 	cat &gt; data.sql

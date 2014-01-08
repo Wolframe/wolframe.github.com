@@ -58,8 +58,8 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.5. Step 5 - Implement client side customer list</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch02s04.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Steps</th><td width="20%" align="right"> <a accesskey="n" href="ch02s06.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1400414756"></a>2.5. Step 5 - Implement client side customer list</h2></div></div></div><p>
-		It's time now to get something visual working, so we start to add a first
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.5. Step 5 - Implement client side customer list</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch02s04.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Steps</th><td width="20%" align="right"> <a accesskey="n" href="ch02s06.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1403039020"></a>2.5. Step 5 - Implement client side customer list</h2></div></div></div><p>
+		It's time now to get something working visually, so we start to add a first
 		simple interface to our wolfclient.
 	</p><p>
 		For this we need the 'Qt designer'. We open the file 
@@ -73,8 +73,8 @@
 		first page with the "Customer List" button. Pressing it gives the error
 		message:
 	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step5_customer_button_pressed_error.png" /></div></div><p>
-		This means we have to define a new form called
-		<code class="filename">customers.ui</code>, which will
+		This means we have to define a new form
+		<code class="filename">~/tutorial/client/customers.ui</code>, which will
 		show the list of customers, for now we leave it empty. When we start the
 		wolfclient and press the "Customer List" button again, we see that
 		the form gets changed to the "customer" form (empty).
@@ -87,31 +87,67 @@
 		We also set 'selectionMode' to 'SingleSelection' and 'selectionBehaviour'
 		to 'selectRows' to get the default expected behaviour of a list.
 	</p><p>
-		Now we change the columns of the list (by double clicking into the widget data area):
+		Now we change the columns of the list (context menu "Edit items" in the widget data area):
 	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step5_customer_column_names.png" /></div></div><p>
-		Now we add the 'doctype' and 'rootelement' dynamic properties to the
-		customer list widget, so that it loads the domain when the form is loaded.
-		The request to send is the 'CustomerListRequest' with root element 'customer'
-		we have configured before in the server:
-	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step5_customer_doctype_rootelement.png" /></div></div><p>
-		When we start the wolfclient, we get a funny error message:
-	</p><pre class="programlisting">
-	Error calling procedure: unknown attribute  (id) at /customer
-	</pre><p>
-		This means we have to configure the id attribute in the server in the simpleform.
-		The wolfclient adds an id automatically to the customer tag in the request.
+		We can now open the wolfclient and press the button and the customer list
+		is loaded. But it's empty, we have first to fill it with data of our customers.
 	</p><p>
-		We declare the customer to have an optional 'id' attribute in
-		<code class="filename">CustomerListRequest.simpleform</code>:
-	</p><pre class="programlisting">
-	FORM CustomerListRequest
-	{
-		customer {
-			id ?@string
-		}
-	}
-	</pre><p>
-		If we restart the server and run wolfclient again we get the desired result:
+		So we add a string property 'action' to the widget 'customer' containing
+		the following value:
+
+		</p><pre class="programlisting">
+	CustomerListRequest customer { }
+		</pre><p>
+		
+		We define the 'action' to be executed, when the form is loaded. In our
+		case we want to execute a 'CustomerListRequest'. The root element of the
+		request should be customer:
+	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step5_customer_action.png" /></div></div><p>
+		When we reexecute the wolfclient still nothing happens. So we
+		enable the 'Developer Mode' in the settings in the tab 'Developer'.
+		Then we see that the XML request has been constructed:
+	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step5_customers_list_debug.png" /></div></div><p>
+		We see that the request was ok, but that answer has errors:
+	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step5_customers_list_debug2.png" /></div></div><p>
+		The reason for this is, that we have to tell the client, how to map the
+		elements of the result structure in the XML back to widgets and properties
+		of the widgets.
+	</p><p>
+		We want to map the following XML:
+
+		</p><pre class="programlisting">
+	&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+	&lt;list&gt;
+	  &lt;customer&gt;
+	    &lt;id&gt;1&lt;/id&gt;
+	    &lt;name&gt;Dr Who&lt;/name&gt;
+	    &lt;address&gt;Blue Police Box&lt;/address&gt;
+	  &lt;/customer&gt;
+	  &lt;customer&gt;
+	    &lt;id&gt;2&lt;/id&gt;
+	    &lt;name&gt;John Smith&lt;/name&gt;
+	    &lt;address&gt;The Wheel in Space&lt;/address&gt;
+	  &lt;/customer&gt;
+	&lt;/list&gt;
+
+		</pre><p>
+		
+		We reference the root element and the tag and attribute values into the properties of the list widget 'customer'
+		(in our case the rows called 'name' and 'address'). This addressing schema belongs into the 
+		dynamic property 'answer' similar to the 'action' property:
+		
+		</p><pre class="programlisting">
+	Customer list {customer[] {id={?}; name{{row.name}}; address{{row.address}} } }
+		</pre><p>
+		
+		The '?' is used for elements in the XML we don't need at the moment.
+		'row' is a property of the <code class="classname">QTreeWidget</code> widget
+		named 'customer' and iterates through all rows in the list. Each row
+		has sub-properties 'name' and 'address' which represent
+		the corresponding column:
+	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step5_customer_answer.png" /></div></div><p>
+		When we reexecute the wolfclient and click on the customer list we
+		see that everything went ok this time:
 	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step5_customers_list.png" /></div></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch02s04.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="ch02.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="ch02s06.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">2.4. Step 4 - Implement server side customer list </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 2.6. Step 6 - Show customer</td></tr></table></div></div></div>
 
 <!-- Footer -->
