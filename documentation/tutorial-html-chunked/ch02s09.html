@@ -58,23 +58,27 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.9. Step 9 - Delete a customer</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch02s08.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Steps</th><td width="20%" align="right"> </td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1396650932"></a>2.9. Step 9 - Delete a customer</h2></div></div></div><p>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.9. Step 9 - Delete a customer</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch02s08.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Steps</th><td width="20%" align="right"> </td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1401592668"></a>2.9. Step 9 - Delete a customer</h2></div></div></div><p>
 		We want to get rid of customers. For this we have to change little
 		in the <code class="filename">custorms.ui</code> form: a button "Delete" with
-		takes the following properties:
-		"action" set to "delete", "doctype" set to "CustomerDelete",
-		"rootelement" to "customer", "form" to "customers" (this is the simplest
-		way to reload the list of customers after the deletion) and "id" to
-		"{customer.id}":
+		the following 'action' property:
+
+		</p><pre class="programlisting">
+		CustomerDelete customer {id={customer.selected}}
+		</pre><p>
+		
+		We also want to reload the customer list after deletion. For now we
+		just set add a 'form' property with the value of 'customer',
+		this is the simplest way to reload the list of customers after the deletion:
 	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step9_customers_delete_button.png" /></div></div><p>
-		We add another map for the 'deleteCustomerDelete' request in <code class="filename">tutorial.directmap</code>:
+		We add another map for the 'CustomerDelete' request in <code class="filename">tutorial.dmap</code>:
 
 	</p><pre class="programlisting">
-	deleteCustomerDelete = DeleteCustomer( xml );
+	COMMAND CustomerDelete CALL DeleteCustomer;
 	</pre><p>
 	
-		A new <code class="filename">CustomerDelete.simpleform</code> which allows us only the specify an 'id'
-		attribute of the customer to delete:
+		We also add a new form 'CustomerDelete' to the simpleform file <code class="filename">Customer.sfrm</code>
+		which allows us only the specify an 'id' attribute of the customer to delete:
 
 	</p><pre class="programlisting">
 	FORM CustomerDelete
@@ -85,24 +89,14 @@
 	}
 
 	</pre><p>
-
-		and in <code class="filename">tutorial.conf</code>:
-
-	</p><pre class="programlisting">
-	Processor {
-		..
-		program CustomerDelete.simpleform
-		..
-	}
-	</pre><p>
 	
-		Finally follows the implementation of the delete transaction
+		Finally we add the implementation of the delete transaction
 		in <code class="filename">Customer.tdl</code>:
 
 	</p><pre class="programlisting">
 	TRANSACTION DeleteCustomer
 	BEGIN
-		DO DELETE FROM Customer WHERE id=$(customer/id);
+		DO DELETE FROM Customer WHERE id=$(id);
 	END
 	</pre><p>
 	
