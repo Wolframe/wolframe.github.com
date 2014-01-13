@@ -12,8 +12,10 @@ cd build-scripts
 cp *webpage* ~/projects/Wolframe/docs/
 
 in 'Wolframe/docs':
-make clean doc-doxygen-webpage doc-html-webpage doc-pdf doc-epub
-(on Windows make doc for CHM)
+make clean all doc-doxygen-webpage doc-html-webpage
 rsync --delete-after -av doxygen/html-webpage/ XXX/wolframe.github.com/documentation/doxygen/
 rsync -av html-webpage/ XXX/wolframe.github.com/documentation/html-chunked/
 rsync -av html-tutorial-webpage/ XXX/wolframe.github.com/documentation/tutorial-html-chunked/
+rsync --delete-after -av images/Tutorial/ XXX/wolframe.github.com/documentation/tutorial-html-chunked/images/Tutorial/
+cp Wolfbook.pdf XXX/wolframe.github.com/documentation/.
+cp Tutorial.pdf XXX/wolframe.github.com/documentation/.

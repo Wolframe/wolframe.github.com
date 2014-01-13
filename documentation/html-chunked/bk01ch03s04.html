@@ -58,31 +58,44 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.4. Functions in Lua</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch03s03.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Functions</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch03s05.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1394151620"></a>3.4. Functions in Lua</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1394151964"></a>3.4.1. Introduction</h3></div></div></div><p>You can write functions for the logic tier of <span class="application">Wolframe</span> with <span class="application">Lua</span>. <span class="application">Lua</span> is a scripting language designed, implemented, and maintained
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.4. Functions in Lua</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch03s03.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Functions</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch03s05.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1402702332"></a>3.4. Functions in Lua</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1402702676"></a>3.4.1. Introduction</h3></div></div></div><p>You can write functions for the logic tier of <span class="application">Wolframe</span> with <span class="application">Lua</span>. <span class="application">Lua</span> is a scripting language designed, implemented, and maintained
 		at PUC-Rio in Brazil by Roberto Ierusalimschy, Waldemar Celes and Luiz Henrique de Figueiredo
 		(see <a class="ulink" href="http://www.lua.org/authors.html" target="_top">http://www.lua.org/authors.html</a>). A description of <span class="application">Lua</span> is not provided here.
 		For an introduction into programming with <span class="application">Lua</span> see <a class="ulink" href="http://www.lua.org" target="_top">http://www.lua.org</a>. The official manual which is also available as book
 		is very good. <span class="application">Wolframe</span> introduces some <span class="application">Lua</span> interfaces to access input and output and to execute functions.
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1394193892"></a>3.4.2. Configuration</h3></div></div></div><p>For enabling Lua you have to declare the loading of the module 'mod_command_lua'
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1402744468"></a>3.4.2. Configuration</h3></div></div></div><p>For enabling <span class="application">Lua</span> you have to declare the loading of the module 'mod_command_lua'
 		in the main section of the server configuration file.
 		</p><pre class="programlisting">
 		
     module mod_command_lua
 
 		</pre><p>
-		Each Lua script referenced has to be declared in the <code class="code">Processor</code>
+		Each <span class="application">Lua</span> script referenced has to be declared in the <code class="code">Processor</code>
 		section of the configuration with <code class="code">program &lt;sourcefile&gt;</code>.
-		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1394195988"></a>3.4.3. Declaring Functions</h3></div></div></div><p>For <span class="application">Lua</span> you do not have to declare anything in addition to the <span class="application">Lua</span> script. If you configure a <span class="application">Lua</span>
+		The script is recognized as <span class="application">Lua</span> script by the file extension ".lua".
+		Files without this extension cannot be loaded as <span class="application">Lua</span> scripts.
+		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1402748028"></a>3.4.3. Declaring Functions</h3></div></div></div><p>For <span class="application">Lua</span> we do not have to declare anything in addition to the 
+		<span class="application">Lua</span> script. If you configure a <span class="application">Lua</span>
 		script as program, all global functions declared in this script are declared as global form
 		functions. For avoiding name conflicts you should declare private functions
 		of the script as <code class="code">local</code>.
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1394197996"></a>3.4.4. Wolframe Provider Library</h3></div></div></div><p><span class="application">Wolframe</span> lets you access objects of the global context through
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1402750036"></a>3.4.4. Wolframe Provider Library</h3></div></div></div><p><span class="application">Wolframe</span> lets you access objects of the global context through
 		a library called <code class="code">provider</code> offering the following functions:
 
 		</p><table border="0" summary="Simple list" class="simplelist"><tr><td>Name</td><td>Parameter</td><td>Returns</td></tr><tr><td>form</td><td>name of the form</td><td>an instance of a form</td></tr><tr><td>normalizer</td><td>name of the normalize function</td><td>normalize function defined in a <span class="application">Wolframe</span> normalizer program</td></tr><tr><td>formfunction</td><td>name of the function</td><td>form function defined in a <span class="application">Wolframe</span> program or module</td></tr></table><p>
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1394202068"></a>3.4.5. Wolframe Global Objects</h3></div></div></div><p>Besides the provider library <span class="application">Wolframe</span> defines the following objects global in the script execution context:
-		</p><table border="0" summary="Simple list" class="simplelist"><tr><td>Name</td><td>Description</td></tr><tr><td>scope</td><td>function with an iterator as argument returning an iterator for iterating on the currently visited node and its children taking ownership on this sub iterator scope</td></tr><tr><td>logger</td><td>object with methods for logging or debugging</td></tr></table><p>
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1394204700"></a>3.4.6. Using Forms</h3></div></div></div><p>The provider function <code class="code">provider.form( )</code> with the name of the form as string as parameter returns an empty
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1402754108"></a>3.4.5. Serialization Iterators</h3></div></div></div><p>Some objects introduced in the following sections are accessible through
+		iterators. These are called serialization iterators and are <span class="application">Lua</span>
+		function closures. You should not mix them with the standard <span class="application">Lua</span>
+		iterators though the semantic is similar. Serialization iterators do not
+		return nodes of the tree as subtree objects but only the node data in the
+		order of a pre-order traversal. You can recursively iterate on the tree
+		and build the object during traversal if you want.
+		The returned elements of the serialization iterators are tuples with the following meaning:
+	</p><div class="table"><a id="idp1402755844"></a><p class="title"><strong>Table 3.3. Serialization Iterator Elements</strong></p><div class="table-contents"><table summary="Serialization Iterator Elements" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th>Tuple First Element</th><th>Tuple Second Element</th><th>Description</th></tr></thead><tbody><tr><td>NIL/false</td><td>string/number</td><td>Open (tag is second element)</td></tr><tr><td>NIL/false</td><td>NIL/false</td><td>Close</td></tr><tr><td>Any non NIL/false</td><td>string/number</td><td>Attribute assignment (value is first, tag is second element)</td></tr><tr><td>string/number</td><td>NIL/false</td><td>Content value (value is first element)</td></tr></tbody></table></div></div><br class="table-break" /></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1402761268"></a>3.4.6. Wolframe Global Objects</h3></div></div></div><p>Besides the provider library <span class="application">Wolframe</span> defines the following objects global in the script execution context:
+		</p><table border="0" summary="Simple list" class="simplelist"><tr><td>Name</td><td>Description</td></tr><tr><td>scope</td><td>function with an serialization iterator as 
+		argument returning a serialization iterator on the currently visited node 
+		and its children taking ownership on this sub scope</td></tr><tr><td>logger</td><td>object with methods for logging or debugging</td></tr></table><p>
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1402763908"></a>3.4.7. Using Forms</h3></div></div></div><p>The provider function <code class="code">provider.form( )</code> with the name of the form as string as parameter returns an empty
 		instance of a form. It takes the name of the form as string argument.
 		If you for example have a form configured called "employee" and you want to create an
 		employee object from a <span class="application">Lua</span> table, you call
@@ -103,7 +116,7 @@ bcf:fill( {surname='Hans', name='Muster', company='Wolframe'} )
 		but does not distinguish between attributes and content values. "relaxed" is the default and
 		checks only the existence of filled-in values in the form.
 		</p><p>
-		Given the following validation form:
+		Given the following validation form in simple form DDL syntax (see chapter "Forms"):
 			</p><pre class="programlisting">
 			
 FORM Employee
@@ -126,16 +139,19 @@ bc = provider.form( "employee" ):fill( {company='Wolframe'}, "strict" )
 
 			</pre><p>
 		</p><p>
-		To access the data in a form there are two form methods available. <code class="code">get()</code> returns an iterator on the form data similar
-		to the iterator on input. Same as for input there is a method <code class="code">value()</code> that returns the form data as <span class="application">Lua</span> data structure
+		To access the data in a form there are two form methods available.
+		<code class="code">get()</code> returns a serialization iterator on the form data.
+		There is also a method <code class="code">value()</code> that returns the form data as
+		<span class="application">Lua</span> data structure
 		(a <span class="application">Lua</span> table or atomic value).
-		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1394211772"></a>3.4.7. Form Functions</h3></div></div></div><p>
+		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1402770996"></a>3.4.8. Form Functions</h3></div></div></div><p>
 		For calling transactions or built-in functions loaded as modules the <span class="application">Lua</span> layer defines the
 		concept of functions. The provider function <code class="code">provider.formfunction</code> with the name of the function
-		as argument returns a <span class="application">Lua</span> function. This function takes a table or an iterator as argument
+		as argument returns a <span class="application">Lua</span> function. This function takes a table or a serialization iterator as argument
 		and returns a data form structure. The data in the returned form data structure can be
-		accessed with <code class="code">get()</code> that returns an iterator on the content and <code class="code">value()</code>
-		that returns a <span class="application">Lua</span> table or atomic value.
+		accessed with <code class="code">get()</code> that returns a serialization iterator on the content 
+		and <code class="code">value()</code> that returns a <span class="application">Lua</span> table or 
+		atomic value.
 		</p><p>
 		If you for example have a transaction called "insertEmployee" defined in a transaction description program
 		file declared in the configuration called "insertEmployee" and you want to call it with the 'employee'
@@ -152,17 +168,18 @@ output:print( t[ "id" ] )
 		The first line creates the function called "insertEmployee" as <span class="application">Lua</span> function.
 		The second calls the transaction, the third creates a <span class="application">Lua</span> table out of the result
 		and the fourth selects and prints the "id" element in the table.
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1394216772"></a>3.4.8. List of <span class="application">Lua</span> Objects</h3></div></div></div><p>This is a list of all objects and functions declared by <span class="application">Wolframe</span>:</p><div class="table"><a id="idp1394217972"></a><p class="title"><strong>Table 3.3. Data forms declared by DDL</strong></p><div class="table-contents"><table summary="Data forms declared by DDL" border="1"><colgroup><col /><col /><col /><col /></colgroup><thead><tr><th>Method Name</th><th>Arguments</th><th>Returns</th><th>Description</th></tr></thead><tbody><tr><td>get</td><td> </td><td>iterator (*)</td><td>Returns an iterator on the form elements</td></tr><tr><td>value</td><td> </td><td><span class="application">Lua</span> table</td><td>Returns the contents of the data form as <span class="application">Lua</span> table or atomic value</td></tr><tr><td>__tostring</td><td> </td><td>string</td><td>String representation of form for debugging</td></tr><tr><td>name</td><td> </td><td>string</td><td>Returns the global name of the form.
-					</td></tr><tr><td>fill</td><td><span class="application">Lua</span> table or iterator (*), optional validation mode (**)</td><td>the filled form (for concatenation)</td><td>Validates input and fills the input data into the form.</td></tr></tbody></table></div></div><br class="table-break" /><p>
-			(*) With iterator we mean an iterator as introduced in previous sections, returned by a Wolframe <span class="application">Lua</span> object 'get()' method.
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1402776068"></a>3.4.9. List of <span class="application">Lua</span> Objects</h3></div></div></div><p>This is a list of all objects and functions declared by <span class="application">Wolframe</span>:</p><div class="table"><a id="idp1402777268"></a><p class="title"><strong>Table 3.4. Data forms declared by DDL</strong></p><div class="table-contents"><table summary="Data forms declared by DDL" border="1"><colgroup><col /><col /><col /><col /></colgroup><thead><tr><th>Method Name</th><th>Arguments</th><th>Returns</th><th>Description</th></tr></thead><tbody><tr><td>get</td><td> </td><td>serialization iterator (*)</td><td>Returns a serialization iterator on the form elements</td></tr><tr><td>value</td><td> </td><td><span class="application">Lua</span> table</td><td>Returns the contents of the data form as <span class="application">Lua</span> table or atomic value</td></tr><tr><td>__tostring</td><td> </td><td>string</td><td>String representation of form for debugging</td></tr><tr><td>name</td><td> </td><td>string</td><td>Returns the global name of the form.
+					</td></tr><tr><td>fill</td><td><span class="application">Lua</span> table or 
+					serialization iterator (*), optional validation mode (**)</td><td>the filled form (for concatenation)</td><td>Validates input and fills the input data into the form.</td></tr></tbody></table></div></div><br class="table-break" /><p>
+			(*) See section "Serialization Iterator"
 		</p><p>
 			(**) "strict" (full validation), "complete" (only check for all non optional elements initialization) or "relaxed" (no validation except matching of input to elements)
-		</p><div class="table"><a id="idp1394226908"></a><p class="title"><strong>Table 3.4. Data forms returned by functions</strong></p><div class="table-contents"><table summary="Data forms returned by functions" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th>Method Name</th><th>Returns</th><th>Description</th></tr></thead><tbody><tr><td>get</td><td>iterator (*)</td><td>Returns an iterator on the form elements</td></tr><tr><td>value</td><td><span class="application">Lua</span> table or atomic value</td><td>Returns the contents of the data form as <span class="application">Lua</span> table or atomic value</td></tr><tr><td>__tostring</td><td>string</td><td>String representation of form for debugging</td></tr></tbody></table></div></div><br class="table-break" /><p>
-			(*) With iterator we mean an iterator as introduced in previous sections, returned by a Wolframe <span class="application">Lua</span> object 'get()' method.
-		</p><div class="table"><a id="idp1394232660"></a><p class="title"><strong>Table 3.5. Logger functions</strong></p><div class="table-contents"><table summary="Logger functions" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th>Method Name</th><th>Arguments</th><th>Description</th></tr></thead><tbody><tr><td>logger.printc</td><td>arbitrary list of arguments</td><td>Print arguments to standard console output</td></tr><tr><td>logger.print</td><td>loglevel (string) plus arbitrary list of arguments</td><td>log argument list with defined log level</td></tr></tbody></table></div></div><br class="table-break" /><div class="table"><a id="idp1394236436"></a><p class="title"><strong>Table 3.6. Global functions</strong></p><div class="table-contents"><table summary="Global functions" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th>Function Name</th><th>Arguments</th><th>Description</th></tr></thead><tbody><tr><td>provider.form</td><td>name of form (string)</td><td>Returns an empty data form object of the given type</td></tr><tr><td>provider.formfunction</td><td>name of function (string)</td><td>Returns a lua function to execute the <span class="application">Wolframe</span> function specified by name</td></tr><tr><td>provider.normalizer</td><td>type name</td><td>Returns a <span class="application">Lua</span> function for normalizing values of the type specified (as used in forms)</td></tr><tr><td>scope</td><td>iterator (*)</td><td>Returns an iterator to iterate till the end of the current tag (**)</td></tr></tbody></table></div></div><br class="table-break" /><p>
-			(*) With iterator we mean an iterator as introduced in previous sections, returned by a <span class="application">Wolframe</span> <span class="application">Lua</span> object 'get()' method.
+		</p><div class="table"><a id="idp1402785868"></a><p class="title"><strong>Table 3.5. Data forms returned by functions</strong></p><div class="table-contents"><table summary="Data forms returned by functions" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th>Method Name</th><th>Returns</th><th>Description</th></tr></thead><tbody><tr><td>get</td><td>serialization iterator (*)</td><td>Returns a serialization iterator on the form elements</td></tr><tr><td>value</td><td><span class="application">Lua</span> table or atomic value</td><td>Returns the contents of the data form as <span class="application">Lua</span> table or atomic value</td></tr><tr><td>__tostring</td><td>string</td><td>String representation of form for debugging</td></tr></tbody></table></div></div><br class="table-break" /><p>
+			(*) See section "Serialization Iterator"
+		</p><div class="table"><a id="idp1402791268"></a><p class="title"><strong>Table 3.6. Logger functions</strong></p><div class="table-contents"><table summary="Logger functions" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th>Method Name</th><th>Arguments</th><th>Description</th></tr></thead><tbody><tr><td>logger.printc</td><td>arbitrary list of arguments</td><td>Print arguments to standard console output</td></tr><tr><td>logger.print</td><td>loglevel (string) plus arbitrary list of arguments</td><td>log argument list with defined log level</td></tr></tbody></table></div></div><br class="table-break" /><div class="table"><a id="idp1402795044"></a><p class="title"><strong>Table 3.7. Global functions</strong></p><div class="table-contents"><table summary="Global functions" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th>Function Name</th><th>Arguments</th><th>Description</th></tr></thead><tbody><tr><td>provider.form</td><td>name of form (string)</td><td>Returns an empty data form object of the given type</td></tr><tr><td>provider.formfunction</td><td>name of function (string)</td><td>Returns a lua function to execute the <span class="application">Wolframe</span> function specified by name</td></tr><tr><td>provider.normalizer</td><td>type name</td><td>Returns a <span class="application">Lua</span> function for normalizing values of the type specified (as used in forms)</td></tr><tr><td>scope</td><td>serialization iterator (*)</td><td>Returns a serialization iterator to iterate till the end of the current tag (**). Consumes the iterated scope from the argument iterator.</td></tr></tbody></table></div></div><br class="table-break" /><p>
+			(*) See section "Serialization Iterator"
 		</p><p>
-			(**) The iterator of a defined scope must be consumed completely before consuming anything of the parent iterator.
+			(**) The serialization iterator of a defined scope must be consumed completely before consuming anything of the parent iterator.
 			Otherwise it may lead to unexpected results because they share some part of the iterator state.
 		</p></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk01ch03s03.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk01ch03.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk01ch03s05.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">3.3. Functions in Python </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 3.5. Functions in Native C++</td></tr></table></div></div></div>
 

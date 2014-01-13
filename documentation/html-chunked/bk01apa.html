@@ -58,113 +58,135 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Appendix A. Language Grammars</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ix01.html">Prev</a> </td><th width="60%" align="center">Developing Wolframe Server Applications</th><td width="20%" align="right"> <a accesskey="n" href="bk01apb.html">Next</a></td></tr></table><hr /></div><div class="appendix"><div class="titlepage"><div><div><h1 class="title"><a id="idp1394792892"></a>Appendix A. Language Grammars</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="bk01apa.html#idp1394793236">A.1. Grammars</a></span></dt></dl></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1394793236"></a>A.1. Grammars</h2></div></div></div><p>
-			</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1394876228"></a>.1. EBNF of the Transaction Definition Language</h3></div></div></div><table width="100%" cellpadding="5" bgcolor="#F5DCB3" border="1" class="productionset" summary="EBNF for Tokens"><tr><th align="left" valign="top" class="productionset">Tokens</th></tr><tr><td><table border="0" width="99%" cellpadding="0" bgcolor="#F5DCB3" class="productionset" summary="EBNF productions"><tr><td align="left" valign="top" width="3%">[1]</td><td align="right" valign="top" width="10%"><a id="Identifier"></a>Identifier</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Appendix A. Language Grammars</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ix01.html">Prev</a> </td><th width="60%" align="center">Developing Wolframe Server Applications</th><td width="20%" align="right"> <a accesskey="n" href="bk01apb.html">Next</a></td></tr></table><hr /></div><div class="appendix"><div class="titlepage"><div><div><h1 class="title"><a id="idp1403369476"></a>Appendix A. Language Grammars</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="bk01apa.html#idp1403411052">A.1. Grammars</a></span></dt></dl></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1403411052"></a>A.1. Grammars</h2></div></div></div><p>
+			</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1403452964"></a>.1. EBNF of the Transaction Definition Language</h3></div></div></div><table width="100%" cellpadding="5" bgcolor="#F5DCB3" border="1" class="productionset" summary="EBNF for Tokens"><tr><th align="left" valign="top" class="productionset">Tokens</th></tr><tr><td><table border="0" width="99%" cellpadding="0" bgcolor="#F5DCB3" class="productionset" summary="EBNF productions"><tr><td align="left" valign="top" width="3%">[1]</td><td align="right" valign="top" width="10%"><a id="Identifier"></a>Identifier</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
 			( ['A'-'Z'] | ['a'-'z'] | ['0'-'9'] | '_' ) +
-		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[2]</td><td align="right" valign="top" width="10%"><a id="Number"></a>Number</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
+		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[2]</td><td align="right" valign="top" width="10%"><a id="FunctionId"></a>FunctionId</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
+			( ['A'-'Z'] | ['a'-'z'] | ['0'-'9'] | '_' | '.' ) +
+		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[3]</td><td align="right" valign="top" width="10%"><a id="Number"></a>Number</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
 			( ['0'-'9'] ) +
-		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[3]</td><td align="right" valign="top" width="10%"><a id="String"></a>String</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
+		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[4]</td><td align="right" valign="top" width="10%"><a id="String"></a>String</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
 			  ( ['\'']([^'\''])+['\'']+ )
 			| ( ['\"']([^'\"'])+['\"']+ )
-		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[4]</td><td align="right" valign="top" width="10%"><a id="Selection"></a>Selection</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
+		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[5]</td><td align="right" valign="top" width="10%"><a id="IdList"></a>IdList</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
+			( <a href="bk01apa.html#Identifier">Identifier</a> )
+			( | ',' <a href="bk01apa.html#IdList">IdList</a> )
+		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[6]</td><td align="right" valign="top" width="10%"><a id="Selection"></a>Selection</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
 			(
 				( '/' | '//' | )
-				( Identifier | '..' )
+				( Identifier | '..' | '.' )
 				( <a href="bk01apa.html#Selection">Selection</a> | )
 			)
-		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[5]</td><td align="right" valign="top" width="10%"><a id="EmbeddedArg"></a>EmbeddedArg</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
+		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[7]</td><td align="right" valign="top" width="10%"><a id="EmbeddedArg"></a>EmbeddedArg</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
 			( <a href="bk01apa.html#String">String</a>
 			|
 				'$'
-				( <a href="bk01apa.html#Number">Number</a>
-				| ( <a href="bk01apa.html#Identifier">Identifier</a>
+				  ( 
+				    ( <a href="bk01apa.html#Identifier">Identifier</a> '.' | )
+				    <a href="bk01apa.html#Number">Number</a>
+				  )
+				| ( 
+				    ( <a href="bk01apa.html#Identifier">Identifier</a> '.' | )
+				    <a href="bk01apa.html#Identifier">Number</a>
+				  )
 				| '(' <a href="bk01apa.html#Selection">Selection</a> ')'
-				| '[' <a href="bk01apa.html#Identifier">Identifier</a> ']'
 				)
 			)
-		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[6]</td><td align="right" valign="top" width="10%"><a id="FuncArg"></a>FuncArg</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
-			( <a href="bk01apa.html#String">String</a>
+		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[8]</td><td align="right" valign="top" width="10%"><a id="FuncArg"></a>FuncArg</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
+			( 
+			  <a href="bk01apa.html#String">String</a>
 			| <a href="bk01apa.html#Selection">Selection</a>
 			| <a href="bk01apa.html#EmbeddedArg">EmbeddedArg</a>
 			)
-		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[7]</td><td align="right" valign="top" width="10%"><a id="PreprcArg"></a>PreprcArg</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
+		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[9]</td><td align="right" valign="top" width="10%"><a id="PreprcArg"></a>PreprcArg</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
 			( <a href="bk01apa.html#String">String</a>
 			| <a href="bk01apa.html#Selection">Selection</a>
 			)
-		</td><td align="left" valign="top" width="30%"> </td></tr></table></td></tr></table><table width="100%" cellpadding="5" bgcolor="#F5DCB3" border="1" class="productionset" summary="EBNF for Statements"><tr><th align="left" valign="top" class="productionset">Statements</th></tr><tr><td><table border="0" width="99%" cellpadding="0" bgcolor="#F5DCB3" class="productionset" summary="EBNF productions"><tr><td align="left" valign="top" width="3%">[8]</td><td align="right" valign="top" width="10%"><a id="Destination"></a>Destination</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
+		</td><td align="left" valign="top" width="30%"> </td></tr></table></td></tr></table><table width="100%" cellpadding="5" bgcolor="#F5DCB3" border="1" class="productionset" summary="EBNF for Statements"><tr><th align="left" valign="top" class="productionset">Statements</th></tr><tr><td><table border="0" width="99%" cellpadding="0" bgcolor="#F5DCB3" class="productionset" summary="EBNF productions"><tr><td align="left" valign="top" width="3%">[10]</td><td align="right" valign="top" width="10%"><a id="Destination"></a>Destination</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
 			'INTO'
 			<a href="bk01apa.html#Identifier">Identifier</a>
-		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[9]</td><td align="right" valign="top" width="10%"><a id="Foreach"></a>Foreach</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
+		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[11]</td><td align="right" valign="top" width="10%"><a id="Foreach"></a>Foreach</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
 			'FOREACH'
 			<a href="bk01apa.html#Selection">Selection</a>
-		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[10]</td><td align="right" valign="top" width="10%"><a id="EmbeddedOp"></a>EmbeddedOp</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
+		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[12]</td><td align="right" valign="top" width="10%"><a id="EmbeddedOp"></a>EmbeddedOp</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
 			SQLStatement
-		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[11]</td><td align="right" valign="top" width="10%"><a id="FuncArgLst"></a>FuncArgLst</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
+		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[13]</td><td align="right" valign="top" width="10%"><a id="FuncArgLst"></a>FuncArgLst</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
 			( <a href="bk01apa.html#FuncArg">FuncArg</a> ','
 				<a href="bk01apa.html#FuncArgLst">FuncArgLst</a>
 			|
 				<a href="bk01apa.html#FuncArg">FuncArg</a>
 			)
-		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[12]</td><td align="right" valign="top" width="10%"><a id="NamedOp"></a>NamedOp</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
+		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[14]</td><td align="right" valign="top" width="10%"><a id="NamedOp"></a>NamedOp</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
 			<a href="bk01apa.html#Identifier">Identifier</a>
 			'('
 				( <a href="bk01apa.html#FuncArgLst">FuncArgLst</a> | )
 			')'
-		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[13]</td><td align="right" valign="top" width="10%"><a id="Action"></a>Action</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
+		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[15]</td><td align="right" valign="top" width="10%"><a id="Action"></a>Action</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
 			'DO'
 				(
 					<a href="bk01apa.html#EmbeddedOp">EmbeddedOp</a>
 				|	<a href="bk01apa.html#NamedOp">NamedOp</a>
 				)
-		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[14]</td><td align="right" valign="top" width="10%"><a id="Statement"></a>Statement</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
-			( <a href="bk01apa.html#Destination">Destination</a> | )
-			( <a href="bk01apa.html#Foreach">Foreach</a> | )
-			<a href="bk01apa.html#Action">Action</a>
-			';'
-		</td><td align="left" valign="top" width="30%"> </td></tr></table></td></tr></table><table width="100%" cellpadding="5" bgcolor="#F5DCB3" border="1" class="productionset" summary="EBNF for Pre-Processing Commands"><tr><th align="left" valign="top" class="productionset">Pre-Processing Commands</th></tr><tr><td><table border="0" width="99%" cellpadding="0" bgcolor="#F5DCB3" class="productionset" summary="EBNF productions"><tr><td align="left" valign="top" width="3%">[15]</td><td align="right" valign="top" width="10%"><a id="PreprcArgLst"></a>PreprcArgLst</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
+		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[16]</td><td align="right" valign="top" width="10%"><a id="Statement"></a>Statement</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
+			(
+				( <a href="bk01apa.html#Destination">Destination</a> | )
+				( <a href="bk01apa.html#Foreach">Foreach</a> | )
+				<a href="bk01apa.html#Action">Action</a>
+				';'
+			)
+			|
+			(
+				'KEEP' 'AS' <a href="bk01apa.html#Identifier">Identifier</a> ';'
+			)
+		</td><td align="left" valign="top" width="30%"> </td></tr></table></td></tr></table><table width="100%" cellpadding="5" bgcolor="#F5DCB3" border="1" class="productionset" summary="EBNF for Pre-Processing Commands"><tr><th align="left" valign="top" class="productionset">Pre-Processing Commands</th></tr><tr><td><table border="0" width="99%" cellpadding="0" bgcolor="#F5DCB3" class="productionset" summary="EBNF productions"><tr><td align="left" valign="top" width="3%">[17]</td><td align="right" valign="top" width="10%"><a id="PreprcArgLst"></a>PreprcArgLst</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
 			( <a href="bk01apa.html#PreprcArg">PreprcArg</a> ','
 				<a href="bk01apa.html#PreprcArgLst">PreprcArgLst</a>
 			|
 				<a href="bk01apa.html#PreprcArg">PreprcArg</a>
 			)
-		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[16]</td><td align="right" valign="top" width="10%"><a id="PreprcOp"></a>PreprcOp</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
-			<a href="bk01apa.html#Identifier">Identifier</a>
+		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[18]</td><td align="right" valign="top" width="10%"><a id="PreprcOp"></a>PreprcOp</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
+			<a href="bk01apa.html#FunctionId">FunctionId</a>
 			'('
 				( <a href="bk01apa.html#PreprcArgLst">PreprcArgLst</a> | )
 			')'
-		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[17]</td><td align="right" valign="top" width="10%"><a id="PreprcCall"></a>PreprcCall</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
+		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[19]</td><td align="right" valign="top" width="10%"><a id="PreprcCall"></a>PreprcCall</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
 			'DO'
 				(
 					<a href="bk01apa.html#PreprcOp">PreprcOp</a>
 				)
-		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[18]</td><td align="right" valign="top" width="10%"><a id="PreprcStm"></a>PreprcStm</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
+		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[20]</td><td align="right" valign="top" width="10%"><a id="PreprcStm"></a>PreprcStm</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
 			( <a href="bk01apa.html#Destination">Destination</a> | )
 			( <a href="bk01apa.html#Foreach">Foreach</a> | )
 			<a href="bk01apa.html#PreprcCall">PreprcCall</a>
 			';'
-		</td><td align="left" valign="top" width="30%"> </td></tr></table></td></tr></table><table width="100%" cellpadding="5" bgcolor="#F5DCB3" border="1" class="productionset" summary="EBNF for Transactions"><tr><th align="left" valign="top" class="productionset">Transactions</th></tr><tr><td><table border="0" width="99%" cellpadding="0" bgcolor="#F5DCB3" class="productionset" summary="EBNF productions"><tr><td align="left" valign="top" width="3%">[19]</td><td align="right" valign="top" width="10%"><a id="PreprcStmLst"></a>PreprcStmLst</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
+		</td><td align="left" valign="top" width="30%"> </td></tr></table></td></tr></table><table width="100%" cellpadding="5" bgcolor="#F5DCB3" border="1" class="productionset" summary="EBNF for Transactions"><tr><th align="left" valign="top" class="productionset">Transactions</th></tr><tr><td><table border="0" width="99%" cellpadding="0" bgcolor="#F5DCB3" class="productionset" summary="EBNF productions"><tr><td align="left" valign="top" width="3%">[21]</td><td align="right" valign="top" width="10%"><a id="PreprcStmLst"></a>PreprcStmLst</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
 			( <a href="bk01apa.html#PreprcStm">PreprcStm</a>
 			| <a href="bk01apa.html#PreprcStm">PreprcStm</a>
 			  <a href="bk01apa.html#PreprcStmLst">PreprcStmLst</a>
 			)
-		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[20]</td><td align="right" valign="top" width="10%"><a id="PreprcBody"></a>PreprcBody</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
+		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[22]</td><td align="right" valign="top" width="10%"><a id="PreprcBody"></a>PreprcBody</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
 			'PREPROC'
 			<a href="bk01apa.html#PreprcStmLst">PreprcStmLst</a>
 			'ENDPROC'
-		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[21]</td><td align="right" valign="top" width="10%"><a id="StatementLst"></a>StatementLst</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
+		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[23]</td><td align="right" valign="top" width="10%"><a id="StatementLst"></a>StatementLst</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
 			( <a href="bk01apa.html#Statement">Statement</a>
 			| <a href="bk01apa.html#Statement">Statement</a>
 			  <a href="bk01apa.html#StatementLst">StatementLst</a>
 			)
-		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[22]</td><td align="right" valign="top" width="10%"><a id="OpBody"></a>OpBody</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
+		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[24]</td><td align="right" valign="top" width="10%"><a id="OpBody"></a>OpBody</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
 			'BEGIN'
 			<a href="bk01apa.html#StatementLst">StatementLst</a>
 			'END'
-		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[23]</td><td align="right" valign="top" width="10%"><a id="Operation"></a>Operation</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
-			'OPERATION' <a href="bk01apa.html#Identifier">Identifier</a>
-			( 'RESULT' 'INTO' <a href="bk01apa.html#Identifier">Identifier</a> | )
+		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[25]</td><td align="right" valign="top" width="10%"><a id="Subroutine"></a>Subroutine</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
+			'SUBROUTINE' <a href="bk01apa.html#Identifier">Identifier</a>
+			[
+				'DATABASE' <a href="bk01apa.html#IdList">IdList</a>
+			]
+			[
+				'RESULT' 'INTO' <a href="bk01apa.html#Identifier">Identifier</a>
+			]
 			<a href="bk01apa.html#OpBody">OpBody</a>
-		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[24]</td><td align="right" valign="top" width="10%"><a id="Transaction"></a>Transaction</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
+		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[26]</td><td align="right" valign="top" width="10%"><a id="Transaction"></a>Transaction</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
 			'TRANSACTION' <a href="bk01apa.html#Identifier">Identifier</a>
 			[
 				'AUTHORIZE' '(' <a href="bk01apa.html#Identifier">Identifier</a> ','
@@ -174,25 +196,46 @@
 				<a href="bk01apa.html#PreprcBody">PreprcBody</a>
 			]
 			[
+				'DATABASE' <a href="bk01apa.html#IdList">IdList</a>
+			]
+			[
 				'RESULT' 'INTO' <a href="bk01apa.html#Identifier">Identifier</a>
 			]
 			<a href="bk01apa.html#OpBody">OpBody</a>
-		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[25]</td><td align="right" valign="top" width="10%"><a id="Program"></a>Program</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
+		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[27]</td><td align="right" valign="top" width="10%"><a id="Program"></a>Program</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
 			(
 			  <a href="bk01apa.html#Transaction">Transaction</a>
-			| <a href="bk01apa.html#Operation">Operation</a>
+			| <a href="bk01apa.html#Subroutine">Subroutine</a>
 			)
 			(
 			  <a href="bk01apa.html#Program">Program</a>
 			| )
 		</td><td align="left" valign="top" width="30%"> </td></tr></table></td></tr></table></div><p>
 
-			</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1394953900"></a>.2. EBNF of the Normalizer Function Declarations</h3></div></div></div><table width="100%" cellpadding="5" bgcolor="#F5DCB3" border="1" class="productionset" summary="EBNF for Tokens"><tr><th align="left" valign="top" class="productionset">Tokens</th></tr><tr><td><table border="0" width="99%" cellpadding="0" bgcolor="#F5DCB3" class="productionset" summary="EBNF productions"><tr><td align="left" valign="top" width="3%">[26]</td><td align="right" valign="top" width="10%"><a id="normIdentifier"></a>Identifier</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
+			</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1403537628"></a>.2. EBNF of the Normalizer Function Declarations</h3></div></div></div><table width="100%" cellpadding="5" bgcolor="#F5DCB3" border="1" class="productionset" summary="EBNF for Tokens"><tr><th align="left" valign="top" class="productionset">Tokens</th></tr><tr><td><table border="0" width="99%" cellpadding="0" bgcolor="#F5DCB3" class="productionset" summary="EBNF productions"><tr><td align="left" valign="top" width="3%">[28]</td><td align="right" valign="top" width="10%"><a id="normIdentifier"></a>Identifier</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
 			( ['A'-'Z'] | ['a'-'z'] | ['0'-'9'] | '_' ) +
-		</td><td align="left" valign="top" width="30%"> </td></tr></table></td></tr></table><table width="100%" cellpadding="5" bgcolor="#F5DCB3" border="1" class="productionset" summary="EBNF for Declarations"><tr><th align="left" valign="top" class="productionset">Declarations</th></tr><tr><td><table border="0" width="99%" cellpadding="0" bgcolor="#F5DCB3" class="productionset" summary="EBNF productions"><tr><td align="left" valign="top" width="3%">[27]</td><td align="right" valign="top" width="10%"><a id="normNamespace"></a>Namespace</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
+		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[29]</td><td align="right" valign="top" width="10%"><a id="normNumber"></a>Number</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
+			( ['0'-'9'] ) +
+		</td><td align="left" valign="top" width="30%"> </td></tr></table></td></tr></table><table width="100%" cellpadding="5" bgcolor="#F5DCB3" border="1" class="productionset" summary="EBNF for Declarations"><tr><th align="left" valign="top" class="productionset">Declarations</th></tr><tr><td><table border="0" width="99%" cellpadding="0" bgcolor="#F5DCB3" class="productionset" summary="EBNF productions"><tr><td align="left" valign="top" width="3%">[30]</td><td align="right" valign="top" width="10%"><a id="normNamespace"></a>Namespace</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
 			<a href="bk01apa.html#normIdentifier">Identifier</a>
 			':'
-		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[28]</td><td align="right" valign="top" width="10%"><a id="normNormalizeCall"></a>Call</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
+		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[31]</td><td align="right" valign="top" width="10%"><a id="normArgument"></a>Argument</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
+			(
+			  <a href="bk01apa.html#normIdentifier">Identifier</a>
+			|
+			  <a href="bk01apa.html#normNumber">Number</a>
+			)
+		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[32]</td><td align="right" valign="top" width="10%"><a id="normArgumentList"></a>ArgumentList</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
+			(
+			  (
+				<a href="bk01apa.html#normArgument">Argument</a>
+				','
+				<a href="bk01apa.html#normArgumentList">ArgumentList</a>
+			  )
+			|
+			  <a href="bk01apa.html#normArgument">Argument</a>
+			)
+		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[33]</td><td align="right" valign="top" width="10%"><a id="normNormalizeCall"></a>Call</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
 			(
 			  (
 			    <a href="bk01apa.html#normNamespace">Namespace</a>
@@ -201,7 +244,12 @@
 			|
 			  <a href="bk01apa.html#normIdentifier">Identifier</a>
 			)
-		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[29]</td><td align="right" valign="top" width="10%"><a id="normNormalizeSeq"></a>CallSeq</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
+			[
+				'('
+				<a href="bk01apa.html#normArgumentList">ArgumentList</a>
+				')'
+			]
+		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[34]</td><td align="right" valign="top" width="10%"><a id="normNormalizeSeq"></a>CallSeq</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
 			(
 			  (
 			    <a href="bk01apa.html#normNormalizeCall">Call</a>
@@ -211,12 +259,12 @@
 			|
 			  <a href="bk01apa.html#normNormalizeCall">Call</a>
 			)
-		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[30]</td><td align="right" valign="top" width="10%"><a id="normTypedef"></a>Typedef</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
+		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[35]</td><td align="right" valign="top" width="10%"><a id="normTypedef"></a>Typedef</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
 			<a href="bk01apa.html#normIdentifier">Identifier</a>
 			'='
 			  <a href="bk01apa.html#normNormalizeSeq">CallSeq</a>
 			';'
-		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[31]</td><td align="right" valign="top" width="10%"><a id="normProgram"></a>Program</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
+		</td><td align="left" valign="top" width="30%"> </td></tr><tr><td align="left" valign="top" width="3%">[36]</td><td align="right" valign="top" width="10%"><a id="normProgram"></a>Program</td><td valign="top" width="5%" align="center"><code>::=</code></td><td valign="top" width="52%">
 			(
 			  (
 			    <a href="bk01apa.html#normTypedef">Typedef</a>
