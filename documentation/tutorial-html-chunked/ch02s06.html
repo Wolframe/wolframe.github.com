@@ -58,7 +58,7 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.6. Step 6 - Show customer</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch02s05.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Steps</th><td width="20%" align="right"> <a accesskey="n" href="ch02s07.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1401425540"></a>2.6. Step 6 - Show customer</h2></div></div></div><p>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.6. Step 6 - Show customer</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch02s05.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Steps</th><td width="20%" align="right"> <a accesskey="n" href="ch02s07.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1381631692"></a>2.6. Step 6 - Show customer</h2></div></div></div><p>
 		In the next step we want to show how data is communicated between the forms
 		by implementing a simple "show me customer data" use case.
 	</p><p>
@@ -101,7 +101,12 @@
 		in the 'customers.ui' form:
 
 		</p><pre class="programlisting">
-	Customer list {customer[] {id={row.id}; name{{row.name}}; address{{row.address}} } }
+	CustomerList list {
+	    customer[] {
+	        id={row.id};
+	        name{{row.name}};
+	        address{{row.address}}
+	    }}
 		</pre><p>
 		
 		'id={row.id}' maps the 'id' attribute to the 'id' property of each row.
@@ -129,8 +134,10 @@
 	}
 
 	</pre><p>
-		We have to declare a new output form validation 'CustomerList'
-		in <code class="filename">tutorial.dmap</code> as well:
+		We change now the command in <code class="filename">tutorial.dmap</code> 
+		again to switch on validation. The SKIP attribute is removed and
+		the root element does not have to be specified because it is defined now
+		in the form declaration:
 
 	</p><pre class="programlisting">
 	COMMAND CustomerListRequest CALL SelectCustomerList RETURN CustomerList;
@@ -139,29 +146,11 @@
 		Checking with:
 
 	</p><pre class="programlisting">
-	netcat -v --wait=2 localhost 7661 &lt; CustomerListRequest.netcat
+	netcat -v localhost 7661 &lt; CustomerListRequest.netcat
 	</pre><p>
 	
 		we get now:
 
-	</p><pre class="programlisting">
-	ERR REQUEST unknown tag  (list)-.. candidates are {customer}
-	</pre><p>
-	
-	If using validated output, the wolframe server adds automatically the
-	root element 'list' as declared in the form definition to the result.
-	So we can remove the 'RESULT INTO list' in the TDL function
-	'SelectCustomerList':
-	
-	</p><pre class="programlisting">
-	TRANSACTION SelectCustomerList
-	BEGIN
-		INTO customer DO SELECT * from Customer;
-	END
-	</pre><p>
-	
-		Now we get the desired result:
-	
 	</p><pre class="programlisting">
 	&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;
 	&lt;!DOCTYPE list SYSTEM "CustomerList.simpleform"&gt;
