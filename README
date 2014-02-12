@@ -13,10 +13,10 @@ cp *webpage* ~/projects/Wolframe/docs/
 
 in 'Wolframe/docs':
 WOLFRAME_GITHUB_COM_HOME=~/projects/wolframe.github.com
-make clean all doc-doxygen-webpage doc-html-webpage
+make clean all doc-doxygen-webpage doc-html-webpage doc-html-webpage-chunked doc-pdf
 rsync --delete-after -av doxygen/html-webpage/ $WOLFRAME_GITHUB_COM_HOME/documentation/doxygen/
-rsync -av html-webpage-chunked/ $WOLFRAME_GITHUB_COM_HOME/documentation/html-chunked/
-rsync -av html-tutorial-webpage-chunked/ $WOLFRAME_GITHUB_COM_HOME/documentation/tutorial-html-chunked/
+rsync --exclude images -av html-webpage-chunked/ $WOLFRAME_GITHUB_COM_HOME/documentation/html-chunked/
+rsync --exclude images -av html-tutorial-webpage-chunked/ $WOLFRAME_GITHUB_COM_HOME/documentation/tutorial-html-chunked/
 rsync --delete-after -av images/Tutorial/ $WOLFRAME_GITHUB_COM_HOME/documentation/tutorial-html-chunked/images/Tutorial/
 rsync --delete-after -av images/clients/ $WOLFRAME_GITHUB_COM_HOME/documentation/tutorial-html-chunked/images/clients/
 cp WolfBook.pdf $WOLFRAME_GITHUB_COM_HOME/documentation/.
