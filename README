@@ -19,4 +19,6 @@ rsync -av html-webpage-chunked/ $WOLFRAME_GITHUB_COM_HOME/documentation/html-chu
 rsync -av html-tutorial-webpage-chunked/ $WOLFRAME_GITHUB_COM_HOME/documentation/tutorial-html-chunked/
 rsync --delete-after -av images/Tutorial/ $WOLFRAME_GITHUB_COM_HOME/documentation/tutorial-html-chunked/images/Tutorial/
 cp WolfBook.pdf $WOLFRAME_GITHUB_COM_HOME/documentation/.
+cp html-webpage/index.html $WOLFRAME_GITHUB_COM_HOME/documentation/WolfBook.html
 cp Tutorial.pdf $WOLFRAME_GITHUB_COM_HOME/documentation/.
+cp html-tutorial-webpage/index.html $WOLFRAME_GITHUB_COM_HOME/documentation/Tutorial.html

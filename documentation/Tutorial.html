@@ -1,0 +1,1044 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>The Wolframe Application Server: Getting Started</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" />
+	<title xmlns="">Project Wolframe</title>
+	<meta xmlns="" charset="utf-8" />
+	<meta xmlns="" name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link xmlns="" rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+
+	<link xmlns="" href="/layout/styles/main.css" rel="stylesheet" type="text/css" media="all" />
+	<link xmlns="" href="/layout/styles/mediaqueries.css" rel="stylesheet" type="text/css" media="all" />
+
+	<!--[if lt IE 9]>
+		<link href="/layout/styles/ie/ie8.css" rel="stylesheet" type="text/css" media="all" />
+		<script src="/layout/scripts/ie/css3-mediaqueries.min.js"></script>
+		<script src="/layout/scripts/ie/html5shiv.min.js"></script>
+	<![endif]-->
+
+
+</head><body><div xml:lang="en" class="book" lang="en"><div class="titlepage"><div><div><h1 class="title"><a id="book_Tutorial"></a>The Wolframe Application Server: Getting Started</h1></div><div><h2 class="subtitle">Build your first Wolframe application</h2></div><div><p class="copyright">Copyright © 2010 - 2014 Project Wolframe</p></div><div><div class="legalnotice"><a id="idp1367908252"></a><p><strong>Commercial Usage. </strong>
+	    Licensees holding valid Project Wolframe Commercial licenses may
+	    use this file in accordance with the Project Wolframe
+	    Commercial License Agreement provided with the Software or,
+	    alternatively, in accordance with the terms contained
+	    in a written agreement between the licensee and Project Wolframe.
+	</p><p><strong>GNU General Public License Usage. </strong>
+	    Alternatively, you can redistribute this file and/or modify it
+	    under the terms of the <acronym class="acronym">GNU</acronym> General Public License as published by
+	    the Free Software Foundation, either version 3 of the License, or
+	    (at your option) any later version.
+	</p><p>
+    Wolframe is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    <acronym class="acronym">GNU</acronym> General Public License for more details.
+</p><p>
+    You should have received a copy of the GNU General Public License
+    along with Wolframe.  If not, see
+    <a class="ulink" href="http://www.gnu.org/licenses/" target="_top"><em class="citetitle">http://www.gnu.org/licenses/</em></a>
+</p><p>
+    If you have questions regarding the use of this file, please contact
+    Project Wolframe.
+</p></div></div><div><p class="pubdate">February 12, 2014
+ version 0.0.2
+</p></div></div><hr /></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="preface"><a href="#idp1367906012">Foreword</a></span></dt><dt><span class="chapter"><a href="#idp1367902404">1. Introduction</a></span></dt><dd><dl><dt><span class="sect1"><a href="#idp1367902748">1.1. Introduction to the Wolframe tutorial</a></span></dt><dd><dl><dt><span class="sect2"><a href="#idp1367903092">1.1.1. Requirements</a></span></dt><dt><span class="sect2"><a href="#idp1367320924">1.1.2. Sample application</a></span></dt><dt><span class="sect2"><a href="#idp1367324132">1.1.3. Basic directory layout</a></span></dt></dl></dd></dl></dd><dt><span class="chapter"><a href="#idp1367250452">2. Steps</a></span></dt><dd><dl><dt><span class="sect1"><a href="#idp1367252356">2.1. Step 1 - Basic connectivity</a></span></dt><dt><span class="sect1"><a href="#idp1370766556">2.2. Step 2 - Basic Authorization</a></span></dt><dt><span class="sect1"><a href="#idp1370762260">2.3. Step 3 - Get the whole chain working</a></span></dt><dt><span class="sect1"><a href="#idp1370775692">2.4. Step 4 - Implement server side customer list</a></span></dt><dt><span class="sect1"><a href="#idp1370827900">2.5. Step 5 - Implement client side customer list</a></span></dt><dt><span class="sect1"><a href="#idp1370924020">2.6. Step 6 - Show customer</a></span></dt><dt><span class="sect1"><a href="#idp1370948220">2.7. Step 7 - Editing customer</a></span></dt><dt><span class="sect1"><a href="#idp1371021028">2.8. Step 8 - Add a new customer</a></span></dt><dt><span class="sect1"><a href="#idp1371056300">2.9. Step 9 - Delete a customer</a></span></dt></dl></dd></dl></div><div class="preface"><div class="titlepage"><div><div><h1 class="title"><a id="idp1367906012"></a>Foreword</h1></div></div></div><p>This is the Wolframe Tutorial.</p><p>It describes step by step how to use Wolframe to build a small demo application.</p></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="idp1367902404"></a>Chapter 1. Introduction</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="#idp1367902748">1.1. Introduction to the Wolframe tutorial</a></span></dt><dd><dl><dt><span class="sect2"><a href="#idp1367903092">1.1.1. Requirements</a></span></dt><dt><span class="sect2"><a href="#idp1367320924">1.1.2. Sample application</a></span></dt><dt><span class="sect2"><a href="#idp1367324132">1.1.3. Basic directory layout</a></span></dt></dl></dd></dl></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1367902748"></a>1.1. Introduction to the Wolframe tutorial</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1367903092"></a>1.1.1. Requirements</h3></div></div></div><p>
+			You need the following packages (We assume you are
+			on an Ubuntu Linux, for other platforms there are
+			similar packages available. Some platforms may have
+			only two monolithic packages to download, a 'wolframe'
+			and a 'wolfclient' package):
+			</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
+					wolframe_0.0.1-1_amd64.deb: the Wolframe core server
+				</p></li><li class="listitem"><p>
+					wolframe-sqlite3_0.0.1-1_amd64.deb: the Sqlite3 database driver module				
+				</p></li><li class="listitem"><p>
+					wolframe-libxml2_0.0.1-1_amd64.deb: the XML filter based on libxml2
+				</p></li><li class="listitem"><p>
+					wolfclient_0.0.3-1_amd64.deb: the Wolframe graphical user interface client 
+				</p></li></ul></div><p>
+		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1367320924"></a>1.1.2. Sample application</h3></div></div></div><p>
+			We want to manage a list of customers with name and address and provide
+			the usual operations:
+			</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
+					list all customers
+				</p></li><li class="listitem"><p>
+					create new customers
+				</p></li><li class="listitem"><p>
+					edit existing customers
+				</p></li><li class="listitem"><p>
+					view customer entries
+				</p></li><li class="listitem"><p>
+					delete customers
+				</p></li><li class="listitem"><p>
+					search for customers
+				</p></li></ul></div><p>
+		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1367324132"></a>1.1.3. Basic directory layout</h3></div></div></div><p>
+			We don't use the normal directory layout as it requires root rights to
+			install.
+		</p><p>
+			Instead we create two directories, one for server data and one for
+			client data:
+		        </p><pre class="programlisting">
+	mkdir ~/tutorial
+	mkdir ~/tutorial/server
+	mkdir ~/tutorial/client
+			</pre><p>
+		</p></div></div></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="idp1367250452"></a>Chapter 2. Steps</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="#idp1367252356">2.1. Step 1 - Basic connectivity</a></span></dt><dt><span class="sect1"><a href="#idp1370766556">2.2. Step 2 - Basic Authorization</a></span></dt><dt><span class="sect1"><a href="#idp1370762260">2.3. Step 3 - Get the whole chain working</a></span></dt><dt><span class="sect1"><a href="#idp1370775692">2.4. Step 4 - Implement server side customer list</a></span></dt><dt><span class="sect1"><a href="#idp1370827900">2.5. Step 5 - Implement client side customer list</a></span></dt><dt><span class="sect1"><a href="#idp1370924020">2.6. Step 6 - Show customer</a></span></dt><dt><span class="sect1"><a href="#idp1370948220">2.7. Step 7 - Editing customer</a></span></dt><dt><span class="sect1"><a href="#idp1371021028">2.8. Step 8 - Add a new customer</a></span></dt><dt><span class="sect1"><a href="#idp1371056300">2.9. Step 9 - Delete a customer</a></span></dt></dl></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1367252356"></a>2.1. Step 1 - Basic connectivity</h2></div></div></div><p>
+		We have to set up the wolframed daemon with a running configuration file:
+		</p><pre class="programlisting">
+	cd ~/tutorial/server
+		</pre><p>
+	</p><p>
+		We create the central confuguration file of the server <code class="filename">tutorial.conf</code>:
+
+		</p><pre class="programlisting">
+	; we install a verbose default logger to the shell
+	logging	{
+		stderr	{
+			level DEBUG
+		}
+	}
+
+	; one connection, one thread is enough
+	listen	{
+		maxConnections 1
+		threads 1
+		socket	{
+			address		*
+			port		7661
+			maxConnections	1
+		}
+	}
+		</pre><p>
+	</p><p>
+		We can start the server now in the shell foreground with:
+
+		</p><pre class="programlisting">
+	/usr/sbin/wolframed -f -c tutorial.conf
+		</pre><p>
+	</p><p>
+		We see the following output of the server in the shell:
+		
+		</p><pre class="programlisting">
+	NOTICE: Starting server
+	INFO: Undefined ServerTokens, using ProductOnly
+	DEBUG: Random generator initialized. Using device '/dev/urandom'
+	DEBUG: AAAA database references resolved
+	DEBUG: Loading programs
+	INFO: Accepting connections on 0.0.0.0:7661
+	DEBUG: 1 network acceptor(s) created.
+	DEBUG: 0 network SSL acceptor(s) created.
+		</pre><p>
+
+	</p><p>
+		The server is up and listening to port 7661. The server can be stopped
+		anytime by pressing
+		<span class="keycap"><strong>Ctrl</strong></span>+<span class="keycap"><strong>C</strong></span>.
+	</p><p>
+		If we use a telnet to connect to the server with:
+
+		</p><pre class="programlisting">
+	telnet localhost 7661
+		</pre><p>
+	</p><p>
+		we get:
+
+		</p><pre class="programlisting">
+	Connected to localhost.
+	Escape character is '^]'.
+	BYE Access denied.
+	Connection closed by foreign host.
+		</pre><p>
+	</p><p>
+		The server tells us:
+
+		</p><pre class="programlisting">
+	DEBUG: Connection from 127.0.0.1:39110 to 0.0.0.0:7661 not authorized
+	DEBUG: Connection to 127.0.0.1:39110 closed
+		</pre><p>
+	</p><p>
+		So we have to configure some basic authorization first.
+	</p></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1370766556"></a>2.2. Step 2 - Basic Authorization</h2></div></div></div><p>
+		So we have to add a dummy authorization to the server configuration
+		which accepts all connections (not very secure, but for now good enough):
+		</p><pre class="programlisting">
+	; dummy authorization
+	AAAA {
+		Authorization {
+			default allow
+		}
+	}
+		</pre><p>
+	</p><p>
+		If we start the server now, the telnet shows us:
+		
+		</p><pre class="programlisting">
+	Connected to localhost.
+	Escape character is '^]'.
+	Wolframe
+	OK
+		</pre><p>
+	</p><p>
+		Type <strong class="userinput"><code>quit</code></strong>, then <span class="keycap"><strong>Enter</strong></span>
+		now and get back to the shell:
+		</p><pre class="programlisting">
+	BYE
+	Connection closed by foreign host.
+		</pre><p>
+	</p><p>
+		The server in the shell shows the following output indicating
+		that authorization was successful:
+		
+		</p><pre class="programlisting">
+	DEBUG: Connection from 127.0.0.1:47064 to 0.0.0.0:7661 authorized
+	DEBUG: Connection to 127.0.0.1:47064 closed
+		</pre><p>
+
+	</p></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1370762260"></a>2.3. Step 3 - Get the whole chain working</h2></div></div></div><p>
+		Now that we have ensured that basic connectivity to the Wolframe server
+		is available, we can configure the basics for the Qt client.
+	</p><p>
+		We start the Qt client with:
+
+		</p><pre class="programlisting">
+	cd ~/tutorial/client
+	wolfclient tutorial.conf
+		</pre><p>
+	</p><p>
+		First define your connection by selecting "Manage servers" in
+		the "File" menu. Define a new connection called "tutorial"
+		which connects to server "localhost" on port 7661. Leave the
+		SSL connection unchecked.
+	</p><p>
+		You can test the connection now by pressing the "Test Connection"
+		button. 
+	</p><p>
+		You should get a message like
+
+		</p><pre class="programlisting">
+	Connection successful
+		</pre><p>
+		
+		in a dialog box.
+	</p><p>
+		Safe the connection parameters by pressing the "Ok" button.
+		You see a list of all your configured servers, the only one
+		we defined is "tutorial". Press "Ok" again.
+	</p><p>
+		Now you can try to login to your server by selecting 
+		"Login" in the "File" menu. Leave the "Username" and the
+		"Password" fields empty as we did not configure any
+		authentification method. Just pick the server called
+		"tutorial" in the "Server" field.
+	</p><p>
+		Because we didn't write any user interfaces yet, we get
+		an error message:
+		</p><pre class="programlisting">
+	Unable to load form or plugin 'init', does the it exist?
+		</pre><p>
+		
+		To get rid of that error message we will have to create
+		our start form in the Qt designer first. For now we just
+		click away the error message.
+	</p><p>
+		We start now the Qt designer and create an empty form of type QWidget named
+		<code class="filename">~/tutorial/client/init.ui</code> and save it.
+	</p><p>
+		If we restart the client and login in we see the same empty window again,
+		but this time it's the dynamically loaded initial form
+		(which is again empty). The previous error message disappeared.
+	</p></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1370775692"></a>2.4. Step 4 - Implement server side customer list</h2></div></div></div><p>
+		We want to store the customer data in an Sqlite database, so we have to
+		tell the server to load the database module for Sqlite:
+		</p><pre class="programlisting">
+	LoadModules {
+		<span class="bold"><strong>module mod_db_sqlite3</strong></span>
+	}
+		</pre><p>
+	</p><p>
+		Now we also have to create a database and populate it with the
+		following schema:
+
+		</p><pre class="programlisting">
+	CREATE TABLE Customer (
+		id              INTEGER PRIMARY KEY AUTOINCREMENT,
+		name            TEXT    NOT NULL,
+		address         TEXT
+	);
+		</pre><p>
+	</p><p>
+		Store this into <code class="filename">schema.sql</code>. Then execute:
+
+		</p><pre class="programlisting">
+	sqlite3 tutorial.db &lt; schema.sql
+		</pre><p>
+	</p><p>
+		Now we have to tell server to use this sqlite database file:
+
+		</p><pre class="programlisting">
+	database {
+		SQLite {
+			identifier	sqlitedb
+			file		tutorial.db
+			foreignKeys	yes
+		}
+	}
+		</pre><p>
+	
+	</p><p>
+		When we restart the server we see:
+
+		</p><pre class="programlisting">
+	DEBUG: SQLite database unit 'sqlitedb' created with 3 connections
+		to file 'tutorial.db'
+		</pre><p>
+	</p><p>
+		Now we want to use some XML filters to send/receive XML over the protocol,
+		so we have to add the following module to <code class="filename">tutorial.conf</code>:
+
+		</p><pre class="programlisting">
+	LoadModules {
+		module mod_db_sqlite3
+		<span class="bold"><strong>module mod_filter_libxml2</strong></span>
+	}
+		</pre><p>
+	</p><p>
+		In order to see which modules are currently loaded in the wolframed we can
+		use:
+
+		</p><pre class="programlisting">
+	/usr/sbin/wolframed -p -c tutorial.conf
+		</pre><p>
+	</p><p>
+		We see:
+
+		</p><pre class="programlisting">
+	..
+	Module files to load:
+	  /usr/lib/wolframe/modules/mod_db_sqlite3
+	  /usr/lib/wolframe/modules/mod_filter_libxml2
+	..
+		</pre><p>
+		which looks ok.
+	</p><p>
+		For mapping the requests to programs in the business layer 
+		we need the directmap module. First add to
+		<code class="filename">tutorial.conf</code>:
+
+		</p><pre class="programlisting">
+	LoadModules {
+		module mod_db_sqlite3
+		module mod_filter_libxml2
+		<span class="bold"><strong>module mod_command_directmap</strong></span>
+	}
+		</pre><p>
+		and a new section 'Processor' on the same level as 'LoadModules'
+		</p><pre class="programlisting">
+	Processor {
+		database sqlitedb
+		cmdhandler {
+			directmap {
+				filter libxml2
+				program tutorial.dmap
+			}
+		}
+	}
+		</pre><p>
+	</p><p>
+		The "filter" directive denotes that the command handler should
+		use the "libxml2" module to parse XML requests.
+	</p><p>
+		Now we have to create a file <code class="filename">tutorial.dmap</code>.
+		This file maps the requests to the corresponding transaction definitions:
+
+		</p><pre class="programlisting">
+	COMMAND CustomerListRequest
+	       CALL SelectCustomerList
+	       RETURN STANDALONE list;
+		</pre><p>
+
+		This is we map the 'CustomerListRequest' request to a function 'SelectCustomerList'
+		that is executed to perform the request. It will return the document 
+		without a document type assigned to it (standalone) and with the root element 'list'. 
+		The returned content will be a list of customers. The function will be implemented 
+		in a TDL program in the server. We first add the
+		TDL program declaration to a new 'Processor' configuration section:
+
+		</p><pre class="programlisting">
+	Processor {
+		program Customer.tdl
+	}
+		</pre><p>
+
+		The <code class="filename">Customer.tdl</code> file contains the database transaction 'SelectCustomerList' we want to execute.
+		We only have to specify the enclosing tag 'customer' for each customer record we are going to
+		retrieve with 'INTO customer'. The 'list' tag gets added by the directmap and is specified there as
+		'RETURN STANDALONE list':
+
+		</p><pre class="programlisting">
+	TRANSACTION SelectCustomerList
+	BEGIN
+		INTO customer DO SELECT * from Customer;
+	END
+		</pre><p>
+
+	We also need a validator for the input when the client sends a 'CustomerListRequest'.
+	We load the simple form DDL compiler in the 'LoadModules' section of the <code class="filename">tutorial.conf</code> and
+	register the simpleform program <code class="filename">Customer.sfrm</code> to the list of programs in the same file:
+
+		</p><pre class="programlisting">
+	LoadModules {
+		module mod_db_sqlite3
+		module mod_filter_libxml2
+		module mod_command_directmap
+		<span class="bold"><strong>module mod_ddlcompiler_simpleform</strong></span>
+	}
+
+	Processor {
+		program Customer.tdl
+		<span class="bold"><strong>program Customer.sfrm</strong></span>	
+	}
+		</pre><p>
+
+	and we add a simple form file <code class="filename">Customer.sfrm</code>.
+	We add a form called 'CustomerListRequest' which is empty for now 
+	but for the root element 'customer':
+
+		</p><pre class="programlisting">
+	FORM CustomerListRequest
+	{
+		customer {
+		}
+	}
+		</pre><p>
+	</p><p>
+		We have to restart the wolframe daemon now and restart it with
+		</p><pre class="programlisting">
+	pkill wolframed
+	/usr/sbin/wolframed -f -c tutorial.conf			
+		</pre><p>	
+	
+		This we have to do <span class="bold"><strong>every time</strong></span> we
+		change the configuration file <code class="filename">tutorial.conf</code>
+		or one of the files referenced there as <code class="filename">tutorial.dmap</code>,
+		<code class="filename">Customer.tdl</code> or <code class="filename">Customer.sfrm</code>.
+	</p><p>
+		The server shows now a message about the transaction function it
+		loaded:
+		
+		</p><pre class="programlisting">
+	DEBUG: Loaded transaction function 'SelectCustomerList'
+		</pre><p>
+	</p><p>
+		Now we create a telnet request which contains pseudo authentication credentials 
+		and a request for the list of customers, called
+		<code class="filename">~/tutorial/client/CustomerListRequest.netcat</code>:
+
+		</p><pre class="programlisting">
+	AUTH
+	MECH NONE
+	REQUEST
+	&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+	&lt;!DOCTYPE customer SYSTEM 'CustomerListRequest'&gt;
+	&lt;customer/&gt;
+	.
+	QUIT
+
+		</pre><p>
+
+		This we can execute with:
+
+		</p><pre class="programlisting">
+	netcat -v localhost 7661 &lt; CustomerListRequest.netcat
+		</pre><p>
+
+		and we get:
+
+		</p><pre class="programlisting">
+	Wolframe
+	OK
+	MECHS NONE
+	OK authorization
+	ANSWER
+	&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+	&lt;list/&gt;
+	
+	.
+	OK REQUEST CustomerListRequest
+	BYE
+
+		</pre><p>
+	</p><p>
+		We got an empty list of customers. So we have successfully configured
+		the server for our first command.
+	</p><p>
+		Let's add some customer data now:
+
+		</p><pre class="programlisting">
+	cat &gt; data.sql
+	insert into customer(name,address) values('Dr Who','Blue Police Box');
+	insert into customer(name,address) values('John Smith','The Wheel in Space');
+	Ctrl-D
+
+	sqlite3 tutorial.db &lt; data.sql
+		</pre><p>
+	</p><p>
+		When we reexecute the netcat command we see that the answer contains now
+		the list of customers:
+
+		</p><pre class="programlisting">
+	&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+	&lt;list&gt;
+	  &lt;customer&gt;
+	    &lt;id&gt;1&lt;/id&gt;
+	    &lt;name&gt;Dr Who&lt;/name&gt;
+	    &lt;address&gt;Blue Police Box&lt;/address&gt;
+	  &lt;/customer&gt;
+	  &lt;customer&gt;
+	    &lt;id&gt;2&lt;/id&gt;
+	    &lt;name&gt;John Smith&lt;/name&gt;
+	    &lt;address&gt;The Wheel in Space&lt;/address&gt;
+	  &lt;/customer&gt;
+	&lt;/list&gt;
+
+		</pre><p>
+
+		So, the data is now correctly retrieved from the database.
+	</p><p>
+		We can move now to the wolfclient to make our first request visible.
+
+	</p></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1370827900"></a>2.5. Step 5 - Implement client side customer list</h2></div></div></div><p>
+		It's time now to get something working visually, so we start to add a first
+		simple interface to our wolfclient.
+	</p><p>
+		For this we need the 'Qt designer'. We open the file 
+		<code class="filename">~/tutorial/client/init.ui</code> again
+		draw a single button with the text "Customer List":
+	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step5_customer_button.png" /></div></div><p>
+		We add a dynamic property 'form' of type String to this button, which has
+		the value 'customers':
+	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step5_customer_button_form_property.png" /></div></div><p>
+		When we save the form and start the wolfclient, we get (after logging in) the
+		first page with the "Customer List" button. Pressing it gives the error
+		message:
+	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step5_customer_button_pressed_error.png" /></div></div><p>
+		This means we have to define a new form
+		<code class="filename">~/tutorial/client/customers.ui</code>, which will
+		show the list of customers, for now we leave it empty. When we start the
+		wolfclient and press the "Customer List" button again, we see that
+		the form gets changed to the "customer" form (empty).
+	</p><p>
+		We add now a <code class="classname">QTreeWidget</code> item to the
+		<code class="filename">customer.ui</code> form and choose a grid layout
+		for the whole form. We change the name of the widget to 'customer':
+	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step5_customer_treewidget_and_name.png" /></div></div><p>
+		We also disable the 'rootIsDecorated' tick (we have a list, not a tree of customers).
+		We also set 'selectionMode' to 'SingleSelection' and 'selectionBehaviour'
+		to 'selectRows' to get the default expected behaviour of a list.
+	</p><p>
+		Now we change the columns of the list (context menu "Edit items" in the widget data area):
+	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step5_customer_column_names.png" /></div></div><p>
+		We can now open the wolfclient and press the button and the customer list
+		is loaded. But it's empty, we have first to fill it with data of our customers.
+	</p><p>
+		So we add a string property 'action' to the widget 'customer' containing
+		the following value:
+
+		</p><pre class="programlisting">
+	CustomerListRequest customer { }
+		</pre><p>
+		
+		We define the 'action' to be executed, when the form is loaded. In our
+		case we want to execute a 'CustomerListRequest'. The root element of the
+		request should be 'customer'. We currently don't want to pass any additional
+		elements, so we specify '{ }' for the empty content:
+	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step5_customer_action.png" /></div></div><p>
+		When we reexecute the wolfclient still nothing happens. So we
+		enable the 'Developer Mode' in the settings in the tab 'Developer'.
+		Then we see that the XML request has been constructed:
+	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step5_customers_list_debug.png" /></div></div><p>
+		We see that the request was ok but that the answer has errors:
+	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step5_customers_list_debug2.png" /></div></div><p>
+		The reason for this is, we have to tell the client how to map the
+		elements of the result structure in the XML back to widgets and properties
+		of the widgets.
+	</p><p>
+		We want to map the following XML:
+
+		</p><pre class="programlisting">
+	&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+	&lt;list&gt;
+	  &lt;customer&gt;
+	    &lt;id&gt;1&lt;/id&gt;
+	    &lt;name&gt;Dr Who&lt;/name&gt;
+	    &lt;address&gt;Blue Police Box&lt;/address&gt;
+	  &lt;/customer&gt;
+	  &lt;customer&gt;
+	    &lt;id&gt;2&lt;/id&gt;
+	    &lt;name&gt;John Smith&lt;/name&gt;
+	    &lt;address&gt;The Wheel in Space&lt;/address&gt;
+	  &lt;/customer&gt;
+	&lt;/list&gt;
+
+		</pre><p>
+		
+		We reference the root element and the tag and attribute values into the properties of the list widget 'customer'
+		(in our case the rows called 'name' and 'address'). This addressing schema belongs into the 
+		dynamic property 'answer' similar to the 'action' property:
+		
+		</p><pre class="programlisting">
+	CustomerList list {
+		customer[] {
+			id={?};
+			name{{row.name}};
+			address{{row.address}}
+		}
+	}
+		</pre><p>
+		
+		The line breaks and indentation are optional and you can write the mapping
+		in a single line.
+		The '?' is used for elements in the XML we don't need at the moment.
+		'row' is a property of the <code class="classname">QTreeWidget</code> widget
+		named 'customer' and iterates through all rows in the list. Each row
+		has sub-properties 'name' and 'address' which represent
+		the corresponding column:
+	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step5_customer_answer.png" /></div></div><p>
+		When we reexecute the wolfclient and click on the customer list we
+		see that the customer list is shown as expected:
+	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step5_customers_list.png" /></div></div><p>
+		But when we look at the contents of the debug window we still see an error reported:
+	</p><div class="mediaobject"><img src="images/Tutorial/step5_customers_undefined_doctype.png" /></div><p>
+		For simplicity we defined before with the directive 'STANDALONE'
+		that the server should not return an explicit document type.
+		But the client expects a document type declaration. For this we have to change the
+		definition in the file <code class="filename">tutorial.dmap</code> we created in step 4
+		in the following way:
+	</p><pre class="programlisting">
+	COMMAND CustomerListRequest
+	        CALL SelectCustomerList
+	        RETURN SKIP CustomerList list;
+	</pre><p>
+	The directive 'RETURN SKIP CustomerList list' states that a document
+	of type 'CustomerList' with the root element 'list' is returned
+	without validation of the output. 
+	We omit a validation on purpose for now to get to the next step.
+	</p></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1370924020"></a>2.6. Step 6 - Show customer</h2></div></div></div><p>
+		In the next step we want to show how data is communicated between the forms
+		by implementing a simple "show me customer data" use case.
+	</p><p>
+		Let's start by adding a button in <code class="filename">customers.ui</code> called 'Show':
+	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step6_show_button_form_prop.png" /></div></div><p>
+		We add a dynamic property 'form' to the button which we set to:
+
+		</p><pre class="programlisting">
+	customer_show?id={customer.selected}
+		</pre><p>
+
+		As before 'customer_show' is the name of the form to be loaded
+		when we press the button.
+	</p><p>
+		We want the currently selected customer to be accessible in the
+		<code class="filename">customer_show.ui</code> form, so we have to pass
+		the parameter 'id' as the value of the currenctly selected row
+		in the 'customer' list widget. This is denoted by 
+		'{customer.selected}'.
+	</p><p>
+		We also add some signals for the double click on the customer list to
+		click the "Show" button:
+	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step6_customers_signals.png" /></div></div><p>
+		Now of course we have to create a new form called <code class="filename">customer_show.ui</code>. We
+		choose a form layout and add two fields with labels 'Name:' and 'Address:'
+		and each of them having a <code class="classname">QLineEdit</code> widget. The names of the widgets
+		should be 'name' and 'address' in order to match the future read request
+		from the server. Temporarily we also add an 'id' field which shows us
+		the current value of the form parameter 'id' passed by the 'customers':
+	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step6_customer_show_id.png" /></div></div><p>
+		Finally we also need a button which brings us back to the customer list
+		by simply adding a 'form' action with the value 'customers':
+	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step6_customer_show_back_button.png" /></div></div><p>
+		If we start the wolfclient and select a customer and try to press 'Show' we will
+		notice that the button is disabled. This is because the form parameter 'id'
+		cannot be set to the id of the currently selected customer. Widgets in wolfclient
+		have the default behaviour of using the 'id' attribute as an identifier for the
+		whole row. In the previous step we didn't map the 'id' from the XML to the 'id'
+		property of the row. So we change the 'answer' property of the 'customer' widget
+		in the 'customers.ui' form:
+
+		</p><pre class="programlisting">
+	CustomerList list {
+	    customer[] {
+	        id={row.id};
+	        name{{row.name}};
+	        address{{row.address}}
+	    }}
+		</pre><p>
+		
+		'id={row.id}' maps the 'id' attribute to the 'id' property of each row.
+	</p><p>
+		The 'id' is now an XML attribute and not an element anymore.
+		We also would like to do some validation on the output, so
+		we can rely on each customers to actually have an 'id' attribute.
+	</p><p>
+		This is the moment we go back to the server and start with output form validation.
+		We add a form called 'CustomerList' to the file <code class="filename">Customer.sfrm</code> form which describes
+		the result of the 'CustomerListRequest' more precisely and especially
+		declares the 'id' as mandatory attribute of the customer:
+	</p><pre class="programlisting">
+	FORM CustomerList
+	{
+		list
+		{
+			customer []
+			{
+				id !@string
+				name string
+				address string
+			}
+		}
+	}
+
+	</pre><p>
+		We change now the command in <code class="filename">tutorial.dmap</code> 
+		again to switch on validation. The SKIP attribute is removed and
+		the root element does not have to be specified because it is defined now
+		in the form declaration:
+
+	</p><pre class="programlisting">
+	COMMAND CustomerListRequest CALL SelectCustomerList RETURN CustomerList;
+	</pre><p>
+	
+		Checking with:
+
+	</p><pre class="programlisting">
+	netcat -v localhost 7661 &lt; CustomerListRequest.netcat
+	</pre><p>
+	
+		we get now:
+
+	</p><pre class="programlisting">
+	&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;
+	&lt;!DOCTYPE list SYSTEM "CustomerList.simpleform"&gt;
+	&lt;list&gt;
+	  &lt;customer id="1"&gt;
+	    &lt;name&gt;Dr Who&lt;/name&gt;
+	    &lt;address&gt;Blue Police Box&lt;/address&gt;
+	  &lt;/customer&gt;
+	  &lt;customer id="2"&gt;
+	    &lt;name&gt;John Smith&lt;/name&gt;
+	    &lt;address&gt;The Wheel in Space&lt;/address&gt;
+	  &lt;/customer&gt;
+	&lt;/list&gt;
+
+	</pre><p>
+
+	</p><p>
+		Now the 'Show' button is no longer disabled and when double-clicking an entry
+		in the list of customers the wolfclient shows the id of the customer.
+	</p><p>
+		The 'name' and the 'address' fields are still empty though. We could of course
+		use two form parameters 'name' and 'address' to propagate the values between 
+		the two forms, but if the form gets more complex, this is not a good idea.
+		It's better to load the data for one customer, selecting the data by the current 'id'.
+	</p><p>
+		We start by setting the 'action' property on the <code class="filename">customer_show.ui</code> form
+		as follows: we want it to execute a request with document type 'CustomerRequest'
+		which searches for a single customer by customer id:
+	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step6_customer_show_action.png" /></div></div><p>
+		The XML sent to the server will look as follows:
+
+	</p><pre class="programlisting">
+	&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+	&lt;!DOCTYPE customer SYSTEM 'CustomerRequest'&gt;
+	&lt;customer id="2"/&gt;
+
+	</pre><p>
+
+		We also get in the client:
+
+	</p><pre class="programlisting">
+	no command handler for 'CustomerRequest'
+	</pre><p>
+
+		and in the server:
+
+	</p><pre class="programlisting">
+	ERROR: Error calling procedure: no command handler for 'CustomerRequest'	
+	</pre><p>
+
+	We see, that the request is sent to the server, but we didn't define the
+	necessary things in the server yet. So we add another simple mapping:
+
+	</p><pre class="programlisting">
+	COMMAND CustomerRequest CALL SelectCustomer RETURN Customer;
+	</pre><p>
+
+		to <code class="filename">tutorial.dmap</code>.
+	</p><p>
+		We define a new form 'CustomerRequest' in <code class="filename">Customer.sfrm</code> which contains the
+		validation of the customer request. The customer request should have except the root element
+		'customer' and a mandatory attribute 'id' to search for:
+	</p><pre class="programlisting">
+	FORM CustomerRequest
+	{
+		customer {
+			id !@string
+		}
+	}
+
+	</pre><p>
+		Of course we have to define a transaction function 'SelectCustomer'
+		in <code class="filename">Customer.tdl</code>:
+
+	</p><pre class="programlisting">
+	TRANSACTION SelectCustomer
+	BEGIN
+		INTO . DO SELECT * from Customer WHERE id=$(id);
+	END
+	</pre><p>
+	
+		The '$(id)' refers to the 'id' we pass down for the customer record
+		to retrieve. We don't have to specify '$(customer/id)' here as the root
+		element is always removed before.
+	</p><p>	
+		We also have to define how the result should be mapped, so
+		we add a 'Customer' form to <code class="filename">Customer.sfrm</code>:
+
+	</p><pre class="programlisting">
+	FORM Customer
+	{
+		customer
+		{
+			id !@string
+			name string
+			address string
+		}
+	}
+
+	</pre><p>
+
+		Now if we restart client and server and we click on the second
+		customer in the list we get:
+	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step6_customer_show_working.png" /></div></div><p>
+		So we successfully read the data of a customer into a form.
+	</p><p>
+		This time we didn't specify an 'answer' attribute in the 'customer_show.ui' form. So
+		how could the data be mapped back into the widget? There is an implicit mapping of
+		elements by name, so the contents of the 'name' XML element are mapped into the widget
+		with name 'name'. This should only be used if the forms are simple, it's better to
+		specify an explicit answer as follows:
+
+		</p><pre class="programlisting">
+	Customer customer { id={?}; name{{name}}; address{{address}} }
+		</pre><p>
+	</p></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1370948220"></a>2.7. Step 7 - Editing customer</h2></div></div></div><p>
+		We change the show customer use case slightly, so that we can also
+		edit the customer in the <code class="filename">customer_show.ui</code> form.
+	</p><p>
+		Let's first make a copy of <code class="filename">customer_show.ui</code>
+		and name it <code class="filename">customer_edit.ui</code>.
+	</p><p>
+		As before we add first a "Edit" button to the
+		<code class="filename">customers.ui</code> with 'forms'
+		set to:
+
+		</p><pre class="programlisting">
+	customer_edit?id={customer.selected}
+		</pre><p>
+	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step7_customers_edit_button.png" /></div></div><p>	
+		We change the form <code class="filename">customer_edit.ui</code>
+		and remove the line with 'ID' as we don't need it anymore
+		and because nobody should be able to edit the id of
+		a customer and change it! We also add another button and label
+		it 'Save', for this button we set 'action' to generate a
+		'CustomerUpdate' request:
+
+		</p><pre class="programlisting">
+	CustomerUpdate customer {
+	    id={main.id};
+	    name {{main.name}};
+	    address {{main.address}}
+	}
+		</pre><p>
+		
+		We also set 'form' to 'customers', so the user gets taken back
+		to the changed list of customers when saving the current record:
+	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step7_customer_edit.png" /></div></div><p>
+		The resulting 'CustomerUpdate' XML request looks as follows:
+	</p><pre class="programlisting">
+	&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+	&lt;!DOCTYPE customer SYSTEM 'CustomerUpdate'&gt;
+	&lt;customer id="2"&gt;
+	  &lt;name&gt;John Smith&lt;/name&gt;
+	  &lt;address&gt;The Wheel in Space&lt;/address&gt;
+	&lt;/customer&gt;
+
+	</pre><p>
+		Similar to to the "show customer" case we add now a new command mapping
+		in <code class="filename">tutorial.dmap</code>:
+
+	</p><pre class="programlisting">
+	COMMAND CustomerUpdate CALL UpdateCustomer;
+	</pre><p>
+
+		We also add a simple form 'CustomerUpdate' to <code class="filename">Customer.sfrm</code>
+		which looks very similar to the 'Customer' form:
+	</p><pre class="programlisting">
+	FORM CustomerUpdate
+	{
+		customer
+		{
+			id !@string
+			name string
+			address string
+		}
+	}
+
+	</pre><p>
+		Finally we write the transaction function 'CustomerUpdate' in
+		<code class="filename">Customer.tdl</code>:
+	</p><pre class="programlisting">
+	TRANSACTION UpdateCustomer
+	BEGIN
+		DO UPDATE Customer SET name=$(name), address=$(address)
+			WHERE id=$(id);
+	END
+	</pre><p>
+		Note, that this time the database transaction doesn't return a result.
+
+	</p><p>
+		Restart server and client and start to edit the customers.
+	</p><p>
+		In debug mode in wolfclient we can right-click on the "Save" button
+		and we pick the menu item "Debug: Inspect commands". Then we get
+		a dialog box which shows us the status of the widget elements and
+		how the XML request looks like which would be sent down to the server:
+	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step7_customer_debug_command.png" /></div></div></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1371021028"></a>2.8. Step 8 - Add a new customer</h2></div></div></div><p>
+		We also want to add new customers to the list. The "add customer" case
+		is very similar to the "edit customer" case.
+	</p><p>
+		Let's copy the <code class="filename">customer_edit.ui</code> to
+		<code class="filename">customer_add.ui</code>. We remove the
+		'action' and 'answer' on from the form itself as
+		we don't want to read anything when we create a new customer.
+		But of course we could execute here a "Get new customer initial data"
+		request which initializes certain values in the form.
+	</p><p>
+		We change the "Save" button and rename it to "Add". We also change 'CustomerUpdate'
+		to 'CustomerCreate' in the 'action' attribute and we remove the id property
+		as this one is automatically choosen by the sequence in the database:
+
+		</p><pre class="programlisting">
+	CustomerCreate customer {
+	    name {{main.name}};
+	    address {{main.address}}
+	}
+		</pre><p>
+	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step8_customer_add.png" /></div></div><p>
+		We also introduce a new element here, the 'initalFocus' property. We
+		set it on the 'name' <code class="classname">QLineWidget</code>, so that it
+		gets the initial keyboard focus when the form is loaded:
+	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step8_customer_add_name_initial_focus.png" /></div></div><p>
+		In the <code class="filename">customers.ui</code> form we have to add a 'Add' button which has one
+		property 'form' with value 'customer_add':
+	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step8_customers_add_button.png" /></div></div><p>
+		Now for the server side. We add a new mapping for customer creation
+		in <code class="filename">tutorial.dmap</code>:
+
+	</p><pre class="programlisting">
+	COMMAND CustomerCreate CALL CreateCustomer;
+	</pre><p>
+	
+		We also have to add the form 'CustomerCreate' to <code class="filename">Customer.sfrm</code>:
+
+	</p><pre class="programlisting">
+	FORM CustomerCreate
+	{
+		customer
+		{
+			name string
+			address string
+		}
+	}
+
+	</pre><p>
+
+		This is the same as the 'CustomerUpdate' form with the exception that
+		we don't accept an 'id' attribute to be passed to the server.
+	</p><p>
+		Last we add a 'CreateCustomer' transaction function:
+
+	</p><pre class="programlisting">
+	TRANSACTION CreateCustomer
+	BEGIN
+		DO INSERT INTO Customer( name, address )
+			VALUES( $(name), $(address) );
+	END
+	</pre><p>
+	
+		When we restart the server and client we see the following request
+		being passed to the wolframe server:
+
+	</p><pre class="programlisting">
+	&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+	&lt;!DOCTYPE customer SYSTEM 'CustomerCreate'&gt;
+	&lt;customer&gt;
+	  &lt;name&gt;New Customer&lt;/name&gt;
+	  &lt;address&gt;New Location&lt;/address&gt;
+	&lt;/customer&gt;
+
+	</pre><p>
+
+	</p></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1371056300"></a>2.9. Step 9 - Delete a customer</h2></div></div></div><p>
+		We want to get rid of customers. For this we have to change little
+		in the <code class="filename">custorms.ui</code> form: a button "Delete" with
+		the following 'action' property:
+
+		</p><pre class="programlisting">
+		CustomerDelete customer {id={customer.selected}}
+		</pre><p>
+		
+		We also want to reload the customer list after deletion. For now we
+		just set add a 'form' property with the value of 'customer',
+		this is the simplest way to reload the list of customers after the deletion:
+	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step9_customers_delete_button.png" /></div></div><p>
+		We add another map for the 'CustomerDelete' request in <code class="filename">tutorial.dmap</code>:
+
+	</p><pre class="programlisting">
+	COMMAND CustomerDelete CALL DeleteCustomer;
+	</pre><p>
+	
+		We also add a new form 'CustomerDelete' to the simpleform file <code class="filename">Customer.sfrm</code>
+		which allows us only the specify an 'id' attribute of the customer to delete:
+
+	</p><pre class="programlisting">
+	FORM CustomerDelete
+	{
+		customer {
+			id !@string
+		}
+	}
+
+	</pre><p>
+	
+		Finally we add the implementation of the delete transaction
+		in <code class="filename">Customer.tdl</code>:
+
+	</p><pre class="programlisting">
+	TRANSACTION DeleteCustomer
+	BEGIN
+		DO DELETE FROM Customer WHERE id=$(id);
+	END
+	</pre><p>
+	
+		Executing the request we see in the wolfclient debug output:
+
+	</p><pre class="programlisting">
+	&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+	&lt;!DOCTYPE customer SYSTEM 'CustomerDelete'&gt;
+	&lt;customer id="3"/&gt;
+
+	</pre><p>
+
+		Seems ok, customer gone. :-)
+	</p></div></div></div></body></html>
