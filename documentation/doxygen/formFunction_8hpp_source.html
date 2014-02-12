@@ -124,9 +124,9 @@
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#ifndef _LANGBIND_FORM_FUNCTION_HPP_INCLUDED</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _LANGBIND_FORM_FUNCTION_HPP_INCLUDED</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="typedfilter_8hpp.html">filter/typedfilter.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="countedReference_8hpp.html">types/countedReference.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mapContext_8hpp.html">serialize/mapContext.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mapContext_8hpp.html">serialize/mapContext.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &lt;boost/shared_ptr.hpp&gt;</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">namespace </span>_Wolframe {</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">namespace </span>proc {</div>
@@ -147,7 +147,7 @@
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class__Wolframe_1_1types_1_1CountedReference.html">TypedInputFilterR</a> <a class="code" href="struct__Wolframe_1_1langbind_1_1FormFunctionClosure.html#a0caaa8ba57dc9d1149d871534b510c1d">result</a>() <span class="keyword">const</span>=0;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="namespace__Wolframe_1_1langbind.html#a4b55d65ba9637b027cc16b8947a7cfd4">   70</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="class__Wolframe_1_1types_1_1CountedReference.html">types::CountedReference&lt;FormFunctionClosure&gt;</a> <a class="code" href="namespace__Wolframe_1_1langbind.html#a4b55d65ba9637b027cc16b8947a7cfd4">FormFunctionClosureR</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="namespace__Wolframe_1_1langbind.html#a8a64a59ae2a9114a088e6968297a66ec">   70</a></span>&#160;<span class="keyword">typedef</span> boost::shared_ptr&lt;FormFunctionClosure&gt; <a class="code" href="namespace__Wolframe_1_1langbind.html#a8a64a59ae2a9114a088e6968297a66ec">FormFunctionClosureR</a>;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
 <div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1langbind_1_1FormFunction.html">   72</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct__Wolframe_1_1langbind_1_1FormFunction.html">FormFunction</a></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
@@ -160,13 +160,12 @@
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}}<span class="comment">//namespace</span></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor"></span></div>
+<div class="ttc" id="namespace__Wolframe_1_1langbind_html_a8a64a59ae2a9114a088e6968297a66ec"><div class="ttname"><a href="namespace__Wolframe_1_1langbind.html#a8a64a59ae2a9114a088e6968297a66ec">_Wolframe::langbind::FormFunctionClosureR</a></div><div class="ttdeci">boost::shared_ptr&lt; FormFunctionClosure &gt; FormFunctionClosureR</div><div class="ttdef"><b>Definition:</b> formFunction.hpp:70</div></div>
 <div class="ttc" id="struct__Wolframe_1_1langbind_1_1FormFunctionClosure_html_abf4012edd5d8fced65d4c012e410863e"><div class="ttname"><a href="struct__Wolframe_1_1langbind_1_1FormFunctionClosure.html#abf4012edd5d8fced65d4c012e410863e">_Wolframe::langbind::FormFunctionClosure::init</a></div><div class="ttdeci">virtual void init(const proc::ProcessorProvider *p, const TypedInputFilterR &amp;i, serialize::Context::Flags f=serialize::Context::None)=0</div><div class="ttdoc">Initialization of call context for a new call. </div></div>
 <div class="ttc" id="struct__Wolframe_1_1langbind_1_1FormFunction_html_a9ffbdbf502675112bfa9890126355f99"><div class="ttname"><a href="struct__Wolframe_1_1langbind_1_1FormFunction.html#a9ffbdbf502675112bfa9890126355f99">_Wolframe::langbind::FormFunction::~FormFunction</a></div><div class="ttdeci">virtual ~FormFunction()</div><div class="ttdef"><b>Definition:</b> formFunction.hpp:74</div></div>
 <div class="ttc" id="class__Wolframe_1_1serialize_1_1Context_html_a8659689e2108ffce5f336db4df063825ab8c6d5e0d9e35275fa69994e6c2f9707"><div class="ttname"><a href="class__Wolframe_1_1serialize_1_1Context.html#a8659689e2108ffce5f336db4df063825ab8c6d5e0d9e35275fa69994e6c2f9707">_Wolframe::serialize::Context::None</a></div><div class="ttdef"><b>Definition:</b> mapContext.hpp:63</div></div>
-<div class="ttc" id="class__Wolframe_1_1proc_1_1ProcessorProvider_html"><div class="ttname"><a href="class__Wolframe_1_1proc_1_1ProcessorProvider.html">_Wolframe::proc::ProcessorProvider</a></div><div class="ttdoc">Processor provider. </div><div class="ttdef"><b>Definition:</b> procProvider.hpp:80</div></div>
+<div class="ttc" id="class__Wolframe_1_1proc_1_1ProcessorProvider_html"><div class="ttname"><a href="class__Wolframe_1_1proc_1_1ProcessorProvider.html">_Wolframe::proc::ProcessorProvider</a></div><div class="ttdoc">Processor provider. </div><div class="ttdef"><b>Definition:</b> procProvider.hpp:81</div></div>
 <div class="ttc" id="class__Wolframe_1_1serialize_1_1Context_html_a8659689e2108ffce5f336db4df063825"><div class="ttname"><a href="class__Wolframe_1_1serialize_1_1Context.html#a8659689e2108ffce5f336db4df063825">_Wolframe::serialize::Context::Flags</a></div><div class="ttdeci">Flags</div><div class="ttdef"><b>Definition:</b> mapContext.hpp:61</div></div>
-<div class="ttc" id="namespace__Wolframe_1_1langbind_html_a4b55d65ba9637b027cc16b8947a7cfd4"><div class="ttname"><a href="namespace__Wolframe_1_1langbind.html#a4b55d65ba9637b027cc16b8947a7cfd4">_Wolframe::langbind::FormFunctionClosureR</a></div><div class="ttdeci">types::CountedReference&lt; FormFunctionClosure &gt; FormFunctionClosureR</div><div class="ttdef"><b>Definition:</b> formFunction.hpp:70</div></div>
-<div class="ttc" id="countedReference_8hpp_html"><div class="ttname"><a href="countedReference_8hpp.html">countedReference.hpp</a></div><div class="ttdoc">Multiple references to an object that is freed with its last reference. </div></div>
 <div class="ttc" id="mapContext_8hpp_html"><div class="ttname"><a href="mapContext_8hpp.html">mapContext.hpp</a></div><div class="ttdoc">Defines the data structure holding the global serialization state variables (without the stack) ...</div></div>
 <div class="ttc" id="struct__Wolframe_1_1langbind_1_1FormFunctionClosure_html_a56f7ac45575b27a404138ae55e7f2700"><div class="ttname"><a href="struct__Wolframe_1_1langbind_1_1FormFunctionClosure.html#a56f7ac45575b27a404138ae55e7f2700">_Wolframe::langbind::FormFunctionClosure::~FormFunctionClosure</a></div><div class="ttdeci">virtual ~FormFunctionClosure()</div><div class="ttdef"><b>Definition:</b> formFunction.hpp:53</div></div>
 <div class="ttc" id="namespace__Wolframe_1_1langbind_html_aa2be0f99433df2117335bf0c9e0a93b9"><div class="ttname"><a href="namespace__Wolframe_1_1langbind.html#aa2be0f99433df2117335bf0c9e0a93b9">_Wolframe::langbind::FormFunctionR</a></div><div class="ttdeci">types::CountedReference&lt; FormFunction &gt; FormFunctionR</div><div class="ttdef"><b>Definition:</b> formFunction.hpp:78</div></div>
@@ -181,7 +180,7 @@
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 13 2014 18:08:17 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 12 2014 18:17:21 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

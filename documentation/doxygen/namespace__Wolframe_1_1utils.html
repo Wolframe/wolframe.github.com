@@ -94,6 +94,9 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1utils_1_1FileType.html">FileType</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the file type.  <a href="struct__Wolframe_1_1utils_1_1FileType.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1utils_1_1CharTable.html">CharTable</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Character table structure for parseNextToken( std::string&amp;,std::string::const_iterator&amp;, std::string::const_iterator, ...);.  <a href="class__Wolframe_1_1utils_1_1CharTable.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,9 +152,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a47307462e43d3aaebbc4d65d48c97b31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1utils.html#a47307462e43d3aaebbc4d65d48c97b31">writeFile</a> (const std::string &amp;filename, const std::string &amp;content)</td></tr>
 <tr class="memdesc:a47307462e43d3aaebbc4d65d48c97b31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writing a file.  <a href="#a47307462e43d3aaebbc4d65d48c97b31">More...</a><br/></td></tr>
 <tr class="separator:a47307462e43d3aaebbc4d65d48c97b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a412c82a70523605fea2802b2e30ba9c1"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1utils.html#a412c82a70523605fea2802b2e30ba9c1">getFileType</a> (const std::string &amp;filename)</td></tr>
-<tr class="memdesc:a412c82a70523605fea2802b2e30ba9c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the file type as string.  <a href="#a412c82a70523605fea2802b2e30ba9c1">More...</a><br/></td></tr>
-<tr class="separator:a412c82a70523605fea2802b2e30ba9c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3819d331fa7e2189b8cfc5688f621323"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct__Wolframe_1_1utils_1_1FileType.html">FileType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1utils.html#a3819d331fa7e2189b8cfc5688f621323">getFileType</a> (const std::string &amp;filename)</td></tr>
+<tr class="separator:a3819d331fa7e2189b8cfc5688f621323"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3009f4e0182d7ba1fb186fdce911380c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class__Wolframe_1_1utils_1_1CharTable.html">CharTable</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1utils.html#a3009f4e0182d7ba1fb186fdce911380c">identifierCharTable</a> ()</td></tr>
 <tr class="separator:a3009f4e0182d7ba1fb186fdce911380c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80537252cc9d8d999e47fb3216da6ea0"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class__Wolframe_1_1utils_1_1CharTable.html">CharTable</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1utils.html#a80537252cc9d8d999e47fb3216da6ea0">emptyCharTable</a> ()</td></tr>
@@ -336,12 +338,12 @@ std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 
 </div>
 </div>
-<a class="anchor" id="a412c82a70523605fea2802b2e30ba9c1"></a>
+<a class="anchor" id="a3819d331fa7e2189b8cfc5688f621323"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string _Wolframe::utils::getFileType </td>
+          <td class="memname"><a class="el" href="struct__Wolframe_1_1utils_1_1FileType.html">FileType</a> _Wolframe::utils::getFileType </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>filename</em></td><td>)</td>
@@ -349,10 +351,6 @@ std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Get the file type as string. </p>
-<dl class="section remark"><dt>Remarks</dt><dd>Very simplistic implementation for now </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>file type ("XML","TEXT:UTF-8","TEXT:ASCII", "" (unknown)) </dd></dl>
 
 </div>
 </div>
@@ -1147,7 +1145,7 @@ std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 13 2014 18:09:05 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 12 2014 18:17:52 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

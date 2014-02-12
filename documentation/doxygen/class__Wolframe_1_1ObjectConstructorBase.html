@@ -106,41 +106,39 @@ Inheritance diagram for _Wolframe::ObjectConstructorBase:</div>
  <div class="center">
   <img src="class__Wolframe_1_1ObjectConstructorBase.png" usemap="#_Wolframe::ObjectConstructorBase_map" alt=""/>
   <map id="_Wolframe::ObjectConstructorBase_map" name="_Wolframe::ObjectConstructorBase_map">
-<area href="class__Wolframe_1_1ConfiguredObjectConstructor.html" title="Constructor of a configured object. " alt="_Wolframe::ConfiguredObjectConstructor&lt; T &gt;" shape="rect" coords="431,56,852,80"/>
-<area href="class__Wolframe_1_1SimpleObjectConstructor.html" title="Constructor of a simple (without configuration) object. " alt="_Wolframe::SimpleObjectConstructor&lt; T &gt;" shape="rect" coords="431,112,852,136"/>
-<area href="class__Wolframe_1_1ConfiguredObjectConstructor.html" alt="_Wolframe::ConfiguredObjectConstructor&lt; cmdbind::CommandHandler &gt;" shape="rect" coords="431,168,852,192"/>
-<area href="class__Wolframe_1_1ConfiguredObjectConstructor.html" alt="_Wolframe::ConfiguredObjectConstructor&lt; RuntimeEnvironment &gt;" shape="rect" coords="431,224,852,248"/>
-<area href="class__Wolframe_1_1SimpleObjectConstructor.html" alt="_Wolframe::SimpleObjectConstructor&lt; langbind::CppFormFunction &gt;" shape="rect" coords="431,280,852,304"/>
-<area href="class__Wolframe_1_1SimpleObjectConstructor.html" alt="_Wolframe::SimpleObjectConstructor&lt; langbind::DDLCompiler &gt;" shape="rect" coords="431,336,852,360"/>
-<area href="class__Wolframe_1_1SimpleObjectConstructor.html" alt="_Wolframe::SimpleObjectConstructor&lt; langbind::Filter &gt;" shape="rect" coords="431,392,852,416"/>
-<area href="class__Wolframe_1_1SimpleObjectConstructor.html" alt="_Wolframe::SimpleObjectConstructor&lt; lua_CFunction &gt;" shape="rect" coords="431,448,852,472"/>
-<area href="class__Wolframe_1_1SimpleObjectConstructor.html" alt="_Wolframe::SimpleObjectConstructor&lt; prgbind::Program &gt;" shape="rect" coords="431,504,852,528"/>
-<area href="class__Wolframe_1_1SimpleObjectConstructor.html" alt="_Wolframe::SimpleObjectConstructor&lt; prnt::PrintFunction &gt;" shape="rect" coords="431,560,852,584"/>
-<area href="class__Wolframe_1_1SimpleObjectConstructor.html" alt="_Wolframe::SimpleObjectConstructor&lt; types::NormalizeFunction &gt;" shape="rect" coords="431,616,852,640"/>
+<area href="class__Wolframe_1_1ConfiguredObjectConstructor.html" title="Constructor of a configured object. " alt="_Wolframe::ConfiguredObjectConstructor&lt; T &gt;" shape="rect" coords="446,56,882,80"/>
+<area href="class__Wolframe_1_1SimpleObjectConstructor.html" title="Constructor of a simple (without configuration) object. " alt="_Wolframe::SimpleObjectConstructor&lt; T &gt;" shape="rect" coords="446,112,882,136"/>
+<area href="class__Wolframe_1_1ConfiguredObjectConstructor.html" alt="_Wolframe::ConfiguredObjectConstructor&lt; cmdbind::CommandHandler &gt;" shape="rect" coords="446,168,882,192"/>
+<area href="class__Wolframe_1_1ConfiguredObjectConstructor.html" alt="_Wolframe::ConfiguredObjectConstructor&lt; langbind::RuntimeEnvironment &gt;" shape="rect" coords="446,224,882,248"/>
+<area href="class__Wolframe_1_1SimpleObjectConstructor.html" alt="_Wolframe::SimpleObjectConstructor&lt; langbind::CppFormFunction &gt;" shape="rect" coords="446,280,882,304"/>
+<area href="class__Wolframe_1_1SimpleObjectConstructor.html" alt="_Wolframe::SimpleObjectConstructor&lt; langbind::DDLCompiler &gt;" shape="rect" coords="446,336,882,360"/>
+<area href="class__Wolframe_1_1SimpleObjectConstructor.html" alt="_Wolframe::SimpleObjectConstructor&lt; langbind::Filter &gt;" shape="rect" coords="446,392,882,416"/>
+<area href="class__Wolframe_1_1SimpleObjectConstructor.html" alt="_Wolframe::SimpleObjectConstructor&lt; prgbind::Program &gt;" shape="rect" coords="446,448,882,472"/>
+<area href="class__Wolframe_1_1SimpleObjectConstructor.html" alt="_Wolframe::SimpleObjectConstructor&lt; types::CustomDataType &gt;" shape="rect" coords="446,504,882,528"/>
+<area href="class__Wolframe_1_1SimpleObjectConstructor.html" alt="_Wolframe::SimpleObjectConstructor&lt; types::NormalizeFunction &gt;" shape="rect" coords="446,560,882,584"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a36260b1c4ec3cfbf32e9e58f86737c2e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2e">ObjectType</a> { <br/>
-&#160;&#160;<a class="el" href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2eade348018a968712afe39bdb5b43d5776">AUTHENTICATION_OBJECT</a>, 
-<a class="el" href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2ea3f46c056cdc38b6c8819f0bbb6f0bc0f">AUDIT_OBJECT</a>, 
-<a class="el" href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2eaef5e825aadd6290d22765f250afe8052">AUTHORIZATION_OBJECT</a>, 
-<a class="el" href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2ea2731e838dbe1bcb0493ab683fc1f20ee">DATABASE_OBJECT</a>, 
+&#160;&#160;<a class="el" href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2eade348018a968712afe39bdb5b43d5776">AUTHENTICATION_OBJECT</a> =0x0010, 
+<a class="el" href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2eaef5e825aadd6290d22765f250afe8052">AUTHORIZATION_OBJECT</a> =0x0020, 
+<a class="el" href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2ea3f46c056cdc38b6c8819f0bbb6f0bc0f">AUDIT_OBJECT</a> =0x0110, 
+<a class="el" href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2ea2731e838dbe1bcb0493ab683fc1f20ee">DATABASE_OBJECT</a> =0x0210, 
 <br/>
-&#160;&#160;<a class="el" href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2ea81438bc99c0bcb443582230df691bece">FILTER_OBJECT</a>, 
-<a class="el" href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2ea6338a38390a2ec2f07cec2913d676213">JOB_SCHEDULE_OBJECT</a>, 
-<a class="el" href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2eade05bf48cfe0b8c3c38d67af0dfb2ae3">DDL_COMPILER_OBJECT</a>, 
-<a class="el" href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2eaeddf71c1efd37603f10e8d9ebcda6d46">FORM_FUNCTION_OBJECT</a>, 
+&#160;&#160;<a class="el" href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2ea6338a38390a2ec2f07cec2913d676213">JOB_SCHEDULE_OBJECT</a> =0x0220, 
+<a class="el" href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2ea81438bc99c0bcb443582230df691bece">FILTER_OBJECT</a> =0x0310, 
+<a class="el" href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2eaeddf71c1efd37603f10e8d9ebcda6d46">FORM_FUNCTION_OBJECT</a> =0x0410, 
+<a class="el" href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2ea1d82e94c31742dd14cb7f7fbf3454dc0">NORMALIZE_FUNCTION_OBJECT</a> =0x0420, 
 <br/>
-&#160;&#160;<a class="el" href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2ea1d82e94c31742dd14cb7f7fbf3454dc0">NORMALIZE_FUNCTION_OBJECT</a>, 
-<a class="el" href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2eaffe0c2d954876c78246bc9aa7f56f18d">PRINT_FUNCTION_OBJECT</a>, 
-<a class="el" href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2ea2a5f4e7a62d51bfe0e5920bc04af99ff">CMD_HANDLER_OBJECT</a>, 
-<a class="el" href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2ea9706bd0485bd9ef629c3780e4cb202ad">LANGUAGE_EXTENSION_OBJECT</a>, 
+&#160;&#160;<a class="el" href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2eac188a34ab3fb062eea542c355b9a809c">CUSTOM_DATA_TYPE_OBJECT</a> =0x0430, 
+<a class="el" href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2ea2a5f4e7a62d51bfe0e5920bc04af99ff">CMD_HANDLER_OBJECT</a> =0x0610, 
+<a class="el" href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2ead9e19958f64e2d5bd94fb51388ab3b9a">PROGRAM_TYPE_OBJECT</a> =0x0710, 
+<a class="el" href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2eade05bf48cfe0b8c3c38d67af0dfb2ae3">DDL_COMPILER_OBJECT</a> =0x0720, 
 <br/>
-&#160;&#160;<a class="el" href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2ead9e19958f64e2d5bd94fb51388ab3b9a">PROGRAM_TYPE_OBJECT</a>, 
-<a class="el" href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2ea2e52bf3897c26fe224257c988e646ec1">RUNTIME_ENVIRONMENT_OBJECT</a>, 
-<a class="el" href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2ea6be699df919cd7b5dbbaa89b58bd958b">TEST_OBJECT</a>
+&#160;&#160;<a class="el" href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2ea2e52bf3897c26fe224257c988e646ec1">RUNTIME_ENVIRONMENT_OBJECT</a> =0x0730, 
+<a class="el" href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2ea6be699df919cd7b5dbbaa89b58bd958b">TEST_OBJECT</a> =0x9990
 <br/>
  }</td></tr>
 <tr class="separator:a36260b1c4ec3cfbf32e9e58f86737c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,29 +175,27 @@ Static Public Member Functions</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a36260b1c4ec3cfbf32e9e58f86737c2eade348018a968712afe39bdb5b43d5776"></a>AUTHENTICATION_OBJECT</em>&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a36260b1c4ec3cfbf32e9e58f86737c2ea3f46c056cdc38b6c8819f0bbb6f0bc0f"></a>AUDIT_OBJECT</em>&#160;</td><td class="fielddoc">
-</td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a36260b1c4ec3cfbf32e9e58f86737c2eaef5e825aadd6290d22765f250afe8052"></a>AUTHORIZATION_OBJECT</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a36260b1c4ec3cfbf32e9e58f86737c2ea3f46c056cdc38b6c8819f0bbb6f0bc0f"></a>AUDIT_OBJECT</em>&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a36260b1c4ec3cfbf32e9e58f86737c2ea2731e838dbe1bcb0493ab683fc1f20ee"></a>DATABASE_OBJECT</em>&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a36260b1c4ec3cfbf32e9e58f86737c2ea81438bc99c0bcb443582230df691bece"></a>FILTER_OBJECT</em>&#160;</td><td class="fielddoc">
-</td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a36260b1c4ec3cfbf32e9e58f86737c2ea6338a38390a2ec2f07cec2913d676213"></a>JOB_SCHEDULE_OBJECT</em>&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a36260b1c4ec3cfbf32e9e58f86737c2eade05bf48cfe0b8c3c38d67af0dfb2ae3"></a>DDL_COMPILER_OBJECT</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="a36260b1c4ec3cfbf32e9e58f86737c2ea81438bc99c0bcb443582230df691bece"></a>FILTER_OBJECT</em>&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a36260b1c4ec3cfbf32e9e58f86737c2eaeddf71c1efd37603f10e8d9ebcda6d46"></a>FORM_FUNCTION_OBJECT</em>&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a36260b1c4ec3cfbf32e9e58f86737c2ea1d82e94c31742dd14cb7f7fbf3454dc0"></a>NORMALIZE_FUNCTION_OBJECT</em>&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a36260b1c4ec3cfbf32e9e58f86737c2eaffe0c2d954876c78246bc9aa7f56f18d"></a>PRINT_FUNCTION_OBJECT</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="a36260b1c4ec3cfbf32e9e58f86737c2eac188a34ab3fb062eea542c355b9a809c"></a>CUSTOM_DATA_TYPE_OBJECT</em>&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a36260b1c4ec3cfbf32e9e58f86737c2ea2a5f4e7a62d51bfe0e5920bc04af99ff"></a>CMD_HANDLER_OBJECT</em>&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a36260b1c4ec3cfbf32e9e58f86737c2ea9706bd0485bd9ef629c3780e4cb202ad"></a>LANGUAGE_EXTENSION_OBJECT</em>&#160;</td><td class="fielddoc">
-</td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a36260b1c4ec3cfbf32e9e58f86737c2ead9e19958f64e2d5bd94fb51388ab3b9a"></a>PROGRAM_TYPE_OBJECT</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a36260b1c4ec3cfbf32e9e58f86737c2eade05bf48cfe0b8c3c38d67af0dfb2ae3"></a>DDL_COMPILER_OBJECT</em>&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a36260b1c4ec3cfbf32e9e58f86737c2ea2e52bf3897c26fe224257c988e646ec1"></a>RUNTIME_ENVIRONMENT_OBJECT</em>&#160;</td><td class="fielddoc">
 </td></tr>
@@ -255,7 +251,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class__Wolframe_1_1module_1_1LuaExtensionConstructor.html#aa7211c10fc34be03be25b53509e07e7e">_Wolframe::module::LuaExtensionConstructor</a>, <a class="el" href="class__Wolframe_1_1module_1_1NormalizeFunctionConstructor.html#a78ca4bf7c9819ee89714dcbf70efb2e6">_Wolframe::module::NormalizeFunctionConstructor</a>, <a class="el" href="class__Wolframe_1_1module_1_1ProgramTypeConstructor.html#a8a96c3ff4e6218ff31ea41307f4d07c6">_Wolframe::module::ProgramTypeConstructor</a>, <a class="el" href="class__Wolframe_1_1module_1_1PrintFunctionConstructor.html#a336ace9659b4139eb11dd850ef88d973">_Wolframe::module::PrintFunctionConstructor</a>, <a class="el" href="class__Wolframe_1_1module_1_1DDLCompilerConstructor.html#afb39d8621c16e310bb17cda46c228846">_Wolframe::module::DDLCompilerConstructor</a>, <a class="el" href="class__Wolframe_1_1module_1_1FilterConstructor.html#a87bd6f4364eeec70c43cb850c072ef70">_Wolframe::module::FilterConstructor</a>, and <a class="el" href="class__Wolframe_1_1module_1_1CppFormFunctionConstructor.html#a77129fbe1db673548782c2d19eafd847">_Wolframe::module::CppFormFunctionConstructor</a>.</p>
+<p>Implemented in <a class="el" href="class__Wolframe_1_1module_1_1CustomDataTypeConstructor.html#a0108797d52d5a77803d08d87fe2db7f9">_Wolframe::module::CustomDataTypeConstructor</a>, <a class="el" href="class__Wolframe_1_1module_1_1NormalizeFunctionConstructor.html#a78ca4bf7c9819ee89714dcbf70efb2e6">_Wolframe::module::NormalizeFunctionConstructor</a>, <a class="el" href="class__Wolframe_1_1module_1_1ProgramTypeConstructor.html#a8a96c3ff4e6218ff31ea41307f4d07c6">_Wolframe::module::ProgramTypeConstructor</a>, <a class="el" href="class__Wolframe_1_1module_1_1DDLCompilerConstructor.html#afb39d8621c16e310bb17cda46c228846">_Wolframe::module::DDLCompilerConstructor</a>, <a class="el" href="class__Wolframe_1_1module_1_1CppFormFunctionConstructor.html#a77129fbe1db673548782c2d19eafd847">_Wolframe::module::CppFormFunctionConstructor</a>, and <a class="el" href="class__Wolframe_1_1module_1_1FilterConstructor.html#a87bd6f4364eeec70c43cb850c072ef70">_Wolframe::module::FilterConstructor</a>.</p>
 
 </div>
 </div>
@@ -282,7 +278,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>The type of the object. Filter, DDL compiler, authentication etc. </p>
 
-<p>Implemented in <a class="el" href="class__Wolframe_1_1prgbind_1_1RuntimeEnvironmentConstructor.html#a26b2636bd2430477b614d0339f7ae5df">_Wolframe::prgbind::RuntimeEnvironmentConstructor</a>, <a class="el" href="class__Wolframe_1_1module_1_1LuaExtensionConstructor.html#a84849d4215c44e9605670e0f9b6d5dd7">_Wolframe::module::LuaExtensionConstructor</a>, <a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandlerConstructor.html#a097c4b206e48e038fc542e251d5059f4">_Wolframe::cmdbind::CommandHandlerConstructor</a>, <a class="el" href="class__Wolframe_1_1module_1_1NormalizeFunctionConstructor.html#a0f8cb641f66744f02386db59e1cb3a97">_Wolframe::module::NormalizeFunctionConstructor</a>, <a class="el" href="class__Wolframe_1_1module_1_1ProgramTypeConstructor.html#a045c6ea288fda5335d5722435850f232">_Wolframe::module::ProgramTypeConstructor</a>, <a class="el" href="class__Wolframe_1_1module_1_1PrintFunctionConstructor.html#a6f2cf69588a33e58850dbd6fe0ff2bfe">_Wolframe::module::PrintFunctionConstructor</a>, <a class="el" href="class__Wolframe_1_1module_1_1DDLCompilerConstructor.html#a232336c249ff5969f24029d9d2648498">_Wolframe::module::DDLCompilerConstructor</a>, <a class="el" href="class__Wolframe_1_1module_1_1FilterConstructor.html#a2b56ee9823de4defa6966b961687514c">_Wolframe::module::FilterConstructor</a>, and <a class="el" href="class__Wolframe_1_1module_1_1CppFormFunctionConstructor.html#a2d19d46c87bdd6f37442df4ff030a258">_Wolframe::module::CppFormFunctionConstructor</a>.</p>
+<p>Implemented in <a class="el" href="class__Wolframe_1_1module_1_1CustomDataTypeConstructor.html#ac383d225b3e52fda24a8d73283352ba0">_Wolframe::module::CustomDataTypeConstructor</a>, <a class="el" href="class__Wolframe_1_1module_1_1RuntimeEnvironmentConstructor.html#a85834e1019b9d9ac1d78bd1fce7a7074">_Wolframe::module::RuntimeEnvironmentConstructor</a>, <a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandlerConstructor.html#a097c4b206e48e038fc542e251d5059f4">_Wolframe::cmdbind::CommandHandlerConstructor</a>, <a class="el" href="class__Wolframe_1_1module_1_1NormalizeFunctionConstructor.html#a0f8cb641f66744f02386db59e1cb3a97">_Wolframe::module::NormalizeFunctionConstructor</a>, <a class="el" href="class__Wolframe_1_1module_1_1ProgramTypeConstructor.html#a045c6ea288fda5335d5722435850f232">_Wolframe::module::ProgramTypeConstructor</a>, <a class="el" href="class__Wolframe_1_1module_1_1DDLCompilerConstructor.html#a232336c249ff5969f24029d9d2648498">_Wolframe::module::DDLCompilerConstructor</a>, <a class="el" href="class__Wolframe_1_1module_1_1CppFormFunctionConstructor.html#a2d19d46c87bdd6f37442df4ff030a258">_Wolframe::module::CppFormFunctionConstructor</a>, and <a class="el" href="class__Wolframe_1_1module_1_1FilterConstructor.html#a2b56ee9823de4defa6966b961687514c">_Wolframe::module::FilterConstructor</a>.</p>
 
 </div>
 </div>
@@ -340,7 +336,7 @@ Static Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 13 2014 18:08:25 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 12 2014 18:17:33 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

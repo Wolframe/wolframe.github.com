@@ -98,6 +98,7 @@
 <div class="textblock"><code>#include &quot;<a class="el" href="program_8hpp_source.html">prgbind/program.hpp</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="moduleInterface_8hpp_source.html">processor/moduleInterface.hpp</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="constructor_8hpp_source.html">module/constructor.hpp</a>&quot;</code><br/>
+<code>#include &lt;boost/shared_ptr.hpp&gt;</code><br/>
 </div>
 <p><a href="programTypeBuilder_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -121,6 +122,9 @@ Namespaces</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:ac82caf0cc2b5db0c07933368d2180331"><td class="memItemLeft" align="right" valign="top">typedef prgbind::Program *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1module.html#ac82caf0cc2b5db0c07933368d2180331">_Wolframe::module::CreateProgramType</a> )()</td></tr>
 <tr class="separator:ac82caf0cc2b5db0c07933368d2180331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1e207b9fbdfa0eb8d132e96ee38be2b"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; ProgramTypeConstructor &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1module.html#ae1e207b9fbdfa0eb8d132e96ee38be2b">_Wolframe::module::ProgramTypeConstructorR</a></td></tr>
+<tr class="separator:ae1e207b9fbdfa0eb8d132e96ee38be2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface template for object builder of arbitrary program types implementing form functions. </p>
@@ -128,7 +132,7 @@ Typedefs</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 13 2014 18:08:22 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 12 2014 18:17:30 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -88,78 +88,45 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class__Wolframe_1_1db_1_1Statement-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">_Wolframe::db::Statement Class Reference</div>  </div>
+<div class="title">_Wolframe::db::Statement Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="bindStatementParams_8hpp_source.html">bindStatementParams.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="statement_8hpp_source.html">statement.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for _Wolframe::db::Statement:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class__Wolframe_1_1db_1_1Statement.png" usemap="#_Wolframe::db::Statement_map" alt=""/>
+  <map id="_Wolframe::db::Statement_map" name="_Wolframe::db::Statement_map">
+<area href="class__Wolframe_1_1db_1_1BaseStatement.html" alt="_Wolframe::db::BaseStatement" shape="rect" coords="0,56,216,80"/>
+<area href="class__Wolframe_1_1db_1_1SubstitutingStatement.html" alt="_Wolframe::db::SubstitutingStatement" shape="rect" coords="0,112,216,136"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9fa0dbfd0db69828250b052cb9316a14"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1Statement.html#a9fa0dbfd0db69828250b052cb9316a14">Statement</a> ()</td></tr>
-<tr class="separator:a9fa0dbfd0db69828250b052cb9316a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68753fdb393ff7ddc604753757416e4a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1Statement.html#a68753fdb393ff7ddc604753757416e4a">Statement</a> (const <a class="el" href="class__Wolframe_1_1db_1_1Statement.html">Statement</a> &amp;o)</td></tr>
-<tr class="separator:a68753fdb393ff7ddc604753757416e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac501c80db1b0dfebd2dab592fe13db9e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1Statement.html#ac501c80db1b0dfebd2dab592fe13db9e">Statement</a> (const std::string &amp;stmstr)</td></tr>
-<tr class="separator:ac501c80db1b0dfebd2dab592fe13db9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac111a401b173a16fd954c98ebea32692"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1Statement.html#ac111a401b173a16fd954c98ebea32692">clear</a> ()</td></tr>
-<tr class="separator:ac111a401b173a16fd954c98ebea32692"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67dda72742f8463679dbbb5ddd3cf484"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1Statement.html#a67dda72742f8463679dbbb5ddd3cf484">init</a> (const std::string &amp;stmstr)</td></tr>
-<tr class="separator:a67dda72742f8463679dbbb5ddd3cf484"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a806ced9e17bbb2b9e11e0db6da2678d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1Statement.html#a806ced9e17bbb2b9e11e0db6da2678d8">bind</a> (unsigned int idx, const std::string &amp;arg)</td></tr>
-<tr class="separator:a806ced9e17bbb2b9e11e0db6da2678d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adadcf18fd47c0658e692d65dd95c6104"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1Statement.html#adadcf18fd47c0658e692d65dd95c6104">expanded</a> () const </td></tr>
-<tr class="separator:adadcf18fd47c0658e692d65dd95c6104"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19b40b608445117fa9e5989cf5b87997"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1Statement.html#a19b40b608445117fa9e5989cf5b87997">string</a> () const </td></tr>
-<tr class="separator:a19b40b608445117fa9e5989cf5b87997"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d13956f6e33b206159e86c6f1d3c9c0"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1Statement.html#a7d13956f6e33b206159e86c6f1d3c9c0">maxparam</a> () const </td></tr>
-<tr class="separator:a7d13956f6e33b206159e86c6f1d3c9c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:a5a423a42de2df44dbec68ab39fd0bdaa"><td class="memItemLeft" align="right" valign="top">typedef std::pair&lt; unsigned <br class="typebreak"/>
-int, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1Statement.html#a5a423a42de2df44dbec68ab39fd0bdaa">Element</a></td></tr>
-<tr class="separator:a5a423a42de2df44dbec68ab39fd0bdaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a959b495ceaca7da4e6852bb7c61e9236"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1Statement.html#a959b495ceaca7da4e6852bb7c61e9236">m_string</a></td></tr>
-<tr class="separator:a959b495ceaca7da4e6852bb7c61e9236"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c5a87cb412d6d1201fc77d67479f943"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class__Wolframe_1_1db_1_1Statement.html#a5a423a42de2df44dbec68ab39fd0bdaa">Element</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1Statement.html#a7c5a87cb412d6d1201fc77d67479f943">m_data</a></td></tr>
-<tr class="separator:a7c5a87cb412d6d1201fc77d67479f943"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06a4faa96345881cb0c6d63cce51a71b"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1Statement.html#a06a4faa96345881cb0c6d63cce51a71b">m_maxparam</a></td></tr>
-<tr class="separator:a06a4faa96345881cb0c6d63cce51a71b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36119efd663c435758b548697f85be43"><td class="memItemLeft" align="right" valign="top">std::map&lt; unsigned int, <br class="typebreak"/>
-std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1Statement.html#a36119efd663c435758b548697f85be43">m_bind</a></td></tr>
-<tr class="separator:a36119efd663c435758b548697f85be43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ee1dae515285ada3b5ecaf57369d1fd"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1Statement.html#a7ee1dae515285ada3b5ecaf57369d1fd">~Statement</a> ()</td></tr>
+<tr class="separator:a7ee1dae515285ada3b5ecaf57369d1fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0225edaa806b7ceff26f15630c06f0c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1Statement.html#aa0225edaa806b7ceff26f15630c06f0c">bind</a> (const unsigned int idx, const <a class="el" href="class__Wolframe_1_1types_1_1Variant.html">types::Variant</a> &amp;arg)=0</td></tr>
+<tr class="separator:aa0225edaa806b7ceff26f15630c06f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3f6f2c91be8c771a124f86c62a797ed"><td class="memItemLeft" align="right" valign="top">virtual const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1Statement.html#aa3f6f2c91be8c771a124f86c62a797ed">originalSQL</a> () const =0</td></tr>
+<tr class="separator:aa3f6f2c91be8c771a124f86c62a797ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cd2e508b5fb04aa356f4628d8ce5717"><td class="memItemLeft" align="right" valign="top">virtual const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1Statement.html#a1cd2e508b5fb04aa356f4628d8ce5717">nativeSQL</a> () const =0</td></tr>
+<tr class="separator:a1cd2e508b5fb04aa356f4628d8ce5717"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a619e7da528826b09b4e43919aa466d00"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1Statement.html#a619e7da528826b09b4e43919aa466d00">init</a> (const std::string &amp;stmtStr)=0</td></tr>
+<tr class="separator:a619e7da528826b09b4e43919aa466d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4346b41b890efd8eaf591dba376adb67"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1Statement.html#a4346b41b890efd8eaf591dba376adb67">clear</a> ()=0</td></tr>
+<tr class="separator:a4346b41b890efd8eaf591dba376adb67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dff5c24837c405ad67c6cb324ddc297"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1Statement.html#a1dff5c24837c405ad67c6cb324ddc297">substitute</a> (bool withPlaceholders=true)=0</td></tr>
+<tr class="separator:a1dff5c24837c405ad67c6cb324ddc297"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e2150f495521186e7b5adab65922966"><td class="memItemLeft" align="right" valign="top">virtual const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1Statement.html#a7e2150f495521186e7b5adab65922966">replace</a> (const unsigned int idx) const =0</td></tr>
+<tr class="separator:a7e2150f495521186e7b5adab65922966"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a5a423a42de2df44dbec68ab39fd0bdaa"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std::pair&lt;unsigned int,std::string&gt; <a class="el" href="class__Wolframe_1_1db_1_1Statement.html#a5a423a42de2df44dbec68ab39fd0bdaa">_Wolframe::db::Statement::Element</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a9fa0dbfd0db69828250b052cb9316a14"></a>
+<a class="anchor" id="a7ee1dae515285ada3b5ecaf57369d1fd"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -167,7 +134,7 @@ std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">_Wolframe::db::Statement::Statement </td>
+          <td class="memname">virtual _Wolframe::db::Statement::~Statement </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -175,55 +142,7 @@ std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a68753fdb393ff7ddc604753757416e4a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">_Wolframe::db::Statement::Statement </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class__Wolframe_1_1db_1_1Statement.html">Statement</a> &amp;&#160;</td>
-          <td class="paramname"><em>o</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ac501c80db1b0dfebd2dab592fe13db9e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">_Wolframe::db::Statement::Statement </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>stmstr</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -231,20 +150,23 @@ std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a806ced9e17bbb2b9e11e0db6da2678d8"></a>
+<a class="anchor" id="aa0225edaa806b7ceff26f15630c06f0c"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void _Wolframe::db::Statement::bind </td>
+          <td class="memname">virtual void _Wolframe::db::Statement::bind </td>
           <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">const unsigned int&#160;</td>
           <td class="paramname"><em>idx</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="class__Wolframe_1_1types_1_1Variant.html">types::Variant</a> &amp;&#160;</td>
           <td class="paramname"><em>arg</em>&#160;</td>
         </tr>
         <tr>
@@ -253,58 +175,69 @@ std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<dl class="section remark"><dt>Remarks</dt><dd>Does no escaping of parameter because this is dependent on the database ! </dd></dl>
+
+<p>Implemented in <a class="el" href="class__Wolframe_1_1db_1_1BaseStatement.html#a73cde8b6cb393ecfc435b7efb5083ad5">_Wolframe::db::BaseStatement</a>, and <a class="el" href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#a5027ebf3ae2357835fe670860c57de37">_Wolframe::db::SubstitutingStatement</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ac111a401b173a16fd954c98ebea32692"></a>
+<a class="anchor" id="a4346b41b890efd8eaf591dba376adb67"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void _Wolframe::db::Statement::clear </td>
+          <td class="memname">virtual void _Wolframe::db::Statement::clear </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#a145c60e2b77638532fe5f2000efb07f2">_Wolframe::db::SubstitutingStatement</a>, and <a class="el" href="class__Wolframe_1_1db_1_1BaseStatement.html#ac49d080cf5455648e3ab755c6fb23e57">_Wolframe::db::BaseStatement</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="adadcf18fd47c0658e692d65dd95c6104"></a>
+<a class="anchor" id="a619e7da528826b09b4e43919aa466d00"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string _Wolframe::db::Statement::expanded </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a67dda72742f8463679dbbb5ddd3cf484"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void _Wolframe::db::Statement::init </td>
+          <td class="memname">virtual void _Wolframe::db::Statement::init </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>stmstr</em></td><td>)</td>
+          <td class="paramname"><em>stmtStr</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#aaf418f11bf432295f8fb1ee0b20004bb">_Wolframe::db::SubstitutingStatement</a>, and <a class="el" href="class__Wolframe_1_1db_1_1BaseStatement.html#af8048fbf702b5eb0b891b7bb7b9eb83d">_Wolframe::db::BaseStatement</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a7d13956f6e33b206159e86c6f1d3c9c0"></a>
+<a class="anchor" id="a1cd2e508b5fb04aa356f4628d8ce5717"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -312,7 +245,7 @@ std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int _Wolframe::db::Statement::maxparam </td>
+          <td class="memname">virtual const std::string _Wolframe::db::Statement::nativeSQL </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -320,14 +253,16 @@ std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
+<p>Implemented in <a class="el" href="class__Wolframe_1_1db_1_1BaseStatement.html#a59fc560542f56e6bd9e39e8108a8e3f2">_Wolframe::db::BaseStatement</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="a19b40b608445117fa9e5989cf5b87997"></a>
+<a class="anchor" id="aa3f6f2c91be8c771a124f86c62a797ed"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -335,7 +270,7 @@ std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::string&amp; _Wolframe::db::Statement::string </td>
+          <td class="memname">virtual const std::string _Wolframe::db::Statement::originalSQL </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -343,15 +278,16 @@ std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
+<p>Implemented in <a class="el" href="class__Wolframe_1_1db_1_1BaseStatement.html#ad855c104e5ad91d20129be0726f92c23">_Wolframe::db::BaseStatement</a>.</p>
+
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a36119efd663c435758b548697f85be43"></a>
+<a class="anchor" id="a7e2150f495521186e7b5adab65922966"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -359,19 +295,25 @@ std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt;unsigned int,std::string&gt; _Wolframe::db::Statement::m_bind</td>
+          <td class="memname">virtual const std::string _Wolframe::db::Statement::replace </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
+<p>Implemented in <a class="el" href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#a0e247a47ff47b75bf3fcab450dfa5b5d">_Wolframe::db::SubstitutingStatement</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="a7c5a87cb412d6d1201fc77d67479f943"></a>
+<a class="anchor" id="a1dff5c24837c405ad67c6cb324ddc297"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -379,66 +321,32 @@ std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="class__Wolframe_1_1db_1_1Statement.html#a5a423a42de2df44dbec68ab39fd0bdaa">Element</a>&gt; _Wolframe::db::Statement::m_data</td>
+          <td class="memname">virtual void _Wolframe::db::Statement::substitute </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>withPlaceholders</em> = <code>true</code></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="a06a4faa96345881cb0c6d63cce51a71b"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int _Wolframe::db::Statement::m_maxparam</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a959b495ceaca7da4e6852bb7c61e9236"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string _Wolframe::db::Statement::m_string</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>Implemented in <a class="el" href="class__Wolframe_1_1db_1_1BaseStatement.html#a97b6e6da07925af63458103b6c9a61a8">_Wolframe::db::BaseStatement</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/database/<a class="el" href="bindStatementParams_8hpp_source.html">bindStatementParams.hpp</a></li>
+<li>include/database/<a class="el" href="statement_8hpp_source.html">statement.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 13 2014 18:08:33 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 12 2014 18:17:39 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -58,8 +58,8 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.4. Step 4 - Implement server side customer list</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch02s03.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Steps</th><td width="20%" align="right"> <a accesskey="n" href="ch02s05.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1381494404"></a>2.4. Step 4 - Implement server side customer list</h2></div></div></div><p>
-		We want to store the customer data in a Sqlite database, so we have to
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.4. Step 4 - Implement server side customer list</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch02s03.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Steps</th><td width="20%" align="right"> <a accesskey="n" href="ch02s05.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1370597628"></a>2.4. Step 4 - Implement server side customer list</h2></div></div></div><p>
+		We want to store the customer data in an Sqlite database, so we have to
 		tell the server to load the database module for Sqlite:
 		</p><pre class="programlisting">
 	LoadModules {
@@ -100,7 +100,8 @@
 		When we restart the server we see:
 
 		</p><pre class="programlisting">
-	DEBUG: SQLite database unit 'sqlitedb' created with 3 connections to file 'tutorial.db'
+	DEBUG: SQLite database unit 'sqlitedb' created with 3 connections
+		to file 'tutorial.db'
 		</pre><p>
 	</p><p>
 		Now we want to use some XML filters to send/receive XML over the protocol,
@@ -125,14 +126,15 @@
 		</p><pre class="programlisting">
 	..
 	Module files to load:
- 	  /usr/lib/wolframe/modules/mod_db_sqlite3
+	  /usr/lib/wolframe/modules/mod_db_sqlite3
 	  /usr/lib/wolframe/modules/mod_filter_libxml2
 	..
 		</pre><p>
 		which looks ok.
 	</p><p>
-		For mapping the requests to programs we need the directmap module. First
-		add to <code class="filename">tutorial.conf</code>:
+		For mapping the requests to programs in the business layer 
+		we need the directmap module. First add to
+		<code class="filename">tutorial.conf</code>:
 
 		</p><pre class="programlisting">
 	LoadModules {
@@ -166,9 +168,9 @@
 	       RETURN STANDALONE list;
 		</pre><p>
 
-		This means that we map the 'CustomerListRequest' request to a function 'SelectCustomerList'
-		that is executed to perform the request. It will returns us document 
-		without a document type assigned (standalone) and with the root element 'list'. 
+		This is we map the 'CustomerListRequest' request to a function 'SelectCustomerList'
+		that is executed to perform the request. It will return the document 
+		without a document type assigned to it (standalone) and with the root element 'list'. 
 		The returned content will be a list of customers. The function will be implemented 
 		in a TDL program in the server. We first add the
 		TDL program declaration to a new 'Processor' configuration section:
@@ -179,9 +181,10 @@
 	}
 		</pre><p>
 
-		The <code class="filename">Customer.tdl</code> file contains the database transaction we want to execute.
-		We also specify that we want the result to be a 'list' which contains
-		'customer' tags with the data per customer:
+		The <code class="filename">Customer.tdl</code> file contains the database transaction 'SelectCustomerList' we want to execute.
+		We only have to specify the enclosing tag 'customer' for each customer record we are going to
+		retrieve with 'INTO customer'. The 'list' tag gets added by the directmap and is specified there as
+		'RETURN STANDALONE list':
 
 		</p><pre class="programlisting">
 	TRANSACTION SelectCustomerList

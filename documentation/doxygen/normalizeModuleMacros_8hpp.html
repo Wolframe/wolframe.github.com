@@ -100,10 +100,10 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:af307706f468765b53c730c34021c2411"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="normalizeModuleMacros_8hpp.html#af307706f468765b53c730c34021c2411">NORMALIZER_MODULE</a>(DOMAIN, DESCRIPTION)</td></tr>
-<tr class="separator:af307706f468765b53c730c34021c2411"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72f4b8845518bb9a482e588958146160"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="normalizeModuleMacros_8hpp.html#a72f4b8845518bb9a482e588958146160">NORMALIZER_MODULE_WITH_RESOURCE</a>(DOMAIN, DESCRIPTION, RESOURCECLASS)</td></tr>
-<tr class="separator:a72f4b8845518bb9a482e588958146160"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a544e98019b48586958a20552831b81ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="normalizeModuleMacros_8hpp.html#a544e98019b48586958a20552831b81ac">NORMALIZER_MODULE</a>(NAME, DESCRIPTION)</td></tr>
+<tr class="separator:a544e98019b48586958a20552831b81ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbfc0565910761aca51a82baaced5bf3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="normalizeModuleMacros_8hpp.html#afbfc0565910761aca51a82baaced5bf3">NORMALIZER_MODULE_WITH_RESOURCE</a>(NAME, DESCRIPTION, RESOURCECLASS)</td></tr>
+<tr class="separator:afbfc0565910761aca51a82baaced5bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8b6999dcfa7769842ff6f80c7a75f14"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="normalizeModuleMacros_8hpp.html#ad8b6999dcfa7769842ff6f80c7a75f14">NORMALIZER_FUNCTION</a>(NAME, CONSTRUCTOR)&#160;&#160;&#160;{NAME,&amp;CONSTRUCTOR},\</td></tr>
 <tr class="separator:ad8b6999dcfa7769842ff6f80c7a75f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5df0e75046747d5469889ce572c08b46"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="normalizeModuleMacros_8hpp.html#a5df0e75046747d5469889ce572c08b46">NORMALIZER_MODULE_END</a></td></tr>
@@ -138,7 +138,7 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af307706f468765b53c730c34021c2411"></a>
+<a class="anchor" id="a544e98019b48586958a20552831b81ac"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -146,7 +146,7 @@ Macros</h2></td></tr>
           <td class="memname">#define NORMALIZER_MODULE</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">DOMAIN, </td>
+          <td class="paramname">NAME, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -170,25 +170,21 @@ Macros</h2></td></tr>
 <div class="line">        \</div>
 <div class="line">        static <span class="keyword">const</span> <span class="keywordtype">char</span>* _Wolframe__moduleName()\</div>
 <div class="line">        {\</div>
-<div class="line">                return <span class="stringliteral">&quot;&quot;</span> #DOMAIN <span class="stringliteral">&quot;Normalizer&quot;</span>;\</div>
-<div class="line">        }\</div>
-<div class="line">        static <span class="keyword">const</span> <span class="keywordtype">char</span>* _Wolframe__moduleDomain()\</div>
-<div class="line">        {\</div>
-<div class="line">                return DOMAIN;\</div>
+<div class="line">                return NAME;\</div>
 <div class="line">        }\</div>
 <div class="line">        static <span class="keyword">const</span> <span class="keywordtype">char</span>* _Wolframe__moduleDescription()\</div>
 <div class="line">        {\</div>
 <div class="line">                return DESCRIPTION;\</div>
 <div class="line">        }\</div>
-<div class="line">        static <a class="code" href="class__Wolframe_1_1langbind_1_1ResourceHandle.html">_Wolframe::langbind::ResourceHandle</a>* _Wolframe__createResourceHandle()\</div>
+<div class="line">        static <a class="code" href="class__Wolframe_1_1types_1_1NormalizeResourceHandle.html">_Wolframe::types::NormalizeResourceHandle</a>* _Wolframe__createResourceHandle()\</div>
 <div class="line">        {\</div>
 <div class="line">                return 0;\</div>
 <div class="line">        }\</div>
 <div class="line">        static <a class="code" href="struct__Wolframe_1_1module_1_1NormalizeFunctionDef.html">_Wolframe::module::NormalizeFunctionDef</a> _Wolframe__normalizeFunctions[] =\</div>
 <div class="line">        {</div>
-<div class="ttc" id="struct__Wolframe_1_1module_1_1NormalizeFunctionDef_html"><div class="ttname"><a href="struct__Wolframe_1_1module_1_1NormalizeFunctionDef.html">_Wolframe::module::NormalizeFunctionDef</a></div><div class="ttdef"><b>Definition:</b> normalizeFunctionBuilder.hpp:98</div></div>
+<div class="ttc" id="class__Wolframe_1_1types_1_1NormalizeResourceHandle_html"><div class="ttname"><a href="class__Wolframe_1_1types_1_1NormalizeResourceHandle.html">_Wolframe::types::NormalizeResourceHandle</a></div><div class="ttdef"><b>Definition:</b> normalizeFunction.hpp:63</div></div>
+<div class="ttc" id="struct__Wolframe_1_1module_1_1NormalizeFunctionDef_html"><div class="ttname"><a href="struct__Wolframe_1_1module_1_1NormalizeFunctionDef.html">_Wolframe::module::NormalizeFunctionDef</a></div><div class="ttdef"><b>Definition:</b> normalizeFunctionBuilder.hpp:85</div></div>
 <div class="ttc" id="class__Wolframe_1_1log_1_1LogBackend_html"><div class="ttname"><a href="class__Wolframe_1_1log_1_1LogBackend.html">_Wolframe::log::LogBackend</a></div><div class="ttdef"><b>Definition:</b> logBackend.hpp:50</div></div>
-<div class="ttc" id="class__Wolframe_1_1langbind_1_1ResourceHandle_html"><div class="ttname"><a href="class__Wolframe_1_1langbind_1_1ResourceHandle.html">_Wolframe::langbind::ResourceHandle</a></div><div class="ttdef"><b>Definition:</b> normalizeFunction.hpp:51</div></div>
 <div class="ttc" id="logger-v1_8hpp_html_a82370806f69675b97ff088bb999c7ff8"><div class="ttname"><a href="logger-v1_8hpp.html#a82370806f69675b97ff088bb999c7ff8">logBackendPtr</a></div><div class="ttdeci">_Wolframe::log::LogBackend * logBackendPtr</div></div>
 </div><!-- fragment -->
 </div>
@@ -209,7 +205,7 @@ Macros</h2></td></tr>
 <div class="line">        {\</div>
 <div class="line">                static <a class="code" href="class__Wolframe_1_1module_1_1SimpleBuilder.html">_Wolframe::module::SimpleBuilder</a>* constructor()\</div>
 <div class="line">                {\</div>
-<div class="line">                        return <span class="keyword">new</span> <a class="code" href="class__Wolframe_1_1module_1_1NormalizeFunctionBuilder.html">_Wolframe::module::NormalizeFunctionBuilder</a>( _Wolframe__moduleName(), _Wolframe__moduleDomain(), _Wolframe__normalizeFunctions, &amp;_Wolframe__createResourceHandle);\</div>
+<div class="line">                        return <span class="keyword">new</span> <a class="code" href="class__Wolframe_1_1module_1_1NormalizeFunctionBuilder.html">_Wolframe::module::NormalizeFunctionBuilder</a>( _Wolframe__moduleName(), _Wolframe__normalizeFunctions, &amp;_Wolframe__createResourceHandle);\</div>
 <div class="line">                }\</div>
 <div class="line">        };\</div>
 <div class="line">        }\</div>
@@ -219,14 +215,14 @@ Macros</h2></td></tr>
 <div class="line">                ModuleImpl::constructor\</div>
 <div class="line">        };\</div>
 <div class="line">        _Wolframe::module::ModuleEntryPoint <a class="code" href="namespace__Wolframe_1_1module.html#aa8038dca6c1d20d7f1fbe76040a620ce">entryPoint</a>( 0, _Wolframe__moduleDescription(), _Wolframe__setModuleLogger, 0, 0, NofObjects, _Wolframe__objdef);</div>
-<div class="ttc" id="class__Wolframe_1_1module_1_1NormalizeFunctionBuilder_html"><div class="ttname"><a href="class__Wolframe_1_1module_1_1NormalizeFunctionBuilder.html">_Wolframe::module::NormalizeFunctionBuilder</a></div><div class="ttdef"><b>Definition:</b> normalizeFunctionBuilder.hpp:104</div></div>
+<div class="ttc" id="class__Wolframe_1_1module_1_1NormalizeFunctionBuilder_html"><div class="ttname"><a href="class__Wolframe_1_1module_1_1NormalizeFunctionBuilder.html">_Wolframe::module::NormalizeFunctionBuilder</a></div><div class="ttdef"><b>Definition:</b> normalizeFunctionBuilder.hpp:91</div></div>
 <div class="ttc" id="namespace__Wolframe_1_1module_html_aa8038dca6c1d20d7f1fbe76040a620ce"><div class="ttname"><a href="namespace__Wolframe_1_1module.html#aa8038dca6c1d20d7f1fbe76040a620ce">_Wolframe::module::entryPoint</a></div><div class="ttdeci">ModuleEntryPoint entryPoint</div><div class="ttdef"><b>Definition:</b> moduleInterface.hpp:178</div></div>
 <div class="ttc" id="class__Wolframe_1_1module_1_1SimpleBuilder_html"><div class="ttname"><a href="class__Wolframe_1_1module_1_1SimpleBuilder.html">_Wolframe::module::SimpleBuilder</a></div><div class="ttdef"><b>Definition:</b> moduleInterface.hpp:51</div></div>
 <div class="ttc" id="namespace__Wolframe_1_1module_html_af33df23d17fb7d53cc4cd8d2dd128948"><div class="ttname"><a href="namespace__Wolframe_1_1module.html#af33df23d17fb7d53cc4cd8d2dd128948">_Wolframe::module::createBuilderFunc</a></div><div class="ttdeci">SimpleBuilder *(* createBuilderFunc)()</div><div class="ttdef"><b>Definition:</b> moduleInterface.hpp:142</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a72f4b8845518bb9a482e588958146160"></a>
+<a class="anchor" id="afbfc0565910761aca51a82baaced5bf3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -234,7 +230,7 @@ Macros</h2></td></tr>
           <td class="memname">#define NORMALIZER_MODULE_WITH_RESOURCE</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">DOMAIN, </td>
+          <td class="paramname">NAME, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -257,32 +253,28 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code" href="class__Wolframe_1_1log_1_1LogBackend.html">_Wolframe::log::LogBackend</a>* <a class="code" href="logger-v1_8hpp.html#a82370806f69675b97ff088bb999c7ff8">logBackendPtr</a>;\</div>
 <div class="line">        \</div>
-<div class="line">        static <span class="keywordtype">void</span> setModuleLogger( <span class="keywordtype">void</span>* logger )\</div>
+<div class="line">        static <span class="keywordtype">void</span> _Wolframe__setModuleLogger( <span class="keywordtype">void</span>* logger )\</div>
 <div class="line">        {<a class="code" href="logger-v1_8hpp.html#a82370806f69675b97ff088bb999c7ff8">\</a></div>
 <div class="line"><a class="code" href="logger-v1_8hpp.html#a82370806f69675b97ff088bb999c7ff8">		logBackendPtr</a> = <span class="keyword">reinterpret_cast&lt;</span> <a class="code" href="class__Wolframe_1_1log_1_1LogBackend.html">_Wolframe::log::LogBackend</a>*<span class="keyword">&gt;</span>( logger);\</div>
 <div class="line">        }\</div>
 <div class="line">        \</div>
 <div class="line">        static <span class="keyword">const</span> <span class="keywordtype">char</span>* _Wolframe__moduleName()\</div>
 <div class="line">        {\</div>
-<div class="line">                return <span class="stringliteral">&quot;&quot;</span> #DOMAIN <span class="stringliteral">&quot;Normalizer&quot;</span>;\</div>
-<div class="line">        }\</div>
-<div class="line">        static <span class="keyword">const</span> <span class="keywordtype">char</span>* _Wolframe__moduleDomain()\</div>
-<div class="line">        {\</div>
-<div class="line">                return DOMAIN;\</div>
+<div class="line">                return NAME;\</div>
 <div class="line">        }\</div>
 <div class="line">        static <span class="keyword">const</span> <span class="keywordtype">char</span>* _Wolframe__moduleDescription()\</div>
 <div class="line">        {\</div>
 <div class="line">                return DESCRIPTION;\</div>
 <div class="line">        }\</div>
-<div class="line">        static <a class="code" href="class__Wolframe_1_1langbind_1_1ResourceHandle.html">_Wolframe::langbind::ResourceHandle</a>* _Wolframe__createResourceHandle()\</div>
+<div class="line">        static <a class="code" href="class__Wolframe_1_1types_1_1NormalizeResourceHandle.html">_Wolframe::types::NormalizeResourceHandle</a>* _Wolframe__createResourceHandle()\</div>
 <div class="line">        {\</div>
 <div class="line">                return <span class="keyword">new</span> RESOURCECLASS();\</div>
 <div class="line">        }\</div>
 <div class="line">        static <a class="code" href="struct__Wolframe_1_1module_1_1NormalizeFunctionDef.html">_Wolframe::module::NormalizeFunctionDef</a> _Wolframe__normalizeFunctions[] =\</div>
 <div class="line">        {</div>
-<div class="ttc" id="struct__Wolframe_1_1module_1_1NormalizeFunctionDef_html"><div class="ttname"><a href="struct__Wolframe_1_1module_1_1NormalizeFunctionDef.html">_Wolframe::module::NormalizeFunctionDef</a></div><div class="ttdef"><b>Definition:</b> normalizeFunctionBuilder.hpp:98</div></div>
+<div class="ttc" id="class__Wolframe_1_1types_1_1NormalizeResourceHandle_html"><div class="ttname"><a href="class__Wolframe_1_1types_1_1NormalizeResourceHandle.html">_Wolframe::types::NormalizeResourceHandle</a></div><div class="ttdef"><b>Definition:</b> normalizeFunction.hpp:63</div></div>
+<div class="ttc" id="struct__Wolframe_1_1module_1_1NormalizeFunctionDef_html"><div class="ttname"><a href="struct__Wolframe_1_1module_1_1NormalizeFunctionDef.html">_Wolframe::module::NormalizeFunctionDef</a></div><div class="ttdef"><b>Definition:</b> normalizeFunctionBuilder.hpp:85</div></div>
 <div class="ttc" id="class__Wolframe_1_1log_1_1LogBackend_html"><div class="ttname"><a href="class__Wolframe_1_1log_1_1LogBackend.html">_Wolframe::log::LogBackend</a></div><div class="ttdef"><b>Definition:</b> logBackend.hpp:50</div></div>
-<div class="ttc" id="class__Wolframe_1_1langbind_1_1ResourceHandle_html"><div class="ttname"><a href="class__Wolframe_1_1langbind_1_1ResourceHandle.html">_Wolframe::langbind::ResourceHandle</a></div><div class="ttdef"><b>Definition:</b> normalizeFunction.hpp:51</div></div>
 <div class="ttc" id="logger-v1_8hpp_html_a82370806f69675b97ff088bb999c7ff8"><div class="ttname"><a href="logger-v1_8hpp.html#a82370806f69675b97ff088bb999c7ff8">logBackendPtr</a></div><div class="ttdeci">_Wolframe::log::LogBackend * logBackendPtr</div></div>
 </div><!-- fragment -->
 </div>
@@ -291,7 +283,7 @@ Macros</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 13 2014 18:08:21 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 12 2014 18:17:28 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-	<title>Wolframe: include/prgbind/runtimeEnvironmentConstructor.hpp File Reference</title>
+	<title>Wolframe: include/module/runtimeEnvironmentConstructor.hpp File Reference</title>
 	<meta name="generator" content="Doxygen 1.8.6"/>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -80,7 +80,7 @@
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_30b5457ca6b80165b00a44f521ebc19f.html">prgbind</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_dc1aacf9e28ad733d01de42bc03b5008.html">module</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -92,29 +92,17 @@
 <div class="title">runtimeEnvironmentConstructor.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Interface to constructors of runtime environment for executing functions that need it.  
-<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="constructor_8hpp_source.html">module/constructor.hpp</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="formFunction_8hpp_source.html">langbind/formFunction.hpp</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="runtimeEnvironment_8hpp_source.html">langbind/runtimeEnvironment.hpp</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="moduleInterface_8hpp_source.html">processor/moduleInterface.hpp</a>&quot;</code><br/>
 <code>#include &lt;string&gt;</code><br/>
-<code>#include &lt;list&gt;</code><br/>
+<code>#include &lt;boost/shared_ptr.hpp&gt;</code><br/>
 </div>
 <p><a href="runtimeEnvironmentConstructor_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1prgbind_1_1RuntimeEnvironment.html">_Wolframe::prgbind::RuntimeEnvironment</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1prgbind_1_1RuntimeEnvironmentConstructor.html">_Wolframe::prgbind::RuntimeEnvironmentConstructor</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor of a runtime environment for executing functions.  <a href="class__Wolframe_1_1prgbind_1_1RuntimeEnvironmentConstructor.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1prgbind_1_1RuntimeEnvironmentDef.html">_Wolframe::prgbind::RuntimeEnvironmentDef</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of a runtime environment for executing functions.  <a href="class__Wolframe_1_1prgbind_1_1RuntimeEnvironmentDef.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1prgbind_1_1RuntimeEnvironmentFormFunction.html">_Wolframe::prgbind::RuntimeEnvironmentFormFunction</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Form function that needs an execution environment.  <a href="class__Wolframe_1_1prgbind_1_1RuntimeEnvironmentFormFunction.html#details">More...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1module_1_1RuntimeEnvironmentConstructor.html">_Wolframe::module::RuntimeEnvironmentConstructor</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -124,27 +112,21 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace__Wolframe_1_1proc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1proc.html">_Wolframe::proc</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespace__Wolframe_1_1prgbind"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1prgbind.html">_Wolframe::prgbind</a></td></tr>
+<tr class="memitem:namespace__Wolframe_1_1module"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1module.html">_Wolframe::module</a></td></tr>
+<tr class="memdesc:namespace__Wolframe_1_1module"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opaque definitions for <a class="el" href="class__Wolframe_1_1module_1_1ModulesDirectory.html">ModulesDirectory</a>. <br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a4ca2dd7b7a4768c39a29092d2ce77eb9"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-types::CountedReference<br class="typebreak"/>
-&lt; RuntimeEnvironment &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1prgbind.html#a4ca2dd7b7a4768c39a29092d2ce77eb9">_Wolframe::prgbind::RuntimeEnvironmentR</a></td></tr>
-<tr class="separator:a4ca2dd7b7a4768c39a29092d2ce77eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc4b53f0b6031ea5aa3d785481098289"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-types::CountedReference<br class="typebreak"/>
-&lt; RuntimeEnvironmentConstructor &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1prgbind.html#adc4b53f0b6031ea5aa3d785481098289">_Wolframe::prgbind::RuntimeEnvironmentConstructorR</a></td></tr>
-<tr class="separator:adc4b53f0b6031ea5aa3d785481098289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00c1ccd8d4d56fb319297c9e6b96324a"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; RuntimeEnvironmentConstructor &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1module.html#a00c1ccd8d4d56fb319297c9e6b96324a">_Wolframe::module::RuntimeEnvironmentConstructorR</a></td></tr>
+<tr class="separator:a00c1ccd8d4d56fb319297c9e6b96324a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Interface to constructors of runtime environment for executing functions that need it. </p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 13 2014 18:08:22 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 12 2014 18:17:30 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

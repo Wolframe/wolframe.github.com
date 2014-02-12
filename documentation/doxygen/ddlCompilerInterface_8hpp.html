@@ -97,16 +97,16 @@
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="form_8hpp_source.html">types/form.hpp</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="variant_8hpp_source.html">types/variant.hpp</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="countedReference_8hpp_source.html">types/countedReference.hpp</a>&quot;</code><br/>
 <code>#include &lt;string&gt;</code><br/>
 <code>#include &lt;vector&gt;</code><br/>
+<code>#include &lt;boost/shared_ptr.hpp&gt;</code><br/>
 </div>
 <p><a href="ddlCompilerInterface_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1langbind_1_1DDLCompiler.html">_Wolframe::langbind::DDLCompiler</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct__Wolframe_1_1langbind_1_1Interface.html" title="Operators and Methods checked in this module. ">Interface</a> for DDL compilers.  <a href="struct__Wolframe_1_1langbind_1_1DDLCompiler.html#details">More...</a><br/></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface for DDL compilers.  <a href="struct__Wolframe_1_1langbind_1_1DDLCompiler.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -119,11 +119,10 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:acebb4ce682aa987cefbfd7e2ae4deca9"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-types::CountedReference<br class="typebreak"/>
-&lt; DDLCompiler &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1langbind.html#acebb4ce682aa987cefbfd7e2ae4deca9">_Wolframe::langbind::DDLCompilerR</a></td></tr>
-<tr class="memdesc:acebb4ce682aa987cefbfd7e2ae4deca9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to a DDL compiler.  <a href="#acebb4ce682aa987cefbfd7e2ae4deca9">More...</a><br/></td></tr>
-<tr class="separator:acebb4ce682aa987cefbfd7e2ae4deca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe5b7785bf4295f26b57d59a0413b193"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; DDLCompiler &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1langbind.html#afe5b7785bf4295f26b57d59a0413b193">_Wolframe::langbind::DDLCompilerR</a></td></tr>
+<tr class="memdesc:afe5b7785bf4295f26b57d59a0413b193"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to a DDL compiler.  <a href="#afe5b7785bf4295f26b57d59a0413b193">More...</a><br/></td></tr>
+<tr class="separator:afe5b7785bf4295f26b57d59a0413b193"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae04a460dd80b4b7397dbd355c66beeea"><td class="memItemLeft" align="right" valign="top">typedef DDLCompiler *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1langbind.html#ae04a460dd80b4b7397dbd355c66beeea">_Wolframe::langbind::CreateDDLCompilerFunc</a> )()</td></tr>
 <tr class="memdesc:ae04a460dd80b4b7397dbd355c66beeea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes the creation of a DDL compiler object.  <a href="#ae04a460dd80b4b7397dbd355c66beeea">More...</a><br/></td></tr>
 <tr class="separator:ae04a460dd80b4b7397dbd355c66beeea"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,7 +133,7 @@ types::CountedReference<br class="typebreak"/>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 13 2014 18:08:21 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 12 2014 18:17:30 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

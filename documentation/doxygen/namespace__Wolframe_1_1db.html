@@ -95,7 +95,7 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1Statement.html">Statement</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1BaseStatement.html">BaseStatement</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1Database.html">Database</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for database interface. All databases should provide this interface.  <a href="class__Wolframe_1_1db_1_1Database.html#details">More...</a><br/></td></tr>
@@ -118,6 +118,10 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1DatabaseProvider.html">DatabaseProvider</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class__Wolframe_1_1db_1_1Database.html" title="Base class for database interface. All databases should provide this interface. ">Database</a> provider.  <a href="class__Wolframe_1_1db_1_1DatabaseProvider.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1Statement.html">Statement</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1SubstitutingStatement.html">SubstitutingStatement</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1db_1_1Transaction.html">Transaction</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,60 +149,57 @@ Typedefs</h2></td></tr>
 <a class="el" href="class__Wolframe_1_1types_1_1CountedReference.html">types::CountedReference</a><br class="typebreak"/>
 &lt; <a class="el" href="struct__Wolframe_1_1db_1_1Transaction.html">Transaction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1db.html#a361d9fdd8c35bed787132c00995c49b7">TransactionR</a></td></tr>
 <tr class="separator:a361d9fdd8c35bed787132c00995c49b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addb05390f8c794bd3c42553be8425f03"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-<a class="el" href="class__Wolframe_1_1types_1_1CountedReference.html">types::CountedReference</a><br class="typebreak"/>
-&lt; <a class="el" href="class__Wolframe_1_1db_1_1TransactionFunction.html">TransactionFunction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1db.html#addb05390f8c794bd3c42553be8425f03">TransactionFunctionR</a></td></tr>
-<tr class="separator:addb05390f8c794bd3c42553be8425f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8858c2154dd903807c8a6d9274a0a35"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-<a class="el" href="class__Wolframe_1_1types_1_1CountedReference.html">types::CountedReference</a><br class="typebreak"/>
-&lt; <a class="el" href="class__Wolframe_1_1db_1_1TransactionInput.html">TransactionInput</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1db.html#aa8858c2154dd903807c8a6d9274a0a35">TransactionInputR</a></td></tr>
-<tr class="separator:aa8858c2154dd903807c8a6d9274a0a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a185f99ae7bea96462437da6b931662"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-<a class="el" href="class__Wolframe_1_1types_1_1CountedReference.html">types::CountedReference</a><br class="typebreak"/>
-&lt; <a class="el" href="class__Wolframe_1_1db_1_1TransactionOutput.html">TransactionOutput</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1db.html#a3a185f99ae7bea96462437da6b931662">TransactionOutputR</a></td></tr>
-<tr class="separator:a3a185f99ae7bea96462437da6b931662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e6abcf2028f0e2c40e6694bc8ba9b08"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; <a class="el" href="class__Wolframe_1_1db_1_1TransactionFunction.html">TransactionFunction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1db.html#a9e6abcf2028f0e2c40e6694bc8ba9b08">TransactionFunctionR</a></td></tr>
+<tr class="separator:a9e6abcf2028f0e2c40e6694bc8ba9b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27ae5bb2d2cb3cb5974910341aca6d7b"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; <a class="el" href="class__Wolframe_1_1db_1_1TransactionInput.html">TransactionInput</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1db.html#a27ae5bb2d2cb3cb5974910341aca6d7b">TransactionInputR</a></td></tr>
+<tr class="separator:a27ae5bb2d2cb3cb5974910341aca6d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a334ecce613dc912f65f200da99acd741"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; <a class="el" href="class__Wolframe_1_1db_1_1TransactionOutput.html">TransactionOutput</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1db.html#a334ecce613dc912f65f200da99acd741">TransactionOutputR</a></td></tr>
+<tr class="separator:a334ecce613dc912f65f200da99acd741"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aad90a4c9be07469e840c20541496e4af"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair<br class="typebreak"/>
 &lt; std::string, <br class="typebreak"/>
-<a class="el" href="namespace__Wolframe_1_1db.html#addb05390f8c794bd3c42553be8425f03">TransactionFunctionR</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1db.html#aad90a4c9be07469e840c20541496e4af">loadTransactionProgramFile</a> (const std::string &amp;filename, const std::string &amp;databaseId, const std::string &amp;databaseClassName, const <a class="el" href="struct__Wolframe_1_1db_1_1LanguageDescription.html">LanguageDescription</a> *langdescr)</td></tr>
+<a class="el" href="namespace__Wolframe_1_1db.html#a9e6abcf2028f0e2c40e6694bc8ba9b08">TransactionFunctionR</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1db.html#aad90a4c9be07469e840c20541496e4af">loadTransactionProgramFile</a> (const std::string &amp;filename, const std::string &amp;databaseId, const std::string &amp;databaseClassName, const <a class="el" href="struct__Wolframe_1_1db_1_1LanguageDescription.html">LanguageDescription</a> *langdescr)</td></tr>
 <tr class="separator:aad90a4c9be07469e840c20541496e4af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeba172fe32c0174af878ba420da734f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1db_1_1TransactionFunction.html">TransactionFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1db.html#aeba172fe32c0174af878ba420da734f3">createTransactionFunction</a> (const TransactionFunctionDescription &amp;description, const <a class="el" href="struct__Wolframe_1_1db_1_1LanguageDescription.html">LanguageDescription</a> *langdescr, const SubroutineDeclarationMap &amp;functionmap)</td></tr>
 <tr class="memdesc:aeba172fe32c0174af878ba420da734f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a database transaction function from its description source.  <a href="#aeba172fe32c0174af878ba420da734f3">More...</a><br/></td></tr>
 <tr class="separator:aeba172fe32c0174af878ba420da734f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a class="anchor" id="addb05390f8c794bd3c42553be8425f03"></a>
+<a class="anchor" id="a9e6abcf2028f0e2c40e6694bc8ba9b08"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="class__Wolframe_1_1types_1_1CountedReference.html">types::CountedReference</a>&lt;<a class="el" href="class__Wolframe_1_1db_1_1TransactionFunction.html">TransactionFunction</a>&gt; <a class="el" href="namespace__Wolframe_1_1db.html#addb05390f8c794bd3c42553be8425f03">_Wolframe::db::TransactionFunctionR</a></td>
+          <td class="memname">typedef boost::shared_ptr&lt;<a class="el" href="class__Wolframe_1_1db_1_1TransactionFunction.html">TransactionFunction</a>&gt; <a class="el" href="namespace__Wolframe_1_1db.html#a9e6abcf2028f0e2c40e6694bc8ba9b08">_Wolframe::db::TransactionFunctionR</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="aa8858c2154dd903807c8a6d9274a0a35"></a>
+<a class="anchor" id="a27ae5bb2d2cb3cb5974910341aca6d7b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="class__Wolframe_1_1types_1_1CountedReference.html">types::CountedReference</a>&lt;<a class="el" href="class__Wolframe_1_1db_1_1TransactionInput.html">TransactionInput</a>&gt; <a class="el" href="namespace__Wolframe_1_1db.html#aa8858c2154dd903807c8a6d9274a0a35">_Wolframe::db::TransactionInputR</a></td>
+          <td class="memname">typedef boost::shared_ptr&lt;<a class="el" href="class__Wolframe_1_1db_1_1TransactionInput.html">TransactionInput</a>&gt; <a class="el" href="namespace__Wolframe_1_1db.html#a27ae5bb2d2cb3cb5974910341aca6d7b">_Wolframe::db::TransactionInputR</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a3a185f99ae7bea96462437da6b931662"></a>
+<a class="anchor" id="a334ecce613dc912f65f200da99acd741"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="class__Wolframe_1_1types_1_1CountedReference.html">types::CountedReference</a>&lt;<a class="el" href="class__Wolframe_1_1db_1_1TransactionOutput.html">TransactionOutput</a>&gt; <a class="el" href="namespace__Wolframe_1_1db.html#a3a185f99ae7bea96462437da6b931662">_Wolframe::db::TransactionOutputR</a></td>
+          <td class="memname">typedef boost::shared_ptr&lt;<a class="el" href="class__Wolframe_1_1db_1_1TransactionOutput.html">TransactionOutput</a>&gt; <a class="el" href="namespace__Wolframe_1_1db.html#a334ecce613dc912f65f200da99acd741">_Wolframe::db::TransactionOutputR</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -265,7 +266,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;std::pair&lt;std::string,<a class="el" href="namespace__Wolframe_1_1db.html#addb05390f8c794bd3c42553be8425f03">TransactionFunctionR</a>&gt; &gt; _Wolframe::db::loadTransactionProgramFile </td>
+          <td class="memname">std::vector&lt;std::pair&lt;std::string,<a class="el" href="namespace__Wolframe_1_1db.html#a9e6abcf2028f0e2c40e6694bc8ba9b08">TransactionFunctionR</a>&gt; &gt; _Wolframe::db::loadTransactionProgramFile </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>filename</em>, </td>
@@ -302,7 +303,7 @@ Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 13 2014 18:08:33 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 12 2014 18:17:39 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

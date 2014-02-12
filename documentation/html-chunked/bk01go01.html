@@ -58,15 +58,11 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Glossary</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch06.html">Prev</a> </td><th width="60%" align="center">Developing Wolframe Server Applications</th><td width="20%" align="right"> <a accesskey="n" href="bk01ix01.html">Next</a></td></tr></table><hr /></div><div class="glossary"><div class="titlepage"><div><div><h1 class="title"><a id="idp1403330332"></a>Glossary</h1></div></div></div><p>
-		This is the glossary for the Wolframe Service Development Kit. Although it
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Glossary</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch06.html">Prev</a> </td><th width="60%" align="center">Developing Wolframe Server Applications</th><td width="20%" align="right"> <a accesskey="n" href="bk01ix01.html">Next</a></td></tr></table><hr /></div><div class="glossary"><div class="titlepage"><div><div><h1 class="title"><a id="idp1385795644"></a>Glossary</h1></div></div></div><p>
+		This is the glossary for the Wolframe Application Building Manual. Although it
 		covers most of the terms used in the Wolframe world, some terms might be skipped
 		if they are rarely used in this context. These terms are explained in the
-		Application Building Manual
-	</p><p>
-		This is the glossary for the Wolframe Application Building Manual.
-		It covers most of the terms used in a Wolframe application,
-		although some of the terms might be found only in this manual.
+		Application Building Manual.
 	</p><div class="glossdiv"><h3 class="title">External glossary</h3><dl><dt><a id="DDL"></a><span class="glossterm">Data Definition Language</span></dt><dd class="glossdef"><p>A domain specific language for describing data structures</p></dd></dl></div><div class="glossdiv"><h3 class="title">Wolframe glossary</h3><dl><dt><span class="glossterm">Connection Handler</span></dt><dd class="glossdef"><p>Interface for the networking to one client/server connection during its whole lifetime.
 			</p></dd><dt><span class="glossterm">Command Handler</span></dt><dd class="glossdef"><p>Interface for delegating processing of client protocol commands in a hierarchical way. A command handler is created by a connection handler or another command handler. During command execution the input/output of the connection is entirely handled by the command handler. Command Handlers are used to build the communication protocol processing as hierarchical state machine.
 			</p></dd><dt><span class="glossterm">Network Input</span></dt><dd class="glossdef"><p>Data passed from the networking framework to the connection handler through its channel for processing.
@@ -78,12 +74,22 @@
 			</p></dd><dt><span class="glossterm">Lua</span></dt><dd class="glossdef"><p>Lua (www.lua.org) is a scripting language. It is used in Wolframe as one language for writing programs. It distinguishes itself by being lightweight. It has to be lightweight because the language context has to be recreated with every start of a clients command execution for security reasons.
 			</p></dd><dt><span class="glossterm">Filter</span></dt><dd class="glossdef"><p>Filters are attached to network input and output to read and write input in a well defined format. Filters let you process input and print output in an iterative way. Filters are loaded by the system at startup and have a unique name.
 			</p></dd><dt><span class="glossterm">Form</span></dt><dd class="glossdef"><p>A form is a hierarchical description of typed data. Forms are used to create objects from a serialization and to validate input. Forms are defined in programs written in a DDL (Data Definition Language) or as declared as part of a build-in function API.
-			</p></dd><dt><span class="glossterm">Direct Map</span></dt><dd class="glossdef"><p>A direct map is a program described by a form for the input, a form for the output, and a transaction function. The input of a direct map transaction function is the object deserialization of the input xml defined by the input form. The result of the transaction function is returned as xml serialization of the transaction result defined by the output form. It is called direct map because no scripting is involved in this case.
+			</p></dd><dt><span class="glossterm">Direct Map Command Handler</span></dt><dd class="glossdef"><p>The direct map command handler, also refered to as the standard comand handle
+			is a command handler describing how server requsts are executed.
+			It describes requests by a form for the input, a form for the output, and a function called. 
+			The input of a direct map function is the object deserialization of the input 
+			defined in the input form. The result of the function is returned as serialization of 
+			the transaction result defined in the output form. 
 			</p></dd><dt><span class="glossterm">Channel</span></dt><dd class="glossdef"><p>The flow for a single connection. Not all objects have channels (e.g. databases).
 			</p></dd><dt><span class="glossterm">Group</span></dt><dd class="glossdef"><p>A set of objects of the same type seen as one single object for the objects that use it.
 			</p></dd><dt><span class="glossterm">Unit</span></dt><dd class="glossdef"><p>An element of a group. A group is a set of units.
-			</p></dd><dt><span class="glossterm">Provider</span></dt><dd class="glossdef"><p>An entity providing objects of a kind. Some providers are factories, but not all of them (e.g. the database provider)
-			</p></dd><dt><a id="EoD"></a><span class="glossterm">End Of Data (EoD)</span></dt><dd class="glossdef"><p>Marks the end of the data to be processed by a processor. End of data is marked with CR LF dot ('.') CR LF or LF dot LF. For passing lines with a dot ('.') at the start of a content line, the client has to escape an LF dot in the content with LF dot dot. This escaping applies also to the result returned to the client. So client has to unescape LF dot sequences by replacing them by a LF.
+			</p></dd><dt><span class="glossterm">Provider</span></dt><dd class="glossdef"><p>An entity providing objects of a kind. Some providers are factories, 
+			but not all of them (e.g. the database provider)
+			</p></dd><dt><a id="EoD"></a><span class="glossterm">End Of Data (EoD)</span></dt><dd class="glossdef"><p>Marks the end of the data to be processed by a processor. End of data is 
+			marked with CR LF dot ('.') CR LF or LF dot LF. For passing lines with a dot ('.') at 
+			the start of a content line, the client has to escape an LF dot in the content with 
+			LF dot dot. This escaping applies also to the result returned to the client. 
+			So client has to unescape LF dot sequences by replacing them by a LF.
 			</p></dd><dt><a id="EoM"></a><span class="glossterm">End Of Message (EoM)</span></dt><dd class="glossdef"><p>Marks the end of a network input message. End of message is handled by the processor without showing up to the processor program (yield execution).
 			</p></dd><dt><span class="glossterm">Application Reference Path</span></dt><dd class="glossdef"><p>The application server defines this file path where all relative paths defined in the configuration refer to.
 			</p></dd><dt><span class="glossterm">Yield execution</span></dt><dd class="glossdef"><p>The processor yields execution and gives control back to the connection handler, when it cannot continue execution. The connection handler has to resume with an action returned to the networking framework, that fetches the resources needed by the processor to continue. (see also [http://en.wikipedia.org/wiki/Coroutine Wikipedia yield in coroutine]). Lua is able to yield execution.

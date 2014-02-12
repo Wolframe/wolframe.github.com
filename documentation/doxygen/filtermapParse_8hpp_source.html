@@ -207,7 +207,7 @@
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        boost::value_initialized&lt;Element&gt; val;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        ((TYPE*)stk.back().value())-&gt;push_back( val);</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        stk.back().state( 1);</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        Element* ee = &amp;((TYPE*)(<span class="keywordtype">char</span>*)stk.back().value())-&gt;back();</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        Element* ee = &amp;((TYPE*)stk.back().value())-&gt;back();</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keywordflow">if</span> (FiltermapIntrusiveProperty&lt;Element&gt;::type() == <a class="code" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#ad44a35a81bd282a6fd269e3e58fcdc93a175dfbdb3e881b1b300440490ef1e38c">StructDescriptionBase::Atomic</a>)</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        {</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                stk.push_back( FiltermapParseState( 0, &amp;<a class="code" href="namespace__Wolframe_1_1serialize.html#acb452ee5898cb37323c39961b86f9581">parseAtomicElementEndTag</a>, 0));</div>
@@ -250,7 +250,7 @@
 <div class="ttc" id="namespace__Wolframe_1_1serialize_html_a437f712a93dbdc32a14fbd8d2f0779b4"><div class="ttname"><a href="namespace__Wolframe_1_1serialize.html#a437f712a93dbdc32a14fbd8d2f0779b4">_Wolframe::serialize::parseValue_uchar</a></div><div class="ttdeci">bool parseValue_uchar(unsigned char *, const types::VariantConst &amp;element)</div></div>
 <div class="ttc" id="filtermapProperty_8hpp_html"><div class="ttname"><a href="filtermapProperty_8hpp.html">filtermapProperty.hpp</a></div><div class="ttdoc">Defines the intrusive implementation of some parsing element properties. </div></div>
 <div class="ttc" id="namespace__Wolframe_1_1serialize_html_af1642990166a61fe64c8f448fcf643d9"><div class="ttname"><a href="namespace__Wolframe_1_1serialize.html#af1642990166a61fe64c8f448fcf643d9">_Wolframe::serialize::parseValue_long</a></div><div class="ttdeci">bool parseValue_long(signed long *, const types::VariantConst &amp;element)</div></div>
-<div class="ttc" id="struct__Wolframe_1_1types_1_1VariantConst_html"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1VariantConst.html">_Wolframe::types::VariantConst</a></div><div class="ttdoc">Variant value type that represents a variant copy without content ownership. </div><div class="ttdef"><b>Definition:</b> variant.hpp:219</div></div>
+<div class="ttc" id="struct__Wolframe_1_1types_1_1VariantConst_html"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1VariantConst.html">_Wolframe::types::VariantConst</a></div><div class="ttdoc">Variant value type that represents a variant copy without content ownership. </div><div class="ttdef"><b>Definition:</b> variant.hpp:244</div></div>
 <div class="ttc" id="variant_8hpp_html"><div class="ttname"><a href="variant_8hpp.html">variant.hpp</a></div><div class="ttdoc">Variant value type. </div></div>
 <div class="ttc" id="namespace__Wolframe_1_1serialize_html_a6b9c36fc2982bdcca3785973c55d4d0f"><div class="ttname"><a href="namespace__Wolframe_1_1serialize.html#a6b9c36fc2982bdcca3785973c55d4d0f">_Wolframe::serialize::parseValue_double</a></div><div class="ttdeci">bool parseValue_double(double *, const types::VariantConst &amp;element)</div></div>
 <div class="ttc" id="namespace__Wolframe_1_1serialize_html_a5a6ec2ab42677cafcb1be0a1fc9d51ca"><div class="ttname"><a href="namespace__Wolframe_1_1serialize.html#a5a6ec2ab42677cafcb1be0a1fc9d51ca">_Wolframe::serialize::parseValue_char</a></div><div class="ttdeci">bool parseValue_char(signed char *, const types::VariantConst &amp;element)</div></div>
@@ -270,7 +270,7 @@
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 13 2014 18:08:19 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 12 2014 18:17:24 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

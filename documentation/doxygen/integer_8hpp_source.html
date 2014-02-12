@@ -122,28 +122,28 @@
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#ifndef _Wolframe_TYPES_INTEGER_HPP_INCLUDED</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _Wolframe_TYPES_INTEGER_HPP_INCLUDED</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;boost/cstdint.hpp&gt;</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &lt;limits.h&gt;</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &lt;limits&gt;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &lt;boost/cstdint.hpp&gt;</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="integer_8hpp.html#a660f097cc0bdf8626edf06026a164a6d">   41</a></span>&#160;<span class="preprocessor">#define _WOLFRAME_INTEGER       boost::int64_t</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="integer_8hpp.html#ac7c6e4751894ead9e5fb2c4cdc2e25bc">   42</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _WOLFRAME_UINTEGER      boost::uint64_t</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="integer_8hpp.html#a660f097cc0bdf8626edf06026a164a6d">   41</a></span>&#160;<span class="preprocessor">#define _WOLFRAME_INTEGER               boost::int64_t</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="integer_8hpp.html#ac7c6e4751894ead9e5fb2c4cdc2e25bc">   42</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _WOLFRAME_UINTEGER              boost::uint64_t</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#ifndef UINT_MAX</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#error Undefined UINT_MAX</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if UINT_MAX == 4294967295U</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _WOLFRAME_INTEGER_IS_INT 0</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="integer_8hpp.html#a61656e4bcf92e60db91242dda614f2d7">   50</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _WOLFRAME_INTEGER_IS_INT 1</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="integer_8hpp.html#ac4e0323563c50b5e0bfe2b5f4af8a6cd">   44</a></span>&#160;<span class="preprocessor">#define _WOLFRAME_MAX_INTEGER           std::numeric_limits&lt;_WOLFRAME_INTEGER&gt;::max()</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="integer_8hpp.html#aab4a7f07edb25b3e603be85671ddfac3">   45</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _WOLFRAME_MAX_UINTEGER          std::numeric_limits&lt;_WOLFRAME_UINTEGER&gt;::max()</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="integer_8hpp.html#a99dbf95a6827e24e776f319d7fbfac3a">   47</a></span>&#160;<span class="preprocessor">#define _WOLFRAME_MIN_INTEGER           std::numeric_limits&lt;_WOLFRAME_INTEGER&gt;::min()</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="integer_8hpp.html#a67c903d82daabd49ba196dde1de98022">   48</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _WOLFRAME_MIN_UINTEGER          std::numeric_limits&lt;_WOLFRAME_UINTEGER&gt;::min()</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="integer_8hpp.html#aba5f1d92def2800b031d1ab377f9676f">   50</a></span>&#160;<span class="preprocessor">#define _WOLFRAME_INTEGER_DIGITS        19</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="integer_8hpp.html#aecf51b770e338d84e01290a33977b94b">   51</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _WOLFRAME_UINTEGER_DIGITS       20</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 13 2014 18:08:20 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 12 2014 18:17:26 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

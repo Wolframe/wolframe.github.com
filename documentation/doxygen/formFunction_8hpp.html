@@ -96,9 +96,9 @@
 <p>Interface for executing functions with structure input/output in the language bindings.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="typedfilter_8hpp_source.html">filter/typedfilter.hpp</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="countedReference_8hpp_source.html">types/countedReference.hpp</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="mapContext_8hpp_source.html">serialize/mapContext.hpp</a>&quot;</code><br/>
 <code>#include &lt;string&gt;</code><br/>
+<code>#include &lt;boost/shared_ptr.hpp&gt;</code><br/>
 </div>
 <p><a href="formFunction_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -121,10 +121,9 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a4b55d65ba9637b027cc16b8947a7cfd4"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-types::CountedReference<br class="typebreak"/>
-&lt; FormFunctionClosure &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1langbind.html#a4b55d65ba9637b027cc16b8947a7cfd4">_Wolframe::langbind::FormFunctionClosureR</a></td></tr>
-<tr class="separator:a4b55d65ba9637b027cc16b8947a7cfd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a64a59ae2a9114a088e6968297a66ec"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; FormFunctionClosure &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1langbind.html#a8a64a59ae2a9114a088e6968297a66ec">_Wolframe::langbind::FormFunctionClosureR</a></td></tr>
+<tr class="separator:a8a64a59ae2a9114a088e6968297a66ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2be0f99433df2117335bf0c9e0a93b9"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 types::CountedReference<br class="typebreak"/>
 &lt; FormFunction &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1langbind.html#aa2be0f99433df2117335bf0c9e0a93b9">_Wolframe::langbind::FormFunctionR</a></td></tr>
@@ -136,7 +135,7 @@ types::CountedReference<br class="typebreak"/>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 13 2014 18:08:21 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 12 2014 18:17:30 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
