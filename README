@@ -1,25 +1,69 @@
 The CNAME file contains just one line with the domain name (i.e wolframe.net).
 github creates the server name out of it and adds also www.domain.name
 
-How to build:
-------------
+How to build the documentation on the wolframe.net webpage
+----------------------------------------------------------
 
+Prerequisites
+-------------
+
+* A workspace containing the 'master' branch of
+  'git@github.com:Wolframe/wolframe.github.com.git'. We name it
+
+  WOLFRAME_GITHUB_COM_HOME=~/projects/wolframe.github.com
+
+* A workspace containing the 'master' branch of
+  'git@github.com:Wolframe/Wolframe.git'. We name it
+
+  WOLFRAME_WOLFRAME_HOME=~/projects/Wolframe
+
+* A working doxygen (with graphviz support)
+
+* A working docbook toolchain for PDF and HTML
+
+Update pages of the webpage
+---------------------------
+
+Edit the files in the 'snippets' directory in the WOLFRAME_GITHUB_COM_HOME
+workspace, not the other ones!
+
+To produce the final static HTML pages and the robot sitemap use the 
+following step:
+
+cd $WOLFRAME_GITHUB_COM_HOME
 cd build-scripts
 ./no-slider.awk ../snippets/header-slider.html.snip > ../snippets/header.html.snip
 ./no-slider.awk ../snippets/footer-slider.html.snip > ../snippets/footer.html.snip
 ./buildAll.sh
+git commit -a -m '..'
+git push (publishes the new version)
 
-cp *webpage* ~/projects/Wolframe/docs/
+The files matching the pattern '*webpage*' are snippets needed for the
+Wolframe doxygen and docbook documentation. Copy them to the Wolframe
+workspace:
 
-in 'Wolframe/docs':
-WOLFRAME_GITHUB_COM_HOME=~/projects/wolframe.github.com
+cd $WOLFRAME_GITHUB_COM_HOME
+cp *webpage* $WOLFRAME_WOLFRAME_HOME/docs/
+
+Regenerate documentation from Docbook and Doxygen for the webpage
+-----------------------------------------------------------------
+
+cd $WOLFRAME_WOLFRAME_HOME/docs
+
 make clean all doc-doxygen-webpage doc-html-webpage doc-html-webpage-chunked doc-pdf
 rsync --delete-after -av doxygen/html-webpage/ $WOLFRAME_GITHUB_COM_HOME/documentation/doxygen/
 rsync --exclude images -av html-webpage-chunked/ $WOLFRAME_GITHUB_COM_HOME/documentation/html-chunked/
 rsync --exclude images -av html-tutorial-webpage-chunked/ $WOLFRAME_GITHUB_COM_HOME/documentation/tutorial-html-chunked/
 rsync --delete-after -av images/Tutorial/ $WOLFRAME_GITHUB_COM_HOME/documentation/tutorial-html-chunked/images/Tutorial/
-rsync --delete-after -av images/clients/ $WOLFRAME_GITHUB_COM_HOME/documentation/tutorial-html-chunked/images/clients/
+rsync --delete-after -av images/clients/ $WOLFRAME_GITHUB_COM_HOME/documentation/html-chunked/images/clients/
 cp WolfBook.pdf $WOLFRAME_GITHUB_COM_HOME/documentation/.
 cp html-webpage/index.html $WOLFRAME_GITHUB_COM_HOME/documentation/WolfBook.html
 cp Tutorial.pdf $WOLFRAME_GITHUB_COM_HOME/documentation/.
 cp html-tutorial-webpage/index.html $WOLFRAME_GITHUB_COM_HOME/documentation/Tutorial.html
+
+Notes
+-----
+
+You have to check manually what you have to add or delete with git!
+
+Don't use symlinks, they don't work on the github webservers!
