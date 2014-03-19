@@ -88,7 +88,10 @@
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class__Wolframe_1_1types_1_1DateTime-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -100,27 +103,153 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1types_1_1DateTime_1_1Impl.html">Impl</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1types_1_1DateTime_1_1StringFormat.html">StringFormat</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ace7b8079a4c8f8cb571b48a0bc00d2b6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#ace7b8079a4c8f8cb571b48a0bc00d2b6">SubType</a> { <a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#ace7b8079a4c8f8cb571b48a0bc00d2b6a472f1d0c808c2f452c38096136da524f">YYYYMMDD</a>, 
+<a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#ace7b8079a4c8f8cb571b48a0bc00d2b6a27aa04a86eb1d5ca8d4e8ae2b16034d2">YYYYMMDDhhmmss</a>, 
+<a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#ace7b8079a4c8f8cb571b48a0bc00d2b6a4fdcec9d820639eafe0a759d073d18a3">YYYYMMDDhhmmss_lll</a>, 
+<a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#ace7b8079a4c8f8cb571b48a0bc00d2b6a905a2be812c471476f6843063736226c">YYYYMMDDhhmmss_lllccc</a>
+ }</td></tr>
+<tr class="separator:ace7b8079a4c8f8cb571b48a0bc00d2b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af0929027df6754441e6e4dc384df8db6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#af0929027df6754441e6e4dc384df8db6">DateTime</a> (const <a class="el" href="class__Wolframe_1_1types_1_1DateTime.html">DateTime</a> &amp;o)</td></tr>
 <tr class="separator:af0929027df6754441e6e4dc384df8db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf07794c7e000062a63df129cc41bd74"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#acf07794c7e000062a63df129cc41bd74">DateTime</a> (unsigned short YY, unsigned short MM, unsigned short DD, unsigned short hh, unsigned short mm, unsigned short ss, unsigned short ll=0, unsigned short cc=0)</td></tr>
-<tr class="separator:acf07794c7e000062a63df129cc41bd74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cb9f614374775d6b75a3cb65c33475a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#a3cb9f614374775d6b75a3cb65c33475a">DateTime</a> (const <a class="el" href="namespace__Wolframe_1_1types.html#ac471bb0acc8bf2b627dff324d7117543">Timestamp</a> &amp;t)</td></tr>
+<tr class="memitem:af0dafe4649c61e8c4da40cd5e6e876f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#af0dafe4649c61e8c4da40cd5e6e876f0">DateTime</a> (unsigned short YY, unsigned short MM, unsigned short DD, unsigned short hh, unsigned short mm, unsigned short ss, unsigned short ll, unsigned short cc)</td></tr>
+<tr class="separator:af0dafe4649c61e8c4da40cd5e6e876f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c45d53261a3fe552b1faf159f6ec368"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#a5c45d53261a3fe552b1faf159f6ec368">DateTime</a> (unsigned short YY, unsigned short MM, unsigned short DD, unsigned short hh, unsigned short mm, unsigned short ss, unsigned short ll)</td></tr>
+<tr class="separator:a5c45d53261a3fe552b1faf159f6ec368"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae51786d55d5a2e0e437ae839a0ef1475"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#ae51786d55d5a2e0e437ae839a0ef1475">DateTime</a> (unsigned short YY, unsigned short MM, unsigned short DD, unsigned short hh, unsigned short mm, unsigned short ss)</td></tr>
+<tr class="separator:ae51786d55d5a2e0e437ae839a0ef1475"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecd29a7bffd9e79b21cfe7bfc6f9d753"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#aecd29a7bffd9e79b21cfe7bfc6f9d753">DateTime</a> (unsigned short YY, unsigned short MM, unsigned short DD)</td></tr>
+<tr class="separator:aecd29a7bffd9e79b21cfe7bfc6f9d753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3cea0d0224f0f1e6faa63788f466ed7"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#ad3cea0d0224f0f1e6faa63788f466ed7">year</a> () const </td></tr>
+<tr class="separator:ad3cea0d0224f0f1e6faa63788f466ed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3762ca398a5cb4830a320fb3898a3e5"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#ae3762ca398a5cb4830a320fb3898a3e5">month</a> () const </td></tr>
+<tr class="separator:ae3762ca398a5cb4830a320fb3898a3e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ce75a2ca77c6d92fb9f06a59ea44110"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#a9ce75a2ca77c6d92fb9f06a59ea44110">day</a> () const </td></tr>
+<tr class="separator:a9ce75a2ca77c6d92fb9f06a59ea44110"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07147e556ea12759d9fed6c79fe6c6a0"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#a07147e556ea12759d9fed6c79fe6c6a0">hour</a> () const </td></tr>
+<tr class="separator:a07147e556ea12759d9fed6c79fe6c6a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7889993efb5ac0fae7d41a05c953bfda"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#a7889993efb5ac0fae7d41a05c953bfda">minute</a> () const </td></tr>
+<tr class="separator:a7889993efb5ac0fae7d41a05c953bfda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d6b9ec3168496320ae48d637f4bf6ad"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#a7d6b9ec3168496320ae48d637f4bf6ad">second</a> () const </td></tr>
+<tr class="separator:a7d6b9ec3168496320ae48d637f4bf6ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a331ffe12a3b7b19c65243bc420cd50f5"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#a331ffe12a3b7b19c65243bc420cd50f5">millisecond</a> () const </td></tr>
+<tr class="separator:a331ffe12a3b7b19c65243bc420cd50f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8698cd84860ed554561ca8738365f7c2"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#a8698cd84860ed554561ca8738365f7c2">microsecond</a> () const </td></tr>
+<tr class="separator:a8698cd84860ed554561ca8738365f7c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19140b9b550748e7f21d4e4398d08ad7"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#a19140b9b550748e7f21d4e4398d08ad7">usecond</a> () const </td></tr>
+<tr class="separator:a19140b9b550748e7f21d4e4398d08ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3510cbd6c67efcb1f8a9a5576231de4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#ace7b8079a4c8f8cb571b48a0bc00d2b6">SubType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#a3510cbd6c67efcb1f8a9a5576231de4a">subtype</a> () const </td></tr>
+<tr class="separator:a3510cbd6c67efcb1f8a9a5576231de4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cb9f614374775d6b75a3cb65c33475a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#a3cb9f614374775d6b75a3cb65c33475a">DateTime</a> (const <a class="el" href="namespace__Wolframe_1_1types.html#a9aaefa8c94770095836ed428e76c5d11">Timestamp</a> &amp;t)</td></tr>
 <tr class="separator:a3cb9f614374775d6b75a3cb65c33475a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92f76ed4faea1475ffc4e30f08b462f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace__Wolframe_1_1types.html#ac471bb0acc8bf2b627dff324d7117543">Timestamp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#a92f76ed4faea1475ffc4e30f08b462f9">value</a> () const </td></tr>
-<tr class="separator:a92f76ed4faea1475ffc4e30f08b462f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5cdd9c0a3a2c5610261c81c7666bbe0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#af5cdd9c0a3a2c5610261c81c7666bbe0">init</a> (<a class="el" href="namespace__Wolframe_1_1types.html#ac471bb0acc8bf2b627dff324d7117543">Timestamp</a> value_)</td></tr>
-<tr class="separator:af5cdd9c0a3a2c5610261c81c7666bbe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b72b2894a6a7665f5218bf15ca70601"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#a4b72b2894a6a7665f5218bf15ca70601">DateTime</a> (const std::string &amp;s)</td></tr>
+<tr class="separator:a4b72b2894a6a7665f5218bf15ca70601"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98aac6408156abcef2aadd4da27fee51"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#a98aac6408156abcef2aadd4da27fee51">DateTime</a> (const char *str, std::size_t strsize)</td></tr>
+<tr class="separator:a98aac6408156abcef2aadd4da27fee51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac34cb9d8e8ac2077f47c64ec78ec6f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#aac34cb9d8e8ac2077f47c64ec78ec6f2">DateTime</a> (const <a class="el" href="class__Wolframe_1_1types_1_1Variant.html">Variant</a> &amp;v)</td></tr>
+<tr class="separator:aac34cb9d8e8ac2077f47c64ec78ec6f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af608d9c4c4b6b091b3e278466503148e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace__Wolframe_1_1types.html#a9aaefa8c94770095836ed428e76c5d11">Timestamp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#af608d9c4c4b6b091b3e278466503148e">timestamp</a> () const </td></tr>
+<tr class="separator:af608d9c4c4b6b091b3e278466503148e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a841e126284516ad327ebe3557194cf6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#a841e126284516ad327ebe3557194cf6c">init</a> (<a class="el" href="namespace__Wolframe_1_1types.html#a9aaefa8c94770095836ed428e76c5d11">Timestamp</a> timestamp_)</td></tr>
+<tr class="separator:a841e126284516ad327ebe3557194cf6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87467e36b2380b980931b9ad02ad919c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#a87467e36b2380b980931b9ad02ad919c">init</a> (const std::string &amp;str)</td></tr>
+<tr class="separator:a87467e36b2380b980931b9ad02ad919c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2b2f49a7df47d9336300e68d588b323"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#ad2b2f49a7df47d9336300e68d588b323">init</a> (const char *str, std::size_t strsize)</td></tr>
+<tr class="separator:ad2b2f49a7df47d9336300e68d588b323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae17a402cb0af6d9bc7b11a157beaa85c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#ae17a402cb0af6d9bc7b11a157beaa85c">toMSDNtimestamp</a> () const </td></tr>
+<tr class="separator:ae17a402cb0af6d9bc7b11a157beaa85c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c3a338a71484abbc40585c8597d7413"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#a0c3a338a71484abbc40585c8597d7413">tostring</a> (<a class="el" href="struct__Wolframe_1_1types_1_1DateTime_1_1StringFormat.html#ad1bb30e9a490f2fd917db79f3193f43f">StringFormat::Id</a> sf=<a class="el" href="struct__Wolframe_1_1types_1_1DateTime_1_1StringFormat.html#ad1bb30e9a490f2fd917db79f3193f43fa491b05947d9274ddfaa50803ecabefcc">StringFormat::YYYYMMDDhhmmssxxxxxx</a>) const </td></tr>
+<tr class="separator:a0c3a338a71484abbc40585c8597d7413"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94c5b2d5e4ee652608657a4131035396"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#a94c5b2d5e4ee652608657a4131035396">operator==</a> (const <a class="el" href="class__Wolframe_1_1types_1_1DateTime.html">DateTime</a> &amp;o) const </td></tr>
+<tr class="separator:a94c5b2d5e4ee652608657a4131035396"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fa6edbcd851a8be43ccf2569b9eda3e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#a9fa6edbcd851a8be43ccf2569b9eda3e">operator!=</a> (const <a class="el" href="class__Wolframe_1_1types_1_1DateTime.html">DateTime</a> &amp;o) const </td></tr>
+<tr class="separator:a9fa6edbcd851a8be43ccf2569b9eda3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51f0913046abc8bfaa432f7937d5969e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#a51f0913046abc8bfaa432f7937d5969e">operator&gt;=</a> (const <a class="el" href="class__Wolframe_1_1types_1_1DateTime.html">DateTime</a> &amp;o) const </td></tr>
+<tr class="separator:a51f0913046abc8bfaa432f7937d5969e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee5660a5aa0e96639dc967b60b8734f4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#aee5660a5aa0e96639dc967b60b8734f4">operator&gt;</a> (const <a class="el" href="class__Wolframe_1_1types_1_1DateTime.html">DateTime</a> &amp;o) const </td></tr>
+<tr class="separator:aee5660a5aa0e96639dc967b60b8734f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ef443e648477514eb89533593b2f6a4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#a8ef443e648477514eb89533593b2f6a4">operator&lt;=</a> (const <a class="el" href="class__Wolframe_1_1types_1_1DateTime.html">DateTime</a> &amp;o) const </td></tr>
+<tr class="separator:a8ef443e648477514eb89533593b2f6a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54c5ab85e3d9129ae3544b9bb8a19782"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#a54c5ab85e3d9129ae3544b9bb8a19782">operator&lt;</a> (const <a class="el" href="class__Wolframe_1_1types_1_1DateTime.html">DateTime</a> &amp;o) const </td></tr>
+<tr class="separator:a54c5ab85e3d9129ae3544b9bb8a19782"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a2c2eb6c877e46ce89d35e62ce2d0a6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#a6a2c2eb6c877e46ce89d35e62ce2d0a6">compare</a> (const <a class="el" href="class__Wolframe_1_1types_1_1DateTime.html">DateTime</a> &amp;o) const </td></tr>
+<tr class="separator:a6a2c2eb6c877e46ce89d35e62ce2d0a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a09ac75e13193fcfdebbaf0dc28cf677b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class__Wolframe_1_1types_1_1DateTime.html">DateTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#a09ac75e13193fcfdebbaf0dc28cf677b">fromMSDNtimestamp</a> (double tm)</td></tr>
+<tr class="separator:a09ac75e13193fcfdebbaf0dc28cf677b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a9a88c45064514c0575683e500b8a60b4"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#a9a88c45064514c0575683e500b8a60b4">compareValue</a> (unsigned int aa, unsigned int bb)</td></tr>
+<tr class="separator:a9a88c45064514c0575683e500b8a60b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab30a3a9177e2e6579e8bb6326c473457"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#ab30a3a9177e2e6579e8bb6326c473457">setBits</a> (<a class="el" href="namespace__Wolframe_1_1types.html#a9aaefa8c94770095836ed428e76c5d11">Timestamp</a> &amp;dest, unsigned int val, unsigned int bitidx, unsigned int bitrange)</td></tr>
+<tr class="separator:ab30a3a9177e2e6579e8bb6326c473457"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a462a473b2def36932ad32bb69db43e7a"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#a462a473b2def36932ad32bb69db43e7a">getBits</a> (const <a class="el" href="namespace__Wolframe_1_1types.html#a9aaefa8c94770095836ed428e76c5d11">Timestamp</a> &amp;from, unsigned int bitidx, unsigned int bitrange)</td></tr>
+<tr class="separator:a462a473b2def36932ad32bb69db43e7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a906e6bf8a1a7284efca2f7a9ac6663b1"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#a906e6bf8a1a7284efca2f7a9ac6663b1">getSubstringAsInt</a> (const char *from, unsigned int idx, unsigned int range)</td></tr>
+<tr class="separator:a906e6bf8a1a7284efca2f7a9ac6663b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a632a8698b3f712caed05512d938259a1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#a632a8698b3f712caed05512d938259a1">check_range</a> (unsigned int val, unsigned int from, unsigned int to)</td></tr>
+<tr class="separator:a632a8698b3f712caed05512d938259a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7dc643694791696834bc7ef49ba64fc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#aa7dc643694791696834bc7ef49ba64fc">check_range</a> (unsigned int val, unsigned int maximum)</td></tr>
+<tr class="separator:aa7dc643694791696834bc7ef49ba64fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0d3dc3d74b477f82633cc153d7680b2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#ab0d3dc3d74b477f82633cc153d7680b2">check</a> (unsigned short YY, unsigned short MM, unsigned short DD, unsigned short hh, unsigned short mm, unsigned short ss, unsigned short ll, unsigned short cc)</td></tr>
+<tr class="separator:ab0d3dc3d74b477f82633cc153d7680b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26e61b76bb7e5f1ca5863d16dff09bf2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#a26e61b76bb7e5f1ca5863d16dff09bf2">appendValue</a> (std::string &amp;dest, unsigned int value, unsigned int nofDigits)</td></tr>
+<tr class="separator:a26e61b76bb7e5f1ca5863d16dff09bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a0ca774acb6a3fbf53efd1c5f96bd383e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct__Wolframe_1_1types_1_1DateTime_1_1Impl.html">Impl</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#a0ca774acb6a3fbf53efd1c5f96bd383e">m_impl</a></td></tr>
-<tr class="separator:a0ca774acb6a3fbf53efd1c5f96bd383e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8743202b4205c1eea374852daa2037f"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#ae8743202b4205c1eea374852daa2037f">m_year</a></td></tr>
+<tr class="separator:ae8743202b4205c1eea374852daa2037f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14897a3bdf0d19187736eefbd1346c65"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#a14897a3bdf0d19187736eefbd1346c65">m_month</a></td></tr>
+<tr class="separator:a14897a3bdf0d19187736eefbd1346c65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a101c1a4cd8407f187682c47fabecfef9"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#a101c1a4cd8407f187682c47fabecfef9">m_day</a></td></tr>
+<tr class="separator:a101c1a4cd8407f187682c47fabecfef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b0f4ac1cd268b43a89a0b83445e86a4"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#a7b0f4ac1cd268b43a89a0b83445e86a4">m_hour</a></td></tr>
+<tr class="separator:a7b0f4ac1cd268b43a89a0b83445e86a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab377b64afa7840d3df8fbeca6fee4c8b"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#ab377b64afa7840d3df8fbeca6fee4c8b">m_minute</a></td></tr>
+<tr class="separator:ab377b64afa7840d3df8fbeca6fee4c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c05742b285df4c5db78ac24343ba9bb"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#a9c05742b285df4c5db78ac24343ba9bb">m_second</a></td></tr>
+<tr class="separator:a9c05742b285df4c5db78ac24343ba9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53b483010b1254b771303f55a4cc7d89"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#a53b483010b1254b771303f55a4cc7d89">m_millisecond</a></td></tr>
+<tr class="separator:a53b483010b1254b771303f55a4cc7d89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad30d5d7a7609a9784b6b195de3a3e3bf"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#ad30d5d7a7609a9784b6b195de3a3e3bf">m_microsecond</a></td></tr>
+<tr class="separator:ad30d5d7a7609a9784b6b195de3a3e3bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06c08191a1efae2d1cf435eb8361e642"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#ace7b8079a4c8f8cb571b48a0bc00d2b6">SubType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#a06c08191a1efae2d1cf435eb8361e642">m_subtype</a></td></tr>
+<tr class="separator:a06c08191a1efae2d1cf435eb8361e642"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="ace7b8079a4c8f8cb571b48a0bc00d2b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#ace7b8079a4c8f8cb571b48a0bc00d2b6">_Wolframe::types::DateTime::SubType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ace7b8079a4c8f8cb571b48a0bc00d2b6a472f1d0c808c2f452c38096136da524f"></a>YYYYMMDD</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ace7b8079a4c8f8cb571b48a0bc00d2b6a27aa04a86eb1d5ca8d4e8ae2b16034d2"></a>YYYYMMDDhhmmss</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ace7b8079a4c8f8cb571b48a0bc00d2b6a4fdcec9d820639eafe0a759d073d18a3"></a>YYYYMMDDhhmmss_lll</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ace7b8079a4c8f8cb571b48a0bc00d2b6a905a2be812c471476f6843063736226c"></a>YYYYMMDDhhmmss_lllccc</em>&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="af0929027df6754441e6e4dc384df8db6"></a>
 <div class="memitem">
@@ -146,7 +275,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="acf07794c7e000062a63df129cc41bd74"></a>
+<a class="anchor" id="af0dafe4649c61e8c4da40cd5e6e876f0"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -193,13 +322,175 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned short&#160;</td>
-          <td class="paramname"><em>ll</em> = <code>0</code>, </td>
+          <td class="paramname"><em>ll</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned short&#160;</td>
-          <td class="paramname"><em>cc</em> = <code>0</code>&#160;</td>
+          <td class="paramname"><em>cc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5c45d53261a3fe552b1faf159f6ec368"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_Wolframe::types::DateTime::DateTime </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>YY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>MM</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>DD</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>hh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>mm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>ss</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>ll</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae51786d55d5a2e0e437ae839a0ef1475"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_Wolframe::types::DateTime::DateTime </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>YY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>MM</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>DD</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>hh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>mm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>ss</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aecd29a7bffd9e79b21cfe7bfc6f9d753"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_Wolframe::types::DateTime::DateTime </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>YY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>MM</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>DD</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -226,7 +517,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">_Wolframe::types::DateTime::DateTime </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespace__Wolframe_1_1types.html#ac471bb0acc8bf2b627dff324d7117543">Timestamp</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespace__Wolframe_1_1types.html#a9aaefa8c94770095836ed428e76c5d11">Timestamp</a> &amp;&#160;</td>
           <td class="paramname"><em>t</em></td><td>)</td>
           <td></td>
         </tr>
@@ -240,8 +531,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="af5cdd9c0a3a2c5610261c81c7666bbe0"></a>
+<a class="anchor" id="a4b72b2894a6a7665f5218bf15ca70601"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -249,10 +539,10 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void _Wolframe::types::DateTime::init </td>
+          <td class="memname">_Wolframe::types::DateTime::DateTime </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespace__Wolframe_1_1types.html#ac471bb0acc8bf2b627dff324d7117543">Timestamp</a>&#160;</td>
-          <td class="paramname"><em>value_</em></td><td>)</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -265,7 +555,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a92f76ed4faea1475ffc4e30f08b462f9"></a>
+<a class="anchor" id="a98aac6408156abcef2aadd4da27fee51"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -273,7 +563,897 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace__Wolframe_1_1types.html#ac471bb0acc8bf2b627dff324d7117543">Timestamp</a> _Wolframe::types::DateTime::value </td>
+          <td class="memname">_Wolframe::types::DateTime::DateTime </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>strsize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aac34cb9d8e8ac2077f47c64ec78ec6f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">_Wolframe::types::DateTime::DateTime </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class__Wolframe_1_1types_1_1Variant.html">Variant</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a26e61b76bb7e5f1ca5863d16dff09bf2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void _Wolframe::types::DateTime::appendValue </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>nofDigits</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab0d3dc3d74b477f82633cc153d7680b2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void _Wolframe::types::DateTime::check </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>YY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>MM</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>DD</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>hh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>mm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>ss</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>ll</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>cc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a632a8698b3f712caed05512d938259a1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void _Wolframe::types::DateTime::check_range </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>val</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa7dc643694791696834bc7ef49ba64fc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void _Wolframe::types::DateTime::check_range </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>val</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>maximum</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6a2c2eb6c877e46ce89d35e62ce2d0a6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _Wolframe::types::DateTime::compare </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class__Wolframe_1_1types_1_1DateTime.html">DateTime</a> &amp;&#160;</td>
+          <td class="paramname"><em>o</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9a88c45064514c0575683e500b8a60b4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int _Wolframe::types::DateTime::compareValue </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>aa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>bb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9ce75a2ca77c6d92fb9f06a59ea44110"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int _Wolframe::types::DateTime::day </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a09ac75e13193fcfdebbaf0dc28cf677b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class__Wolframe_1_1types_1_1DateTime.html">DateTime</a> _Wolframe::types::DateTime::fromMSDNtimestamp </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>tm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a462a473b2def36932ad32bb69db43e7a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static unsigned int _Wolframe::types::DateTime::getBits </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespace__Wolframe_1_1types.html#a9aaefa8c94770095836ed428e76c5d11">Timestamp</a> &amp;&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>bitidx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>bitrange</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a906e6bf8a1a7284efca2f7a9ac6663b1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static unsigned int _Wolframe::types::DateTime::getSubstringAsInt </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>idx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>range</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a07147e556ea12759d9fed6c79fe6c6a0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int _Wolframe::types::DateTime::hour </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a841e126284516ad327ebe3557194cf6c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _Wolframe::types::DateTime::init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace__Wolframe_1_1types.html#a9aaefa8c94770095836ed428e76c5d11">Timestamp</a>&#160;</td>
+          <td class="paramname"><em>timestamp_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a87467e36b2380b980931b9ad02ad919c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _Wolframe::types::DateTime::init </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad2b2f49a7df47d9336300e68d588b323"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _Wolframe::types::DateTime::init </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>strsize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8698cd84860ed554561ca8738365f7c2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int _Wolframe::types::DateTime::microsecond </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a331ffe12a3b7b19c65243bc420cd50f5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int _Wolframe::types::DateTime::millisecond </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7889993efb5ac0fae7d41a05c953bfda"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int _Wolframe::types::DateTime::minute </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae3762ca398a5cb4830a320fb3898a3e5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int _Wolframe::types::DateTime::month </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9fa6edbcd851a8be43ccf2569b9eda3e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _Wolframe::types::DateTime::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class__Wolframe_1_1types_1_1DateTime.html">DateTime</a> &amp;&#160;</td>
+          <td class="paramname"><em>o</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a54c5ab85e3d9129ae3544b9bb8a19782"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _Wolframe::types::DateTime::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class__Wolframe_1_1types_1_1DateTime.html">DateTime</a> &amp;&#160;</td>
+          <td class="paramname"><em>o</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8ef443e648477514eb89533593b2f6a4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _Wolframe::types::DateTime::operator&lt;= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class__Wolframe_1_1types_1_1DateTime.html">DateTime</a> &amp;&#160;</td>
+          <td class="paramname"><em>o</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a94c5b2d5e4ee652608657a4131035396"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _Wolframe::types::DateTime::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class__Wolframe_1_1types_1_1DateTime.html">DateTime</a> &amp;&#160;</td>
+          <td class="paramname"><em>o</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aee5660a5aa0e96639dc967b60b8734f4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _Wolframe::types::DateTime::operator&gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class__Wolframe_1_1types_1_1DateTime.html">DateTime</a> &amp;&#160;</td>
+          <td class="paramname"><em>o</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a51f0913046abc8bfaa432f7937d5969e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _Wolframe::types::DateTime::operator&gt;= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class__Wolframe_1_1types_1_1DateTime.html">DateTime</a> &amp;&#160;</td>
+          <td class="paramname"><em>o</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7d6b9ec3168496320ae48d637f4bf6ad"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int _Wolframe::types::DateTime::second </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab30a3a9177e2e6579e8bb6326c473457"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void _Wolframe::types::DateTime::setBits </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace__Wolframe_1_1types.html#a9aaefa8c94770095836ed428e76c5d11">Timestamp</a> &amp;&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>val</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>bitidx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>bitrange</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3510cbd6c67efcb1f8a9a5576231de4a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#ace7b8079a4c8f8cb571b48a0bc00d2b6">SubType</a> _Wolframe::types::DateTime::subtype </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af608d9c4c4b6b091b3e278466503148e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace__Wolframe_1_1types.html#a9aaefa8c94770095836ed428e76c5d11">Timestamp</a> _Wolframe::types::DateTime::timestamp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae17a402cb0af6d9bc7b11a157beaa85c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double _Wolframe::types::DateTime::toMSDNtimestamp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0c3a338a71484abbc40585c8597d7413"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string _Wolframe::types::DateTime::tostring </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct__Wolframe_1_1types_1_1DateTime_1_1StringFormat.html#ad1bb30e9a490f2fd917db79f3193f43f">StringFormat::Id</a>&#160;</td>
+          <td class="paramname"><em>sf</em> = <code><a class="el" href="struct__Wolframe_1_1types_1_1DateTime_1_1StringFormat.html#ad1bb30e9a490f2fd917db79f3193f43fa491b05947d9274ddfaa50803ecabefcc">StringFormat::YYYYMMDDhhmmssxxxxxx</a></code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a19140b9b550748e7f21d4e4398d08ad7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int _Wolframe::types::DateTime::usecond </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad3cea0d0224f0f1e6faa63788f466ed7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int _Wolframe::types::DateTime::year </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -289,7 +1469,7 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a0ca774acb6a3fbf53efd1c5f96bd383e"></a>
+<a class="anchor" id="a101c1a4cd8407f187682c47fabecfef9"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -297,7 +1477,167 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct__Wolframe_1_1types_1_1DateTime_1_1Impl.html">Impl</a> _Wolframe::types::DateTime::m_impl</td>
+          <td class="memname">unsigned char _Wolframe::types::DateTime::m_day</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7b0f4ac1cd268b43a89a0b83445e86a4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char _Wolframe::types::DateTime::m_hour</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad30d5d7a7609a9784b6b195de3a3e3bf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short _Wolframe::types::DateTime::m_microsecond</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a53b483010b1254b771303f55a4cc7d89"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short _Wolframe::types::DateTime::m_millisecond</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab377b64afa7840d3df8fbeca6fee4c8b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char _Wolframe::types::DateTime::m_minute</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a14897a3bdf0d19187736eefbd1346c65"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char _Wolframe::types::DateTime::m_month</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9c05742b285df4c5db78ac24343ba9bb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char _Wolframe::types::DateTime::m_second</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a06c08191a1efae2d1cf435eb8361e642"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#ace7b8079a4c8f8cb571b48a0bc00d2b6">SubType</a> _Wolframe::types::DateTime::m_subtype</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae8743202b4205c1eea374852daa2037f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short _Wolframe::types::DateTime::m_year</td>
         </tr>
       </table>
   </td>
@@ -316,7 +1656,7 @@ Private Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 13 2014 11:05:35 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 19 2014 16:38:08 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

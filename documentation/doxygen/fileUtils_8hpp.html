@@ -95,9 +95,9 @@
 
 <p>Utility functions for file handling.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;string&gt;</code><br/>
+<div class="textblock"><code>#include &quot;<a class="el" href="propertyTree_8hpp_source.html">types/propertyTree.hpp</a>&quot;</code><br/>
+<code>#include &lt;string&gt;</code><br/>
 <code>#include &lt;vector&gt;</code><br/>
-<code>#include &lt;boost/property_tree/ptree.hpp&gt;</code><br/>
 </div>
 <p><a href="fileUtils_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -110,7 +110,6 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace__Wolframe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe.html">_Wolframe</a></td></tr>
-<tr class="memdesc:namespace__Wolframe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declaration. <br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace__Wolframe_1_1utils"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1utils.html">_Wolframe::utils</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,12 +140,15 @@ Functions</h2></td></tr>
 <tr class="memitem:ab2148652c958c608c54db37126593496"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1utils.html#ab2148652c958c608c54db37126593496">_Wolframe::utils::readSourceFileContent</a> (const std::string &amp;filename)</td></tr>
 <tr class="memdesc:ab2148652c958c608c54db37126593496"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reading the content of a source file as one string.  <a href="#ab2148652c958c608c54db37126593496">More...</a><br/></td></tr>
 <tr class="separator:ab2148652c958c608c54db37126593496"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a740cf8840e3b85e74e119147efedc063"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1utils.html#a740cf8840e3b85e74e119147efedc063">_Wolframe::utils::readSourceFileLines</a> (const std::string &amp;filename)</td></tr>
-<tr class="memdesc:a740cf8840e3b85e74e119147efedc063"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reading the content of a source file as list of lines.  <a href="#a740cf8840e3b85e74e119147efedc063">More...</a><br/></td></tr>
-<tr class="separator:a740cf8840e3b85e74e119147efedc063"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89445849cd8a7d5a4d885ba81b6c6d42"><td class="memItemLeft" align="right" valign="top">boost::property_tree::ptree&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1utils.html#a89445849cd8a7d5a4d885ba81b6c6d42">_Wolframe::utils::readPropertyTreeFile</a> (const std::string &amp;filename)</td></tr>
-<tr class="memdesc:a89445849cd8a7d5a4d885ba81b6c6d42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reading the content of a source file as property tree (with property tree syntax)  <a href="#a89445849cd8a7d5a4d885ba81b6c6d42">More...</a><br/></td></tr>
-<tr class="separator:a89445849cd8a7d5a4d885ba81b6c6d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75ffd65ab8c127da2db033d4d6d37621"><td class="memItemLeft" align="right" valign="top">types::PropertyTree&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1utils.html#a75ffd65ab8c127da2db033d4d6d37621">_Wolframe::utils::readPropertyTreeFile</a> (const std::string &amp;filename)</td></tr>
+<tr class="memdesc:a75ffd65ab8c127da2db033d4d6d37621"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reading the content of a source file as property tree (with property tree syntax)  <a href="#a75ffd65ab8c127da2db033d4d6d37621">More...</a><br/></td></tr>
+<tr class="separator:a75ffd65ab8c127da2db033d4d6d37621"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34808db1eadf4979e09a5bee1472e847"><td class="memItemLeft" align="right" valign="top">types::PropertyTree&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1utils.html#a34808db1eadf4979e09a5bee1472e847">_Wolframe::utils::readXmlPropertyTreeFile</a> (const std::string &amp;filename)</td></tr>
+<tr class="memdesc:a34808db1eadf4979e09a5bee1472e847"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reading the content of an XML source file as property tree (with property tree syntax)  <a href="#a34808db1eadf4979e09a5bee1472e847">More...</a><br/></td></tr>
+<tr class="separator:a34808db1eadf4979e09a5bee1472e847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15fee8afbffeffc483b4bdc0c16ce443"><td class="memItemLeft" align="right" valign="top">types::PropertyTree&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1utils.html#a15fee8afbffeffc483b4bdc0c16ce443">_Wolframe::utils::readInfoPropertyTreeFile</a> (const std::string &amp;filename)</td></tr>
+<tr class="memdesc:a15fee8afbffeffc483b4bdc0c16ce443"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reading the content of an Info format source file as property tree (with property tree syntax)  <a href="#a15fee8afbffeffc483b4bdc0c16ce443">More...</a><br/></td></tr>
+<tr class="separator:a15fee8afbffeffc483b4bdc0c16ce443"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47307462e43d3aaebbc4d65d48c97b31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1utils.html#a47307462e43d3aaebbc4d65d48c97b31">_Wolframe::utils::writeFile</a> (const std::string &amp;filename, const std::string &amp;content)</td></tr>
 <tr class="memdesc:a47307462e43d3aaebbc4d65d48c97b31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writing a file.  <a href="#a47307462e43d3aaebbc4d65d48c97b31">More...</a><br/></td></tr>
 <tr class="separator:a47307462e43d3aaebbc4d65d48c97b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,7 +162,7 @@ Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 13 2014 11:05:21 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 19 2014 16:37:54 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

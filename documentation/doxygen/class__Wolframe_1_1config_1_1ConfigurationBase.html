@@ -127,9 +127,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab27bb96d7c0f7994938d452797d1bc50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94fb36d4e44bf070fe199b8932a96bbf"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1config_1_1ConfigurationBase.html#a94fb36d4e44bf070fe199b8932a96bbf">logPrefix</a> () const </td></tr>
 <tr class="separator:a94fb36d4e44bf070fe199b8932a96bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6116d1910d0f1179882cf1447a940d91"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1config_1_1ConfigurationBase.html#a6116d1910d0f1179882cf1447a940d91">parse</a> (const <a class="el" href="struct__Wolframe_1_1config_1_1ConfigurationTree.html">ConfigurationTree</a> &amp;cfgTree, const std::string &amp;node, const <a class="el" href="class__Wolframe_1_1module_1_1ModulesDirectory.html">module::ModulesDirectory</a> *modules)=0</td></tr>
-<tr class="memdesc:a6116d1910d0f1179882cf1447a940d91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse the configuration section.  <a href="#a6116d1910d0f1179882cf1447a940d91">More...</a><br/></td></tr>
-<tr class="separator:a6116d1910d0f1179882cf1447a940d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae81f8fb33199008065164d2b9f411234"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1config_1_1ConfigurationBase.html#ae81f8fb33199008065164d2b9f411234">parse</a> (const <a class="el" href="namespace__Wolframe_1_1config.html#a2dd1843cdd234f4991e88cbcace24b23">ConfigurationNode</a> &amp;cfgTree, const std::string &amp;node, const <a class="el" href="class__Wolframe_1_1module_1_1ModulesDirectory.html">module::ModulesDirectory</a> *modules)=0</td></tr>
+<tr class="memdesc:ae81f8fb33199008065164d2b9f411234"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse the configuration section.  <a href="#ae81f8fb33199008065164d2b9f411234">More...</a><br/></td></tr>
+<tr class="separator:ae81f8fb33199008065164d2b9f411234"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a387ebadcaeb820a2a62fb2d0cd745a45"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1config_1_1ConfigurationBase.html#a387ebadcaeb820a2a62fb2d0cd745a45">setCanonicalPathes</a> (const std::string &amp;)</td></tr>
 <tr class="separator:a387ebadcaeb820a2a62fb2d0cd745a45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60d81cfe21dea7ba270852969d3076ee"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1config_1_1ConfigurationBase.html#a60d81cfe21dea7ba270852969d3076ee">check</a> () const </td></tr>
@@ -273,7 +273,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a6116d1910d0f1179882cf1447a940d91"></a>
+<a class="anchor" id="ae81f8fb33199008065164d2b9f411234"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -283,7 +283,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">virtual bool _Wolframe::config::ConfigurationBase::parse </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct__Wolframe_1_1config_1_1ConfigurationTree.html">ConfigurationTree</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespace__Wolframe_1_1config.html#a2dd1843cdd234f4991e88cbcace24b23">ConfigurationNode</a> &amp;&#160;</td>
           <td class="paramname"><em>cfgTree</em>, </td>
         </tr>
         <tr>
@@ -320,7 +320,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class__Wolframe_1_1config_1_1ServiceBanner.html#a6a3a9ef7c4cc2598ee0cf7790724be05">_Wolframe::config::ServiceBanner</a>, <a class="el" href="struct__Wolframe_1_1config_1_1ServiceConfiguration.html#a7de8a91ba07ffa0508f224927ce27894">_Wolframe::config::ServiceConfiguration</a>, <a class="el" href="struct__Wolframe_1_1log_1_1LoggerConfiguration.html#af7942dd3e1d0d988670232817eb4ed71">_Wolframe::log::LoggerConfiguration</a>, <a class="el" href="struct__Wolframe_1_1net_1_1Configuration.html#a01129d9f49e82a19260e8a910b22378b">_Wolframe::net::Configuration</a>, <a class="el" href="class__Wolframe_1_1proc_1_1ProcProviderConfig.html#a455d47b78e57c2cfc656684b75cea7e3">_Wolframe::proc::ProcProviderConfig</a>, <a class="el" href="class__Wolframe_1_1AAAA_1_1AAAAconfiguration.html#a17204f0316dd35a759960d162556eadd">_Wolframe::AAAA::AAAAconfiguration</a>, and <a class="el" href="class__Wolframe_1_1db_1_1DBproviderConfig.html#a217e6023acd4f0db12d0a7a62139e700">_Wolframe::db::DBproviderConfig</a>.</p>
+<p>Implemented in <a class="el" href="class__Wolframe_1_1config_1_1ServiceBanner.html#a8358b391e473f5b873321bf8616b21fb">_Wolframe::config::ServiceBanner</a>, <a class="el" href="struct__Wolframe_1_1config_1_1ServiceConfiguration.html#a586048801dc5929309298e409b397b42">_Wolframe::config::ServiceConfiguration</a>, <a class="el" href="struct__Wolframe_1_1log_1_1LoggerConfiguration.html#a7695a4e8f2bafd41d73e18cc994bf45c">_Wolframe::log::LoggerConfiguration</a>, <a class="el" href="struct__Wolframe_1_1net_1_1Configuration.html#a11e13c7c70864020273cb3a95b94cfd2">_Wolframe::net::Configuration</a>, <a class="el" href="class__Wolframe_1_1proc_1_1ProcProviderConfig.html#a2fbcb6b5f655adf2be01f2acf4c93ed3">_Wolframe::proc::ProcProviderConfig</a>, <a class="el" href="class__Wolframe_1_1AAAA_1_1AAAAconfiguration.html#a2aa12fa258cdeda9b382e21609697062">_Wolframe::AAAA::AAAAconfiguration</a>, and <a class="el" href="class__Wolframe_1_1db_1_1DBproviderConfig.html#a192eed8f64a007b0e0561542758abaca">_Wolframe::db::DBproviderConfig</a>.</p>
 
 </div>
 </div>
@@ -475,7 +475,7 @@ Private Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 13 2014 11:05:24 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 19 2014 16:37:58 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

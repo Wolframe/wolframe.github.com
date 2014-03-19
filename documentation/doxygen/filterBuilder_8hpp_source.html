@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-	<title>Wolframe: include/module/filterBuilder.hpp Source File</title>
+	<title>Wolframe: include/appdevel/module/filterBuilder.hpp Source File</title>
 	<meta name="generator" content="Doxygen 1.8.6"/>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -80,7 +80,7 @@
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_dc1aacf9e28ad733d01de42bc03b5008.html">module</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_34c477f5f0ba91a1afc006ebf703b1f7.html">appdevel</a></li><li class="navelem"><a class="el" href="dir_dca48a13f555bb2beefe16af3b8fc26a.html">module</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -89,7 +89,7 @@
 </div><!--header-->
 <div class="contents">
 <a href="filterBuilder_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/************************************************************************</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">Copyright (C) 2011 - 2013 Project Wolframe.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">Copyright (C) 2011 - 2014 Project Wolframe.</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">All rights reserved.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">This file is part of Project Wolframe.</span></div>
@@ -122,8 +122,8 @@
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#ifndef _Wolframe_MODULE_FILTER_OBJECT_BUILDER_TEMPLATE_HPP_INCLUDED</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _Wolframe_MODULE_FILTER_OBJECT_BUILDER_TEMPLATE_HPP_INCLUDED</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="filter_8hpp.html">filter/filter.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="moduleInterface_8hpp.html">processor/moduleInterface.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="countedReference_8hpp.html">types/countedReference.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="countedReference_8hpp.html">types/countedReference.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="moduleInterface_8hpp.html">module/moduleInterface.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="constructor_8hpp.html">module/constructor.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">namespace </span>_Wolframe {</div>
@@ -210,12 +210,12 @@
 <div class="ttc" id="class__Wolframe_1_1module_1_1SimpleBuilder_html"><div class="ttname"><a href="class__Wolframe_1_1module_1_1SimpleBuilder.html">_Wolframe::module::SimpleBuilder</a></div><div class="ttdef"><b>Definition:</b> moduleInterface.hpp:51</div></div>
 <div class="ttc" id="class__Wolframe_1_1module_1_1FilterBuilder_html_a621618722273e4f29f891e887c010305"><div class="ttname"><a href="class__Wolframe_1_1module_1_1FilterBuilder.html#a621618722273e4f29f891e887c010305">_Wolframe::module::FilterBuilder::m_name</a></div><div class="ttdeci">std::string m_name</div><div class="ttdef"><b>Definition:</b> filterBuilder.hpp:99</div></div>
 <div class="ttc" id="class__Wolframe_1_1module_1_1FilterConstructor_html_af4ed2fc841ac5b847bce914a0576becf"><div class="ttname"><a href="class__Wolframe_1_1module_1_1FilterConstructor.html#af4ed2fc841ac5b847bce914a0576becf">_Wolframe::module::FilterConstructor::object</a></div><div class="ttdeci">virtual langbind::FilterType * object() const </div><div class="ttdef"><b>Definition:</b> filterBuilder.hpp:61</div></div>
-<div class="ttc" id="countedReference_8hpp_html"><div class="ttname"><a href="countedReference_8hpp.html">countedReference.hpp</a></div><div class="ttdoc">Multiple references to an object that is freed with its last reference. </div></div>
+<div class="ttc" id="countedReference_8hpp_html"><div class="ttname"><a href="countedReference_8hpp.html">countedReference.hpp</a></div></div>
 <div class="ttc" id="class__Wolframe_1_1module_1_1FilterBuilder_html_ada479dfa86bd3ba0e7952b57d8c72420"><div class="ttname"><a href="class__Wolframe_1_1module_1_1FilterBuilder.html#ada479dfa86bd3ba0e7952b57d8c72420">_Wolframe::module::FilterBuilder::FilterBuilder</a></div><div class="ttdeci">FilterBuilder(const char *className_, const char *name_, langbind::CreateFilterType createFilterType_)</div><div class="ttdef"><b>Definition:</b> filterBuilder.hpp:81</div></div>
 <div class="ttc" id="class__Wolframe_1_1module_1_1FilterConstructor_html_a347d799fbcd5914c0997769d73549f20"><div class="ttname"><a href="class__Wolframe_1_1module_1_1FilterConstructor.html#a347d799fbcd5914c0997769d73549f20">_Wolframe::module::FilterConstructor::FilterConstructor</a></div><div class="ttdeci">FilterConstructor(const std::string &amp;name_, langbind::CreateFilterType createFilterType_)</div><div class="ttdef"><b>Definition:</b> filterBuilder.hpp:47</div></div>
 <div class="ttc" id="class__Wolframe_1_1ObjectConstructorBase_html"><div class="ttname"><a href="class__Wolframe_1_1ObjectConstructorBase.html">_Wolframe::ObjectConstructorBase</a></div><div class="ttdoc">Constructor base class. </div><div class="ttdef"><b>Definition:</b> constructor.hpp:45</div></div>
 <div class="ttc" id="class__Wolframe_1_1module_1_1FilterConstructor_html_a9dd0f3a26cd74f073bc5f7426b4b6e1a"><div class="ttname"><a href="class__Wolframe_1_1module_1_1FilterConstructor.html#a9dd0f3a26cd74f073bc5f7426b4b6e1a">_Wolframe::module::FilterConstructor::~FilterConstructor</a></div><div class="ttdeci">virtual ~FilterConstructor()</div><div class="ttdef"><b>Definition:</b> filterBuilder.hpp:51</div></div>
-<div class="ttc" id="class__Wolframe_1_1types_1_1CountedReference_html"><div class="ttname"><a href="class__Wolframe_1_1types_1_1CountedReference.html">_Wolframe::types::CountedReference</a></div><div class="ttdoc">Multiple shared reference to an object with ownership. </div><div class="ttdef"><b>Definition:</b> countedReference.hpp:48</div></div>
+<div class="ttc" id="class__Wolframe_1_1types_1_1CountedReference_html"><div class="ttname"><a href="class__Wolframe_1_1types_1_1CountedReference.html">_Wolframe::types::CountedReference</a></div><div class="ttdef"><b>Definition:</b> countedReference.hpp:47</div></div>
 <div class="ttc" id="class__Wolframe_1_1module_1_1FilterConstructor_html_ad7e9983402bbb5e6cc37a9a6a745017f"><div class="ttname"><a href="class__Wolframe_1_1module_1_1FilterConstructor.html#ad7e9983402bbb5e6cc37a9a6a745017f">_Wolframe::module::FilterConstructor::name</a></div><div class="ttdeci">const std::string &amp; name() const </div><div class="ttdef"><b>Definition:</b> filterBuilder.hpp:65</div></div>
 <div class="ttc" id="class__Wolframe_1_1module_1_1FilterConstructor_html_adeda75b9ebdfb68424e3323cc794e2be"><div class="ttname"><a href="class__Wolframe_1_1module_1_1FilterConstructor.html#adeda75b9ebdfb68424e3323cc794e2be">_Wolframe::module::FilterConstructor::m_createFilterType</a></div><div class="ttdeci">langbind::CreateFilterType m_createFilterType</div><div class="ttdef"><b>Definition:</b> filterBuilder.hpp:72</div></div>
 <div class="ttc" id="filter_8hpp_html"><div class="ttname"><a href="filter_8hpp.html">filter.hpp</a></div><div class="ttdoc">Interface for filter class. </div></div>
@@ -224,7 +224,7 @@
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 13 2014 11:05:15 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 19 2014 16:37:46 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

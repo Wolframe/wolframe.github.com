@@ -89,7 +89,7 @@
 </div><!--header-->
 <div class="contents">
 <a href="structOptionParser_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/************************************************************************</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">Copyright (C) 2011 - 2013 Project Wolframe.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">Copyright (C) 2011 - 2014 Project Wolframe.</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">All rights reserved.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">This file is part of Project Wolframe.</span></div>
@@ -121,9 +121,9 @@
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">************************************************************************/</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#ifndef _Wolframe_SERIALIZE_STRUCT_OPTION_PARSER_HPP_INCLUDED</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _Wolframe_SERIALIZE_STRUCT_OPTION_PARSER_HPP_INCLUDED</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="filtermapBase_8hpp.html">serialize/struct/filtermapBase.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &lt;boost/property_tree/ptree.hpp&gt;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="structParser_8hpp.html">serialize/struct/structParser.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="propertyTree_8hpp.html">types/propertyTree.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">namespace </span>_Wolframe {</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">namespace </span>serialize {</div>
@@ -136,20 +136,22 @@
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="namespace__Wolframe_1_1serialize.html#a42530c1288bc433e304aac4d07475d08">parseStructOptionStringImpl</a>( st.getStructDescription(), (<span class="keywordtype">void</span>*)&amp;st, opt);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;boost::property_tree::ptree <a class="code" href="namespace__Wolframe_1_1serialize.html#a3caeb6d991b228149dbcc2624309a400">structOptionTree</a>( <span class="keyword">const</span> std::string&amp; opt);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<a class="code" href="class__Wolframe_1_1types_1_1PropertyTree_1_1Node.html">types::PropertyTree::Node</a> <a class="code" href="namespace__Wolframe_1_1serialize.html#a3b19ee4ff66e187f276862db29630c44">structOptionTree</a>( <span class="keyword">const</span> std::string&amp; opt);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}}</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor"></span></div>
-<div class="ttc" id="namespace__Wolframe_1_1serialize_html_a3caeb6d991b228149dbcc2624309a400"><div class="ttname"><a href="namespace__Wolframe_1_1serialize.html#a3caeb6d991b228149dbcc2624309a400">_Wolframe::serialize::structOptionTree</a></div><div class="ttdeci">boost::property_tree::ptree structOptionTree(const std::string &amp;opt)</div></div>
+<div class="ttc" id="class__Wolframe_1_1types_1_1PropertyTree_1_1Node_html"><div class="ttname"><a href="class__Wolframe_1_1types_1_1PropertyTree_1_1Node.html">_Wolframe::types::PropertyTree::Node</a></div><div class="ttdef"><b>Definition:</b> propertyTree.hpp:105</div></div>
+<div class="ttc" id="namespace__Wolframe_1_1serialize_html_a3b19ee4ff66e187f276862db29630c44"><div class="ttname"><a href="namespace__Wolframe_1_1serialize.html#a3b19ee4ff66e187f276862db29630c44">_Wolframe::serialize::structOptionTree</a></div><div class="ttdeci">types::PropertyTree::Node structOptionTree(const std::string &amp;opt)</div></div>
 <div class="ttc" id="namespace__Wolframe_1_1serialize_html_a42530c1288bc433e304aac4d07475d08"><div class="ttname"><a href="namespace__Wolframe_1_1serialize.html#a42530c1288bc433e304aac4d07475d08">_Wolframe::serialize::parseStructOptionStringImpl</a></div><div class="ttdeci">void parseStructOptionStringImpl(const serialize::StructDescriptionBase *descr, void *ptr, const ::std::string &amp;opt)</div></div>
+<div class="ttc" id="structParser_8hpp_html"><div class="ttname"><a href="structParser_8hpp.html">structParser.hpp</a></div><div class="ttdoc">Deserialization interface. </div></div>
+<div class="ttc" id="propertyTree_8hpp_html"><div class="ttname"><a href="propertyTree_8hpp.html">propertyTree.hpp</a></div></div>
 <div class="ttc" id="namespace__Wolframe_1_1serialize_html_a74e18c3ea847958f122a0c3b47531702"><div class="ttname"><a href="namespace__Wolframe_1_1serialize.html#a74e18c3ea847958f122a0c3b47531702">_Wolframe::serialize::parseStructOptionString</a></div><div class="ttdeci">void parseStructOptionString(Structure &amp;st, const std::string &amp;opt)</div><div class="ttdef"><b>Definition:</b> structOptionParser.hpp:46</div></div>
-<div class="ttc" id="filtermapBase_8hpp_html"><div class="ttname"><a href="filtermapBase_8hpp.html">filtermapBase.hpp</a></div><div class="ttdoc">Defines the non intrusive base class of serialization/deserialization of objects interfaced as TypedI...</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 13 2014 11:05:17 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 19 2014 16:37:50 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

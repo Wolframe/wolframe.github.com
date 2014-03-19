@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-	<title>Wolframe: include/module/customDataTypeBuilder.hpp Source File</title>
+	<title>Wolframe: include/appdevel/module/customDataTypeBuilder.hpp Source File</title>
 	<meta name="generator" content="Doxygen 1.8.6"/>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -80,7 +80,7 @@
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_dc1aacf9e28ad733d01de42bc03b5008.html">module</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_34c477f5f0ba91a1afc006ebf703b1f7.html">appdevel</a></li><li class="navelem"><a class="el" href="dir_dca48a13f555bb2beefe16af3b8fc26a.html">module</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -89,7 +89,7 @@
 </div><!--header-->
 <div class="contents">
 <a href="customDataTypeBuilder_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/************************************************************************</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">Copyright (C) 2011 - 2013 Project Wolframe.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">Copyright (C) 2011 - 2014 Project Wolframe.</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">All rights reserved.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">This file is part of Project Wolframe.</span></div>
@@ -121,7 +121,7 @@
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">************************************************************************/</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#ifndef _Wolframe_MODULE_CUSTOM_DATA_TYPE_BUILDER_HPP_INCLUDED</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _Wolframe_MODULE_CUSTOM_DATA_TYPE_BUILDER_HPP_INCLUDED</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="moduleInterface_8hpp.html">processor/moduleInterface.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="moduleInterface_8hpp.html">module/moduleInterface.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="constructor_8hpp.html">module/constructor.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="customDataType_8hpp.html">types/customDataType.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="keymap_8hpp.html">types/keymap.hpp</a>&quot;</span></div>
@@ -240,8 +240,8 @@
 <div class="ttc" id="class__Wolframe_1_1module_1_1CustomDataTypeConstructor_html_aed29b60559e3f2b638b0ee6257323898"><div class="ttname"><a href="class__Wolframe_1_1module_1_1CustomDataTypeConstructor.html#aed29b60559e3f2b638b0ee6257323898">_Wolframe::module::CustomDataTypeConstructor::CustomDataTypeConstructor</a></div><div class="ttdeci">CustomDataTypeConstructor(const char *classname_, const types::keymap&lt; types::CreateCustomDataType &gt; &amp;constructormap_)</div><div class="ttdef"><b>Definition:</b> customDataTypeBuilder.hpp:51</div></div>
 <div class="ttc" id="class__Wolframe_1_1ObjectConstructorBase_html_a36260b1c4ec3cfbf32e9e58f86737c2e"><div class="ttname"><a href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2e">_Wolframe::ObjectConstructorBase::ObjectType</a></div><div class="ttdeci">ObjectType</div><div class="ttdef"><b>Definition:</b> constructor.hpp:48</div></div>
 <div class="ttc" id="class__Wolframe_1_1module_1_1CustomDataTypeConstructor_html_ace4261782166b13fa848491fbc67ee8b"><div class="ttname"><a href="class__Wolframe_1_1module_1_1CustomDataTypeConstructor.html#ace4261782166b13fa848491fbc67ee8b">_Wolframe::module::CustomDataTypeConstructor::getTypeReferences</a></div><div class="ttdeci">void getTypeReferences(std::vector&lt; const types::CustomDataType * &gt; &amp;result) const </div><div class="ttdef"><b>Definition:</b> customDataTypeBuilder.hpp:80</div></div>
-<div class="ttc" id="namespace__Wolframe_1_1types_html_a998960deb9e97a121eb6f56f32e8a02d"><div class="ttname"><a href="namespace__Wolframe_1_1types.html#a998960deb9e97a121eb6f56f32e8a02d">_Wolframe::types::CustomDataTypeR</a></div><div class="ttdeci">boost::shared_ptr&lt; CustomDataType &gt; CustomDataTypeR</div><div class="ttdef"><b>Definition:</b> customDataType.hpp:182</div></div>
-<div class="ttc" id="struct__Wolframe_1_1types_1_1keymap_html_a070535420d00cec55f4edd66d44219ed"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keymap.html#a070535420d00cec55f4edd66d44219ed">_Wolframe::types::keymap::insert</a></div><div class="ttdeci">void insert(const keystring &amp;key, const ValueType &amp;value)</div><div class="ttdef"><b>Definition:</b> keymap.hpp:77</div></div>
+<div class="ttc" id="namespace__Wolframe_1_1types_html_a998960deb9e97a121eb6f56f32e8a02d"><div class="ttname"><a href="namespace__Wolframe_1_1types.html#a998960deb9e97a121eb6f56f32e8a02d">_Wolframe::types::CustomDataTypeR</a></div><div class="ttdeci">boost::shared_ptr&lt; CustomDataType &gt; CustomDataTypeR</div><div class="ttdef"><b>Definition:</b> customDataType.hpp:204</div></div>
+<div class="ttc" id="struct__Wolframe_1_1types_1_1keymap_html_a070535420d00cec55f4edd66d44219ed"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keymap.html#a070535420d00cec55f4edd66d44219ed">_Wolframe::types::keymap::insert</a></div><div class="ttdeci">void insert(const keystring &amp;key, const ValueType &amp;value)</div><div class="ttdef"><b>Definition:</b> keymap.hpp:79</div></div>
 <div class="ttc" id="moduleInterface_8hpp_html"><div class="ttname"><a href="moduleInterface_8hpp.html">moduleInterface.hpp</a></div></div>
 <div class="ttc" id="class__Wolframe_1_1SimpleObjectConstructor_html"><div class="ttname"><a href="class__Wolframe_1_1SimpleObjectConstructor.html">_Wolframe::SimpleObjectConstructor</a></div><div class="ttdoc">Constructor of a simple (without configuration) object. </div><div class="ttdef"><b>Definition:</b> constructor.hpp:113</div></div>
 <div class="ttc" id="class__Wolframe_1_1module_1_1CustomDataTypeConstructor_html"><div class="ttname"><a href="class__Wolframe_1_1module_1_1CustomDataTypeConstructor.html">_Wolframe::module::CustomDataTypeConstructor</a></div><div class="ttdef"><b>Definition:</b> customDataTypeBuilder.hpp:48</div></div>
@@ -254,13 +254,13 @@
 <div class="ttc" id="class__Wolframe_1_1module_1_1CustomDataTypeBuilder_html_a22da7dc1d7a569891ff8e2a5feb655f6"><div class="ttname"><a href="class__Wolframe_1_1module_1_1CustomDataTypeBuilder.html#a22da7dc1d7a569891ff8e2a5feb655f6">_Wolframe::module::CustomDataTypeBuilder::ConstructorMap</a></div><div class="ttdeci">types::keymap&lt; types::CreateCustomDataType &gt; ConstructorMap</div><div class="ttdef"><b>Definition:</b> customDataTypeBuilder.hpp:134</div></div>
 <div class="ttc" id="keymap_8hpp_html"><div class="ttname"><a href="keymap_8hpp.html">keymap.hpp</a></div><div class="ttdoc">template for map with case insensitive key strings </div></div>
 <div class="ttc" id="class__Wolframe_1_1module_1_1CustomDataTypeBuilder_html_afbab430bda4a270292a09ec790a21b60"><div class="ttname"><a href="class__Wolframe_1_1module_1_1CustomDataTypeBuilder.html#afbab430bda4a270292a09ec790a21b60">_Wolframe::module::CustomDataTypeBuilder::constructor</a></div><div class="ttdeci">virtual ObjectConstructorBase * constructor()</div><div class="ttdef"><b>Definition:</b> customDataTypeBuilder.hpp:128</div></div>
-<div class="ttc" id="struct__Wolframe_1_1types_1_1keymap_html_a5e6f9d954d382204896bad79925ea301"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keymap.html#a5e6f9d954d382204896bad79925ea301">_Wolframe::types::keymap::getkeys</a></div><div class="ttdeci">boost::enable_if_c&lt; types::traits::is_back_insertion_sequence&lt; KeyList &gt;::value,KeyList &gt;::type getkeys() const </div><div class="ttdef"><b>Definition:</b> keymap.hpp:116</div></div>
+<div class="ttc" id="struct__Wolframe_1_1types_1_1keymap_html_a5e6f9d954d382204896bad79925ea301"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1keymap.html#a5e6f9d954d382204896bad79925ea301">_Wolframe::types::keymap::getkeys</a></div><div class="ttdeci">boost::enable_if_c&lt; types::traits::is_back_insertion_sequence&lt; KeyList &gt;::value,KeyList &gt;::type getkeys() const </div><div class="ttdef"><b>Definition:</b> keymap.hpp:118</div></div>
 <div class="ttc" id="namespace__Wolframe_1_1module_html_a80c47654a67df07002cf4ef22030da54"><div class="ttname"><a href="namespace__Wolframe_1_1module.html#a80c47654a67df07002cf4ef22030da54">_Wolframe::module::CustomDataTypeConstructorR</a></div><div class="ttdeci">boost::shared_ptr&lt; CustomDataTypeConstructor &gt; CustomDataTypeConstructorR</div><div class="ttdef"><b>Definition:</b> customDataTypeBuilder.hpp:99</div></div>
 <div class="ttc" id="class__Wolframe_1_1ObjectConstructorBase_html"><div class="ttname"><a href="class__Wolframe_1_1ObjectConstructorBase.html">_Wolframe::ObjectConstructorBase</a></div><div class="ttdoc">Constructor base class. </div><div class="ttdef"><b>Definition:</b> constructor.hpp:45</div></div>
 <div class="ttc" id="class__Wolframe_1_1module_1_1CustomDataTypeConstructor_html_ac383d225b3e52fda24a8d73283352ba0"><div class="ttname"><a href="class__Wolframe_1_1module_1_1CustomDataTypeConstructor.html#ac383d225b3e52fda24a8d73283352ba0">_Wolframe::module::CustomDataTypeConstructor::objectType</a></div><div class="ttdeci">virtual ObjectConstructorBase::ObjectType objectType() const </div><div class="ttdoc">The type of the object. Filter, DDL compiler, authentication etc. </div><div class="ttdef"><b>Definition:</b> customDataTypeBuilder.hpp:64</div></div>
 <div class="ttc" id="class__Wolframe_1_1module_1_1CustomDataTypeConstructor_html_a0696e24309573fa4b15b7cc5c0ec3713"><div class="ttname"><a href="class__Wolframe_1_1module_1_1CustomDataTypeConstructor.html#a0696e24309573fa4b15b7cc5c0ec3713">_Wolframe::module::CustomDataTypeConstructor::m_classname</a></div><div class="ttdeci">const char * m_classname</div><div class="ttdef"><b>Definition:</b> customDataTypeBuilder.hpp:95</div></div>
 <div class="ttc" id="struct__Wolframe_1_1module_1_1CustomDataTypeDef_html_ade73f9feb5800de529daccd8946420a4"><div class="ttname"><a href="struct__Wolframe_1_1module_1_1CustomDataTypeDef.html#ade73f9feb5800de529daccd8946420a4">_Wolframe::module::CustomDataTypeDef::createFunc</a></div><div class="ttdeci">types::CreateCustomDataType createFunc</div><div class="ttdef"><b>Definition:</b> customDataTypeBuilder.hpp:105</div></div>
-<div class="ttc" id="namespace__Wolframe_1_1types_html_a309d32d4b5144d5da94c86d8e92906e2"><div class="ttname"><a href="namespace__Wolframe_1_1types.html#a309d32d4b5144d5da94c86d8e92906e2">_Wolframe::types::CreateCustomDataType</a></div><div class="ttdeci">CustomDataType *(* CreateCustomDataType)(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> customDataType.hpp:185</div></div>
+<div class="ttc" id="namespace__Wolframe_1_1types_html_a309d32d4b5144d5da94c86d8e92906e2"><div class="ttname"><a href="namespace__Wolframe_1_1types.html#a309d32d4b5144d5da94c86d8e92906e2">_Wolframe::types::CreateCustomDataType</a></div><div class="ttdeci">CustomDataType *(* CreateCustomDataType)(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> customDataType.hpp:207</div></div>
 <div class="ttc" id="class__Wolframe_1_1module_1_1CustomDataTypeConstructor_html_a2c202e2f74ec713f24e57799cf582648"><div class="ttname"><a href="class__Wolframe_1_1module_1_1CustomDataTypeConstructor.html#a2c202e2f74ec713f24e57799cf582648">_Wolframe::module::CustomDataTypeConstructor::CustomDataTypeMap</a></div><div class="ttdeci">types::keymap&lt; types::CustomDataTypeR &gt; CustomDataTypeMap</div><div class="ttdef"><b>Definition:</b> customDataTypeBuilder.hpp:74</div></div>
 <div class="ttc" id="struct__Wolframe_1_1module_1_1CustomDataTypeDef_html"><div class="ttname"><a href="struct__Wolframe_1_1module_1_1CustomDataTypeDef.html">_Wolframe::module::CustomDataTypeDef</a></div><div class="ttdef"><b>Definition:</b> customDataTypeBuilder.hpp:102</div></div>
 <div class="ttc" id="class__Wolframe_1_1module_1_1CustomDataTypeBuilder_html_a2a0255f17e1bd4a93fe6939b29bf0a24"><div class="ttname"><a href="class__Wolframe_1_1module_1_1CustomDataTypeBuilder.html#a2a0255f17e1bd4a93fe6939b29bf0a24">_Wolframe::module::CustomDataTypeBuilder::~CustomDataTypeBuilder</a></div><div class="ttdeci">virtual ~CustomDataTypeBuilder()</div><div class="ttdef"><b>Definition:</b> customDataTypeBuilder.hpp:121</div></div>
@@ -268,7 +268,7 @@
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 13 2014 11:05:15 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 19 2014 16:37:46 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

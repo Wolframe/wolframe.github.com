@@ -93,8 +93,8 @@
 
 <p>Macros and templates for building C++ an application form function module.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="cppFormFunctionTemplate_8hpp_source.html">appdevel/cppFormFunctionTemplate.hpp</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="logger-v1_8hpp_source.html">logger-v1.hpp</a>&quot;</code><br/>
+<div class="textblock"><code>#include &quot;<a class="el" href="cppFormFunctionTemplate_8hpp_source.html">appdevel/module/cppFormFunctionTemplate.hpp</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="cppFormFunctionBuilder_8hpp_source.html">appdevel/module/cppFormFunctionBuilder.hpp</a>&quot;</code><br/>
 </div>
 <p><a href="cppFormFunctionModuleMacros_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -102,12 +102,52 @@
 Macros</h2></td></tr>
 <tr class="memitem:a8a51c7c408174465c34a7838280b9ca9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cppFormFunctionModuleMacros_8hpp.html#a8a51c7c408174465c34a7838280b9ca9">CPP_APPLICATION_FORM_FUNCTION_MODULE</a>(NAME)</td></tr>
 <tr class="separator:a8a51c7c408174465c34a7838280b9ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86df7bd77e674dcbeb6ec2c438b76899"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cppFormFunctionModuleMacros_8hpp.html#a86df7bd77e674dcbeb6ec2c438b76899">CPP_APPLICATION_FORM_FUNCTION_MODULE_END</a>(NofObjects, Objects)&#160;&#160;&#160;module::ModuleEntryPoint entryPoint( 0, _Wolframe__moduleName(), setModuleLogger, 0, 0, NofObjects, Objects);</td></tr>
-<tr class="separator:a86df7bd77e674dcbeb6ec2c438b76899"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af01ad97edca938081e0d635f05e40d48"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cppFormFunctionModuleMacros_8hpp.html#af01ad97edca938081e0d635f05e40d48">CPP_APPLICATION_FORM_FUNCTION</a>(NAME, FUNCTION, OUTPUT, INPUT)&#160;&#160;&#160;{NAME,appdevel::CppFormFunction&lt;INPUT,OUTPUT,FUNCTION&gt;::declaration()},</td></tr>
+<tr class="separator:af01ad97edca938081e0d635f05e40d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec9987c5ef8adaef72554a8a85921ec3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cppFormFunctionModuleMacros_8hpp.html#aec9987c5ef8adaef72554a8a85921ec3">CPP_APPLICATION_FORM_FUNCTION_MODULE_END</a></td></tr>
+<tr class="separator:aec9987c5ef8adaef72554a8a85921ec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Macros and templates for building C++ an application form function module. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="af01ad97edca938081e0d635f05e40d48"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CPP_APPLICATION_FORM_FUNCTION</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">NAME, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">FUNCTION, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">OUTPUT, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">INPUT&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;{NAME,appdevel::CppFormFunction&lt;INPUT,OUTPUT,FUNCTION&gt;::declaration()},</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a8a51c7c408174465c34a7838280b9ca9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -121,53 +161,56 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="class__Wolframe_1_1log_1_1LogBackend.html">_Wolframe::log::LogBackend</a>* <a class="code" href="logger-v1_8hpp.html#a82370806f69675b97ff088bb999c7ff8">logBackendPtr</a>;\</div>
-<div class="line">        \</div>
-<div class="line">        static <span class="keywordtype">void</span> setModuleLogger( <span class="keywordtype">void</span>* logger )\</div>
-<div class="line">        {<a class="code" href="logger-v1_8hpp.html#a82370806f69675b97ff088bb999c7ff8">\</a></div>
-<div class="line"><a class="code" href="logger-v1_8hpp.html#a82370806f69675b97ff088bb999c7ff8">		logBackendPtr</a> = <span class="keyword">reinterpret_cast&lt;</span> <a class="code" href="class__Wolframe_1_1log_1_1LogBackend.html">_Wolframe::log::LogBackend</a>*<span class="keyword">&gt;</span>( logger);\</div>
-<div class="line">        }\</div>
-<div class="line">        \</div>
-<div class="line">        static <span class="keyword">const</span> <span class="keywordtype">char</span>* _Wolframe__moduleName()\</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* _Wolframe__moduleName()\</div>
 <div class="line">        {\</div>
 <div class="line">        return NAME;\</div>
 <div class="line">        }\</div>
-<div class="ttc" id="class__Wolframe_1_1log_1_1LogBackend_html"><div class="ttname"><a href="class__Wolframe_1_1log_1_1LogBackend.html">_Wolframe::log::LogBackend</a></div><div class="ttdef"><b>Definition:</b> logBackend.hpp:50</div></div>
-<div class="ttc" id="logger-v1_8hpp_html_a82370806f69675b97ff088bb999c7ff8"><div class="ttname"><a href="logger-v1_8hpp.html#a82370806f69675b97ff088bb999c7ff8">logBackendPtr</a></div><div class="ttdeci">_Wolframe::log::LogBackend * logBackendPtr</div></div>
+<div class="line">        static <a class="code" href="struct__Wolframe_1_1module_1_1CppFormFunctionDef.html">_Wolframe::module::CppFormFunctionDef</a> _Wolframe__cppFormFunctions[] =\</div>
+<div class="line">        {</div>
+<div class="ttc" id="struct__Wolframe_1_1module_1_1CppFormFunctionDef_html"><div class="ttname"><a href="struct__Wolframe_1_1module_1_1CppFormFunctionDef.html">_Wolframe::module::CppFormFunctionDef</a></div><div class="ttdef"><b>Definition:</b> cppFormFunctionBuilder.hpp:46</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a86df7bd77e674dcbeb6ec2c438b76899"></a>
+<a class="anchor" id="aec9987c5ef8adaef72554a8a85921ec3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">#define CPP_APPLICATION_FORM_FUNCTION_MODULE_END</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">NofObjects, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">Objects&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;module::ModuleEntryPoint entryPoint( 0, _Wolframe__moduleName(), setModuleLogger, 0, 0, NofObjects, Objects);</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<b>Value:</b><div class="fragment"><div class="line">{0,langbind::CppFormFunction()}\</div>
+<div class="line">        };\</div>
+<div class="line">        namespace {\</div>
+<div class="line">        struct ModuleImpl\</div>
+<div class="line">        {\</div>
+<div class="line">        static <a class="code" href="class__Wolframe_1_1module_1_1SimpleBuilder.html">_Wolframe::module::SimpleBuilder</a>* constructor()\</div>
+<div class="line">        {\</div>
+<div class="line">                return <span class="keyword">new</span> <a class="code" href="class__Wolframe_1_1module_1_1CppFormFunctionBuilder.html">_Wolframe::module::CppFormFunctionBuilder</a>( _Wolframe__moduleName(), _Wolframe__cppFormFunctions);\</div>
+<div class="line">        }\</div>
+<div class="line">        };\</div>
+<div class="line">        }\</div>
+<div class="line">        enum {NofObjects=1};\</div>
+<div class="line">        static <a class="code" href="namespace__Wolframe_1_1module.html#af33df23d17fb7d53cc4cd8d2dd128948">_Wolframe::module::createBuilderFunc</a> _Wolframe__objdef[ NofObjects] =\</div>
+<div class="line">        {\</div>
+<div class="line">                ModuleImpl::constructor\</div>
+<div class="line">        };\</div>
+<div class="line">        extern <span class="stringliteral">&quot;C&quot;</span> { \</div>
+<div class="line">                 module::ModuleEntryPoint <a class="code" href="namespace__Wolframe_1_1module.html#aa8038dca6c1d20d7f1fbe76040a620ce">entryPoint</a>( 0, _Wolframe__moduleName(), 0, 0, NofObjects, _Wolframe__objdef); \</div>
+<div class="line">        }</div>
+<div class="ttc" id="class__Wolframe_1_1module_1_1CppFormFunctionBuilder_html"><div class="ttname"><a href="class__Wolframe_1_1module_1_1CppFormFunctionBuilder.html">_Wolframe::module::CppFormFunctionBuilder</a></div><div class="ttdef"><b>Definition:</b> cppFormFunctionBuilder.hpp:97</div></div>
+<div class="ttc" id="namespace__Wolframe_1_1module_html_aa8038dca6c1d20d7f1fbe76040a620ce"><div class="ttname"><a href="namespace__Wolframe_1_1module.html#aa8038dca6c1d20d7f1fbe76040a620ce">_Wolframe::module::entryPoint</a></div><div class="ttdeci">ModuleEntryPoint entryPoint</div><div class="ttdef"><b>Definition:</b> moduleInterface.hpp:174</div></div>
+<div class="ttc" id="class__Wolframe_1_1module_1_1SimpleBuilder_html"><div class="ttname"><a href="class__Wolframe_1_1module_1_1SimpleBuilder.html">_Wolframe::module::SimpleBuilder</a></div><div class="ttdef"><b>Definition:</b> moduleInterface.hpp:51</div></div>
+<div class="ttc" id="namespace__Wolframe_1_1module_html_af33df23d17fb7d53cc4cd8d2dd128948"><div class="ttname"><a href="namespace__Wolframe_1_1module.html#af33df23d17fb7d53cc4cd8d2dd128948">_Wolframe::module::createBuilderFunc</a></div><div class="ttdeci">SimpleBuilder *(* createBuilderFunc)()</div><div class="ttdef"><b>Definition:</b> moduleInterface.hpp:142</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 13 2014 11:05:18 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 19 2014 16:37:52 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

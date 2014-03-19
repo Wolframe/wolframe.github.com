@@ -91,9 +91,6 @@
 <div class="title">lineCommandHandler.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Interface to a generic command handler for a networkHandler command with delegation of network I/O until the command context is left.  
-<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="commandHandler_8hpp_source.html">cmdbind/commandHandler.hpp</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="ioblocks_8hpp_source.html">protocol/ioblocks.hpp</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="parser_8hpp_source.html">protocol/parser.hpp</a>&quot;</code><br/>
@@ -109,20 +106,16 @@
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1LineCommandHandlerSTM.html">_Wolframe::cmdbind::LineCommandHandlerSTM</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct__Wolframe_1_1cmdbind_1_1LineCommandHandlerSTM_1_1State.html">State</a> machine definition of a <a class="el" href="class__Wolframe_1_1cmdbind_1_1LineCommandHandler.html">LineCommandHandler</a>.  <a href="class__Wolframe_1_1cmdbind_1_1LineCommandHandlerSTM.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1cmdbind_1_1LineCommandHandlerSTM_1_1State.html">_Wolframe::cmdbind::LineCommandHandlerSTM::State</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1LineCommandHandler.html">_Wolframe::cmdbind::LineCommandHandler</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1cmdbind_1_1LineCommandHandlerTerminateDelegationWrapper.html">_Wolframe::cmdbind::LineCommandHandlerTerminateDelegationWrapper&lt; T, TerminateDelegationMethod &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a static function calling a member function with fixed signature.  <a href="struct__Wolframe_1_1cmdbind_1_1LineCommandHandlerTerminateDelegationWrapper.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1cmdbind_1_1LineCommandHandlerTemplate.html">_Wolframe::cmdbind::LineCommandHandlerTemplate&lt; LineCommandHandlerImpl &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines some template based extensions to line command handler.  <a href="struct__Wolframe_1_1cmdbind_1_1LineCommandHandlerTemplate.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1cmdbind_1_1LineCommandHandlerWrapper.html">_Wolframe::cmdbind::LineCommandHandlerWrapper&lt; T, Method &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a static function calling a member function with fixed signature.  <a href="struct__Wolframe_1_1cmdbind_1_1LineCommandHandlerWrapper.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1cmdbind_1_1LineCommandHandlerSTMTemplate.html">_Wolframe::cmdbind::LineCommandHandlerSTMTemplate&lt; LineCommandHandlerImpl &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,18 +123,15 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace__Wolframe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe.html">_Wolframe</a></td></tr>
-<tr class="memdesc:namespace__Wolframe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward declaration. <br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace__Wolframe_1_1cmdbind"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1cmdbind.html">_Wolframe::cmdbind</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Interface to a generic command handler for a networkHandler command with delegation of network I/O until the command context is left. </p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 13 2014 11:05:19 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 19 2014 16:37:52 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

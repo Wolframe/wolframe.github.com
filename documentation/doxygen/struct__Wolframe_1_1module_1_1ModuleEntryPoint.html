@@ -109,8 +109,8 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7fc890cb00bf93988e0136dafc131ccf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1module_1_1ModuleEntryPoint.html#a7fc890cb00bf93988e0136dafc131ccf">ModuleEntryPoint</a> (unsigned short iVer, const char *modName, void(*setLoggerFunc)(void *), unsigned short nrContainers, <a class="el" href="namespace__Wolframe_1_1module.html#ab9c4fd57ba9ba8c49321e908b0ec4c9d">createCfgdBuilderFunc</a> *containerFunc, unsigned short nrObjects, <a class="el" href="namespace__Wolframe_1_1module.html#af33df23d17fb7d53cc4cd8d2dd128948">createBuilderFunc</a> *objectFunc)</td></tr>
-<tr class="separator:a7fc890cb00bf93988e0136dafc131ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46406205de6e08884e178f60efb69212"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1module_1_1ModuleEntryPoint.html#a46406205de6e08884e178f60efb69212">ModuleEntryPoint</a> (unsigned short iVer, const char *modName, unsigned short nrContainers, <a class="el" href="namespace__Wolframe_1_1module.html#ab9c4fd57ba9ba8c49321e908b0ec4c9d">createCfgdBuilderFunc</a> *containerFunc, unsigned short nrObjects, <a class="el" href="namespace__Wolframe_1_1module.html#af33df23d17fb7d53cc4cd8d2dd128948">createBuilderFunc</a> *objectFunc)</td></tr>
+<tr class="separator:a46406205de6e08884e178f60efb69212"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -123,8 +123,6 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:aa72ac71d3ac21a3d830a5144c5235a89"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1module_1_1ModuleEntryPoint.html#aa72ac71d3ac21a3d830a5144c5235a89">name</a></td></tr>
 <tr class="memdesc:aa72ac71d3ac21a3d830a5144c5235a89"><td class="mdescLeft">&#160;</td><td class="mdescRight">name of the module  <a href="#aa72ac71d3ac21a3d830a5144c5235a89">More...</a><br/></td></tr>
 <tr class="separator:aa72ac71d3ac21a3d830a5144c5235a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdffbcad35040700a5cc67464669e1c9"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1module_1_1ModuleEntryPoint.html#afdffbcad35040700a5cc67464669e1c9">setLogger</a> )(void *)</td></tr>
-<tr class="separator:afdffbcad35040700a5cc67464669e1c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaee7c37c396902148f3530db60ed6a01"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1module_1_1ModuleEntryPoint.html#aaee7c37c396902148f3530db60ed6a01">cfgdContainers</a></td></tr>
 <tr class="memdesc:aaee7c37c396902148f3530db60ed6a01"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of configured builders  <a href="#aaee7c37c396902148f3530db60ed6a01">More...</a><br/></td></tr>
 <tr class="separator:aaee7c37c396902148f3530db60ed6a01"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,7 +156,7 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a7fc890cb00bf93988e0136dafc131ccf"></a>
+<a class="anchor" id="a46406205de6e08884e178f60efb69212"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -176,12 +174,6 @@ Public Attributes</h2></td></tr>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>modName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void(*)(void *)&#160;</td>
-          <td class="paramname"><em>setLoggerFunc</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -307,19 +299,6 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="afdffbcad35040700a5cc67464669e1c9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void(* _Wolframe::module::ModuleEntryPoint::setLogger)(void *)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>pointer to function that sets the the logger for the module objects </p>
-
-</div>
-</div>
 <a class="anchor" id="a077be0fea028112785f983aa08c36c4e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -335,13 +314,13 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>include/processor/<a class="el" href="moduleInterface_8hpp_source.html">moduleInterface.hpp</a></li>
+<li>include/module/<a class="el" href="moduleInterface_8hpp_source.html">moduleInterface.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 13 2014 11:05:31 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 19 2014 16:38:04 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

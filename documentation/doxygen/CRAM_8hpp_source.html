@@ -90,7 +90,7 @@
 <div class="contents">
 <a href="CRAM_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/************************************************************************</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> Copyright (C) 2011 - 2013 Project Wolframe.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> Copyright (C) 2011 - 2014 Project Wolframe.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> All rights reserved.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> This file is part of Project Wolframe.</span></div>
@@ -139,7 +139,7 @@
 <div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1AAAA_1_1CRAMchallenge.html">   55</a></span>&#160;<span class="keyword">class </span><a class="code" href="class__Wolframe_1_1AAAA_1_1CRAMchallenge.html">CRAMchallenge</a></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="class__Wolframe_1_1AAAA_1_1CRAMchallenge.html#a5b86310583e601918b24d3238f13a241">CRAMchallenge</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="class__Wolframe_1_1AAAA_1_1CRAMchallenge.html#afab5446726fe09dd2853ceeaec26126a">CRAMchallenge</a>( <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* data, <span class="keywordtype">size_t</span> bytes );</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
 <div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1AAAA_1_1CRAMchallenge.html#a08d3bca4d0e2fb3d178e1417c3e77e9e">   60</a></span>&#160;        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* <a class="code" href="class__Wolframe_1_1AAAA_1_1CRAMchallenge.html#a08d3bca4d0e2fb3d178e1417c3e77e9e">challenge</a>()<span class="keyword"> const          </span>{ <span class="keywordflow">return</span> <a class="code" href="class__Wolframe_1_1AAAA_1_1CRAMchallenge.html#a35f4753f50e0b1301659464866103e02">m_challenge</a>; }</div>
 <div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1AAAA_1_1CRAMchallenge.html#a859a689492fbd8a050267dd400b42a57">   61</a></span>&#160;        std::size_t <a class="code" href="class__Wolframe_1_1AAAA_1_1CRAMchallenge.html#a859a689492fbd8a050267dd400b42a57">size</a>()<span class="keyword"> const                        </span>{ <span class="keywordflow">return</span> <a class="code" href="namespace__Wolframe_1_1AAAA.html#ab41785a47c617d01b11c406c77a3dc07">CRAM_CHALLENGE_SIZE</a>; }</div>
@@ -180,7 +180,6 @@
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#endif  // _CRAM_HPP_INCLUDED</span></div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor"></span></div>
-<div class="ttc" id="class__Wolframe_1_1AAAA_1_1CRAMchallenge_html_a5b86310583e601918b24d3238f13a241"><div class="ttname"><a href="class__Wolframe_1_1AAAA_1_1CRAMchallenge.html#a5b86310583e601918b24d3238f13a241">_Wolframe::AAAA::CRAMchallenge::CRAMchallenge</a></div><div class="ttdeci">CRAMchallenge()</div></div>
 <div class="ttc" id="class__Wolframe_1_1AAAA_1_1CRAMresponse_html_a3c5cdc54d9729979debfcad59141e5b8"><div class="ttname"><a href="class__Wolframe_1_1AAAA_1_1CRAMresponse.html#a3c5cdc54d9729979debfcad59141e5b8">_Wolframe::AAAA::CRAMresponse::response</a></div><div class="ttdeci">const unsigned char * response() const </div><div class="ttdef"><b>Definition:</b> CRAM.hpp:82</div></div>
 <div class="ttc" id="class__Wolframe_1_1AAAA_1_1CRAMresponse_html_a901a7103df93f5bfc7514e4ae5a66215"><div class="ttname"><a href="class__Wolframe_1_1AAAA_1_1CRAMresponse.html#a901a7103df93f5bfc7514e4ae5a66215">_Wolframe::AAAA::CRAMresponse::m_response</a></div><div class="ttdeci">unsigned char m_response[CRAM_RESPONSE_SIZE]</div><div class="ttdef"><b>Definition:</b> CRAM.hpp:98</div></div>
 <div class="ttc" id="namespace__Wolframe_1_1AAAA_html_ab41785a47c617d01b11c406c77a3dc07"><div class="ttname"><a href="namespace__Wolframe_1_1AAAA.html#ab41785a47c617d01b11c406c77a3dc07">_Wolframe::AAAA::CRAM_CHALLENGE_SIZE</a></div><div class="ttdeci">static const size_t CRAM_CHALLENGE_SIZE</div><div class="ttdef"><b>Definition:</b> CRAM.hpp:52</div></div>
@@ -194,6 +193,7 @@
 <div class="ttc" id="class__Wolframe_1_1AAAA_1_1CRAMchallenge_html_a4d9a10b265ea0358760797ed2993af15"><div class="ttname"><a href="class__Wolframe_1_1AAAA_1_1CRAMchallenge.html#a4d9a10b265ea0358760797ed2993af15">_Wolframe::AAAA::CRAMchallenge::toString</a></div><div class="ttdeci">std::string toString() const </div></div>
 <div class="ttc" id="class__Wolframe_1_1AAAA_1_1CRAMresponse_html_a0369a3a09eaee3b7e3d76ec09a6ba492"><div class="ttname"><a href="class__Wolframe_1_1AAAA_1_1CRAMresponse.html#a0369a3a09eaee3b7e3d76ec09a6ba492">_Wolframe::AAAA::CRAMresponse::operator==</a></div><div class="ttdeci">bool operator==(const CRAMresponse &amp;rhs)</div><div class="ttdoc">True if the 2 CRAM responses are identical, false otherwise. </div></div>
 <div class="ttc" id="class__Wolframe_1_1AAAA_1_1CRAMresponse_html_a355c76572efb9364ffa359b12784aa1f"><div class="ttname"><a href="class__Wolframe_1_1AAAA_1_1CRAMresponse.html#a355c76572efb9364ffa359b12784aa1f">_Wolframe::AAAA::CRAMresponse::size</a></div><div class="ttdeci">std::size_t size() const </div><div class="ttdef"><b>Definition:</b> CRAM.hpp:83</div></div>
+<div class="ttc" id="class__Wolframe_1_1AAAA_1_1CRAMchallenge_html_afab5446726fe09dd2853ceeaec26126a"><div class="ttname"><a href="class__Wolframe_1_1AAAA_1_1CRAMchallenge.html#afab5446726fe09dd2853ceeaec26126a">_Wolframe::AAAA::CRAMchallenge::CRAMchallenge</a></div><div class="ttdeci">CRAMchallenge(const unsigned char *data, size_t bytes)</div></div>
 <div class="ttc" id="class__Wolframe_1_1AAAA_1_1CRAMchallenge_html_a859a689492fbd8a050267dd400b42a57"><div class="ttname"><a href="class__Wolframe_1_1AAAA_1_1CRAMchallenge.html#a859a689492fbd8a050267dd400b42a57">_Wolframe::AAAA::CRAMchallenge::size</a></div><div class="ttdeci">std::size_t size() const </div><div class="ttdef"><b>Definition:</b> CRAM.hpp:61</div></div>
 <div class="ttc" id="namespace__Wolframe_1_1AAAA_html_a4f528121fe305a0c054f5fe489c6ce8a"><div class="ttname"><a href="namespace__Wolframe_1_1AAAA.html#a4f528121fe305a0c054f5fe489c6ce8a">_Wolframe::AAAA::CRAM_BLOCK_SIZE</a></div><div class="ttdeci">static const size_t CRAM_BLOCK_SIZE</div><div class="ttdef"><b>Definition:</b> CRAM.hpp:50</div></div>
 <div class="ttc" id="class__Wolframe_1_1AAAA_1_1CRAMresponse_html_a9b7161419809980171db53ce56581439"><div class="ttname"><a href="class__Wolframe_1_1AAAA_1_1CRAMresponse.html#a9b7161419809980171db53ce56581439">_Wolframe::AAAA::CRAMresponse::operator!=</a></div><div class="ttdeci">bool operator!=(const CRAMresponse &amp;rhs)</div><div class="ttdef"><b>Definition:</b> CRAM.hpp:90</div></div>
@@ -204,7 +204,7 @@
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 13 2014 11:05:13 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 19 2014 16:37:46 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

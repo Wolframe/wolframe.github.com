@@ -90,7 +90,7 @@
 <div class="contents">
 <a href="globalRngGen_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/************************************************************************</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> Copyright (C) 2011 - 2013 Project Wolframe.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> Copyright (C) 2011 - 2014 Project Wolframe.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> All rights reserved.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> This file is part of Project Wolframe.</span></div>
@@ -128,40 +128,59 @@
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _GLOBAL_RANDOM_GENERATOR_HPP_INCLUDED</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="singleton_8hpp.html">singleton.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">namespace </span>_Wolframe     {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1RandomGenerator.html">   45</a></span>&#160;<span class="keyword">class </span><a class="code" href="class__Wolframe_1_1RandomGenerator.html">RandomGenerator</a> : <span class="keyword">public</span> <a class="code" href="classSingleton.html">Singleton</a>&lt; RandomGenerator &gt;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="class__Wolframe_1_1RandomGenerator.html#a9fa12c241fb22539066a93e6e5aa5980">RandomGenerator</a>();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="class__Wolframe_1_1RandomGenerator.html#a9fa12c241fb22539066a93e6e5aa5980">RandomGenerator</a>( <span class="keyword">const</span> std::string &amp;rndDev );</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1RandomGenerator.html#a38b2cedaa95ae92a0bf0eacb3dd078d7">   51</a></span>&#160;        <span class="keyword">const</span> std::string&amp; <a class="code" href="class__Wolframe_1_1RandomGenerator.html#a38b2cedaa95ae92a0bf0eacb3dd078d7">device</a>()<span class="keyword"> const       </span>{ <span class="keywordflow">return</span> <a class="code" href="class__Wolframe_1_1RandomGenerator.html#a96d9bb6af148176c7051b23b1249fdfb">m_device</a>; }</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordtype">unsigned</span> <a class="code" href="class__Wolframe_1_1RandomGenerator.html#a344c7928bf312033341d5fd0f1f409c2">random</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class__Wolframe_1_1RandomGenerator.html#a7c634db7bc45e0c04a6275c28b6b9f9c">generate</a>( <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* buffer, <span class="keywordtype">size_t</span> bytes ) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#if defined( _MSC_VER )</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor"></span><span class="preprocessor">        #define WOLFRAME_EXPORT __declspec( dllexport )</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="globalRngGen_8hpp.html#adf892ccaead9224bf5adf236d2d800ad">   45</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">        #define WOLFRAME_EXPORT</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">namespace </span>_Wolframe     {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1RandomGenerator.html">   50</a></span>&#160;<span class="keyword">class </span><a class="code" href="class__Wolframe_1_1RandomGenerator.html">RandomGenerator</a></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="class__Wolframe_1_1RandomGenerator.html#a9a88a73ac06bfc63b5bf02249cc04d81">~RandomGenerator</a>();</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1RandomGenerator.html#a96d9bb6af148176c7051b23b1249fdfb">   56</a></span>&#160;        std::string     <a class="code" href="class__Wolframe_1_1RandomGenerator.html#a96d9bb6af148176c7051b23b1249fdfb">m_device</a>;               </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;} <span class="comment">// namespace _Wolframe</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif // _GLOBAL_RANDOM_GENERATOR_HPP_INCLUDED</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="globalRngGen_8hpp.html#adf892ccaead9224bf5adf236d2d800ad">WOLFRAME_EXPORT</a> <span class="keyword">static</span> <a class="code" href="class__Wolframe_1_1RandomGenerator.html">RandomGenerator</a>&amp; <a class="code" href="class__Wolframe_1_1RandomGenerator.html#ac9a9a0d2b32f7d3802d2aeb7479d65f1">instance</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="globalRngGen_8hpp.html#adf892ccaead9224bf5adf236d2d800ad">WOLFRAME_EXPORT</a> <span class="keyword">static</span> <a class="code" href="class__Wolframe_1_1RandomGenerator.html">RandomGenerator</a>&amp; <a class="code" href="class__Wolframe_1_1RandomGenerator.html#ac9a9a0d2b32f7d3802d2aeb7479d65f1">instance</a>( <span class="keyword">const</span> std::string &amp;rndDev );</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="globalRngGen_8hpp.html#adf892ccaead9224bf5adf236d2d800ad">WOLFRAME_EXPORT</a> <span class="keywordtype">void</span> <a class="code" href="class__Wolframe_1_1RandomGenerator.html#a03c4aba11847cca986bd73f3f650bc61">device</a>( <span class="keyword">const</span> std::string &amp;rndDev );</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="globalRngGen_8hpp.html#adf892ccaead9224bf5adf236d2d800ad">WOLFRAME_EXPORT</a> <span class="keyword">const</span> std::string&amp; <a class="code" href="class__Wolframe_1_1RandomGenerator.html#a03c4aba11847cca986bd73f3f650bc61">device</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="globalRngGen_8hpp.html#adf892ccaead9224bf5adf236d2d800ad">WOLFRAME_EXPORT</a> <span class="keywordtype">unsigned</span> <a class="code" href="class__Wolframe_1_1RandomGenerator.html#ad876c4b6755d8e938286e334fe32a5c1">random</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="globalRngGen_8hpp.html#adf892ccaead9224bf5adf236d2d800ad">WOLFRAME_EXPORT</a> <span class="keywordtype">void</span> <a class="code" href="class__Wolframe_1_1RandomGenerator.html#a79a2bfcda82075aeba7538b3305a0a00">generate</a>( <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* buffer, <span class="keywordtype">size_t</span> bytes ) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="class__Wolframe_1_1RandomGenerator.html#a9fa12c241fb22539066a93e6e5aa5980">RandomGenerator</a>();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="class__Wolframe_1_1RandomGenerator.html#a9fa12c241fb22539066a93e6e5aa5980">RandomGenerator</a>( <span class="keyword">const</span> std::string &amp;rndDev );</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="comment">// make it noncopyable</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="class__Wolframe_1_1RandomGenerator.html#a9fa12c241fb22539066a93e6e5aa5980">RandomGenerator</a>( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1RandomGenerator.html">RandomGenerator</a>&amp; );</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1RandomGenerator.html">RandomGenerator</a>&amp; <a class="code" href="class__Wolframe_1_1RandomGenerator.html#a9e801d18afe6aafc5155fe837f10d1ad">operator= </a>( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1RandomGenerator.html">RandomGenerator</a>&amp; );</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="comment">// Real object data</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1RandomGenerator.html#a96d9bb6af148176c7051b23b1249fdfb">   73</a></span>&#160;        std::string     <a class="code" href="class__Wolframe_1_1RandomGenerator.html#a96d9bb6af148176c7051b23b1249fdfb">m_device</a>;               </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;} <span class="comment">// namespace _Wolframe</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif // _GLOBAL_RANDOM_GENERATOR_HPP_INCLUDED</span></div>
 <div class="ttc" id="class__Wolframe_1_1RandomGenerator_html_a9fa12c241fb22539066a93e6e5aa5980"><div class="ttname"><a href="class__Wolframe_1_1RandomGenerator.html#a9fa12c241fb22539066a93e6e5aa5980">_Wolframe::RandomGenerator::RandomGenerator</a></div><div class="ttdeci">RandomGenerator()</div></div>
-<div class="ttc" id="class__Wolframe_1_1RandomGenerator_html_a344c7928bf312033341d5fd0f1f409c2"><div class="ttname"><a href="class__Wolframe_1_1RandomGenerator.html#a344c7928bf312033341d5fd0f1f409c2">_Wolframe::RandomGenerator::random</a></div><div class="ttdeci">unsigned random() const </div></div>
-<div class="ttc" id="class__Wolframe_1_1RandomGenerator_html_a38b2cedaa95ae92a0bf0eacb3dd078d7"><div class="ttname"><a href="class__Wolframe_1_1RandomGenerator.html#a38b2cedaa95ae92a0bf0eacb3dd078d7">_Wolframe::RandomGenerator::device</a></div><div class="ttdeci">const std::string &amp; device() const </div><div class="ttdef"><b>Definition:</b> globalRngGen.hpp:51</div></div>
-<div class="ttc" id="class__Wolframe_1_1RandomGenerator_html"><div class="ttname"><a href="class__Wolframe_1_1RandomGenerator.html">_Wolframe::RandomGenerator</a></div><div class="ttdef"><b>Definition:</b> globalRngGen.hpp:45</div></div>
-<div class="ttc" id="class__Wolframe_1_1RandomGenerator_html_a96d9bb6af148176c7051b23b1249fdfb"><div class="ttname"><a href="class__Wolframe_1_1RandomGenerator.html#a96d9bb6af148176c7051b23b1249fdfb">_Wolframe::RandomGenerator::m_device</a></div><div class="ttdeci">std::string m_device</div><div class="ttdoc">random generator device </div><div class="ttdef"><b>Definition:</b> globalRngGen.hpp:56</div></div>
-<div class="ttc" id="class__Wolframe_1_1RandomGenerator_html_a7c634db7bc45e0c04a6275c28b6b9f9c"><div class="ttname"><a href="class__Wolframe_1_1RandomGenerator.html#a7c634db7bc45e0c04a6275c28b6b9f9c">_Wolframe::RandomGenerator::generate</a></div><div class="ttdeci">void generate(unsigned char *buffer, size_t bytes) const </div></div>
-<div class="ttc" id="classSingleton_html"><div class="ttname"><a href="classSingleton.html">Singleton</a></div><div class="ttdef"><b>Definition:</b> singleton.hpp:48</div></div>
-<div class="ttc" id="singleton_8hpp_html"><div class="ttname"><a href="singleton_8hpp.html">singleton.hpp</a></div></div>
+<div class="ttc" id="class__Wolframe_1_1RandomGenerator_html_a03c4aba11847cca986bd73f3f650bc61"><div class="ttname"><a href="class__Wolframe_1_1RandomGenerator.html#a03c4aba11847cca986bd73f3f650bc61">_Wolframe::RandomGenerator::device</a></div><div class="ttdeci">WOLFRAME_EXPORT const std::string &amp; device() const </div></div>
+<div class="ttc" id="class__Wolframe_1_1RandomGenerator_html_ac9a9a0d2b32f7d3802d2aeb7479d65f1"><div class="ttname"><a href="class__Wolframe_1_1RandomGenerator.html#ac9a9a0d2b32f7d3802d2aeb7479d65f1">_Wolframe::RandomGenerator::instance</a></div><div class="ttdeci">static WOLFRAME_EXPORT RandomGenerator &amp; instance()</div></div>
+<div class="ttc" id="class__Wolframe_1_1RandomGenerator_html_a79a2bfcda82075aeba7538b3305a0a00"><div class="ttname"><a href="class__Wolframe_1_1RandomGenerator.html#a79a2bfcda82075aeba7538b3305a0a00">_Wolframe::RandomGenerator::generate</a></div><div class="ttdeci">WOLFRAME_EXPORT void generate(unsigned char *buffer, size_t bytes) const </div></div>
+<div class="ttc" id="globalRngGen_8hpp_html_adf892ccaead9224bf5adf236d2d800ad"><div class="ttname"><a href="globalRngGen_8hpp.html#adf892ccaead9224bf5adf236d2d800ad">WOLFRAME_EXPORT</a></div><div class="ttdeci">#define WOLFRAME_EXPORT</div><div class="ttdef"><b>Definition:</b> globalRngGen.hpp:45</div></div>
+<div class="ttc" id="class__Wolframe_1_1RandomGenerator_html"><div class="ttname"><a href="class__Wolframe_1_1RandomGenerator.html">_Wolframe::RandomGenerator</a></div><div class="ttdef"><b>Definition:</b> globalRngGen.hpp:50</div></div>
+<div class="ttc" id="class__Wolframe_1_1RandomGenerator_html_a96d9bb6af148176c7051b23b1249fdfb"><div class="ttname"><a href="class__Wolframe_1_1RandomGenerator.html#a96d9bb6af148176c7051b23b1249fdfb">_Wolframe::RandomGenerator::m_device</a></div><div class="ttdeci">std::string m_device</div><div class="ttdoc">random generator device </div><div class="ttdef"><b>Definition:</b> globalRngGen.hpp:73</div></div>
+<div class="ttc" id="class__Wolframe_1_1RandomGenerator_html_a9a88a73ac06bfc63b5bf02249cc04d81"><div class="ttname"><a href="class__Wolframe_1_1RandomGenerator.html#a9a88a73ac06bfc63b5bf02249cc04d81">_Wolframe::RandomGenerator::~RandomGenerator</a></div><div class="ttdeci">~RandomGenerator()</div></div>
+<div class="ttc" id="class__Wolframe_1_1RandomGenerator_html_a9e801d18afe6aafc5155fe837f10d1ad"><div class="ttname"><a href="class__Wolframe_1_1RandomGenerator.html#a9e801d18afe6aafc5155fe837f10d1ad">_Wolframe::RandomGenerator::operator=</a></div><div class="ttdeci">const RandomGenerator &amp; operator=(const RandomGenerator &amp;)</div></div>
+<div class="ttc" id="class__Wolframe_1_1RandomGenerator_html_ad876c4b6755d8e938286e334fe32a5c1"><div class="ttname"><a href="class__Wolframe_1_1RandomGenerator.html#ad876c4b6755d8e938286e334fe32a5c1">_Wolframe::RandomGenerator::random</a></div><div class="ttdeci">WOLFRAME_EXPORT unsigned random() const </div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 13 2014 11:05:17 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 19 2014 16:37:50 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

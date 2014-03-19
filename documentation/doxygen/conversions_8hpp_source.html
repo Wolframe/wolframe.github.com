@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-	<title>Wolframe: include/utils/conversions.hpp Source File</title>
+	<title>Wolframe: include/types/conversions.hpp Source File</title>
 	<meta name="generator" content="Doxygen 1.8.6"/>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -80,7 +80,7 @@
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_821002d4f10779a80d4fb17bc32f21f1.html">utils</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_0ad255a918b7fba820a1ddafed6fa637.html">types</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -89,7 +89,7 @@
 </div><!--header-->
 <div class="contents">
 <a href="conversions_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/************************************************************************</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">Copyright (C) 2011 - 2013 Project Wolframe.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">Copyright (C) 2011 - 2014 Project Wolframe.</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">All rights reserved.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">This file is part of Project Wolframe.</span></div>
@@ -120,33 +120,33 @@
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">************************************************************************/</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#ifndef _Wolframe_UTILS_CONVERSIONS_HPP_INCLUDED</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _Wolframe_UTILS_CONVERSIONS_HPP_INCLUDED</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#ifndef _Wolframe_TYPES_CONVERSIONS_HPP_INCLUDED</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _Wolframe_TYPES_CONVERSIONS_HPP_INCLUDED</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="integer_8hpp.html">types/integer.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">namespace </span>_Wolframe {</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="namespace__Wolframe_1_1utils.html">   41</a></span>&#160;<span class="keyword">namespace </span>utils {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">namespace </span>types {</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;std::string <a class="code" href="namespace__Wolframe_1_1utils.html#a6adbb633ec9914640dc47c92f97936f1">tostring_cast</a>( <a class="code" href="integer_8hpp.html#ac7c6e4751894ead9e5fb2c4cdc2e25bc">_WOLFRAME_UINTEGER</a> val);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;std::string <a class="code" href="namespace__Wolframe_1_1utils.html#a6adbb633ec9914640dc47c92f97936f1">tostring_cast</a>( <a class="code" href="integer_8hpp.html#a660f097cc0bdf8626edf06026a164a6d">_WOLFRAME_INTEGER</a> val);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<a class="code" href="integer_8hpp.html#ac7c6e4751894ead9e5fb2c4cdc2e25bc">_WOLFRAME_UINTEGER</a> <a class="code" href="namespace__Wolframe_1_1utils.html#a723888cf6006cec6a6e76580e95acadf">touint_cast</a>( <span class="keyword">const</span> std::string&amp; val);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<a class="code" href="integer_8hpp.html#a660f097cc0bdf8626edf06026a164a6d">_WOLFRAME_INTEGER</a> <a class="code" href="namespace__Wolframe_1_1utils.html#ad5f562afb595df5c18872527d768b03d">toint_cast</a>( <span class="keyword">const</span> std::string&amp; val);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;std::string <a class="code" href="namespace__Wolframe_1_1types.html#ae06f3beeb22dc9c884d074d6f13a773a">tostring_cast</a>( <a class="code" href="integer_8hpp.html#ac7c6e4751894ead9e5fb2c4cdc2e25bc">_WOLFRAME_UINTEGER</a> val);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;std::string <a class="code" href="namespace__Wolframe_1_1types.html#ae06f3beeb22dc9c884d074d6f13a773a">tostring_cast</a>( <a class="code" href="integer_8hpp.html#a660f097cc0bdf8626edf06026a164a6d">_WOLFRAME_INTEGER</a> val);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<a class="code" href="integer_8hpp.html#ac7c6e4751894ead9e5fb2c4cdc2e25bc">_WOLFRAME_UINTEGER</a> <a class="code" href="namespace__Wolframe_1_1types.html#a440488a1994fd6999e3cf2a96c68b2cf">touint_cast</a>( <span class="keyword">const</span> std::string&amp; val);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<a class="code" href="integer_8hpp.html#a660f097cc0bdf8626edf06026a164a6d">_WOLFRAME_INTEGER</a> <a class="code" href="namespace__Wolframe_1_1types.html#aae5b5e02ac3037639c690f30b001a3f4">toint_cast</a>( <span class="keyword">const</span> std::string&amp; val);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}}<span class="comment">//namespace</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="integer_8hpp_html"><div class="ttname"><a href="integer_8hpp.html">integer.hpp</a></div><div class="ttdoc">Integer number value type. </div></div>
-<div class="ttc" id="namespace__Wolframe_1_1utils_html_a723888cf6006cec6a6e76580e95acadf"><div class="ttname"><a href="namespace__Wolframe_1_1utils.html#a723888cf6006cec6a6e76580e95acadf">_Wolframe::utils::touint_cast</a></div><div class="ttdeci">_WOLFRAME_UINTEGER touint_cast(const std::string &amp;val)</div></div>
-<div class="ttc" id="namespace__Wolframe_1_1utils_html_ad5f562afb595df5c18872527d768b03d"><div class="ttname"><a href="namespace__Wolframe_1_1utils.html#ad5f562afb595df5c18872527d768b03d">_Wolframe::utils::toint_cast</a></div><div class="ttdeci">_WOLFRAME_INTEGER toint_cast(const std::string &amp;val)</div></div>
+<div class="ttc" id="namespace__Wolframe_1_1types_html_a440488a1994fd6999e3cf2a96c68b2cf"><div class="ttname"><a href="namespace__Wolframe_1_1types.html#a440488a1994fd6999e3cf2a96c68b2cf">_Wolframe::types::touint_cast</a></div><div class="ttdeci">_WOLFRAME_UINTEGER touint_cast(const std::string &amp;val)</div></div>
 <div class="ttc" id="integer_8hpp_html_ac7c6e4751894ead9e5fb2c4cdc2e25bc"><div class="ttname"><a href="integer_8hpp.html#ac7c6e4751894ead9e5fb2c4cdc2e25bc">_WOLFRAME_UINTEGER</a></div><div class="ttdeci">#define _WOLFRAME_UINTEGER</div><div class="ttdef"><b>Definition:</b> integer.hpp:42</div></div>
+<div class="ttc" id="namespace__Wolframe_1_1types_html_aae5b5e02ac3037639c690f30b001a3f4"><div class="ttname"><a href="namespace__Wolframe_1_1types.html#aae5b5e02ac3037639c690f30b001a3f4">_Wolframe::types::toint_cast</a></div><div class="ttdeci">_WOLFRAME_INTEGER toint_cast(const std::string &amp;val)</div></div>
+<div class="ttc" id="namespace__Wolframe_1_1types_html_ae06f3beeb22dc9c884d074d6f13a773a"><div class="ttname"><a href="namespace__Wolframe_1_1types.html#ae06f3beeb22dc9c884d074d6f13a773a">_Wolframe::types::tostring_cast</a></div><div class="ttdeci">std::string tostring_cast(_WOLFRAME_UINTEGER val)</div></div>
 <div class="ttc" id="integer_8hpp_html_a660f097cc0bdf8626edf06026a164a6d"><div class="ttname"><a href="integer_8hpp.html#a660f097cc0bdf8626edf06026a164a6d">_WOLFRAME_INTEGER</a></div><div class="ttdeci">#define _WOLFRAME_INTEGER</div><div class="ttdef"><b>Definition:</b> integer.hpp:41</div></div>
-<div class="ttc" id="namespace__Wolframe_1_1utils_html_a6adbb633ec9914640dc47c92f97936f1"><div class="ttname"><a href="namespace__Wolframe_1_1utils.html#a6adbb633ec9914640dc47c92f97936f1">_Wolframe::utils::tostring_cast</a></div><div class="ttdeci">std::string tostring_cast(_WOLFRAME_UINTEGER val)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 13 2014 11:05:18 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 19 2014 16:37:50 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

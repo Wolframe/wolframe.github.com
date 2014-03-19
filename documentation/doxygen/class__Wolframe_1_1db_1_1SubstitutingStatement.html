@@ -96,6 +96,9 @@
 </div><!--header-->
 <div class="contents">
 
+<p>An abstract statement class which allows derived classes to provide a simple escaping function which encodes the data which is stored directly in the SQL statement.  
+ <a href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="substitutingStatement_8hpp_source.html">substitutingStatement.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for _Wolframe::db::SubstitutingStatement:</div>
@@ -103,8 +106,8 @@ Inheritance diagram for _Wolframe::db::SubstitutingStatement:</div>
  <div class="center">
   <img src="class__Wolframe_1_1db_1_1SubstitutingStatement.png" usemap="#_Wolframe::db::SubstitutingStatement_map" alt=""/>
   <map id="_Wolframe::db::SubstitutingStatement_map" name="_Wolframe::db::SubstitutingStatement_map">
-<area href="class__Wolframe_1_1db_1_1BaseStatement.html" alt="_Wolframe::db::BaseStatement" shape="rect" coords="0,56,216,80"/>
-<area href="class__Wolframe_1_1db_1_1Statement.html" alt="_Wolframe::db::Statement" shape="rect" coords="0,0,216,24"/>
+<area href="class__Wolframe_1_1db_1_1BaseStatement.html" title="Implements basic parsing of the Wolframe SQL statement with placeholders, derived classes can steer h..." alt="_Wolframe::db::BaseStatement" shape="rect" coords="0,56,216,80"/>
+<area href="class__Wolframe_1_1db_1_1Statement.html" title="The interface of a statement SQL parameter substutution class. " alt="_Wolframe::db::Statement" shape="rect" coords="0,0,216,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -115,10 +118,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a762a7c06793dc33783558b6a01247d13"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#a762a7c06793dc33783558b6a01247d13">SubstitutingStatement</a> (const <a class="el" href="class__Wolframe_1_1db_1_1SubstitutingStatement.html">SubstitutingStatement</a> &amp;o)</td></tr>
 <tr class="separator:a762a7c06793dc33783558b6a01247d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf418f11bf432295f8fb1ee0b20004bb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#aaf418f11bf432295f8fb1ee0b20004bb">init</a> (const std::string &amp;stmtStr)</td></tr>
+<tr class="memdesc:aaf418f11bf432295f8fb1ee0b20004bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set new SQL statement.  <a href="#aaf418f11bf432295f8fb1ee0b20004bb">More...</a><br/></td></tr>
 <tr class="separator:aaf418f11bf432295f8fb1ee0b20004bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a145c60e2b77638532fe5f2000efb07f2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#a145c60e2b77638532fe5f2000efb07f2">clear</a> ()</td></tr>
+<tr class="memdesc:a145c60e2b77638532fe5f2000efb07f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear current statement.  <a href="#a145c60e2b77638532fe5f2000efb07f2">More...</a><br/></td></tr>
 <tr class="separator:a145c60e2b77638532fe5f2000efb07f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5027ebf3ae2357835fe670860c57de37"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#a5027ebf3ae2357835fe670860c57de37">bind</a> (const unsigned int idx, const <a class="el" href="class__Wolframe_1_1types_1_1Variant.html">types::Variant</a> &amp;value)</td></tr>
+<tr class="memdesc:a5027ebf3ae2357835fe670860c57de37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds parameter at position idx with variant data in the format with Wolframe placeholders.  <a href="#a5027ebf3ae2357835fe670860c57de37">More...</a><br/></td></tr>
 <tr class="separator:a5027ebf3ae2357835fe670860c57de37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class__Wolframe_1_1db_1_1BaseStatement"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class__Wolframe_1_1db_1_1BaseStatement')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class__Wolframe_1_1db_1_1BaseStatement.html">_Wolframe::db::BaseStatement</a></td></tr>
 <tr class="memitem:a47be818478f0df40250381fc842b8ef9 inherit pub_methods_class__Wolframe_1_1db_1_1BaseStatement"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1BaseStatement.html#a47be818478f0df40250381fc842b8ef9">BaseStatement</a> ()</td></tr>
@@ -127,11 +133,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6fae52afe5e8b3bfae32e550b56ce4c4 inherit pub_methods_class__Wolframe_1_1db_1_1BaseStatement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af490d4850695ea32d57f3b8a0d5d2df8 inherit pub_methods_class__Wolframe_1_1db_1_1BaseStatement"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1BaseStatement.html#af490d4850695ea32d57f3b8a0d5d2df8">BaseStatement</a> (const std::string &amp;stmtStr)</td></tr>
 <tr class="separator:af490d4850695ea32d57f3b8a0d5d2df8 inherit pub_methods_class__Wolframe_1_1db_1_1BaseStatement"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97b6e6da07925af63458103b6c9a61a8 inherit pub_methods_class__Wolframe_1_1db_1_1BaseStatement"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1BaseStatement.html#a97b6e6da07925af63458103b6c9a61a8">substitute</a> (bool withPlaceholders=true)</td></tr>
-<tr class="separator:a97b6e6da07925af63458103b6c9a61a8 inherit pub_methods_class__Wolframe_1_1db_1_1BaseStatement"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e1eae1a7eb66fc8f403cc428c2124a9 inherit pub_methods_class__Wolframe_1_1db_1_1BaseStatement"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1BaseStatement.html#a6e1eae1a7eb66fc8f403cc428c2124a9">substitute</a> (bool checkForMissingPlaceholders=true)</td></tr>
+<tr class="memdesc:a6e1eae1a7eb66fc8f403cc428c2124a9 inherit pub_methods_class__Wolframe_1_1db_1_1BaseStatement"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger substitution (nativeSQL is valid after this call and not before!)  <a href="#a6e1eae1a7eb66fc8f403cc428c2124a9">More...</a><br/></td></tr>
+<tr class="separator:a6e1eae1a7eb66fc8f403cc428c2124a9 inherit pub_methods_class__Wolframe_1_1db_1_1BaseStatement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad855c104e5ad91d20129be0726f92c23 inherit pub_methods_class__Wolframe_1_1db_1_1BaseStatement"><td class="memItemLeft" align="right" valign="top">virtual const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1BaseStatement.html#ad855c104e5ad91d20129be0726f92c23">originalSQL</a> () const </td></tr>
+<tr class="memdesc:ad855c104e5ad91d20129be0726f92c23 inherit pub_methods_class__Wolframe_1_1db_1_1BaseStatement"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the SQL statement as passed down to the database layer.  <a href="#ad855c104e5ad91d20129be0726f92c23">More...</a><br/></td></tr>
 <tr class="separator:ad855c104e5ad91d20129be0726f92c23 inherit pub_methods_class__Wolframe_1_1db_1_1BaseStatement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59fc560542f56e6bd9e39e8108a8e3f2 inherit pub_methods_class__Wolframe_1_1db_1_1BaseStatement"><td class="memItemLeft" align="right" valign="top">virtual const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1BaseStatement.html#a59fc560542f56e6bd9e39e8108a8e3f2">nativeSQL</a> () const </td></tr>
+<tr class="memdesc:a59fc560542f56e6bd9e39e8108a8e3f2 inherit pub_methods_class__Wolframe_1_1db_1_1BaseStatement"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the SQL statement with the native database placeholders or the data filled in (this is up to the derived classes).  <a href="#a59fc560542f56e6bd9e39e8108a8e3f2">More...</a><br/></td></tr>
 <tr class="separator:a59fc560542f56e6bd9e39e8108a8e3f2 inherit pub_methods_class__Wolframe_1_1db_1_1BaseStatement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class__Wolframe_1_1db_1_1Statement"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class__Wolframe_1_1db_1_1Statement')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class__Wolframe_1_1db_1_1Statement.html">_Wolframe::db::Statement</a></td></tr>
 <tr class="memitem:a7ee1dae515285ada3b5ecaf57369d1fd inherit pub_methods_class__Wolframe_1_1db_1_1Statement"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1Statement.html#a7ee1dae515285ada3b5ecaf57369d1fd">~Statement</a> ()</td></tr>
@@ -140,14 +149,17 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a3f96886b11238ea3e2ddf6237c63aedc"><td class="memItemLeft" align="right" valign="top">virtual const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#a3f96886b11238ea3e2ddf6237c63aedc">convert</a> (const <a class="el" href="class__Wolframe_1_1types_1_1Variant.html">types::Variant</a> &amp;value) const =0</td></tr>
+<tr class="memdesc:a3f96886b11238ea3e2ddf6237c63aedc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to convert and escape a variant, if single quotes are need, the function should also return those, care must be taken to use the database escape functions to escape the values here (beware of SQL code injection!)  <a href="#a3f96886b11238ea3e2ddf6237c63aedc">More...</a><br/></td></tr>
 <tr class="separator:a3f96886b11238ea3e2ddf6237c63aedc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e247a47ff47b75bf3fcab450dfa5b5d"><td class="memItemLeft" align="right" valign="top">virtual const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#a0e247a47ff47b75bf3fcab450dfa5b5d">replace</a> (const unsigned int idx) const </td></tr>
+<tr class="memdesc:a0e247a47ff47b75bf3fcab450dfa5b5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funtion called when the placeholder should be put into the final string (this is either for subsituting data or rewrite placeholders to native syntax)  <a href="#a0e247a47ff47b75bf3fcab450dfa5b5d">More...</a><br/></td></tr>
 <tr class="separator:a0e247a47ff47b75bf3fcab450dfa5b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a267d8cd634f728321f4b8eae29d99e1d"><td class="memItemLeft" align="right" valign="top">std::map&lt; unsigned int, <br class="typebreak"/>
 std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#a267d8cd634f728321f4b8eae29d99e1d">m_bind</a></td></tr>
+<tr class="memdesc:a267d8cd634f728321f4b8eae29d99e1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the placeholders in calls of bind till they are used to create the substituted SQL statement with the embedded data.  <a href="#a267d8cd634f728321f4b8eae29d99e1d">More...</a><br/></td></tr>
 <tr class="separator:a267d8cd634f728321f4b8eae29d99e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
@@ -158,11 +170,15 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:ace9eb56dea15c8c75562ba522811e20d inherit pub_types_class__Wolframe_1_1db_1_1BaseStatement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class__Wolframe_1_1db_1_1BaseStatement"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class__Wolframe_1_1db_1_1BaseStatement')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class__Wolframe_1_1db_1_1BaseStatement.html">_Wolframe::db::BaseStatement</a></td></tr>
 <tr class="memitem:a524d63d8679f20b3d7c3995ec3409564 inherit pro_attribs_class__Wolframe_1_1db_1_1BaseStatement"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1BaseStatement.html#a524d63d8679f20b3d7c3995ec3409564">m_stmtStr</a></td></tr>
+<tr class="memdesc:a524d63d8679f20b3d7c3995ec3409564 inherit pro_attribs_class__Wolframe_1_1db_1_1BaseStatement"><td class="mdescLeft">&#160;</td><td class="mdescRight">The original SQL.  <a href="#a524d63d8679f20b3d7c3995ec3409564">More...</a><br/></td></tr>
 <tr class="separator:a524d63d8679f20b3d7c3995ec3409564 inherit pro_attribs_class__Wolframe_1_1db_1_1BaseStatement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28b14795652e4a265201067f0420b6a9 inherit pro_attribs_class__Wolframe_1_1db_1_1BaseStatement"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1BaseStatement.html#a28b14795652e4a265201067f0420b6a9">m_maxParam</a></td></tr>
+<tr class="memdesc:a28b14795652e4a265201067f0420b6a9 inherit pro_attribs_class__Wolframe_1_1db_1_1BaseStatement"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of parsed placeholders so far.  <a href="#a28b14795652e4a265201067f0420b6a9">More...</a><br/></td></tr>
 <tr class="separator:a28b14795652e4a265201067f0420b6a9 inherit pro_attribs_class__Wolframe_1_1db_1_1BaseStatement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>An abstract statement class which allows derived classes to provide a simple escaping function which encodes the data which is stored directly in the SQL statement. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a53a897e6b1f2d96e6706d8ddfcf26bdc"></a>
 <div class="memitem">
 <div class="memproto">
@@ -212,7 +228,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="class__Wolframe_1_1types_1_1Variant.html">types::Variant</a> &amp;&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
+          <td class="paramname"><em>arg</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -226,6 +242,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Binds parameter at position idx with variant data in the format with Wolframe placeholders. </p>
 
 <p>Reimplemented from <a class="el" href="class__Wolframe_1_1db_1_1BaseStatement.html#a73cde8b6cb393ecfc435b7efb5083ad5">_Wolframe::db::BaseStatement</a>.</p>
 
@@ -251,6 +269,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Clear current statement. </p>
 
 <p>Reimplemented from <a class="el" href="class__Wolframe_1_1db_1_1BaseStatement.html#ac49d080cf5455648e3ab755c6fb23e57">_Wolframe::db::BaseStatement</a>.</p>
 
@@ -278,6 +298,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Function to convert and escape a variant, if single quotes are need, the function should also return those, care must be taken to use the database escape functions to escape the values here (beware of SQL code injection!) </p>
+
 </div>
 </div>
 <a class="anchor" id="aaf418f11bf432295f8fb1ee0b20004bb"></a>
@@ -301,6 +323,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Set new SQL statement. </p>
 
 <p>Reimplemented from <a class="el" href="class__Wolframe_1_1db_1_1BaseStatement.html#af8048fbf702b5eb0b891b7bb7b9eb83d">_Wolframe::db::BaseStatement</a>.</p>
 
@@ -328,6 +352,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Funtion called when the placeholder should be put into the final string (this is either for subsituting data or rewrite placeholders to native syntax) </p>
+
 <p>Implements <a class="el" href="class__Wolframe_1_1db_1_1Statement.html#a7e2150f495521186e7b5adab65922966">_Wolframe::db::Statement</a>.</p>
 
 </div>
@@ -351,6 +377,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Stores the placeholders in calls of bind till they are used to create the substituted SQL statement with the embedded data. </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -360,7 +388,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 13 2014 11:05:26 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 19 2014 16:38:00 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

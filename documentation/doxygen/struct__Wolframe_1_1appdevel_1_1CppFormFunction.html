@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-	<title>Wolframe: _Wolframe::appdevel::CppFormFunction&lt; Definition &gt; Struct Template Reference</title>
+	<title>Wolframe: _Wolframe::appdevel::CppFormFunction&lt; InputType, OutputType, Function &gt; Struct Template Reference</title>
 	<meta name="generator" content="Doxygen 1.8.6"/>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -90,7 +90,7 @@
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="struct__Wolframe_1_1appdevel_1_1CppFormFunction-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">_Wolframe::appdevel::CppFormFunction&lt; Definition &gt; Struct Template Reference</div>  </div>
+<div class="title">_Wolframe::appdevel::CppFormFunction&lt; InputType, OutputType, Function &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -98,23 +98,22 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aa063c920724aa3ccdf9b3a9e5ea70947"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1appdevel_1_1CppFormFunction.html#aa063c920724aa3ccdf9b3a9e5ea70947">implementation</a> (const <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html">proc::ProcessorProvider</a> *provider, void *res, const void *param)</td></tr>
-<tr class="separator:aa063c920724aa3ccdf9b3a9e5ea70947"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87868686cbf2f14280e5a0e242df0758"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class__Wolframe_1_1module_1_1SimpleBuilder.html">module::SimpleBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1appdevel_1_1CppFormFunction.html#a87868686cbf2f14280e5a0e242df0758">constructor</a> ()</td></tr>
-<tr class="separator:a87868686cbf2f14280e5a0e242df0758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cd76c56be7968c26cff419e2970e9c3"><td class="memItemLeft" align="right" valign="top">static const <br class="typebreak"/>
+<a class="el" href="class__Wolframe_1_1langbind_1_1CppFormFunction.html">langbind::CppFormFunction</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1appdevel_1_1CppFormFunction.html#a6cd76c56be7968c26cff419e2970e9c3">declaration</a> ()</td></tr>
+<tr class="separator:a6cd76c56be7968c26cff419e2970e9c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a87868686cbf2f14280e5a0e242df0758"></a>
+<a class="anchor" id="a6cd76c56be7968c26cff419e2970e9c3"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Definition &gt; </div>
+template&lt;class InputType , class OutputType , int(*)(const proc::ProcessorProviderInterface *p, OutputType &amp;, const InputType &amp;) Function&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="class__Wolframe_1_1module_1_1SimpleBuilder.html">module::SimpleBuilder</a>* <a class="el" href="struct__Wolframe_1_1appdevel_1_1CppFormFunction.html">_Wolframe::appdevel::CppFormFunction</a>&lt; Definition &gt;::constructor </td>
+          <td class="memname">static const <a class="el" href="class__Wolframe_1_1langbind_1_1CppFormFunction.html">langbind::CppFormFunction</a>&amp; <a class="el" href="struct__Wolframe_1_1appdevel_1_1CppFormFunction.html">_Wolframe::appdevel::CppFormFunction</a>&lt; InputType, OutputType, Function &gt;::declaration </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -129,56 +128,14 @@ template&lt;class Definition &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aa063c920724aa3ccdf9b3a9e5ea70947"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Definition &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static int <a class="el" href="struct__Wolframe_1_1appdevel_1_1CppFormFunction.html">_Wolframe::appdevel::CppFormFunction</a>&lt; Definition &gt;::implementation </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html">proc::ProcessorProvider</a> *&#160;</td>
-          <td class="paramname"><em>provider</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>res</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>param</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>include/appdevel/<a class="el" href="cppFormFunctionTemplate_8hpp_source.html">cppFormFunctionTemplate.hpp</a></li>
+<li>include/appdevel/module/<a class="el" href="cppFormFunctionTemplate_8hpp_source.html">cppFormFunctionTemplate.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 13 2014 11:05:23 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 19 2014 16:37:56 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

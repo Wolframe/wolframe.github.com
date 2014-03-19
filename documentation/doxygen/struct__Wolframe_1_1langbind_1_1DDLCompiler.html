@@ -106,10 +106,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a80807294de4ac12545947672537a210d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a020032c82128c142ea6894e1b28b1a1b"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1langbind_1_1DDLCompiler.html#a020032c82128c142ea6894e1b28b1a1b">~DDLCompiler</a> ()</td></tr>
 <tr class="separator:a020032c82128c142ea6894e1b28b1a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac517ca49adb0e80474efbdd3e70d0ca4"><td class="memItemLeft" align="right" valign="top">virtual std::vector<br class="typebreak"/>
-&lt; <a class="el" href="namespace__Wolframe_1_1types.html#a42836bc00f715a9d596acb4f62990e83">types::FormDescriptionR</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1langbind_1_1DDLCompiler.html#ac517ca49adb0e80474efbdd3e70d0ca4">compile</a> (const std::string &amp;srcstring, const <a class="el" href="struct__Wolframe_1_1types_1_1NormalizeFunctionMap.html">types::NormalizeFunctionMap</a> *typemap) const =0</td></tr>
-<tr class="memdesc:ac517ca49adb0e80474efbdd3e70d0ca4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compile a source from a string. Throws in case of error.  <a href="#ac517ca49adb0e80474efbdd3e70d0ca4">More...</a><br/></td></tr>
-<tr class="separator:ac517ca49adb0e80474efbdd3e70d0ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b7826e59b38967eb22ea6195020a1c3"><td class="memItemLeft" align="right" valign="top">virtual std::vector<br class="typebreak"/>
+&lt; <a class="el" href="namespace__Wolframe_1_1types.html#a42836bc00f715a9d596acb4f62990e83">types::FormDescriptionR</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1langbind_1_1DDLCompiler.html#a6b7826e59b38967eb22ea6195020a1c3">compile</a> (const std::string &amp;filename, const <a class="el" href="struct__Wolframe_1_1types_1_1NormalizeFunctionMap.html">types::NormalizeFunctionMap</a> *typemap) const =0</td></tr>
+<tr class="memdesc:a6b7826e59b38967eb22ea6195020a1c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compile a source from a string. Throws in case of error.  <a href="#a6b7826e59b38967eb22ea6195020a1c3">More...</a><br/></td></tr>
+<tr class="separator:a6b7826e59b38967eb22ea6195020a1c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35b2f33104ceac3a212a68f2a786faef"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1langbind_1_1DDLCompiler.html#a35b2f33104ceac3a212a68f2a786faef">ddlname</a> () const </td></tr>
 <tr class="memdesc:a35b2f33104ceac3a212a68f2a786faef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the ddl this compiler is for.  <a href="#a35b2f33104ceac3a212a68f2a786faef">More...</a><br/></td></tr>
 <tr class="separator:a35b2f33104ceac3a212a68f2a786faef"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,7 +185,7 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ac517ca49adb0e80474efbdd3e70d0ca4"></a>
+<a class="anchor" id="a6b7826e59b38967eb22ea6195020a1c3"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -196,7 +196,7 @@ Private Attributes</h2></td></tr>
           <td class="memname">virtual std::vector&lt;<a class="el" href="namespace__Wolframe_1_1types.html#a42836bc00f715a9d596acb4f62990e83">types::FormDescriptionR</a>&gt; _Wolframe::langbind::DDLCompiler::compile </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>srcstring</em>, </td>
+          <td class="paramname"><em>filename</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -220,7 +220,7 @@ Private Attributes</h2></td></tr>
 <p>Compile a source from a string. Throws in case of error. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">srcstring</td><td>source as string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>path of the file to compile as string </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">typemap</td><td>map with atomic type definitions </td></tr>
   </table>
   </dd>
@@ -327,7 +327,7 @@ Private Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 13 2014 11:05:29 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 19 2014 16:38:03 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

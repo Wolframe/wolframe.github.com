@@ -112,7 +112,7 @@ Inheritance diagram for _Wolframe::cmdbind::CommandHandler:</div>
 <area href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html" title="Abstract class for command handler processing filter input/output. " alt="_Wolframe::cmdbind::IOFilterCommandHandler" shape="rect" coords="1455,56,1930,80"/>
 <area href="class__Wolframe_1_1cmdbind_1_1LineCommandHandler.html" alt="_Wolframe::cmdbind::LineCommandHandler" shape="rect" coords="2182,56,2657,80"/>
 <area href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html" title="Command handler processing filter input/output with end of content marked as Dot (&#39;.&#39;) LF or Dot CR LF. " alt="_Wolframe::cmdbind::IOFilterCommandHandlerEscDLF" shape="rect" coords="1455,112,1930,136"/>
-<area href="struct__Wolframe_1_1cmdbind_1_1LineCommandHandlerTemplate.html" title="Defines some template based extensions to line command handler. " alt="_Wolframe::cmdbind::LineCommandHandlerTemplate&lt; LineCommandHandlerImpl &gt;" shape="rect" coords="1940,112,2415,136"/>
+<area href="struct__Wolframe_1_1cmdbind_1_1LineCommandHandlerTemplate.html" alt="_Wolframe::cmdbind::LineCommandHandlerTemplate&lt; LineCommandHandlerImpl &gt;" shape="rect" coords="1940,112,2415,136"/>
 <area href="struct__Wolframe_1_1cmdbind_1_1LineCommandHandlerTemplate.html" alt="_Wolframe::cmdbind::LineCommandHandlerTemplate&lt; AuthCommandHandler &gt;" shape="rect" coords="2425,112,2900,136"/>
 <area href="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF.html" alt="_Wolframe::cmdbind::DiscardInputCommandHandlerEscDLF" shape="rect" coords="1455,168,1930,192"/>
 <area href="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html" alt="_Wolframe::cmdbind::AuthCommandHandler" shape="rect" coords="2425,168,2900,192"/>
@@ -160,12 +160,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adad840aa8a67adc4b18a4467778a80bb"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#adad840aa8a67adc4b18a4467778a80bb">lastError</a> () const </td></tr>
 <tr class="memdesc:adad840aa8a67adc4b18a4467778a80bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the error code of command execution to be returned to the client.  <a href="#adad840aa8a67adc4b18a4467778a80bb">More...</a><br/></td></tr>
 <tr class="separator:adad840aa8a67adc4b18a4467778a80bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d434248c895575e9a3f339367116547"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a0d434248c895575e9a3f339367116547">setProcProvider</a> (const <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html">proc::ProcessorProvider</a> *p)</td></tr>
-<tr class="memdesc:a0d434248c895575e9a3f339367116547"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass the reference to the processor provider to the command handler.  <a href="#a0d434248c895575e9a3f339367116547">More...</a><br/></td></tr>
-<tr class="separator:a0d434248c895575e9a3f339367116547"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa14c8c7d070a68a1739aea88ba618e5c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html">proc::ProcessorProvider</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#aa14c8c7d070a68a1739aea88ba618e5c">procProvider</a> ()</td></tr>
-<tr class="memdesc:aa14c8c7d070a68a1739aea88ba618e5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the reference to the processor provider.  <a href="#aa14c8c7d070a68a1739aea88ba618e5c">More...</a><br/></td></tr>
-<tr class="separator:aa14c8c7d070a68a1739aea88ba618e5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d0c75b6f9de790849b34e4f360d8ca4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a0d0c75b6f9de790849b34e4f360d8ca4">setProcProvider</a> (const <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html">proc::ProcessorProviderInterface</a> *p)</td></tr>
+<tr class="memdesc:a0d0c75b6f9de790849b34e4f360d8ca4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass the reference to the processor provider to the command handler.  <a href="#a0d0c75b6f9de790849b34e4f360d8ca4">More...</a><br/></td></tr>
+<tr class="separator:a0d0c75b6f9de790849b34e4f360d8ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37feceb2b5f9c81298dab8d50a496a8b"><td class="memItemLeft" align="right" valign="top">const <br class="typebreak"/>
+<a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html">proc::ProcessorProviderInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a37feceb2b5f9c81298dab8d50a496a8b">procProvider</a> ()</td></tr>
+<tr class="memdesc:a37feceb2b5f9c81298dab8d50a496a8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the reference to the processor provider.  <a href="#a37feceb2b5f9c81298dab8d50a496a8b">More...</a><br/></td></tr>
+<tr class="separator:a37feceb2b5f9c81298dab8d50a496a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4ddcd6002e80f6b991aa1321f41dea1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#ab4ddcd6002e80f6b991aa1321f41dea1">passParameters</a> (const std::string &amp;nam, int argc, const char **argv)</td></tr>
 <tr class="memdesc:ab4ddcd6002e80f6b991aa1321f41dea1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass the parameters for the next command handler call.  <a href="#ab4ddcd6002e80f6b991aa1321f41dea1">More...</a><br/></td></tr>
 <tr class="separator:ab4ddcd6002e80f6b991aa1321f41dea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,8 +182,9 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a8cd91f2c4234298b9e70f60fc62eb89f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a712d5654687812e89948d78d60a44fd5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a712d5654687812e89948d78d60a44fd5">m_argBuffer</a></td></tr>
 <tr class="separator:a712d5654687812e89948d78d60a44fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addc9fd6c4e465c48f49fa22829a6017c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html">proc::ProcessorProvider</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#addc9fd6c4e465c48f49fa22829a6017c">m_provider</a></td></tr>
-<tr class="separator:addc9fd6c4e465c48f49fa22829a6017c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f9a7a6f65fbcafa4f13980c62ed5d4c"><td class="memItemLeft" align="right" valign="top">const <br class="typebreak"/>
+<a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html">proc::ProcessorProviderInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a6f9a7a6f65fbcafa4f13980c62ed5d4c">m_provider</a></td></tr>
+<tr class="separator:a6f9a7a6f65fbcafa4f13980c62ed5d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Command handler interface. </p>
@@ -518,7 +520,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa14c8c7d070a68a1739aea88ba618e5c"></a>
+<a class="anchor" id="a37feceb2b5f9c81298dab8d50a496a8b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -526,7 +528,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html">proc::ProcessorProvider</a>* _Wolframe::cmdbind::CommandHandler::procProvider </td>
+          <td class="memname">const <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html">proc::ProcessorProviderInterface</a>* _Wolframe::cmdbind::CommandHandler::procProvider </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -686,7 +688,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0d434248c895575e9a3f339367116547"></a>
+<a class="anchor" id="a0d0c75b6f9de790849b34e4f360d8ca4"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -696,7 +698,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">void _Wolframe::cmdbind::CommandHandler::setProcProvider </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html">proc::ProcessorProvider</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html">proc::ProcessorProviderInterface</a> *&#160;</td>
           <td class="paramname"><em>p</em></td><td>)</td>
           <td></td>
         </tr>
@@ -779,7 +781,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="addc9fd6c4e465c48f49fa22829a6017c"></a>
+<a class="anchor" id="a6f9a7a6f65fbcafa4f13980c62ed5d4c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -787,7 +789,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html">proc::ProcessorProvider</a>* _Wolframe::cmdbind::CommandHandler::m_provider</td>
+          <td class="memname">const <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html">proc::ProcessorProviderInterface</a>* _Wolframe::cmdbind::CommandHandler::m_provider</td>
         </tr>
       </table>
   </td>
@@ -806,7 +808,7 @@ Protected Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 13 2014 11:05:23 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 19 2014 16:37:57 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

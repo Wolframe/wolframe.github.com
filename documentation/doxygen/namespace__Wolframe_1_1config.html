@@ -87,6 +87,7 @@
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">_Wolframe::config Namespace Reference</div>  </div>
@@ -108,7 +109,7 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1config_1_1NamedConfiguration.html">NamedConfiguration</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1config_1_1ConfigurationTree.html">ConfigurationTree</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1config_1_1ConfigurationTree.html">ConfigurationTree</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1config_1_1LineInfo.html">LineInfo</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,7 +124,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1config_1_1PositionalErrorMessageBase.html">PositionalErrorMessageBase</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1config_1_1Parser.html">Parser</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration parser for parsing the tokens of the configuration.  <a href="class__Wolframe_1_1config_1_1Parser.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1config_1_1ServiceConfiguration.html">ServiceConfiguration</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">daemon / service configuration  <a href="struct__Wolframe_1_1config_1_1ServiceConfiguration.html#details">More...</a><br/></td></tr>
@@ -131,6 +131,11 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1config_1_1ServiceBanner.html">ServiceBanner</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Service signature.  <a href="class__Wolframe_1_1config_1_1ServiceBanner.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a2dd1843cdd234f4991e88cbcace24b23"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class__Wolframe_1_1types_1_1PropertyTree_1_1Node.html">types::PropertyTree::Node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1config.html#a2dd1843cdd234f4991e88cbcace24b23">ConfigurationNode</a></td></tr>
+<tr class="separator:a2dd1843cdd234f4991e88cbcace24b23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -142,16 +147,29 @@ Functions</h2></td></tr>
 <tr class="separator:a776490365e034d99f2fdcf4f1f03d448"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accfa4af3e16bff777478aafa4ede5163"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1config.html#accfa4af3e16bff777478aafa4ede5163">defaultServiceName</a> ()</td></tr>
 <tr class="separator:accfa4af3e16bff777478aafa4ede5163"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fdf6f921059b92c9bb1f77a1cca8e3a"><td class="memTemplParams" colspan="2">template&lt;class Structure &gt; </td></tr>
-<tr class="memitem:a7fdf6f921059b92c9bb1f77a1cca8e3a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1config.html#a7fdf6f921059b92c9bb1f77a1cca8e3a">parseConfigStructure</a> (Structure &amp;st, const boost::property_tree::ptree &amp;pt)</td></tr>
-<tr class="separator:a7fdf6f921059b92c9bb1f77a1cca8e3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4866d10e499c6cb135a202437d42c6a5"><td class="memTemplParams" colspan="2">template&lt;class Structure &gt; </td></tr>
-<tr class="memitem:a4866d10e499c6cb135a202437d42c6a5"><td class="memTemplItemLeft" align="right" valign="top">boost::property_tree::ptree&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1config.html#a4866d10e499c6cb135a202437d42c6a5">structureToPropertyTree</a> (const Structure &amp;st)</td></tr>
-<tr class="separator:a4866d10e499c6cb135a202437d42c6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7ddfab5ff61fa7ff4c2fcff338b107d"><td class="memTemplParams" colspan="2">template&lt;class Structure &gt; </td></tr>
+<tr class="memitem:ad7ddfab5ff61fa7ff4c2fcff338b107d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1config.html#ad7ddfab5ff61fa7ff4c2fcff338b107d">parseConfigStructure</a> (Structure &amp;st, const <a class="el" href="namespace__Wolframe_1_1config.html#a2dd1843cdd234f4991e88cbcace24b23">ConfigurationNode</a> &amp;pt)</td></tr>
+<tr class="separator:ad7ddfab5ff61fa7ff4c2fcff338b107d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68863988a8dc1f9b4679d221493c0a94"><td class="memTemplParams" colspan="2">template&lt;class Structure &gt; </td></tr>
+<tr class="memitem:a68863988a8dc1f9b4679d221493c0a94"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1types_1_1PropertyTree_1_1Node.html">types::PropertyTree::Node</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1config.html#a68863988a8dc1f9b4679d221493c0a94">structureToPropertyTree</a> (const Structure &amp;st)</td></tr>
+<tr class="separator:a68863988a8dc1f9b4679d221493c0a94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a083fb9fd59f5b65eb0559a7920050961"><td class="memTemplParams" colspan="2">template&lt;class Structure &gt; </td></tr>
 <tr class="memitem:a083fb9fd59f5b65eb0559a7920050961"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1config.html#a083fb9fd59f5b65eb0559a7920050961">structureToString</a> (const Structure &amp;st)</td></tr>
 <tr class="separator:a083fb9fd59f5b65eb0559a7920050961"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a class="anchor" id="a2dd1843cdd234f4991e88cbcace24b23"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="class__Wolframe_1_1types_1_1PropertyTree_1_1Node.html">types::PropertyTree::Node</a> <a class="el" href="namespace__Wolframe_1_1config.html#a2dd1843cdd234f4991e88cbcace24b23">_Wolframe::config::ConfigurationNode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a776490365e034d99f2fdcf4f1f03d448"></a>
 <div class="memitem">
@@ -213,7 +231,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7fdf6f921059b92c9bb1f77a1cca8e3a"></a>
+<a class="anchor" id="ad7ddfab5ff61fa7ff4c2fcff338b107d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -228,7 +246,7 @@ template&lt;class Structure &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const boost::property_tree::ptree &amp;&#160;</td>
+          <td class="paramtype">const ConfigurationNode &amp;&#160;</td>
           <td class="paramname"><em>pt</em>&#160;</td>
         </tr>
         <tr>
@@ -241,14 +259,14 @@ template&lt;class Structure &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a4866d10e499c6cb135a202437d42c6a5"></a>
+<a class="anchor" id="a68863988a8dc1f9b4679d221493c0a94"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class Structure &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">boost::property_tree::ptree _Wolframe::config::structureToPropertyTree </td>
+          <td class="memname"><a class="el" href="class__Wolframe_1_1types_1_1PropertyTree_1_1Node.html">types::PropertyTree::Node</a> _Wolframe::config::structureToPropertyTree </td>
           <td>(</td>
           <td class="paramtype">const Structure &amp;&#160;</td>
           <td class="paramname"><em>st</em></td><td>)</td>
@@ -281,7 +299,7 @@ template&lt;class Structure &gt; </div>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 13 2014 11:05:24 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 19 2014 16:37:58 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

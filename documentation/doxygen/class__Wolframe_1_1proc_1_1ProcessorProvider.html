@@ -95,9 +95,6 @@
 </div><!--header-->
 <div class="contents">
 
-<p>Processor provider.  
- <a href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="procProvider_8hpp_source.html">procProvider.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for _Wolframe::proc::ProcessorProvider:</div>
@@ -105,6 +102,7 @@ Inheritance diagram for _Wolframe::proc::ProcessorProvider:</div>
  <div class="center">
   <img src="class__Wolframe_1_1proc_1_1ProcessorProvider.png" usemap="#_Wolframe::proc::ProcessorProvider_map" alt=""/>
   <map id="_Wolframe::proc::ProcessorProvider_map" name="_Wolframe::proc::ProcessorProvider_map">
+<area href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html" alt="_Wolframe::proc::ProcessorProviderInterface" shape="rect" coords="0,0,267,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -112,49 +110,51 @@ Inheritance diagram for _Wolframe::proc::ProcessorProvider:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab7496a2240bd8f7dff1230e6b8097910"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#ab7496a2240bd8f7dff1230e6b8097910">ProcessorProvider</a> (const <a class="el" href="class__Wolframe_1_1proc_1_1ProcProviderConfig.html">ProcProviderConfig</a> *conf, const <a class="el" href="class__Wolframe_1_1module_1_1ModulesDirectory.html">module::ModulesDirectory</a> *modules, <a class="el" href="class__Wolframe_1_1prgbind_1_1ProgramLibrary.html">prgbind::ProgramLibrary</a> *programs_)</td></tr>
 <tr class="separator:ab7496a2240bd8f7dff1230e6b8097910"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc0845d64c3a4d523e0e4a035d05f4b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#adc0845d64c3a4d523e0e4a035d05f4b2">~ProcessorProvider</a> ()</td></tr>
-<tr class="separator:adc0845d64c3a4d523e0e4a035d05f4b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6673e32b094050adf2d2c451f8e01f3a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#a6673e32b094050adf2d2c451f8e01f3a">~ProcessorProvider</a> ()</td></tr>
+<tr class="separator:a6673e32b094050adf2d2c451f8e01f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03cd34e93a4fc47f7b1cb4696f236a0c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#a03cd34e93a4fc47f7b1cb4696f236a0c">resolveDB</a> (const <a class="el" href="class__Wolframe_1_1db_1_1DatabaseProvider.html">db::DatabaseProvider</a> &amp;db)</td></tr>
 <tr class="separator:a03cd34e93a4fc47f7b1cb4696f236a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a553dc67d092d932af00fdeb7039c4435"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#a553dc67d092d932af00fdeb7039c4435">loadPrograms</a> ()</td></tr>
 <tr class="separator:a553dc67d092d932af00fdeb7039c4435"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5c77eee1c5fe89b9666eaf8916d6dad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html">cmdbind::CommandHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#ad5c77eee1c5fe89b9666eaf8916d6dad">cmdhandler</a> (const std::string &amp;command) const </td></tr>
-<tr class="separator:ad5c77eee1c5fe89b9666eaf8916d6dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0140fafe34e7ca3eb54f0992a8f1c0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html">cmdbind::IOFilterCommandHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#aa0140fafe34e7ca3eb54f0992a8f1c0b">iofilterhandler</a> (const std::string &amp;command) const </td></tr>
-<tr class="separator:aa0140fafe34e7ca3eb54f0992a8f1c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf106f24c182dbf08233241632dd481f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#acf106f24c182dbf08233241632dd481f">xmlDoctypeString</a> (const std::string &amp;formname, const std::string &amp;ddlname, const std::string &amp;xmlroot) const </td></tr>
-<tr class="separator:acf106f24c182dbf08233241632dd481f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14c90364ea038903299de882037efc03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1db_1_1Database.html">db::Database</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#a14c90364ea038903299de882037efc03">transactionDatabase</a> () const </td></tr>
-<tr class="separator:a14c90364ea038903299de882037efc03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bdc5ce485721381327fcd74207f1580"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class__Wolframe_1_1UI_1_1UserInterfaceLibrary.html">UI::UserInterfaceLibrary</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#a1bdc5ce485721381327fcd74207f1580">UIlibrary</a> () const </td></tr>
-<tr class="memdesc:a1bdc5ce485721381327fcd74207f1580"><td class="mdescLeft">&#160;</td><td class="mdescRight">Just and interface at the moment.  <a href="#a1bdc5ce485721381327fcd74207f1580">More...</a><br/></td></tr>
-<tr class="separator:a1bdc5ce485721381327fcd74207f1580"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a258212b5eb3fea74575f9fb3a52deaf1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct__Wolframe_1_1db_1_1Transaction.html">db::Transaction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#a258212b5eb3fea74575f9fb3a52deaf1">transaction</a> (const std::string &amp;name) const </td></tr>
-<tr class="memdesc:a258212b5eb3fea74575f9fb3a52deaf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">return a database transaction object for the given name  <a href="#a258212b5eb3fea74575f9fb3a52deaf1">More...</a><br/></td></tr>
-<tr class="separator:a258212b5eb3fea74575f9fb3a52deaf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b04f3ee44a44c697605a801e0b69f8e"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <br class="typebreak"/>
-std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#a1b04f3ee44a44c697605a801e0b69f8e">uiforms</a> (const std::string &amp;, int, int &amp;) const </td></tr>
-<tr class="memdesc:a1b04f3ee44a44c697605a801e0b69f8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of UI-forms.  <a href="#a1b04f3ee44a44c697605a801e0b69f8e">More...</a><br/></td></tr>
-<tr class="separator:a1b04f3ee44a44c697605a801e0b69f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb2b932a2b9ecc1198ccea8ffa369fdb"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class__Wolframe_1_1types_1_1NormalizeFunction.html">types::NormalizeFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#aeb2b932a2b9ecc1198ccea8ffa369fdb">typeNormalizer</a> (const std::string &amp;name) const </td></tr>
-<tr class="separator:aeb2b932a2b9ecc1198ccea8ffa369fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70c84465ced8adab68674eae61d377b3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct__Wolframe_1_1langbind_1_1FormFunction.html">langbind::FormFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#a70c84465ced8adab68674eae61d377b3">formFunction</a> (const std::string &amp;name) const </td></tr>
-<tr class="separator:a70c84465ced8adab68674eae61d377b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a29a2df7580ece4d2976f4dc5d9314a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class__Wolframe_1_1types_1_1FormDescription.html">types::FormDescription</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#a4a29a2df7580ece4d2976f4dc5d9314a">formDescription</a> (const std::string &amp;name) const </td></tr>
-<tr class="separator:a4a29a2df7580ece4d2976f4dc5d9314a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8916c8a3e122f9ca2a8ff56bcf098cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1langbind_1_1Filter.html">langbind::Filter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#ae8916c8a3e122f9ca2a8ff56bcf098cf">filter</a> (const std::string &amp;name, const std::vector&lt; <a class="el" href="namespace__Wolframe_1_1langbind.html#a05a35c93c7da1ce63b6e929a6c22184f">langbind::FilterArgument</a> &gt; &amp;arg=std::vector&lt; <a class="el" href="namespace__Wolframe_1_1langbind.html#a05a35c93c7da1ce63b6e929a6c22184f">langbind::FilterArgument</a> &gt;()) const </td></tr>
-<tr class="separator:ae8916c8a3e122f9ca2a8ff56bcf098cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a220999b6f3df27f8602c43893f5fd67b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class__Wolframe_1_1types_1_1CustomDataType.html">types::CustomDataType</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#a220999b6f3df27f8602c43893f5fd67b">customDataType</a> (const std::string &amp;name) const </td></tr>
-<tr class="separator:a220999b6f3df27f8602c43893f5fd67b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bd04514a7408724c008df89fd4467db"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html">cmdbind::CommandHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#a1bd04514a7408724c008df89fd4467db">cmdhandler</a> (const std::string &amp;command) const </td></tr>
+<tr class="separator:a1bd04514a7408724c008df89fd4467db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ca0c2ffbbceb27d4896941d50ec7eb8"><td class="memItemLeft" align="right" valign="top">virtual <br class="typebreak"/>
+<a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html">cmdbind::IOFilterCommandHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#a8ca0c2ffbbceb27d4896941d50ec7eb8">iofilterhandler</a> (const std::string &amp;command) const </td></tr>
+<tr class="separator:a8ca0c2ffbbceb27d4896941d50ec7eb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ef973b01f9603462b50b7f4258fd3a2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class__Wolframe_1_1db_1_1Database.html">db::Database</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#a1ef973b01f9603462b50b7f4258fd3a2">transactionDatabase</a> () const </td></tr>
+<tr class="separator:a1ef973b01f9603462b50b7f4258fd3a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaccb39ff8aa5cf1447eddba189250f2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class__Wolframe_1_1db_1_1Transaction.html">db::Transaction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#afaccb39ff8aa5cf1447eddba189250f2">transaction</a> (const std::string &amp;name) const </td></tr>
+<tr class="memdesc:afaccb39ff8aa5cf1447eddba189250f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">return a database transaction object for the given name  <a href="#afaccb39ff8aa5cf1447eddba189250f2">More...</a><br/></td></tr>
+<tr class="separator:afaccb39ff8aa5cf1447eddba189250f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ff25735e1ce63302e7a87d227191150"><td class="memItemLeft" align="right" valign="top">virtual const <br class="typebreak"/>
+<a class="el" href="class__Wolframe_1_1types_1_1NormalizeFunction.html">types::NormalizeFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#a7ff25735e1ce63302e7a87d227191150">normalizeFunction</a> (const std::string &amp;name) const </td></tr>
+<tr class="separator:a7ff25735e1ce63302e7a87d227191150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99f00fe132a2bcae0cf79bd23d4c2836"><td class="memItemLeft" align="right" valign="top">virtual const <br class="typebreak"/>
+<a class="el" href="class__Wolframe_1_1types_1_1NormalizeFunctionType.html">types::NormalizeFunctionType</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#a99f00fe132a2bcae0cf79bd23d4c2836">normalizeFunctionType</a> (const std::string &amp;name) const </td></tr>
+<tr class="separator:a99f00fe132a2bcae0cf79bd23d4c2836"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd9c613ae2bff733d1b45800662c0dbd"><td class="memItemLeft" align="right" valign="top">virtual const <br class="typebreak"/>
+<a class="el" href="struct__Wolframe_1_1langbind_1_1FormFunction.html">langbind::FormFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#abd9c613ae2bff733d1b45800662c0dbd">formFunction</a> (const std::string &amp;name) const </td></tr>
+<tr class="separator:abd9c613ae2bff733d1b45800662c0dbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a007b7c7ac93bc7cbd67aa8b973884c2b"><td class="memItemLeft" align="right" valign="top">virtual const <br class="typebreak"/>
+<a class="el" href="class__Wolframe_1_1types_1_1FormDescription.html">types::FormDescription</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#a007b7c7ac93bc7cbd67aa8b973884c2b">formDescription</a> (const std::string &amp;name) const </td></tr>
+<tr class="separator:a007b7c7ac93bc7cbd67aa8b973884c2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4abab0e847f89d1d69738c11629ac022"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class__Wolframe_1_1langbind_1_1Filter.html">langbind::Filter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#a4abab0e847f89d1d69738c11629ac022">filter</a> (const std::string &amp;name, const std::vector&lt; <a class="el" href="namespace__Wolframe_1_1langbind.html#a05a35c93c7da1ce63b6e929a6c22184f">langbind::FilterArgument</a> &gt; &amp;arg=std::vector&lt; <a class="el" href="namespace__Wolframe_1_1langbind.html#a05a35c93c7da1ce63b6e929a6c22184f">langbind::FilterArgument</a> &gt;()) const </td></tr>
+<tr class="separator:a4abab0e847f89d1d69738c11629ac022"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1eb68c68e0135947a9445ae1b81227a2"><td class="memItemLeft" align="right" valign="top">virtual const <br class="typebreak"/>
+<a class="el" href="class__Wolframe_1_1types_1_1CustomDataType.html">types::CustomDataType</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#a1eb68c68e0135947a9445ae1b81227a2">customDataType</a> (const std::string &amp;name) const </td></tr>
+<tr class="separator:a1eb68c68e0135947a9445ae1b81227a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6235b74a7a6105812e04837465b4e289"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#a6235b74a7a6105812e04837465b4e289">guessDocumentFormat</a> (std::string &amp;result, const char *content, std::size_t contentsize) const </td></tr>
+<tr class="separator:a6235b74a7a6105812e04837465b4e289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class__Wolframe_1_1proc_1_1ProcessorProviderInterface"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class__Wolframe_1_1proc_1_1ProcessorProviderInterface')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html">_Wolframe::proc::ProcessorProviderInterface</a></td></tr>
+<tr class="memitem:a5d101851f0ca5de65d8251d216d132de inherit pub_methods_class__Wolframe_1_1proc_1_1ProcessorProviderInterface"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#a5d101851f0ca5de65d8251d216d132de">~ProcessorProviderInterface</a> ()</td></tr>
+<tr class="separator:a5d101851f0ca5de65d8251d216d132de inherit pub_methods_class__Wolframe_1_1proc_1_1ProcessorProviderInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ade6c2da1a5a795b8083f661f7d4fef9d"><td class="memItemLeft" align="right" valign="top">ProcessorProvider_Impl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#ade6c2da1a5a795b8083f661f7d4fef9d">m_impl</a></td></tr>
 <tr class="separator:ade6c2da1a5a795b8083f661f7d4fef9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Processor provider. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ab7496a2240bd8f7dff1230e6b8097910"></a>
 <div class="memitem">
 <div class="memproto">
@@ -187,60 +187,91 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="adc0845d64c3a4d523e0e4a035d05f4b2"></a>
+<a class="anchor" id="a6673e32b094050adf2d2c451f8e01f3a"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">_Wolframe::proc::ProcessorProvider::~ProcessorProvider </td>
+          <td class="memname">virtual _Wolframe::proc::ProcessorProvider::~ProcessorProvider </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ad5c77eee1c5fe89b9666eaf8916d6dad"></a>
+<a class="anchor" id="a1bd04514a7408724c008df89fd4467db"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html">cmdbind::CommandHandler</a>* _Wolframe::proc::ProcessorProvider::cmdhandler </td>
+          <td class="memname">virtual <a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html">cmdbind::CommandHandler</a>* _Wolframe::proc::ProcessorProvider::cmdhandler </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>command</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Implements <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#aeb75cf79e14cea1981c740677a9c6b58">_Wolframe::proc::ProcessorProviderInterface</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a220999b6f3df27f8602c43893f5fd67b"></a>
+<a class="anchor" id="a1eb68c68e0135947a9445ae1b81227a2"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="class__Wolframe_1_1types_1_1CustomDataType.html">types::CustomDataType</a>* _Wolframe::proc::ProcessorProvider::customDataType </td>
+          <td class="memname">virtual const <a class="el" href="class__Wolframe_1_1types_1_1CustomDataType.html">types::CustomDataType</a>* _Wolframe::proc::ProcessorProvider::customDataType </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Implements <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#a5077e69d22f108014336df2ae5cef0fb">_Wolframe::proc::ProcessorProviderInterface</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae8916c8a3e122f9ca2a8ff56bcf098cf"></a>
+<a class="anchor" id="a4abab0e847f89d1d69738c11629ac022"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class__Wolframe_1_1langbind_1_1Filter.html">langbind::Filter</a>* _Wolframe::proc::ProcessorProvider::filter </td>
+          <td class="memname">virtual <a class="el" href="class__Wolframe_1_1langbind_1_1Filter.html">langbind::Filter</a>* _Wolframe::proc::ProcessorProvider::filter </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>name</em>, </td>
@@ -257,55 +288,134 @@ Private Attributes</h2></td></tr>
           <td></td><td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Implements <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#a19f6799d8d7bffdf8dd28d431609ce38">_Wolframe::proc::ProcessorProviderInterface</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a4a29a2df7580ece4d2976f4dc5d9314a"></a>
+<a class="anchor" id="a007b7c7ac93bc7cbd67aa8b973884c2b"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="class__Wolframe_1_1types_1_1FormDescription.html">types::FormDescription</a>* _Wolframe::proc::ProcessorProvider::formDescription </td>
+          <td class="memname">virtual const <a class="el" href="class__Wolframe_1_1types_1_1FormDescription.html">types::FormDescription</a>* _Wolframe::proc::ProcessorProvider::formDescription </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Implements <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#a64a74e99ca0945d1b2de3c07c896163c">_Wolframe::proc::ProcessorProviderInterface</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a70c84465ced8adab68674eae61d377b3"></a>
+<a class="anchor" id="abd9c613ae2bff733d1b45800662c0dbd"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="struct__Wolframe_1_1langbind_1_1FormFunction.html">langbind::FormFunction</a>* _Wolframe::proc::ProcessorProvider::formFunction </td>
+          <td class="memname">virtual const <a class="el" href="struct__Wolframe_1_1langbind_1_1FormFunction.html">langbind::FormFunction</a>* _Wolframe::proc::ProcessorProvider::formFunction </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Implements <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#a9a743f090e6b6a918df21d837c532e13">_Wolframe::proc::ProcessorProviderInterface</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aa0140fafe34e7ca3eb54f0992a8f1c0b"></a>
+<a class="anchor" id="a6235b74a7a6105812e04837465b4e289"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html">cmdbind::IOFilterCommandHandler</a>* _Wolframe::proc::ProcessorProvider::iofilterhandler </td>
+          <td class="memname">virtual bool _Wolframe::proc::ProcessorProvider::guessDocumentFormat </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>content</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>contentsize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#a8e589b62f2ac9a600852236202430d08">_Wolframe::proc::ProcessorProviderInterface</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8ca0c2ffbbceb27d4896941d50ec7eb8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html">cmdbind::IOFilterCommandHandler</a>* _Wolframe::proc::ProcessorProvider::iofilterhandler </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>command</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Implements <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#a48fad18d3fdc548a1c3a388791d82e2f">_Wolframe::proc::ProcessorProviderInterface</a>.</p>
 
 </div>
 </div>
@@ -321,6 +431,58 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7ff25735e1ce63302e7a87d227191150"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const <a class="el" href="class__Wolframe_1_1types_1_1NormalizeFunction.html">types::NormalizeFunction</a>* _Wolframe::proc::ProcessorProvider::normalizeFunction </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#aab8e9d3be245c373074cf5dbc8318700">_Wolframe::proc::ProcessorProviderInterface</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a99f00fe132a2bcae0cf79bd23d4c2836"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const <a class="el" href="class__Wolframe_1_1types_1_1NormalizeFunctionType.html">types::NormalizeFunctionType</a>* _Wolframe::proc::ProcessorProvider::normalizeFunctionType </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#a34f6396c6e3bff41c4c201a6ded12b52">_Wolframe::proc::ProcessorProviderInterface</a>.</p>
 
 </div>
 </div>
@@ -340,56 +502,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a258212b5eb3fea74575f9fb3a52deaf1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct__Wolframe_1_1db_1_1Transaction.html">db::Transaction</a>* _Wolframe::proc::ProcessorProvider::transaction </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>return a database transaction object for the given name </p>
-
-</div>
-</div>
-<a class="anchor" id="a14c90364ea038903299de882037efc03"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class__Wolframe_1_1db_1_1Database.html">db::Database</a>* _Wolframe::proc::ProcessorProvider::transactionDatabase </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aeb2b932a2b9ecc1198ccea8ffa369fdb"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="class__Wolframe_1_1types_1_1NormalizeFunction.html">types::NormalizeFunction</a>* _Wolframe::proc::ProcessorProvider::typeNormalizer </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a1b04f3ee44a44c697605a801e0b69f8e"></a>
+<a class="anchor" id="afaccb39ff8aa5cf1447eddba189250f2"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -397,88 +510,48 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt;std::string,std::string&gt; _Wolframe::proc::ProcessorProvider::uiforms </td>
+          <td class="memname">virtual <a class="el" href="class__Wolframe_1_1db_1_1Transaction.html">db::Transaction</a>* _Wolframe::proc::ProcessorProvider::transaction </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int &amp;&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the list of UI-forms. </p>
-<dl class="section return"><dt>Returns</dt><dd>map name -&gt; uiform xml without header </dd></dl>
-<p>make it just compile </p>
+<p>return a database transaction object for the given name </p>
+
+<p>Implements <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#ad36da9add266c8b6581ffb7b597d6e90">_Wolframe::proc::ProcessorProviderInterface</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a1bdc5ce485721381327fcd74207f1580"></a>
+<a class="anchor" id="a1ef973b01f9603462b50b7f4258fd3a2"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="class__Wolframe_1_1UI_1_1UserInterfaceLibrary.html">UI::UserInterfaceLibrary</a>* _Wolframe::proc::ProcessorProvider::UIlibrary </td>
+          <td class="memname">virtual <a class="el" href="class__Wolframe_1_1db_1_1Database.html">db::Database</a>* _Wolframe::proc::ProcessorProvider::transactionDatabase </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Just and interface at the moment. </p>
-
-</div>
-</div>
-<a class="anchor" id="acf106f24c182dbf08233241632dd481f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string _Wolframe::proc::ProcessorProvider::xmlDoctypeString </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>formname</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>ddlname</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>xmlroot</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Implements <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#a474707e221de6e81a98b5c7016774098">_Wolframe::proc::ProcessorProviderInterface</a>.</p>
 
 </div>
 </div>
@@ -510,7 +583,7 @@ Private Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 13 2014 11:05:32 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 19 2014 16:38:06 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

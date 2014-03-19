@@ -90,7 +90,7 @@
 <div class="contents">
 <a href="logBackend_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/************************************************************************</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> Copyright (C) 2011 - 2013 Project Wolframe.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> Copyright (C) 2011 - 2014 Project Wolframe.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> All rights reserved.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> This file is part of Project Wolframe.</span></div>
@@ -124,78 +124,82 @@
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#ifndef _LOG_BACKEND_HPP_INCLUDED</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _LOG_BACKEND_HPP_INCLUDED</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="singleton_8hpp.html">singleton.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="logLevel_8hpp.html">logger/logLevel.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="logSyslogFacility_8hpp.html">logger/logSyslogFacility.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">namespace </span>_Wolframe {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">namespace </span>log {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1log_1_1LogBackend.html">   50</a></span>&#160;<span class="keyword">class </span><a class="code" href="class__Wolframe_1_1log_1_1LogBackend.html">LogBackend</a> : <span class="keyword">public</span> <a class="code" href="classSingleton.html">Singleton</a>&lt; LogBackend &gt;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="class__Wolframe_1_1log_1_1LogBackend.html#aaca4229882a62d797f6ccf44bd70447e">LogBackend</a>( );</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="class__Wolframe_1_1log_1_1LogBackend.html#a03853456ea88cc36a82794246a75de0b">~LogBackend</a>( );</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class__Wolframe_1_1log_1_1LogBackend.html#a5066472fb14dc631b00c75c32dfc3a44">setConsoleLevel</a>( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1log_1_1LogLevel.html#a5a6ebf91ed2fe29238e8e1e3d1253ab9">LogLevel::Level</a> level );</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class__Wolframe_1_1log_1_1LogBackend.html#ab3b25e5e54e9ea3f8957dcdde7650fc4">setLogfileLevel</a>( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1log_1_1LogLevel.html#a5a6ebf91ed2fe29238e8e1e3d1253ab9">LogLevel::Level</a> level );</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="logLevel_8hpp.html">logger/logLevel.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="logSyslogFacility_8hpp.html">logger/logSyslogFacility.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#if defined( _MSC_VER )</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor"></span><span class="preprocessor">        #define WOLFRAME_EXPORT __declspec( dllexport )</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="logBackend_8hpp.html#adf892ccaead9224bf5adf236d2d800ad">   49</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">        #define WOLFRAME_EXPORT</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">namespace </span>_Wolframe {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">namespace </span>log {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1log_1_1LogBackend.html">   56</a></span>&#160;<span class="keyword">class </span><a class="code" href="logBackend_8hpp.html#adf892ccaead9224bf5adf236d2d800ad">WOLFRAME_EXPORT</a> <a class="code" href="class__Wolframe_1_1log_1_1LogBackend.html">LogBackend</a></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        ~<a class="code" href="class__Wolframe_1_1log_1_1LogBackend.html">LogBackend</a>();</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class__Wolframe_1_1log_1_1LogBackend.html#af0a9580ce70812e2ffea02ee5d0a7d4f">setLogfileName</a>( <span class="keyword">const</span> std::string filename );</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">static</span> <a class="code" href="class__Wolframe_1_1log_1_1LogBackend.html">LogBackend</a>&amp; instance();</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class__Wolframe_1_1log_1_1LogBackend.html#a52235c90ad19a872a109b3baf4fc6134">setSyslogLevel</a>( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1log_1_1LogLevel.html#a5a6ebf91ed2fe29238e8e1e3d1253ab9">LogLevel::Level</a> level );</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordtype">void</span> setConsoleLevel( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1log_1_1LogLevel.html#a5a6ebf91ed2fe29238e8e1e3d1253ab9">LogLevel::Level</a> level );</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class__Wolframe_1_1log_1_1LogBackend.html#afaa8dd9e06e82d38ce5ccd464d93dbdd">setSyslogFacility</a>( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1log_1_1SyslogFacility.html#a139e2c7f891aebcce0c27979163bd6f6">SyslogFacility::Facility</a> facility );</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordtype">void</span> setLogfileLevel( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1log_1_1LogLevel.html#a5a6ebf91ed2fe29238e8e1e3d1253ab9">LogLevel::Level</a> level );</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class__Wolframe_1_1log_1_1LogBackend.html#ae4a140c314a6270908d240a5e6ab0a42">setSyslogIdent</a>( <span class="keyword">const</span> std::string ident );</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordtype">void</span> setLogfileName( <span class="keyword">const</span> std::string filename );</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#if defined( _WIN32 )</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor"></span>        <span class="keywordtype">void</span> setEventlogLevel( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1log_1_1LogLevel.html#a5a6ebf91ed2fe29238e8e1e3d1253ab9">LogLevel::Level</a> level );</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordtype">void</span> setEventlogLog( <span class="keyword">const</span> std::string <a class="code" href="class__Wolframe_1_1log_1_1LogBackend.html#ae3e28fa683b0f69c5fc02df4549ff5f6">log</a> );</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordtype">void</span> setEventlogSource( <span class="keyword">const</span> std::string source );</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordtype">void</span> setWinDebugLevel( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1log_1_1LogLevel.html#a5a6ebf91ed2fe29238e8e1e3d1253ab9">LogLevel::Level</a> level );</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif // defined( _WIN32 )</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class__Wolframe_1_1log_1_1LogBackend.html#ae3e28fa683b0f69c5fc02df4549ff5f6">log</a>( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1log_1_1LogLevel.html#a5a6ebf91ed2fe29238e8e1e3d1253ab9">LogLevel::Level</a> level, <span class="keyword">const</span> std::string&amp; msg );</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="class__Wolframe_1_1log_1_1LogLevel.html#a5a6ebf91ed2fe29238e8e1e3d1253ab9">LogLevel::Level</a> <a class="code" href="class__Wolframe_1_1log_1_1LogBackend.html#adf317dd26ca98549da37580f751b8774">minLogLevel</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1log_1_1LogBackend.html#a69c8e9439646a50feba92cf315b5008b">   83</a></span>&#160;        <span class="keyword">class </span>LogBackendImpl;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        LogBackendImpl  *<a class="code" href="class__Wolframe_1_1log_1_1LogBackend.html#a69c8e9439646a50feba92cf315b5008b">impl_</a>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;};</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordtype">void</span> setSyslogLevel( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1log_1_1LogLevel.html#a5a6ebf91ed2fe29238e8e1e3d1253ab9">LogLevel::Level</a> level );</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordtype">void</span> setSyslogFacility( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1log_1_1SyslogFacility.html#a139e2c7f891aebcce0c27979163bd6f6">SyslogFacility::Facility</a> facility );</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordtype">void</span> setSyslogIdent( <span class="keyword">const</span> std::string ident );</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#if defined( _WIN32 )</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor"></span>        <span class="keywordtype">void</span> setEventlogLevel( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1log_1_1LogLevel.html#a5a6ebf91ed2fe29238e8e1e3d1253ab9">LogLevel::Level</a> level );</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordtype">void</span> setEventlogLog( <span class="keyword">const</span> std::string log );</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordtype">void</span> setEventlogSource( <span class="keyword">const</span> std::string source );</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordtype">void</span> setWinDebugLevel( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1log_1_1LogLevel.html#a5a6ebf91ed2fe29238e8e1e3d1253ab9">LogLevel::Level</a> level );</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif // defined( _WIN32 )</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordtype">void</span> log( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1log_1_1LogLevel.html#a5a6ebf91ed2fe29238e8e1e3d1253ab9">LogLevel::Level</a> level, <span class="keyword">const</span> std::string&amp; msg );</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}} <span class="comment">// namespace _Wolframe::log</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <a class="code" href="class__Wolframe_1_1log_1_1LogLevel.html#a5a6ebf91ed2fe29238e8e1e3d1253ab9">LogLevel::Level</a> minLogLevel() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#endif // _LOG_BACKEND_HPP_INCLUDED</span></div>
-<div class="ttc" id="class__Wolframe_1_1log_1_1LogLevel_html_a5a6ebf91ed2fe29238e8e1e3d1253ab9"><div class="ttname"><a href="class__Wolframe_1_1log_1_1LogLevel.html#a5a6ebf91ed2fe29238e8e1e3d1253ab9">_Wolframe::log::LogLevel::Level</a></div><div class="ttdeci">Level</div><div class="ttdef"><b>Definition:</b> logLevel.hpp:50</div></div>
-<div class="ttc" id="class__Wolframe_1_1log_1_1LogBackend_html_ab3b25e5e54e9ea3f8957dcdde7650fc4"><div class="ttname"><a href="class__Wolframe_1_1log_1_1LogBackend.html#ab3b25e5e54e9ea3f8957dcdde7650fc4">_Wolframe::log::LogBackend::setLogfileLevel</a></div><div class="ttdeci">void setLogfileLevel(const LogLevel::Level level)</div></div>
-<div class="ttc" id="class__Wolframe_1_1log_1_1LogBackend_html_a5066472fb14dc631b00c75c32dfc3a44"><div class="ttname"><a href="class__Wolframe_1_1log_1_1LogBackend.html#a5066472fb14dc631b00c75c32dfc3a44">_Wolframe::log::LogBackend::setConsoleLevel</a></div><div class="ttdeci">void setConsoleLevel(const LogLevel::Level level)</div></div>
-<div class="ttc" id="class__Wolframe_1_1log_1_1LogBackend_html_ae4a140c314a6270908d240a5e6ab0a42"><div class="ttname"><a href="class__Wolframe_1_1log_1_1LogBackend.html#ae4a140c314a6270908d240a5e6ab0a42">_Wolframe::log::LogBackend::setSyslogIdent</a></div><div class="ttdeci">void setSyslogIdent(const std::string ident)</div></div>
-<div class="ttc" id="class__Wolframe_1_1log_1_1LogBackend_html_afaa8dd9e06e82d38ce5ccd464d93dbdd"><div class="ttname"><a href="class__Wolframe_1_1log_1_1LogBackend.html#afaa8dd9e06e82d38ce5ccd464d93dbdd">_Wolframe::log::LogBackend::setSyslogFacility</a></div><div class="ttdeci">void setSyslogFacility(const SyslogFacility::Facility facility)</div></div>
-<div class="ttc" id="class__Wolframe_1_1log_1_1LogBackend_html_aaca4229882a62d797f6ccf44bd70447e"><div class="ttname"><a href="class__Wolframe_1_1log_1_1LogBackend.html#aaca4229882a62d797f6ccf44bd70447e">_Wolframe::log::LogBackend::LogBackend</a></div><div class="ttdeci">LogBackend()</div></div>
-<div class="ttc" id="class__Wolframe_1_1log_1_1SyslogFacility_html_a139e2c7f891aebcce0c27979163bd6f6"><div class="ttname"><a href="class__Wolframe_1_1log_1_1SyslogFacility.html#a139e2c7f891aebcce0c27979163bd6f6">_Wolframe::log::SyslogFacility::Facility</a></div><div class="ttdeci">Facility</div><div class="ttdef"><b>Definition:</b> logSyslogFacility.hpp:49</div></div>
-<div class="ttc" id="class__Wolframe_1_1log_1_1LogBackend_html_a52235c90ad19a872a109b3baf4fc6134"><div class="ttname"><a href="class__Wolframe_1_1log_1_1LogBackend.html#a52235c90ad19a872a109b3baf4fc6134">_Wolframe::log::LogBackend::setSyslogLevel</a></div><div class="ttdeci">void setSyslogLevel(const LogLevel::Level level)</div></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <a class="code" href="class__Wolframe_1_1log_1_1LogBackend.html">LogBackend</a>();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="comment">// make it noncopyable</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <a class="code" href="class__Wolframe_1_1log_1_1LogBackend.html">LogBackend</a>( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1log_1_1LogBackend.html">LogBackend</a>&amp; );</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1log_1_1LogBackend.html">LogBackend</a>&amp; operator= ( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1log_1_1LogBackend.html">LogBackend</a>&amp; );</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="comment">// implemented as a PIMPL</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1log_1_1LogBackend.html#a69c8e9439646a50feba92cf315b5008b">   98</a></span>&#160;        <span class="keyword">class </span>LogBackendImpl;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        LogBackendImpl  *<a class="code" href="class__Wolframe_1_1log_1_1LogBackend.html#a69c8e9439646a50feba92cf315b5008b">impl_</a>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;};</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}} <span class="comment">// namespace _Wolframe::log</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif // _LOG_BACKEND_HPP_INCLUDED</span></div>
+<div class="ttc" id="class__Wolframe_1_1log_1_1LogLevel_html_a5a6ebf91ed2fe29238e8e1e3d1253ab9"><div class="ttname"><a href="class__Wolframe_1_1log_1_1LogLevel.html#a5a6ebf91ed2fe29238e8e1e3d1253ab9">_Wolframe::log::LogLevel::Level</a></div><div class="ttdeci">Level</div><div class="ttdef"><b>Definition:</b> logLevel.hpp:56</div></div>
+<div class="ttc" id="class__Wolframe_1_1log_1_1SyslogFacility_html_a139e2c7f891aebcce0c27979163bd6f6"><div class="ttname"><a href="class__Wolframe_1_1log_1_1SyslogFacility.html#a139e2c7f891aebcce0c27979163bd6f6">_Wolframe::log::SyslogFacility::Facility</a></div><div class="ttdeci">Facility</div><div class="ttdef"><b>Definition:</b> logSyslogFacility.hpp:55</div></div>
 <div class="ttc" id="logLevel_8hpp_html"><div class="ttname"><a href="logLevel_8hpp.html">logLevel.hpp</a></div><div class="ttdoc">Defines allowed log levels of the logger. </div></div>
-<div class="ttc" id="class__Wolframe_1_1log_1_1LogBackend_html_ae3e28fa683b0f69c5fc02df4549ff5f6"><div class="ttname"><a href="class__Wolframe_1_1log_1_1LogBackend.html#ae3e28fa683b0f69c5fc02df4549ff5f6">_Wolframe::log::LogBackend::log</a></div><div class="ttdeci">void log(const LogLevel::Level level, const std::string &amp;msg)</div></div>
-<div class="ttc" id="class__Wolframe_1_1log_1_1LogBackend_html"><div class="ttname"><a href="class__Wolframe_1_1log_1_1LogBackend.html">_Wolframe::log::LogBackend</a></div><div class="ttdef"><b>Definition:</b> logBackend.hpp:50</div></div>
-<div class="ttc" id="class__Wolframe_1_1log_1_1LogBackend_html_a69c8e9439646a50feba92cf315b5008b"><div class="ttname"><a href="class__Wolframe_1_1log_1_1LogBackend.html#a69c8e9439646a50feba92cf315b5008b">_Wolframe::log::LogBackend::impl_</a></div><div class="ttdeci">LogBackendImpl * impl_</div><div class="ttdef"><b>Definition:</b> logBackend.hpp:83</div></div>
-<div class="ttc" id="class__Wolframe_1_1log_1_1LogBackend_html_af0a9580ce70812e2ffea02ee5d0a7d4f"><div class="ttname"><a href="class__Wolframe_1_1log_1_1LogBackend.html#af0a9580ce70812e2ffea02ee5d0a7d4f">_Wolframe::log::LogBackend::setLogfileName</a></div><div class="ttdeci">void setLogfileName(const std::string filename)</div></div>
-<div class="ttc" id="classSingleton_html"><div class="ttname"><a href="classSingleton.html">Singleton</a></div><div class="ttdef"><b>Definition:</b> singleton.hpp:48</div></div>
-<div class="ttc" id="logSyslogFacility_8hpp_html"><div class="ttname"><a href="logSyslogFacility_8hpp.html">logSyslogFacility.hpp</a></div><div class="ttdoc">Defines facilities of the system logger (Unix only) </div></div>
-<div class="ttc" id="class__Wolframe_1_1log_1_1LogBackend_html_adf317dd26ca98549da37580f751b8774"><div class="ttname"><a href="class__Wolframe_1_1log_1_1LogBackend.html#adf317dd26ca98549da37580f751b8774">_Wolframe::log::LogBackend::minLogLevel</a></div><div class="ttdeci">LogLevel::Level minLogLevel() const </div></div>
-<div class="ttc" id="singleton_8hpp_html"><div class="ttname"><a href="singleton_8hpp.html">singleton.hpp</a></div></div>
-<div class="ttc" id="class__Wolframe_1_1log_1_1LogBackend_html_a03853456ea88cc36a82794246a75de0b"><div class="ttname"><a href="class__Wolframe_1_1log_1_1LogBackend.html#a03853456ea88cc36a82794246a75de0b">_Wolframe::log::LogBackend::~LogBackend</a></div><div class="ttdeci">~LogBackend()</div></div>
+<div class="ttc" id="class__Wolframe_1_1log_1_1LogBackend_html"><div class="ttname"><a href="class__Wolframe_1_1log_1_1LogBackend.html">_Wolframe::log::LogBackend</a></div><div class="ttdef"><b>Definition:</b> logBackend.hpp:56</div></div>
+<div class="ttc" id="class__Wolframe_1_1log_1_1LogBackend_html_a69c8e9439646a50feba92cf315b5008b"><div class="ttname"><a href="class__Wolframe_1_1log_1_1LogBackend.html#a69c8e9439646a50feba92cf315b5008b">_Wolframe::log::LogBackend::impl_</a></div><div class="ttdeci">LogBackendImpl * impl_</div><div class="ttdef"><b>Definition:</b> logBackend.hpp:98</div></div>
+<div class="ttc" id="logBackend_8hpp_html_adf892ccaead9224bf5adf236d2d800ad"><div class="ttname"><a href="logBackend_8hpp.html#adf892ccaead9224bf5adf236d2d800ad">WOLFRAME_EXPORT</a></div><div class="ttdeci">#define WOLFRAME_EXPORT</div><div class="ttdef"><b>Definition:</b> logBackend.hpp:49</div></div>
+<div class="ttc" id="logSyslogFacility_8hpp_html"><div class="ttname"><a href="logSyslogFacility_8hpp.html">logSyslogFacility.hpp</a></div><div class="ttdoc">Defines facilities of the system logger. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 13 2014 11:05:15 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 19 2014 16:37:49 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

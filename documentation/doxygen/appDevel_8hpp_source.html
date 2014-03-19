@@ -90,7 +90,7 @@
 <div class="contents">
 <a href="appDevel_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/************************************************************************</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> Copyright (C) 2011 - 2013 Project Wolframe.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> Copyright (C) 2011 - 2014 Project Wolframe.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> All rights reserved.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> This file is part of Project Wolframe.</span></div>
@@ -122,20 +122,33 @@
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">************************************************************************/</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#ifndef _Wolframe_APPDEVEL_MODULE_HPP_INCLUDED</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _Wolframe_APPDEVEL_MODULE_HPP_INCLUDED</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="cppFormFunctionModuleMacros_8hpp.html">appdevel/cppFormFunctionModuleMacros.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="normalizeModuleMacros_8hpp.html">appdevel/normalizeModuleMacros.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="customDatatypeModuleMacros_8hpp.html">appdevel/customDatatypeModuleMacros.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">//\brief PF:HACK: Questionable here. Version should be in version.hpp</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="appDevel_8hpp.html#abb86d9ac2607a2e5d0a3b16b695e6b4c">   39</a></span>&#160;<span class="preprocessor">#define _WOLFRAME_SDK_VERSION_NUM 000005</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cppFormFunctionModuleMacros_8hpp.html">appdevel/cppFormFunctionModuleMacros.hpp</a>&quot;</span>     <span class="comment">//&lt; modules implementing a set of form functions written in C++</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="normalizeModuleMacros_8hpp.html">appdevel/normalizeModuleMacros.hpp</a>&quot;</span>           <span class="comment">//&lt; modules implementing a set of basic normalizer functions</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="customDatatypeModuleMacros_8hpp.html">appdevel/customDatatypeModuleMacros.hpp</a>&quot;</span>      <span class="comment">//&lt; modules implementing a set of custom data types</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="runtimeEnvironmentModuleMacros_8hpp.html">appdevel/runtimeEnvironmentModuleMacros.hpp</a>&quot;</span>  <span class="comment">//&lt; modules implementing a program type needing a configurable runtime environment</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="commandHandlerModuleMacros_8hpp.html">appdevel/commandHandlerModuleMacros.hpp</a>&quot;</span>      <span class="comment">//&lt; modules implementing a command handler and optionally also a program type without configuration</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="programTypeModuleMacros_8hpp.html">appdevel/programTypeModuleMacros.hpp</a>&quot;</span>         <span class="comment">//&lt; modules implementing a program type without configuration</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ddlCompilerModuleMacros_8hpp.html">appdevel/ddlCompilerModuleMacros.hpp</a>&quot;</span>         <span class="comment">//&lt; modules implementing a DDL compiler for forms</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="filterModuleMacros_8hpp.html">appdevel/filterModuleMacros.hpp</a>&quot;</span>              <span class="comment">//&lt; modules implementing a filer</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor"></span></div>
+<div class="ttc" id="filterModuleMacros_8hpp_html"><div class="ttname"><a href="filterModuleMacros_8hpp.html">filterModuleMacros.hpp</a></div><div class="ttdoc">Macros for a filter modules. </div></div>
+<div class="ttc" id="commandHandlerModuleMacros_8hpp_html"><div class="ttname"><a href="commandHandlerModuleMacros_8hpp.html">commandHandlerModuleMacros.hpp</a></div><div class="ttdoc">Macros for a module for a configurable command handler and program type for a binding language...</div></div>
 <div class="ttc" id="customDatatypeModuleMacros_8hpp_html"><div class="ttname"><a href="customDatatypeModuleMacros_8hpp.html">customDatatypeModuleMacros.hpp</a></div></div>
+<div class="ttc" id="runtimeEnvironmentModuleMacros_8hpp_html"><div class="ttname"><a href="runtimeEnvironmentModuleMacros_8hpp.html">runtimeEnvironmentModuleMacros.hpp</a></div><div class="ttdoc">Macros for a module for a configurable runtime environment for a binding language or a binding langua...</div></div>
+<div class="ttc" id="programTypeModuleMacros_8hpp_html"><div class="ttname"><a href="programTypeModuleMacros_8hpp.html">programTypeModuleMacros.hpp</a></div><div class="ttdoc">Macros for a module for a program type for a binding language. </div></div>
+<div class="ttc" id="ddlCompilerModuleMacros_8hpp_html"><div class="ttname"><a href="ddlCompilerModuleMacros_8hpp.html">ddlCompilerModuleMacros.hpp</a></div><div class="ttdoc">Macros for a module implementing a DDL compiler. </div></div>
 <div class="ttc" id="normalizeModuleMacros_8hpp_html"><div class="ttname"><a href="normalizeModuleMacros_8hpp.html">normalizeModuleMacros.hpp</a></div><div class="ttdoc">Macros for defining normalization and validaton function module. </div></div>
 <div class="ttc" id="cppFormFunctionModuleMacros_8hpp_html"><div class="ttname"><a href="cppFormFunctionModuleMacros_8hpp.html">cppFormFunctionModuleMacros.hpp</a></div><div class="ttdoc">Macros and templates for building C++ an application form function module. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 13 2014 11:05:13 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 19 2014 16:37:46 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

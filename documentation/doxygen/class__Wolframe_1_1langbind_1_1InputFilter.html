@@ -108,7 +108,7 @@ Inheritance diagram for _Wolframe::langbind::InputFilter:</div>
   <map id="_Wolframe::langbind::InputFilter_map" name="_Wolframe::langbind::InputFilter_map">
 <area href="class__Wolframe_1_1langbind_1_1FilterBase.html" title="Base of input/ouput filter. " alt="_Wolframe::langbind::FilterBase" shape="rect" coords="0,56,257,80"/>
 <area href="class__Wolframe_1_1langbind_1_1ContentFilterAttributes.html" alt="_Wolframe::langbind::ContentFilterAttributes" shape="rect" coords="267,56,524,80"/>
-<area href="class__Wolframe_1_1types_1_1TypeSignature.html" alt="_Wolframe::types::TypeSignature" shape="rect" coords="0,0,257,24"/>
+<area href="class__Wolframe_1_1utils_1_1TypeSignature.html" alt="_Wolframe::utils::TypeSignature" shape="rect" coords="0,0,257,24"/>
 <area href="class__Wolframe_1_1langbind_1_1BufferingInputFilter.html" title="Input filter that buffers the input before redirecting to InputFilter::getNext(ElementType&amp;,const void*&amp;,std::size_t&amp;) " alt="_Wolframe::langbind::BufferingInputFilter" shape="rect" coords="0,168,257,192"/>
 <area href="class__Wolframe_1_1langbind_1_1InputFilterScope.html" title="InputFilter that stops fetching elements after the creation tag level has been left. " alt="_Wolframe::langbind::InputFilterScope" shape="rect" coords="267,168,524,192"/>
 </map>
@@ -157,15 +157,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a32093fdde88d50e49122a2c9ae6aa24d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1InputFilter.html#a32093fdde88d50e49122a2c9ae6aa24d">getRest</a> (const void *&amp;ptr, std::size_t &amp;size, bool &amp;end)</td></tr>
 <tr class="memdesc:a32093fdde88d50e49122a2c9ae6aa24d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the rest of the input chunk left unparsed yet (defaults to nothing left)  <a href="#a32093fdde88d50e49122a2c9ae6aa24d">More...</a><br/></td></tr>
 <tr class="separator:a32093fdde88d50e49122a2c9ae6aa24d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a484ed94a36532855fe6566aa3a6bbbd9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1InputFilter.html#a484ed94a36532855fe6566aa3a6bbbd9">getValue</a> (const char *name, std::string &amp;val)</td></tr>
-<tr class="memdesc:a484ed94a36532855fe6566aa3a6bbbd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of <a class="el" href="class__Wolframe_1_1langbind_1_1FilterBase.html#ad24c9c50f176b71c57e4cced7fcad381" title="Get a member value of the filter. Throws on conversion error. ">FilterBase::getValue( const char*, std::string&amp;)</a>  <a href="#a484ed94a36532855fe6566aa3a6bbbd9">More...</a><br/></td></tr>
-<tr class="separator:a484ed94a36532855fe6566aa3a6bbbd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b8fb5fcf9e849d56717da2da99f42d7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1InputFilter.html#a3b8fb5fcf9e849d56717da2da99f42d7">getValue</a> (const char *name, std::string &amp;val) const </td></tr>
+<tr class="memdesc:a3b8fb5fcf9e849d56717da2da99f42d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of FilterBase::getValue( const char*, std::string&amp;)  <a href="#a3b8fb5fcf9e849d56717da2da99f42d7">More...</a><br/></td></tr>
+<tr class="separator:a3b8fb5fcf9e849d56717da2da99f42d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06abb93d070376e9f15c356c522b9eea"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1InputFilter.html#a06abb93d070376e9f15c356c522b9eea">getNext</a> (<a class="el" href="class__Wolframe_1_1langbind_1_1FilterBase.html#a293c57a669e78026544777e502574fb1">ElementType</a> &amp;type, const void *&amp;element, std::size_t &amp;elementsize)=0</td></tr>
 <tr class="memdesc:a06abb93d070376e9f15c356c522b9eea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get next element.  <a href="#a06abb93d070376e9f15c356c522b9eea">More...</a><br/></td></tr>
 <tr class="separator:a06abb93d070376e9f15c356c522b9eea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a483a290dc5c7a0f596ce315fe3d4efa3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1InputFilter.html#a483a290dc5c7a0f596ce315fe3d4efa3">getDocType</a> (std::string &amp;doctype)</td></tr>
-<tr class="memdesc:a483a290dc5c7a0f596ce315fe3d4efa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get type of the document.  <a href="#a483a290dc5c7a0f596ce315fe3d4efa3">More...</a><br/></td></tr>
-<tr class="separator:a483a290dc5c7a0f596ce315fe3d4efa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add0ed9c8d38e95ee501caab1ebd31dca"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1InputFilter.html#add0ed9c8d38e95ee501caab1ebd31dca">getDocType</a> (<a class="el" href="struct__Wolframe_1_1types_1_1DocType.html">types::DocType</a> &amp;doctype)</td></tr>
+<tr class="memdesc:add0ed9c8d38e95ee501caab1ebd31dca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get type of the document.  <a href="#add0ed9c8d38e95ee501caab1ebd31dca">More...</a><br/></td></tr>
+<tr class="separator:add0ed9c8d38e95ee501caab1ebd31dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7c428d64d9947c08c017b4ebe854513"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1InputFilter.html#aa7c428d64d9947c08c017b4ebe854513">getMetadata</a> ()</td></tr>
 <tr class="memdesc:aa7c428d64d9947c08c017b4ebe854513"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate if the document metadata are avalable and set state for fetching them if needed.  <a href="#aa7c428d64d9947c08c017b4ebe854513">More...</a><br/></td></tr>
 <tr class="separator:aa7c428d64d9947c08c017b4ebe854513"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -203,11 +203,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9d04a7e0c952c964c8ee5a70369d4689 inherit pub_methods_class__Wolframe_1_1langbind_1_1FilterBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1FilterBase.html#a9d04a7e0c952c964c8ee5a70369d4689">resetFlags</a> ()</td></tr>
 <tr class="memdesc:a9d04a7e0c952c964c8ee5a70369d4689 inherit pub_methods_class__Wolframe_1_1langbind_1_1FilterBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset set all flags.  <a href="#a9d04a7e0c952c964c8ee5a70369d4689">More...</a><br/></td></tr>
 <tr class="separator:a9d04a7e0c952c964c8ee5a70369d4689 inherit pub_methods_class__Wolframe_1_1langbind_1_1FilterBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_class__Wolframe_1_1types_1_1TypeSignature"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class__Wolframe_1_1types_1_1TypeSignature')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class__Wolframe_1_1types_1_1TypeSignature.html">_Wolframe::types::TypeSignature</a></td></tr>
-<tr class="memitem:a672618453a4a9576e3747c4e2fdeee7a inherit pub_methods_class__Wolframe_1_1types_1_1TypeSignature"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1TypeSignature.html#a672618453a4a9576e3747c4e2fdeee7a">TypeSignature</a> (const char *, unsigned int)</td></tr>
-<tr class="separator:a672618453a4a9576e3747c4e2fdeee7a inherit pub_methods_class__Wolframe_1_1types_1_1TypeSignature"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f2de0a272f2ed62142cfdc81c8a75c7 inherit pub_methods_class__Wolframe_1_1types_1_1TypeSignature"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1TypeSignature.html#a7f2de0a272f2ed62142cfdc81c8a75c7">~TypeSignature</a> ()</td></tr>
-<tr class="separator:a7f2de0a272f2ed62142cfdc81c8a75c7 inherit pub_methods_class__Wolframe_1_1types_1_1TypeSignature"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class__Wolframe_1_1utils_1_1TypeSignature"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class__Wolframe_1_1utils_1_1TypeSignature')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class__Wolframe_1_1utils_1_1TypeSignature.html">_Wolframe::utils::TypeSignature</a></td></tr>
+<tr class="memitem:af8c776dc11b715d2234198648d3c8f5e inherit pub_methods_class__Wolframe_1_1utils_1_1TypeSignature"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1utils_1_1TypeSignature.html#af8c776dc11b715d2234198648d3c8f5e">TypeSignature</a> (const char *, unsigned int)</td></tr>
+<tr class="separator:af8c776dc11b715d2234198648d3c8f5e inherit pub_methods_class__Wolframe_1_1utils_1_1TypeSignature"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9df013015ec773994a4646fe728aece inherit pub_methods_class__Wolframe_1_1utils_1_1TypeSignature"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1utils_1_1TypeSignature.html#ac9df013015ec773994a4646fe728aece">~TypeSignature</a> ()</td></tr>
+<tr class="separator:ac9df013015ec773994a4646fe728aece inherit pub_methods_class__Wolframe_1_1utils_1_1TypeSignature"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class__Wolframe_1_1langbind_1_1ContentFilterAttributes"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class__Wolframe_1_1langbind_1_1ContentFilterAttributes')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class__Wolframe_1_1langbind_1_1ContentFilterAttributes.html">_Wolframe::langbind::ContentFilterAttributes</a></td></tr>
 <tr class="memitem:a09d111fc065a62b91865f95bb4f2fbe4 inherit pub_methods_class__Wolframe_1_1langbind_1_1ContentFilterAttributes"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1ContentFilterAttributes.html#a09d111fc065a62b91865f95bb4f2fbe4">getEncoding</a> () const =0</td></tr>
 <tr class="separator:a09d111fc065a62b91865f95bb4f2fbe4 inherit pub_methods_class__Wolframe_1_1langbind_1_1ContentFilterAttributes"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -361,7 +361,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a483a290dc5c7a0f596ce315fe3d4efa3"></a>
+<a class="anchor" id="add0ed9c8d38e95ee501caab1ebd31dca"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -371,7 +371,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual bool _Wolframe::langbind::InputFilter::getDocType </td>
           <td>(</td>
-          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="struct__Wolframe_1_1types_1_1DocType.html">types::DocType</a> &amp;&#160;</td>
           <td class="paramname"><em>doctype</em></td><td>)</td>
           <td></td>
         </tr>
@@ -386,14 +386,14 @@ Additional Inherited Members</h2></td></tr>
 <p>Get type of the document. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">doctype</td><td>the document type string returned </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">doctype</td><td>the document type returned </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true, if success, false, if not. </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>Check the filter state when false is returned </dd></dl>
 
-<p>Reimplemented in <a class="el" href="class__Wolframe_1_1langbind_1_1BufferingInputFilter.html#adf099384704e4a2fb922e4d4ae917b90">_Wolframe::langbind::BufferingInputFilter</a>.</p>
+<p>Reimplemented in <a class="el" href="class__Wolframe_1_1langbind_1_1BufferingInputFilter.html#a8ae86163cafa90b508ee5d6f4b080535">_Wolframe::langbind::BufferingInputFilter</a>.</p>
 
 </div>
 </div>
@@ -526,7 +526,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a484ed94a36532855fe6566aa3a6bbbd9"></a>
+<a class="anchor" id="a3b8fb5fcf9e849d56717da2da99f42d7"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -548,7 +548,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -558,9 +558,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implementation of <a class="el" href="class__Wolframe_1_1langbind_1_1FilterBase.html#ad24c9c50f176b71c57e4cced7fcad381" title="Get a member value of the filter. Throws on conversion error. ">FilterBase::getValue( const char*, std::string&amp;)</a> </p>
+<p>Implementation of FilterBase::getValue( const char*, std::string&amp;) </p>
 
-<p>Reimplemented from <a class="el" href="class__Wolframe_1_1langbind_1_1FilterBase.html#ad24c9c50f176b71c57e4cced7fcad381">_Wolframe::langbind::FilterBase</a>.</p>
+<p>Reimplemented from <a class="el" href="class__Wolframe_1_1langbind_1_1FilterBase.html#a2c4628ccc536fb6b90a804bb0d8110ff">_Wolframe::langbind::FilterBase</a>.</p>
+
+<p>Reimplemented in <a class="el" href="class__Wolframe_1_1langbind_1_1BufferingInputFilter.html#aab6ffc5e09131088af8a388ad469bd01">_Wolframe::langbind::BufferingInputFilter</a>.</p>
 
 </div>
 </div>
@@ -713,7 +715,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 13 2014 11:05:27 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 19 2014 16:38:01 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

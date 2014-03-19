@@ -90,8 +90,7 @@
 <div class="title">customDatatypeModuleMacros.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="customDataTypeBuilder_8hpp_source.html">module/customDataTypeBuilder.hpp</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="logger-v1_8hpp_source.html">logger-v1.hpp</a>&quot;</code><br/>
+<div class="textblock"><code>#include &quot;<a class="el" href="customDataTypeBuilder_8hpp_source.html">appdevel/module/customDataTypeBuilder.hpp</a>&quot;</code><br/>
 </div>
 <p><a href="customDatatypeModuleMacros_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -154,14 +153,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="class__Wolframe_1_1log_1_1LogBackend.html">_Wolframe::log::LogBackend</a>* <a class="code" href="logger-v1_8hpp.html#a82370806f69675b97ff088bb999c7ff8">logBackendPtr</a>;\</div>
-<div class="line">        \</div>
-<div class="line">        static <span class="keywordtype">void</span> _Wolframe__setModuleLogger( <span class="keywordtype">void</span>* logger )\</div>
-<div class="line">        {<a class="code" href="logger-v1_8hpp.html#a82370806f69675b97ff088bb999c7ff8">\</a></div>
-<div class="line"><a class="code" href="logger-v1_8hpp.html#a82370806f69675b97ff088bb999c7ff8">		logBackendPtr</a> = <span class="keyword">reinterpret_cast&lt;</span> <a class="code" href="class__Wolframe_1_1log_1_1LogBackend.html">_Wolframe::log::LogBackend</a>*<span class="keyword">&gt;</span>( logger);\</div>
-<div class="line">        }\</div>
-<div class="line">        \</div>
-<div class="line">        static <span class="keyword">const</span> <span class="keywordtype">char</span>* _Wolframe__moduleName()\</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* _Wolframe__moduleName()\</div>
 <div class="line">        {\</div>
 <div class="line">                return NAME;\</div>
 <div class="line">        }\</div>
@@ -171,9 +163,7 @@ Macros</h2></td></tr>
 <div class="line">        }\</div>
 <div class="line">        static <a class="code" href="struct__Wolframe_1_1module_1_1CustomDataTypeDef.html">_Wolframe::module::CustomDataTypeDef</a> _Wolframe__customDataTypes[] =\</div>
 <div class="line">        {</div>
-<div class="ttc" id="class__Wolframe_1_1log_1_1LogBackend_html"><div class="ttname"><a href="class__Wolframe_1_1log_1_1LogBackend.html">_Wolframe::log::LogBackend</a></div><div class="ttdef"><b>Definition:</b> logBackend.hpp:50</div></div>
 <div class="ttc" id="struct__Wolframe_1_1module_1_1CustomDataTypeDef_html"><div class="ttname"><a href="struct__Wolframe_1_1module_1_1CustomDataTypeDef.html">_Wolframe::module::CustomDataTypeDef</a></div><div class="ttdef"><b>Definition:</b> customDataTypeBuilder.hpp:102</div></div>
-<div class="ttc" id="logger-v1_8hpp_html_a82370806f69675b97ff088bb999c7ff8"><div class="ttname"><a href="logger-v1_8hpp.html#a82370806f69675b97ff088bb999c7ff8">logBackendPtr</a></div><div class="ttdeci">_Wolframe::log::LogBackend * logBackendPtr</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -202,9 +192,11 @@ Macros</h2></td></tr>
 <div class="line">        {\</div>
 <div class="line">                ModuleImpl::constructor\</div>
 <div class="line">        };\</div>
-<div class="line">        _Wolframe::module::ModuleEntryPoint <a class="code" href="namespace__Wolframe_1_1module.html#aa8038dca6c1d20d7f1fbe76040a620ce">entryPoint</a>( 0, _Wolframe__moduleDescription(), _Wolframe__setModuleLogger, 0, 0, NofObjects, _Wolframe__objdef);</div>
+<div class="line">        extern <span class="stringliteral">&quot;C&quot;</span> { \</div>
+<div class="line">                _Wolframe::module::ModuleEntryPoint <a class="code" href="namespace__Wolframe_1_1module.html#aa8038dca6c1d20d7f1fbe76040a620ce">entryPoint</a>( 0, _Wolframe__moduleDescription(), 0, 0, NofObjects, _Wolframe__objdef); \</div>
+<div class="line">        }</div>
 <div class="ttc" id="class__Wolframe_1_1module_1_1CustomDataTypeBuilder_html"><div class="ttname"><a href="class__Wolframe_1_1module_1_1CustomDataTypeBuilder.html">_Wolframe::module::CustomDataTypeBuilder</a></div><div class="ttdef"><b>Definition:</b> customDataTypeBuilder.hpp:108</div></div>
-<div class="ttc" id="namespace__Wolframe_1_1module_html_aa8038dca6c1d20d7f1fbe76040a620ce"><div class="ttname"><a href="namespace__Wolframe_1_1module.html#aa8038dca6c1d20d7f1fbe76040a620ce">_Wolframe::module::entryPoint</a></div><div class="ttdeci">ModuleEntryPoint entryPoint</div><div class="ttdef"><b>Definition:</b> moduleInterface.hpp:178</div></div>
+<div class="ttc" id="namespace__Wolframe_1_1module_html_aa8038dca6c1d20d7f1fbe76040a620ce"><div class="ttname"><a href="namespace__Wolframe_1_1module.html#aa8038dca6c1d20d7f1fbe76040a620ce">_Wolframe::module::entryPoint</a></div><div class="ttdeci">ModuleEntryPoint entryPoint</div><div class="ttdef"><b>Definition:</b> moduleInterface.hpp:174</div></div>
 <div class="ttc" id="class__Wolframe_1_1module_1_1SimpleBuilder_html"><div class="ttname"><a href="class__Wolframe_1_1module_1_1SimpleBuilder.html">_Wolframe::module::SimpleBuilder</a></div><div class="ttdef"><b>Definition:</b> moduleInterface.hpp:51</div></div>
 <div class="ttc" id="namespace__Wolframe_1_1module_html_af33df23d17fb7d53cc4cd8d2dd128948"><div class="ttname"><a href="namespace__Wolframe_1_1module.html#af33df23d17fb7d53cc4cd8d2dd128948">_Wolframe::module::createBuilderFunc</a></div><div class="ttdeci">SimpleBuilder *(* createBuilderFunc)()</div><div class="ttdef"><b>Definition:</b> moduleInterface.hpp:142</div></div>
 </div><!-- fragment -->
@@ -214,7 +206,7 @@ Macros</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 13 2014 11:05:19 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 19 2014 16:37:52 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
