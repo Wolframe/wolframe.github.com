@@ -50,16 +50,20 @@ Regenerate documentation from Docbook and Doxygen for the webpage
 
 cd $WOLFRAME_WOLFRAME_HOME/docs
 
-make clean all doc-doxygen-webpage doc-html-webpage doc-html-webpage-chunked doc-pdf
+make clean doc-doxygen-webpage doc-pdf doc-html-webpage doc-html-webpage-chunked
 rsync --delete-after -av doxygen/html-webpage/ $WOLFRAME_GITHUB_COM_HOME/documentation/doxygen/
 rsync --exclude images -av html-webpage-chunked/ $WOLFRAME_GITHUB_COM_HOME/documentation/html-chunked/
 rsync --exclude images -av html-tutorial-webpage-chunked/ $WOLFRAME_GITHUB_COM_HOME/documentation/tutorial-html-chunked/
+rsync --exclude images -av html-installation-webpage-chunked/ $WOLFRAME_GITHUB_COM_HOME/documentation/installation-html-chunked/
+rm $WOLFRAME_GITHUB_COM_HOME/documentation/installation-html-chunked/DUMMY
 rsync --delete-after -av images/Tutorial/ $WOLFRAME_GITHUB_COM_HOME/documentation/tutorial-html-chunked/images/Tutorial/
 rsync --delete-after -av images/clients/ $WOLFRAME_GITHUB_COM_HOME/documentation/html-chunked/images/clients/
 cp WolfBook.pdf $WOLFRAME_GITHUB_COM_HOME/documentation/.
 cp html-webpage/index.html $WOLFRAME_GITHUB_COM_HOME/documentation/WolfBook.html
 cp Tutorial.pdf $WOLFRAME_GITHUB_COM_HOME/documentation/.
 cp html-tutorial-webpage/index.html $WOLFRAME_GITHUB_COM_HOME/documentation/Tutorial.html
+cp Installation.pdf $WOLFRAME_GITHUB_COM_HOME/documentation/.
+cp html-installation-webpage/index.html $WOLFRAME_GITHUB_COM_HOME/documentation/Installation.html
 
 Notes
 -----

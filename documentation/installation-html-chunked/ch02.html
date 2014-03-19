@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Chapter 2. Installation via binary packages</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe Installation" /><link rel="up" href="index.html" title="Wolframe Installation" /><link rel="prev" href="ch01s03.html" title="1.3. Building on Windows systems" /><link rel="next" href="ch02s02.html" title="2.2. Other Unix systems" />
+	<title xmlns="">Project Wolframe</title>
+	<meta xmlns="" charset="utf-8" />
+	<meta xmlns="" name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link xmlns="" rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+
+	<link xmlns="" href="/layout/styles/main.css" rel="stylesheet" type="text/css" media="all" />
+	<link xmlns="" href="/layout/styles/mediaqueries.css" rel="stylesheet" type="text/css" media="all" />
+
+	<!--[if lt IE 9]>
+		<link href="/layout/styles/ie/ie8.css" rel="stylesheet" type="text/css" media="all" />
+		<script src="/layout/scripts/ie/css3-mediaqueries.min.js"></script>
+		<script src="/layout/scripts/ie/html5shiv.min.js"></script>
+	<![endif]-->
+
+
+</head><body>
+
+
+<div xmlns="" class="wrapper row1">
+	<header id="header" class="full_width clear">
+		<div id="header-logo">
+			<h1><a href="/index.html">Project Wolframe</a></h1>
+			<h2>The Straight Path to Successful Projects</h2>
+		</div>
+		<div id="header-search">
+			<form id="cse-search-box" action="http://www.wolframe.net/gsearch.html">
+				<input type="hidden" name="cx" value="007231504736047898702:wrnjvfljzvu" />
+				<input type="hidden" name="ie" value="UTF-8" />
+				<input type="text" name="q" size="31" />
+<!--				<input type="submit" name="sa" value="&#xf002;" /> -->
+				<input type="submit" name="sa" class="search-bttn" value="" />
+			</form>
+		</div>
+	</header>
+</div>
+
+<!-- ################################################################################################ -->
+<div xmlns="" class="wrapper row2">
+	<nav id="topnav">
+		<ul class="clear">
+<!-- BEGIN MENU -->
+			<li><a href="/index.html" title="Home">Home</a></li>
+			<li><a href="/downloads.html" title="Downloads">Downloads</a></li>
+			<li class="active"><a href="/documentation.html" title="Documentation">Documentation</a></li>
+			<li><a class="drop" href="/support.html" title="Support">Support</a>
+				<ul>
+					<li><a href="/faqs.html" title="FAQ">FAQ</a></li>
+					<li><a href="http://sourceforge.net/p/wolframe/mailman/" title="Mailing lists">Mailing lists</a></li>
+				</ul>
+			</li>
+			<li class="last-child"><a href="/contact.html" title="Contact Us">Contact Us</a></li>
+<!-- END MENU -->
+		</ul>
+	</nav>
+</div>
+
+<!-- ################################################################################################ -->
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 2. Installation via binary packages</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch01s03.html">Prev</a> </td><th width="60%" align="center"> </th><td width="20%" align="right"> <a accesskey="n" href="ch02s02.html">Next</a></td></tr></table><hr /></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="idp1389143108"></a>Chapter 2. Installation via binary packages</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="ch02.html#idp1389131524">2.1. Linux distributions</a></span></dt><dd><dl><dt><span class="sect2"><a href="ch02.html#idp1389176228">2.1.1. RedHat, Fedora, CentOS, Scientific Linux and similar Linux distributions</a></span></dt><dd><dl><dt><span class="sect3"><a href="ch02.html#idp1389176628">Available packages</a></span></dt><dt><span class="sect3"><a href="ch02.html#idp1389184628">Prerequisites</a></span></dt><dt><span class="sect3"><a href="ch02.html#idp1389185204">Install binary packages manually</a></span></dt><dt><span class="sect3"><a href="ch02.html#idp1389185868">Install from repository</a></span></dt></dl></dd><dt><span class="sect2"><a href="ch02.html#idp1389191052">2.1.2. Debian, Ubuntu and similar Linux distributions</a></span></dt><dt><span class="sect2"><a href="ch02.html#idp1389198012">2.1.3. openSUSE, SLES and similar Linux distributions</a></span></dt><dt><span class="sect2"><a href="ch02.html#idp1389207300">2.1.4. ArchLinux</a></span></dt><dt><span class="sect2"><a href="ch02.html#idp1389212772">2.1.5. Slackware</a></span></dt></dl></dd><dt><span class="sect1"><a href="ch02s02.html">2.2. Other Unix systems</a></span></dt><dd><dl><dt><span class="sect2"><a href="ch02s02.html#idp1389216068">2.2.1. FreeBSD</a></span></dt><dt><span class="sect2"><a href="ch02s02.html#idp1389220652">2.2.2. NetBSD</a></span></dt></dl></dd></dl></div><p>
+		This section describes how to install the <span class="application">Wolframe</span> application via
+		packages on various operating systems.
+	</p><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1389131524"></a>2.1. Linux distributions</h2></div></div></div><p>
+			Linux distributions are currently built on the <acronym class="acronym">Open Build Server</acronym>
+			(<a class="ulink" href="http://openbuildservice.org" target="_top">http://openbuildservice.org</a>) and
+			on a bunch of virtual machines.
+		</p><p>
+			The resulting packages and the repository metadata is hosted on Sourceforge
+			(<a class="ulink" href="http://sourceforge.net" target="_top">http://sourceforge.net</a>).
+		</p><p>
+			The packages are always build with the default system compiler, which
+			is currently GNU gcc.
+		</p><p>
+			Packages for proprietary software (like the Oracle database module) have
+			to be built manually, they can not be distributed as binary packages due
+			to license problems.
+		</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1389176228"></a>2.1.1. RedHat, Fedora, CentOS, Scientific Linux and similar Linux distributions</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1389176628"></a>Available packages</h4></div></div></div><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
+							wolframe-0.0.1.rpm: contains the <span class="application">Wolframe</span>
+							core server with minimal 3rd party software requirements
+						</p></li><li class="listitem"><p>
+							wolframe-sqlite3-0.0.1.rpm: the database module for Sqlite3 databases
+						</p></li><li class="listitem"><p>
+							wolframe-postgresql-0.0.1.rpm: the database module for PostgreSQL databases
+						</p></li><li class="listitem"><p>
+							wolframe-libxml2-0.0.1.rpm: filtering module for XML and XSLT (using libxml2/libxslt)
+						</p></li><li class="listitem"><p>
+							wolframe-textwolf-0.0.1.rpm: filtering module for XML (using textwolf)
+						</p></li><li class="listitem"><p>
+							wolframe-cjson-0.0.1.rpm: filtering module for JSON (using cJSON)
+						</p></li><li class="listitem"><p>
+							wolframe-pam-0.0.1.rpm: authentication module for PAM
+						</p></li><li class="listitem"><p>
+							wolframe-sasl-0.0.1.rpm: authentication module for SASL
+						</p></li><li class="listitem"><p>
+							wolframe-python-0.0.1.rpm: language bindings for Python
+						</p></li><li class="listitem"><p>
+							wolframe-lua-0.0.1.rpm: language bindings for Lua
+						</p></li><li class="listitem"><p>
+							wolframe-libhpdf-0.0.1.rpm: printing module using libhpdf
+						</p></li><li class="listitem"><p>
+							wolframe-freeimage-0.0.1.rpm: image manipuation module using FreeImage
+						</p></li><li class="listitem"><p>
+							wolframe-libclient-0.0.1.rpm: C/C++ client library
+						</p></li><li class="listitem"><p>
+							wolframe-client-0.0.1.rpm: command line tool
+						</p></li><li class="listitem"><p>
+							wolfclient-0.0.3.rpm: Wolframe graphical frontend
+						</p></li></ul></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1389184628"></a>Prerequisites</h4></div></div></div><p>
+					
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1389185204"></a>Install binary packages manually</h4></div></div></div><p>
+					Installing the packages via repositories is usually the prefered way.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1389185868"></a>Install from repository</h4></div></div></div><p>
+				First install the repository file for the corresponding distribution
+				(as example we choose Centos 6):
+				</p><pre class="programlisting">
+	cd /etc/yum.repos.d
+	wget http://sourceforge.net/projects/wolframe/files/repositories/CentOS_CentOS-6/wolframe.repo
+				</pre><p>
+			</p><p>
+				You can list all available Wolframe packages with:
+				</p><pre class="programlisting">
+	yum search wolframe
+				</pre><p>
+			</p><p>
+				You install the main Wolframe package with:
+				</p><pre class="programlisting">
+	yum install wolframe
+				</pre><p>
+			</p><p>
+				You have to accept the signing key:
+				</p><pre class="programlisting">
+	Retrieving key from http://sourceforge.net/projects/wolframe/files/repositories/CentOS_CentOS-6/repodata/repomd.xml.key
+	Importing GPG key 0x9D404026:
+	Userid: "home:wolframe_user OBS Project &lt;home:wolframe_user@build.opensuse.org&gt;"
+	From  : http://sourceforge.net/projects/wolframe/files/repositories/CentOS_CentOS-6/repodata/repomd.xml.key
+	Is this ok [y/N]: y
+				</pre><p>
+			</p><p>
+				You can start the service with:
+				</p><pre class="programlisting">
+	service wolframed start
+				</pre><p>
+				
+				respectively
+
+				</p><pre class="programlisting">
+	systemctl start wolframed
+				</pre><p>
+				
+				on newer Fedora systems.
+			</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1389191052"></a>2.1.2. Debian, Ubuntu and similar Linux distributions</h3></div></div></div><p>
+				Add a new repository file <code class="filename">/etc/apt/sources.list.d/wolframe.list</code>
+				which contains:
+				</p><pre class="programlisting">
+	deb http://sourceforge.net/projects/wolframe/files/repositories/xUbuntu_13.10/ /
+				</pre><p>
+				(as example we choose Ubuntu 13.10).
+			</p><p>
+				Download the signing key:
+				</p><pre class="programlisting">
+	wget http://sourceforge.net/projects/wolframe/files/repositories/xUbuntu_13.10/Release.key
+				</pre><p>
+			</p><p>
+				Verify that the key then add it with:
+				</p><pre class="programlisting">
+	apt-key add - &lt; Release.key
+				</pre><p>
+			</p><p>
+				Update the repository with:
+				</p><pre class="programlisting">
+	apt-get update
+				</pre><p>
+			</p><p>
+				You can list all available Wolframe packages with:
+				</p><pre class="programlisting">
+	apt-cache search wolframe
+				</pre><p>
+			</p><p>
+				You install the main Wolframe package with:
+				</p><pre class="programlisting">
+	apt-get install wolframe
+				</pre><p>
+			</p><p>
+				To start the Wolframe service you have to
+				edit the file <code class="filename">/etc/default/wolframe</code>
+				and enable the wolframe daemon there:
+				</p><pre class="programlisting">
+	RUN=yes
+				</pre><p>
+		
+				You can start the service now with:
+				</p><pre class="programlisting">
+	service wolframed start
+				</pre><p>
+			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1389198012"></a>2.1.3. openSUSE, SLES and similar Linux distributions</h3></div></div></div><p>
+				First we add the Wolframe repository for the corresponding distribution
+				(as example we choose OpenSUSE 13.1):
+				</p><pre class="programlisting">
+	zypper addrepo http://sourceforge.net/projects/wolframe/files/repositories/openSUSE_13.1/wolframe.repo
+				</pre><p>
+			</p><p>
+				You may get the following error:
+				</p><pre class="programlisting">
+	/var/adm/mount/AP_0xmiyYP3/projects/wolframe/files/repositories/openSUSE_13.1/wolframe.repo: Line 1 is missing '=' sign
+	Is it a .repo file? See http://en.opensuse.org/Standards/RepoInfo for details.
+				</pre><p>
+				
+				Try to download the repo file by hand and install it by hand:
+				</p><pre class="programlisting">
+	wget http://sourceforge.net/projects/wolframe/files/repositories/openSUSE_13.1/wolframe.repo
+	zypper addrepo wolframe.repo
+				</pre><p>
+			</p><p>
+				Now refresh your repositories with:
+				</p><pre class="programlisting">
+	zypper refresh
+				</pre><p>
+			</p><p>
+				If you get the following message
+				</p><pre class="programlisting">
+	File 'repomd.xml' from repository 'Wolframe Project (openSUSE_13.1)' is unsigned, continue? [yes/no] (no): yes
+				</pre><p>
+				
+				the signing key could not be downloaded from SourceForge.
+				Accept it in this case anyway.				
+			</p><p>
+				If you get the following message
+				</p><pre class="programlisting">
+	File './repodata/ea7cb8d9a0caa2c3d8977919be124accdf55c6b8952ddee72f1b48f4decb0644-primary.xml.gz' not found on medium 'http://sourceforge.net/projects/wolframe/files/repositories/openSUSE_13.1/'
+
+	Abort, retry, ignore? [a/r/i/? shows all options] (a): u^H
+	Invalid answer ''. [a/r/i/? shows all options] (a): ?
+
+	a - Skip retrieval of the file and abort current operation.
+	r - Try to retrieve the file again.
+	i - Skip retrieval of the file and try to continue with the operation without the file.
+	u - Change current base URI and try retrieving the file again.
+
+	[a/r/i/? shows all options] (a): u				
+				</pre><p>
+				
+				the Sourceforge redirect didn't work and you have to
+				force the baseURL to be a SourceForge mirror like:
+
+				</p><pre class="programlisting">
+	New URI: http://freefr.dl.sourceforge.net/project/wolframe/repositories/openSUSE_13.1/
+				</pre><p>
+			</p><p>
+				You can list all available Wolframe packages with:
+				</p><pre class="programlisting">
+	zypper se wolframe
+	zypper se wolfclient
+				</pre><p>
+			</p><p>
+				You install the main Wolframe package with:
+				</p><pre class="programlisting">
+	zypper install wolframe
+				</pre><p>
+			</p><p>
+				You can start the service with:
+				</p><pre class="programlisting">
+	service wolframed start
+				</pre><p>
+				
+				respectively
+
+				</p><pre class="programlisting">
+	systemctl start wolframed
+				</pre><p>
+				
+				on newer openSUSE systems.
+			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1389207300"></a>2.1.4. ArchLinux</h3></div></div></div><p>
+				First add the following section to <code class="filename">/etc/pacman.conf</code>:
+				</p><pre class="programlisting">
+	[wolframe]
+	SigLevel = Optional DatabaseRequired
+	Server = http://sourceforge.net/projects/wolframe/files/repositories/Arch_Extra/$arch
+				</pre><p>
+			</p><p>
+				Fetch and verify the sigining key, import and locally sign the key:
+				</p><pre class="programlisting">
+	wget http://download.opensuse.org/repositories/home:/wolframe_user/xUbuntu_13.10/Release.key
+	pacman-key --add Release.key
+	pacman-key --lsign 9D404026
+				</pre><p>
+				
+				Alternatively you can also disable the verification of the signature
+				of the database by removing 'DatabaseRequired' from the 'SigLevel'
+				option.
+			</p><p>
+				Update the repository data with:
+				</p><pre class="programlisting">
+	pacman -Syy
+				</pre><p>
+			</p><p>
+				You can list all available Wolframe packages with:
+				</p><pre class="programlisting">
+	pacman -Sl wolframe
+				</pre><p>
+			</p><p>
+				You install the main Wolframe package with:
+				</p><pre class="programlisting">
+	pacman -S wolframe
+				</pre><p>
+			</p><p>
+				You can start the service with:
+
+				</p><pre class="programlisting">
+	systemctl start wolframed
+				</pre><p>
+			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1389212772"></a>2.1.5. Slackware</h3></div></div></div><p>
+				Download the package file (we choose 64-bit Slackware 14 for example):
+				</p><pre class="programlisting">
+	wget http://sourceforge.net/projects/wolframe/files/wolframe-binaries/0.0.1/Slackware-14/x86_64/wolframe-0.0.1-x86_64.tgz
+				</pre><p>
+			</p><p>
+				You install the Wolframe package with:
+				</p><pre class="programlisting">
+	installpkg wolframe-0.0.1-x86_64.tgz 
+				</pre><p>
+			
+				The Slackware packages contain the whole server and the whole client respectively.
+			</p><p>
+				You can start the service with:
+
+				</p><pre class="programlisting">
+	/etc/rc.d/rc.wolframed start
+				</pre><p>
+			</p></div></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch01s03.html">Prev</a> </td><td width="20%" align="center"> </td><td width="40%" align="right"> <a accesskey="n" href="ch02s02.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">1.3. Building on Windows systems </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 2.2. Other Unix systems</td></tr></table></div></div></div>
+
+<!-- Footer -->
+<div xmlns="" class="wrapper row2">
+	<div id="footer" class="clear">
+		<div class="one_third first">
+			<h2 class="footer_title">Documentation</h2>
+			<nav class="footer_nav">
+				<ul class="nospace">
+					<li><a href="/documentation.html">User documentation</a></li>
+					<li><a href="/documentation.html">Developer documentation</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="one_third">
+			<h2 class="footer_title">Downloads</h2>
+			<nav class="footer_nav">
+				<ul class="nospace">
+					<li><a href="/downloads.html">Hosted on Github</a></li>
+					<li><a href="/downloads.html">Packages on Sourceforge</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="one_third">
+			<h2 class="footer_title">Contact Us</h2>
+			<nav class="footer_nav">
+				<ul class="nospace">
+					<li><strong>Email:</strong> <a href="/mailto:contact@wolframe.net">contact@wolframe.net</a></li>
+					<li>
+						<a id="googleplus-bttn" href="http://plus.google.com/116915890857205562872?prsrc=3" rel="publisher" target="_top" style="text-decoration:none;">
+							<span>Google+</span></a>
+						<a id="linkedin-bttn" href="#" target="_top" style="text-decoration:none;">
+							<span>LinkedIn</span></a>
+						<a id="twitter-bttn" href="http://twitter.com/ProjectWolframe" target="_top" style="text-decoration:none;">
+							<span>twitter</span></a>
+						<a id="rss-bttn" href="#" target="_top" style="text-decoration:none;">
+							<span>rss</span></a>
+					</li>
+					<li>
+						<a href="https://twitter.com/ProjectWolframe" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @ProjectWolframe</a>
+						<div class="google-follow-button"><div class="g-follow" data-annotation="none" data-height="20" data-href="http://plus.google.com/116915890857205562872" data-rel="publisher"></div></div>
+						<div class="google-plusone-button"><div class="g-plusone" data-href="http://www.wolframe.net" data-size="medium"></div></div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+
+<div xmlns="" class="wrapper row4">
+	<div id="copyright" class="clear">
+		<p class="fl_left">Copyright © 2014 - <a href="#">Project Wolframe</a> - All Rights Reserved</p>
+		<p class="fl_right"><a href="/copyright.html">Copyrights and credits</a></p>
+	</div>
+</div>
+
+<!-- Scripts -->
+<script xmlns="" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script xmlns="" src="http://code.jquery.com/ui/1.10.1/jquery-ui.min.js"></script>
+<script xmlns="">window.jQuery || document.write('\x3Cscript src="/layout/scripts/jquery-latest.min.js"&gt;\x3C\/script&gt;\
+\x3Cscript src="/layout/scripts/jquery-ui.min.js"&gt;\x3C\/script&gt;')</script>
+<script xmlns="">jQuery(document).ready(function($){ $('img').removeAttr('width height'); });</script>
+<script xmlns="" src="/layout/scripts/jquery-mobilemenu.min.js"></script>
+<script xmlns="" src="/layout/scripts/custom.js"></script>
+
+<!-- Google analytics tracking -->
+<script xmlns="" type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-46433226-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Tweeter follow script -->
+<script xmlns="">
+	!function( d, s, id )	{
+		var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location)?'http':'https';
+		if( !d.getElementById( id ))	{
+			js = d.createElement( s );
+			js.id = id;
+			js.src = p + '://platform.twitter.com/widgets.js';
+			fjs.parentNode.insertBefore( js,fjs );
+		}
+	} ( document, 'script', 'twitter-wjs' );
+</script>
+
+<!-- Google +1, follow -->
+<script xmlns="" type="text/javascript">
+	window.___gcfg = {
+		lang: 'en-US',
+		parsetags: 'onload'
+	};
+	( function()	{
+		var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		po.src = 'https://apis.google.com/js/plusone.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	}) ();
+</script>
+
+</body></html>

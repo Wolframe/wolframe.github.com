@@ -1,0 +1,1154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Wolframe Installation</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="#book_GettingStarted" title="Wolframe Installation" /><link rel="next" href="#idp1394068404" title="Foreword" />
+	<title xmlns="">Project Wolframe</title>
+	<meta xmlns="" charset="utf-8" />
+	<meta xmlns="" name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link xmlns="" rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+
+	<link xmlns="" href="/layout/styles/main.css" rel="stylesheet" type="text/css" media="all" />
+	<link xmlns="" href="/layout/styles/mediaqueries.css" rel="stylesheet" type="text/css" media="all" />
+
+	<!--[if lt IE 9]>
+		<link href="/layout/styles/ie/ie8.css" rel="stylesheet" type="text/css" media="all" />
+		<script src="/layout/scripts/ie/css3-mediaqueries.min.js"></script>
+		<script src="/layout/scripts/ie/html5shiv.min.js"></script>
+	<![endif]-->
+
+
+</head><body>
+
+
+<div xmlns="" class="wrapper row1">
+	<header id="header" class="full_width clear">
+		<div id="header-logo">
+			<h1><a href="/index.html">Project Wolframe</a></h1>
+			<h2>The Straight Path to Successful Projects</h2>
+		</div>
+		<div id="header-search">
+			<form id="cse-search-box" action="http://www.wolframe.net/gsearch.html">
+				<input type="hidden" name="cx" value="007231504736047898702:wrnjvfljzvu" />
+				<input type="hidden" name="ie" value="UTF-8" />
+				<input type="text" name="q" size="31" />
+<!--				<input type="submit" name="sa" value="&#xf002;" /> -->
+				<input type="submit" name="sa" class="search-bttn" value="" />
+			</form>
+		</div>
+	</header>
+</div>
+
+<!-- ################################################################################################ -->
+<div xmlns="" class="wrapper row2">
+	<nav id="topnav">
+		<ul class="clear">
+<!-- BEGIN MENU -->
+			<li><a href="/index.html" title="Home">Home</a></li>
+			<li><a href="/downloads.html" title="Downloads">Downloads</a></li>
+			<li class="active"><a href="/documentation.html" title="Documentation">Documentation</a></li>
+			<li><a class="drop" href="/support.html" title="Support">Support</a>
+				<ul>
+					<li><a href="/faqs.html" title="FAQ">FAQ</a></li>
+					<li><a href="http://sourceforge.net/p/wolframe/mailman/" title="Mailing lists">Mailing lists</a></li>
+				</ul>
+			</li>
+			<li class="last-child"><a href="/contact.html" title="Contact Us">Contact Us</a></li>
+<!-- END MENU -->
+		</ul>
+	</nav>
+</div>
+
+<!-- ################################################################################################ -->
+<div class="wrapper row3"><div id="container"><div xml:lang="en" class="book" lang="en"><div class="titlepage"><div><div><h1 class="title"><a id="book_GettingStarted"></a>Wolframe Installation</h1></div><div><h2 class="subtitle">Installation and Configuration Guide</h2></div><div><p class="copyright">Copyright © 2010 - 2014 Project Wolframe</p></div><div><div class="legalnotice"><a id="idp1393422436"></a><p><strong>Commercial Usage. </strong>
+	    Licensees holding valid Project Wolframe Commercial licenses may
+	    use this file in accordance with the Project Wolframe
+	    Commercial License Agreement provided with the Software or,
+	    alternatively, in accordance with the terms contained
+	    in a written agreement between the licensee and Project Wolframe.
+	</p><p><strong>GNU General Public License Usage. </strong>
+	    Alternatively, you can redistribute this file and/or modify it
+	    under the terms of the <acronym class="acronym">GNU</acronym> General Public License as published by
+	    the Free Software Foundation, either version 3 of the License, or
+	    (at your option) any later version.
+	</p><p>
+    Wolframe is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    <acronym class="acronym">GNU</acronym> General Public License for more details.
+</p><p>
+    You should have received a copy of the GNU General Public License
+    along with Wolframe.  If not, see
+    <a class="ulink" href="http://www.gnu.org/licenses/" target="_top"><em class="citetitle">http://www.gnu.org/licenses/</em></a>
+</p><p>
+    If you have questions regarding the use of this file, please contact
+    Project Wolframe.
+</p></div></div><div><p class="pubdate">March 19, 2014
+ version 0.0.1
+</p></div></div><hr /></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="preface"><a href="#idp1394068404">Foreword</a></span></dt><dt><span class="chapter"><a href="#idp1392184436">1. Installation from source</a></span></dt><dd><dl><dt><span class="sect1"><a href="#idp1391292004">1.1. Source Releases</a></span></dt><dt><span class="sect1"><a href="#idp1391109876">1.2. Building on Unix systems</a></span></dt><dd><dl><dt><span class="sect2"><a href="#idp1391165908">1.2.1. GCC compiler</a></span></dt><dt><span class="sect2"><a href="#idp1391169028">1.2.2. clang compiler</a></span></dt><dt><span class="sect2"><a href="#idp1391170524">1.2.3. Intel compiler</a></span></dt><dt><span class="sect2"><a href="#idp1391173364">1.2.4. Boost</a></span></dt><dd><dl><dt><span class="sect3"><a href="#idp1391174676">Build your own version of Boost</a></span></dt><dt><span class="sect3"><a href="#idp1394506412">RedHat, Fedora, CentOS, Scientific Linux and similar Linux distributions</a></span></dt><dd><dl><dt><span class="sect4"><a href="#idp1394506812">RedHat/Centos/Scientific Linux 5 and similar Linux distributions</a></span></dt><dt><span class="sect4"><a href="#idp1394507572">RedHat 6</a></span></dt><dt><span class="sect4"><a href="#idp1394509180">Centos/Scientific Linux 6 and similar Linux distributions</a></span></dt><dt><span class="sect4"><a href="#idp1394509932">Fedora and similar Linux distributions</a></span></dt></dl></dd><dt><span class="sect3"><a href="#idp1394510628">Debian, Ubuntu and similar Linux distributions</a></span></dt><dd><dl><dt><span class="sect4"><a href="#idp1394511004">Debian 6</a></span></dt><dt><span class="sect4"><a href="#idp1394511692">Debian 7</a></span></dt><dt><span class="sect4"><a href="#idp1394512484">Ubuntu 10.04.1 LTS, Ubuntu 12.04</a></span></dt><dt><span class="sect4"><a href="#idp1394513172">Ubuntu 12.10</a></span></dt><dt><span class="sect4"><a href="#idp1394513964">Ubuntu 13.04</a></span></dt><dt><span class="sect4"><a href="#idp1394514660">Ubuntu 13.10</a></span></dt></dl></dd><dt><span class="sect3"><a href="#idp1394515516">openSUSE, SLES and similar Linux distributions</a></span></dt><dd><dl><dt><span class="sect4"><a href="#idp1394515892">OpenSuSE 12.3, 13.1</a></span></dt><dt><span class="sect4"><a href="#idp1394516524">SLES 11 SP1, SP2 and SP3</a></span></dt></dl></dd><dt><span class="sect3"><a href="#idp1394517276">ArchLinux</a></span></dt><dt><span class="sect3"><a href="#idp1394517916">Slackware</a></span></dt></dl></dd><dt><span class="sect2"><a href="#idp1394518788">1.2.5. Secure Socket Layer (SSL)</a></span></dt><dd><dl><dt><span class="sect3"><a href="#idp1394521580">RedHat, Fedora, CentOS, Scientific Linux and similar Linux distributions</a></span></dt><dt><span class="sect3"><a href="#idp1394522292">Debian, Ubuntu and similar Linux distributions</a></span></dt><dt><span class="sect3"><a href="#idp1394522980">openSUSE, SLES and similar Linux distributions</a></span></dt><dt><span class="sect3"><a href="#idp1394523668">ArchLinux</a></span></dt><dt><span class="sect3"><a href="#idp1394524292">Slackware</a></span></dt></dl></dd><dt><span class="sect2"><a href="#idp1394525164">1.2.6. SQLite database support</a></span></dt><dd><dl><dt><span class="sect3"><a href="#idp1394530004">RedHat/Centos/Scientific Linux 5 and similar Linux distributions</a></span></dt><dt><span class="sect3"><a href="#idp1394530780">RedHat/Centos/Scientific Linux 6, Fedora and similar Linux distributions</a></span></dt><dt><span class="sect3"><a href="#idp1394531492">Debian, Ubuntu and similar Linux distributions</a></span></dt><dt><span class="sect3"><a href="#idp1394532476">openSUSE, SLES and similar Linux distributions</a></span></dt><dt><span class="sect3"><a href="#idp1394533460">ArchLinux</a></span></dt><dt><span class="sect3"><a href="#idp1394534084">Slackware</a></span></dt></dl></dd><dt><span class="sect2"><a href="#idp1394534956">1.2.7. PostgreSQL database support</a></span></dt><dd><dl><dt><span class="sect3"><a href="#idp1394538628">RedHat, Fedora, CentOS, Scientific Linux and similar Linux distributions</a></span></dt><dt><span class="sect3"><a href="#idp1394541324">Debian, Ubuntu and similar Linux distributions</a></span></dt><dt><span class="sect3"><a href="#idp1394542316">openSUSE, SLES and similar Linux distributions</a></span></dt><dt><span class="sect3"><a href="#idp1394543004">ArchLinux</a></span></dt><dt><span class="sect3"><a href="#idp1394543636">Slackware</a></span></dt></dl></dd><dt><span class="sect2"><a href="#idp1394547220">1.2.8. Oracle database support</a></span></dt><dd><dl><dt><span class="sect3"><a href="#idp1394552612">RedHat, Fedora, CentOS, Scientific Linux and similar Linux distributions</a></span></dt><dt><span class="sect3"><a href="#idp1394555324">Debian, Ubuntu and similar Linux distributions</a></span></dt><dt><span class="sect3"><a href="#idp1394558268">openSUSE, SLES and similar Linux distributions</a></span></dt><dt><span class="sect3"><a href="#idp1394560956">ArchLinux</a></span></dt><dt><span class="sect3"><a href="#idp1394562988">Slackware</a></span></dt></dl></dd><dt><span class="sect2"><a href="#idp1394566324">1.2.9. XML filtering support with libxml2 and libxslt</a></span></dt><dd><dl><dt><span class="sect3"><a href="#idp1394570620">RedHat/Centos/Scientific Linux 5 and similar Linux distributions</a></span></dt><dt><span class="sect3"><a href="#idp1394571876">RedHat/Centos/Scientific Linux 6, Fedora and similar Linux distributions</a></span></dt><dt><span class="sect3"><a href="#idp1394572612">Debian, Ubuntu and similar Linux distributions</a></span></dt><dt><span class="sect3"><a href="#idp1394573316">openSUSE, SLES and similar Linux distributions</a></span></dt><dt><span class="sect3"><a href="#idp1394574028">ArchLinux</a></span></dt><dt><span class="sect3"><a href="#idp1394574668">Slackware</a></span></dt></dl></dd><dt><span class="sect2"><a href="#idp1394575564">1.2.10. XML filtering support with Textwolf</a></span></dt><dt><span class="sect2"><a href="#idp1394579244">1.2.11. JSON filtering support with cJSON</a></span></dt><dt><span class="sect2"><a href="#idp1394582188">1.2.12. Installation</a></span></dt></dl></dd><dt><span class="sect1"><a href="#idp1394586756">1.3. Building on Windows systems</a></span></dt></dl></dd><dt><span class="chapter"><a href="#idp1394668948">2. Installation via binary packages</a></span></dt><dd><dl><dt><span class="sect1"><a href="#idp1394657380">2.1. Linux distributions</a></span></dt><dd><dl><dt><span class="sect2"><a href="#idp1394702132">2.1.1. RedHat, Fedora, CentOS, Scientific Linux and similar Linux distributions</a></span></dt><dd><dl><dt><span class="sect3"><a href="#idp1394702532">Available packages</a></span></dt><dt><span class="sect3"><a href="#idp1394710484">Prerequisites</a></span></dt><dt><span class="sect3"><a href="#idp1394711060">Install binary packages manually</a></span></dt><dt><span class="sect3"><a href="#idp1394711724">Install from repository</a></span></dt></dl></dd><dt><span class="sect2"><a href="#idp1394716908">2.1.2. Debian, Ubuntu and similar Linux distributions</a></span></dt><dt><span class="sect2"><a href="#idp1394723868">2.1.3. openSUSE, SLES and similar Linux distributions</a></span></dt><dt><span class="sect2"><a href="#idp1394733156">2.1.4. ArchLinux</a></span></dt><dt><span class="sect2"><a href="#idp1394738628">2.1.5. Slackware</a></span></dt></dl></dd><dt><span class="sect1"><a href="#idp1394741476">2.2. Other Unix systems</a></span></dt><dd><dl><dt><span class="sect2"><a href="#idp1394741924">2.2.1. FreeBSD</a></span></dt><dt><span class="sect2"><a href="#idp1394746508">2.2.2. NetBSD</a></span></dt></dl></dd></dl></dd></dl></div><div class="preface"><div class="titlepage"><div><div><h1 class="title"><a id="idp1394068404"></a>Foreword</h1></div></div></div><p>
+		This guide describes how to install and set up the
+		<span class="application">Wolframe</span> application server.
+	</p></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="idp1392184436"></a>Chapter 1. Installation from source</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="#idp1391292004">1.1. Source Releases</a></span></dt><dt><span class="sect1"><a href="#idp1391109876">1.2. Building on Unix systems</a></span></dt><dd><dl><dt><span class="sect2"><a href="#idp1391165908">1.2.1. GCC compiler</a></span></dt><dt><span class="sect2"><a href="#idp1391169028">1.2.2. clang compiler</a></span></dt><dt><span class="sect2"><a href="#idp1391170524">1.2.3. Intel compiler</a></span></dt><dt><span class="sect2"><a href="#idp1391173364">1.2.4. Boost</a></span></dt><dd><dl><dt><span class="sect3"><a href="#idp1391174676">Build your own version of Boost</a></span></dt><dt><span class="sect3"><a href="#idp1394506412">RedHat, Fedora, CentOS, Scientific Linux and similar Linux distributions</a></span></dt><dd><dl><dt><span class="sect4"><a href="#idp1394506812">RedHat/Centos/Scientific Linux 5 and similar Linux distributions</a></span></dt><dt><span class="sect4"><a href="#idp1394507572">RedHat 6</a></span></dt><dt><span class="sect4"><a href="#idp1394509180">Centos/Scientific Linux 6 and similar Linux distributions</a></span></dt><dt><span class="sect4"><a href="#idp1394509932">Fedora and similar Linux distributions</a></span></dt></dl></dd><dt><span class="sect3"><a href="#idp1394510628">Debian, Ubuntu and similar Linux distributions</a></span></dt><dd><dl><dt><span class="sect4"><a href="#idp1394511004">Debian 6</a></span></dt><dt><span class="sect4"><a href="#idp1394511692">Debian 7</a></span></dt><dt><span class="sect4"><a href="#idp1394512484">Ubuntu 10.04.1 LTS, Ubuntu 12.04</a></span></dt><dt><span class="sect4"><a href="#idp1394513172">Ubuntu 12.10</a></span></dt><dt><span class="sect4"><a href="#idp1394513964">Ubuntu 13.04</a></span></dt><dt><span class="sect4"><a href="#idp1394514660">Ubuntu 13.10</a></span></dt></dl></dd><dt><span class="sect3"><a href="#idp1394515516">openSUSE, SLES and similar Linux distributions</a></span></dt><dd><dl><dt><span class="sect4"><a href="#idp1394515892">OpenSuSE 12.3, 13.1</a></span></dt><dt><span class="sect4"><a href="#idp1394516524">SLES 11 SP1, SP2 and SP3</a></span></dt></dl></dd><dt><span class="sect3"><a href="#idp1394517276">ArchLinux</a></span></dt><dt><span class="sect3"><a href="#idp1394517916">Slackware</a></span></dt></dl></dd><dt><span class="sect2"><a href="#idp1394518788">1.2.5. Secure Socket Layer (SSL)</a></span></dt><dd><dl><dt><span class="sect3"><a href="#idp1394521580">RedHat, Fedora, CentOS, Scientific Linux and similar Linux distributions</a></span></dt><dt><span class="sect3"><a href="#idp1394522292">Debian, Ubuntu and similar Linux distributions</a></span></dt><dt><span class="sect3"><a href="#idp1394522980">openSUSE, SLES and similar Linux distributions</a></span></dt><dt><span class="sect3"><a href="#idp1394523668">ArchLinux</a></span></dt><dt><span class="sect3"><a href="#idp1394524292">Slackware</a></span></dt></dl></dd><dt><span class="sect2"><a href="#idp1394525164">1.2.6. SQLite database support</a></span></dt><dd><dl><dt><span class="sect3"><a href="#idp1394530004">RedHat/Centos/Scientific Linux 5 and similar Linux distributions</a></span></dt><dt><span class="sect3"><a href="#idp1394530780">RedHat/Centos/Scientific Linux 6, Fedora and similar Linux distributions</a></span></dt><dt><span class="sect3"><a href="#idp1394531492">Debian, Ubuntu and similar Linux distributions</a></span></dt><dt><span class="sect3"><a href="#idp1394532476">openSUSE, SLES and similar Linux distributions</a></span></dt><dt><span class="sect3"><a href="#idp1394533460">ArchLinux</a></span></dt><dt><span class="sect3"><a href="#idp1394534084">Slackware</a></span></dt></dl></dd><dt><span class="sect2"><a href="#idp1394534956">1.2.7. PostgreSQL database support</a></span></dt><dd><dl><dt><span class="sect3"><a href="#idp1394538628">RedHat, Fedora, CentOS, Scientific Linux and similar Linux distributions</a></span></dt><dt><span class="sect3"><a href="#idp1394541324">Debian, Ubuntu and similar Linux distributions</a></span></dt><dt><span class="sect3"><a href="#idp1394542316">openSUSE, SLES and similar Linux distributions</a></span></dt><dt><span class="sect3"><a href="#idp1394543004">ArchLinux</a></span></dt><dt><span class="sect3"><a href="#idp1394543636">Slackware</a></span></dt></dl></dd><dt><span class="sect2"><a href="#idp1394547220">1.2.8. Oracle database support</a></span></dt><dd><dl><dt><span class="sect3"><a href="#idp1394552612">RedHat, Fedora, CentOS, Scientific Linux and similar Linux distributions</a></span></dt><dt><span class="sect3"><a href="#idp1394555324">Debian, Ubuntu and similar Linux distributions</a></span></dt><dt><span class="sect3"><a href="#idp1394558268">openSUSE, SLES and similar Linux distributions</a></span></dt><dt><span class="sect3"><a href="#idp1394560956">ArchLinux</a></span></dt><dt><span class="sect3"><a href="#idp1394562988">Slackware</a></span></dt></dl></dd><dt><span class="sect2"><a href="#idp1394566324">1.2.9. XML filtering support with libxml2 and libxslt</a></span></dt><dd><dl><dt><span class="sect3"><a href="#idp1394570620">RedHat/Centos/Scientific Linux 5 and similar Linux distributions</a></span></dt><dt><span class="sect3"><a href="#idp1394571876">RedHat/Centos/Scientific Linux 6, Fedora and similar Linux distributions</a></span></dt><dt><span class="sect3"><a href="#idp1394572612">Debian, Ubuntu and similar Linux distributions</a></span></dt><dt><span class="sect3"><a href="#idp1394573316">openSUSE, SLES and similar Linux distributions</a></span></dt><dt><span class="sect3"><a href="#idp1394574028">ArchLinux</a></span></dt><dt><span class="sect3"><a href="#idp1394574668">Slackware</a></span></dt></dl></dd><dt><span class="sect2"><a href="#idp1394575564">1.2.10. XML filtering support with Textwolf</a></span></dt><dt><span class="sect2"><a href="#idp1394579244">1.2.11. JSON filtering support with cJSON</a></span></dt><dt><span class="sect2"><a href="#idp1394582188">1.2.12. Installation</a></span></dt></dl></dd><dt><span class="sect1"><a href="#idp1394586756">1.3. Building on Windows systems</a></span></dt></dl></div><p>
+		This section describes how to build the <span class="application">Wolframe</span> application from
+		the source code.
+	</p><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1391292004"></a>1.1. Source Releases</h2></div></div></div><p>
+			Tarballs with release source code are available from
+			SourceForce in the directories
+		</p><p>
+			<a class="ulink" href="http://openbuildservice.org" target="_top">http://sourceforge.net/projects/wolframe/files/wolframe/</a>
+		</p><p>
+		</p><p>			
+			respectively
+		</p><p>			
+			<a class="ulink" href="http://openbuildservice.org" target="_top">http://sourceforge.net/projects/wolframe/files/wolfclient/</a>
+			.
+		</p><p>
+			The <code class="filename">wolframe-0.0.1.tar.gz</code> contains the <span class="application">Wolframe</span>
+			server, the modules and 3rdParty software needed to build the server.
+		</p><p>
+			The <code class="filename">wolfclient-0.0.3.tar.gz</code> contains the <span class="application">Wolframe</span>
+			client implementing the graphical user interface.
+		</p></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1391109876"></a>1.2. Building on Unix systems</h2></div></div></div><p>
+			For building Wolframe on Unix systems you need at least the
+			following software:
+		</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>A recent C/C++ compiler, the following ones are known to work:
+				</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: circle; "><li class="listitem"><p>gcc 4.1.x or newer, <a class="ulink" href="http://gcc.gnu.org" target="_top">http://gcc.gnu.org</a></p></li><li class="listitem"><p>clang 3.4 or newer, <a class="ulink" href="http://clang.llvm.org" target="_top">http://clang.llvm.org</a></p></li><li class="listitem"><p>Intel Compiler ICC 14.0 or newer, <a class="ulink" href="http://software.intel.com/en-us/c-compilers" target="_top">http://software.intel.com/en-us/c-compilers</a></p></li></ul></div></li><li class="listitem"><p>GNU make 3.81 or newer (but preferably 3.82 or newer) from <a class="ulink" href="https://www.gnu.org/software/make/" target="_top">https://www.gnu.org/software/make/</a></p></li><li class="listitem"><p>boost 1.48.0 or newer from <a class="ulink" href="http://www.boost.org" target="_top">http://www.boost.org</a></p></li></ul></div><p>
+			<span class="application">Wolframe</span> is build and installed by simply calling:
+
+		        </p><pre class="programlisting">
+	make
+	make install
+			</pre><p>
+		</p><p>
+			The makefiles understand the standard GNU targets like clean', 'distclean', 'test', 'install',
+			'uninstall', etc. Also the standard installation variables 'DESTDIR' and 'prefix' are understood.
+			The whole list of options can be seen with:
+			
+		        </p><pre class="programlisting">
+	make help
+			</pre><p>
+		</p><p>
+			There is no configure. Porting to platforms and distributions
+			is done in the makefiles. For most platforms we provide reasonable
+			default values in <code class="filename">makefiles/gmake/platform.mk</code>.
+		</p><p>
+			Optional features are enabled by using 'WITH_XXX' variables when
+			calling make, e. g. to enable SSL support you call make like this:
+
+		        </p><pre class="programlisting">
+	make WITH_SSL=1
+			</pre><p>
+		</p><p>
+			Additional variables can be set when 3rdParty software is not in
+			the standard location, for instance:
+			
+		        </p><pre class="programlisting">
+	make BOOST_DIR=/usr/local/boost-1.55.0
+			</pre><p>
+
+		</p><p>
+			You can check how your software will be build with:
+
+		        </p><pre class="programlisting">
+	make config
+			</pre><p>
+			
+			If you get a 'NOT SUPPLIED ON THIS PLATFORM' you have to
+			provide the variables explicitly as mentioned above in
+			the example with 'BOOST_DIR'.
+		</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1391165908"></a>1.2.1. GCC compiler</h3></div></div></div><p>
+				Compilation with GNU gcc is the default on all
+				Unix platforms. It corresponds to the call:
+		        </p><pre class="programlisting">
+	make CC=gcc CXX=g++
+			</pre><p>								
+			
+			</p><p>
+				Per default all reasonable warnings are enabled.
+				To add your own flags you can set 'CFLAGS' or
+				'CXXFLAGS' respectively for instance to turn
+				compiler warnings into fatal errors with:
+
+		        </p><pre class="programlisting">
+	make CFLAGS='-Werror' CXXFLAGS='-Werror'
+			</pre><p>	
+			
+				or
+
+		        </p><pre class="programlisting">
+	make CFLAGS='-g -O0' CXXFLAGS='-g -O0'
+			</pre><p>	
+			
+				to turn off optimization and to enable debug information.
+			</p><p>
+				Certain embedded 3rdParty software may choose to
+				have it's own flags for compilation, you can't override
+				those in the make invocation.
+			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1391169028"></a>1.2.2. clang compiler</h3></div></div></div><p>
+				Compilation with clang is possible, only set the
+				correct compiler variables:
+		        </p><pre class="programlisting">
+	make CC=clang CXX=clang++
+			</pre><p>	
+			
+			</p><p>							
+			
+				Also here you can set 'CFLAGS' and 'CXXFLAGS' at will.
+			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1391170524"></a>1.2.3. Intel compiler</h3></div></div></div><p>
+				Compilation with the Intel C compiler is done with:
+		        </p><pre class="programlisting">
+	source /opt/intel/bin/iccvars.csh intel64 
+	make CC=icc CXX=icpc
+			</pre><p>	
+			
+			</p><p>
+				(where '/opt/intel/bin/icc' is the location of the Intel
+				compiler).
+			</p><p>
+				Also here you can set 'CFLAGS' and 'CXXFLAGS' at will.
+			</p><p>
+				When running the tests or any binaries you have to
+				make sure that 'LD_LIBRARY_PATH' is set correctly
+				(the example is for csh/tcsh, Intel 64-bit):
+		        </p><pre class="programlisting">
+	setenv LD_LIBRARY_PATH $PROD_DIR/lib/intel64
+			</pre><p>	
+			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1391173364"></a>1.2.4. Boost</h3></div></div></div><p>
+					Boost (<a class="ulink" href="http://www.boost.or" target="_top">http://www.boost.org</a>) is the only
+					library which is absolutly required to build
+					<span class="application">Wolframe</span>.
+				</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1391174676"></a>Build your own version of Boost</h4></div></div></div><p>
+					The following libraries are required for building
+					<span class="application">Wolframe</span>:
+
+		        </p><pre class="programlisting">
+	./bootstrap.sh --prefix=/usr/local/boost-1.55.0 \
+		--with-libraries=thread,filesystem,system,program_options,date_time
+	./bjam install
+			</pre><p>
+
+				If you want to build the ICU normalization
+				module you will have to build 'boost-locale'
+				with ICU support and you have to enable the
+				'regex' and the 'locale' boost libraries too:
+
+		        </p><pre class="programlisting">
+	./bootstrap.sh --prefix=/usr/local/boost-1.55.0 \
+		--with-libraries=thread,filesystem,system,program_options,date_time,regex,locale
+	./bjam install
+			</pre><p>
+
+				The location of the Boost library can be set as follow:
+				
+		        </p><pre class="programlisting">
+	make BOOST_DIR=/usr/local/boost-1.48.0
+			</pre><p>				
+
+			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1394506412"></a>RedHat, Fedora, CentOS, Scientific Linux and similar Linux distributions</h4></div></div></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1394506812"></a>RedHat/Centos/Scientific Linux 5 and similar Linux distributions</h5></div></div></div><p>
+					The official Boost packages are not recent enough. Build your own
+					Boost version here.
+				</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1394507572"></a>RedHat 6</h5></div></div></div><p>
+					The official Boost packages are not recent enough. Build your own
+					Boost version here.
+				</p><p>
+					On RHEL6 there is no 'libicu-devel' package on OSC (see
+					<a class="ulink" href="http://permalink.gmane.org/gmane.linux.suse.opensuse.buildservice/17779" target="_top">http://permalink.gmane.org/gmane.linux.suse.opensuse.buildservice/17779</a>).
+					Get a Redhat developer license to get the 'libicu-devel'
+					package or build your own libicu library and build your own
+					Boost library with boost-locale.
+				</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1394509180"></a>Centos/Scientific Linux 6 and similar Linux distributions</h5></div></div></div><p>
+					The official Boost packages are not recent enough. Build your own
+					Boost version here.
+				</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1394509932"></a>Fedora and similar Linux distributions</h5></div></div></div><p>
+					You need the 'boost-devel' package.
+				</p></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1394510628"></a>Debian, Ubuntu and similar Linux distributions</h4></div></div></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1394511004"></a>Debian 6</h5></div></div></div><p>
+						The official Boost packages are not recent enough. Build your own
+						Boost version here.
+					</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1394511692"></a>Debian 7</h5></div></div></div><p>
+						You need the following packages:
+						'libboost-dev', 'libboost-program-options-dev',
+						'libboost-filesystem-dev', 'libboost-thread-dev',
+						'libboost-random-dev', 'libboost-locale-dev'.
+					</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1394512484"></a>Ubuntu 10.04.1 LTS, Ubuntu 12.04</h5></div></div></div><p>
+						The official Boost packages are not recent enough. Build your own
+						Boost version here.
+					</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1394513172"></a>Ubuntu 12.10</h5></div></div></div><p>
+						You need the following packages:
+						'libboost-dev', 'libboost-program-options-dev',
+						'libboost-filesystem-dev', 'libboost-thread-dev',
+						'libboost-random-dev', 'libboost-locale-dev'.
+					</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1394513964"></a>Ubuntu 13.04</h5></div></div></div><p>
+						Currently libboost breaks in enable_if template, compile your own 
+						Boost version here.						
+					</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1394514660"></a>Ubuntu 13.10</h5></div></div></div><p>
+						You need the following packages:
+						'libboost-dev', 'libboost-program-options-dev',
+						'libboost-filesystem-dev', 'libboost-thread-dev',
+						'libboost-random-dev', 'libboost-locale-dev'.
+					</p></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1394515516"></a>openSUSE, SLES and similar Linux distributions</h4></div></div></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1394515892"></a>OpenSuSE 12.3, 13.1</h5></div></div></div><p>
+						You need the 'boost-devel' package.
+					</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1394516524"></a>SLES 11 SP1, SP2 and SP3</h5></div></div></div><p>
+						The official Boost packages are not recent enough. Build your own
+						Boost version here.
+					</p></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1394517276"></a>ArchLinux</h4></div></div></div><p>
+					You need the 'boost' and 'boost-libs' packages.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1394517916"></a>Slackware</h4></div></div></div><p>
+					You need the 'boost' package. This package is
+					part of the 'l' package series.
+				</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1394518788"></a>1.2.5. Secure Socket Layer (SSL)</h3></div></div></div><p>
+				The <span class="application">Wolframe</span> protocol can
+				be secured with SSL. You have to specify the following
+				when building:
+
+		        </p><pre class="programlisting">
+	make WITH_SSL=1
+			</pre><p>				
+			</p><p>
+				Currently only OpenSSL (<a class="ulink" href="http://www.openssl.org" target="_top">http://www.openssl.org</a>)
+				is supported. The location of the library can be overloaded with:
+		        </p><pre class="programlisting">
+	make WITH_SSL=1 OPENSSL_DIR=/usr/local/openssl-1.0.1.f
+			</pre><p>				
+			</p><p>
+				Use the most recent version of the OpenSSL library available
+				for you platform.
+			</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1394521580"></a>RedHat, Fedora, CentOS, Scientific Linux and similar Linux distributions</h4></div></div></div><p>
+					You need the 'openssl-devel' package.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1394522292"></a>Debian, Ubuntu and similar Linux distributions</h4></div></div></div><p>
+					You need the 'libssl-dev' package.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1394522980"></a>openSUSE, SLES and similar Linux distributions</h4></div></div></div><p>
+					You need the 'openssl-devel' package.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1394523668"></a>ArchLinux</h4></div></div></div><p>
+					You need the 'openssl' package.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1394524292"></a>Slackware</h4></div></div></div><p>
+					You need the 'openssl' package. This package is
+					part of the 'n' package series.
+				</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1394525164"></a>1.2.6. SQLite database support</h3></div></div></div><p>
+				<span class="application">Wolframe</span> can use
+				an Sqlite3 database (<a class="ulink" href="http://sqlite.org" target="_top">http://sqlite.org</a>)
+				as backend for data storage and for authentication and
+				autorization.
+			</p><p>
+				You enable the building of a loadable Sqlite3 database
+				module with:
+
+		        </p><pre class="programlisting">
+	make WITH_SYSTEM_SQLITE3=1
+			</pre><p>
+							
+			</p><p>
+				If you don't have a recent Sqlite version on your
+				system you can also build the module against the
+				embedded version:
+
+		        </p><pre class="programlisting">
+	make WITH_LOCAL_SQLITE3=1
+			</pre><p>				
+			
+			</p><p>
+				The location of the Sqlite library can be overloaded with:
+		        </p><pre class="programlisting">
+	make WITH_SYSTEM_SQLITE3=1 SQLITE3_DIR=/usr/local/sqlite-3.4.3
+			</pre><p>				
+			</p><p>
+				You can also override all compilation and linking flags
+				of Sqlite separatly:
+		        </p><pre class="programlisting">
+	make WITH_SYSTEM_SQLITE3=1 \
+		SQLITE3_INCLUDE_DIR=/usr/local/sqlite-3.4.3/include \
+		SQLITE3_LIB_DIR= /usr/local/sqlite-3.4.3/lib \
+		SQLITE3_LIBS=-lsqlite3
+			</pre><p>				
+			</p><p>
+				When building with 'WITH_SYSTEM_SQLITE3' it is enough to install the
+				correct development library.
+			</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1394530004"></a>RedHat/Centos/Scientific Linux 5 and similar Linux distributions</h4></div></div></div><p>
+					The official Sqlite package is too old, use the
+					embedded version of Sqlite with 'WITH_SYSTEM_SQLITE3=1'.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1394530780"></a>RedHat/Centos/Scientific Linux 6, Fedora and similar Linux distributions</h4></div></div></div><p>
+					You need the 'sqlite-devel' package.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1394531492"></a>Debian, Ubuntu and similar Linux distributions</h4></div></div></div><p>
+					You need the 'libsqlite3-dev' package.
+				</p><p>
+					For running the Sqlite3 database tests you also 
+					need the 'sqlite3' package.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1394532476"></a>openSUSE, SLES and similar Linux distributions</h4></div></div></div><p>
+					You need the 'sqlite3-devel' package.
+				</p><p>
+					For running the Sqlite3 database tests you also 
+					need the 'sqlite3' package.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1394533460"></a>ArchLinux</h4></div></div></div><p>
+					You need the 'sqlite' package.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1394534084"></a>Slackware</h4></div></div></div><p>
+					You need the 'sqlite' package. This package is
+					part of the 'ap' package series.
+				</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1394534956"></a>1.2.7. PostgreSQL database support</h3></div></div></div><p>
+				<span class="application">Wolframe</span> can use
+				a PostgreSQL database (<a class="ulink" href="http://postgresql.org" target="_top">http://postgresql.org</a>)
+				as backend for data storage and for authentication and
+				autorization.
+			</p><p>
+				You enable the building of a loadable PostgreSQL database
+				module with:
+
+		        </p><pre class="programlisting">
+	make WITH_PGSQL=1
+			</pre><p>
+							
+			</p><p>
+				The location of the PostgreSQL library can be overloaded with:
+		        </p><pre class="programlisting">
+	make WITH_PGSQL=1 PGSQL_DIR=/usr/local/postgresql-9.1.3
+			</pre><p>				
+			</p><p>
+				You can also override all compilation and linking flags
+				of PostgreSQL separatly:
+		        </p><pre class="programlisting">
+	make WITH_PGSQL=1 \
+		PGSQL_INCLUDE_DIR=/usr/local/postgresql-9.1.3/include \
+		PGSQL_LIB_DIR=/usr/local/postgresql-9.1.3/lib \
+		PGSQL_LIBS=-lpq
+			</pre><p>				
+			</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1394538628"></a>RedHat, Fedora, CentOS, Scientific Linux and similar Linux distributions</h4></div></div></div><p>
+					You need the 'postgresql-devel' package.
+				</p><p>
+					For Centos/RHEL/SciLi 5 you can choose between the
+					'postgresql-devel'package (which is version 8.1)
+					or the 'postgresql84-devel' package. The 8.4
+					version is recommended over 8.1.
+				</p><p>
+					For running the Postgresql tests you need a fully function 'postgresql-server'
+					with a db user 'wolfusr' (password: 'wolfpwd') owning a database called
+					'wolframe'.
+				</p><p>
+					Setting up a test user in PostgreSQL is done with:
+					</p><pre class="programlisting">
+	postgresql-setup initdb
+	systemctl start postgresql.service
+	systemctl enable postgresql.service
+					</pre><p>
+					
+					change the authentication method from 'ident' to 'md5' in
+					<code class="filename">pg_hba.conf</code>.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1394541324"></a>Debian, Ubuntu and similar Linux distributions</h4></div></div></div><p>
+					You need the 'libpq-dev' package.
+				</p><p>
+					For running the PostgreSQL database tests you also
+					need the 'postgresql-client' package.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1394542316"></a>openSUSE, SLES and similar Linux distributions</h4></div></div></div><p>
+					You need the 'postgresql-devel' package.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1394543004"></a>ArchLinux</h4></div></div></div><p>
+					You need the 'postgresql' package.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1394543636"></a>Slackware</h4></div></div></div><p>
+					A PostgreSQL package is not available on Slackware,
+					build your own one with:
+					</p><pre class="programlisting">
+	./configure --prefix=/usr/local/pgsql
+	make
+	make install
+	groupadd -g 990 postgres
+	useradd -g postgres -u 990 postgres
+	mkdir /usr/local/pgsql/var
+	chown -R postgres:users /usr/local/pgsql/var
+	su postgres
+	/usr/local/pgsql/bin/initdb -D /usr/local/pgsql/var
+	exit
+	cat &gt; /etc/rc.d/rc.postgresql
+	#!/bin/sh
+
+	case "$1" in
+		start)
+			su -l postgres -s /bin/sh -c "/usr/local/pgsql/bin/pg_ctl  -D /usr/local/pgsql/var -p /usr/local/pgsql/bin/postmaster start  &gt; /dev/null 2&gt;&amp;1" &lt; /dev/null
+			;;
+		stop)
+			kill `ps -efa | grep postmaster | grep -v grep | awk '{print $2}'`
+			;;
+		*)
+			echo $"Usage: $0 {start|stop}"
+			exit 1
+	esac
+
+	exit 0
+	(ctrl-D)
+	chmod 0775 /etc/rc.d/rc.postgresql 
+	usermod -d /usr/local/pgsql postgres
+					</pre><p>
+				</p><p>
+					Compile <span class="application">Wolframe</span> now with:
+					</p><pre class="programlisting">
+	make WITH_PGSQL=1 \
+		PGSQL_DIR=/usr/local/pgsql
+					</pre><p>
+					
+				</p><p>
+					Alternatively you can of course also build the PostgreSQL
+					package with the help of SlackBuilds.
+				</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1394547220"></a>1.2.8. Oracle database support</h3></div></div></div><p>
+				<span class="application">Wolframe</span> can use
+				a Oracle database (<a class="ulink" href="http://www.oracle.com" target="_top">http://www.oracle.com</a>)
+				as backend for data storage and for authentication and
+				autorization.
+			</p><p>
+				<span class="bold"><strong>Import note</strong></span>: Make sure you
+				have all the licenses to develop with Oracle and to install an
+				Oracle database! The <span class="application">Wolframe</span> team
+				doesn't take any responsability if licenses are violated!
+			</p><p>
+				You enable the building of a loadable Oracle database
+				module with:
+
+		        </p><pre class="programlisting">
+	make WITH_ORACLE=1
+			</pre><p>
+							
+			</p><p>
+				The location of the Oracle instantclient library can be overloaded with:
+		        </p><pre class="programlisting">
+	make WITH_ORACLE=1 ORACLE_DIR=/opt/oracle/instantclient_11_2
+			</pre><p>				
+			</p><p>
+				You can also override all compilation and linking flags
+				of Oracle separatly:
+		        </p><pre class="programlisting">
+	make WITH_ORACLE=1 \
+		ORACLE_INCLUDE_DIR=/usr/lib/oracle/11_2/client64 \
+		ORACLE_LIB_DIR=/usr/lib/oracle/11_2/client64 \
+		ORACLE_LIBS=-lclntsh
+			</pre><p>				
+			</p><p>
+				If you want to run the tests for Oracle you'll have to set up an Oracle
+				database. Then install the 'wolframe' database and the 'wolfusr' database
+				user. Sql example files can be found in
+				<code class="filename">contrib/database/oracle</code>.
+			</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1394552612"></a>RedHat, Fedora, CentOS, Scientific Linux and similar Linux distributions</h4></div></div></div><p>
+					For building the Oracle database module you have to download the RPM packages
+					<code class="filename">oracle-instantclient12.1-basic-12.1.0.1.0-1.i386.rpm</code> and
+					<code class="filename">oracle-instantclient12.1-devel-12.1.0.1.0-1.i386.rpm</code>.
+					You can of course also install the zipfiles and install those.
+				</p><p>
+					From the system repositories you'll need the 'libaio' package.
+				</p><p>
+					If you want to use the 'sqlplus' command line tool for manual testing you also
+					have to install the package
+					<code class="filename">oracle-instantclient12.1-sqlplus-12.1.0.1.0-1.i386.rpm</code>.
+					If you want a history in sqlplus it's highly recommended that you install
+					a command line history wrapper like for instance 'rlwrap'.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1394555324"></a>Debian, Ubuntu and similar Linux distributions</h4></div></div></div><p>
+					For building the Oracle database module you have to download the RPM packages
+					<code class="filename">oracle-instantclient12.1-basic-12.1.0.1.0-1.i386.rpm</code> and
+					<code class="filename">oracle-instantclient12.1-devel-12.1.0.1.0-1.i386.rpm</code>.
+				</p><p>
+					To install those RPM files you'll need the 'alien' tool. You can of course
+					also install the zipfiles and install those.
+				</p><p>
+					From the system repositories you'll need the 'libaio1' package.
+				</p><p>
+					If you want to use the 'sqlplus' command line tool for manual testing you also
+					have to install the package
+					<code class="filename">oracle-instantclient12.1-sqlplus-12.1.0.1.0-1.i386.rpm</code>.
+					If you want a history in sqlplus it's highly recommended that you install
+					a command line history wrapper like for instance 'rlwrap'.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1394558268"></a>openSUSE, SLES and similar Linux distributions</h4></div></div></div><p>
+					For building the Oracle database module you have to download the RPM packages
+					<code class="filename">oracle-instantclient12.1-basic-12.1.0.1.0-1.i386.rpm</code> and
+					<code class="filename">oracle-instantclient12.1-devel-12.1.0.1.0-1.i386.rpm</code>.
+					You can of course also install the zipfiles and install those.
+				</p><p>
+					From the system repositories you'll need the 'libaio1' package.
+				</p><p>
+					If you want to use the 'sqlplus' command line tool for manual testing you also
+					have to install the package
+					<code class="filename">oracle-instantclient12.1-sqlplus-12.1.0.1.0-1.i386.rpm</code>.
+					If you want a history in sqlplus it's highly recommended that you install
+					a command line history wrapper like for instance 'rlwrap'.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1394560956"></a>ArchLinux</h4></div></div></div><p>
+					You need the two packages 'oracle-instantclient-basic'
+					and 'oracle-instantclient-sdk'.
+				</p><p>
+					Have a look at <a class="ulink" href="https://wiki.archlinux.org/index.php/Oracle_client" target="_top">https://wiki.archlinux.org/index.php/Oracle_client</a>
+					on how to install the Oracle packages. Basically you have two
+					options: either you use the 'oracle' pacman repository or you
+					download the Oracle packages by hand and run the build scripts
+					from AUR.
+				</p><p>
+					If you want to use the 'sqlplus' command line tool for manual testing you also
+					have to install the package 'oracle-instantclient-sqlplus'.
+					If you want a history in sqlplus it's highly recommended that you install
+					a command line history wrapper like for instance 'rlwrap'.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1394562988"></a>Slackware</h4></div></div></div><p>
+					Simply download the zipfiles and install them to a directory,
+					let's say '/opt/oracle/instantclient_12_1':
+					</p><pre class="programlisting">
+	mkdir -p /opt/oracle
+	cd /opt/oracle
+	unzip instantclient-basic-linux.x64-12.1.0.1.0.zip
+	unzip instantclient-sdk-linux.x64-12.1.0.1.0.zip
+					</pre><p>
+				</p><p>
+					Add the following line to <code class="filename">/etc/ld.so.conf</code> and
+					reload the cached shared libraries:
+					</p><pre class="programlisting">
+	echo "/opt/oracle/instantclient_12_1" &gt;&gt; /etc/ld.so.conf
+	ldconfig
+					</pre><p>				
+				</p><p>
+					Call 'make' with:
+					</p><pre class="programlisting">
+	make WITH_ORACLE=1 ORACLE_DIR=/opt/oracle/instantclient_12_1
+					</pre><p>
+				</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1394566324"></a>1.2.9. XML filtering support with libxml2 and libxslt</h3></div></div></div><p>
+				<span class="application">Wolframe</span> can use
+				libxml2 and libxslt (<a class="ulink" href="http://xmlsoft.org/" target="_top">http://xmlsoft.org/</a>)
+				for filtering and the conversion of XML data.
+			</p><p>
+				You can build only filtering with libxml2. But if you enable libxslt
+				filtering you also have to enable libxml2 filtering.
+			</p><p>
+				You enable the building of a loadable libxml2/libxslt filtering
+				module with:
+
+		        </p><pre class="programlisting">
+	make WITH_LIBXML2=1 WITH_LIBXSLT=1
+			</pre><p>
+							
+			</p><p>
+				The location of those two libraries can be overloaded with:
+		        </p><pre class="programlisting">
+	make WITH_LIBXML2=1 WITH_LIBXSLT=1 \
+		LIBXML2_DIR=/usr/local/libxml2-2.9.1 \
+		LIBXSLT_DIR=/usr/local/libxslt-1.1.28
+			</pre><p>				
+			</p><p>
+				You can also override all compilation and linking flags
+				of libxml2 and libxslt separatly:
+		        </p><pre class="programlisting">
+	make WITH_LIBXML2=1 WITH_LIBXSLT=1 \
+		LIBXML2_INCLUDE_DIR=/usr/local/libxml2-2.9.1/include \
+		LIBXML2_LIB_DIR=/usr/local/libxml2-2.9.1/lib \
+		LIBXML2_LIBS=-lxml2 \
+		LIBXSLT_INCLUDE_DIR=/usr/local/libxslt-1.1.28/include \
+		LIBXSLT_LIB_DIR=/usr/local/libxslt-1.1.28/lib \
+		LIBXSLT_LIBS=-lxslt
+			</pre><p>				
+			</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1394570620"></a>RedHat/Centos/Scientific Linux 5 and similar Linux distributions</h4></div></div></div><p>
+					The official libxml2 and libxslt package is too old, compile
+					your own versions. Make sure your own libxslt version uses
+					the libxml2 version you compiled and not the system one!
+				</p><p>
+					If you don't need working iconv support for non-UTF8 character
+					sets you may also try to use the provided packages 
+					'libxml2-devel' and 'libxslt-devel' but we cannot recommend this.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1394571876"></a>RedHat/Centos/Scientific Linux 6, Fedora and similar Linux distributions</h4></div></div></div><p>
+					You need the 'libxml2-devel' and 'libxslt-devel' packages.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1394572612"></a>Debian, Ubuntu and similar Linux distributions</h4></div></div></div><p>
+					You need the 'libxml2-dev' and 'libxslt1-dev ' packages.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1394573316"></a>openSUSE, SLES and similar Linux distributions</h4></div></div></div><p>
+					You need the 'libxml2-devel' and 'libxslt-devel' packages.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1394574028"></a>ArchLinux</h4></div></div></div><p>
+					You need the 'libxml2' and 'libxslt' packages.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1394574668"></a>Slackware</h4></div></div></div><p>
+					You need the 'libxml2' and the 'libxslt' packages. Both packages are
+					part of the 'l' package series.
+				</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1394575564"></a>1.2.10. XML filtering support with Textwolf</h3></div></div></div><p>
+				<span class="application">Wolframe</span> can use
+				Textwolf (<a class="ulink" href="http://textwolf.net" target="_top">http://textwolf.net</a>)
+				for filtering and the conversion of XML data.
+			</p><p>
+				The textwolf library is embedded in the subdirectory
+				<code class="filename">3rdParty/textwolf</code>.
+			</p><p>
+				You enable the building of a loadable Textfolw filtering
+				module with:
+
+		        </p><pre class="programlisting">
+	make WITH_TEXTWOLF=1
+			</pre><p>
+							
+			</p><p>
+				<span class="bold"><strong>Note</strong></span>: If you plan to
+				run tests when building the <span class="application">Wolframe</span>
+				you should enable Textwolf as many tests rely on it's presence.
+			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1394579244"></a>1.2.11. JSON filtering support with cJSON</h3></div></div></div><p>
+				<span class="application">Wolframe</span> can use
+				cJSON (<a class="ulink" href="http://sourceforge.net/projects/cjson/" target="_top">http://sourceforge.net/projects/cjson/</a>)
+				for filtering and the conversion of JSON data.
+			</p><p>
+				The cjson library is embedded in the subdirectory
+				<code class="filename">3rdParty/libcjson</code>.
+			</p><p>
+				You enable the building of a loadable cJSON filtering
+				module with:
+
+		        </p><pre class="programlisting">
+	make WITH_CJSON=1
+			</pre><p>
+							
+			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1394582188"></a>1.2.12. Installation</h3></div></div></div><p>
+				The makefiles provide a 'install' and an 'uninstall'
+				target to install and uninstall the software.
+			</p><p>
+				The 'DESTDIR' and 'prefix' parameters are useful for
+				packagers to reroute the destination of the installation.
+			</p><p>
+				For instance:
+		        </p><pre class="programlisting">
+	make DESTDIR=/var/tmp prefix=/usr/local/wolframe-0.0.1 install
+			</pre><p>
+				installs the software in:
+		        </p><pre class="programlisting">
+	/var/tmp/usr/local/wolframe-0.0.1/sbin/wolframed
+	/var/tmp/usr/local/wolframe-0.0.1/etc/wolframe/wolframe.conf
+	...
+			</pre><p>			
+			
+			</p><p>
+				The 'DEFAULT_MODULE_LOAD_DIR' parameter can be used
+				by packagers to set the load directory for loadable
+				modules. For instance a Redhat SPEC file will contain
+				a line like:
+		        </p><pre class="programlisting">
+	make DEFAULT_MODULE_LOAD_DIR=%{_libdir}/wolframe/modules
+		        </pre><p>
+		        </p></div></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1394586756"></a>1.3. Building on Windows systems</h2></div></div></div><p>
+		</p></div></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="idp1394668948"></a>Chapter 2. Installation via binary packages</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="#idp1394657380">2.1. Linux distributions</a></span></dt><dd><dl><dt><span class="sect2"><a href="#idp1394702132">2.1.1. RedHat, Fedora, CentOS, Scientific Linux and similar Linux distributions</a></span></dt><dd><dl><dt><span class="sect3"><a href="#idp1394702532">Available packages</a></span></dt><dt><span class="sect3"><a href="#idp1394710484">Prerequisites</a></span></dt><dt><span class="sect3"><a href="#idp1394711060">Install binary packages manually</a></span></dt><dt><span class="sect3"><a href="#idp1394711724">Install from repository</a></span></dt></dl></dd><dt><span class="sect2"><a href="#idp1394716908">2.1.2. Debian, Ubuntu and similar Linux distributions</a></span></dt><dt><span class="sect2"><a href="#idp1394723868">2.1.3. openSUSE, SLES and similar Linux distributions</a></span></dt><dt><span class="sect2"><a href="#idp1394733156">2.1.4. ArchLinux</a></span></dt><dt><span class="sect2"><a href="#idp1394738628">2.1.5. Slackware</a></span></dt></dl></dd><dt><span class="sect1"><a href="#idp1394741476">2.2. Other Unix systems</a></span></dt><dd><dl><dt><span class="sect2"><a href="#idp1394741924">2.2.1. FreeBSD</a></span></dt><dt><span class="sect2"><a href="#idp1394746508">2.2.2. NetBSD</a></span></dt></dl></dd></dl></div><p>
+		This section describes how to install the <span class="application">Wolframe</span> application via
+		packages on various operating systems.
+	</p><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1394657380"></a>2.1. Linux distributions</h2></div></div></div><p>
+			Linux distributions are currently built on the <acronym class="acronym">Open Build Server</acronym>
+			(<a class="ulink" href="http://openbuildservice.org" target="_top">http://openbuildservice.org</a>) and
+			on a bunch of virtual machines.
+		</p><p>
+			The resulting packages and the repository metadata is hosted on Sourceforge
+			(<a class="ulink" href="http://sourceforge.net" target="_top">http://sourceforge.net</a>).
+		</p><p>
+			The packages are always build with the default system compiler, which
+			is currently GNU gcc.
+		</p><p>
+			Packages for proprietary software (like the Oracle database module) have
+			to be built manually, they can not be distributed as binary packages due
+			to license problems.
+		</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1394702132"></a>2.1.1. RedHat, Fedora, CentOS, Scientific Linux and similar Linux distributions</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1394702532"></a>Available packages</h4></div></div></div><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
+							wolframe-0.0.1.rpm: contains the <span class="application">Wolframe</span>
+							core server with minimal 3rd party software requirements
+						</p></li><li class="listitem"><p>
+							wolframe-sqlite3-0.0.1.rpm: the database module for Sqlite3 databases
+						</p></li><li class="listitem"><p>
+							wolframe-postgresql-0.0.1.rpm: the database module for PostgreSQL databases
+						</p></li><li class="listitem"><p>
+							wolframe-libxml2-0.0.1.rpm: filtering module for XML and XSLT (using libxml2/libxslt)
+						</p></li><li class="listitem"><p>
+							wolframe-textwolf-0.0.1.rpm: filtering module for XML (using textwolf)
+						</p></li><li class="listitem"><p>
+							wolframe-cjson-0.0.1.rpm: filtering module for JSON (using cJSON)
+						</p></li><li class="listitem"><p>
+							wolframe-pam-0.0.1.rpm: authentication module for PAM
+						</p></li><li class="listitem"><p>
+							wolframe-sasl-0.0.1.rpm: authentication module for SASL
+						</p></li><li class="listitem"><p>
+							wolframe-python-0.0.1.rpm: language bindings for Python
+						</p></li><li class="listitem"><p>
+							wolframe-lua-0.0.1.rpm: language bindings for Lua
+						</p></li><li class="listitem"><p>
+							wolframe-libhpdf-0.0.1.rpm: printing module using libhpdf
+						</p></li><li class="listitem"><p>
+							wolframe-freeimage-0.0.1.rpm: image manipuation module using FreeImage
+						</p></li><li class="listitem"><p>
+							wolframe-libclient-0.0.1.rpm: C/C++ client library
+						</p></li><li class="listitem"><p>
+							wolframe-client-0.0.1.rpm: command line tool
+						</p></li><li class="listitem"><p>
+							wolfclient-0.0.3.rpm: Wolframe graphical frontend
+						</p></li></ul></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1394710484"></a>Prerequisites</h4></div></div></div><p>
+					
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1394711060"></a>Install binary packages manually</h4></div></div></div><p>
+					Installing the packages via repositories is usually the prefered way.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1394711724"></a>Install from repository</h4></div></div></div><p>
+				First install the repository file for the corresponding distribution
+				(as example we choose Centos 6):
+				</p><pre class="programlisting">
+	cd /etc/yum.repos.d
+	wget http://sourceforge.net/projects/wolframe/files/repositories/CentOS_CentOS-6/wolframe.repo
+				</pre><p>
+			</p><p>
+				You can list all available Wolframe packages with:
+				</p><pre class="programlisting">
+	yum search wolframe
+				</pre><p>
+			</p><p>
+				You install the main Wolframe package with:
+				</p><pre class="programlisting">
+	yum install wolframe
+				</pre><p>
+			</p><p>
+				You have to accept the signing key:
+				</p><pre class="programlisting">
+	Retrieving key from http://sourceforge.net/projects/wolframe/files/repositories/CentOS_CentOS-6/repodata/repomd.xml.key
+	Importing GPG key 0x9D404026:
+	Userid: "home:wolframe_user OBS Project &lt;home:wolframe_user@build.opensuse.org&gt;"
+	From  : http://sourceforge.net/projects/wolframe/files/repositories/CentOS_CentOS-6/repodata/repomd.xml.key
+	Is this ok [y/N]: y
+				</pre><p>
+			</p><p>
+				You can start the service with:
+				</p><pre class="programlisting">
+	service wolframed start
+				</pre><p>
+				
+				respectively
+
+				</p><pre class="programlisting">
+	systemctl start wolframed
+				</pre><p>
+				
+				on newer Fedora systems.
+			</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1394716908"></a>2.1.2. Debian, Ubuntu and similar Linux distributions</h3></div></div></div><p>
+				Add a new repository file <code class="filename">/etc/apt/sources.list.d/wolframe.list</code>
+				which contains:
+				</p><pre class="programlisting">
+	deb http://sourceforge.net/projects/wolframe/files/repositories/xUbuntu_13.10/ /
+				</pre><p>
+				(as example we choose Ubuntu 13.10).
+			</p><p>
+				Download the signing key:
+				</p><pre class="programlisting">
+	wget http://sourceforge.net/projects/wolframe/files/repositories/xUbuntu_13.10/Release.key
+				</pre><p>
+			</p><p>
+				Verify that the key then add it with:
+				</p><pre class="programlisting">
+	apt-key add - &lt; Release.key
+				</pre><p>
+			</p><p>
+				Update the repository with:
+				</p><pre class="programlisting">
+	apt-get update
+				</pre><p>
+			</p><p>
+				You can list all available Wolframe packages with:
+				</p><pre class="programlisting">
+	apt-cache search wolframe
+				</pre><p>
+			</p><p>
+				You install the main Wolframe package with:
+				</p><pre class="programlisting">
+	apt-get install wolframe
+				</pre><p>
+			</p><p>
+				To start the Wolframe service you have to
+				edit the file <code class="filename">/etc/default/wolframe</code>
+				and enable the wolframe daemon there:
+				</p><pre class="programlisting">
+	RUN=yes
+				</pre><p>
+		
+				You can start the service now with:
+				</p><pre class="programlisting">
+	service wolframed start
+				</pre><p>
+			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1394723868"></a>2.1.3. openSUSE, SLES and similar Linux distributions</h3></div></div></div><p>
+				First we add the Wolframe repository for the corresponding distribution
+				(as example we choose OpenSUSE 13.1):
+				</p><pre class="programlisting">
+	zypper addrepo http://sourceforge.net/projects/wolframe/files/repositories/openSUSE_13.1/wolframe.repo
+				</pre><p>
+			</p><p>
+				You may get the following error:
+				</p><pre class="programlisting">
+	/var/adm/mount/AP_0xmiyYP3/projects/wolframe/files/repositories/openSUSE_13.1/wolframe.repo: Line 1 is missing '=' sign
+	Is it a .repo file? See http://en.opensuse.org/Standards/RepoInfo for details.
+				</pre><p>
+				
+				Try to download the repo file by hand and install it by hand:
+				</p><pre class="programlisting">
+	wget http://sourceforge.net/projects/wolframe/files/repositories/openSUSE_13.1/wolframe.repo
+	zypper addrepo wolframe.repo
+				</pre><p>
+			</p><p>
+				Now refresh your repositories with:
+				</p><pre class="programlisting">
+	zypper refresh
+				</pre><p>
+			</p><p>
+				If you get the following message
+				</p><pre class="programlisting">
+	File 'repomd.xml' from repository 'Wolframe Project (openSUSE_13.1)' is unsigned, continue? [yes/no] (no): yes
+				</pre><p>
+				
+				the signing key could not be downloaded from SourceForge.
+				Accept it in this case anyway.				
+			</p><p>
+				If you get the following message
+				</p><pre class="programlisting">
+	File './repodata/ea7cb8d9a0caa2c3d8977919be124accdf55c6b8952ddee72f1b48f4decb0644-primary.xml.gz' not found on medium 'http://sourceforge.net/projects/wolframe/files/repositories/openSUSE_13.1/'
+
+	Abort, retry, ignore? [a/r/i/? shows all options] (a): u^H
+	Invalid answer ''. [a/r/i/? shows all options] (a): ?
+
+	a - Skip retrieval of the file and abort current operation.
+	r - Try to retrieve the file again.
+	i - Skip retrieval of the file and try to continue with the operation without the file.
+	u - Change current base URI and try retrieving the file again.
+
+	[a/r/i/? shows all options] (a): u				
+				</pre><p>
+				
+				the Sourceforge redirect didn't work and you have to
+				force the baseURL to be a SourceForge mirror like:
+
+				</p><pre class="programlisting">
+	New URI: http://freefr.dl.sourceforge.net/project/wolframe/repositories/openSUSE_13.1/
+				</pre><p>
+			</p><p>
+				You can list all available Wolframe packages with:
+				</p><pre class="programlisting">
+	zypper se wolframe
+	zypper se wolfclient
+				</pre><p>
+			</p><p>
+				You install the main Wolframe package with:
+				</p><pre class="programlisting">
+	zypper install wolframe
+				</pre><p>
+			</p><p>
+				You can start the service with:
+				</p><pre class="programlisting">
+	service wolframed start
+				</pre><p>
+				
+				respectively
+
+				</p><pre class="programlisting">
+	systemctl start wolframed
+				</pre><p>
+				
+				on newer openSUSE systems.
+			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1394733156"></a>2.1.4. ArchLinux</h3></div></div></div><p>
+				First add the following section to <code class="filename">/etc/pacman.conf</code>:
+				</p><pre class="programlisting">
+	[wolframe]
+	SigLevel = Optional DatabaseRequired
+	Server = http://sourceforge.net/projects/wolframe/files/repositories/Arch_Extra/$arch
+				</pre><p>
+			</p><p>
+				Fetch and verify the sigining key, import and locally sign the key:
+				</p><pre class="programlisting">
+	wget http://download.opensuse.org/repositories/home:/wolframe_user/xUbuntu_13.10/Release.key
+	pacman-key --add Release.key
+	pacman-key --lsign 9D404026
+				</pre><p>
+				
+				Alternatively you can also disable the verification of the signature
+				of the database by removing 'DatabaseRequired' from the 'SigLevel'
+				option.
+			</p><p>
+				Update the repository data with:
+				</p><pre class="programlisting">
+	pacman -Syy
+				</pre><p>
+			</p><p>
+				You can list all available Wolframe packages with:
+				</p><pre class="programlisting">
+	pacman -Sl wolframe
+				</pre><p>
+			</p><p>
+				You install the main Wolframe package with:
+				</p><pre class="programlisting">
+	pacman -S wolframe
+				</pre><p>
+			</p><p>
+				You can start the service with:
+
+				</p><pre class="programlisting">
+	systemctl start wolframed
+				</pre><p>
+			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1394738628"></a>2.1.5. Slackware</h3></div></div></div><p>
+				Download the package file (we choose 64-bit Slackware 14 for example):
+				</p><pre class="programlisting">
+	wget http://sourceforge.net/projects/wolframe/files/wolframe-binaries/0.0.1/Slackware-14/x86_64/wolframe-0.0.1-x86_64.tgz
+				</pre><p>
+			</p><p>
+				You install the Wolframe package with:
+				</p><pre class="programlisting">
+	installpkg wolframe-0.0.1-x86_64.tgz 
+				</pre><p>
+			
+				The Slackware packages contain the whole server and the whole client respectively.
+			</p><p>
+				You can start the service with:
+
+				</p><pre class="programlisting">
+	/etc/rc.d/rc.wolframed start
+				</pre><p>
+			</p></div></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1394741476"></a>2.2. Other Unix systems</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1394741924"></a>2.2.1. FreeBSD</h3></div></div></div><p>
+				Download the package file (we choose 64-bit FreeBSD 9 for example):
+				</p><pre class="programlisting">
+	wget http://sourceforge.net/projects/wolframe/files/wolframe-binaries/0.0.1/FreeBSD-9/x86_64/wolframe-0.0.1-x86_64.tgz
+				</pre><p>
+			</p><p>
+				You install the Wolframe package with:
+				</p><pre class="programlisting">
+	pkg_add wolframe-0.0.1-x86_64.tgz 
+				</pre><p>
+			
+				The FreeBSD packages contain the whole server and the whole client respectively.
+			</p><p>
+				You can start the service with:
+
+				</p><pre class="programlisting">
+	/usr/local/etc/rc.d/wolframed onestart
+				</pre><p>
+			</p><p>
+				To start the Wolframe service at system boot time
+				you have to edit the file <code class="filename">/etc/rc.conf</code>
+				and enable the wolframe daemon there with:
+				</p><pre class="programlisting">
+	wolframed_enable="YES"
+				</pre><p>
+		
+				You can start the service now with:
+				</p><pre class="programlisting">
+	service wolframed start
+				</pre><p>
+			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1394746508"></a>2.2.2. NetBSD</h3></div></div></div><p>
+				Download the package file (we choose 64-bit NetBSD 6 for example):
+				</p><pre class="programlisting">
+	wget http://sourceforge.net/projects/wolframe/files/wolframe-binaries/0.0.1/NetBSD-6/x86_64/wolframe-0.0.1-x86_64.tgz
+				</pre><p>
+			</p><p>
+				You install the Wolframe package with:
+				</p><pre class="programlisting">
+	pkg_add wolframe-0.0.1-x86_64.tgz 
+				</pre><p>
+			
+				The NetBSD packages contain the whole server and the whole client respectively.
+			</p><p>
+				You can start the service with:
+
+				</p><pre class="programlisting">
+	/usr/pkg/share/examples/rc.d/wolframed onestart
+				</pre><p>
+			</p><p>
+				To start the Wolframe service at system boot time
+				you have to edit the file <code class="filename">/etc/rc.conf</code>
+				and enable the wolframe daemon there with:
+				</p><pre class="programlisting">
+	wolframed=YES
+				</pre><p>
+				
+				Copy the example startup script to the final place:
+				
+				</p><pre class="programlisting">
+	cp /usr/pkg/share/examples/rc.d/wolframed /etc/rc.d/
+				</pre><p>
+	
+				You can start the service now with:
+				</p><pre class="programlisting">
+	/etc/rc.d/wolframed
+				</pre><p>
+			</p></div></div></div></div></div></div>
+
+<!-- Footer -->
+<div xmlns="" class="wrapper row2">
+	<div id="footer" class="clear">
+		<div class="one_third first">
+			<h2 class="footer_title">Documentation</h2>
+			<nav class="footer_nav">
+				<ul class="nospace">
+					<li><a href="/documentation.html">User documentation</a></li>
+					<li><a href="/documentation.html">Developer documentation</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="one_third">
+			<h2 class="footer_title">Downloads</h2>
+			<nav class="footer_nav">
+				<ul class="nospace">
+					<li><a href="/downloads.html">Hosted on Github</a></li>
+					<li><a href="/downloads.html">Packages on Sourceforge</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="one_third">
+			<h2 class="footer_title">Contact Us</h2>
+			<nav class="footer_nav">
+				<ul class="nospace">
+					<li><strong>Email:</strong> <a href="/mailto:contact@wolframe.net">contact@wolframe.net</a></li>
+					<li>
+						<a id="googleplus-bttn" href="http://plus.google.com/116915890857205562872?prsrc=3" rel="publisher" target="_top" style="text-decoration:none;">
+							<span>Google+</span></a>
+						<a id="linkedin-bttn" href="#" target="_top" style="text-decoration:none;">
+							<span>LinkedIn</span></a>
+						<a id="twitter-bttn" href="http://twitter.com/ProjectWolframe" target="_top" style="text-decoration:none;">
+							<span>twitter</span></a>
+						<a id="rss-bttn" href="#" target="_top" style="text-decoration:none;">
+							<span>rss</span></a>
+					</li>
+					<li>
+						<a href="https://twitter.com/ProjectWolframe" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @ProjectWolframe</a>
+						<div class="google-follow-button"><div class="g-follow" data-annotation="none" data-height="20" data-href="http://plus.google.com/116915890857205562872" data-rel="publisher"></div></div>
+						<div class="google-plusone-button"><div class="g-plusone" data-href="http://www.wolframe.net" data-size="medium"></div></div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+
+<div xmlns="" class="wrapper row4">
+	<div id="copyright" class="clear">
+		<p class="fl_left">Copyright © 2014 - <a href="#">Project Wolframe</a> - All Rights Reserved</p>
+		<p class="fl_right"><a href="/copyright.html">Copyrights and credits</a></p>
+	</div>
+</div>
+
+<!-- Scripts -->
+<script xmlns="" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script xmlns="" src="http://code.jquery.com/ui/1.10.1/jquery-ui.min.js"></script>
+<script xmlns="">window.jQuery || document.write('\x3Cscript src="/layout/scripts/jquery-latest.min.js"&gt;\x3C\/script&gt;\
+\x3Cscript src="/layout/scripts/jquery-ui.min.js"&gt;\x3C\/script&gt;')</script>
+<script xmlns="">jQuery(document).ready(function($){ $('img').removeAttr('width height'); });</script>
+<script xmlns="" src="/layout/scripts/jquery-mobilemenu.min.js"></script>
+<script xmlns="" src="/layout/scripts/custom.js"></script>
+
+<!-- Google analytics tracking -->
+<script xmlns="" type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-46433226-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Tweeter follow script -->
+<script xmlns="">
+	!function( d, s, id )	{
+		var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location)?'http':'https';
+		if( !d.getElementById( id ))	{
+			js = d.createElement( s );
+			js.id = id;
+			js.src = p + '://platform.twitter.com/widgets.js';
+			fjs.parentNode.insertBefore( js,fjs );
+		}
+	} ( document, 'script', 'twitter-wjs' );
+</script>
+
+<!-- Google +1, follow -->
+<script xmlns="" type="text/javascript">
+	window.___gcfg = {
+		lang: 'en-US',
+		parsetags: 'onload'
+	};
+	( function()	{
+		var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		po.src = 'https://apis.google.com/js/plusone.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	}) ();
+</script>
+
+</body></html>
