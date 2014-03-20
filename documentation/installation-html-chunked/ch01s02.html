@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>1.2. Building on Unix systems</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe Installation" /><link rel="up" href="ch01.html" title="Chapter 1. Installation from source" /><link rel="prev" href="ch01.html" title="Chapter 1. Installation from source" /><link rel="next" href="ch01s03.html" title="1.3. Building on Windows systems" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>1.2. Building on Unix systems</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe Installation" /><link rel="up" href="ch01.html" title="Chapter 1. Installation from source" /><link rel="prev" href="ch01.html" title="Chapter 1. Installation from source" /><link rel="next" href="ch02.html" title="Chapter 2. Installation via binary packages" />
 	<title xmlns="">Project Wolframe</title>
 	<meta xmlns="" charset="utf-8" />
 	<meta xmlns="" name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -58,7 +58,7 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">1.2. Building on Unix systems</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch01.html">Prev</a> </td><th width="60%" align="center">Chapter 1. Installation from source</th><td width="20%" align="right"> <a accesskey="n" href="ch01s03.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1385678084"></a>1.2. Building on Unix systems</h2></div></div></div><p>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">1.2. Building on Unix systems</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch01.html">Prev</a> </td><th width="60%" align="center">Chapter 1. Installation from source</th><td width="20%" align="right"> <a accesskey="n" href="ch02.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1372923004"></a>1.2. Building on Unix systems</h2></div></div></div><p>
 			For building Wolframe on Unix systems you need at least the
 			following software:
 		</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>A recent C/C++ compiler, the following ones are known to work:
@@ -106,7 +106,7 @@
 			If you get a 'NOT SUPPLIED ON THIS PLATFORM' you have to
 			provide the variables explicitly as mentioned above in
 			the example with 'BOOST_DIR'.
-		</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1385614844"></a>1.2.1. GCC compiler</h3></div></div></div><p>
+		</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1372748508"></a>1.2.1. GCC compiler</h3></div></div></div><p>
 				Compilation with GNU gcc is the default on all
 				Unix platforms. It corresponds to the call:
 		        </p><pre class="programlisting">
@@ -134,7 +134,7 @@
 				Certain embedded 3rdParty software may choose to
 				have it's own flags for compilation, you can't override
 				those in the make invocation.
-			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1385617964"></a>1.2.2. clang compiler</h3></div></div></div><p>
+			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1372751604"></a>1.2.2. clang compiler</h3></div></div></div><p>
 				Compilation with clang is possible, only set the
 				correct compiler variables:
 		        </p><pre class="programlisting">
@@ -144,7 +144,7 @@
 			</p><p>							
 			
 				Also here you can set 'CFLAGS' and 'CXXFLAGS' at will.
-			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1385619500"></a>1.2.3. Intel compiler</h3></div></div></div><p>
+			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1372753052"></a>1.2.3. Intel compiler</h3></div></div></div><p>
 				Compilation with the Intel C compiler is done with:
 		        </p><pre class="programlisting">
 	source /opt/intel/bin/iccvars.csh intel64 
@@ -163,12 +163,12 @@
 		        </p><pre class="programlisting">
 	setenv LD_LIBRARY_PATH $PROD_DIR/lib/intel64
 			</pre><p>	
-			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1385622364"></a>1.2.4. Boost</h3></div></div></div><p>
+			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1372755940"></a>1.2.4. Boost</h3></div></div></div><p>
 					Boost (<a class="ulink" href="http://www.boost.or" target="_top">http://www.boost.org</a>) is the only
-					library which is absolutly required to build
+					library which is absolutely required in order to build
 					<span class="application">Wolframe</span>.
-				</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1385623700"></a>Build your own version of Boost</h4></div></div></div><p>
-					The following libraries are required for building
+				</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1372757284"></a>Build your own version of Boost</h4></div></div></div><p>
+					The following Boost libraries are required for building
 					<span class="application">Wolframe</span>:
 
 		        </p><pre class="programlisting">
@@ -178,7 +178,7 @@
 			</pre><p>
 
 				If you want to build the ICU normalization
-				module you will have to build 'boost-locale'
+				module (WITH_ICU=1) you will have to build 'boost-locale'
 				with ICU support and you have to enable the
 				'regex' and the 'locale' boost libraries too:
 
@@ -187,65 +187,89 @@
 		--with-libraries=thread,filesystem,system,program_options,date_time,regex,locale
 	./bjam install
 			</pre><p>
-
-				The location of the Boost library can be set as follow:
+			</p><p>
+				The location of the Boost library can be set when
+				building <span class="application">Wolframe</span> as follows:
 				
 		        </p><pre class="programlisting">
 	make BOOST_DIR=/usr/local/boost-1.48.0
 			</pre><p>				
 
-			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1388980660"></a>RedHat, Fedora, CentOS, Scientific Linux and similar Linux distributions</h4></div></div></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1388981060"></a>RedHat/Centos/Scientific Linux 5 and similar Linux distributions</h5></div></div></div><p>
-					The official Boost packages are not recent enough. Build your own
-					Boost version here.
-				</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1388981820"></a>RedHat 6</h5></div></div></div><p>
+			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376116772"></a>RedHat, Fedora, CentOS, Scientific Linux and similar Linux distributions</h4></div></div></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376117172"></a>RedHat/Centos/Scientific Linux 5 and similar Linux distributions</h5></div></div></div><p>
 					The official Boost packages are not recent enough. Build your own
 					Boost version here.
 				</p><p>
-					On RHEL6 there is no 'libicu-devel' package on OSC (see
-					<a class="ulink" href="http://permalink.gmane.org/gmane.linux.suse.opensuse.buildservice/17779" target="_top">http://permalink.gmane.org/gmane.linux.suse.opensuse.buildservice/17779</a>).
-					Get a Redhat developer license to get the 'libicu-devel'
-					package or build your own libicu library and build your own
-					Boost library with boost-locale.
-				</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1388983428"></a>Centos/Scientific Linux 6 and similar Linux distributions</h5></div></div></div><p>
+					If you want ICU support you will also need the 'libicu-devel' package.
+				</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376118212"></a>RedHat 6</h5></div></div></div><p>
 					The official Boost packages are not recent enough. Build your own
 					Boost version here.
-				</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1388984180"></a>Fedora and similar Linux distributions</h5></div></div></div><p>
-					You need the 'boost-devel' package.
-				</p></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1388984876"></a>Debian, Ubuntu and similar Linux distributions</h4></div></div></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1388985252"></a>Debian 6</h5></div></div></div><p>
+				</p><p>
+					If you want ICU support you will also need the 'libicu-devel' package.
+				</p><p>
+					We currently build the official packages without ICU support.
+					The reason is that there is no 'libicu-devel' package available
+					for RHEL6 on OBS (see
+					<a class="ulink" href="http://permalink.gmane.org/gmane.linux.suse.opensuse.buildservice/17779" target="_top">http://permalink.gmane.org/gmane.linux.suse.opensuse.buildservice/17779</a>).
+				</p><p>
+					Get a Redhat developer license to get the 'libicu-devel'
+					package or build your own libicu library and build your own
+					Boost library with boost-locale and ICU support.
+				</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376120404"></a>Centos/Scientific Linux 6 and similar Linux distributions</h5></div></div></div><p>
+					The official Boost packages are not recent enough. Build your own
+					Boost version here.
+				</p><p>
+					If you want ICU support you will also need the 'libicu-devel' package.
+				</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376121436"></a>Fedora and similar Linux distributions</h5></div></div></div><p>
+					You need the 'boost-devel' package. This package
+					contains also the boost-locale and ICU backend.
+				</p></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376122196"></a>Debian, Ubuntu and similar Linux distributions</h4></div></div></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376122572"></a>Debian 6</h5></div></div></div><p>
 						The official Boost packages are not recent enough. Build your own
 						Boost version here.
-					</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1388985940"></a>Debian 7</h5></div></div></div><p>
+					</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376123260"></a>Debian 7</h5></div></div></div><p>
 						You need the following packages:
 						'libboost-dev', 'libboost-program-options-dev',
 						'libboost-filesystem-dev', 'libboost-thread-dev',
-						'libboost-random-dev', 'libboost-locale-dev'.
-					</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1388986732"></a>Ubuntu 10.04.1 LTS, Ubuntu 12.04</h5></div></div></div><p>
+						'libboost-random-dev'.
+					</p><p>
+						If you want ICU support you will also need the
+						'libboost-locale-dev' package.
+					</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376124324"></a>Ubuntu 10.04.1 LTS, Ubuntu 12.04</h5></div></div></div><p>
 						The official Boost packages are not recent enough. Build your own
 						Boost version here.
-					</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1388987420"></a>Ubuntu 12.10</h5></div></div></div><p>
+					</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376125012"></a>Ubuntu 12.10</h5></div></div></div><p>
 						You need the following packages:
 						'libboost-dev', 'libboost-program-options-dev',
 						'libboost-filesystem-dev', 'libboost-thread-dev',
-						'libboost-random-dev', 'libboost-locale-dev'.
-					</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1388988212"></a>Ubuntu 13.04</h5></div></div></div><p>
+						'libboost-random-dev'.
+					</p><p>
+						If you want ICU support you will also need the 
+						'libboost-locale-dev' package.
+					</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376126076"></a>Ubuntu 13.04</h5></div></div></div><p>
 						Currently libboost breaks in enable_if template, compile your own 
 						Boost version here.						
-					</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1388988908"></a>Ubuntu 13.10</h5></div></div></div><p>
+					</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376126772"></a>Ubuntu 13.10</h5></div></div></div><p>
 						You need the following packages:
 						'libboost-dev', 'libboost-program-options-dev',
 						'libboost-filesystem-dev', 'libboost-thread-dev',
-						'libboost-random-dev', 'libboost-locale-dev'.
-					</p></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1388989764"></a>openSUSE, SLES and similar Linux distributions</h4></div></div></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1388990140"></a>OpenSuSE 12.3, 13.1</h5></div></div></div><p>
+						'libboost-random-dev'.
+					</p><p>
+						If you want ICU support you will also need the 
+						'libboost-locale-dev' package.
+					</p></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376127900"></a>openSUSE, SLES and similar Linux distributions</h4></div></div></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376128276"></a>OpenSuSE 12.3, 13.1</h5></div></div></div><p>
 						You need the 'boost-devel' package.
-					</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1388990772"></a>SLES 11 SP1, SP2 and SP3</h5></div></div></div><p>
+					</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376128908"></a>SLES 11 SP1, SP2 and SP3</h5></div></div></div><p>
 						The official Boost packages are not recent enough. Build your own
 						Boost version here.
-					</p></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1388991524"></a>ArchLinux</h4></div></div></div><p>
+					</p></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376129660"></a>ArchLinux</h4></div></div></div><p>
 					You need the 'boost' and 'boost-libs' packages.
-				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1388992164"></a>Slackware</h4></div></div></div><p>
+					The official Boost packages contains support for 
+					boost-locale and the ICU backend.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376130396"></a>Slackware</h4></div></div></div><p>
 					You need the 'boost' package. This package is
 					part of the 'l' package series.
-				</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1388993036"></a>1.2.5. Secure Socket Layer (SSL)</h3></div></div></div><p>
+					The official Boost package contains support for 
+					boost-locale and the ICU backend.
+				</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376131356"></a>1.2.5. Secure Socket Layer (SSL)</h3></div></div></div><p>
 				The <span class="application">Wolframe</span> protocol can
 				be secured with SSL. You have to specify the following
 				when building:
@@ -262,18 +286,18 @@
 			</p><p>
 				Use the most recent version of the OpenSSL library available
 				for you platform.
-			</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1388995788"></a>RedHat, Fedora, CentOS, Scientific Linux and similar Linux distributions</h4></div></div></div><p>
+			</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376134108"></a>RedHat, Fedora, CentOS, Scientific Linux and similar Linux distributions</h4></div></div></div><p>
 					You need the 'openssl-devel' package.
-				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1388996500"></a>Debian, Ubuntu and similar Linux distributions</h4></div></div></div><p>
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376134820"></a>Debian, Ubuntu and similar Linux distributions</h4></div></div></div><p>
 					You need the 'libssl-dev' package.
-				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1388997188"></a>openSUSE, SLES and similar Linux distributions</h4></div></div></div><p>
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376135508"></a>openSUSE, SLES and similar Linux distributions</h4></div></div></div><p>
 					You need the 'openssl-devel' package.
-				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1388997876"></a>ArchLinux</h4></div></div></div><p>
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376136196"></a>ArchLinux</h4></div></div></div><p>
 					You need the 'openssl' package.
-				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1388998452"></a>Slackware</h4></div></div></div><p>
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376136772"></a>Slackware</h4></div></div></div><p>
 					You need the 'openssl' package. This package is
 					part of the 'n' package series.
-				</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1388999324"></a>1.2.6. SQLite database support</h3></div></div></div><p>
+				</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376137644"></a>1.2.6. SQLite database support</h3></div></div></div><p>
 				<span class="application">Wolframe</span> can use
 				an Sqlite3 database (<a class="ulink" href="http://sqlite.org" target="_top">http://sqlite.org</a>)
 				as backend for data storage and for authentication and
@@ -302,7 +326,7 @@
 			</pre><p>				
 			</p><p>
 				You can also override all compilation and linking flags
-				of Sqlite separatly:
+				of Sqlite separately:
 		        </p><pre class="programlisting">
 	make WITH_SYSTEM_SQLITE3=1 \
 		SQLITE3_INCLUDE_DIR=/usr/local/sqlite-3.4.3/include \
@@ -312,27 +336,27 @@
 			</p><p>
 				When building with 'WITH_SYSTEM_SQLITE3' it is enough to install the
 				correct development library.
-			</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1389004164"></a>RedHat/Centos/Scientific Linux 5 and similar Linux distributions</h4></div></div></div><p>
+			</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376142364"></a>RedHat/Centos/Scientific Linux 5 and similar Linux distributions</h4></div></div></div><p>
 					The official Sqlite package is too old, use the
 					embedded version of Sqlite with 'WITH_SYSTEM_SQLITE3=1'.
-				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1389004940"></a>RedHat/Centos/Scientific Linux 6, Fedora and similar Linux distributions</h4></div></div></div><p>
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376143140"></a>RedHat/Centos/Scientific Linux 6, Fedora and similar Linux distributions</h4></div></div></div><p>
 					You need the 'sqlite-devel' package.
-				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1389005652"></a>Debian, Ubuntu and similar Linux distributions</h4></div></div></div><p>
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376143852"></a>Debian, Ubuntu and similar Linux distributions</h4></div></div></div><p>
 					You need the 'libsqlite3-dev' package.
 				</p><p>
 					For running the Sqlite3 database tests you also 
 					need the 'sqlite3' package.
-				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1389006636"></a>openSUSE, SLES and similar Linux distributions</h4></div></div></div><p>
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376144836"></a>openSUSE, SLES and similar Linux distributions</h4></div></div></div><p>
 					You need the 'sqlite3-devel' package.
 				</p><p>
 					For running the Sqlite3 database tests you also 
 					need the 'sqlite3' package.
-				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1389007620"></a>ArchLinux</h4></div></div></div><p>
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376145820"></a>ArchLinux</h4></div></div></div><p>
 					You need the 'sqlite' package.
-				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1389008244"></a>Slackware</h4></div></div></div><p>
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376146396"></a>Slackware</h4></div></div></div><p>
 					You need the 'sqlite' package. This package is
 					part of the 'ap' package series.
-				</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1389009116"></a>1.2.7. PostgreSQL database support</h3></div></div></div><p>
+				</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376147268"></a>1.2.7. PostgreSQL database support</h3></div></div></div><p>
 				<span class="application">Wolframe</span> can use
 				a PostgreSQL database (<a class="ulink" href="http://postgresql.org" target="_top">http://postgresql.org</a>)
 				as backend for data storage and for authentication and
@@ -352,14 +376,14 @@
 			</pre><p>				
 			</p><p>
 				You can also override all compilation and linking flags
-				of PostgreSQL separatly:
+				of PostgreSQL separately:
 		        </p><pre class="programlisting">
 	make WITH_PGSQL=1 \
 		PGSQL_INCLUDE_DIR=/usr/local/postgresql-9.1.3/include \
 		PGSQL_LIB_DIR=/usr/local/postgresql-9.1.3/lib \
 		PGSQL_LIBS=-lpq
 			</pre><p>				
-			</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1389012788"></a>RedHat, Fedora, CentOS, Scientific Linux and similar Linux distributions</h4></div></div></div><p>
+			</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376150940"></a>RedHat, Fedora, CentOS, Scientific Linux and similar Linux distributions</h4></div></div></div><p>
 					You need the 'postgresql-devel' package.
 				</p><p>
 					For Centos/RHEL/SciLi 5 you can choose between the
@@ -380,16 +404,20 @@
 					
 					change the authentication method from 'ident' to 'md5' in
 					<code class="filename">pg_hba.conf</code>.
-				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1389015484"></a>Debian, Ubuntu and similar Linux distributions</h4></div></div></div><p>
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376153636"></a>Debian, Ubuntu and similar Linux distributions</h4></div></div></div><p>
 					You need the 'libpq-dev' package.
 				</p><p>
 					For running the PostgreSQL database tests you also
 					need the 'postgresql-client' package.
-				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1389016476"></a>openSUSE, SLES and similar Linux distributions</h4></div></div></div><p>
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376154628"></a>openSUSE, SLES and similar Linux distributions</h4></div></div></div><p>
 					You need the 'postgresql-devel' package.
-				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1389017164"></a>ArchLinux</h4></div></div></div><p>
-					You need the 'postgresql' package.
-				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1389017796"></a>Slackware</h4></div></div></div><p>
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376155316"></a>ArchLinux</h4></div></div></div><p>
+					You need the 'postgresql-libs' package.
+				</p><p>
+					If you want to test you also have to set
+					up the PostgreSQL server which comes
+					in the 'postgresql' package.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376156276"></a>Slackware</h4></div></div></div><p>
 					A PostgreSQL package is not available on Slackware,
 					build your own one with:
 					</p><pre class="programlisting">
@@ -431,9 +459,9 @@
 					</pre><p>
 					
 				</p><p>
-					Alternatively you can of course also build the PostgreSQL
+					Alternatively you can of course also build the 'postgresql'
 					package with the help of SlackBuilds.
-				</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1389021380"></a>1.2.8. Oracle database support</h3></div></div></div><p>
+				</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376159860"></a>1.2.8. Oracle database support</h3></div></div></div><p>
 				<span class="application">Wolframe</span> can use
 				a Oracle database (<a class="ulink" href="http://www.oracle.com" target="_top">http://www.oracle.com</a>)
 				as backend for data storage and for authentication and
@@ -458,7 +486,7 @@
 			</pre><p>				
 			</p><p>
 				You can also override all compilation and linking flags
-				of Oracle separatly:
+				of Oracle separately:
 		        </p><pre class="programlisting">
 	make WITH_ORACLE=1 \
 		ORACLE_INCLUDE_DIR=/usr/lib/oracle/11_2/client64 \
@@ -470,7 +498,7 @@
 				database. Then install the 'wolframe' database and the 'wolfusr' database
 				user. Sql example files can be found in
 				<code class="filename">contrib/database/oracle</code>.
-			</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1389026772"></a>RedHat, Fedora, CentOS, Scientific Linux and similar Linux distributions</h4></div></div></div><p>
+			</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376165252"></a>RedHat, Fedora, CentOS, Scientific Linux and similar Linux distributions</h4></div></div></div><p>
 					For building the Oracle database module you have to download the RPM packages
 					<code class="filename">oracle-instantclient12.1-basic-12.1.0.1.0-1.i386.rpm</code> and
 					<code class="filename">oracle-instantclient12.1-devel-12.1.0.1.0-1.i386.rpm</code>.
@@ -483,7 +511,7 @@
 					<code class="filename">oracle-instantclient12.1-sqlplus-12.1.0.1.0-1.i386.rpm</code>.
 					If you want a history in sqlplus it's highly recommended that you install
 					a command line history wrapper like for instance 'rlwrap'.
-				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1389029484"></a>Debian, Ubuntu and similar Linux distributions</h4></div></div></div><p>
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376167964"></a>Debian, Ubuntu and similar Linux distributions</h4></div></div></div><p>
 					For building the Oracle database module you have to download the RPM packages
 					<code class="filename">oracle-instantclient12.1-basic-12.1.0.1.0-1.i386.rpm</code> and
 					<code class="filename">oracle-instantclient12.1-devel-12.1.0.1.0-1.i386.rpm</code>.
@@ -498,7 +526,7 @@
 					<code class="filename">oracle-instantclient12.1-sqlplus-12.1.0.1.0-1.i386.rpm</code>.
 					If you want a history in sqlplus it's highly recommended that you install
 					a command line history wrapper like for instance 'rlwrap'.
-				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1389032428"></a>openSUSE, SLES and similar Linux distributions</h4></div></div></div><p>
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376170908"></a>openSUSE, SLES and similar Linux distributions</h4></div></div></div><p>
 					For building the Oracle database module you have to download the RPM packages
 					<code class="filename">oracle-instantclient12.1-basic-12.1.0.1.0-1.i386.rpm</code> and
 					<code class="filename">oracle-instantclient12.1-devel-12.1.0.1.0-1.i386.rpm</code>.
@@ -511,7 +539,7 @@
 					<code class="filename">oracle-instantclient12.1-sqlplus-12.1.0.1.0-1.i386.rpm</code>.
 					If you want a history in sqlplus it's highly recommended that you install
 					a command line history wrapper like for instance 'rlwrap'.
-				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1389035116"></a>ArchLinux</h4></div></div></div><p>
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376173596"></a>ArchLinux</h4></div></div></div><p>
 					You need the two packages 'oracle-instantclient-basic'
 					and 'oracle-instantclient-sdk'.
 				</p><p>
@@ -525,7 +553,7 @@
 					have to install the package 'oracle-instantclient-sqlplus'.
 					If you want a history in sqlplus it's highly recommended that you install
 					a command line history wrapper like for instance 'rlwrap'.
-				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1389037148"></a>Slackware</h4></div></div></div><p>
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376175628"></a>Slackware</h4></div></div></div><p>
 					Simply download the zipfiles and install them to a directory,
 					let's say '/opt/oracle/instantclient_12_1':
 					</p><pre class="programlisting">
@@ -546,7 +574,7 @@
 					</p><pre class="programlisting">
 	make WITH_ORACLE=1 ORACLE_DIR=/opt/oracle/instantclient_12_1
 					</pre><p>
-				</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1389040484"></a>1.2.9. XML filtering support with libxml2 and libxslt</h3></div></div></div><p>
+				</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376178964"></a>1.2.9. XML filtering support with libxml2 and libxslt</h3></div></div></div><p>
 				<span class="application">Wolframe</span> can use
 				libxml2 and libxslt (<a class="ulink" href="http://xmlsoft.org/" target="_top">http://xmlsoft.org/</a>)
 				for filtering and the conversion of XML data.
@@ -570,7 +598,7 @@
 			</pre><p>				
 			</p><p>
 				You can also override all compilation and linking flags
-				of libxml2 and libxslt separatly:
+				of libxml2 and libxslt separately:
 		        </p><pre class="programlisting">
 	make WITH_LIBXML2=1 WITH_LIBXSLT=1 \
 		LIBXML2_INCLUDE_DIR=/usr/local/libxml2-2.9.1/include \
@@ -580,7 +608,7 @@
 		LIBXSLT_LIB_DIR=/usr/local/libxslt-1.1.28/lib \
 		LIBXSLT_LIBS=-lxslt
 			</pre><p>				
-			</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1389044780"></a>RedHat/Centos/Scientific Linux 5 and similar Linux distributions</h4></div></div></div><p>
+			</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376183260"></a>RedHat/Centos/Scientific Linux 5 and similar Linux distributions</h4></div></div></div><p>
 					The official libxml2 and libxslt package is too old, compile
 					your own versions. Make sure your own libxslt version uses
 					the libxml2 version you compiled and not the system one!
@@ -588,18 +616,18 @@
 					If you don't need working iconv support for non-UTF8 character
 					sets you may also try to use the provided packages 
 					'libxml2-devel' and 'libxslt-devel' but we cannot recommend this.
-				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1389046036"></a>RedHat/Centos/Scientific Linux 6, Fedora and similar Linux distributions</h4></div></div></div><p>
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376184516"></a>RedHat/Centos/Scientific Linux 6, Fedora and similar Linux distributions</h4></div></div></div><p>
 					You need the 'libxml2-devel' and 'libxslt-devel' packages.
-				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1389046772"></a>Debian, Ubuntu and similar Linux distributions</h4></div></div></div><p>
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376185252"></a>Debian, Ubuntu and similar Linux distributions</h4></div></div></div><p>
 					You need the 'libxml2-dev' and 'libxslt1-dev ' packages.
-				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1389047476"></a>openSUSE, SLES and similar Linux distributions</h4></div></div></div><p>
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376185956"></a>openSUSE, SLES and similar Linux distributions</h4></div></div></div><p>
 					You need the 'libxml2-devel' and 'libxslt-devel' packages.
-				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1389048188"></a>ArchLinux</h4></div></div></div><p>
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376186668"></a>ArchLinux</h4></div></div></div><p>
 					You need the 'libxml2' and 'libxslt' packages.
-				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1389048828"></a>Slackware</h4></div></div></div><p>
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376187308"></a>Slackware</h4></div></div></div><p>
 					You need the 'libxml2' and the 'libxslt' packages. Both packages are
 					part of the 'l' package series.
-				</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1389049724"></a>1.2.10. XML filtering support with Textwolf</h3></div></div></div><p>
+				</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376188204"></a>1.2.10. XML filtering support with Textwolf</h3></div></div></div><p>
 				<span class="application">Wolframe</span> can use
 				Textwolf (<a class="ulink" href="http://textwolf.net" target="_top">http://textwolf.net</a>)
 				for filtering and the conversion of XML data.
@@ -618,7 +646,7 @@
 				<span class="bold"><strong>Note</strong></span>: If you plan to
 				run tests when building the <span class="application">Wolframe</span>
 				you should enable Textwolf as many tests rely on it's presence.
-			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1389053404"></a>1.2.11. JSON filtering support with cJSON</h3></div></div></div><p>
+			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376191884"></a>1.2.11. JSON filtering support with cJSON</h3></div></div></div><p>
 				<span class="application">Wolframe</span> can use
 				cJSON (<a class="ulink" href="http://sourceforge.net/projects/cjson/" target="_top">http://sourceforge.net/projects/cjson/</a>)
 				for filtering and the conversion of JSON data.
@@ -633,7 +661,488 @@
 	make WITH_CJSON=1
 			</pre><p>
 							
-			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1389056348"></a>1.2.12. Installation</h3></div></div></div><p>
+			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376194700"></a>1.2.12. Scripting support with Lua</h3></div></div></div><p>
+				<span class="application">Wolframe</span> can be scripted
+				with Lua (<a class="ulink" href="http://www.lua.org" target="_top">http://www.lua.org</a>).
+			</p><p>
+				The Lua interpreter is embedded in the subdirectory
+				<code class="filename">3rdParty/lua</code>.
+			</p><p>
+				You enable the building of a loadable Lua scripting
+				module with:
+
+		        </p><pre class="programlisting">
+	make WITH_LUA=1
+			</pre><p>
+							
+			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376197364"></a>1.2.13. Scripting support with Python</h3></div></div></div><p>
+				<span class="application">Wolframe</span> can be scripted
+				with Python (<a class="ulink" href="https://www.python.org" target="_top">https://www.python.org</a>).
+			</p><p>
+				The module supports only version 3 of the Python interpreter,
+				version 2 is not supported.
+			</p><p>
+				You enable the building of a loadable Python scripting
+				module with:
+
+		        </p><pre class="programlisting">
+	make WITH_PYTHON=1
+			</pre><p>
+							
+			</p><p>
+				The location of the Python library can be overloaded with:
+		        </p><pre class="programlisting">
+	make WITH_PYTHON=1 \
+		PYTHON_DIR=/usr/local/Python-3.3.5
+			</pre><p>				
+			</p><p>
+				You can also override all compilation and linking flags
+				of the Python library separately:
+		        </p><pre class="programlisting">
+	make WITH_PYTHON=1 \
+		PYTHON_CFLAGS=-I/usr/include/python3.3m -I/usr/include/python3.3m \
+		PYTHON_LDFLAGS=-lpthread -Xlink -export-dynamic \
+		PYTHON_LIBS=-lpython3.3m
+			</pre><p>				
+			
+			</p><p>
+				Normally you should not change those flags by hand and
+				rely on the results of the 'python-config' script.
+			</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376201628"></a>RedHat/Centos/Scientific Linux 5 and 6 and similar Linux distributions</h4></div></div></div><p>
+					There are no official Python packages for version 3 of Python.
+					Build your own version of Python. Make sure the location of
+					'python3-config' is in your path.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376202468"></a>Fedora and similar Linux distributions</h4></div></div></div><p>
+					You need the 'python3-devel' package.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376203148"></a>Debian, Ubuntu and similar Linux distributions</h4></div></div></div><p>
+					You need the 'python3-dev' package.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376203836"></a>openSUSE, SLES and similar Linux distributions</h4></div></div></div><p>
+					You need the 'python3-devel' package.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376204524"></a>ArchLinux</h4></div></div></div><p>
+					You need the 'python' package.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376205148"></a>Slackware</h4></div></div></div><p>
+					On Slackware you have to build your own version of Python with:
+					</p><pre class="programlisting">
+	./configure --enable-shared
+	make
+	make install
+					</pre><p>
+				</p><p>
+					Alternatively you can of course also build the 'python3'
+					package with the help of SlackBuilds.
+				</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376206804"></a>1.2.14. Printing support with libhpdf</h3></div></div></div><p>
+				<span class="application">Wolframe</span> can print
+				with libhpdf (<a class="ulink" href="http://libharu.org/" target="_top">http://libharu.org/</a>,
+				also called libharu).
+			</p><p>
+				You enable the building of a loadable libhpdf printing
+				module with:
+
+		        </p><pre class="programlisting">
+	make WITH_SYSTEM_LIBHPDF=1
+			</pre><p>
+							
+			</p><p>
+				You can also link against the embedded version of
+				libhpdf in '3rdParty/libhpdf' instead of the one of
+				the Linux distribution:
+		        </p><pre class="programlisting">
+	make WITH_LOCAL_LIBHPDF=1
+			</pre><p>
+			</p><p>
+				The location of the libhpdf library can be overloaded with:
+		        </p><pre class="programlisting">
+	make WITH_SYSTEM_LIBPHDF=1 \
+		LIBHPDF_DIR=/usr/local/libharu-2.2.1
+			</pre><p>				
+			</p><p>
+				You can also override all compilation and linking flags
+				of the libhpdf library separately:
+		        </p><pre class="programlisting">
+	make WITH_SYSTEM_LIBPHDF=1 \
+		LIBHPDF_INCLUDE_DIR=/usr/local/libharu-2.2.1/include \
+		LIBHPDF_LIB_DIR=/usr/local/libharu-2.2.1/lib \
+		LIBHPDF_LIBS=-lhpdf
+			</pre><p>				
+			
+			</p><p>
+				Though most Linux distributions have a 'libhpdf' package we
+				recommend to use the embedded version 2.3.0RC2 as this version
+				contains many patches.
+			</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376211700"></a>RedHat/Centos/Scientific Linux, Fedora and similar Linux distributions</h4></div></div></div><p>
+					You need the 'zlib-devel' and 'libpng-devel' packages to
+					build libhpdf.
+				</p><p>
+					On Fedora you can also try to use the 'libhpdf-devel' package.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376212724"></a>Debian, Ubuntu and similar Linux distributions</h4></div></div></div><p>
+					You need the 'zlib1g-dev' and 'libpng12-dev' packages to
+					build libhpdf.
+				</p><p>
+					You can also try to use the 'libhpdf-devel' package.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376213716"></a>openSUSE, SLES and similar Linux distributions</h4></div></div></div><p>
+					You need the 'zlib-devel' and 'libpng12-devel' or 'libpng15-devel' packages to
+					build libhpdf.
+				</p><p>
+					You can also try to use the 'libhpdf-devel' package.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376214732"></a>ArchLinux</h4></div></div></div><p>
+					You need the 'zlib' and 'libpng' packages to
+					build libhpdf.
+				</p><p>
+					You can also try to use the 'libharu' package.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376215644"></a>Slackware</h4></div></div></div><p>
+					On Slackware you have to build your own version of libhpdf.
+					You need the 'zlib' and 'libpng' packages.
+					Both packages are part of the 'l' package series.
+				</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376216596"></a>1.2.15. Image processing with FreeImage</h3></div></div></div><p>
+				<span class="application">Wolframe</span> can manipulate
+				various image formats with the help of
+				the FreeImage project (<a class="ulink" href="http://freeimage.sourceforge.net" target="_top">http://freeimage.sourceforge.net</a>).
+			</p><p>
+				You enable the building of a loadable FreeImage processing
+				module with:
+
+		        </p><pre class="programlisting">
+	make WITH_SYSTEM_FREEIMAGE=1
+			</pre><p>
+							
+			</p><p>
+				You can also link against the embedded version of
+				FreeImage in '3rdParty/freeimage' instead of the one of
+				the Linux distribution:
+		        </p><pre class="programlisting">
+	make WITH_LOCAL_FREEIMAGE=1
+			</pre><p>
+			</p><p>
+				The location of the FreeImage package can be overloaded with:
+		        </p><pre class="programlisting">
+	make WITH_SYSTEM_FREEIMAGE=1 \
+		FREEIMAGE_DIR=/usr/local/FreeImage-3.15.4
+			</pre><p>				
+			</p><p>
+				You can also override all compilation and linking flags
+				of the FreeImage package separately:
+		        </p><pre class="programlisting">
+	make WITH_SYSTEM_FREEIMAGE=1 \
+		FREEIMAGE_INCLUDE_DIR=/usr/local/FreeImage-3.15.4/include \
+		FREEIMAGE_LIB_DIR=/usr/local/FreeImage-3.15.4/lib \
+		FREEIMAGE_LIBS=-lfreeimage \
+		FREEIMAGEPLUS_INCLUDE_DIR=/usr/local/FreeImage-3.15.4/include \
+		FREEIMAGEPLUS_LIB_DIR=/usr/local/FreeImage-3.15.4/lib \
+		FREEIMAGEPLUS_LIBS=-lfreeimageplus
+			</pre><p>				
+			
+			</p><p>
+				Though there are FreeImage packages on most Linux distributions
+				you may still want to use the locally embedded version.
+			</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376221772"></a>RedHat/Centos/Scientific Linux and similar Linux distributions</h4></div></div></div><p>
+					There are FreeImage packages, but they are usually quite old.
+					Better build you own version if FreeImage.
+				</p><p>
+					You need the 'zlib-devel' and 'libpng-devel' packages to
+					build FreeImage.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376222836"></a>Fedora and similar Linux distributions</h4></div></div></div><p>
+					You need the 'zlib-devel' and 'libpng-devel' packages to
+					build FreeImage.
+				</p><p>
+					You may also try to use 'freeimage-devel' package.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376223820"></a>Debian, Ubuntu and similar Linux distributions</h4></div></div></div><p>
+					You need the 'zlib1g-dev' and 'libpng12-dev' packages to
+					build FreeImage.
+				</p><p>
+					You can also try to use the 'libfreeimage-devel' package.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376224820"></a>openSUSE, SLES and similar Linux distributions</h4></div></div></div><p>
+					You need the 'zlib-devel' and 'libpng12-devel' or 'libpng15-devel' packages to
+					build FreeImage.
+				</p><p>
+					You can also try to use the 'freeimage-devel' package.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376225836"></a>ArchLinux</h4></div></div></div><p>
+					You need the 'freeimage' package.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376226468"></a>Slackware</h4></div></div></div><p>
+					On Slackware you have to build your own version of FreeImage.
+					You need the 'zlib' and 'libpng' packages.
+					Both packages are part of the 'l' package series.
+				</p><p>
+					Alternatively you can of course also build the 'FreeImage'
+					package with the help of SlackBuilds.
+				</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376227732"></a>1.2.16. Support for ICU</h3></div></div></div><p>
+				<span class="application">Wolframe</span> can use
+				the International Components for Unicode
+				(ICU, <a class="ulink" href="http://site.icu-project.org/" target="_top">http://site.icu-project.org</a>)
+				library for text normalization and conversion.
+			</p><p>
+				For this to work you need the ICU library itself
+				(ICU4C, at least version 3.6) and the 'boost-locale'
+				library has to have the	ICU backend enabled.
+				This is not the	case in all Linux distributions.
+			</p><p>
+				<span class="bold"><strong>Note</strong></span>: The
+				<span class="application">Wolframe</span> server doesn't
+				depend directly on the ICU library, only the ICU
+				normalization module does!
+			</p><p>
+				You enable the building of a loadable ICU normalization
+				module with:
+
+		        </p><pre class="programlisting">
+	make WITH_ICU=1
+			</pre><p>
+							
+			</p><p>
+				The location of the ICU library can be overloaded with:
+		        </p><pre class="programlisting">
+	make WITH_ICU=1 \
+		ICU_DIR=/usr/local/icu4c-52_1
+			</pre><p>				
+			</p><p>
+				You can also override all compilation and linking flags
+				of the ICU library separately:
+		        </p><pre class="programlisting">
+	make WITH_ICU=1 \
+		ICU_INCLUDE_DIR=/usr/local/icu4c-52_1/include \
+		ICU_LIB_DIR=/usr/local/icu4c-52_1/lib \
+		ICU_LIBS=-licuuc -licudata -licui18n
+			</pre><p>				
+			
+			</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376232772"></a>RedHat/Centos/Scientific Linux, Fedora and similar Linux distributions</h4></div></div></div><p>
+					Boost is too old, build your own Boost locale and ICU support.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376233508"></a>Fedora and similar Linux distributions</h4></div></div></div><p>
+					You need the 'boost-devel' package. The
+					official Boost packages have support for
+					Boost locale and the ICU backend.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376234276"></a>Debian, Ubuntu and similar Linux distributions</h4></div></div></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376234652"></a>Debian 6</h5></div></div></div><p>
+						The official Boost packages are too old, 
+						build your own Boost locale and ICU support.
+					</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376235340"></a>Debian 7</h5></div></div></div><p>
+						You need 'libboost-locale-dev' package.
+					</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376235980"></a>Ubuntu 10.04.1 LTS, Ubuntu 12.04</h5></div></div></div><p>
+						The official Boost packages are not recent enough.
+						Build your own Boost version with ICU support here.
+					</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376236724"></a>Ubuntu 12.10</h5></div></div></div><p>
+						You need 'libboost-locale-dev' package.
+					</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376237364"></a>Ubuntu 13.04</h5></div></div></div><p>
+						The official Boost packages have problems.
+						Build your own Boost version with ICU support here.
+					</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376238060"></a>Ubuntu 13.10</h5></div></div></div><p>
+						You need 'libboost-locale-dev' package.
+					</p></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376238764"></a>openSUSE, SLES and similar Linux distributions</h4></div></div></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376239140"></a>OpenSuSE 12.3, 13.1</h5></div></div></div><p>
+						You need the 'boost-devel' package. The
+						official Boost packages have support for
+						Boost locale and the ICU backend.
+					</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376239860"></a>SLES 11 SP1, SP2 and SP3</h5></div></div></div><p>
+						The official Boost packages are not recent enough
+						and lack ICU support.
+						Build your own Boost with ICU support here.
+					</p></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376240652"></a>ArchLinux</h4></div></div></div><p>
+					You need the 'boost-libs' package. The
+					official Boost package have support for
+					Boost locale and the ICU backend.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376241372"></a>Slackware</h4></div></div></div><p>
+					The official Boost package contains support for 
+					boost-locale and the ICU backend.
+					This package is	part of the 'l' package series.
+				</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376242300"></a>1.2.17. Authentication support with PAM</h3></div></div></div><p>
+				<span class="application">Wolframe</span> can authenticate
+				users with PAM.
+			</p><p>
+				You enable the building of a loadable PAM authentication
+				module with:
+
+		        </p><pre class="programlisting">
+	make WITH_PAM=1
+			</pre><p>
+							
+			</p><p>
+				The location of the PAM library can be overloaded with:
+		        </p><pre class="programlisting">
+	make WITH_PAM=1 \
+		PAM_DIR=/usr/local/pam-1.1.8
+			</pre><p>				
+			</p><p>
+				You can also override all compilation and linking flags
+				of the PAM library separately:
+		        </p><pre class="programlisting">
+	make WITH_PAM=1 \
+		PAM_INCLUDE_DIR=/usr/local/pam-1.1.8/include \
+		PAM_LIB_DIR=/usr/local/pam-1.1.8/lib \
+		PAM_LIBS=-lpam
+			</pre><p>				
+			
+			</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376245572"></a>RedHat/Centos/Scientific Linux, Fedora and similar Linux distributions</h4></div></div></div><p>
+					You need the 'pam-devel' package.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376246284"></a>Debian, Ubuntu and similar Linux distributions</h4></div></div></div><p>
+					You need the 'libpam0g-dev' package.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376246972"></a>openSUSE, SLES and similar Linux distributions</h4></div></div></div><p>
+					You need the 'pam-devel' package.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376247660"></a>ArchLinux</h4></div></div></div><p>
+					You need the 'pam' package.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376248284"></a>Slackware</h4></div></div></div><p>
+					On Slackware there is no official PAM package.
+					You have to build 'linux-pam' on your own.
+				</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376249164"></a>1.2.18. Authentication support with SASL</h3></div></div></div><p>
+				<span class="application">Wolframe</span> can authenticate
+				users with the Cyrus SASL library
+				(<a class="ulink" href="http://cyrusimap.org" target="_top">http://cyrusimap.org/</a>).
+			</p><p>
+				<span class="bold"><strong>Note</strong></span>: GNU SASL is currently not supported.
+			</p><p>
+				You enable the building of a loadable SASL authentication
+				module with:
+
+		        </p><pre class="programlisting">
+	make WITH_SASL=1
+			</pre><p>
+							
+			</p><p>
+				The location of the Cyrus SASL library can be overloaded with:
+		        </p><pre class="programlisting">
+	make WITH_SASL=1 \
+		SASL_DIR=/usr/local/cyrus-sasl-2.1.26
+			</pre><p>				
+			</p><p>
+				You can also override all compilation and linking flags
+				of the Cyrus SASL library separately:
+		        </p><pre class="programlisting">
+	make WITH_SASL=1 \
+		SASL_INCLUDE_DIR=/usr/local/cyrus-sasl-2.1.26/include \
+		SASL_LIB_DIR=/usr/local/cyrus-sasl-2.1.26/lib \
+		SASL_LIBS=-lsasl2
+			</pre><p>				
+			
+			</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376253372"></a>RedHat/Centos/Scientific Linux, Fedora and similar Linux distributions</h4></div></div></div><p>
+					You need the 'cyrus-sasl-devel' package.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376254084"></a>Debian, Ubuntu and similar Linux distributions</h4></div></div></div><p>
+					You need the 'libsasl2-dev' package.
+				</p><p>
+					For running the SASL tests you also need the 'sasl2-bin' package.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376255052"></a>openSUSE, SLES and similar Linux distributions</h4></div></div></div><p>
+					You need the 'cyrus-sasl-devel' package.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376255740"></a>ArchLinux</h4></div></div></div><p>
+					You need the 'libsasl' package.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376256364"></a>Slackware</h4></div></div></div><p>
+					You need the 'cyrus-sasl' package. This package is
+					part of the 'n' package series.
+				</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376257236"></a>1.2.19. Testing Wolframe</h3></div></div></div><p>
+				<span class="application">Wolframe</span> has tests
+				written in Google gtest
+				(<a class="ulink" href="https://code.google.com/p/googletest/" target="_top">https://code.google.com/p/googletest/</a>).
+			</p><p>
+				Tests are run with:
+		        </p><pre class="programlisting">
+	make test
+			</pre><p>
+			</p><p>
+				Some tests run for a long time (regression and stress
+				tests). They are not run per default when calling
+				'make test', but you have to call:
+		        </p><pre class="programlisting">
+	make longtest
+			</pre><p>
+			</p><p>
+				Sometimes you only want to build the test programs but
+				not to run them (for instance when cross-compiling). Then
+				you can set the 'RUN_TESTS' variable as follows:
+		        </p><pre class="programlisting">
+	make test RUN_TESTS=0
+			</pre><p>
+			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376260988"></a>1.2.20. Testing with Expect</h3></div></div></div><p>
+				Some more complex tests are written with Expect
+				(<a class="ulink" href="http://expect.sourceforge.net/" target="_top">http://expect.sourceforge.net/</a>).
+			</p><p>
+				You enable testing with Expect with:
+
+		        </p><pre class="programlisting">
+	make WITH_EXPECT=1
+			</pre><p>
+							
+			</p><p>
+				The location of the Expect interpreter can be overloaded with:
+		        </p><pre class="programlisting">
+	make WITH_EXPECT=1 \
+		EXPECT=/usr/local/bin/expect
+			</pre><p>				
+			</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376263420"></a>RedHat/Centos/Scientific Linux, Fedora and similar Linux distributions</h4></div></div></div><p>
+					You need the 'expect' and the 'telnet' packages.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376264140"></a>Debian, Ubuntu and similar Linux distributions</h4></div></div></div><p>
+					You need the 'expect' and the 'telnet' packages.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376264836"></a>openSUSE, SLES and similar Linux distributions</h4></div></div></div><p>
+					You need the 'expect' and the 'telnet' packages.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376265532"></a>ArchLinux</h4></div></div></div><p>
+					You need the 'expect' and 'inetutils' packages.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376266172"></a>Slackware</h4></div></div></div><p>
+					You need the 'expect' and 'telnet' packages. Those packages
+					are part of the 'tcl' respectively the 'n' package series.
+				</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376267084"></a>1.2.21. Building the documentation</h3></div></div></div><p>
+				The documentation including the man pages is written using
+				DocBook 
+				(<a class="ulink" href="http://www.docbook.org" target="_top">http://www.docbook.org</a>).
+			</p><p>
+				Developer documentation is generated with Doxygen
+				(<a class="ulink" href="http://www.doxygen.org" target="_top">http://www.doxygen.org</a>).		
+			</p><p>
+				All documentation is built in the 'docs' subdirectory:
+
+		        </p><pre class="programlisting">
+	cd docs
+	make doc
+			</pre><p>
+			</p><p>
+				<span class="bold"><strong>Note</strong></span>: The various tools are
+				not able to produce the same results on all platforms. Your
+				experience in the quality of the generated artifacts may vary.
+				Generally, the newer the tools, the better.
+			</p><p>
+				The validity of the XML of the documenation can be checked with:
+		        </p><pre class="programlisting">
+	cd docs
+	make check
+			</pre><p>
+			</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376270708"></a>RedHat/Centos/Scientific Linux and similar Linux distributions</h4></div></div></div><p>
+					You need the 'libxslt', 'doxygen' and 'docbook-style-xsl' packages (from EPEL).
+				</p><p>
+					When generating PDFs you need the 'fop' package.
+				</p><p>
+					When rebuilding the SVG images of the documentation you also need 'dia'.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376271988"></a>Fedora and similar Linux distributions</h4></div></div></div><p>
+					You need the 'libxslt', 'doxygen' and 'docbook-style-xsl' packages.
+				</p><p>
+					When generating PDFs you need the 'fop' package.
+				</p><p>
+					When rebuilding the SVG images of the documentation you also need 'dia'.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376273236"></a>Debian, Ubuntu and similar Linux distributions</h4></div></div></div><p>
+					You need the 'xsltproc', 'doxygen' and 'docbook-xsl' packages.
+				</p><p>
+					When generating PDFs you need the 'fop' package.
+				</p><p>
+					When rebuilding the SVG images of the documentation you also need 'dia'.
+				</p><p>
+					For checking the validity of various XML files you need 'libxml2-utils' (for xmllint).
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376274780"></a>openSUSE, SLES and similar Linux distributions</h4></div></div></div><p>
+					You need the 'libxslt', 'doxygen' and 'docbook-style-xsl' packages.
+				</p><p>
+					When generating PDFs you need the 'fop' package.
+				</p><p>
+					When rebuilding the SVG images of the documentation you also need 'dia'.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376276036"></a>ArchLinux</h4></div></div></div><p>
+					You need the 'xsltproc', 'doxygen' and 'docbook-xsl' packages.
+				</p><p>
+					When generating PDFs you need the 'fop' package.
+					Newest versions run only with the SVN version of
+					'java-xmlgraphics-commons'. Install the package
+					'java-xmlgraphics-commons-svn' from the AUR.
+				</p><p>
+					When rebuilding the SVG images of the documentation you also need 'dia'.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376277388"></a>Slackware</h4></div></div></div><p>
+					You need the 'libxslt' and 'doxygen' packages.
+					Those packages part of the 'l', 'd' package series.
+					DocBook you have to install on your own.
+				</p><p>
+					When generating PDFs you have to install 'fop' on your own.
+				</p><p>
+					When rebuilding the SVG images of the documentation you also need 'dia'
+					which you will have to build on your own.
+					Alternatively you can of course also build the 'dia'
+					package with the help of SlackBuilds.
+				</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376279524"></a>1.2.22. Installation</h3></div></div></div><p>
 				The makefiles provide a 'install' and an 'uninstall'
 				target to install and uninstall the software.
 			</p><p>
@@ -659,7 +1168,27 @@
 		        </p><pre class="programlisting">
 	make DEFAULT_MODULE_LOAD_DIR=%{_libdir}/wolframe/modules
 		        </pre><p>
-		        </p></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch01.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="ch01.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="ch01s03.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter 1. Installation from source </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 1.3. Building on Windows systems</td></tr></table></div></div></div>
+		        </p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376283196"></a>1.2.23. Manual dependency generation</h3></div></div></div><p>
+				Usually dependencies are automatically recomputed
+				and stored in files with extension '.d'.
+			</p><p>
+				On some platforms and with some older versions of
+				GNU make you can run into problems, especially if
+				you build the software in parallel. For this case
+				you can force the computation of depencies in a 
+				special make step as follows:
+
+				</p><pre class="programlisting">
+	make depend
+	make -j 4
+				</pre><p>
+
+		        </p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376284940"></a>1.2.24. Creating source tarballs</h3></div></div></div><p>
+				<span class="application">Wolframe</span> supports the
+				standard targets 'dist', 'dist-Z', 'dist-gz' and
+				'dist-bz2' to create a tarball containg all the
+				necessary sources.
+			</p></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch01.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="ch01.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="ch02.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter 1. Installation from source </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> Chapter 2. Installation via binary packages</td></tr></table></div></div></div>
 
 <!-- Footer -->
 <div xmlns="" class="wrapper row2">
