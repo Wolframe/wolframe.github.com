@@ -58,7 +58,7 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 3. Functions</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch02.html">Prev</a> </td><th width="60%" align="center">Developing Wolframe Server Applications</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch03s02.html">Next</a></td></tr></table><hr /></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="idp1402103316"></a>Chapter 3. Functions</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="bk01ch03.html#idp1402148404">3.1. Transactions in TDL</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk01ch03.html#idp1402148748">3.1.1. Introduction</a></span></dt><dt><span class="sect2"><a href="bk01ch03.html#idp1402184196">3.1.2. Configuration</a></span></dt><dt><span class="sect2"><a href="bk01ch03.html#idp1402185324">3.1.3. Language Description</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk01ch03.html#idp1402186092">Subroutines</a></span></dt><dt><span class="sect3"><a href="bk01ch03.html#idp1402191828">Transaction Function Declarations</a></span></dt><dt><span class="sect3"><a href="bk01ch03.html#idp1402143596">Main Processing Instructions</a></span></dt><dd><dl><dt><span class="sect4"><a href="bk01ch03.html#idp1402215788">Main Processing Example</a></span></dt></dl></dd><dt><span class="sect3"><a href="bk01ch03.html#idp1402217500">Preprocessing Instructions</a></span></dt><dd><dl><dt><span class="sect4"><a href="bk01ch03.html#idp1402221476">Preprocessing Example</a></span></dt></dl></dd><dt><span class="sect3"><a href="bk01ch03.html#idp1402223196">Selector Path</a></span></dt><dd><dl><dt><span class="sect4"><a href="bk01ch03.html#idp1402228844">Path Expression Examples</a></span></dt><dt><span class="sect4"><a href="bk01ch03.html#idp1402235084">Path Usage Example</a></span></dt></dl></dd><dt><span class="sect3"><a href="bk01ch03.html#idp1402236748">Referencing Database Results</a></span></dt><dt><span class="sect3"><a href="bk01ch03.html#idp1402242164">Naming Database Results</a></span></dt><dd><dl><dt><span class="sect4"><a href="bk01ch03.html#idp1402243588">Named Result Example</a></span></dt></dl></dd><dt><span class="sect3"><a href="bk01ch03.html#idp1402245140">Referencing Subroutine Parameters</a></span></dt><dt><span class="sect3"><a href="bk01ch03.html#idp1402247300">Constraints on Database Results</a></span></dt><dd><dl><dt><span class="sect4"><a href="bk01ch03.html#idp1402250932">Example with Result Constraints</a></span></dt></dl></dd><dt><span class="sect3"><a href="bk01ch03.html#idp1402252628">Rewriting Error Messages for the Client</a></span></dt><dd><dl><dt><span class="sect4"><a href="bk01ch03.html#idp1402254372">Database Error HINT Example</a></span></dt></dl></dd><dt><span class="sect3"><a href="bk01ch03.html#idp1402256956">Substructures in the Result</a></span></dt><dt><span class="sect3"><a href="bk01ch03.html#idp1402259572">Explicit Definition of Elements in the Result</a></span></dt><dt><span class="sect3"><a href="bk01ch03.html#idp1402262052">Database Specific Code</a></span></dt><dt><span class="sect3"><a href="bk01ch03.html#idp1402265380">Subroutine Templates</a></span></dt><dt><span class="sect3"><a href="bk01ch03.html#idp1402267508">Includes</a></span></dt></dl></dd></dl></dd><dt><span class="sect1"><a href="bk01ch03s02.html">3.2. Functions in .NET</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk01ch03s02.html#idp1402317012">3.2.1. Introduction</a></span></dt><dt><span class="sect2"><a href="bk01ch03s02.html#idp1402351388">3.2.2. Configuration</a></span></dt><dt><span class="sect2"><a href="bk01ch03s02.html#idp1402353772">3.2.3. Function Interface</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk01ch03s02.html#idp1402354092">Function Context</a></span></dt><dt><span class="sect3"><a href="bk01ch03s02.html#idp1402358636">Function Signature</a></span></dt><dt><span class="sect3"><a href="bk01ch03s02.html#idp1402362724">Example</a></span></dt></dl></dd><dt><span class="sect2"><a href="bk01ch03s02.html#idp1402365124">3.2.4. Prepare .NET Assemblies</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk01ch03s02.html#idp1402367380">Make Assemblies COM Visible</a></span></dt><dt><span class="sect3"><a href="bk01ch03s02.html#idp1402369476">Tag Exported Objects with a Guid</a></span></dt><dt><span class="sect3"><a href="bk01ch03s02.html#idp1402372156">Add Marshalling Tags to Values</a></span></dt><dt><span class="sect3"><a href="bk01ch03s02.html#idp1402385908">Example with COM Introspection Tags</a></span></dt><dt><span class="sect3"><a href="bk01ch03s02.html#idp1402387620">Create a Type Library</a></span></dt><dt><span class="sect3"><a href="bk01ch03s02.html#idp1402389516">Register the Type Library</a></span></dt><dt><span class="sect3"><a href="bk01ch03s02.html#idp1402390748">Register the Assembly in the GAC</a></span></dt><dt><span class="sect3"><a href="bk01ch03s02.html#idp1402392900">Register the Types in the Assembly</a></span></dt></dl></dd><dt><span class="sect2"><a href="bk01ch03s02.html#idp1402395332">3.2.5. Calling Wolframe Functions</a></span></dt><dt><span class="sect2"><a href="bk01ch03s02.html#idp1402403348">3.2.6. Configure .NET Assemblies</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk01ch03s02.html#idp1402406388"></a></span></dt><dt><span class="sect3"><a href="bk01ch03s02.html#idp1402412764">Get the PublicKeyToken</a></span></dt></dl></dd><dt><span class="sect2"><a href="bk01ch03s02.html#idp1402416100">3.2.7. Validation Issues</a></span></dt></dl></dd><dt><span class="sect1"><a href="bk01ch03s03.html">3.3. Functions in Python</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk01ch03s03.html#idp1402464108">3.3.1. Current Development State</a></span></dt></dl></dd><dt><span class="sect1"><a href="bk01ch03s04.html">3.4. Functions in Lua</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk01ch03s04.html#idp1402461596">3.4.1. Introduction</a></span></dt><dt><span class="sect2"><a href="bk01ch03s04.html#idp1402459444">3.4.2. Configuration</a></span></dt><dt><span class="sect2"><a href="bk01ch03s04.html#idp1402508468">3.4.3. Declaring Functions</a></span></dt><dt><span class="sect2"><a href="bk01ch03s04.html#idp1402510476">3.4.4. Wolframe Provider Library</a></span></dt><dt><span class="sect2"><a href="bk01ch03s04.html#idp1402517404">3.4.5. Using Atomic Data Types</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk01ch03s04.html#idp1402526324">Data Type 'datetime'</a></span></dt><dt><span class="sect3"><a href="bk01ch03s04.html#idp1402540028">Data Type 'bignumber'</a></span></dt></dl></dd><dt><span class="sect2"><a href="bk01ch03s04.html#idp1402548828">3.4.6. Serialization Iterators</a></span></dt><dt><span class="sect2"><a href="bk01ch03s04.html#idp1402555988">3.4.7. Global Objects</a></span></dt><dt><span class="sect2"><a href="bk01ch03s04.html#idp1402558628">3.4.8. Using Forms</a></span></dt><dt><span class="sect2"><a href="bk01ch03s04.html#idp1402565716">3.4.9. Form Functions</a></span></dt><dt><span class="sect2"><a href="bk01ch03s04.html#idp1402570788">3.4.10. List of <span class="application">Lua</span> Objects</a></span></dt></dl></dd><dt><span class="sect1"><a href="bk01ch03s05.html">3.5. Functions in Native C++</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk01ch03s05.html#idp1402684612">3.5.1. Introduction</a></span></dt><dt><span class="sect2"><a href="bk01ch03s05.html#idp1402674036">3.5.2. Prerequisites</a></span></dt><dt><span class="sect2"><a href="bk01ch03s05.html#idp1402717724">3.5.3. Declaring Functions</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk01ch03s05.html#idp1402719948">Example Function Declaration</a></span></dt></dl></dd><dt><span class="sect2"><a href="bk01ch03s05.html#idp1402723516">3.5.4. Input/Output Data Structures</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk01ch03s05.html#idp1402725492">Header File</a></span></dt><dt><span class="sect3"><a href="bk01ch03s05.html#idp1402727156">Source File</a></span></dt></dl></dd><dt><span class="sect2"><a href="bk01ch03s05.html#idp1402728860">3.5.5. Writing the Module</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk01ch03s05.html#idp1402730164">Module Declaration</a></span></dt></dl></dd><dt><span class="sect2"><a href="bk01ch03s05.html#idp1402734788">3.5.6. Building the Module</a></span></dt><dt><span class="sect2"><a href="bk01ch03s05.html#idp1402735564">3.5.7. Using the Module</a></span></dt><dt><span class="sect2"><a href="bk01ch03s05.html#idp1402736772">3.5.8. Validation Issues</a></span></dt></dl></dd></dl></div><p>This chapter describes how functions are linked to the logic tier. 
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 3. Functions</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch02.html">Prev</a> </td><th width="60%" align="center">Developing Wolframe Server Applications</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch03s02.html">Next</a></td></tr></table><hr /></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="idp1402974916"></a>Chapter 3. Functions</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="bk01ch03.html#idp1403020004">3.1. Transactions in TDL</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk01ch03.html#idp1403020348">3.1.1. Introduction</a></span></dt><dt><span class="sect2"><a href="bk01ch03.html#idp1403055796">3.1.2. Configuration</a></span></dt><dt><span class="sect2"><a href="bk01ch03.html#idp1403056924">3.1.3. Language Description</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk01ch03.html#idp1403057692">Subroutines</a></span></dt><dt><span class="sect3"><a href="bk01ch03.html#idp1403063428">Transaction Function Declarations</a></span></dt><dt><span class="sect3"><a href="bk01ch03.html#idp1403015196">Main Processing Instructions</a></span></dt><dd><dl><dt><span class="sect4"><a href="bk01ch03.html#idp1403087412">Main Processing Example</a></span></dt></dl></dd><dt><span class="sect3"><a href="bk01ch03.html#idp1403089124">Preprocessing Instructions</a></span></dt><dd><dl><dt><span class="sect4"><a href="bk01ch03.html#idp1403093100">Preprocessing Example</a></span></dt></dl></dd><dt><span class="sect3"><a href="bk01ch03.html#idp1403094820">Selector Path</a></span></dt><dd><dl><dt><span class="sect4"><a href="bk01ch03.html#idp1403100468">Path Expression Examples</a></span></dt><dt><span class="sect4"><a href="bk01ch03.html#idp1403106708">Path Usage Example</a></span></dt></dl></dd><dt><span class="sect3"><a href="bk01ch03.html#idp1403108372">Referencing Database Results</a></span></dt><dt><span class="sect3"><a href="bk01ch03.html#idp1403113788">Naming Database Results</a></span></dt><dd><dl><dt><span class="sect4"><a href="bk01ch03.html#idp1403115212">Named Result Example</a></span></dt></dl></dd><dt><span class="sect3"><a href="bk01ch03.html#idp1403116764">Referencing Subroutine Parameters</a></span></dt><dt><span class="sect3"><a href="bk01ch03.html#idp1403118924">Constraints on Database Results</a></span></dt><dd><dl><dt><span class="sect4"><a href="bk01ch03.html#idp1403122556">Example with Result Constraints</a></span></dt></dl></dd><dt><span class="sect3"><a href="bk01ch03.html#idp1403124252">Rewriting Error Messages for the Client</a></span></dt><dd><dl><dt><span class="sect4"><a href="bk01ch03.html#idp1403125996">Database Error HINT Example</a></span></dt></dl></dd><dt><span class="sect3"><a href="bk01ch03.html#idp1403128580">Substructures in the Result</a></span></dt><dt><span class="sect3"><a href="bk01ch03.html#idp1403131196">Explicit Definition of Elements in the Result</a></span></dt><dt><span class="sect3"><a href="bk01ch03.html#idp1403133676">Database Specific Code</a></span></dt><dt><span class="sect3"><a href="bk01ch03.html#idp1403137004">Subroutine Templates</a></span></dt><dt><span class="sect3"><a href="bk01ch03.html#idp1403139132">Includes</a></span></dt></dl></dd></dl></dd><dt><span class="sect1"><a href="bk01ch03s02.html">3.2. Functions in .NET</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk01ch03s02.html#idp1403188636">3.2.1. Introduction</a></span></dt><dt><span class="sect2"><a href="bk01ch03s02.html#idp1403223012">3.2.2. Configuration</a></span></dt><dt><span class="sect2"><a href="bk01ch03s02.html#idp1403225396">3.2.3. Function Interface</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk01ch03s02.html#idp1403225716">Function Context</a></span></dt><dt><span class="sect3"><a href="bk01ch03s02.html#idp1403230260">Function Signature</a></span></dt><dt><span class="sect3"><a href="bk01ch03s02.html#idp1403234348">Example</a></span></dt></dl></dd><dt><span class="sect2"><a href="bk01ch03s02.html#idp1403236748">3.2.4. Prepare .NET Assemblies</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk01ch03s02.html#idp1403239004">Make Assemblies COM Visible</a></span></dt><dt><span class="sect3"><a href="bk01ch03s02.html#idp1403241100">Tag Exported Objects with a Guid</a></span></dt><dt><span class="sect3"><a href="bk01ch03s02.html#idp1403243780">Add Marshalling Tags to Values</a></span></dt><dt><span class="sect3"><a href="bk01ch03s02.html#idp1403257532">Example with COM Introspection Tags</a></span></dt><dt><span class="sect3"><a href="bk01ch03s02.html#idp1403259244">Create a Type Library</a></span></dt><dt><span class="sect3"><a href="bk01ch03s02.html#idp1403261140">Register the Type Library</a></span></dt><dt><span class="sect3"><a href="bk01ch03s02.html#idp1403262372">Register the Assembly in the GAC</a></span></dt><dt><span class="sect3"><a href="bk01ch03s02.html#idp1403264524">Register the Types in the Assembly</a></span></dt></dl></dd><dt><span class="sect2"><a href="bk01ch03s02.html#idp1403266956">3.2.5. Calling Wolframe Functions</a></span></dt><dt><span class="sect2"><a href="bk01ch03s02.html#idp1403274972">3.2.6. Configure .NET Assemblies</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk01ch03s02.html#idp1403278012"></a></span></dt><dt><span class="sect3"><a href="bk01ch03s02.html#idp1403284388">Get the PublicKeyToken</a></span></dt></dl></dd><dt><span class="sect2"><a href="bk01ch03s02.html#idp1403287724">3.2.7. Validation Issues</a></span></dt></dl></dd><dt><span class="sect1"><a href="bk01ch03s03.html">3.3. Functions in Python</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk01ch03s03.html#idp1403335732">3.3.1. Current Development State</a></span></dt></dl></dd><dt><span class="sect1"><a href="bk01ch03s04.html">3.4. Functions in Lua</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk01ch03s04.html#idp1403333220">3.4.1. Introduction</a></span></dt><dt><span class="sect2"><a href="bk01ch03s04.html#idp1403331092">3.4.2. Configuration</a></span></dt><dt><span class="sect2"><a href="bk01ch03s04.html#idp1403380092">3.4.3. Declaring Functions</a></span></dt><dt><span class="sect2"><a href="bk01ch03s04.html#idp1403382100">3.4.4. Wolframe Provider Library</a></span></dt><dt><span class="sect2"><a href="bk01ch03s04.html#idp1403389028">3.4.5. Using Atomic Data Types</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk01ch03s04.html#idp1403397948">Data Type 'datetime'</a></span></dt><dt><span class="sect3"><a href="bk01ch03s04.html#idp1403411652">Data Type 'bignumber'</a></span></dt></dl></dd><dt><span class="sect2"><a href="bk01ch03s04.html#idp1403420452">3.4.6. Serialization Iterators</a></span></dt><dt><span class="sect2"><a href="bk01ch03s04.html#idp1403427612">3.4.7. Iterator Library</a></span></dt><dt><span class="sect2"><a href="bk01ch03s04.html#idp1403432332">3.4.8. Global Objects</a></span></dt><dt><span class="sect2"><a href="bk01ch03s04.html#idp1403434468">3.4.9. Using Forms</a></span></dt><dt><span class="sect2"><a href="bk01ch03s04.html#idp1403441556">3.4.10. Form Functions</a></span></dt><dt><span class="sect2"><a href="bk01ch03s04.html#idp1403446628">3.4.11. List of <span class="application">Lua</span> Objects</a></span></dt></dl></dd><dt><span class="sect1"><a href="bk01ch03s05.html">3.5. Functions in Native C++</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk01ch03s05.html#idp1403564620">3.5.1. Introduction</a></span></dt><dt><span class="sect2"><a href="bk01ch03s05.html#idp1403554020">3.5.2. Prerequisites</a></span></dt><dt><span class="sect2"><a href="bk01ch03s05.html#idp1403597732">3.5.3. Declaring Functions</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk01ch03s05.html#idp1403599956">Example Function Declaration</a></span></dt></dl></dd><dt><span class="sect2"><a href="bk01ch03s05.html#idp1403603476">3.5.4. Input/Output Data Structures</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk01ch03s05.html#idp1403605452">Header File</a></span></dt><dt><span class="sect3"><a href="bk01ch03s05.html#idp1403607116">Source File</a></span></dt></dl></dd><dt><span class="sect2"><a href="bk01ch03s05.html#idp1403608820">3.5.5. Writing the Module</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk01ch03s05.html#idp1403610124">Module Declaration</a></span></dt></dl></dd><dt><span class="sect2"><a href="bk01ch03s05.html#idp1403614748">3.5.6. Building the Module</a></span></dt><dt><span class="sect2"><a href="bk01ch03s05.html#idp1403615524">3.5.7. Using the Module</a></span></dt><dt><span class="sect2"><a href="bk01ch03s05.html#idp1403616732">3.5.8. Validation Issues</a></span></dt></dl></dd></dl></div><p>This chapter describes how functions are linked to the logic tier. 
 It gives an overview on the language bindings available for Wolframe.
 </p><p>
 For defining database transactions Wolframe introduces a language called TDL (Transaction Definition Language).
@@ -73,7 +73,7 @@ After reading this chapter you should be able to write functions of the <span cl
 Be aware that you have to configure a programming language of the logic tier in <span class="application">Wolframe</span>
 before using it. Each chapter introducing a programming language will have a section that describes how the server
 configuration of <span class="application">Wolframe</span> has to be extended for its availability.
-</p><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1402148404"></a>3.1. Transactions in TDL</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1402148748"></a>3.1.1. Introduction</h3></div></div></div><p>
+</p><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1403020004"></a>3.1. Transactions in TDL</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1403020348"></a>3.1.1. Introduction</h3></div></div></div><p>
 			For the description of transactions <span class="application">Wolframe</span> provides the
 			transaction definition language (<acronym class="acronym">TDL</acronym>) introduced here.
 			<span class="application">Wolframe</span> transactions in <acronym class="acronym">TDL</acronym> are defined as functions in a
@@ -118,15 +118,15 @@ configuration of <span class="application">Wolframe</span> has to be extended fo
 		</p><p>
 			The TDL is case insensitive. For clearness and better readability
 			TDL keywords are written in uppercase here.
-		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1402184196"></a>3.1.2. Configuration</h3></div></div></div><p>
+		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1403055796"></a>3.1.2. Configuration</h3></div></div></div><p>
 		Each TDL program source referenced has to be declared in the <code class="code">Processor</code>
 		section of the configuration with <code class="code">program &lt;sourcefile&gt;</code>.
-		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1402185324"></a>3.1.3. Language Description</h3></div></div></div><p>
+		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1403056924"></a>3.1.3. Language Description</h3></div></div></div><p>
 		A TDL program consists of subroutine declarations and exported
 		transaction function declarations. Subroutines have the same
 		structure as transaction function blocks but without pre- and postprocessing
 		and authorization method declarations.
-		</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1402186092"></a>Subroutines</h4></div></div></div><p>A subroutine declaration starts with the Keyword <code class="code">SUBROUTINE</code>
+		</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403057692"></a>Subroutines</h4></div></div></div><p>A subroutine declaration starts with the Keyword <code class="code">SUBROUTINE</code>
 			followed by the subroutine name and optionally some parameter names
 			in brackets ('(' ')') separated by comma.
 			The declared subroutine name identifies the
@@ -165,7 +165,7 @@ configuration of <span class="application">Wolframe</span> has to be extended fo
 			END
 			</pre><p>
 			The line with the RESULT INTO declaration and the DATABASE declaration are optional.
-			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1402191828"></a>Transaction Function Declarations</h4></div></div></div><p>A transaction function declaration starts with the Keyword <code class="code">TRANSACTION</code>
+			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403063428"></a>Transaction Function Declarations</h4></div></div></div><p>A transaction function declaration starts with the Keyword <code class="code">TRANSACTION</code>
 			followed by the name of the transaction function. This name identifies the
 			function globally. The body of the function contains the following parts:
 			</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><pre class="programlisting">AUTHORIZE ( &lt;auth-function&gt;, &lt;auth-resource&gt; )</pre><p>
@@ -227,7 +227,7 @@ configuration of <span class="application">Wolframe</span> has to be extended fo
 				...&lt;instructions&gt;...
 			END
 			</pre><p>
-			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1402143596"></a>Main Processing Instructions</h4></div></div></div><p>Main processing instructions defined in the main execution block 
+			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403015196"></a>Main Processing Instructions</h4></div></div></div><p>Main processing instructions defined in the main execution block 
 			of a subroutine or transaction function consist of three parts in the
 			following order terminated by a semicolon ';' (the order of the 
 			INTO and FOREACH expression can be switched):
@@ -290,7 +290,7 @@ configuration of <span class="application">Wolframe</span> has to be extended fo
 						can only be referenced if they are bound to 
 						the FOREACH quantifier.
 					</p></li></ul></div><p>
-			</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1402215788"></a>Main Processing Example</h5></div></div></div><p>The following example illustrate how the FOREACH,INTO,DO
+			</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1403087412"></a>Main Processing Example</h5></div></div></div><p>The following example illustrate how the FOREACH,INTO,DO
 				expressions in the main processing block work together:
 				</p><pre class="programlisting">
 				
@@ -304,7 +304,7 @@ BEGIN
 END
 
 				</pre><p>
-				</p></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1402217500"></a>Preprocessing Instructions</h4></div></div></div><p>Preprocessing instructions defined in the PREPROC execution block 
+				</p></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403089124"></a>Preprocessing Instructions</h4></div></div></div><p>Preprocessing instructions defined in the PREPROC execution block 
 			of a transaction function consist similar to the instructions
 			in the main execution block of three parts in the
 			following order terminated by a semicolon ';' (the order of the INTO and FOREACH expression can be
@@ -329,7 +329,7 @@ END
 					path in the FOREACH selection. They are uniquely
 					referencing elements in the context of a selected element.
 				</p></li></ul></div><p>
-		</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1402221476"></a>Preprocessing Example</h5></div></div></div><p>The following example illustrate how the "FOREACH, INTO, DO"
+		</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1403093100"></a>Preprocessing Example</h5></div></div></div><p>The following example illustrate how the "FOREACH, INTO, DO"
 				expressions in the main processing block work together:
 				</p><pre class="programlisting">
 				
@@ -349,7 +349,7 @@ BEGIN
 END
 
 				</pre><p>
-				</p></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1402223196"></a>Selector Path</h4></div></div></div><p>An element of the input or a set of input elements can be selected by a path.
+				</p></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403094820"></a>Selector Path</h4></div></div></div><p>An element of the input or a set of input elements can be selected by a path.
 			A path is a sequence of one of the following elements separated by slashes:
 			</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><pre class="programlisting">Identifier</pre><p>
 				An identifier uniquely selects a sub element of the current position in the tree.
@@ -379,9 +379,9 @@ END
 			function or subroutine call arguments path expressions can be used in
 			plain without '$' and '(' ')' markers. These markers are just used to 
 			identify substitution entities.
-		</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1402228844"></a>Path Expression Examples</h5></div></div></div><p>The following list shows different ways of addressing an element by path:
+		</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1403100468"></a>Path Expression Examples</h5></div></div></div><p>The following list shows different ways of addressing an element by path:
 				</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><pre class="programlisting">/</pre><p>Root element</p></li><li class="listitem"><pre class="programlisting">/organization</pre><p>Root element with name "organization"</p></li><li class="listitem"><pre class="programlisting">/organization/address/city</pre><p>Element "city" of root "organization" descendant "address"</p></li><li class="listitem"><pre class="programlisting">.//id</pre><p>Any descendant element with name "id" of the current element</p></li><li class="listitem"><pre class="programlisting">//person/id</pre><p>Child with name "id" of any descendant "person" of the root element</p></li><li class="listitem"><pre class="programlisting">//id</pre><p>Any descendant element with name "id" of the root element</p></li><li class="listitem"><pre class="programlisting">/address/*</pre><p>Any direct descendant of the root element "address"</p></li><li class="listitem"><pre class="programlisting">.</pre><p>Currently selected element</p></li></ul></div><p>
-				</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1402235084"></a>Path Usage Example</h5></div></div></div><p>This example shows the usage of path expression in the
+				</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1403106708"></a>Path Usage Example</h5></div></div></div><p>This example shows the usage of path expression in the
 			preprocessing and the main processing part of a transaction function:
 			</p><pre class="programlisting">
 			
@@ -400,7 +400,7 @@ END
 
 
 			</pre><p>
-			</p></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1402236748"></a>Referencing Database Results</h4></div></div></div><p>Database results of the previous instruction are referenced 
+			</p></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403108372"></a>Referencing Database Results</h4></div></div></div><p>Database results of the previous instruction are referenced 
 			with a '$RESULT.' followed by the column identifier or column number.
 			Column numbers start always from 1, independent from the database!
 			So be aware that even if the database counts column from 0 you have
@@ -453,12 +453,12 @@ END
 			    DO SELECT name FROM Company
 			        WHERE id = $id
 			</pre><p>
-			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1402242164"></a>Naming Database Results</h4></div></div></div><p>Database results can be hold and made referenceable by name
+			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403113788"></a>Naming Database Results</h4></div></div></div><p>Database results can be hold and made referenceable by name
 				with the declaration <code class="code">KEEP AS &lt;resultname&gt;</code>
 				following immediately the instruction with the result to be referenced.
 				The identifier &lt;resultname&gt; references the
 				result in a variable reference or a FOREACH selector expression.
-				</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1402243588"></a>Named Result Example</h5></div></div></div><p>This example illustrates how a result is declared by name and referenced:
+				</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1403115212"></a>Named Result Example</h5></div></div></div><p>This example illustrates how a result is declared by name and referenced:
 				</p><pre class="programlisting">
 TRANSACTION selectDevices
 BEGIN
@@ -472,7 +472,7 @@ END
 
 
 				</pre><p>
-				</p></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1402245140"></a>Referencing Subroutine Parameters</h4></div></div></div><p>
+				</p></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403116764"></a>Referencing Subroutine Parameters</h4></div></div></div><p>
 				Subroutine Parameters are addressed like results but with
 				the prefix <code class="code">PARAM.</code> instead of <code class="code">RESULT.</code>
 				or a named result prefix. "PARAM." is reserved for parameters.
@@ -491,7 +491,7 @@ BEGIN
 END
 
 				</pre><p>
-				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1402247300"></a>Constraints on Database Results</h4></div></div></div><p>Database commands returning results can have constraints to catch
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403118924"></a>Constraints on Database Results</h4></div></div></div><p>Database commands returning results can have constraints to catch
 			certain errors that would not be recognized at all or too late otherwise.
 			For example a transaction having a result of a previous command as argument
 			would not be executed if the result of the previous command is empty.
@@ -513,7 +513,7 @@ END
 					want to declare each result to have to exist, 
 					you have to put the double constraint
 					"UNIQUE NONEMPTY" or "NONEMPTY UNIQUE".</p></li></ul></div><p>
-			</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1402250932"></a>Example with Result Constraints</h5></div></div></div><p>
+			</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1403122556"></a>Example with Result Constraints</h5></div></div></div><p>
 				This example illustrates how to add result constraint for
 				database commands returning results:
 				</p><pre class="programlisting">
@@ -529,7 +529,7 @@ END
 
 
 				</pre><p>
-				</p></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1402252628"></a>Rewriting Error Messages for the Client</h4></div></div></div><p>Sometimes internal error messages are confusing and are not helpful
+				</p></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403124252"></a>Rewriting Error Messages for the Client</h4></div></div></div><p>Sometimes internal error messages are confusing and are not helpful
 			to the user that does not have a deeper knowledge about the database
 			internals. For a set of error types it is possible to add a message
 			to be shown to the user if an error of a certain class happens.
@@ -538,7 +538,7 @@ END
 			and add the string &lt;message&gt; to the error message show to the user.
 			</p><p>We can have many subsequent ON ERROR definitions in a row if the
 			error classes to be caught are various.
-			</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1402254372"></a>Database Error HINT Example</h5></div></div></div><p>The following example shows the usage HINTs in error cases. It
+			</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1403125996"></a>Database Error HINT Example</h5></div></div></div><p>The following example shows the usage HINTs in error cases. It
 			catches errors that are constraint violations (error class CONSTRAINT)
 			and extends the error message with a hint that will be shown to the client as error message:
 			</p><pre class="programlisting">
@@ -557,7 +557,7 @@ END
 			unique constaint violation in transaction 'insertCustomer'
 			-- Customers must have a unique name.
 			</pre><p>
-			</p></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1402256956"></a>Substructures in the Result</h4></div></div></div><p>We already learned how to define substructures of the 
+			</p></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403128580"></a>Substructures in the Result</h4></div></div></div><p>We already learned how to define substructures of the 
 			transaction function result with
 			the <code class="code">RESULT INTO</code> directive of an OPERATION or 
 			TRANSACTION. But <code class="code">RESULT INTO</code> blocks can also be
@@ -574,7 +574,7 @@ END
 			will be attached to the substructure with name &lt;resulttag&gt;.
 			The nesting of result blocks can be arbitrary and the path of the 
 			elements in the result follows the scope of the sub-blocks.
-			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1402259572"></a>Explicit Definition of Elements in the Result</h4></div></div></div><p>The result of a transaction consists normally of database command 
+			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403131196"></a>Explicit Definition of Elements in the Result</h4></div></div></div><p>The result of a transaction consists normally of database command 
 			results that are mapped into the result with the attached INTO directive.
 			For printing variable values or constant values you can in certain
 			SQL databases use a select constant statement without specifying a table.
@@ -594,7 +594,7 @@ BEGIN
 END
 
 			</pre><p>
-			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1402262052"></a>Database Specific Code</h4></div></div></div><p>TDL allows the support of different transaction databases with one code base. 
+			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403133676"></a>Database Specific Code</h4></div></div></div><p>TDL allows the support of different transaction databases with one code base. 
 			For example one for testing and demonstration and one for the productive system.
 			We can tag transactions,subroutines or whole TDL sources as beeing valid for one or a list of databases
 			with the command <code class="code">DATABASE</code> followed by a comma separated list of database names as declared in
@@ -626,7 +626,7 @@ END
 
 
 			</pre><p>
-			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1402265380"></a>Subroutine Templates</h4></div></div></div><p>To reuse code with different context, for example for doing the same
+			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403137004"></a>Subroutine Templates</h4></div></div></div><p>To reuse code with different context, for example for doing the same
 			procedure on different tables, subroutine templates can be defined in TDL.
 			Subroutines become useful when we want to make items instantiable
 			that are not allowed to be dependent on variable arguments.
@@ -663,7 +663,7 @@ END
 
 
 			</pre><p>
-			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1402267508"></a>Includes</h4></div></div></div><p>TDL has the possibility to include files for reusing subroutines 
+			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403139132"></a>Includes</h4></div></div></div><p>TDL has the possibility to include files for reusing subroutines 
 			or subroutine templates in different modules.
 			The keyword INCLUDE followed by the name of the relative path of the TDL file without the extension .tdl includes the declarations of the included file.
 			The declarations in the included file are treated as they would have been
