@@ -150,11 +150,17 @@
 <div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1AAAA_1_1User.html#a85ecddddcc8e9daf62313a34cf813019">   62</a></span>&#160;        <span class="keyword">const</span> time_t            <a class="code" href="class__Wolframe_1_1AAAA_1_1User.html#a85ecddddcc8e9daf62313a34cf813019">m_loginTime</a>;</div>
 <div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1AAAA_1_1User.html#a93a04ed599e6010d8952b7eb1cc93bab">   63</a></span>&#160;        <span class="keyword">const</span> std::string       <a class="code" href="class__Wolframe_1_1AAAA_1_1User.html#a93a04ed599e6010d8952b7eb1cc93bab">m_uname</a>;</div>
 <div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1AAAA_1_1User.html#aa138edecc87cdef89e447b11c4d408e8">   64</a></span>&#160;        <span class="keyword">const</span> std::string       <a class="code" href="class__Wolframe_1_1AAAA_1_1User.html#aa138edecc87cdef89e447b11c4d408e8">m_name</a>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}} <span class="comment">// namespace _Wolframe::AAAA</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif // _USER_HPP_INCLUDED</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#ifdef _WIN32</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor"></span><span class="comment">// prevent C4512 on Windows, we don&#39;t want user data to be assignable</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">private</span>:        </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="class__Wolframe_1_1AAAA_1_1User.html">User</a>&amp; operator=( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1AAAA_1_1User.html">User</a> &amp;o );</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor"></span>};</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}} <span class="comment">// namespace _Wolframe::AAAA</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif // _USER_HPP_INCLUDED</span></div>
 <div class="ttc" id="class__Wolframe_1_1AAAA_1_1User_html_aa138edecc87cdef89e447b11c4d408e8"><div class="ttname"><a href="class__Wolframe_1_1AAAA_1_1User.html#aa138edecc87cdef89e447b11c4d408e8">_Wolframe::AAAA::User::m_name</a></div><div class="ttdeci">const std::string m_name</div><div class="ttdef"><b>Definition:</b> user.hpp:64</div></div>
 <div class="ttc" id="class__Wolframe_1_1AAAA_1_1User_html_a93a04ed599e6010d8952b7eb1cc93bab"><div class="ttname"><a href="class__Wolframe_1_1AAAA_1_1User.html#a93a04ed599e6010d8952b7eb1cc93bab">_Wolframe::AAAA::User::m_uname</a></div><div class="ttdeci">const std::string m_uname</div><div class="ttdef"><b>Definition:</b> user.hpp:63</div></div>
 <div class="ttc" id="class__Wolframe_1_1AAAA_1_1User_html_affc286b89b7df4b6da758663a0881269"><div class="ttname"><a href="class__Wolframe_1_1AAAA_1_1User.html#affc286b89b7df4b6da758663a0881269">_Wolframe::AAAA::User::authenticator</a></div><div class="ttdeci">const std::string &amp; authenticator() const </div><div class="ttdef"><b>Definition:</b> user.hpp:56</div></div>
@@ -171,7 +177,7 @@
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 19 2014 16:37:46 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 27 2014 10:43:43 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
