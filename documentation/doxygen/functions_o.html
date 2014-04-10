@@ -353,6 +353,7 @@
 <li>operator=()
 : <a class="el" href="class__Wolframe_1_1ApplicationInfo.html#acf4d0fb3cac4330a24a5a382aea82b19">_Wolframe::ApplicationInfo</a>
 , <a class="el" href="class__Wolframe_1_1db_1_1TransactionOutput_1_1CommandResult.html#a0060087c18c72cae1eac715363a94c96">_Wolframe::db::TransactionOutput::CommandResult</a>
+, <a class="el" href="class__Wolframe_1_1GlobalRandomGenerator.html#a8b237d125077e8ada3afb1204e2e1253">_Wolframe::GlobalRandomGenerator</a>
 , <a class="el" href="class__Wolframe_1_1langbind_1_1DDLFormParser.html#ad898259f2695f1eef486de0007b92929">_Wolframe::langbind::DDLFormParser</a>
 , <a class="el" href="class__Wolframe_1_1langbind_1_1DDLFormSerializer.html#aa3ad767c259dbf3f0fc058845db445d0">_Wolframe::langbind::DDLFormSerializer</a>
 , <a class="el" href="class__Wolframe_1_1log_1_1LogBackend.html#a05af292a32f8cdf5df0e4fb419dbbea9">_Wolframe::log::LogBackend</a>
@@ -364,7 +365,6 @@
 , <a class="el" href="class__Wolframe_1_1protocol_1_1iterator__t.html#ab6f08ea5c5d0c3d7d5c126679169218f">_Wolframe::protocol::iterator_t&lt; array_type_, size_type_, value_type_, access_type_, deref_type_ &gt;</a>
 , <a class="el" href="class__Wolframe_1_1protocol_1_1MemBlock.html#aa002d35adb9ae9d4b6ff13d143f40507">_Wolframe::protocol::MemBlock</a>
 , <a class="el" href="class__Wolframe_1_1protocol_1_1OutputBlock.html#a6a96261c323b146fd981b272b936ce9b">_Wolframe::protocol::OutputBlock</a>
-, <a class="el" href="class__Wolframe_1_1RandomGenerator.html#a9e801d18afe6aafc5155fe837f10d1ad">_Wolframe::RandomGenerator</a>
 , <a class="el" href="class__Wolframe_1_1serialize_1_1DDLStructParser.html#a206ec06bc6eefb80300c51ff73a5522d">_Wolframe::serialize::DDLStructParser</a>
 , <a class="el" href="class__Wolframe_1_1serialize_1_1DDLStructSerializer.html#a63db58978016ff8cc9a66739edbc3b4e">_Wolframe::serialize::DDLStructSerializer</a>
 , <a class="el" href="class__Wolframe_1_1types_1_1CountedReference.html#a97ec2215014d20959b356c0b67ff1d73">_Wolframe::types::CountedReference&lt; OBJ &gt;</a>
@@ -425,7 +425,7 @@
 , <a class="el" href="class__Wolframe_1_1protocol_1_1CmdParser.html#a05a80e6c9b6b48cf472f4b9df4c9262a">_Wolframe::protocol::CmdParser&lt; CmdBufferType &gt;</a>
 , <a class="el" href="class__Wolframe_1_1protocol_1_1iterator__t.html#a448c1282c6c1a5c3daba23e01d522b5b">_Wolframe::protocol::iterator_t&lt; array_type_, size_type_, value_type_, access_type_, deref_type_ &gt;</a>
 , <a class="el" href="class__Wolframe_1_1protocol_1_1MemBlock.html#a63220fe45e56ecb0a6aafa9db51c8ca3">_Wolframe::protocol::MemBlock</a>
-, <a class="el" href="class__Wolframe_1_1types_1_1VariantStruct.html#a0a04eac0703aa628a9699eb451e09056">_Wolframe::types::VariantStruct</a>
+, <a class="el" href="class__Wolframe_1_1types_1_1VariantStruct.html#a42d81d46783cd8b57f240b94a6410bb0">_Wolframe::types::VariantStruct</a>
 , <a class="el" href="class__Wolframe_1_1utils_1_1CharTable.html#a47fb2ca123ec1cde4a8eaee0fed331eb">_Wolframe::utils::CharTable</a>
 , <a class="el" href="class__Wolframe_1_1utils_1_1IdentifierTable.html#a68c2e5877ed58b2cc6e30acf812fd96f">_Wolframe::utils::IdentifierTable</a>
 , <a class="el" href="struct__Wolframe_1_1utils_1_1TypedArrayDoublingAllocator.html#a1574580ed448073b8e5e6895654531ee">_Wolframe::utils::TypedArrayDoublingAllocator&lt; Type &gt;</a>
@@ -451,15 +451,15 @@
 , <a class="el" href="class__Wolframe_1_1db_1_1Statement.html#aa3f6f2c91be8c771a124f86c62a797ed">_Wolframe::db::Statement</a>
 </li>
 <li>Output()
-: <a class="el" href="class__Wolframe_1_1langbind_1_1Output.html#ad1352e0f693426e3668b26d514a9e580">_Wolframe::langbind::Output</a>
+: <a class="el" href="class__Wolframe_1_1langbind_1_1Output.html#a453fa4c936610ed00793ca81abc3239d">_Wolframe::langbind::Output</a>
 </li>
 <li>OutputBlock()
 : <a class="el" href="class__Wolframe_1_1protocol_1_1OutputBlock.html#a6a5297bb2500a07f3836e1e07cde3025">_Wolframe::protocol::OutputBlock</a>
 </li>
 <li>outputfilter()
 : <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#a724412d1217a85ccf00cf785d39a0902">_Wolframe::cmdbind::IOFilterCommandHandler</a>
-, <a class="el" href="class__Wolframe_1_1langbind_1_1Filter.html#a511e34b020ef8d0b1b69b947450d9969">_Wolframe::langbind::Filter</a>
-, <a class="el" href="class__Wolframe_1_1langbind_1_1Output.html#a5e8531870bae56c7f99d421a90a2750c">_Wolframe::langbind::Output</a>
+, <a class="el" href="class__Wolframe_1_1langbind_1_1Filter.html#a8bb76603806e0db3970ec6b08fe32c8d">_Wolframe::langbind::Filter</a>
+, <a class="el" href="class__Wolframe_1_1langbind_1_1Output.html#a40ea1c0ac470d92cfe3905f9e930cfc1">_Wolframe::langbind::Output</a>
 </li>
 <li>OutputFilter()
 : <a class="el" href="class__Wolframe_1_1langbind_1_1OutputFilter.html#a7f8c8b9c6782c081f3f424ed6b82231a">_Wolframe::langbind::OutputFilter</a>
@@ -478,7 +478,7 @@
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 27 2014 10:44:25 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 10 2014 21:11:26 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

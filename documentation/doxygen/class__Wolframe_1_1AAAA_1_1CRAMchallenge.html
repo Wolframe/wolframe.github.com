@@ -99,8 +99,8 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afab5446726fe09dd2853ceeaec26126a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1CRAMchallenge.html#afab5446726fe09dd2853ceeaec26126a">CRAMchallenge</a> (const unsigned char *data, size_t bytes)</td></tr>
-<tr class="separator:afab5446726fe09dd2853ceeaec26126a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf20dec11870b9952475d38c9b82331b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1CRAMchallenge.html#adf20dec11870b9952475d38c9b82331b">CRAMchallenge</a> (const <a class="el" href="class__Wolframe_1_1crypto_1_1RandomGenerator.html">crypto::RandomGenerator</a> &amp;rndGen)</td></tr>
+<tr class="separator:adf20dec11870b9952475d38c9b82331b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08d3bca4d0e2fb3d178e1417c3e77e9e"><td class="memItemLeft" align="right" valign="top">const unsigned char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1CRAMchallenge.html#a08d3bca4d0e2fb3d178e1417c3e77e9e">challenge</a> () const </td></tr>
 <tr class="separator:a08d3bca4d0e2fb3d178e1417c3e77e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a859a689492fbd8a050267dd400b42a57"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1CRAMchallenge.html#a859a689492fbd8a050267dd400b42a57">size</a> () const </td></tr>
@@ -109,6 +109,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a85ddf0a3d771b35b5435bb93720d2ab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d9a10b265ea0358760797ed2993af15"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1CRAMchallenge.html#a4d9a10b265ea0358760797ed2993af15">toString</a> () const </td></tr>
 <tr class="separator:a4d9a10b265ea0358760797ed2993af15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a553c6f8446f01aa459ad533e1ac819"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1CRAMchallenge.html#a6a553c6f8446f01aa459ad533e1ac819">toString</a> (const <a class="el" href="class__Wolframe_1_1AAAA_1_1PasswordHash_1_1Salt.html">PasswordHash::Salt</a> &amp;salt) const </td></tr>
+<tr class="memdesc:a6a553c6f8446f01aa459ad533e1ac819"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a string in the format $&lt;salt&gt;$&lt;challenge&gt;  <a href="#a6a553c6f8446f01aa459ad533e1ac819">More...</a><br/></td></tr>
+<tr class="separator:a6a553c6f8446f01aa459ad533e1ac819"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00c733d0a669e096a833b0e84e3a8cfd"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1CRAMchallenge.html#a00c733d0a669e096a833b0e84e3a8cfd">toString</a> (const <a class="el" href="class__Wolframe_1_1AAAA_1_1PasswordHash.html">PasswordHash</a> &amp;password) const </td></tr>
+<tr class="separator:a00c733d0a669e096a833b0e84e3a8cfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -116,26 +121,16 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a35f4753f50e0b1301659464866103e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="afab5446726fe09dd2853ceeaec26126a"></a>
+<a class="anchor" id="adf20dec11870b9952475d38c9b82331b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">_Wolframe::AAAA::CRAMchallenge::CRAMchallenge </td>
           <td>(</td>
-          <td class="paramtype">const unsigned char *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const <a class="el" href="class__Wolframe_1_1crypto_1_1RandomGenerator.html">crypto::RandomGenerator</a> &amp;&#160;</td>
+          <td class="paramname"><em>rndGen</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>bytes</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -219,6 +214,48 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a6a553c6f8446f01aa459ad533e1ac819"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string _Wolframe::AAAA::CRAMchallenge::toString </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class__Wolframe_1_1AAAA_1_1PasswordHash_1_1Salt.html">PasswordHash::Salt</a> &amp;&#160;</td>
+          <td class="paramname"><em>salt</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return a string in the format $&lt;salt&gt;$&lt;challenge&gt; </p>
+
+</div>
+</div>
+<a class="anchor" id="a00c733d0a669e096a833b0e84e3a8cfd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string _Wolframe::AAAA::CRAMchallenge::toString </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class__Wolframe_1_1AAAA_1_1PasswordHash.html">PasswordHash</a> &amp;&#160;</td>
+          <td class="paramname"><em>password</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="a35f4753f50e0b1301659464866103e02"></a>
 <div class="memitem">
@@ -247,7 +284,7 @@ Private Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 27 2014 10:43:55 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 10 2014 21:11:09 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
