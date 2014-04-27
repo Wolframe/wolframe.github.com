@@ -58,11 +58,11 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">1.3. Building on Windows systems (the NMAKE way)</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch01s02.html">Prev</a> </td><th width="60%" align="center">Chapter 1. Installation from source</th><td width="20%" align="right"> <a accesskey="n" href="ch02.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1400868404"></a>1.3. Building on Windows systems (the NMAKE way)</h2></div></div></div><p>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">1.3. Building on Windows systems (the NMAKE way)</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch01s02.html">Prev</a> </td><th width="60%" align="center">Chapter 1. Installation from source</th><td width="20%" align="right"> <a accesskey="n" href="ch02.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1396325572"></a>1.3. Building on Windows systems (the NMAKE way)</h2></div></div></div><p>
 			This is the Unix-style compilation using the Visual
 			Studio Command Line Window and NMAKE. This is the
 			preferred way currently.
-		</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1400856524"></a>1.3.1. Prerequisites</h3></div></div></div><p>
+		</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1396313708"></a>1.3.1. Prerequisites</h3></div></div></div><p>
 			For building <span class="application">Wolframe</span> on 
 			Windows you need at least the following software:
 		</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
@@ -138,7 +138,16 @@
 				</p></li><li class="listitem"><p>
 					 <code class="filename">hhc.exe</code>, help compiler from the 'HTML Help Workshop',
 					 <a class="ulink" href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms670169%28v=vs.85%29.aspx" target="_top">http://msdn.microsoft.com/en-us/library/windows/desktop/ms670169%28v=vs.85%29.aspx</a>
-				</p></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1400920500"></a>1.3.2. Basic build instructions</h3></div></div></div><p>
+				</p></li></ul></div><p>
+	For building the wolfclient you need:
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
+			Qt 4.6.x or later, or Qt 5,
+			<a class="ulink" href="http://qt-project.org/" target="_top">http://qt-project.org/</a>
+		</p></li><li class="listitem"><p>
+			For secure communication between the wolfclient and the Wolframe
+			server you need the OpenSSL library 0.9.7 or newer,
+			<a class="ulink" href="http://www.openssl.org" target="_top">http://www.openssl.org</a>
+		</p></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1396380908"></a>1.3.2. Basic build instructions</h3></div></div></div><p>
 			<span class="application">Wolframe</span> can be build in a Visual Studio command line (or better a Platform SDK command line)
 			using the following command:
 
@@ -192,7 +201,7 @@
 		</p><p>
 			This way of building the system is mainly useful for
 			automatized systems and for packaging.
-		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1400927964"></a>1.3.3. Using ccache and distcc</h3></div></div></div><p>
+		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1396388748"></a>1.3.3. Using ccache and distcc</h3></div></div></div><p>
 				Ccache (<a class="ulink" href="http://ccache.samba.org/" target="_top">http://ccache.samba.org/</a>) 
 				can be used to cache the compilation of
 				<span class="application">Wolframe</span> also on Windows.
@@ -219,11 +228,11 @@
 				</p><pre class="programlisting">
 	Set CYGWIN=nodosfilewarning
 				</pre><p>
-			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1400933484"></a>1.3.4. Boost</h3></div></div></div><p>
+			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1396395340"></a>1.3.4. Boost</h3></div></div></div><p>
 					Boost (<a class="ulink" href="http://www.boost.org" target="_top">http://www.boost.org</a>) is the only
 					library which is absolutely required in order to build
 					<span class="application">Wolframe</span>.
-				</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400934708"></a>Use prebuild version of Boost</h4></div></div></div><p>
+				</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396396564"></a>Use prebuild version of Boost</h4></div></div></div><p>
 					<a class="ulink" href="http://boost.teeks99.com" target="_top">http://boost.teeks99.com</a> provides
 					pre-compiled packages of Boost. You can install the library into for instance
 					<code class="filename">C:\boost\boost_1_55_0</code> and set the 'BOOST_XXX' variables in
@@ -245,7 +254,7 @@
 					have support for the ICU backend in boost-locale. If you need ICU
 					support and enable it with 'WITH_ICU=1' you will have to build your
 					own version of Boost from the sources.
-				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400938572"></a>Build your own version of Boost</h4></div></div></div><p>
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396400428"></a>Build your own version of Boost</h4></div></div></div><p>
 					The following Boost libraries are required for building
 					<span class="application">Wolframe</span>:
 
@@ -288,7 +297,7 @@
 	BOOST_MT = -mt
 					</pre><p>
 					
-				</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1400943012"></a>1.3.5. Secure Socket Layer (SSL)</h3></div></div></div><p>
+				</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1396404868"></a>1.3.5. Secure Socket Layer (SSL)</h3></div></div></div><p>
 				The <span class="application">Wolframe</span> protocol can
 				be secured with SSL. Currently only OpenSSL
 				(<a class="ulink" href="http://www.openssl.org" target="_top">http://www.openssl.org</a>)
@@ -299,7 +308,7 @@
 				use the precompiled version or if you build OpenSSL on your own
 				use the 0.9.8, 1.0.0 or 1.0.1g versions, but not  the version
 				1.0.1 through 1.0.1f (Heartbleed bug)!
-			</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400944940"></a>Use prebuild version of OpenSSL</h4></div></div></div><p>
+			</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396406796"></a>Use prebuild version of OpenSSL</h4></div></div></div><p>
 					
 					You can get a prebuilt version of OpenSSL from
 					<a class="ulink" href="http://www.slproweb.com/products/Win32OpenSSL.html" target="_top">http://www.slproweb.com/products/Win32OpenSSL.html</a>.
@@ -317,7 +326,7 @@
 					</p><pre class="programlisting">
 	OPENSSL_DIR = C:\OpenSSL-Win32
 					</pre><p>
-				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400948388"></a>Build your own version of OpenSSL</h4></div></div></div><p>
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396410244"></a>Build your own version of OpenSSL</h4></div></div></div><p>
 					You need the community edition of ActivePerl from
 					<a class="ulink" href="http://www.activestate.com/activeperl/" target="_top">http://www.activestate.com/activeperl/</a>.
 					Install it for instance to <code class="filename">C:\Perl</code>.
@@ -372,7 +381,7 @@
 					in <code class="filename">INSTALL.W32</code> and
 					<code class="filename">INSTALL.W64</code> of the 
 					OpenSSL package itself.
-				</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1400957020"></a>1.3.6. SQLite database support</h3></div></div></div><p>
+				</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1396418876"></a>1.3.6. SQLite database support</h3></div></div></div><p>
 				<span class="application">Wolframe</span> can use
 				an Sqlite3 database (<a class="ulink" href="http://sqlite.org" target="_top">http://sqlite.org</a>)
 				as backend for data storage and for authentication and
@@ -388,12 +397,12 @@
 	nmake /nologo /f Makefile.W32 WITH_SQLITE3=1
 			</pre><p>
 							
-			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1400959828"></a>1.3.7. PostgreSQL database support</h3></div></div></div><p>
+			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1396421684"></a>1.3.7. PostgreSQL database support</h3></div></div></div><p>
 				<span class="application">Wolframe</span> can use
 				a PostgreSQL database (<a class="ulink" href="http://postgresql.org" target="_top">http://postgresql.org</a>)
 				as backend for data storage and for authentication and
 				autorization.
-			</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400961100"></a>Use prebuild version of PostgreSQL</h4></div></div></div><p>
+			</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396422956"></a>Use prebuild version of PostgreSQL</h4></div></div></div><p>
 					Download the Windows installer from EnterpriseDB (you
 					reach the download link via
 					<a class="ulink" href="http://postgresql.org" target="_top">http://postgresql.org</a>).
@@ -413,7 +422,7 @@
 	nmake /nologo /f Makefile.W32 WITH_PGSQL=1
 				</pre><p>
 							
-				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400963980"></a>Build your own version of PostgreSQL</h4></div></div></div><p>
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396425836"></a>Build your own version of PostgreSQL</h4></div></div></div><p>
 					You need the community edition of ActivePerl from
 					<a class="ulink" href="http://www.activestate.com/activeperl/" target="_top">http://www.activestate.com/activeperl/</a>.
 					Install it for instance to <code class="filename">C:\Perl</code>.
@@ -518,7 +527,7 @@
 					If you want to build PostgrSQL with gettext/libint or zlib support
 					you have to build those libraries first, or get
 					them from <a class="ulink" href="http://gnuwin32.sourceforge.net/packages.html" target="_top">http://gnuwin32.sourceforge.net/packages.html</a>.
-				</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1400980388"></a>1.3.8. Oracle database support</h3></div></div></div><p>
+				</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1396442244"></a>1.3.8. Oracle database support</h3></div></div></div><p>
 				<span class="application">Wolframe</span> can use
 				a Oracle database (<a class="ulink" href="http://www.oracle.com" target="_top">http://www.oracle.com</a>)
 				as backend for data storage and for authentication and
@@ -549,14 +558,14 @@
 	nmake /nologo /f Makefile.W32 WITH_ORACLE=1
 			</pre><p>
 							
-			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1400986052"></a>1.3.9. XML filtering support with libxml2 and libxslt</h3></div></div></div><p>
+			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1396447908"></a>1.3.9. XML filtering support with libxml2 and libxslt</h3></div></div></div><p>
 				<span class="application">Wolframe</span> can use
 				libxml2 and libxslt (<a class="ulink" href="http://xmlsoft.org/" target="_top">http://xmlsoft.org/</a>)
 				for filtering and the conversion of XML data.
 			</p><p>
 				You can build only filtering with libxml2. But if you enable libxslt
 				filtering you also have to enable libxml2 filtering.
-			</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400987684"></a>Use prebuild versions of libxml2 and libxslt</h4></div></div></div><p>
+			</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396449540"></a>Use prebuild versions of libxml2 and libxslt</h4></div></div></div><p>
 					Download the Windows ZIP files <code class="filename">libxml2-2.7.8.win32.zip</code>,
 					<code class="filename">iconv-1.9.2.win32.zip</code> and
 					<code class="filename">libxslt-1.1.26.win32.zip</code>
@@ -584,7 +593,7 @@
 	nmake /nologo /f Makefile.W32 WITH_LIBXML2=1 WITH_LIBXSLT=1
 				</pre><p>
 							
-				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400992636"></a>Build your own version of LibXML2</h4></div></div></div><p>
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396454492"></a>Build your own version of LibXML2</h4></div></div></div><p>
 					For libxml2 to support character sets you need a working
 					iconv library. We currently use 
 					<code class="filename">win-iconv-0.0.6.zip</code> from
@@ -677,7 +686,7 @@
 					</p><pre class="programlisting">
 	LIBXML2_DIR = C:\libxml2-2.9.1-win32-debug
 					</pre><p>
-				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1401004596"></a>Build your own version of LibXSLT</h4></div></div></div><p>
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396466452"></a>Build your own version of LibXSLT</h4></div></div></div><p>
 					Get the source package <code class="filename">libxslt-1.1.28.tar.gz</code> from
 					<a class="ulink" href="ftp://xmlsoft.org/libxslt/" target="_top">ftp://xmlsoft.org/libxslt/</a>.
 				</p><p>
@@ -735,7 +744,7 @@
 	cd C:\libxslt-1.1.28-win32-debug
 	move lib\*.dll bin\.
 					</pre><p>
-				</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1401012412"></a>1.3.10. XML filtering support with Textwolf</h3></div></div></div><p>
+				</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1396474268"></a>1.3.10. XML filtering support with Textwolf</h3></div></div></div><p>
 				<span class="application">Wolframe</span> can use
 				Textwolf (<a class="ulink" href="http://textwolf.net" target="_top">http://textwolf.net</a>)
 				for filtering and the conversion of XML data.
@@ -754,7 +763,7 @@
 				<span class="bold"><strong>Note</strong></span>: If you plan to
 				run tests when building the <span class="application">Wolframe</span>
 				you should enable Textwolf as many tests rely on it's presence.
-			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1401016148"></a>1.3.11. JSON filtering support with cJSON</h3></div></div></div><p>
+			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1396478004"></a>1.3.11. JSON filtering support with cJSON</h3></div></div></div><p>
 				<span class="application">Wolframe</span> can use
 				cJSON (<a class="ulink" href="http://sourceforge.net/projects/cjson/" target="_top">http://sourceforge.net/projects/cjson/</a>)
 				for filtering and the conversion of JSON data.
@@ -769,7 +778,7 @@
 	nmake /nologo /f Makefile.W32 WITH_CJSON=1
 			</pre><p>
 							
-			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1401019020"></a>1.3.12. Scripting support with Lua</h3></div></div></div><p>
+			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1396480876"></a>1.3.12. Scripting support with Lua</h3></div></div></div><p>
 				<span class="application">Wolframe</span> can be scripted
 				with Lua (<a class="ulink" href="http://www.lua.org" target="_top">http://www.lua.org</a>).
 			</p><p>
@@ -783,13 +792,13 @@
 	nmake /nologo /f Makefile.W32 WITH_LUA=1
 			</pre><p>
 							
-			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1401021740"></a>1.3.13. Scripting support with Python</h3></div></div></div><p>
+			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1396483596"></a>1.3.13. Scripting support with Python</h3></div></div></div><p>
 				<span class="application">Wolframe</span> can be scripted
 				with Python (<a class="ulink" href="https://www.python.org" target="_top">https://www.python.org</a>).
 			</p><p>
 				The module supports only version 3 of the Python interpreter,
 				version 2 is not supported.
-			</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1401023260"></a>Use prebuild version of Python</h4></div></div></div><p>
+			</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396485116"></a>Use prebuild version of Python</h4></div></div></div><p>
 					Download the official Python 3 Installer for Windows from
 					<a class="ulink" href="http://python.org" target="_top">http://python.org</a>).
 				</p><p>
@@ -816,7 +825,7 @@
 					<a class="ulink" href="http://python.org/" target="_top">http://python.org</a>) do not
 					contain debug versions of the library. If you want to build a debugging version of 
 					<span class="application">Wolframe</span> you have to build your own version of Python.
-				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1401027564"></a>Build you own version of Python</h4></div></div></div><p>
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396489420"></a>Build you own version of Python</h4></div></div></div><p>
 					You have to get the sources of Python3 called
 					<code class="filename">Python-3.4.0.tar</code> from
 					<a class="ulink" href="http://python.org/" target="_top">http://python.org</a>.
@@ -839,7 +848,7 @@
 	PYTHON_LIB_DIR = $(PYTHON_DIR)\libs
 	PYTHON_DLL_DIR = $(PYTHON_DIR)\DLLs
 					</pre><p>
-				</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1401033004"></a>1.3.14. Printing support with libhpdf</h3></div></div></div><p>
+				</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1396494860"></a>1.3.14. Printing support with libhpdf</h3></div></div></div><p>
 				<span class="application">Wolframe</span> can print
 				with libhpdf (<a class="ulink" href="http://libharu.org/" target="_top">http://libharu.org/</a>,
 				also called libharu).
@@ -854,7 +863,7 @@
 	nmake /nologo /f Makefile.W32 WITH_LIBHPDF=1
 			</pre><p>
 							
-			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1401035804"></a>1.3.15. Image processing with FreeImage</h3></div></div></div><p>
+			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1396497660"></a>1.3.15. Image processing with FreeImage</h3></div></div></div><p>
 				<span class="application">Wolframe</span> can manipulate
 				various image formats with the help of
 				the FreeImage project (<a class="ulink" href="http://freeimage.sourceforge.net" target="_top">http://freeimage.sourceforge.net</a>).
@@ -869,17 +878,17 @@
 	nmake /nologo /f Makefile.W32 WITH_SYSTEM_FREEIMAGE=1
 			</pre><p>
 							
-			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1401038716"></a>1.3.16. zlib and libpng</h3></div></div></div><p>
+			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1396500572"></a>1.3.16. zlib and libpng</h3></div></div></div><p>
 				Libhpdf needs the zlib and libpng libraries.
 			</p><p>
 				The libpng and zlib libraries are embedded in the subdirectory
 				<code class="filename">3rdParty/zlib</code> and <code class="filename">3rdParty/libpng</code>.
-			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1401040380"></a>1.3.17. Support for ICU</h3></div></div></div><p>
+			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1396502236"></a>1.3.17. Support for ICU</h3></div></div></div><p>
 				<span class="application">Wolframe</span> can use
 				the International Components for Unicode
 				(ICU, <a class="ulink" href="http://site.icu-project.org/" target="_top">http://site.icu-project.org</a>)
 				library for text normalization and conversion.
-			</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1401041692"></a>Use prebuild version of ICU</h4></div></div></div><p>
+			</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396503548"></a>Use prebuild version of ICU</h4></div></div></div><p>
 					You can take the pre-build ZIP-files from
 					<a class="ulink" href="http://site.icu-project.org/" target="_top">http://site.icu-project.org</a>,
 					called somthing like <code class="filename">icu4c-52_1-Win32-msvc10.zip</code> and
@@ -912,7 +921,7 @@
 					<a class="ulink" href="http://site.icu-project.org/" target="_top">http://site.icu-project.org</a>) do not
 					contain debug versions of the library. If you want to build a debugging version of 
 					<span class="application">Wolframe</span> you have to build your own version of ICU.
-				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1401047052"></a>Build you own version of ICU</h4></div></div></div><p>
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396508908"></a>Build you own version of ICU</h4></div></div></div><p>
 					You have to get the ZIP file with the Windows sources called
 					<code class="filename">icu4c-51_1-src.zip</code> from
 					<a class="ulink" href="http://site.icu-project.org/" target="_top">http://site.icu-project.org</a>.
@@ -946,7 +955,7 @@
 		architecture=x86 address-model=64 toolset=msvc ^
 		install
 					</pre><p>
-				</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1401053252"></a>1.3.18. Testing Wolframe</h3></div></div></div><p>
+				</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1396515108"></a>1.3.18. Testing Wolframe</h3></div></div></div><p>
 				<span class="application">Wolframe</span> has tests
 				written in Google gtest
 				(<a class="ulink" href="https://code.google.com/p/googletest/" target="_top">https://code.google.com/p/googletest/</a>).
@@ -962,7 +971,7 @@
 		        </p><pre class="programlisting">
 	nmake /nologo /f Makefile.W32 longtest
 			</pre><p>
-			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1401056292"></a>1.3.19. Testing with Expect</h3></div></div></div><p>
+			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1396518148"></a>1.3.19. Testing with Expect</h3></div></div></div><p>
 				Some more complex tests are written with Expect
 				(<a class="ulink" href="http://expect.sourceforge.net/" target="_top">http://expect.sourceforge.net/</a>).
 			</p><p>
@@ -998,7 +1007,7 @@
 				Some tests also need 'telnet'. If telnet is not
 				enabled as Windows feature, enable it in
 				"Control Panel", "Windows Features" under "Telnet Client".
-			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1401061612"></a>1.3.20. Building the documentation</h3></div></div></div><p>
+			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1396523468"></a>1.3.20. Building the documentation</h3></div></div></div><p>
 				The documentation including the man pages is written using
 				DocBook 
 				(<a class="ulink" href="http://www.docbook.org" target="_top">http://www.docbook.org</a>).
@@ -1034,7 +1043,165 @@
 				</p><pre class="programlisting">
 	DOXYGEN = C:\Doxygen\bin\doxygen.exe
 				</pre><p>
-			</p></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch01s02.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="ch01.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="ch02.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">1.2. Building on Unix systems </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> Chapter 2. Installation via binary packages</td></tr></table></div></div></div>
+			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1396530108"></a>1.3.21. Building the wolfclient</h3></div></div></div><p>
+	The <span class="application">wolfclient</span> is a Qt-based client
+	for the <span class="application">Wolframe</span> server.
+</p><p>
+	You build it for Qt 4 with:
+	
+	</p><pre class="programlisting">
+	C:\Qt\4.8.1\bin\qmake.exe -config debug -recursive
+	nmake
+	</pre><p>
+
+	respectively for a release version:
+	
+	</p><pre class="programlisting">
+	C:\Qt\4.8.1\bin\qmake.exe -config release -recursive
+	nmake
+	</pre><p>
+</p><p>
+	You build it for Qt 5 with:
+	
+	</p><pre class="programlisting">
+	C:\Qt\Qt5.2.1\5.2.1\msvc2010\bin\qmake.exe -config debug -recursive
+	nmake
+	</pre><p>
+
+	respectively for a release version:
+	
+	</p><pre class="programlisting">
+	C:\Qt\Qt5.2.1\5.2.1\msvc2010\bin\qmake.exe -config release -recursive
+	nmake
+	</pre><p>
+</p><p>
+	If you want SSL support you have to download or build OpenSSL
+	and rebuild Qt 4 or Qt 5 with SSL support:
+</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1396576372"></a>1.3.21.1. Secure Socket Layer (SSL)</h3></div></div></div><p>
+				The <span class="application">Wolframe</span> protocol can
+				be secured with SSL. Currently only OpenSSL
+				(<a class="ulink" href="http://www.openssl.org" target="_top">http://www.openssl.org</a>)
+				is supported.
+			
+			</p><p>
+				<span class="bold"><strong>Note</strong></span>: No matter whether you
+				use the precompiled version or if you build OpenSSL on your own
+				use the 0.9.8, 1.0.0 or 1.0.1g versions, but not  the version
+				1.0.1 through 1.0.1f (Heartbleed bug)!
+			</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396578300"></a>Use prebuild version of OpenSSL</h4></div></div></div><p>
+					
+					You can get a prebuilt version of OpenSSL from
+					<a class="ulink" href="http://www.slproweb.com/products/Win32OpenSSL.html" target="_top">http://www.slproweb.com/products/Win32OpenSSL.html</a>.
+					Despite the name you get also 64-bit versions there.
+				</p><p>
+					Install the developer version (for instance <code class="filename">Win32OpenSSL-1_0_1g.exe</code>)
+					for instance to <code class="filename">C:\OpenSSL-Win32</code>.
+				</p><p>
+					Do not copy the OpenSSL binaries to the Windows system directory, copy
+					them to the Bin subdirectory of the OpenSSL installation directory!
+				</p><p>
+					Set the "BOOST_XXX" variables in
+					<code class="filename">makefiles\nmake\config.mk</code> as follows:
+					
+					</p><pre class="programlisting">
+	OPENSSL_DIR = C:\OpenSSL-Win32
+					</pre><p>
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396581748"></a>Build your own version of OpenSSL</h4></div></div></div><p>
+					You need the community edition of ActivePerl from
+					<a class="ulink" href="http://www.activestate.com/activeperl/" target="_top">http://www.activestate.com/activeperl/</a>.
+					Install it for instance to <code class="filename">C:\Perl</code>.
+				</p><p>
+					You will also need NASM to assemble certain
+					parts of OpenSSL. You can get a Windows NASM from
+					<a class="ulink" href="http://www.nasm.us/" target="_top">http://www.nasm.us/</a>.
+					Install it for instance to <code class="filename">C:\nasm</code>.
+				</p><p>
+					Make sure the Perl interpreter and the NASM assembler are part of the path in
+					the shell you want to build OpenSSL:
+					
+					</p><pre class="programlisting">
+	Set PATH=%PATH%;C:\Perl\bin;C:\nasm
+					</pre><p>
+				</p><p>
+					Get the source package <code class="filename">openssl-1.0.1g.tar.gz</code> of OpenSSL from
+					<a class="ulink" href="http://www.openssl.org" target="_top">http://www.openssl.org</a>.
+				</p><p>
+					Configure the package with:
+					
+					</p><pre class="programlisting">
+	perl Configure debug-VC-WIN32 \
+		--prefix="C:\openssl-1.0.1g-win32-debug"
+					</pre><p>
+					
+					for a debug version, respectively with:
+					
+					</p><pre class="programlisting">
+	perl Configure VC-WIN32 \
+		--prefix="C:\openssl-1.0.1g-win32-release"
+					</pre><p>
+					
+					for a release version.
+				</p><p>
+					<span class="bold"><strong>Note</strong></span>:
+					Make sure there prefix you choose has no spaces in it!
+				</p><p>
+					Prepare OpenSSL for NASM support with:
+					
+					</p><pre class="programlisting">
+	ms\do_nasm.bat
+					</pre><p>
+				</p><p>
+					Build and install OpenSSL now with:
+					</p><pre class="programlisting">
+	nmake /f ms\ntdll.mak
+	nmake /f ms\ntdll.mak install
+					</pre><p>
+				</p><p>
+					More build information is available
+					in <code class="filename">INSTALL.W32</code> and
+					<code class="filename">INSTALL.W64</code> of the 
+					OpenSSL package itself.
+				</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1396590380"></a>1.3.21.2. Qt libraries</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396590700"></a>Use prebuild version of Qt</h4></div></div></div><p>
+					Make sure you download the correct Qt package fitting your
+					architecture and Microsoft Visual Studio version.
+				</p><p>
+					If you take the prebuild Qt libraries you have to disable the
+					building of SSL-enabled code by removing the
+					'WITH_SSL=1' definition in the 'DEFINES' directive in
+					<code class="filename">libqtwolfclient/libqtwolfclient.pro</code>.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396592148"></a>Build your own version of Qt</h4></div></div></div><p>
+					Set the following environment variables in order for Qt to
+					find the OpenSSL header files and libraries:\
+					
+					</p><pre class="programlisting">
+	set OPENSSL_DIR=C:\openssl-1.0.1g-win32-debug
+	set INCLUDE=%INCLUDE%;%OPENSSL_DIR%\include
+	set LIB=%LIB%;%OPENSSL_DIR%\lib
+					</pre><p>
+					
+					or for the release version:
+					
+					</p><pre class="programlisting">
+	set OPENSSL_DIR=C:\openssl-1.0.1g-win32-release
+	set INCLUDE=%INCLUDE%;%OPENSSL_DIR%\include
+	set LIB=%LIB%;%OPENSSL_DIR%\lib
+					</pre><p>
+					
+				</p><p>
+					Compile Qt with OpenSSL enabled:
+					
+					</p><pre class="programlisting">
+	configure -platform win32-msvc2010 -debug -openssl
+	nmake
+					</pre><p>
+				</p><p>
+					For a release version use:
+
+					</p><pre class="programlisting">
+	configure -platform win32-msvc2010 -release -openssl
+	nmake
+					</pre><p>
+				</p></div></div></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch01s02.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="ch01.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="ch02.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">1.2. Building on Unix systems </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> Chapter 2. Installation via binary packages</td></tr></table></div></div></div>
 
 <!-- Footer -->
 <div xmlns="" class="wrapper row2">

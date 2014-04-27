@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Chapter 2. Basic Data Types</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe documentation" /><link rel="up" href="bk03.html" title="Wolframe Server Extension Modules" /><link rel="prev" href="bk03ch01.html" title="Chapter 1. Introduction" /><link rel="next" href="bk03ch03.html" title="Chapter 3. Normalizer Modules" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Chapter 2. Basic Data Types</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe documentation" /><link rel="up" href="bk03.html" title="Wolframe Server Extension Modules" /><link rel="prev" href="bk03ch01.html" title="Chapter 1. Introduction" /><link rel="next" href="bk03ch03.html" title="Chapter 3. Module Declaration" />
 	<title xmlns="">Project Wolframe</title>
 	<meta xmlns="" charset="utf-8" />
 	<meta xmlns="" name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -58,9 +58,9 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 2. Basic Data Types</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk03ch01.html">Prev</a> </td><th width="60%" align="center">Wolframe Server Extension Modules</th><td width="20%" align="right"> <a accesskey="n" href="bk03ch03.html">Next</a></td></tr></table><hr /></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="idp1387518100"></a>Chapter 2. Basic Data Types</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="bk03ch02.html#idp1387521756">2.1. Variant Type</a></span></dt></dl></div><p>In this chapter we give a survey of the basic data types used in the 
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 2. Basic Data Types</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk03ch01.html">Prev</a> </td><th width="60%" align="center">Wolframe Server Extension Modules</th><td width="20%" align="right"> <a accesskey="n" href="bk03ch03.html">Next</a></td></tr></table><hr /></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="idp1403118372"></a>Chapter 2. Basic Data Types</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="bk03ch02.html#idp1403111980">2.1. Variant Type</a></span></dt></dl></div><p>In this chapter we give a survey of the basic data types used in the 
 	<span class="application">Wolframe</span> module interfaces.
-	</p><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1387521756"></a>2.1. Variant Type</h2></div></div></div><p>The variant data type describes an atomic value of any scalar or string type.
+	</p><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1403111980"></a>2.1. Variant Type</h2></div></div></div><p>The variant data type describes an atomic value of any scalar or string type.
 	It is the basic type for interfaces to all language bindings for writing <span class="application">Wolframe</span>
 	applications. The type <code class="code">Variant</code> is defined in <code class="code">types/variant.hpp</code> and 
 	has the following interface:
@@ -75,12 +75,14 @@ public:
     //Different value types a variant can have:
     enum Type
     {
-        Null,     // undefined
-        Int,      // 64 bit signed integer value
-        UInt,     // 64 bit unsigned integer value
-        Bool,     // boolean value
-        Double,   // double presicion floating point value
-        String    // string encoded as UTF-8
+       Custom,      //&lt; data type defined by a custom data type module
+       Timestamp,   //&lt; date and time value with a precision down to microseconds
+       BigNumber,   //&lt; big BCD fixed point number in the range of 1E-32767 to 1E+32768
+       Double,      //&lt; IEEE 754 double precision floating point number
+       Int,         //&lt; 64 bit signed integer value
+       UInt,        //&lt; 64 bit unsigned integer value
+       Bool,        //&lt; boolean value
+       String       //&lt; 0-terminated UTF-8 string
     };
     //Current type enum or type name of this:
     Type type() const;
@@ -101,6 +103,11 @@ public:
     Variant( const char* o, std::size_t n);
     Variant( const std::string&amp; o);
     Variant( const Variant&amp; o);
+    Variant( const types::CustomDataType* typ,
+             const types::CustomDataInitializer* dsc=0);
+    Variant( const types::CustomDataValue&amp; o);
+    Variant( const types::DateTime&amp; o);
+    Variant( const types::BigNumber&amp; o);
 
     //Assignment operators:
     Variant&amp; operator=( const Variant&amp; o);
@@ -113,6 +120,10 @@ public:
     Variant&amp; operator=( Data::UInt o);
     Variant&amp; operator=( const char* o);
     Variant&amp; operator=( const std::string&amp; o);
+    Variant&amp; operator=( const types::CustomDataValue&amp; o);
+    Variant&amp; operator=( const char* o);
+    Variant&amp; operator=( const types::DateTime&amp; o);
+    Variant&amp; operator=( const types::BigNumber&amp; o);
 
     //Initializer as constant (borrowed value reference):
     void initConstant( const char* o, std::size_t l);
@@ -129,16 +140,31 @@ public:
 
     //Getter functions with value conversion if needed:
     std::string tostring() const;
+    std::wstring towstring() const;
     double todouble() const;
     bool tobool() const;
     Data::Int toint() const;
     Data::UInt touint() const;
+    Data::Timestamp totimestamp() const;
 
     //Base pointer in case of a string (throws if not string):
     char* charptr() const;
     //Size in case of a string (throws if not string):
     std::size_t charsize() const;
+    ///\brief Get the pointer to the custom data object (throws for non custom data type)
+    const CustomDataValue* customref() const;
+    ///\brief Get the pointer to the custom data object (throws for non custom data type)
+    CustomDataValue* customref();
+    ///\brief Get the pointer to the big number object (throws for non big number data type)
+    const types::BigNumber* bignumref() const;
+    ///\brief Get the pointer to the big number object (throws for non big number data type)
+    types::BigNumber* bignumref();
 
+    ///\brief Getter with value conversion
+    Data::Timestamp totimestamp() const;
+
+    ///\brief Test if this value is atomic (not a structure or an indirection)
+    bool atomic() const;
     //Evaluate if defined (not Null):
     bool defined() const;
     //Reset to Null:
@@ -148,6 +174,8 @@ public:
     void convert( Type type_);
     //Move assignment from value o (o gets Null):
     void move( Variant&amp; o);
+    ///\brief Assigning o to this including a conversion to a defined type
+    void assign( Type type_, const Variant&amp; o);
 };
 
 }} //namespace
@@ -186,6 +214,9 @@ struct VariantConst :public Variant
     VariantConst( const char* o);
     VariantConst( const char* o, std::size_t n);
     VariantConst( const std::string&amp; o);
+    VariantConst( const types::CustomDataValue&amp; o);
+    VariantConst( const types::BigNumber&amp; o);
+    VariantConst( const types::DateTime&amp; o);
 
     //Assignment operators:
     VariantConst&amp; operator=( const Variant&amp; o);
@@ -199,13 +230,18 @@ struct VariantConst :public Variant
     VariantConst&amp; operator=( Data::UInt o);
     VariantConst&amp; operator=( const char* o);
     VariantConst&amp; operator=( const std::string&amp; o);
+    VariantConst&amp; operator=( const types::CustomDataValue&amp; o);
+    VariantConst&amp; operator=( const types::BigNumber&amp; o);
+    VariantConst&amp; operator=( const types::DateTime&amp; o);
+    VariantConst&amp; operator=( const char* o);
+    VariantConst&amp; operator=( const std::string&amp; o);
 };
 }} //namespace
 
 
 
 	</pre><p>
-	</p></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk03ch01.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk03.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk03ch03.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter 1. Introduction </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> Chapter 3. Normalizer Modules</td></tr></table></div></div></div>
+	</p></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk03ch01.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk03.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk03ch03.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter 1. Introduction </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> Chapter 3. Module Declaration</td></tr></table></div></div></div>
 
 <!-- Footer -->
 <div xmlns="" class="wrapper row2">

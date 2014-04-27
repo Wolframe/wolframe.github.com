@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>3.2. Module Building Blocks</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe documentation" /><link rel="up" href="bk03ch03.html" title="Chapter 3. Normalizer Modules" /><link rel="prev" href="bk03ch03.html" title="Chapter 3. Normalizer Modules" /><link rel="next" href="bk03ch03s03.html" title="3.3. Building the Module" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>3.2. Building a Module</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe documentation" /><link rel="up" href="bk03ch03.html" title="Chapter 3. Module Declaration" /><link rel="prev" href="bk03ch03.html" title="Chapter 3. Module Declaration" /><link rel="next" href="bk03ch03s03.html" title="3.3. Exported Objects of a Module" />
 	<title xmlns="">Project Wolframe</title>
 	<meta xmlns="" charset="utf-8" />
 	<meta xmlns="" name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -58,36 +58,12 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.2. Module Building Blocks</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk03ch03.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Normalizer Modules</th><td width="20%" align="right"> <a accesskey="n" href="bk03ch03s03.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1387541492"></a>3.2. Module Building Blocks</h2></div></div></div><p>
-	When you include "appdevel/normalizeModuleMacros.hpp" or simply "appDevel.hpp" you get the building
-	blocks declared to build a normalization module. These building blocks will be exmplained in this section.
-	</p><p>
-	The module declaration section starts with the macro call
-	</p><pre class="programlisting">
-NORMALIZER_MODULE(namespace,description)
-	</pre><p>
-	that has two strings as arguments. The first one is the name of the module as refered to in a 
-	type normalization declaration file (first identifier before the ':'). The second string is
-	a module description without any functional meaning for the application but for identification
-	of the module by humans. Alternatively you can use the macro <code class="code">NORMALIZER_MODULE_WITH_RESOURCE</code>
-	that does the same but has additionally a third parameter, the class name of the resource object
-	shared by all normalization functions of this module.
-	</p><p>
-	What follows are one or more declarations without any separator (comma ',' or semicolon ';')
-	of the form
-	</p><pre class="programlisting">
-NORMALIZER_FUNCTION(name,constructor)
-	</pre><p>
-	where <code class="code">name</code> is the name of the function within the module namespace (declared as
-	first parameter of <code class="code">NORMALIZER_MODULE</code>) as string.
-	The second argument is the normalizeFunction object constructor function (without any indirection
-	address marker '&amp;' !).
-	</p><p>
-	The module declaration ends with an end marker that closes the module declaration.
-	</p><pre class="programlisting">
-NORMALIZER_MODULE_END
-	</pre><p>
-	</p></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk03ch03.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk03ch03.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk03ch03s03.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter 3. Normalizer Modules </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 3.3. Building the Module</td></tr></table></div></div></div>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.2. Building a Module</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk03ch03.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Module Declaration</th><td width="20%" align="right"> <a accesskey="n" href="bk03ch03s03.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1403159988"></a>3.2. Building a Module</h2></div></div></div><p>For building a module you need to reference the <span class="application">Wolframe</span> 
+	core library (-lwolframe) and eventually some of the extension libraries
+	(-lwolframe_serialize, -lwolframe_langbind, -lwolframe_database) that's all. 
+	You will find example makefiles in the examples of the project. But you are free to 
+	use your own build mechanism.
+	</p></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk03ch03.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk03ch03.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk03ch03s03.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter 3. Module Declaration </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 3.3. Exported Objects of a Module</td></tr></table></div></div></div>
 
 <!-- Footer -->
 <div xmlns="" class="wrapper row2">

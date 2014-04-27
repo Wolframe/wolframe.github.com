@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Chapter 3. Normalizer Modules</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe documentation" /><link rel="up" href="bk03.html" title="Wolframe Server Extension Modules" /><link rel="prev" href="bk03ch02.html" title="Chapter 2. Basic Data Types" /><link rel="next" href="bk03ch03s02.html" title="3.2. Module Building Blocks" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Chapter 3. Module Declaration</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe documentation" /><link rel="up" href="bk03.html" title="Wolframe Server Extension Modules" /><link rel="prev" href="bk03ch02.html" title="Chapter 2. Basic Data Types" /><link rel="next" href="bk03ch03s02.html" title="3.2. Building a Module" />
 	<title xmlns="">Project Wolframe</title>
 	<meta xmlns="" charset="utf-8" />
 	<meta xmlns="" name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -58,41 +58,28 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 3. Normalizer Modules</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk03ch02.html">Prev</a> </td><th width="60%" align="center">Wolframe Server Extension Modules</th><td width="20%" align="right"> <a accesskey="n" href="bk03ch03s02.html">Next</a></td></tr></table><hr /></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="idp1387538268"></a>Chapter 3. Normalizer Modules</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="bk03ch03.html#idp1387538908">3.1. Normalizer Interface</a></span></dt><dt><span class="sect1"><a href="bk03ch03s02.html">3.2. Module Building Blocks</a></span></dt><dt><span class="sect1"><a href="bk03ch03s03.html">3.3. Building the Module</a></span></dt><dt><span class="sect1"><a href="bk03ch03s04.html">3.4. Examples</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk03ch03s04.html#idp1387588924">3.4.1. Example without resources</a></span></dt><dt><span class="sect2"><a href="bk03ch03s04.html#idp1387591732">3.4.2. Example with resources</a></span></dt></dl></dd></dl></div><p>In this chapter we introduce how to write your own normalizer functions and thus define your own 
-	DLL form data types.
-	</p><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1387538908"></a>3.1. Normalizer Interface</h2></div></div></div><p>
-	A normalize function is defined as interface in order to be able to define it as object with data.
-	This is because normalizer functions can be parametrized. For example to express the normalize function domain.
-	The following listing shows the interface definition:
-	</p><pre class="programlisting">
-namespace _Wolframe {
-namespace types {
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 3. Module Declaration</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk03ch02.html">Prev</a> </td><th width="60%" align="center">Wolframe Server Extension Modules</th><td width="20%" align="right"> <a accesskey="n" href="bk03ch03s02.html">Next</a></td></tr></table><hr /></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="idp1403137716"></a>Chapter 3. Module Declaration</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="bk03ch03.html#idp1403126212">3.1. Module Declaration Frame</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk03ch03.html#idp1403154308">3.1.1. Empty Module Declaration Example</a></span></dt><dt><span class="sect2"><a href="bk03ch03.html#idp1403155284">3.1.2. Module Declaration Macros</a></span></dt></dl></dd><dt><span class="sect1"><a href="bk03ch03s02.html">3.2. Building a Module</a></span></dt><dt><span class="sect1"><a href="bk03ch03s03.html">3.3. Exported Objects of a Module</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk03ch03s03.html#idp1403192508">3.3.1. Define Normalization Functions (Normalizers)</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk03ch03s03.html#idp1403193396">Normalizer Interface</a></span></dt><dt><span class="sect3"><a href="bk03ch03s03.html#idp1403227732">Building Blocks</a></span></dt><dd><dl><dt><span class="sect4"><a href="bk03ch03s03.html#idp1403228476">Declaring a resource singleton object</a></span></dt><dt><span class="sect4"><a href="bk03ch03s03.html#idp1403230604">Declaring a normalizer not using any resource</a></span></dt><dt><span class="sect4"><a href="bk03ch03s03.html#idp1403232444">Declaring a normalizer using a resource</a></span></dt></dl></dd><dt><span class="sect3"><a href="bk03ch03s03.html#idp1403235044">Examples</a></span></dt><dd><dl><dt><span class="sect4"><a href="bk03ch03s03.html#idp1403235380">Example without resources</a></span></dt><dt><span class="sect4"><a href="bk03ch03s03.html#idp1403238252">Example with resources</a></span></dt></dl></dd></dl></dd><dt><span class="sect2"><a href="bk03ch03s03.html#idp1403217220">3.3.2. Define Custom Data Types</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk03ch03s03.html#idp1403208124">Custom Data Type Interface</a></span></dt><dd><dl><dt><span class="sect4"><a href="bk03ch03s03.html#idp1403218124">CustomDataType Structure</a></span></dt><dt><span class="sect4"><a href="bk03ch03s03.html#idp1403264396">CustomDataInitializer Interface</a></span></dt><dt><span class="sect4"><a href="bk03ch03s03.html#idp1403266156">Class CustomDataValue</a></span></dt></dl></dd><dt><span class="sect3"><a href="bk03ch03s03.html#idp1403267860">Building Blocks</a></span></dt><dd><dl><dt><span class="sect4"><a href="bk03ch03s03.html#idp1403268548">Declaring a custom data type</a></span></dt></dl></dd></dl></dd><dt><span class="sect2"><a href="bk03ch03s03.html#idp1403216700">3.3.3. Define Filters</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk03ch03s03.html#idp1403215628">Filter element types</a></span></dt><dt><span class="sect3"><a href="bk03ch03s03.html#idp1403259924">Filter element values</a></span></dt><dt><span class="sect3"><a href="bk03ch03s03.html#idp1403260636">Filter Interface</a></span></dt><dd><dl><dt><span class="sect4"><a href="bk03ch03s03.html#idp1403261380">Input Filter Structure</a></span></dt><dt><span class="sect4"><a href="bk03ch03s03.html#idp1403263020">Output Filter Structure</a></span></dt><dt><span class="sect4"><a href="bk03ch03s03.html#idp1403295612">Filter Structure</a></span></dt></dl></dd><dt><span class="sect3"><a href="bk03ch03s03.html#idp1403297532">Building Blocks</a></span></dt><dd><dl><dt><span class="sect4"><a href="bk03ch03s03.html#idp1403298204">Declaring a filter</a></span></dt></dl></dd></dl></dd></dl></dd></dl></div><p>In this chapter we introduce how modules are declared for extending a <span class="application">Wolframe</span>
+	application with our own functions and objects.
+	</p><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1403126212"></a>3.1. Module Declaration Frame</h2></div></div></div><p>
+	A module has to include "appdevel/moduleFrameMacros.hpp" or simply "appDevel.hpp" and declare
+	a module header and a module trailer with the macros <code class="code">WF_MODULE_BEGIN</code> and
+	<code class="code">WF_MODULE_END</code>. A single module source file built as <span class="application">Wolframe</span>
+	application extension module must contain only one
+	<code class="code">WF_MODULE_BEGIN</code>  .... <code class="code">WF_MODULE_END</code> declaration. But a module declaration
+	can contain an arbitrary number of objects that not conflicting in anything they define (names, etc.)
+	The following example shows an empty module without any exported objects, thus the simplest module
+	we can declare.
+	</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1403154308"></a>3.1.1. Empty Module Declaration Example</h3></div></div></div><pre class="programlisting">
 
-struct NormalizeFunction
-{
-    virtual ~NormalizeFunction(){}
-    virtual const char* name() const=0;
-    virtual Variant execute( const Variant&amp; i) const=0;
-};
-}}
+    #include "appDevel.hpp"
+    WF_MODULE_BEGIN( "empty", "an example module not exporting anything")
+    WF_MODULE_END
 
-	</pre><p>
-	The object is created by a function type (here with the example function name <code class="code">CreateNormalizeFunction</code>) with the following interface
-	</p><pre class="programlisting">
-
-_Wolframe::types::NormalizeFunction* CreateNormalizeFunction(
-        _Wolframe::types::NormalizeResourceHandle* reshnd,
-        const std::string&amp; arg);
-
-
-	</pre><p>
-	The resource handle parameter (<code class="code">reshnd</code>) is the module singleton object instance that is 
-	declared as class in the module building blocks (see following section). The argument (<code class="code">arg</code>) 
-	is a string that has to be parsed by the normalize function constructor function. What the function 
-	gets as argument is the string declared as argument string in '(' brackets ')' when the function 
-	is referenced in a <code class="code">.wnmp</code> file (type normalization declaration file, see section 
-	"Data Types in DDLs" in the chapter "Forms" of the "Application Development Manual").
-	</p></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk03ch02.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk03.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk03ch03s02.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter 2. Basic Data Types </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 3.2. Module Building Blocks</td></tr></table></div></div></div>
+	</pre></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1403155284"></a>3.1.2. Module Declaration Macros</h3></div></div></div><p>The macro WF_MODULE_BEGIN has two parameters
+	</p><div class="table"><a id="idp1403155852"></a><p class="title"><strong>Table 3.1. Parameters of WF_MODULE_BEGIN</strong></p><div class="table-contents"><table summary="Parameters of WF_MODULE_BEGIN" border="1"><colgroup><col /><col /></colgroup><thead><tr><th>NAME</th><th>DESCRIPTION</th></tr></thead><tbody><tr><td>Identifier of the module (*)</td><td>Description sentence of the module for user info when inspecting a module.</td></tr></tbody></table></div></div><br class="table-break" /><p>(*) Currently not used but will be when a namespace concept will be implemented.
+	</p><p>
+	The end declaration WF_MODULE_END closes the module object and defines the module entry point structure.
+	</p></div></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk03ch02.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk03.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk03ch03s02.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter 2. Basic Data Types </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 3.2. Building a Module</td></tr></table></div></div></div>
 
 <!-- Footer -->
 <div xmlns="" class="wrapper row2">

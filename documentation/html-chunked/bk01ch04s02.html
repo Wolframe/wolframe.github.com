@@ -58,7 +58,7 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.2. Datatypes in DDLs</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch04.html">Prev</a> </td><th width="60%" align="center">Chapter 4. Forms</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch05.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1386525180"></a>4.2. Datatypes in DDLs</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1386525524"></a>4.2.1. Introduction</h3></div></div></div><p>The basic elements to build atomic data types in <span class="application">Wolframe</span>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.2. Datatypes in DDLs</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch04.html">Prev</a> </td><th width="60%" align="center">Chapter 4. Forms</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch05.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1402115972"></a>4.2. Datatypes in DDLs</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1402116316"></a>4.2.1. Introduction</h3></div></div></div><p>The basic elements to build atomic data types in <span class="application">Wolframe</span>
 		are normalization functions. Basic normalization functions are written in C++
 		and loadable as modules.
 	</p><p>
@@ -71,11 +71,14 @@
 	</p><p>
 		A <code class="code">.wnmp</code> file contains assignments of a type name to sequences 
 		of basic normalization function calls where the first takes the initial input.
+		A normalization function call can either be a normalizer function 
+		or a custom data type defined in a module or a method of the predecessing
+		custom data type in the sequence of the normalization function calls.
 		The output of a function in the sequence gets the input of the next one and 
 		the final output for the last one.
 		Each normalization step validates the input as atomic type (arithmetic,string,etc.)
 		and transforms it to another atomic type.
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1386506556"></a>4.2.2. Example</h3></div></div></div><p>
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1402097500"></a>4.2.2. Example</h3></div></div></div><p>
 		The example defines 3 numeric types including trimming of the input string for mode tolerant
 		parsing and a string type that is converted to lowercase as normalization.
 	</p><p>
@@ -87,7 +90,7 @@ currency=trim,fixedpoint( 13, 2);
 name=trim,lcname;
 
 		</pre><p>
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1386573524"></a>4.2.3. Language Description</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1386573844"></a>Type Assignments</h4></div></div></div><p>
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1402164548"></a>4.2.3. Language Description</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1402164868"></a>Type Assignments</h4></div></div></div><p>
 			Each type declaration in a <code class="code">.wnmp</code> file starts with an identifier followed by an assignment 
 			operator '='. The left side identifier specifies the name of the type. 
 			This type name can be used in a DDL as name instead of the built-in
@@ -98,7 +101,7 @@ name=trim,lcname;
 			optional comma separated list of constant arguments in brackets ('(' and ')').
 			The interpretation of the arguments depend on the function type. An integer type for example could have 
 			the maximum number of digits of the integer type.
-		</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1386575556"></a>4.2.4. Configuration</h3></div></div></div><p>For declaring and using a .wnmp file in our example above, we have to load 
+		</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1402166580"></a>4.2.4. Configuration</h3></div></div></div><p>For declaring and using a .wnmp file in our example above, we have to load 
 	the module 'mod_normalize_string' and the module 'mod_normalize_number'.
 	For this we add the following two lines to the LoadModules section of our <span class="application">Wolframe</span> configuration:
 		</p><pre class="programlisting">
