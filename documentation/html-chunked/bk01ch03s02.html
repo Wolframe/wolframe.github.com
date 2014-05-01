@@ -58,7 +58,7 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.2. Functions in .NET</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch03.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Functions</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch03s03.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1401356580"></a>3.2. Functions in .NET</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1401356900"></a>3.2.1. Introduction</h3></div></div></div><p>You can write functions for the logic tier of <span class="application">Wolframe</span> in languages based
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.2. Functions in .NET</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch03.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Functions</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch03s03.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1403821492"></a>3.2. Functions in .NET</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1403821812"></a>3.2.1. Introduction</h3></div></div></div><p>You can write functions for the logic tier of <span class="application">Wolframe</span> in languages based
 		on <span class="application">.NET</span> (<a class="ulink" href="http://www.microsoft.com/net" target="_top">http://www.microsoft.com/net</a>) like for example
 		<span class="application">C#</span> and <span class="application">VB.NET</span>.  
 		Because <span class="application">.NET</span> based libraries can only be called 
@@ -69,7 +69,7 @@
 		We will discuss all of them, so that you should be able
 		to write and configure <span class="application">.NET</span> assemblies for using in 
 		<span class="application">Wolframe</span> on your own after reading this chapter.
-		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1401391276"></a>3.2.2. Configuration</h3></div></div></div><p>For enabling <span class="application">.NET</span> you have to declare the loading of the module 'mod_command_dotnet'
+		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1403856188"></a>3.2.2. Configuration</h3></div></div></div><p>For enabling <span class="application">.NET</span> you have to declare the loading of the module 'mod_command_dotnet'
 		in the main section of the server configuration file.
 		</p><pre class="programlisting">
 		
@@ -77,7 +77,7 @@
 
 		</pre><p>
 		For the configuration of the <span class="application">.NET</span> assemblies to be loaded, see section 'Configure .NET Modules'.
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1401393620"></a>3.2.3. Function Interface</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1401393940"></a>Function Context</h4></div></div></div><p>In <span class="application">.NET</span> the building blocks for functions called by <span class="application">Wolframe</span>
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1403858532"></a>3.2.3. Function Interface</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403858852"></a>Function Context</h4></div></div></div><p>In <span class="application">.NET</span> the building blocks for functions called by <span class="application">Wolframe</span>
 		are classes and method calls. The way of defining callable items for 
 		<span class="application">Wolframe</span> is restricted either due to the current 
 		state of the <span class="application">Wolframe</span> COM/.NET interoperability
@@ -91,7 +91,7 @@
 			exported declared.</p></li><li class="listitem"><p>The methods must not be static because COM/.NET interop,
 			as far as we know, cannot cope with static method calls. Even if the 
 			methods nature is static, they have to be defined as ordinary method calls.</p></li></ul></div><p>
-		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1401398484"></a>Function Signature</h4></div></div></div><p>
+		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403863396"></a>Function Signature</h4></div></div></div><p>
 		Functions callable from <span class="application">Wolframe</span> take an arbitrary 
 		number of arguments as input and return a structure (<code class="code">struct</code>) as 
 		output. The named input parameters referencing atomic elements or complex 
@@ -106,7 +106,7 @@
 		a <code class="code">ProcProvider</code> interface from <span class="application">Wolframe</span>
 		namespace as additional parameter. We will describe the <code class="code">ProcProvider</code>
 		interface in a separate section of this chapter.
-		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1401402572"></a>Example</h4></div></div></div><p>The following simple example without provider context is declared 
+		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403867484"></a>Example</h4></div></div></div><p>The following simple example without provider context is declared 
 		without marshalling and introspection tags. It can therefore not be called
 		by <code class="code">Wolframe</code>. We explain later how to make it callable. 
 		The example just illustrates the structure of the exported object with
@@ -140,31 +140,31 @@ public class Functions : FunctionInterface
 
 
 		</pre><p>
-		</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1401404972"></a>3.2.4. Prepare .NET Assemblies</h3></div></div></div><p>
+		</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1403869884"></a>3.2.4. Prepare .NET Assemblies</h3></div></div></div><p>
 	<span class="application">Wolframe</span> itself is not a <span class="application">.NET</span> application. Therefore it has to call
 	<span class="application">.NET</span> functions via COM/.NET interop interface of a hosted CLR
 	(Common Language Runtime).
 	To make functions written in <span class="application">.NET</span> callable by <span class="application">Wolframe</span>, the following steps
 	have to be performed:
-	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1401407228"></a>Make Assemblies COM Visible</h4></div></div></div><p>
+	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403872140"></a>Make Assemblies COM Visible</h4></div></div></div><p>
 		First the asseblies with the functions exported to <span class="application">Wolframe</span> have to be build COM visible.
 		To make the <span class="application">.NET</span> functions called from <span class="application">Wolframe</span> COM visible, you have to tick
 		"Properties/Assembly Information" the switch "Make assembly COM visible". Furthermore
 		every object and method that is part of the exported API (also objects used as parameters)
 		has to be tagged in the source as COM visible with <code class="code">[ComVisible(true)]</code>.
-		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1401409324"></a>Tag Exported Objects with a Guid</h4></div></div></div><p>Each object that is part of the exported API has to be tagged with a global unique
+		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403874236"></a>Tag Exported Objects with a Guid</h4></div></div></div><p>Each object that is part of the exported API has to be tagged with a global unique
 		identifier (Guid) in order to be adressable. Modules with <span class="application">.NET</span> functions will have to be globally
 		registered and the objects need to be identified by the Guid because that's the only way
 		to make the record info structure visible for <span class="application">Wolframe</span>. The record info structure is
 		needed to serialize/deserialize <span class="application">.NET</span> objects from another interpreter context that
 		is not registered for <span class="application">.NET</span>. There are many ways to create a Guid and
 		tag an object like this: <code class="code">[Guid("390E047F-36FD-4F23-8CE8-3A4C24B33AD3")]</code>.
-		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1401412004"></a>Add Marshalling Tags to Values</h4></div></div></div><p>For marshalling function calls correctly, <span class="application">Wolframe</span> needs
+		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403876916"></a>Add Marshalling Tags to Values</h4></div></div></div><p>For marshalling function calls correctly, <span class="application">Wolframe</span> needs
 		tags for every parameter and member of a sub structure of a parameter
 		of methods exported as functions.
 		The following table lists the supported types and their marshalling tags:
-		</p><div class="table"><a id="idp1401413116"></a><p class="title"><strong>Table 3.1. Marshalling Tags</strong></p><div class="table-contents"><table summary="Marshalling Tags" border="1"><colgroup><col /><col /></colgroup><thead><tr><th>.NET Type</th><th>Marshalling Tag</th></tr></thead><tbody><tr><td>I2</td><td><code class="code">[MarshalAs(UnmanagedType.I2)]</code></td></tr><tr><td>I4</td><td><code class="code">[MarshalAs(UnmanagedType.I4)]</code></td></tr><tr><td>I8</td><td><code class="code">[MarshalAs(UnmanagedType.I8)]</code></td></tr><tr><td>UI2</td><td><code class="code">[MarshalAs(UnmanagedType.UI2)]</code></td></tr><tr><td>UI4</td><td><code class="code">[MarshalAs(UnmanagedType.UI4)]</code></td></tr><tr><td>UI8</td><td><code class="code">[MarshalAs(UnmanagedType.UI8)]</code></td></tr><tr><td>R4</td><td><code class="code">[MarshalAs(UnmanagedType.R4)]</code></td></tr><tr><td>R8</td><td><code class="code">[MarshalAs(UnmanagedType.R8)]</code></td></tr><tr><td>BOOL</td><td><code class="code">[MarshalAs(UnmanagedType.BOOL)]</code></td></tr><tr><td>string</td><td><code class="code">[MarshalAs(UnmanagedType.BStr)]</code></td></tr><tr><td>RECORD</td><td><p>no tag needed</p></td></tr><tr><td>array of structures</td><td><code class="code">[MarshalAs(UnmanagedType.SafeArray, SafeArraySubType = VarEnum.VT_RECORD)]</code></td></tr><tr><td>array of strings</td><td><code class="code">[MarshalAs(UnmanagedType.SafeArray, SafeArraySubType = VarEnum.VT_BSTR)]</code></td></tr><tr><td>array of XX (XX=I2,I4,I8,..)</td><td><code class="code">[MarshalAs(UnmanagedType.SafeArray, SafeArraySubType = VarEnum.VT_XX)]</code></td></tr></tbody></table></div></div><br class="table-break" /><p>Decimal floating point and numeric types (DECIMAL) are not yet supported, but
-		will soon be available.</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1401425756"></a>Example with COM Introspection Tags</h4></div></div></div><p>The following C# module definition repeats the example introduced above with the
+		</p><div class="table"><a id="idp1403878028"></a><p class="title"><strong>Table 3.1. Marshalling Tags</strong></p><div class="table-contents"><table summary="Marshalling Tags" border="1"><colgroup><col /><col /></colgroup><thead><tr><th>.NET Type</th><th>Marshalling Tag</th></tr></thead><tbody><tr><td>I2</td><td><code class="code">[MarshalAs(UnmanagedType.I2)]</code></td></tr><tr><td>I4</td><td><code class="code">[MarshalAs(UnmanagedType.I4)]</code></td></tr><tr><td>I8</td><td><code class="code">[MarshalAs(UnmanagedType.I8)]</code></td></tr><tr><td>UI2</td><td><code class="code">[MarshalAs(UnmanagedType.UI2)]</code></td></tr><tr><td>UI4</td><td><code class="code">[MarshalAs(UnmanagedType.UI4)]</code></td></tr><tr><td>UI8</td><td><code class="code">[MarshalAs(UnmanagedType.UI8)]</code></td></tr><tr><td>R4</td><td><code class="code">[MarshalAs(UnmanagedType.R4)]</code></td></tr><tr><td>R8</td><td><code class="code">[MarshalAs(UnmanagedType.R8)]</code></td></tr><tr><td>BOOL</td><td><code class="code">[MarshalAs(UnmanagedType.BOOL)]</code></td></tr><tr><td>string</td><td><code class="code">[MarshalAs(UnmanagedType.BStr)]</code></td></tr><tr><td>RECORD</td><td><p>no tag needed</p></td></tr><tr><td>array of structures</td><td><code class="code">[MarshalAs(UnmanagedType.SafeArray, SafeArraySubType = VarEnum.VT_RECORD)]</code></td></tr><tr><td>array of strings</td><td><code class="code">[MarshalAs(UnmanagedType.SafeArray, SafeArraySubType = VarEnum.VT_BSTR)]</code></td></tr><tr><td>array of XX (XX=I2,I4,I8,..)</td><td><code class="code">[MarshalAs(UnmanagedType.SafeArray, SafeArraySubType = VarEnum.VT_XX)]</code></td></tr></tbody></table></div></div><br class="table-break" /><p>Decimal floating point and numeric types (DECIMAL) are not yet supported, but
+		will soon be available.</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403890668"></a>Example with COM Introspection Tags</h4></div></div></div><p>The following C# module definition repeats the example introduced above with the
 		correct tagging for COM visibility and introspection:
 		</p><pre class="programlisting">
 		
@@ -200,18 +200,18 @@ public class Functions : FunctionInterface
 
 
 		</pre><p>
-		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1401427468"></a>Create a Type Library</h4></div></div></div><p>For making the API introspectable by <span class="application">Wolframe</span>, we have to create a TLB
+		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403892380"></a>Create a Type Library</h4></div></div></div><p>For making the API introspectable by <span class="application">Wolframe</span>, we have to create a TLB
 		(Type Library) file from the assembly (DLL) after build. The type library has
 		to be recreated every time the module interface (API) changes. The type library is
 		created with the program <code class="code">tlbexp</code>. All created type library (.tlb) file
 		that will be loaded with the same runtime environment have to be copied into
 		the same directory. They will be referenced for introspection in the 
 		configuration. The configuration of <span class="application">.NET</span> will be explained later.
-		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1401429364"></a>Register the Type Library</h4></div></div></div><p>The type library created with <code class="code">tlbexp</code> has also to be registered.
+		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403894276"></a>Register the Type Library</h4></div></div></div><p>The type library created with <code class="code">tlbexp</code> has also to be registered.
 		For this you call the program <code class="code">regtlibv12</code> with your type library file
 		(.tlb file) as argument. The type libary fegistration has to be repeated when
 		the the module interface (API) changes.
-		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1401430596"></a>Register the Assembly in the GAC</h4></div></div></div><p><span class="application">Wolframe</span> does not accept local assemblies. In order to be addressable over
+		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403895508"></a>Register the Assembly in the GAC</h4></div></div></div><p><span class="application">Wolframe</span> does not accept local assemblies. In order to be addressable over
 		the type library interface assemblies need to be put into the global assembly cache (GAC).
 		Unfortunately this has to be repeated every time the assembly binary changes.
 		There is no way around. For the registration in the GAC we have to call the program
@@ -220,7 +220,7 @@ public class Functions : FunctionInterface
 		administrator command line. Before calling <code class="code">gacutil</code>, assemblies
 		have to be strongly signed. We refer here to the MSDN documentation for how
 		to sign an application.
-		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1401432748"></a>Register the Types in the Assembly</h4></div></div></div><p>We have to register the types declared in the assembly
+		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403897660"></a>Register the Types in the Assembly</h4></div></div></div><p>We have to register the types declared in the assembly
 		to enable <span class="application">Wolframe</span> to create these types.
 		An example could be a provider function returning a structure that is called
 		from a <span class="application">Wolframe</span> .NET function. The structure
@@ -230,7 +230,7 @@ public class Functions : FunctionInterface
 		<code class="code">regasm &lt;assemblypath&gt;</code> with the assembly path &lt;assemblypath&gt;
 		as argument. The command <code class="code">regasm</code> has to be called from
 		administrator command line.
-		</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1401435180"></a>3.2.5. Calling Wolframe Functions</h3></div></div></div><p>Wolframe functions in <span class="application">.NET</span> calling globally 
+		</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1403900092"></a>3.2.5. Calling Wolframe Functions</h3></div></div></div><p>Wolframe functions in <span class="application">.NET</span> calling globally 
 	defined <span class="application">Wolframe</span> 
 	functions need to declare the processor provider interface as an additional parameter.
 	The processor provider interface is defined as follows (example <span class="application">C#</span>):
@@ -277,7 +277,7 @@ public Address GetUserAddress(
 	</pre><p>
 	The objects involved in this example need no more tagging because the provider context and also
 	structures (<code class="code">struct</code>) need no additional mashalling tags.
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1401443196"></a>3.2.6. Configure .NET Assemblies</h3></div></div></div><p>
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1403908108"></a>3.2.6. Configure .NET Assemblies</h3></div></div></div><p>
 	<span class="application">.NET</span> modules are grouped together in a configuration block that specifies the configuration
 	of the Microsoft Common Language Runtime (CLR) used for <span class="application">.NET</span> interop calls. The configuration
 	block has the header <code class="code">runtimeEnv dotNET</code> and configures the version of the 
@@ -296,12 +296,12 @@ RuntimeEnv dotNet
 }
 
 	</pre><p>
-	</p><div class="sect3"><div class="titlepage"></div><div class="table"><a id="idp1401446364"></a><p class="title"><strong>Table 3.2. Attributes of assembly declarations</strong></p><div class="table-contents"><table summary="Attributes of assembly declarations" border="1"><colgroup><col /><col /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>&lt;no identifier&gt;</td><td>The first element of the assembly definition does not have an attribute identifier. 
+	</p><div class="sect3"><div class="titlepage"></div><div class="table"><a id="idp1403911276"></a><p class="title"><strong>Table 3.2. Attributes of assembly declarations</strong></p><div class="table-contents"><table summary="Attributes of assembly declarations" border="1"><colgroup><col /><col /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>&lt;no identifier&gt;</td><td>The first element of the assembly definition does not have an attribute identifier. 
 					The value is the name of the assembly (and also of the type library)</td></tr><tr><td>Version</td><td>4 element (Major.Minor.Build.Revision) version number of the assembly.
 					This value is defined in the assembly info file of the assembly project.</td></tr><tr><td>Culture</td><td>For <span class="application">Wolframe</span> applications until now always "neutral".
 					Functionality is in Wolframe not yet culture dependent on the server side.</td></tr><tr><td>PublicKeyToken</td><td>Public key token values for signed assemblies. See next section how to set it.</td></tr><tr><td>processorArchitecture</td><td>Meaning not explained here. Has on ordinary Windows <span class="application">.NET</span>
 					plattforms usually the value "MSIL". Read the MSDN 
-					documentation to dig deeper.</td></tr></tbody></table></div></div><br class="table-break" /></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1401452612"></a>Get the PublicKeyToken</h4></div></div></div><p>
+					documentation to dig deeper.</td></tr></tbody></table></div></div><br class="table-break" /></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1403917524"></a>Get the PublicKeyToken</h4></div></div></div><p>
 		We already found out that <span class="application">Wolframe</span> <span class="application">.NET</span> modules 
 		have to be strongly signed. 
 		Each strongly signed assembly has such a public key token
@@ -312,7 +312,7 @@ RuntimeEnv dotNet
 		with &lt;assemblypath&gt; as the path of the assembly. The printed value is the
 		public key to insert as attribute value of <code class="code">PublicKeyToken</code> in the
 		<span class="application">Wolframe</span> configuration for each <span class="application">.NET</span> assembly.
-		</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1401455948"></a>3.2.7. Validation Issues</h3></div></div></div><p>
+		</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1403920860"></a>3.2.7. Validation Issues</h3></div></div></div><p>
 	Languages of <span class="application">.NET</span> called via the CLR are strongly typed languages. This means that
 	the input of a function and the output is already validated to be of a strictly
 	defined structure. So a validation by passing the input through a form
