@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Chapter 2. The Wolframe Standard Client</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe documentation" /><link rel="up" href="bk02.html" title="Wolframe Clients" /><link rel="prev" href="bk02ch01.html" title="Chapter 1. Introduction" /><link rel="next" href="bk02ch02s02.html" title="2.2. Artifacts" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Chapter 2. Using Wolframe as a Webservice</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe documentation" /><link rel="up" href="bk02.html" title="Wolframe Clients" /><link rel="prev" href="bk02ch01.html" title="Chapter 1. Introduction" /><link rel="next" href="bk02ch02s02.html" title="2.2. Installation" />
 	<title xmlns="">Project Wolframe</title>
 	<meta xmlns="" charset="utf-8" />
 	<meta xmlns="" name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -58,18 +58,65 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 2. The Wolframe Standard Client</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk02ch01.html">Prev</a> </td><th width="60%" align="center">Wolframe Clients</th><td width="20%" align="right"> <a accesskey="n" href="bk02ch02s02.html">Next</a></td></tr></table><hr /></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="idp1405024164"></a>Chapter 2. The Wolframe Standard Client</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="bk02ch02.html#idp1405022996">2.1. Architecture</a></span></dt><dt><span class="sect1"><a href="bk02ch02s02.html">2.2. Artifacts</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk02ch02s02.html#idp1405042180">2.2.1. UI forms</a></span></dt><dt><span class="sect2"><a href="bk02ch02s02.html#idp1405037596">2.2.2. UI form translations</a></span></dt><dt><span class="sect2"><a href="bk02ch02s02.html#idp1405086124">2.2.3. Resources</a></span></dt></dl></dd><dt><span class="sect1"><a href="bk02ch02s03.html">2.3. Programming the Interface</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk02ch02s03.html#idp1405053612">2.3.1. Mapping XML Data</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk02ch02s03.html#idp1405053956">Starting Position</a></span></dt><dt><span class="sect3"><a href="bk02ch02s03.html#idp1405080948">First Example</a></span></dt><dt><span class="sect3"><a href="bk02ch02s03.html#idp1405108268">Another Example</a></span></dt></dl></dd><dt><span class="sect2"><a href="bk02ch02s03.html#idp1405116284">2.3.2. Switching UI forms</a></span></dt><dt><span class="sect2"><a href="bk02ch02s03.html#idp1405121196">2.3.3. States and Behaviour</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk02ch02s03.html#idp1405121516">Reserved Private Dynamic Properties</a></span></dt><dt><span class="sect3"><a href="bk02ch02s03.html#idp1405122412">Reserved Public Dynamic Properties</a></span></dt><dd><dl><dt><span class="sect4"><a href="bk02ch02s03.html#idp1405123068">Stearing of Widget Behaviour</a></span></dt><dt><span class="sect4"><a href="bk02ch02s03.html#idp1405126596">User Interface Flow</a></span></dt><dt><span class="sect4"><a href="bk02ch02s03.html#idp1405130860">Additional Interface Elements</a></span></dt><dt><span class="sect4"><a href="bk02ch02s03.html#idp1405135012">Defining Server Request/Answer</a></span></dt><dt><span class="sect4"><a href="bk02ch02s03.html#idp1405059196">Variables and Symbolic Links</a></span></dt><dt><span class="sect4"><a href="bk02ch02s03.html#idp1405160156">Widget States Depending on Data</a></span></dt><dt><span class="sect4"><a href="bk02ch02s03.html#idp1405164044">Additional Signals and Slots</a></span></dt><dt><span class="sect4"><a href="bk02ch02s03.html#idp1405168700">Drag and Drop</a></span></dt></dl></dd></dl></dd><dt><span class="sect2"><a href="bk02ch02s03.html#idp1405171420">2.3.4. Widget properties as dynamic property values</a></span></dt></dl></dd><dt><span class="sect1"><a href="bk02ch02s04.html">2.4. Programming Server Requests/Answers</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk02ch02s04.html#idp1405207764">2.4.1. Adressing Widget Data</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk02ch02s04.html#idp1405195860">Biggest Common Ancestor Path</a></span></dt><dt><span class="sect3"><a href="bk02ch02s04.html#idp1405196916">Addressing Atomic Elements</a></span></dt><dt><span class="sect3"><a href="bk02ch02s04.html#idp1405247532">Special Path Elements</a></span></dt><dd><dl><dt><span class="sect4"><a href="bk02ch02s04.html#idp1405248140">Addressing the Form Widget</a></span></dt><dt><span class="sect4"><a href="bk02ch02s04.html#idp1405248788">Widget Links</a></span></dt></dl></dd></dl></dd><dt><span class="sect2"><a href="bk02ch02s04.html#idp1405250508">2.4.2. Data Structures</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk02ch02s04.html#idp1405251156">Example</a></span></dt></dl></dd><dt><span class="sect2"><a href="bk02ch02s04.html#idp1405252788">2.4.3. Arrays</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk02ch02s04.html#idp1405253444">Description</a></span></dt><dt><span class="sect3"><a href="bk02ch02s04.html#idp1405257004">Example</a></span></dt></dl></dd><dt><span class="sect2"><a href="bk02ch02s04.html#idp1405259580">2.4.4. Indirection and Recursion</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk02ch02s04.html#idp1405260436">Description</a></span></dt><dt><span class="sect3"><a href="bk02ch02s04.html#idp1405264492">Example (Arbitrary Tree)</a></span></dt><dt><span class="sect3"><a href="bk02ch02s04.html#idp1405266036">Example (Binary Tree)</a></span></dt></dl></dd></dl></dd><dt><span class="sect1"><a href="bk02ch02s05.html">2.5. Eliminating Interface Defects</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk02ch02s05.html#idp1405231420">2.5.1. Switch the Developer Mode On</a></span></dt><dt><span class="sect2"><a href="bk02ch02s05.html#idp1405227764">2.5.2. Inspect Errors and Warnings and Debug Messages Reported</a></span></dt></dl></dd></dl></div><p>This chapter describes the standard <span class="application">Wolframe</span> client
-	called wolfclient and how a user interface is built.
-	</p><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1405022996"></a>2.1. Architecture</h2></div></div></div><p>
-	The <span class="application">Wolframe</span> standard client <span class="application">wolfclient</span>
-	is a thin client which executes XML requests
-	via the Wolframe protocol and presents XML answers. It is written in
-	Qt and is cross-platform. Qt is currently available on
-	<a class="ulink" href="http://doc.qt.digia.com/qt/index.html" target="_top"><em class="citetitle">http://doc.qt.digia.com/qt/index.html</em></a>.
-	User interfaces for <span class="application">wolfclient</span> are defined as a set of forms
-	using standard Qt widgets and are if ever possible defined using the
-	<span class="application">Qt Interface Designer</span> (see <a class="ulink" href="http://qt-project.org/doc/qt-4.8/designer-manual.html" target="_top"><em class="citetitle">http://qt-project.org/doc/qt-4.8/designer-manual.html</em></a>).
-</p></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk02ch01.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk02.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk02ch02s02.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter 1. Introduction </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 2.2. Artifacts</td></tr></table></div></div></div>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 2. Using Wolframe as a Webservice</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk02ch01.html">Prev</a> </td><th width="60%" align="center">Wolframe Clients</th><td width="20%" align="right"> <a accesskey="n" href="bk02ch02s02.html">Next</a></td></tr></table><hr /></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="idp1393924276"></a>Chapter 2. Using Wolframe as a Webservice</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="bk02ch02.html#idp1393921332">2.1. Calling Wolframe from PHP</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk02ch02.html#idp1393924980">2.1.1. The session Interface</a></span></dt></dl></dd><dt><span class="sect1"><a href="bk02ch02s02.html">2.2. Installation</a></span></dt></dl></div><p>This chapter describes how you can call Wolframe from a Webservice.
+	We will show how a Wolframe command can be issued as HTTP call and how it is mapped
+	in the Webserver by a scripting language. We use PHP as example language.
+	The example is so simple that you can easily map it to other languages than PHP.
+	We took PHP because its use for web services is so widespread nowadays.
+	</p><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1393921332"></a>2.1. Calling Wolframe from PHP</h2></div></div></div><p>In the clients/php subdirectory of the Wolframe installation
+		you'll find the following PHP source files:
+		</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>connection.php defines the basic class of the connection to a Wolframe
+		server with methods to read and write messages.</p></li><li class="listitem"><p>session.php implements the Wolframe client/server protocol.</p></li><li class="listitem"><p>webclient.php is an example script that takes a HTTP request, interpretes
+		the request parameter "CONTENT" as document (XML,JSON,etc.) to process and 
+		optionally "COMMAND" as the command identifier prefix. The corresponding command 
+		configured to be executed by the Wolframe server is a combination of this prefix (that
+		can be undefined ot empty) plus the document type identifier.
+		The example script uses the Session class (session.php) to process the command. 
+		We can adapt it to implement our web service with Wolframe.</p></li><li class="listitem"><p>webclient_ssl.php is the same as webclient.php, but with SSL. The
+		implementation of SSL in this example works. But it should be rewritten before using it
+		in a productional environment because of security problems of PHP using SSL in this minimal
+		configuration. Refer to your PHP manual for this.
+		</p></li></ul></div><p>
+		</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1393924980"></a>2.1.1. The session Interface</h3></div></div></div><p>
+		In the following we shortly introduce the Wolframe session interface implemented in session.php.
+		This is the only PHP file you really have to understand for writing a Webservice for Wolframe.
+		</p><pre class="programlisting">
+namespace Wolframe
+{
+require 'connection.php';
+use Wolframe\Connection as Connection;
+
+class Session extends Connection
+{
+    /* Constructor
+    * @param[in] address Wolframe server IP address to connect
+    * @param[in] port Wolframe server port to connect
+    * @param[in] sslopt array of PHP options for SSL
+    * @param[in] authmethod authorization mechanism identifier
+    *   plus credentials (currently only "NONE")
+    */
+    function __construct( $address, $port, $sslopt, $authmethod);
+
+    /* Get the last error of the request (protocol).
+    * @return the last non exceptional error reported by the Wolframe server
+    */
+    public function lasterror();
+
+    /* Send a request to the server
+    * @param[in] command identifier prefix of the command to execute.
+    *   Identifies the command together with the document type.
+    * @param[in] content content of the request (document to process)
+    * @return FALSE, if the server reports an error in processing the request.
+    *   The error details can be inspected with lasterror().
+    *   In case of success the function returns the request answer string.
+    * @remark The function throws in case of a system or protocol error.
+    */
+    public function request( $command, $content);
+
+} // class Session
+} // namespace Wolframe
+		</pre><p>
+		</p></div></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk02ch01.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk02.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk02ch02s02.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter 1. Introduction </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 2.2. Installation</td></tr></table></div></div></div>
 
 <!-- Footer -->
 <div xmlns="" class="wrapper row2">

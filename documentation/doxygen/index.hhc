@@ -79,7 +79,7 @@
           <LI><OBJECT type="text/sitemap"><param name="Name" value="AAAAprovider"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AAAAprovider.html#a05ac2aa6a16ffd42b0ef4b9439aef31c"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="~AAAAprovider"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AAAAprovider.html#a416307fb864aa094364a2755bd56a369"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="auditor"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AAAAprovider.html#afedbcf04c67c48942bd165d7b0529eee"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="authenticator"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AAAAprovider.html#ad36c7dd04e7e831d778a160b17ccad31"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="authenticator"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AAAAprovider.html#a1ce0e2bb94138830d2bd02def9b77164"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="authorizer"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AAAAprovider.html#ad6be6e8541c14b6b506959c7bcdfaa35"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="resolveDB"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AAAAprovider.html#adb014b48cc5d68da2972bb87bd267002"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="m_impl"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AAAAprovider.html#a16190715bfe200fce09406dfc1a88ac4"><param name="ImageNumber" value="11"></OBJECT>
@@ -292,10 +292,37 @@
         <UL>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="AuthCommandHandler"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html"><param name="ImageNumber" value="1"></OBJECT>
           <UL>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="AuthCommandHandler"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a89dc9e519d0bdb237af98b8a9ff0fbc9"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="State"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a3bfe241847293b71a032a19dcc9e7f67"><param name="ImageNumber" value="1"></OBJECT>
+            <UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="Init"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a3bfe241847293b71a032a19dcc9e7f67a7ff3b328e329b2be263079932360f9ba"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="NextOperation"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a3bfe241847293b71a032a19dcc9e7f67a05e2c8bc5a159de2a0c5c3e8e82cb049"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="ReadConsumed"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a3bfe241847293b71a032a19dcc9e7f67ad9746dc0b74a4c46c830ad499a8bf8a0"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="FlushOutput"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a3bfe241847293b71a032a19dcc9e7f67a329cd51fe7f6bfdbc4f93686a82f33d1"><param name="ImageNumber" value="11"></OBJECT>
+            </UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="AuthCommandHandler"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#af6dd7ab530072f88e421a94fd2a2f9c6"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="~AuthCommandHandler"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#ac1a3982e0bc23e3297697301ba50c950"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="ticket"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#aba4288979d2dca3454dfedc3b78f7297"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="m_ticket"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a770126e6de89ebcf92b6e498ce8a96ff"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="getDataLeft"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a185ba4654944528250c7497326bfa33e"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="getInputBlock"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#ac5c620153d18f9fed900b56596fa4209"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="getOutput"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a7fa00ff65f13a2d00283089824ff643e"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="interruptDataSessionMarker"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#ac60f8ee92d957964de4cac824f802499"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="nextOperation"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a89f64e41c20892646c18e04cb0346e81"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="putInput"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a897a324670cb592278a569850322ce0a"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="setInputBuffer"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a7c9aad9a1a6aefb5d3a09cb5b7b79b8b"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="setOutputBuffer"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#ae75acfad488be485e59a75a37d40c7a6"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="stateName"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#aee4b093ac12de5efb44b87bb60e94fbe"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="user"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a9232b7cbd1ff8845b2add685a0aebadb"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="m_authenticator"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a742adf4dec8a74dcaf3ccfe391d473ef"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="m_eoD"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a31c8827def9254c95b00607741b305d6"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="m_input"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a336afc63101e1dcc66b7264e94f7ae51"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="m_itrpos"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a6c74aa6596e187ca87ab1ff2351e746a"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="m_outputbuf"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a8884e16ae6ebffc0c4e73e625eee0976"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="m_outputbufpos"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a739f61439fcb993815ef485243b4d204"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="m_outputbufsize"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a22507fdb5a5224bf22aa319f3fc15bee"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="m_readbuffer"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a0a098898d772361269ca4560c8ffa472"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="m_readpos"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a86104400d78a7812eea28186255eaf9c"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="m_state"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#ac9167f1b05dcb6b4c56e515b13444d2c"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="m_writebuffer"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a03f32b6487513ee60280a5651bbb3b52"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="m_writepos"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#ad7453e0da1501368b54fac8458dc55cb"><param name="ImageNumber" value="11"></OBJECT>
           </UL>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="CommandHandler"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1CommandHandler.html"><param name="ImageNumber" value="1"></OBJECT>
           <UL>
@@ -392,6 +419,7 @@
             <LI><OBJECT type="text/sitemap"><param name="Name" value="ParseJSONHeaderIdentKey"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1DoctypeFilterCommandHandler.html#a9989dd0888571d2fca50b7288532ed34adcefc084843fdbe1c3ad27d92cf554ec"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="ParseJSONHeaderIdentValue"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1DoctypeFilterCommandHandler.html#a9989dd0888571d2fca50b7288532ed34ac42d988b78d185bafd61684b66ec2971"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="ParseJSONHeaderStringValue"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1DoctypeFilterCommandHandler.html#a9989dd0888571d2fca50b7288532ed34a85502704d61b9c1d8d337cf9af96a3ab"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="ParseJSONHeaderSeekDelim"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1DoctypeFilterCommandHandler.html#a9989dd0888571d2fca50b7288532ed34aa4aebb611053ac97a832f09dcc9de63b"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="ParseXMLHeader0"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1DoctypeFilterCommandHandler.html#a9989dd0888571d2fca50b7288532ed34ad2166a95e0af28d73354cc2297511a0f"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="ParseXMLHeader"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1DoctypeFilterCommandHandler.html#a9989dd0888571d2fca50b7288532ed34a187186bb9ecaf52af921f44cff24d74e"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="SearchXMLDoctypeTag"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1DoctypeFilterCommandHandler.html#a9989dd0888571d2fca50b7288532ed34aeece771502a8d7154e81227d37915f09"><param name="ImageNumber" value="11"></OBJECT>
@@ -2350,14 +2378,16 @@
         <LI><OBJECT type="text/sitemap"><param name="Name" value="ExecContext"><param name="Local" value="class__Wolframe_1_1proc_1_1ExecContext.html"><param name="ImageNumber" value="1"></OBJECT>
           <UL>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="ExecContext"><param name="Local" value="class__Wolframe_1_1proc_1_1ExecContext.html#acef6e8d4809b29a503cf03d3273ab131"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="ExecContext"><param name="Local" value="class__Wolframe_1_1proc_1_1ExecContext.html#a31e3625c861879bd28cb6c7182f4077d"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="ExecContext"><param name="Local" value="class__Wolframe_1_1proc_1_1ExecContext.html#aa5115031fe4d71d7f5cef970760dde82"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="ExecContext"><param name="Local" value="class__Wolframe_1_1proc_1_1ExecContext.html#a611dbff679a9bae71088cb61db4d8e17"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="authorizer"><param name="Local" value="class__Wolframe_1_1proc_1_1ExecContext.html#ac766825d4a82bda1653bb820f22b0055"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="authenticator"><param name="Local" value="class__Wolframe_1_1proc_1_1ExecContext.html#aa8e4d6b474ee02167dda555727e92c20"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="authorizer"><param name="Local" value="class__Wolframe_1_1proc_1_1ExecContext.html#a2496ebf5a5aafff65cc146eb673f1b9c"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="checkAuthorization"><param name="Local" value="class__Wolframe_1_1proc_1_1ExecContext.html#a27e745bb3496bbe15310af8657a6ab6e"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="provider"><param name="Local" value="class__Wolframe_1_1proc_1_1ExecContext.html#ab0327b0c77220bd9dfd0cb004bb7b01f"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="setAuthorizer"><param name="Local" value="class__Wolframe_1_1proc_1_1ExecContext.html#a062ed6a8c49f2f45c74ab7c4e0f01352"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="setUser"><param name="Local" value="class__Wolframe_1_1proc_1_1ExecContext.html#a8488d6fbea4534c70fa6945eab3dc87f"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="user"><param name="Local" value="class__Wolframe_1_1proc_1_1ExecContext.html#ab49020c2d13cac09beac74cf7b8f8698"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="m_aaaaProvider"><param name="Local" value="class__Wolframe_1_1proc_1_1ExecContext.html#a018804e3df8baad2f89401a9e33b58e2"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="m_authorizer"><param name="Local" value="class__Wolframe_1_1proc_1_1ExecContext.html#a9ac97e51db0833eae06b3f5f09d95cb9"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="m_provider"><param name="Local" value="class__Wolframe_1_1proc_1_1ExecContext.html#a11092e867ea847a555e4f95d73595771"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="m_user"><param name="Local" value="class__Wolframe_1_1proc_1_1ExecContext.html#aaa442019bd57516bc1d6f590d42fbb9e"><param name="ImageNumber" value="11"></OBJECT>
@@ -2725,6 +2755,7 @@
           <LI><OBJECT type="text/sitemap"><param name="Name" value="api_param"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunction.html#af811dad3c071947229b64c5f2600e8be"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="api_result"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunction.html#a5ad4caf64cb4dac51def773fd15582e4"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="call"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunction.html#ad4253ab8c8d488367a891a1137cae53d"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="createClosure"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunction.html#a90fdaeb12db377b37dcf1fa63d7147f2"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="m_api_param"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunction.html#af9e70eb081b4b36b5605b440accef22c"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="m_api_result"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunction.html#a7a2472a29222895c4a238bdc5eb60465"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="m_function"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunction.html#a9c398bb7002dd99437f795d99204bfbb"><param name="ImageNumber" value="11"></OBJECT>
@@ -2735,12 +2766,12 @@
           <LI><OBJECT type="text/sitemap"><param name="Name" value="CppFormFunctionClosure"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunctionClosure.html#a5ad9a924737ab77d3ac614a25b79a481"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="call"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunctionClosure.html#afd820c778cfcf84ce5b4f937b3d675c2"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="init"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunctionClosure.html#ab8fd9f4c3e8fdb705124c9bdd7d68497"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="result"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunctionClosure.html#ad33b95db129f8717d094beb7ddc4d648"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="result"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunctionClosure.html#ab9785f73d05f7fad481ee4e935b95b4c"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="m_context"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunctionClosure.html#af2533c238eb75f606bd35bd5ed077e5a"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="m_func"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunctionClosure.html#ae5e4cf6d4cb7475fcf73eb75d2b56037"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="m_func"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunctionClosure.html#a635039f9431fc6c9b5e5492bafd7f265"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="m_param_data"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunctionClosure.html#a3f46cf7439f987cebf287e4c4f0562a1"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="m_parser"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunctionClosure.html#ac129deeccb68f87bfd9a540618dd3dea"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="m_result"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunctionClosure.html#acfa2ea4bba9303776ed94ceaab9eaffa"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="m_result"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunctionClosure.html#aea9d6554fe1946af0460297b61b92a50"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="m_result_data"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunctionClosure.html#a33c5a676ee66437bec64611a1d14e54a"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="m_state"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunctionClosure.html#ab38d5b03d479722f1cad64a6bd642e2b"><param name="ImageNumber" value="11"></OBJECT>
           </UL>
@@ -3393,6 +3424,7 @@
             <LI><OBJECT type="text/sitemap"><param name="Name" value="Node"><param name="Local" value="class__Wolframe_1_1types_1_1PropertyTree_1_1Node.html#a5b9ded86fd6e95a455baf08781d564b1"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="Node"><param name="Local" value="class__Wolframe_1_1types_1_1PropertyTree_1_1Node.html#a0f610e0ac8b2341b99e20b1c7cfa4b72"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="Node"><param name="Local" value="class__Wolframe_1_1types_1_1PropertyTree_1_1Node.html#a7675c6afba2f68343b32cf3ad8c4a154"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="getChild"><param name="Local" value="class__Wolframe_1_1types_1_1PropertyTree_1_1Node.html#abd3a552ddcc122c00e3372a15ea0d82e"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="print"><param name="Local" value="class__Wolframe_1_1types_1_1PropertyTree_1_1Node.html#aef0e0d5338eaa885484cc1fea06129d8"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="recursiveSetFileName"><param name="Local" value="class__Wolframe_1_1types_1_1PropertyTree_1_1Node.html#a9d04db1f8ab2d9e3e1998a2c456174e3"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="recursiveSetFileName"><param name="Local" value="class__Wolframe_1_1types_1_1PropertyTree_1_1Node.html#a3623d51df3c4e1e24c0e0af06ee208a4"><param name="ImageNumber" value="11"></OBJECT>
@@ -4333,6 +4365,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::cmdbind::ExecCommandHandler::Command"><param name="Local" value="struct__Wolframe_1_1cmdbind_1_1ExecCommandHandler_1_1Command.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::cmdbind::CommandHandler"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1CommandHandler.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::cmdbind::AuthCommandHandler"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::cmdbind::ContentBufferCommandHandlerEscDLF"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1ContentBufferCommandHandlerEscDLF.html"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::cmdbind::DoctypeFilterCommandHandler"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1DoctypeFilterCommandHandler.html"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::cmdbind::ExecCommandHandler"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1ExecCommandHandler.html"><param name="ImageNumber" value="11"></OBJECT>
@@ -4346,10 +4379,6 @@
       <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::cmdbind::LineCommandHandler"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1LineCommandHandler.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::cmdbind::LineCommandHandlerTemplate&lt; LineCommandHandlerImpl &gt;"><param name="Local" value="struct__Wolframe_1_1cmdbind_1_1LineCommandHandlerTemplate.html"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::cmdbind::LineCommandHandlerTemplate&lt; AuthCommandHandler &gt;"><param name="Local" value="struct__Wolframe_1_1cmdbind_1_1LineCommandHandlerTemplate.html"><param name="ImageNumber" value="1"></OBJECT>
-          <UL>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::cmdbind::AuthCommandHandler"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html"><param name="ImageNumber" value="11"></OBJECT>
-          </UL>
         </UL>
       </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::config::ConfigurationBase"><param name="Local" value="class__Wolframe_1_1config_1_1ConfigurationBase.html"><param name="ImageNumber" value="1"></OBJECT>
@@ -4397,7 +4426,6 @@
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::types::CountedReference&lt; OutputFilter &gt;"><param name="Local" value="class__Wolframe_1_1types_1_1CountedReference.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::types::CountedReference&lt; TypedInputFilter &gt;"><param name="Local" value="class__Wolframe_1_1types_1_1CountedReference.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::types::CountedReference&lt; TypedOutputFilter &gt;"><param name="Local" value="class__Wolframe_1_1types_1_1CountedReference.html"><param name="ImageNumber" value="11"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::serialize::CppFormFunction"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunction.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::appdevel::CppFormFunction&lt; OutputType, InputType, Function &gt;"><param name="Local" value="struct__Wolframe_1_1appdevel_1_1CppFormFunction.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::module::CppFormFunctionDef"><param name="Local" value="struct__Wolframe_1_1module_1_1CppFormFunctionDef.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::AAAA::CRAMchallenge"><param name="Local" value="class__Wolframe_1_1AAAA_1_1CRAMchallenge.html"><param name="ImageNumber" value="11"></OBJECT>
@@ -4449,8 +4477,12 @@
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::FormFunction"><param name="Local" value="struct__Wolframe_1_1langbind_1_1FormFunction.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::RuntimeEnvironmentFormFunction"><param name="Local" value="class__Wolframe_1_1langbind_1_1RuntimeEnvironmentFormFunction.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::serialize::CppFormFunction"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunction.html"><param name="ImageNumber" value="11"></OBJECT>
       </UL>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::FormFunctionClosure"><param name="Local" value="class__Wolframe_1_1langbind_1_1FormFunctionClosure.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::FormFunctionClosure"><param name="Local" value="class__Wolframe_1_1langbind_1_1FormFunctionClosure.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::serialize::CppFormFunctionClosure"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunctionClosure.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::FSM"><param name="Local" value="class__Wolframe_1_1FSM.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::AAAA::Authenticator"><param name="Local" value="class__Wolframe_1_1AAAA_1_1Authenticator.html"><param name="ImageNumber" value="11"></OBJECT>
@@ -4479,14 +4511,14 @@
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::serialize::IntrusiveProperty&lt; T &gt;"><param name="Local" value="struct__Wolframe_1_1serialize_1_1IntrusiveProperty.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::serialize::IntrusiveSerializer&lt; TYPE &gt;"><param name="Local" value="struct__Wolframe_1_1serialize_1_1IntrusiveSerializer.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::types::traits::is_back_insertion_sequence&lt; T &gt;"><param name="Local" value="struct__Wolframe_1_1types_1_1traits_1_1is__back__insertion__sequence.html"><param name="ImageNumber" value="11"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::types::VariantStruct::iterator"><param name="Local" value="class__Wolframe_1_1types_1_1VariantStruct_1_1iterator.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::types::VariantStructDescription::iterator"><param name="Local" value="class__Wolframe_1_1types_1_1VariantStructDescription_1_1iterator.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::types::VariantStruct::iterator"><param name="Local" value="class__Wolframe_1_1types_1_1VariantStruct_1_1iterator.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::protocol::iterator_t&lt; array_type_, size_type_, value_type_, access_type_, deref_type_ &gt;"><param name="Local" value="class__Wolframe_1_1protocol_1_1iterator__t.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="JobSchedule"><param name="Local" value="classJobSchedule.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="JobScheduleProvider"><param name="Local" value="classJobScheduleProvider.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::db::LanguageDescription"><param name="Local" value="class__Wolframe_1_1db_1_1LanguageDescription.html"><param name="ImageNumber" value="11"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::types::traits::is_back_insertion_sequence&lt; T &gt;::large_type"><param name="Local" value="struct__Wolframe_1_1types_1_1traits_1_1is__back__insertion__sequence_1_1large__type.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::serialize::traits::has_description_method_noprm&lt; T &gt;::large_type"><param name="Local" value="struct__Wolframe_1_1serialize_1_1traits_1_1has__description__method__noprm_1_1large__type.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::types::traits::is_back_insertion_sequence&lt; T &gt;::large_type"><param name="Local" value="struct__Wolframe_1_1types_1_1traits_1_1is__back__insertion__sequence_1_1large__type.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::cmdbind::LineCommandHandlerSTM"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1LineCommandHandlerSTM.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::cmdbind::LineCommandHandlerSTMTemplate&lt; LineCommandHandlerImpl &gt;"><param name="Local" value="struct__Wolframe_1_1cmdbind_1_1LineCommandHandlerSTMTemplate.html"><param name="ImageNumber" value="11"></OBJECT>
@@ -4596,6 +4628,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::crypto::PBKDF2_HMAC_SHA1"><param name="Local" value="class__Wolframe_1_1crypto_1_1PBKDF2__HMAC__SHA1.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::types::CountedReference&lt; OBJ &gt;::Pointer"><param name="Local" value="struct__Wolframe_1_1types_1_1CountedReference_1_1Pointer.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::PoolObject&lt; objectType &gt;"><param name="Local" value="class__Wolframe_1_1PoolObject.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::config::PositionalError"><param name="Local" value="struct__Wolframe_1_1config_1_1PositionalError.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="PositionalError"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::log::Exception&lt; std::runtime_error, PositionalError &gt;"><param name="Local" value="struct__Wolframe_1_1log_1_1Exception.html"><param name="ImageNumber" value="1"></OBJECT>
@@ -4603,7 +4636,6 @@
         <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::config::PositionalErrorException"><param name="Local" value="struct__Wolframe_1_1config_1_1PositionalErrorException.html"><param name="ImageNumber" value="11"></OBJECT>
         </UL>
       </UL>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::config::PositionalError"><param name="Local" value="struct__Wolframe_1_1config_1_1PositionalError.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::config::PositionalErrorMessageBase"><param name="Local" value="class__Wolframe_1_1config_1_1PositionalErrorMessageBase.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="PositionalFileError"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
@@ -4656,9 +4688,9 @@
       </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::TypingInputFilter::StackElement"><param name="Local" value="struct__Wolframe_1_1langbind_1_1TypingInputFilter_1_1StackElement.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::db::vm::ProgramInstance::StackElement"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1ProgramInstance_1_1StackElement.html"><param name="ImageNumber" value="11"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::PropertyTreeInputFilter::State"><param name="Local" value="struct__Wolframe_1_1langbind_1_1PropertyTreeInputFilter_1_1State.html"><param name="ImageNumber" value="11"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::PropertyTreeOutputFilter::State"><param name="Local" value="struct__Wolframe_1_1langbind_1_1PropertyTreeOutputFilter_1_1State.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::cmdbind::LineCommandHandlerSTM::State"><param name="Local" value="struct__Wolframe_1_1cmdbind_1_1LineCommandHandlerSTM_1_1State.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::PropertyTreeOutputFilter::State"><param name="Local" value="struct__Wolframe_1_1langbind_1_1PropertyTreeOutputFilter_1_1State.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::PropertyTreeInputFilter::State"><param name="Local" value="struct__Wolframe_1_1langbind_1_1PropertyTreeInputFilter_1_1State.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::db::Statement"><param name="Local" value="class__Wolframe_1_1db_1_1Statement.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::db::BaseStatement"><param name="Local" value="class__Wolframe_1_1db_1_1BaseStatement.html"><param name="ImageNumber" value="1"></OBJECT>
@@ -4666,15 +4698,15 @@
         <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::db::SubstitutingStatement"><param name="Local" value="class__Wolframe_1_1db_1_1SubstitutingStatement.html"><param name="ImageNumber" value="11"></OBJECT>
         </UL>
       </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::types::String"><param name="Local" value="class__Wolframe_1_1types_1_1String.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::types::StringConst"><param name="Local" value="class__Wolframe_1_1types_1_1StringConst.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="string"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::config::PositionalErrorMessageBase::Message"><param name="Local" value="struct__Wolframe_1_1config_1_1PositionalErrorMessageBase_1_1Message.html"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::types::keystring"><param name="Local" value="struct__Wolframe_1_1types_1_1keystring.html"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::types::PropertyTree::Value"><param name="Local" value="class__Wolframe_1_1types_1_1PropertyTree_1_1Value.html"><param name="ImageNumber" value="11"></OBJECT>
-      </UL>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::types::String"><param name="Local" value="class__Wolframe_1_1types_1_1String.html"><param name="ImageNumber" value="1"></OBJECT>
-      <UL>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::types::StringConst"><param name="Local" value="class__Wolframe_1_1types_1_1StringConst.html"><param name="ImageNumber" value="11"></OBJECT>
       </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::types::DateTime::StringFormat"><param name="Local" value="struct__Wolframe_1_1types_1_1DateTime_1_1StringFormat.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::serialize::traits::struct_"><param name="Local" value="struct__Wolframe_1_1serialize_1_1traits_1_1struct__.html"><param name="ImageNumber" value="11"></OBJECT>
@@ -4925,7 +4957,7 @@
             <LI><OBJECT type="text/sitemap"><param name="Name" value="AAAAprovider"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AAAAprovider.html#a05ac2aa6a16ffd42b0ef4b9439aef31c"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="~AAAAprovider"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AAAAprovider.html#a416307fb864aa094364a2755bd56a369"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="auditor"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AAAAprovider.html#afedbcf04c67c48942bd165d7b0529eee"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="authenticator"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AAAAprovider.html#ad36c7dd04e7e831d778a160b17ccad31"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="authenticator"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AAAAprovider.html#a1ce0e2bb94138830d2bd02def9b77164"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="authorizer"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AAAAprovider.html#ad6be6e8541c14b6b506959c7bcdfaa35"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="resolveDB"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AAAAprovider.html#adb014b48cc5d68da2972bb87bd267002"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="m_impl"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AAAAprovider.html#a16190715bfe200fce09406dfc1a88ac4"><param name="ImageNumber" value="11"></OBJECT>
@@ -5368,10 +5400,37 @@
           <UL>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="AuthCommandHandler"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html"><param name="ImageNumber" value="1"></OBJECT>
             <UL>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="AuthCommandHandler"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a89dc9e519d0bdb237af98b8a9ff0fbc9"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="State"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a3bfe241847293b71a032a19dcc9e7f67"><param name="ImageNumber" value="1"></OBJECT>
+              <UL>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="Init"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a3bfe241847293b71a032a19dcc9e7f67a7ff3b328e329b2be263079932360f9ba"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="NextOperation"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a3bfe241847293b71a032a19dcc9e7f67a05e2c8bc5a159de2a0c5c3e8e82cb049"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="ReadConsumed"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a3bfe241847293b71a032a19dcc9e7f67ad9746dc0b74a4c46c830ad499a8bf8a0"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="FlushOutput"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a3bfe241847293b71a032a19dcc9e7f67a329cd51fe7f6bfdbc4f93686a82f33d1"><param name="ImageNumber" value="11"></OBJECT>
+              </UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="AuthCommandHandler"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#af6dd7ab530072f88e421a94fd2a2f9c6"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="~AuthCommandHandler"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#ac1a3982e0bc23e3297697301ba50c950"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="ticket"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#aba4288979d2dca3454dfedc3b78f7297"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="m_ticket"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a770126e6de89ebcf92b6e498ce8a96ff"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="getDataLeft"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a185ba4654944528250c7497326bfa33e"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="getInputBlock"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#ac5c620153d18f9fed900b56596fa4209"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="getOutput"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a7fa00ff65f13a2d00283089824ff643e"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="interruptDataSessionMarker"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#ac60f8ee92d957964de4cac824f802499"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="nextOperation"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a89f64e41c20892646c18e04cb0346e81"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="putInput"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a897a324670cb592278a569850322ce0a"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="setInputBuffer"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a7c9aad9a1a6aefb5d3a09cb5b7b79b8b"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="setOutputBuffer"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#ae75acfad488be485e59a75a37d40c7a6"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="stateName"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#aee4b093ac12de5efb44b87bb60e94fbe"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="user"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a9232b7cbd1ff8845b2add685a0aebadb"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="m_authenticator"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a742adf4dec8a74dcaf3ccfe391d473ef"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="m_eoD"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a31c8827def9254c95b00607741b305d6"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="m_input"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a336afc63101e1dcc66b7264e94f7ae51"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="m_itrpos"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a6c74aa6596e187ca87ab1ff2351e746a"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="m_outputbuf"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a8884e16ae6ebffc0c4e73e625eee0976"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="m_outputbufpos"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a739f61439fcb993815ef485243b4d204"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="m_outputbufsize"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a22507fdb5a5224bf22aa319f3fc15bee"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="m_readbuffer"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a0a098898d772361269ca4560c8ffa472"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="m_readpos"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a86104400d78a7812eea28186255eaf9c"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="m_state"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#ac9167f1b05dcb6b4c56e515b13444d2c"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="m_writebuffer"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a03f32b6487513ee60280a5651bbb3b52"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="m_writepos"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#ad7453e0da1501368b54fac8458dc55cb"><param name="ImageNumber" value="11"></OBJECT>
             </UL>
           </UL>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="commandHandler.hpp"><param name="Local" value="commandHandler_8hpp.html"><param name="ImageNumber" value="1"></OBJECT>
@@ -5485,6 +5544,7 @@
               <LI><OBJECT type="text/sitemap"><param name="Name" value="ParseJSONHeaderIdentKey"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1DoctypeFilterCommandHandler.html#a9989dd0888571d2fca50b7288532ed34adcefc084843fdbe1c3ad27d92cf554ec"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="ParseJSONHeaderIdentValue"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1DoctypeFilterCommandHandler.html#a9989dd0888571d2fca50b7288532ed34ac42d988b78d185bafd61684b66ec2971"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="ParseJSONHeaderStringValue"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1DoctypeFilterCommandHandler.html#a9989dd0888571d2fca50b7288532ed34a85502704d61b9c1d8d337cf9af96a3ab"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="ParseJSONHeaderSeekDelim"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1DoctypeFilterCommandHandler.html#a9989dd0888571d2fca50b7288532ed34aa4aebb611053ac97a832f09dcc9de63b"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="ParseXMLHeader0"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1DoctypeFilterCommandHandler.html#a9989dd0888571d2fca50b7288532ed34ad2166a95e0af28d73354cc2297511a0f"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="ParseXMLHeader"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1DoctypeFilterCommandHandler.html#a9989dd0888571d2fca50b7288532ed34a187186bb9ecaf52af921f44cff24d74e"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="SearchXMLDoctypeTag"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1DoctypeFilterCommandHandler.html#a9989dd0888571d2fca50b7288532ed34aeece771502a8d7154e81227d37915f09"><param name="ImageNumber" value="11"></OBJECT>
@@ -7155,7 +7215,7 @@
             <LI><OBJECT type="text/sitemap"><param name="Name" value="createClosure"><param name="Local" value="struct__Wolframe_1_1langbind_1_1FormFunction.html#a66959e4a5333c4628f8a03df424ef29a"><param name="ImageNumber" value="11"></OBJECT>
             </UL>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="FormFunctionClosureR"><param name="Local" value="formFunction_8hpp.html#a8a64a59ae2a9114a088e6968297a66ec"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="FormFunctionR"><param name="Local" value="formFunction_8hpp.html#aa2be0f99433df2117335bf0c9e0a93b9"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="FormFunctionR"><param name="Local" value="formFunction_8hpp.html#af9ff4fca992718af99493df4d4c6d999"><param name="ImageNumber" value="11"></OBJECT>
           </UL>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="input.hpp"><param name="Local" value="input_8hpp.html"><param name="ImageNumber" value="11"></OBJECT>
           <UL>
@@ -7617,14 +7677,16 @@
           <LI><OBJECT type="text/sitemap"><param name="Name" value="ExecContext"><param name="Local" value="class__Wolframe_1_1proc_1_1ExecContext.html"><param name="ImageNumber" value="1"></OBJECT>
             <UL>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="ExecContext"><param name="Local" value="class__Wolframe_1_1proc_1_1ExecContext.html#acef6e8d4809b29a503cf03d3273ab131"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="ExecContext"><param name="Local" value="class__Wolframe_1_1proc_1_1ExecContext.html#a31e3625c861879bd28cb6c7182f4077d"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="ExecContext"><param name="Local" value="class__Wolframe_1_1proc_1_1ExecContext.html#aa5115031fe4d71d7f5cef970760dde82"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="ExecContext"><param name="Local" value="class__Wolframe_1_1proc_1_1ExecContext.html#a611dbff679a9bae71088cb61db4d8e17"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="authorizer"><param name="Local" value="class__Wolframe_1_1proc_1_1ExecContext.html#ac766825d4a82bda1653bb820f22b0055"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="authenticator"><param name="Local" value="class__Wolframe_1_1proc_1_1ExecContext.html#aa8e4d6b474ee02167dda555727e92c20"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="authorizer"><param name="Local" value="class__Wolframe_1_1proc_1_1ExecContext.html#a2496ebf5a5aafff65cc146eb673f1b9c"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="checkAuthorization"><param name="Local" value="class__Wolframe_1_1proc_1_1ExecContext.html#a27e745bb3496bbe15310af8657a6ab6e"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="provider"><param name="Local" value="class__Wolframe_1_1proc_1_1ExecContext.html#ab0327b0c77220bd9dfd0cb004bb7b01f"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="setAuthorizer"><param name="Local" value="class__Wolframe_1_1proc_1_1ExecContext.html#a062ed6a8c49f2f45c74ab7c4e0f01352"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="setUser"><param name="Local" value="class__Wolframe_1_1proc_1_1ExecContext.html#a8488d6fbea4534c70fa6945eab3dc87f"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="user"><param name="Local" value="class__Wolframe_1_1proc_1_1ExecContext.html#ab49020c2d13cac09beac74cf7b8f8698"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="m_aaaaProvider"><param name="Local" value="class__Wolframe_1_1proc_1_1ExecContext.html#a018804e3df8baad2f89401a9e33b58e2"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="m_authorizer"><param name="Local" value="class__Wolframe_1_1proc_1_1ExecContext.html#a9ac97e51db0833eae06b3f5f09d95cb9"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="m_provider"><param name="Local" value="class__Wolframe_1_1proc_1_1ExecContext.html#a11092e867ea847a555e4f95d73595771"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="m_user"><param name="Local" value="class__Wolframe_1_1proc_1_1ExecContext.html#aaa442019bd57516bc1d6f590d42fbb9e"><param name="ImageNumber" value="11"></OBJECT>
@@ -8327,19 +8389,6 @@
           </UL>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="cppFormFunction.hpp"><param name="Local" value="cppFormFunction_8hpp.html"><param name="ImageNumber" value="1"></OBJECT>
           <UL>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="CppFormFunction"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunction.html"><param name="ImageNumber" value="1"></OBJECT>
-            <UL>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="Function"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunction.html#aefb423f459eee0385a02ec17357a75c7"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="CppFormFunction"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunction.html#ace041197bdb26b6348fc89680eeb43b5"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="CppFormFunction"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunction.html#a22d57268fff8974b4d4422a9f7077bee"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="CppFormFunction"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunction.html#a24a346bceba592f7da607c90b07b94f9"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="api_param"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunction.html#af811dad3c071947229b64c5f2600e8be"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="api_result"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunction.html#a5ad4caf64cb4dac51def773fd15582e4"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="call"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunction.html#ad4253ab8c8d488367a891a1137cae53d"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="m_api_param"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunction.html#af9e70eb081b4b36b5605b440accef22c"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="m_api_result"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunction.html#a7a2472a29222895c4a238bdc5eb60465"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="m_function"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunction.html#a9c398bb7002dd99437f795d99204bfbb"><param name="ImageNumber" value="11"></OBJECT>
-            </UL>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="ApiFormData"><param name="Local" value="class__Wolframe_1_1serialize_1_1ApiFormData.html"><param name="ImageNumber" value="1"></OBJECT>
             <UL>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="ApiFormData"><param name="Local" value="class__Wolframe_1_1serialize_1_1ApiFormData.html#ad3afb19d83ec335989253bc7f71e286b"><param name="ImageNumber" value="11"></OBJECT>
@@ -8356,14 +8405,28 @@
             <LI><OBJECT type="text/sitemap"><param name="Name" value="CppFormFunctionClosure"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunctionClosure.html#a5ad9a924737ab77d3ac614a25b79a481"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="call"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunctionClosure.html#afd820c778cfcf84ce5b4f937b3d675c2"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="init"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunctionClosure.html#ab8fd9f4c3e8fdb705124c9bdd7d68497"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="result"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunctionClosure.html#ad33b95db129f8717d094beb7ddc4d648"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="result"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunctionClosure.html#ab9785f73d05f7fad481ee4e935b95b4c"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="m_context"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunctionClosure.html#af2533c238eb75f606bd35bd5ed077e5a"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="m_func"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunctionClosure.html#ae5e4cf6d4cb7475fcf73eb75d2b56037"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="m_func"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunctionClosure.html#a635039f9431fc6c9b5e5492bafd7f265"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="m_param_data"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunctionClosure.html#a3f46cf7439f987cebf287e4c4f0562a1"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="m_parser"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunctionClosure.html#ac129deeccb68f87bfd9a540618dd3dea"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="m_result"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunctionClosure.html#acfa2ea4bba9303776ed94ceaab9eaffa"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="m_result"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunctionClosure.html#aea9d6554fe1946af0460297b61b92a50"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="m_result_data"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunctionClosure.html#a33c5a676ee66437bec64611a1d14e54a"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="m_state"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunctionClosure.html#ab38d5b03d479722f1cad64a6bd642e2b"><param name="ImageNumber" value="11"></OBJECT>
+            </UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="CppFormFunction"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunction.html"><param name="ImageNumber" value="1"></OBJECT>
+            <UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="Function"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunction.html#aefb423f459eee0385a02ec17357a75c7"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="CppFormFunction"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunction.html#ace041197bdb26b6348fc89680eeb43b5"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="CppFormFunction"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunction.html#a22d57268fff8974b4d4422a9f7077bee"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="CppFormFunction"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunction.html#a24a346bceba592f7da607c90b07b94f9"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="api_param"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunction.html#af811dad3c071947229b64c5f2600e8be"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="api_result"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunction.html#a5ad4caf64cb4dac51def773fd15582e4"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="call"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunction.html#ad4253ab8c8d488367a891a1137cae53d"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="createClosure"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunction.html#a90fdaeb12db377b37dcf1fa63d7147f2"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="m_api_param"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunction.html#af9e70eb081b4b36b5605b440accef22c"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="m_api_result"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunction.html#a7a2472a29222895c4a238bdc5eb60465"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="m_function"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunction.html#a9c398bb7002dd99437f795d99204bfbb"><param name="ImageNumber" value="11"></OBJECT>
             </UL>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="CppFormFunctionR"><param name="Local" value="cppFormFunction_8hpp.html#a18fbcf71b7892054283a403134008cbb"><param name="ImageNumber" value="11"></OBJECT>
           </UL>
@@ -9242,6 +9305,7 @@
               <LI><OBJECT type="text/sitemap"><param name="Name" value="Node"><param name="Local" value="class__Wolframe_1_1types_1_1PropertyTree_1_1Node.html#a5b9ded86fd6e95a455baf08781d564b1"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="Node"><param name="Local" value="class__Wolframe_1_1types_1_1PropertyTree_1_1Node.html#a0f610e0ac8b2341b99e20b1c7cfa4b72"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="Node"><param name="Local" value="class__Wolframe_1_1types_1_1PropertyTree_1_1Node.html#a7675c6afba2f68343b32cf3ad8c4a154"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="getChild"><param name="Local" value="class__Wolframe_1_1types_1_1PropertyTree_1_1Node.html#abd3a552ddcc122c00e3372a15ea0d82e"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="print"><param name="Local" value="class__Wolframe_1_1types_1_1PropertyTree_1_1Node.html#aef0e0d5338eaa885484cc1fea06129d8"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="recursiveSetFileName"><param name="Local" value="class__Wolframe_1_1types_1_1PropertyTree_1_1Node.html#a9d04db1f8ab2d9e3e1998a2c456174e3"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="recursiveSetFileName"><param name="Local" value="class__Wolframe_1_1types_1_1PropertyTree_1_1Node.html#a3623d51df3c4e1e24c0e0af06ee208a4"><param name="ImageNumber" value="11"></OBJECT>
@@ -9285,6 +9349,7 @@
             <LI><OBJECT type="text/sitemap"><param name="Name" value="Node"><param name="Local" value="class__Wolframe_1_1types_1_1PropertyTree_1_1Node.html#a5b9ded86fd6e95a455baf08781d564b1"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="Node"><param name="Local" value="class__Wolframe_1_1types_1_1PropertyTree_1_1Node.html#a0f610e0ac8b2341b99e20b1c7cfa4b72"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="Node"><param name="Local" value="class__Wolframe_1_1types_1_1PropertyTree_1_1Node.html#a7675c6afba2f68343b32cf3ad8c4a154"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="getChild"><param name="Local" value="class__Wolframe_1_1types_1_1PropertyTree_1_1Node.html#abd3a552ddcc122c00e3372a15ea0d82e"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="print"><param name="Local" value="class__Wolframe_1_1types_1_1PropertyTree_1_1Node.html#aef0e0d5338eaa885484cc1fea06129d8"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="recursiveSetFileName"><param name="Local" value="class__Wolframe_1_1types_1_1PropertyTree_1_1Node.html#a9d04db1f8ab2d9e3e1998a2c456174e3"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="recursiveSetFileName"><param name="Local" value="class__Wolframe_1_1types_1_1PropertyTree_1_1Node.html#a3623d51df3c4e1e24c0e0af06ee208a4"><param name="ImageNumber" value="11"></OBJECT>
@@ -10069,6 +10134,7 @@
           <LI><OBJECT type="text/sitemap"><param name="Name" value="getFileType"><param name="Local" value="fileUtils_8hpp.html#a3819d331fa7e2189b8cfc5688f621323"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="getParentPath"><param name="Local" value="fileUtils_8hpp.html#a2d14913fafcdc736832dbd9971bbea96"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="joinPath"><param name="Local" value="fileUtils_8hpp.html#af9224ed2307b459a2612d41a5398e693"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="readBinaryFileContent"><param name="Local" value="fileUtils_8hpp.html#a97494263e8446e43f259d2f4f102b346"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="readInfoPropertyTreeFile"><param name="Local" value="fileUtils_8hpp.html#a15fee8afbffeffc483b4bdc0c16ce443"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="readPropertyTreeFile"><param name="Local" value="fileUtils_8hpp.html#a75ffd65ab8c127da2db033d4d6d37621"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="readSourceFileContent"><param name="Local" value="fileUtils_8hpp.html#ab2148652c958c608c54db37126593496"><param name="ImageNumber" value="11"></OBJECT>
