@@ -58,7 +58,7 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.5. Step 5 - Implement client side customer list</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch02s04.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Steps</th><td width="20%" align="right"> <a accesskey="n" href="ch02s06.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1383258348"></a>2.5. Step 5 - Implement client side customer list</h2></div></div></div><p>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.5. Step 5 - Implement client side customer list</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch02s04.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Steps</th><td width="20%" align="right"> <a accesskey="n" href="ch02s06.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1371768524"></a>2.5. Step 5 - Implement client side customer list</h2></div></div></div><p>
 		It's time now to get something working visually, so we start to add a first
 		simple interface to our wolfclient.
 	</p><p>
@@ -139,11 +139,11 @@
 		
 		</p><pre class="programlisting">
 	CustomerList list {
-		customer[] {
-			id={?};
-			name{{row.name}};
-			address{{row.address}}
-		}
+	    customer[] {
+	        id={?};
+	        name{{row.name}};
+	        address{{row.address}}
+	    }
 	}
 		</pre><p>
 		
@@ -160,19 +160,20 @@
 	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step5_customers_list.png" /></div></div><p>
 		But when we look at the contents of the debug window we still see an error reported:
 	</p><div class="mediaobject"><img src="images/Tutorial/step5_customers_undefined_doctype.png" /></div><p>
-		For simplicity we defined before with the directive 'STANDALONE'
-		that the server should not return an explicit document type.
-		But the client expects a document type declaration. For this we have to change the
-		definition in the file <code class="filename">tutorial.dmap</code> we created in step 4
-		in the following way:
+		For simplicity we defined the output with the document meta data attribute
+		'{ standalone = "yes" }' that the returned document should not be built
+		with an explicit document type definition.
+		But the client expects a document type declaration. For this we 
+		change the definition in the file <code class="filename">tutorial.dmap</code> we 
+		created in step 4 in the following way:
 	</p><pre class="programlisting">
 	COMMAND CustomerListRequest
 	        CALL SelectCustomerList
-	        RETURN SKIP CustomerList list;
+	        RETURN SKIP CustomerList {root='list'};
 	</pre><p>
-	The directive 'RETURN SKIP CustomerList list' states that a document
+	The directive "RETURN SKIP CustomerList {root='list'}" states that a document
 	of type 'CustomerList' with the root element 'list' is returned
-	without validation of the output. 
+	without validation of the output.
 	We omit a validation on purpose for now to get to the next step.
 	</p></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch02s04.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="ch02.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="ch02s06.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">2.4. Step 4 - Implement server side customer list </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 2.6. Step 6 - Show customer</td></tr></table></div></div></div>
 

@@ -95,7 +95,7 @@
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="authentication_8hpp_source.html">authentication.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="authUnit_8hpp_source.html">authUnit.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -109,8 +109,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a05795fa1334b1a3c4a32ae88f9cf2472"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ff4caf18b4824c405c77ff3482051f4"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1AuthenticationUnit.html#a4ff4caf18b4824c405c77ff3482051f4">className</a> () const =0</td></tr>
 <tr class="separator:a4ff4caf18b4824c405c77ff3482051f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a763f7e5321cbc1d6b4ad435150aa5929"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class__Wolframe_1_1AAAA_1_1AuthenticatorInstance.html">AuthenticatorInstance</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1AuthenticationUnit.html#a763f7e5321cbc1d6b4ad435150aa5929">instance</a> ()=0</td></tr>
-<tr class="separator:a763f7e5321cbc1d6b4ad435150aa5929"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7e556fbd73833981f4218f299e48d90"><td class="memItemLeft" align="right" valign="top">virtual const char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1AuthenticationUnit.html#ac7e556fbd73833981f4218f299e48d90">mechs</a> () const =0</td></tr>
+<tr class="separator:ac7e556fbd73833981f4218f299e48d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42888af4db067102ac6c4f86423e4063"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class__Wolframe_1_1AAAA_1_1AuthenticatorSlice.html">AuthenticatorSlice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1AuthenticationUnit.html#a42888af4db067102ac6c4f86423e4063">slice</a> (const std::string &amp;mech, const <a class="el" href="class__Wolframe_1_1net_1_1RemoteEndpoint.html">net::RemoteEndpoint</a> &amp;client)=0</td></tr>
+<tr class="memdesc:a42888af4db067102ac6c4f86423e4063"><td class="mdescLeft">&#160;</td><td class="mdescRight">An <a class="el" href="class__Wolframe_1_1AAAA_1_1AuthenticatorSlice.html">AuthenticatorSlice</a> for the required mech (or NULL)  <a href="#a42888af4db067102ac6c4f86423e4063">More...</a><br /></td></tr>
+<tr class="separator:a42888af4db067102ac6c4f86423e4063"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -118,7 +121,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ac15a819f664584e6a2e071927e10b991"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="class__Wolframe_1_1AAAA_1_1AuthenticationUnit.html">AuthenticationUnit</a> Unit This is the base class for authentication unit implementations </p>
+<div class="textblock"><p><a class="el" href="class__Wolframe_1_1AAAA_1_1AuthenticationUnit.html">AuthenticationUnit</a> Unit This is the base class for the authentication unit implementations </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a22eca473d07feee51cf3948ae5b0e668"></a>
 <div class="memitem">
@@ -214,7 +217,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a763f7e5321cbc1d6b4ad435150aa5929"></a>
+<a class="anchor" id="ac7e556fbd73833981f4218f299e48d90"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -222,10 +225,10 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="class__Wolframe_1_1AAAA_1_1AuthenticatorInstance.html">AuthenticatorInstance</a>* _Wolframe::AAAA::AuthenticationUnit::instance </td>
+          <td class="memname">virtual const char** _Wolframe::AAAA::AuthenticationUnit::mechs </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -234,6 +237,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The list of mechs implemented by this unit </p><dl class="section note"><dt>Note</dt><dd>The authentication unit returns the mechs as an array of strings. The array ends with a NULL Be aware that the other interfaces use a vector instead. </dd></dl>
 
 </div>
 </div>
@@ -261,6 +265,42 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a42888af4db067102ac6c4f86423e4063"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class__Wolframe_1_1AAAA_1_1AuthenticatorSlice.html">AuthenticatorSlice</a>* _Wolframe::AAAA::AuthenticationUnit::slice </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>mech</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class__Wolframe_1_1net_1_1RemoteEndpoint.html">net::RemoteEndpoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>client</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>An <a class="el" href="class__Wolframe_1_1AAAA_1_1AuthenticatorSlice.html">AuthenticatorSlice</a> for the required mech (or NULL) </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="ac15a819f664584e6a2e071927e10b991"></a>
 <div class="memitem">
@@ -283,13 +323,13 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/AAAA/<a class="el" href="authentication_8hpp_source.html">authentication.hpp</a></li>
+<li>include/AAAA/<a class="el" href="authUnit_8hpp_source.html">authUnit.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 4 2014 16:48:16 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 20:58:03 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

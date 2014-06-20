@@ -92,7 +92,7 @@
 </div><!--header-->
 <div class="contents">
 
-<p>Defines the buffers used by protocol parsers to buffer the commands and their arguments.  
+<p>Defines the buffers used by protocol parsers to buffer the commands and their arguments. All buffers defined in this module are preallocated fixed size and implement a subset of STL back insertion sequence interface for appending data. This interface is used by the buffering parsing methods defined in <a class="el" href="parser_8hpp.html" title="Parsing functions of the lexical elements of the protocol like commands, lines and tokens...">protocol/parser.hpp</a>. The protocol uses fixed size buffers because protocol messages are not considered to have a size defined by the client for security reasons. The buffers are not used for buffering processed data. Data is passed as memory blocks of the type defined in <a class="el" href="ioblocks_8hpp.html" title="Network message blocks as seen from the protocol with the input iterator classes and print functions...">protocol/ioblocks.hpp</a> to the application processors.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;cstddef&gt;</code><br />
 <code>#include &lt;stdexcept&gt;</code><br />
@@ -113,17 +113,18 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace__Wolframe"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe.html">_Wolframe</a></td></tr>
+<tr class="memdesc:namespace__Wolframe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processor Provider configuration. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace__Wolframe_1_1protocol"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1protocol.html">_Wolframe::protocol</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Defines the buffers used by protocol parsers to buffer the commands and their arguments. </p>
+<div class="textblock"><p>Defines the buffers used by protocol parsers to buffer the commands and their arguments. All buffers defined in this module are preallocated fixed size and implement a subset of STL back insertion sequence interface for appending data. This interface is used by the buffering parsing methods defined in <a class="el" href="parser_8hpp.html" title="Parsing functions of the lexical elements of the protocol like commands, lines and tokens...">protocol/parser.hpp</a>. The protocol uses fixed size buffers because protocol messages are not considered to have a size defined by the client for security reasons. The buffers are not used for buffering processed data. Data is passed as memory blocks of the type defined in <a class="el" href="ioblocks_8hpp.html" title="Network message blocks as seen from the protocol with the input iterator classes and print functions...">protocol/ioblocks.hpp</a> to the application processors. </p>
 </div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 4 2014 16:48:14 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 20:58:01 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

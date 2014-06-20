@@ -159,16 +159,22 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a388e7d20b296111db3e01b63b81413a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1Input.html#a388e7d20b296111db3e01b63b81413a1">m_used</a></td></tr>
+<tr class="memdesc:a388e7d20b296111db3e01b63b81413a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">only one iterator can be created from input. This is the guard for checking this.  <a href="#a388e7d20b296111db3e01b63b81413a1">More...</a><br /></td></tr>
 <tr class="separator:a388e7d20b296111db3e01b63b81413a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac04142307036176e2781e1f5aafc977f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace__Wolframe_1_1langbind.html#a046dc9147f2f4882eef3c2eba1d2dd3b">InputFilterR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1Input.html#ac04142307036176e2781e1f5aafc977f">m_inputfilter</a></td></tr>
+<tr class="memdesc:ac04142307036176e2781e1f5aafc977f"><td class="mdescLeft">&#160;</td><td class="mdescRight">input is defined by the associated input filter  <a href="#ac04142307036176e2781e1f5aafc977f">More...</a><br /></td></tr>
 <tr class="separator:ac04142307036176e2781e1f5aafc977f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0001a1310790aa6011456403a8ab480"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1Input.html#ac0001a1310790aa6011456403a8ab480">m_docformat</a></td></tr>
+<tr class="memdesc:ac0001a1310790aa6011456403a8ab480"><td class="mdescLeft">&#160;</td><td class="mdescRight">document format as recognized by the document type detection as string {"xml","json",...}  <a href="#ac0001a1310790aa6011456403a8ab480">More...</a><br /></td></tr>
 <tr class="separator:ac0001a1310790aa6011456403a8ab480"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6f0478e7a3eb63994e4681aee04ced7"><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1Input.html#ac6f0478e7a3eb63994e4681aee04ced7">m_content</a></td></tr>
+<tr class="memdesc:ac6f0478e7a3eb63994e4681aee04ced7"><td class="mdescLeft">&#160;</td><td class="mdescRight">content source string is input is not from network  <a href="#ac6f0478e7a3eb63994e4681aee04ced7">More...</a><br /></td></tr>
 <tr class="separator:ac6f0478e7a3eb63994e4681aee04ced7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85ecf5ceee24d022a5a1a51a4f1b3c52"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1Input.html#a85ecf5ceee24d022a5a1a51a4f1b3c52">m_contentsize</a></td></tr>
+<tr class="memdesc:a85ecf5ceee24d022a5a1a51a4f1b3c52"><td class="mdescLeft">&#160;</td><td class="mdescRight">size of content in bytes  <a href="#a85ecf5ceee24d022a5a1a51a4f1b3c52">More...</a><br /></td></tr>
 <tr class="separator:a85ecf5ceee24d022a5a1a51a4f1b3c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a163686b87e439aac9a8d3a82b77645a6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1Input.html#a163686b87e439aac9a8d3a82b77645a6">m_isProcessorInput</a></td></tr>
+<tr class="memdesc:a163686b87e439aac9a8d3a82b77645a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">true, if this <a class="el" href="class__Wolframe_1_1langbind_1_1Input.html" title="Input as seen from the application processor program. ">Input</a> object represents a document and not the processor input  <a href="#a163686b87e439aac9a8d3a82b77645a6">More...</a><br /></td></tr>
 <tr class="separator:a163686b87e439aac9a8d3a82b77645a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -541,6 +547,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>content source string is input is not from network </p>
+
 </div>
 </div>
 <a class="anchor" id="a85ecf5ceee24d022a5a1a51a4f1b3c52"></a>
@@ -560,6 +568,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>size of content in bytes </p>
 
 </div>
 </div>
@@ -581,6 +591,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>document format as recognized by the document type detection as string {"xml","json",...} </p>
+
 </div>
 </div>
 <a class="anchor" id="ac04142307036176e2781e1f5aafc977f"></a>
@@ -600,6 +612,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>input is defined by the associated input filter </p>
 
 </div>
 </div>
@@ -621,6 +635,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>true, if this <a class="el" href="class__Wolframe_1_1langbind_1_1Input.html" title="Input as seen from the application processor program. ">Input</a> object represents a document and not the processor input </p>
+
 </div>
 </div>
 <a class="anchor" id="a388e7d20b296111db3e01b63b81413a1"></a>
@@ -641,6 +657,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>only one iterator can be created from input. This is the guard for checking this. </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -650,7 +668,7 @@ Private Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 4 2014 16:48:22 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 20:58:08 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

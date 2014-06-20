@@ -91,30 +91,32 @@
 <div class="title">procProvider.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;boost/noncopyable.hpp&gt;</code><br />
-<code>#include &quot;<a class="el" href="DBprovider_8hpp_source.html">database/DBprovider.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="commandHandler_8hpp_source.html">cmdbind/commandHandler.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ioFilterCommandHandler_8hpp_source.html">cmdbind/ioFilterCommandHandler.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="lineCommandHandler_8hpp_source.html">cmdbind/lineCommandHandler.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="authCommandHandler_8hpp_source.html">cmdbind/authCommandHandler.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="procProviderInterface_8hpp_source.html">processor/procProviderInterface.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="procProviderConfig_8hpp_source.html">processor/procProviderConfig.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="database_8hpp_source.html">database/database.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="commandHandlerUnit_8hpp_source.html">cmdbind/commandHandlerUnit.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="doctypeDetector_8hpp_source.html">cmdbind/doctypeDetector.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="programLibrary_8hpp_source.html">prgbind/programLibrary.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="customDataType_8hpp_source.html">types/customDataType.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="procProviderInterface_8hpp_source.html">procProviderInterface.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="keymap_8hpp_source.html">types/keymap.hpp</a>&quot;</code><br />
+<code>#include &lt;list&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
+<code>#include &lt;boost/noncopyable.hpp&gt;</code><br />
 </div>
 <p><a href="procProvider_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcProviderConfig.html">_Wolframe::proc::ProcProviderConfig</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for processor configuration.  <a href="class__Wolframe_1_1proc_1_1ProcProviderConfig.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html">_Wolframe::proc::ProcessorProvider</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processor provider.  <a href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processor provider, the class that provides access to configured global objects to processors.  <a href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider_1_1CommandHandlerDef.html">_Wolframe::proc::ProcessorProvider::CommandHandlerDef</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of a command handler with its configuration.  <a href="class__Wolframe_1_1proc_1_1ProcessorProvider_1_1CommandHandlerDef.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace__Wolframe"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe.html">_Wolframe</a></td></tr>
+<tr class="memdesc:namespace__Wolframe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processor Provider configuration. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace__Wolframe_1_1proc"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1proc.html">_Wolframe::proc</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,7 +125,7 @@ Namespaces</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 4 2014 16:48:14 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 20:58:01 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

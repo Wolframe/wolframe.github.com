@@ -111,12 +111,16 @@ Inheritance diagram for _Wolframe::prgbind::TransactionDefinitionProgram:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a47dfbf3938634bb37d2e6576b3ffc8e9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1prgbind_1_1TransactionDefinitionProgram.html#a47dfbf3938634bb37d2e6576b3ffc8e9">TransactionDefinitionProgram</a> ()</td></tr>
+<tr class="memdesc:a47dfbf3938634bb37d2e6576b3ffc8e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a47dfbf3938634bb37d2e6576b3ffc8e9">More...</a><br /></td></tr>
 <tr class="separator:a47dfbf3938634bb37d2e6576b3ffc8e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae506cf0a894b4ca7bf959e6d01a1b54c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1prgbind_1_1TransactionDefinitionProgram.html#ae506cf0a894b4ca7bf959e6d01a1b54c">~TransactionDefinitionProgram</a> ()</td></tr>
+<tr class="memdesc:ae506cf0a894b4ca7bf959e6d01a1b54c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#ae506cf0a894b4ca7bf959e6d01a1b54c">More...</a><br /></td></tr>
 <tr class="separator:ae506cf0a894b4ca7bf959e6d01a1b54c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e83a86cc07c947dee4c0b20630abf37"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1prgbind_1_1TransactionDefinitionProgram.html#a4e83a86cc07c947dee4c0b20630abf37">is_mine</a> (const std::string &amp;filename) const </td></tr>
+<tr class="memdesc:a4e83a86cc07c947dee4c0b20630abf37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true, if the program with path 'filename' is recognized to be a TDL program.  <a href="#a4e83a86cc07c947dee4c0b20630abf37">More...</a><br /></td></tr>
 <tr class="separator:a4e83a86cc07c947dee4c0b20630abf37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cf6ab317052445d1d03072e19a691b6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1prgbind_1_1TransactionDefinitionProgram.html#a4cf6ab317052445d1d03072e19a691b6">loadProgram</a> (<a class="el" href="class__Wolframe_1_1prgbind_1_1ProgramLibrary.html">ProgramLibrary</a> &amp;library, <a class="el" href="class__Wolframe_1_1db_1_1Database.html">db::Database</a> *transactionDB, const std::string &amp;filename)</td></tr>
+<tr class="memdesc:a4cf6ab317052445d1d03072e19a691b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load the program specified by file path into the program library.  <a href="#a4cf6ab317052445d1d03072e19a691b6">More...</a><br /></td></tr>
 <tr class="separator:a4cf6ab317052445d1d03072e19a691b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_struct__Wolframe_1_1prgbind_1_1Program"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_struct__Wolframe_1_1prgbind_1_1Program')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="struct__Wolframe_1_1prgbind_1_1Program.html">_Wolframe::prgbind::Program</a></td></tr>
 <tr class="memitem:a81889f0072b6216b06f5d67455a77a32 inherit pub_methods_struct__Wolframe_1_1prgbind_1_1Program"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1prgbind_1_1Program.html#a81889f0072b6216b06f5d67455a77a32">Program</a> (<a class="el" href="struct__Wolframe_1_1prgbind_1_1Program.html#a6094df47101ece1b2040661d5a63dd59">Category</a> category_)</td></tr>
@@ -161,6 +165,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Default constructor. </p>
+
 </div>
 </div>
 <a class="anchor" id="ae506cf0a894b4ca7bf959e6d01a1b54c"></a>
@@ -183,6 +189,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Destructor. </p>
 
 </div>
 </div>
@@ -208,6 +216,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Return true, if the program with path 'filename' is recognized to be a TDL program. </p>
 
 <p>Implements <a class="el" href="struct__Wolframe_1_1prgbind_1_1Program.html#ac2863629b2f32d3001b40a434308bfdf">_Wolframe::prgbind::Program</a>.</p>
 
@@ -251,6 +261,16 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Load the program specified by file path into the program library. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">library</td><td>program library to feed </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">transactionDB</td><td>transaction database </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>path of program file to load </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Implements <a class="el" href="struct__Wolframe_1_1prgbind_1_1Program.html#acc11d3ff932de75268ce26b0e254d04c">_Wolframe::prgbind::Program</a>.</p>
 
 </div>
@@ -262,7 +282,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 4 2014 16:48:28 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 20:58:12 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

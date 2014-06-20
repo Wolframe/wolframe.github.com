@@ -228,14 +228,19 @@ Private Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ad966559c3981ebab05e2e42ce8358146"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1String.html#ad966559c3981ebab05e2e42ce8358146">m_encoding</a></td></tr>
+<tr class="memdesc:ad966559c3981ebab05e2e42ce8358146"><td class="mdescLeft">&#160;</td><td class="mdescRight">encoding (type Encoding)  <a href="#ad966559c3981ebab05e2e42ce8358146">More...</a><br /></td></tr>
 <tr class="separator:ad966559c3981ebab05e2e42ce8358146"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf0af08ef6c11eb9d89f5915fa2bebad"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1String.html#acf0af08ef6c11eb9d89f5915fa2bebad">m_codepage</a></td></tr>
+<tr class="memdesc:acf0af08ef6c11eb9d89f5915fa2bebad"><td class="mdescLeft">&#160;</td><td class="mdescRight">codepage for ISO8859 encodings  <a href="#acf0af08ef6c11eb9d89f5915fa2bebad">More...</a><br /></td></tr>
 <tr class="separator:acf0af08ef6c11eb9d89f5915fa2bebad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7a042dd9ebef3001c5634e409c3733d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1String.html#ac7a042dd9ebef3001c5634e409c3733d">m_isconst</a></td></tr>
+<tr class="memdesc:ac7a042dd9ebef3001c5634e409c3733d"><td class="mdescLeft">&#160;</td><td class="mdescRight">true, if the string is allocated  <a href="#ac7a042dd9ebef3001c5634e409c3733d">More...</a><br /></td></tr>
 <tr class="separator:ac7a042dd9ebef3001c5634e409c3733d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67dddf96534a9246d0aa7b500900eaea"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1String.html#a67dddf96534a9246d0aa7b500900eaea">m_size</a></td></tr>
+<tr class="memdesc:a67dddf96534a9246d0aa7b500900eaea"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of elements in string  <a href="#a67dddf96534a9246d0aa7b500900eaea">More...</a><br /></td></tr>
 <tr class="separator:a67dddf96534a9246d0aa7b500900eaea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97d298fc9e8a1a37ef6e10e338026283"><td class="memItemLeft" align="right" valign="top">unsigned char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1String.html#a97d298fc9e8a1a37ef6e10e338026283">m_ar</a></td></tr>
+<tr class="memdesc:a97d298fc9e8a1a37ef6e10e338026283"><td class="mdescLeft">&#160;</td><td class="mdescRight">array of elements  <a href="#a97d298fc9e8a1a37ef6e10e338026283">More...</a><br /></td></tr>
 <tr class="separator:a97d298fc9e8a1a37ef6e10e338026283"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -283,20 +288,28 @@ Friends</h2></td></tr>
 <p>Encoding of a database string. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a7004738a4b73fd0b09512101d890767aa7e9949514585639a9b8c8cbab3a0d941"></a>ISO8859&#160;</td><td class="fielddoc">
+<p>Latin (full range only with WITH_TEXTWOLF=1, range 0..255 (code page 1) and range 0..127 (other code pages) otherwise. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a7004738a4b73fd0b09512101d890767aa02f9d392aa9d076e9e016dc4b267731c"></a>UTF8&#160;</td><td class="fielddoc">
+<p>UTF-8 (full range only with WITH_TEXTWOLF=1, range 0..127 otherwise) </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a7004738a4b73fd0b09512101d890767aa40dd0ab695e6b5d4e55c65e7ac53fe8b"></a>UTF16BE&#160;</td><td class="fielddoc">
+<p>UTF-16BE (full range only with WITH_TEXTWOLF=1, range 0..255 otherwise) </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a7004738a4b73fd0b09512101d890767aaf9ad65f66a698060c2facffae1e52cdf"></a>UTF16LE&#160;</td><td class="fielddoc">
+<p>UTF-16LE (only available with WITH_TEXTWOLF=1) </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a7004738a4b73fd0b09512101d890767aad2e96cd7a186548f82ef9cbadb0f3c59"></a>UCS2BE&#160;</td><td class="fielddoc">
+<p>UCS-2BE (only available with WITH_TEXTWOLF=1) </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a7004738a4b73fd0b09512101d890767aaaf9a4cca0c58e71923426468d3a639d9"></a>UCS2LE&#160;</td><td class="fielddoc">
+<p>UCS-2LE (only available with WITH_TEXTWOLF=1) </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a7004738a4b73fd0b09512101d890767aaf6cca7d81f5da0104b9d66ab67048f16"></a>UCS4BE&#160;</td><td class="fielddoc">
+<p>UCS-4BE (only available with WITH_TEXTWOLF=1) </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a7004738a4b73fd0b09512101d890767aaae3ece139db17dd57343a09dcf0e5482"></a>UCS4LE&#160;</td><td class="fielddoc">
+<p>UCS-4LE (only available with WITH_TEXTWOLF=1) </p>
 </td></tr>
 </table>
 
@@ -565,7 +578,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the code page of this string in case of an ISO8859 encoding. </p>
-<dl class="section return"><dt>Returns</dt><dd>the code page or 0 </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the code page or 0 codepage for ISO8859 encodings </dd></dl>
 
 </div>
 </div>
@@ -644,7 +657,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the encoding of this string. </p>
-<dl class="section return"><dt>Returns</dt><dd>the encoding </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the encoding encoding (type Encoding) </dd></dl>
 
 </div>
 </div>
@@ -781,7 +794,7 @@ Friends</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">content</td><td>pointer to string </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">contentsize</td><td>length of 'content' in bytes </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>length of 'content' in bytes </td></tr>
   </table>
   </dd>
 </dl>
@@ -1006,6 +1019,8 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>array of elements </p>
+
 </div>
 </div>
 <a class="anchor" id="acf0af08ef6c11eb9d89f5915fa2bebad"></a>
@@ -1025,6 +1040,8 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>codepage for ISO8859 encodings </p>
 
 </div>
 </div>
@@ -1046,6 +1063,8 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>encoding (type Encoding) </p>
+
 </div>
 </div>
 <a class="anchor" id="ac7a042dd9ebef3001c5634e409c3733d"></a>
@@ -1065,6 +1084,8 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>true, if the string is allocated </p>
 
 </div>
 </div>
@@ -1086,6 +1107,8 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>number of elements in string </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -1095,7 +1118,7 @@ Friends</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 4 2014 16:48:32 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 20:58:16 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

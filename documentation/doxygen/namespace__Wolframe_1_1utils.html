@@ -97,6 +97,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1utils_1_1ArrayDoublingAllocator.html">ArrayDoublingAllocator</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface for an allocator implemented with the strategy of array doubling.  <a href="class__Wolframe_1_1utils_1_1ArrayDoublingAllocator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1utils_1_1AsciiCharParser.html">AsciiCharParser</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1utils_1_1CharTable.html">CharTable</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Character table structure for parseNextToken( std::string&amp;,std::string::const_iterator&amp;, std::string::const_iterator, ...);.  <a href="class__Wolframe_1_1utils_1_1CharTable.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -115,6 +117,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure with info for uniform printing for a type of message (log format as compact one liner, text as multi liner)  <a href="struct__Wolframe_1_1utils_1_1PrintFormat.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1utils_1_1SourceLineInfo.html">SourceLineInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Line information for error messages for parser using STL string iterators as source scanners.  <a href="class__Wolframe_1_1utils_1_1SourceLineInfo.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1utils_1_1TypedArrayDoublingAllocator.html">TypedArrayDoublingAllocator</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface for an array doubling allocator that allocates only one fixed size type of element.  <a href="struct__Wolframe_1_1utils_1_1TypedArrayDoublingAllocator.html#details">More...</a><br /></td></tr>
@@ -166,10 +169,13 @@ Functions</h2></td></tr>
 <tr class="memitem:a3819d331fa7e2189b8cfc5688f621323"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct__Wolframe_1_1utils_1_1FileType.html">FileType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1utils.html#a3819d331fa7e2189b8cfc5688f621323">getFileType</a> (const std::string &amp;filename)</td></tr>
 <tr class="separator:a3819d331fa7e2189b8cfc5688f621323"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3009f4e0182d7ba1fb186fdce911380c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class__Wolframe_1_1utils_1_1CharTable.html">CharTable</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1utils.html#a3009f4e0182d7ba1fb186fdce911380c">identifierCharTable</a> ()</td></tr>
+<tr class="memdesc:a3009f4e0182d7ba1fb186fdce911380c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the default identifier character table.  <a href="#a3009f4e0182d7ba1fb186fdce911380c">More...</a><br /></td></tr>
 <tr class="separator:a3009f4e0182d7ba1fb186fdce911380c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80537252cc9d8d999e47fb3216da6ea0"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class__Wolframe_1_1utils_1_1CharTable.html">CharTable</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1utils.html#a80537252cc9d8d999e47fb3216da6ea0">emptyCharTable</a> ()</td></tr>
+<tr class="memdesc:a80537252cc9d8d999e47fb3216da6ea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an empty character set as table.  <a href="#a80537252cc9d8d999e47fb3216da6ea0">More...</a><br /></td></tr>
 <tr class="separator:a80537252cc9d8d999e47fb3216da6ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c65b63326aa6093b1471af5b4c5768e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class__Wolframe_1_1utils_1_1CharTable.html">CharTable</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1utils.html#a0c65b63326aa6093b1471af5b4c5768e">anyCharTable</a> ()</td></tr>
+<tr class="memdesc:a0c65b63326aa6093b1471af5b4c5768e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the character set containing all characters as table.  <a href="#a0c65b63326aa6093b1471af5b4c5768e">More...</a><br /></td></tr>
 <tr class="separator:a0c65b63326aa6093b1471af5b4c5768e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89b83c74414a6e430260f1ffde707648"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1utils.html#a89b83c74414a6e430260f1ffde707648">parseNextToken</a> (std::string &amp;tok, std::string::const_iterator &amp;itr, std::string::const_iterator end, const <a class="el" href="class__Wolframe_1_1utils_1_1CharTable.html">CharTable</a> &amp;operatorTable, const <a class="el" href="class__Wolframe_1_1utils_1_1CharTable.html">CharTable</a> &amp;alphaTable)</td></tr>
 <tr class="memdesc:a89b83c74414a6e430260f1ffde707648"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parsing the next token in a UTF-8 or Isolatin-1 string that is either.  <a href="#a89b83c74414a6e430260f1ffde707648">More...</a><br /></td></tr>
@@ -209,6 +215,7 @@ std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 <tr class="memdesc:a00e75942bbd0b06bc59eb22c0a4b40ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a string to log out of a variant structure with a restriction of the size of the atomic elements.  <a href="#a00e75942bbd0b06bc59eb22c0a4b40ef">More...</a><br /></td></tr>
 <tr class="separator:a00e75942bbd0b06bc59eb22c0a4b40ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae70534a0dd0b2b79b4029cb04f7b5071"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1utils_1_1SourceLineInfo.html">SourceLineInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1utils.html#ae70534a0dd0b2b79b4029cb04f7b5071">getSourceLineInfo</a> (const std::string::const_iterator &amp;start, const std::string::const_iterator &amp;pos)</td></tr>
+<tr class="memdesc:ae70534a0dd0b2b79b4029cb04f7b5071"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the source line info by scanning the source parsed from 'start' to 'pos', counting lines and characters inbetween.  <a href="#ae70534a0dd0b2b79b4029cb04f7b5071">More...</a><br /></td></tr>
 <tr class="separator:ae70534a0dd0b2b79b4029cb04f7b5071"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01965b97cf8770bb69d1b38d2aaee083"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1utils.html#a01965b97cf8770bb69d1b38d2aaee083">splitString</a> (std::vector&lt; std::string &gt; &amp;res, const std::string &amp;inp, const char *splitchr)</td></tr>
 <tr class="memdesc:a01965b97cf8770bb69d1b38d2aaee083"><td class="mdescLeft">&#160;</td><td class="mdescRight">Split the string, ingoring empty parts of the result (susequent split characters treated as one)  <a href="#a01965b97cf8770bb69d1b38d2aaee083">More...</a><br /></td></tr>
@@ -231,6 +238,8 @@ std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el
       </table>
 </div><div class="memdoc">
 
+<p>Get the character set containing all characters as table. </p>
+
 </div>
 </div>
 <a class="anchor" id="a80537252cc9d8d999e47fb3216da6ea0"></a>
@@ -245,6 +254,8 @@ std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get an empty character set as table. </p>
 
 </div>
 </div>
@@ -456,6 +467,8 @@ std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el
       </table>
 </div><div class="memdoc">
 
+<p>Get the source line info by scanning the source parsed from 'start' to 'pos', counting lines and characters inbetween. </p>
+
 </div>
 </div>
 <a class="anchor" id="aaccf57436bbaf4d30bad242b862929d8"></a>
@@ -498,6 +511,8 @@ std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get the default identifier character table. </p>
 
 </div>
 </div>
@@ -712,7 +727,11 @@ std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 </div><div class="memdoc">
 
 <p>Parsing the next token in a UTF-8 or Isolatin-1 string that is either. </p>
-<dl class="section remark"><dt>Remarks</dt><dd>throws exception on error </dd></dl>
+<ul>
+<li>a single quoted (') string backslash escaping returned without the delimiting quotes and escaping resolved</li>
+<li>a double quoted (") string backslash escaping returned without the delimiting quotes and escaping resolved</li>
+<li>an identifier consisting of alphanumeric ASCII characters and characters beyond the ASCII code page (&gt;127)</li>
+<li>a single character operator from an operator table <dl class="section remark"><dt>Remarks</dt><dd>throws exception on error </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>the token as character in case of an operator, else the first character of the token parsed in the source, '\0' when no token was found (EOF) </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -724,6 +743,8 @@ std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el
   </table>
   </dd>
 </dl>
+</li>
+</ul>
 
 </div>
 </div>
@@ -1140,7 +1161,7 @@ std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 4 2014 16:48:35 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 20:58:18 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

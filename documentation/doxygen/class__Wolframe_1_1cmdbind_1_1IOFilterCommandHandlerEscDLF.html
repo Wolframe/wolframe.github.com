@@ -195,8 +195,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a54eab343d789f586542baaeaeae0d752 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a54eab343d789f586542baaeaeae0d752">More...</a><br /></td></tr>
 <tr class="separator:a54eab343d789f586542baaeaeae0d752 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adad840aa8a67adc4b18a4467778a80bb inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#adad840aa8a67adc4b18a4467778a80bb">lastError</a> () const </td></tr>
-<tr class="memdesc:adad840aa8a67adc4b18a4467778a80bb inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the error code of command execution to be returned to the client.  <a href="#adad840aa8a67adc4b18a4467778a80bb">More...</a><br /></td></tr>
+<tr class="memdesc:adad840aa8a67adc4b18a4467778a80bb inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the last error message of command execution to be returned to the client.  <a href="#adad840aa8a67adc4b18a4467778a80bb">More...</a><br /></td></tr>
 <tr class="separator:adad840aa8a67adc4b18a4467778a80bb inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90c6a8e6efde45becb01c101730f6868 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a90c6a8e6efde45becb01c101730f6868">setLastError</a> (const std::string &amp;msg)</td></tr>
+<tr class="memdesc:a90c6a8e6efde45becb01c101730f6868 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the last error message of command execution to be returned to the client.  <a href="#a90c6a8e6efde45becb01c101730f6868">More...</a><br /></td></tr>
+<tr class="separator:a90c6a8e6efde45becb01c101730f6868 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7abb118a267ecdb3b3fd2723573b085b inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a7abb118a267ecdb3b3fd2723573b085b">setExecContext</a> (<a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html">proc::ExecContext</a> *c)</td></tr>
 <tr class="memdesc:a7abb118a267ecdb3b3fd2723573b085b inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass the reference to the execution context to the command handler.  <a href="#a7abb118a267ecdb3b3fd2723573b085b">More...</a><br /></td></tr>
 <tr class="separator:a7abb118a267ecdb3b3fd2723573b085b inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -209,10 +212,14 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a1c63eaf6d3f6afb8b7278392aecb59e1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a1c63eaf6d3f6afb8b7278392aecb59e1">State</a> { <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a1c63eaf6d3f6afb8b7278392aecb59e1afc5cb57dcac0866a6656642df25f5e4d">Processing</a>, 
+<tr class="memitem:a1c63eaf6d3f6afb8b7278392aecb59e1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a1c63eaf6d3f6afb8b7278392aecb59e1">State</a> { <br />
+&#160;&#160;<a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a1c63eaf6d3f6afb8b7278392aecb59e1a3fa5cc474bcf84940430fcae2996ba50">StartProcessing</a>, 
+<a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a1c63eaf6d3f6afb8b7278392aecb59e1afc5cb57dcac0866a6656642df25f5e4d">Processing</a>, 
 <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a1c63eaf6d3f6afb8b7278392aecb59e1a5e84bfd45d261789f4b20d5a9a87bcd6">FlushingOutput</a>, 
 <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a1c63eaf6d3f6afb8b7278392aecb59e1a8ed681d50a869c1e9b691ad7ecba11ca">DiscardInput</a>, 
-<a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a1c63eaf6d3f6afb8b7278392aecb59e1aa8ab2c453b947e904839a8af02ebf522">Terminated</a>
+<br />
+&#160;&#160;<a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a1c63eaf6d3f6afb8b7278392aecb59e1aa8ab2c453b947e904839a8af02ebf522">Terminated</a>
+<br />
  }</td></tr>
 <tr class="separator:a1c63eaf6d3f6afb8b7278392aecb59e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -220,6 +227,8 @@ Private Types</h2></td></tr>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:af489a239c9701e21dad13b51b7275fe4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#af489a239c9701e21dad13b51b7275fe4">getFilterOutputWriteData</a> ()</td></tr>
 <tr class="separator:af489a239c9701e21dad13b51b7275fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20fc5c6f1f7d2787960d0b8f96e3f4e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a20fc5c6f1f7d2787960d0b8f96e3f4e5">consumeInput</a> ()</td></tr>
+<tr class="separator:a20fc5c6f1f7d2787960d0b8f96e3f4e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
@@ -231,22 +240,34 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a02658fd2bdb6fcb68c4b14d6d4acafcc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1protocol_1_1EscapeBuffer.html">protocol::EscapeBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a02658fd2bdb6fcb68c4b14d6d4acafcc">m_escapeBuffer</a></td></tr>
 <tr class="separator:a02658fd2bdb6fcb68c4b14d6d4acafcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8047ee7ce4ec73202fb25870a31ff013"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a1c63eaf6d3f6afb8b7278392aecb59e1">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a8047ee7ce4ec73202fb25870a31ff013">m_state</a></td></tr>
+<tr class="memdesc:a8047ee7ce4ec73202fb25870a31ff013"><td class="mdescLeft">&#160;</td><td class="mdescRight">processing state machine state  <a href="#a8047ee7ce4ec73202fb25870a31ff013">More...</a><br /></td></tr>
 <tr class="separator:a8047ee7ce4ec73202fb25870a31ff013"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f7f911b14f4185e35e7d213d5d28580"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a2f7f911b14f4185e35e7d213d5d28580">m_unconsumedInput</a></td></tr>
+<tr class="memdesc:a2f7f911b14f4185e35e7d213d5d28580"><td class="mdescLeft">&#160;</td><td class="mdescRight">true, if there is unconsumed input waiting to be consumed before the next read  <a href="#a2f7f911b14f4185e35e7d213d5d28580">More...</a><br /></td></tr>
+<tr class="separator:a2f7f911b14f4185e35e7d213d5d28580"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35557c99be204152379ae52d4e1c5718"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a35557c99be204152379ae52d4e1c5718">m_gotEoD</a></td></tr>
+<tr class="memdesc:a35557c99be204152379ae52d4e1c5718"><td class="mdescLeft">&#160;</td><td class="mdescRight">true if we got EoD and consumed all input  <a href="#a35557c99be204152379ae52d4e1c5718">More...</a><br /></td></tr>
+<tr class="separator:a35557c99be204152379ae52d4e1c5718"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e506fad7d98bc8ad20805ddbd8fb890"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a9e506fad7d98bc8ad20805ddbd8fb890">m_writedata</a></td></tr>
+<tr class="memdesc:a9e506fad7d98bc8ad20805ddbd8fb890"><td class="mdescLeft">&#160;</td><td class="mdescRight">bytes to write next (WRITE)  <a href="#a9e506fad7d98bc8ad20805ddbd8fb890">More...</a><br /></td></tr>
 <tr class="separator:a9e506fad7d98bc8ad20805ddbd8fb890"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf010b057271eecf2e0c4c028bc433eb"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#adf010b057271eecf2e0c4c028bc433eb">m_writedatasize</a></td></tr>
+<tr class="memdesc:adf010b057271eecf2e0c4c028bc433eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of bytes to write next (WRITE)  <a href="#adf010b057271eecf2e0c4c028bc433eb">More...</a><br /></td></tr>
 <tr class="separator:adf010b057271eecf2e0c4c028bc433eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11c369b2afb4579a09dc495ba9b58c63"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a11c369b2afb4579a09dc495ba9b58c63">m_writedata_chksum</a></td></tr>
-<tr class="separator:a11c369b2afb4579a09dc495ba9b58c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02f077d29b09502389ba14b9f8a93a34"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a02f077d29b09502389ba14b9f8a93a34">m_writedata_chkpos</a></td></tr>
-<tr class="separator:a02f077d29b09502389ba14b9f8a93a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8788baac206c7ff6c0996c097b23ee81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1protocol_1_1InputBlock.html">protocol::InputBlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a8788baac206c7ff6c0996c097b23ee81">m_input</a></td></tr>
+<tr class="memdesc:a8788baac206c7ff6c0996c097b23ee81"><td class="mdescLeft">&#160;</td><td class="mdescRight">input buffer  <a href="#a8788baac206c7ff6c0996c097b23ee81">More...</a><br /></td></tr>
 <tr class="separator:a8788baac206c7ff6c0996c097b23ee81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7423e3b756bc2573481f9661ad9641f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1protocol_1_1OutputBlock.html">protocol::OutputBlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a7423e3b756bc2573481f9661ad9641f6">m_output</a></td></tr>
+<tr class="memdesc:a7423e3b756bc2573481f9661ad9641f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">output buffer  <a href="#a7423e3b756bc2573481f9661ad9641f6">More...</a><br /></td></tr>
 <tr class="separator:a7423e3b756bc2573481f9661ad9641f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace0457912cb6a9094acf540caf46f92f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1protocol_1_1InputBlock.html#a9035997444261e81cc79571fb0940710">protocol::InputBlock::iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#ace0457912cb6a9094acf540caf46f92f">m_eoD</a></td></tr>
+<tr class="memdesc:ace0457912cb6a9094acf540caf46f92f"><td class="mdescLeft">&#160;</td><td class="mdescRight">input end of data marker  <a href="#ace0457912cb6a9094acf540caf46f92f">More...</a><br /></td></tr>
 <tr class="separator:ace0457912cb6a9094acf540caf46f92f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1ccd1e5a979081f7c72421bca15131a"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#ae1ccd1e5a979081f7c72421bca15131a">m_nextmsg</a></td></tr>
+<tr class="memdesc:ae1ccd1e5a979081f7c72421bca15131a"><td class="mdescLeft">&#160;</td><td class="mdescRight">start of the follow message after end of data (eoD)  <a href="#ae1ccd1e5a979081f7c72421bca15131a">More...</a><br /></td></tr>
+<tr class="separator:ae1ccd1e5a979081f7c72421bca15131a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed961f2e0f438051d52b735235850dc8"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#aed961f2e0f438051d52b735235850dc8">m_itrpos</a></td></tr>
+<tr class="memdesc:aed961f2e0f438051d52b735235850dc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">read start position in buffer for the command handler  <a href="#aed961f2e0f438051d52b735235850dc8">More...</a><br /></td></tr>
 <tr class="separator:aed961f2e0f438051d52b735235850dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
@@ -260,14 +281,10 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:ae99a2ff7c8f35c605b7c51b803faa4e7 inherit pro_attribs_class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace__Wolframe_1_1langbind.html#ac5bb920dab2c87c39f03d7d5993e66ab">langbind::OutputFilterR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#ae99a2ff7c8f35c605b7c51b803faa4e7">m_outputfilter</a></td></tr>
 <tr class="separator:ae99a2ff7c8f35c605b7c51b803faa4e7 inherit pro_attribs_class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class__Wolframe_1_1cmdbind_1_1CommandHandler')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html">_Wolframe::cmdbind::CommandHandler</a></td></tr>
-<tr class="memitem:a9ffa4a3a898d6a41274d202c86b20f03 inherit pro_attribs_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a9ffa4a3a898d6a41274d202c86b20f03">m_lastError</a></td></tr>
-<tr class="separator:a9ffa4a3a898d6a41274d202c86b20f03 inherit pro_attribs_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cd91f2c4234298b9e70f60fc62eb89f inherit pro_attribs_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a8cd91f2c4234298b9e70f60fc62eb89f">m_name</a></td></tr>
 <tr class="separator:a8cd91f2c4234298b9e70f60fc62eb89f inherit pro_attribs_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a712d5654687812e89948d78d60a44fd5 inherit pro_attribs_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a712d5654687812e89948d78d60a44fd5">m_argBuffer</a></td></tr>
 <tr class="separator:a712d5654687812e89948d78d60a44fd5 inherit pro_attribs_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e2485fab70c28dd5647fdb0b619846d inherit pro_attribs_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html">proc::ExecContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a5e2485fab70c28dd5647fdb0b619846d">m_execContext</a></td></tr>
-<tr class="separator:a5e2485fab70c28dd5647fdb0b619846d inherit pro_attribs_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Command handler processing filter input/output with end of content marked as Dot ('.') LF or Dot CR LF. </p>
@@ -304,7 +321,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a1c63eaf6d3f6afb8b7278392aecb59e1afc5cb57dcac0866a6656642df25f5e4d"></a>Processing&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a1c63eaf6d3f6afb8b7278392aecb59e1a3fa5cc474bcf84940430fcae2996ba50"></a>StartProcessing&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a1c63eaf6d3f6afb8b7278392aecb59e1afc5cb57dcac0866a6656642df25f5e4d"></a>Processing&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a1c63eaf6d3f6afb8b7278392aecb59e1a5e84bfd45d261789f4b20d5a9a87bcd6"></a>FlushingOutput&#160;</td><td class="fielddoc">
 </td></tr>
@@ -392,6 +411,29 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#a91064aba46fd02fa20af8905354922a9">_Wolframe::cmdbind::IOFilterCommandHandler</a>.</p>
 
 <p>Implemented in <a class="el" href="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF.html#a89ec74b491d3f38b84f907ce691b5f66">_Wolframe::cmdbind::DiscardInputCommandHandlerEscDLF</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a20fc5c6f1f7d2787960d0b8f96e3f4e5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _Wolframe::cmdbind::IOFilterCommandHandlerEscDLF::consumeInput </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -749,6 +791,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>input end of data marker </p>
+
 </div>
 </div>
 <a class="anchor" id="a02658fd2bdb6fcb68c4b14d6d4acafcc"></a>
@@ -771,6 +815,28 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a35557c99be204152379ae52d4e1c5718"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _Wolframe::cmdbind::IOFilterCommandHandlerEscDLF::m_gotEoD</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>true if we got EoD and consumed all input </p>
+
+</div>
+</div>
 <a class="anchor" id="a8788baac206c7ff6c0996c097b23ee81"></a>
 <div class="memitem">
 <div class="memproto">
@@ -788,6 +854,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>input buffer </p>
 
 </div>
 </div>
@@ -809,6 +877,30 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>read start position in buffer for the command handler </p>
+
+</div>
+</div>
+<a class="anchor" id="ae1ccd1e5a979081f7c72421bca15131a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t _Wolframe::cmdbind::IOFilterCommandHandlerEscDLF::m_nextmsg</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>start of the follow message after end of data (eoD) </p>
+
 </div>
 </div>
 <a class="anchor" id="a7423e3b756bc2573481f9661ad9641f6"></a>
@@ -828,6 +920,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>output buffer </p>
 
 </div>
 </div>
@@ -849,6 +943,30 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>processing state machine state </p>
+
+</div>
+</div>
+<a class="anchor" id="a2f7f911b14f4185e35e7d213d5d28580"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _Wolframe::cmdbind::IOFilterCommandHandlerEscDLF::m_unconsumedInput</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>true, if there is unconsumed input waiting to be consumed before the next read </p>
+
 </div>
 </div>
 <a class="anchor" id="a9e506fad7d98bc8ad20805ddbd8fb890"></a>
@@ -869,45 +987,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="a02f077d29b09502389ba14b9f8a93a34"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int _Wolframe::cmdbind::IOFilterCommandHandlerEscDLF::m_writedata_chkpos</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a11c369b2afb4579a09dc495ba9b58c63"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int _Wolframe::cmdbind::IOFilterCommandHandlerEscDLF::m_writedata_chksum</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>bytes to write next (WRITE) </p>
 
 </div>
 </div>
@@ -929,6 +1009,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>number of bytes to write next (WRITE) </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -938,7 +1020,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 4 2014 16:48:18 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 20:58:04 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

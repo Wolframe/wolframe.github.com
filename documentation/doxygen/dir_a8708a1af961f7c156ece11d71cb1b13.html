@@ -86,7 +86,7 @@
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="files"></a>
 Files</h2></td></tr>
 <tr class="memitem:buffers_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffers_8hpp.html">buffers.hpp</a> <a href="buffers_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:buffers_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the buffers used by protocol parsers to buffer the commands and their arguments. <br /></td></tr>
+<tr class="memdesc:buffers_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the buffers used by protocol parsers to buffer the commands and their arguments. All buffers defined in this module are preallocated fixed size and implement a subset of STL back insertion sequence interface for appending data. This interface is used by the buffering parsing methods defined in <a class="el" href="parser_8hpp.html" title="Parsing functions of the lexical elements of the protocol like commands, lines and tokens...">protocol/parser.hpp</a>. The protocol uses fixed size buffers because protocol messages are not considered to have a size defined by the client for security reasons. The buffers are not used for buffering processed data. Data is passed as memory blocks of the type defined in <a class="el" href="ioblocks_8hpp.html" title="Network message blocks as seen from the protocol with the input iterator classes and print functions...">protocol/ioblocks.hpp</a> to the application processors. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ioblocks_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioblocks_8hpp.html">ioblocks.hpp</a> <a href="ioblocks_8hpp_source.html">[code]</a></td></tr>
 <tr class="memdesc:ioblocks_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Network message blocks as seen from the protocol with the input iterator classes and print functions. <br /></td></tr>
@@ -102,7 +102,7 @@ Files</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 4 2014 16:48:35 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 20:58:19 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

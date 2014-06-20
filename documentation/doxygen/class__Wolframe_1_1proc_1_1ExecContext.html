@@ -88,7 +88,8 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class__Wolframe_1_1proc_1_1ExecContext-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">_Wolframe::proc::ExecContext Class Reference</div>  </div>
@@ -108,45 +109,59 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa5115031fe4d71d7f5cef970760dde82"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#aa5115031fe4d71d7f5cef970760dde82">ExecContext</a> (const <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html">ProcessorProviderInterface</a> *p, const <a class="el" href="class__Wolframe_1_1AAAA_1_1AAAAprovider.html">AAAA::AAAAprovider</a> *a)</td></tr>
 <tr class="memdesc:aa5115031fe4d71d7f5cef970760dde82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#aa5115031fe4d71d7f5cef970760dde82">More...</a><br /></td></tr>
 <tr class="separator:aa5115031fe4d71d7f5cef970760dde82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a611dbff679a9bae71088cb61db4d8e17"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a611dbff679a9bae71088cb61db4d8e17">ExecContext</a> (const <a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html">ExecContext</a> &amp;o)</td></tr>
-<tr class="memdesc:a611dbff679a9bae71088cb61db4d8e17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="#a611dbff679a9bae71088cb61db4d8e17">More...</a><br /></td></tr>
-<tr class="separator:a611dbff679a9bae71088cb61db4d8e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0327b0c77220bd9dfd0cb004bb7b01f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html">ProcessorProviderInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#ab0327b0c77220bd9dfd0cb004bb7b01f">provider</a> () const </td></tr>
 <tr class="memdesc:ab0327b0c77220bd9dfd0cb004bb7b01f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the processor provider interface.  <a href="#ab0327b0c77220bd9dfd0cb004bb7b01f">More...</a><br /></td></tr>
 <tr class="separator:ab0327b0c77220bd9dfd0cb004bb7b01f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab49020c2d13cac09beac74cf7b8f8698"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class__Wolframe_1_1AAAA_1_1User.html">AAAA::User</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#ab49020c2d13cac09beac74cf7b8f8698">user</a> () const </td></tr>
-<tr class="memdesc:ab49020c2d13cac09beac74cf7b8f8698"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the user data.  <a href="#ab49020c2d13cac09beac74cf7b8f8698">More...</a><br /></td></tr>
-<tr class="separator:ab49020c2d13cac09beac74cf7b8f8698"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8488d6fbea4534c70fa6945eab3dc87f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a8488d6fbea4534c70fa6945eab3dc87f">setUser</a> (const <a class="el" href="class__Wolframe_1_1AAAA_1_1User.html">AAAA::User</a> &amp;u)</td></tr>
-<tr class="memdesc:a8488d6fbea4534c70fa6945eab3dc87f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the user data.  <a href="#a8488d6fbea4534c70fa6945eab3dc87f">More...</a><br /></td></tr>
-<tr class="separator:a8488d6fbea4534c70fa6945eab3dc87f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac85230656a248132de1a1b82d3a47b9a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class__Wolframe_1_1AAAA_1_1User.html">AAAA::User</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#ac85230656a248132de1a1b82d3a47b9a">user</a> () const </td></tr>
+<tr class="memdesc:ac85230656a248132de1a1b82d3a47b9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the the user instance reference.  <a href="#ac85230656a248132de1a1b82d3a47b9a">More...</a><br /></td></tr>
+<tr class="separator:ac85230656a248132de1a1b82d3a47b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33ed8ec104f4453ed2a53a6baf633c70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a33ed8ec104f4453ed2a53a6baf633c70">setUser</a> (<a class="el" href="class__Wolframe_1_1AAAA_1_1User.html">AAAA::User</a> *u)</td></tr>
+<tr class="memdesc:a33ed8ec104f4453ed2a53a6baf633c70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the user instance (own by this from now)  <a href="#a33ed8ec104f4453ed2a53a6baf633c70">More...</a><br /></td></tr>
+<tr class="separator:a33ed8ec104f4453ed2a53a6baf633c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2496ebf5a5aafff65cc146eb673f1b9c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class__Wolframe_1_1AAAA_1_1Authorizer.html">AAAA::Authorizer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a2496ebf5a5aafff65cc146eb673f1b9c">authorizer</a> () const </td></tr>
 <tr class="memdesc:a2496ebf5a5aafff65cc146eb673f1b9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the authorization instance interface.  <a href="#a2496ebf5a5aafff65cc146eb673f1b9c">More...</a><br /></td></tr>
 <tr class="separator:a2496ebf5a5aafff65cc146eb673f1b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a062ed6a8c49f2f45c74ab7c4e0f01352"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a062ed6a8c49f2f45c74ab7c4e0f01352">setAuthorizer</a> (const <a class="el" href="class__Wolframe_1_1AAAA_1_1Authorizer.html">AAAA::Authorizer</a> *a)</td></tr>
 <tr class="memdesc:a062ed6a8c49f2f45c74ab7c4e0f01352"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the authorization instance interface.  <a href="#a062ed6a8c49f2f45c74ab7c4e0f01352">More...</a><br /></td></tr>
 <tr class="separator:a062ed6a8c49f2f45c74ab7c4e0f01352"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8e4d6b474ee02167dda555727e92c20"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1AAAA_1_1Authenticator.html">AAAA::Authenticator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#aa8e4d6b474ee02167dda555727e92c20">authenticator</a> () const </td></tr>
-<tr class="memdesc:aa8e4d6b474ee02167dda555727e92c20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an authenticator.  <a href="#aa8e4d6b474ee02167dda555727e92c20">More...</a><br /></td></tr>
-<tr class="separator:aa8e4d6b474ee02167dda555727e92c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27e745bb3496bbe15310af8657a6ab6e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a27e745bb3496bbe15310af8657a6ab6e">checkAuthorization</a> (const std::string &amp;, const std::string &amp;)</td></tr>
-<tr class="memdesc:a27e745bb3496bbe15310af8657a6ab6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a function tagged with AUTHORIZE( authorizationFunction, authorizationResource) is allowed to be executed.  <a href="#a27e745bb3496bbe15310af8657a6ab6e">More...</a><br /></td></tr>
-<tr class="separator:a27e745bb3496bbe15310af8657a6ab6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abff3b2084e999d5c75e4db5f58e09fc0"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#abff3b2084e999d5c75e4db5f58e09fc0">defaultTimeout</a> () const </td></tr>
+<tr class="memdesc:abff3b2084e999d5c75e4db5f58e09fc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the default timeout for read operations in seconds.  <a href="#abff3b2084e999d5c75e4db5f58e09fc0">More...</a><br /></td></tr>
+<tr class="separator:abff3b2084e999d5c75e4db5f58e09fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00afde7f9b7b657d22d5670a2554fd27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a00afde7f9b7b657d22d5670a2554fd27">setDefaultTimeout</a> (unsigned int timeout_sec_)</td></tr>
+<tr class="memdesc:a00afde7f9b7b657d22d5670a2554fd27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the default timeout for read operations in seconds (0=forever)  <a href="#a00afde7f9b7b657d22d5670a2554fd27">More...</a><br /></td></tr>
+<tr class="separator:a00afde7f9b7b657d22d5670a2554fd27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bfc653409b81e5533b5b5a14921e6a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1AAAA_1_1Authenticator.html">AAAA::Authenticator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a2bfc653409b81e5533b5b5a14921e6a8">authenticator</a> (const <a class="el" href="class__Wolframe_1_1net_1_1RemoteEndpoint.html">net::RemoteEndpoint</a> &amp;client) const </td></tr>
+<tr class="memdesc:a2bfc653409b81e5533b5b5a14921e6a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an authenticator.  <a href="#a2bfc653409b81e5533b5b5a14921e6a8">More...</a><br /></td></tr>
+<tr class="separator:a2bfc653409b81e5533b5b5a14921e6a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a620b007861a2b4e732740b74dd8397ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a620b007861a2b4e732740b74dd8397ad">checkAuthorization</a> (const std::string &amp;authorizationFunction, const std::string &amp;authorizationResource)</td></tr>
+<tr class="memdesc:a620b007861a2b4e732740b74dd8397ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a function tagged with AUTHORIZE( authorizationFunction, authorizationResource) is allowed to be executed.  <a href="#a620b007861a2b4e732740b74dd8397ad">More...</a><br /></td></tr>
+<tr class="separator:a620b007861a2b4e732740b74dd8397ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a234949fd24c82c4984bf33c905cff952"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a234949fd24c82c4984bf33c905cff952">ExecContext</a> (const <a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html">ExecContext</a> &amp;)</td></tr>
+<tr class="separator:a234949fd24c82c4984bf33c905cff952"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f7e057f584b42bbd8d1a529208d2a4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a9f7e057f584b42bbd8d1a529208d2a4c">operator=</a> (const <a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html">ExecContext</a> &amp;)</td></tr>
+<tr class="separator:a9f7e057f584b42bbd8d1a529208d2a4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
 <tr class="memitem:a11092e867ea847a555e4f95d73595771"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html">ProcessorProviderInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a11092e867ea847a555e4f95d73595771">m_provider</a></td></tr>
 <tr class="memdesc:a11092e867ea847a555e4f95d73595771"><td class="mdescLeft">&#160;</td><td class="mdescRight">processor provider interface  <a href="#a11092e867ea847a555e4f95d73595771">More...</a><br /></td></tr>
 <tr class="separator:a11092e867ea847a555e4f95d73595771"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa442019bd57516bc1d6f590d42fbb9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1AAAA_1_1User.html">AAAA::User</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#aaa442019bd57516bc1d6f590d42fbb9e">m_user</a></td></tr>
-<tr class="memdesc:aaa442019bd57516bc1d6f590d42fbb9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">user data  <a href="#aaa442019bd57516bc1d6f590d42fbb9e">More...</a><br /></td></tr>
-<tr class="separator:aaa442019bd57516bc1d6f590d42fbb9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afece1a87a8436860c4592721e25a6086"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1types_1_1SecureReference.html">types::SecureReference</a><br class="typebreak" />
+&lt; <a class="el" href="class__Wolframe_1_1AAAA_1_1User.html">AAAA::User</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#afece1a87a8436860c4592721e25a6086">m_user</a></td></tr>
+<tr class="memdesc:afece1a87a8436860c4592721e25a6086"><td class="mdescLeft">&#160;</td><td class="mdescRight">user instance  <a href="#afece1a87a8436860c4592721e25a6086">More...</a><br /></td></tr>
+<tr class="separator:afece1a87a8436860c4592721e25a6086"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ac97e51db0833eae06b3f5f09d95cb9"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class__Wolframe_1_1AAAA_1_1Authorizer.html">AAAA::Authorizer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a9ac97e51db0833eae06b3f5f09d95cb9">m_authorizer</a></td></tr>
 <tr class="memdesc:a9ac97e51db0833eae06b3f5f09d95cb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">instance to query for execution permission based on login data  <a href="#a9ac97e51db0833eae06b3f5f09d95cb9">More...</a><br /></td></tr>
 <tr class="separator:a9ac97e51db0833eae06b3f5f09d95cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a018804e3df8baad2f89401a9e33b58e2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class__Wolframe_1_1AAAA_1_1AAAAprovider.html">AAAA::AAAAprovider</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a018804e3df8baad2f89401a9e33b58e2">m_aaaaProvider</a></td></tr>
 <tr class="memdesc:a018804e3df8baad2f89401a9e33b58e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">instance to query for an authenticator  <a href="#a018804e3df8baad2f89401a9e33b58e2">More...</a><br /></td></tr>
 <tr class="separator:a018804e3df8baad2f89401a9e33b58e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87d1fd2eb7774ee064132aac51749bb3"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a87d1fd2eb7774ee064132aac51749bb3">m_default_timeout</a></td></tr>
+<tr class="memdesc:a87d1fd2eb7774ee064132aac51749bb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">default timeout  <a href="#a87d1fd2eb7774ee064132aac51749bb3">More...</a><br /></td></tr>
+<tr class="separator:a87d1fd2eb7774ee064132aac51749bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Execution context passed to functions for referencing resources and to define authorization dependend processing. </p>
@@ -212,7 +227,7 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a611dbff679a9bae71088cb61db4d8e17"></a>
+<a class="anchor" id="a234949fd24c82c4984bf33c905cff952"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -223,23 +238,21 @@ Public Attributes</h2></td></tr>
           <td class="memname">_Wolframe::proc::ExecContext::ExecContext </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html">ExecContext</a> &amp;&#160;</td>
-          <td class="paramname"><em>o</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Copy constructor. </p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aa8e4d6b474ee02167dda555727e92c20"></a>
+<a class="anchor" id="a2bfc653409b81e5533b5b5a14921e6a8"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -249,7 +262,8 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="class__Wolframe_1_1AAAA_1_1Authenticator.html">AAAA::Authenticator</a>* _Wolframe::proc::ExecContext::authenticator </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="class__Wolframe_1_1net_1_1RemoteEndpoint.html">net::RemoteEndpoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>client</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -289,7 +303,35 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a27e745bb3496bbe15310af8657a6ab6e"></a>
+<a class="anchor" id="a620b007861a2b4e732740b74dd8397ad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _Wolframe::proc::ExecContext::checkAuthorization </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>authorizationFunction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>authorizationResource</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if a function tagged with AUTHORIZE( authorizationFunction, authorizationResource) is allowed to be executed. </p>
+
+</div>
+</div>
+<a class="anchor" id="abff3b2084e999d5c75e4db5f58e09fc0"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -297,21 +339,10 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool _Wolframe::proc::ExecContext::checkAuthorization </td>
+          <td class="memname">unsigned int _Wolframe::proc::ExecContext::defaultTimeout </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -321,7 +352,31 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Checks if a function tagged with AUTHORIZE( authorizationFunction, authorizationResource) is allowed to be executed. </p>
+<p>Get the default timeout for read operations in seconds. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9f7e057f584b42bbd8d1a529208d2a4c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _Wolframe::proc::ExecContext::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html">ExecContext</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -376,7 +431,33 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8488d6fbea4534c70fa6945eab3dc87f"></a>
+<a class="anchor" id="a00afde7f9b7b657d22d5670a2554fd27"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _Wolframe::proc::ExecContext::setDefaultTimeout </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>timeout_sec_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the default timeout for read operations in seconds (0=forever) </p>
+
+</div>
+</div>
+<a class="anchor" id="a33ed8ec104f4453ed2a53a6baf633c70"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -386,7 +467,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">void _Wolframe::proc::ExecContext::setUser </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class__Wolframe_1_1AAAA_1_1User.html">AAAA::User</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="class__Wolframe_1_1AAAA_1_1User.html">AAAA::User</a> *&#160;</td>
           <td class="paramname"><em>u</em></td><td>)</td>
           <td></td>
         </tr>
@@ -398,11 +479,11 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Set the user data. </p>
+<p>Set the user instance (own by this from now) </p>
 
 </div>
 </div>
-<a class="anchor" id="ab49020c2d13cac09beac74cf7b8f8698"></a>
+<a class="anchor" id="ac85230656a248132de1a1b82d3a47b9a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -410,7 +491,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="class__Wolframe_1_1AAAA_1_1User.html">AAAA::User</a>&amp; _Wolframe::proc::ExecContext::user </td>
+          <td class="memname">const <a class="el" href="class__Wolframe_1_1AAAA_1_1User.html">AAAA::User</a>* _Wolframe::proc::ExecContext::user </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -423,7 +504,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the user data. </p>
+<p>Get the the user instance reference. </p>
 
 </div>
 </div>
@@ -431,11 +512,19 @@ Public Attributes</h2></td></tr>
 <a class="anchor" id="a018804e3df8baad2f89401a9e33b58e2"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="class__Wolframe_1_1AAAA_1_1AAAAprovider.html">AAAA::AAAAprovider</a>* _Wolframe::proc::ExecContext::m_aaaaProvider</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>instance to query for an authenticator </p>
@@ -445,42 +534,88 @@ Public Attributes</h2></td></tr>
 <a class="anchor" id="a9ac97e51db0833eae06b3f5f09d95cb9"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="class__Wolframe_1_1AAAA_1_1Authorizer.html">AAAA::Authorizer</a>* _Wolframe::proc::ExecContext::m_authorizer</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>instance to query for execution permission based on login data </p>
 
 </div>
 </div>
+<a class="anchor" id="a87d1fd2eb7774ee064132aac51749bb3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int _Wolframe::proc::ExecContext::m_default_timeout</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>default timeout </p>
+
+</div>
+</div>
 <a class="anchor" id="a11092e867ea847a555e4f95d73595771"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html">ProcessorProviderInterface</a>* _Wolframe::proc::ExecContext::m_provider</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>processor provider interface </p>
 
 </div>
 </div>
-<a class="anchor" id="aaa442019bd57516bc1d6f590d42fbb9e"></a>
+<a class="anchor" id="afece1a87a8436860c4592721e25a6086"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class__Wolframe_1_1AAAA_1_1User.html">AAAA::User</a> _Wolframe::proc::ExecContext::m_user</td>
+          <td class="memname"><a class="el" href="class__Wolframe_1_1types_1_1SecureReference.html">types::SecureReference</a>&lt;<a class="el" href="class__Wolframe_1_1AAAA_1_1User.html">AAAA::User</a>&gt; _Wolframe::proc::ExecContext::m_user</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>user data </p>
+<p>user instance </p>
 
 </div>
 </div>
@@ -491,7 +626,7 @@ Public Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 4 2014 16:48:28 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 20:58:12 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

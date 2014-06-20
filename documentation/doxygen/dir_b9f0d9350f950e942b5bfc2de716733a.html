@@ -85,26 +85,20 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="files"></a>
 Files</h2></td></tr>
-<tr class="memitem:authCommandHandler_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="authCommandHandler_8hpp.html">authCommandHandler.hpp</a> <a href="authCommandHandler_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:authCommandHandler_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface of the authentication command handler. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:commandHandler_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="commandHandler_8hpp.html">commandHandler.hpp</a> <a href="commandHandler_8hpp_source.html">[code]</a></td></tr>
 <tr class="memdesc:commandHandler_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface to a generic command handler. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:commandHandlerConstructor_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="commandHandlerConstructor_8hpp.html">commandHandlerConstructor.hpp</a> <a href="commandHandlerConstructor_8hpp_source.html">[code]</a></td></tr>
 <tr class="memdesc:commandHandlerConstructor_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface to command handler constructors. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:contentBufferCommandHandlerEscDLF_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="contentBufferCommandHandlerEscDLF_8hpp.html">contentBufferCommandHandlerEscDLF.hpp</a> <a href="contentBufferCommandHandlerEscDLF_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:contentBufferCommandHandlerEscDLF_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Command handler base class for handlers buffering the input processed. <br /></td></tr>
+<tr class="memitem:commandHandlerUnit_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="commandHandlerUnit_8hpp.html">commandHandlerUnit.hpp</a> <a href="commandHandlerUnit_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:commandHandlerUnit_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface to command handler units. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:discardInputCommandHandlerEscDLF_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="discardInputCommandHandlerEscDLF_8hpp.html">discardInputCommandHandlerEscDLF.hpp</a> <a href="discardInputCommandHandlerEscDLF_8hpp_source.html">[code]</a></td></tr>
 <tr class="memdesc:discardInputCommandHandlerEscDLF_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Command handler that discards the input (&gt; /dev/null ) instead of processing it. Used for handling rest of content when an error occurrs before the whole input has been consumed. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:doctypeFilterCommandHandler_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="doctypeFilterCommandHandler_8hpp.html">doctypeFilterCommandHandler.hpp</a> <a href="doctypeFilterCommandHandler_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:doctypeFilterCommandHandler_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Command handler that does nothing but extracting the document type from the content and buffering the input processed. The document type extracted and the current command determine what command handler has to process the buffered plus the unprocessed content. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:execCommandHandler_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="execCommandHandler_8hpp.html">execCommandHandler.hpp</a> <a href="execCommandHandler_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:execCommandHandler_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Command handler for the selection and execution of commands defined as a list of command handlers. Includes interpreting of commands that belong to the caller and return control to the caller, if any of them is issued. Includes also a 'Capabilities' command for showing the list of available commands. <br /></td></tr>
+<tr class="memitem:doctypeDetector_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="doctypeDetector_8hpp.html">doctypeDetector.hpp</a> <a href="doctypeDetector_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:doctypeDetector_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface for document type and format recognition. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ioFilterCommandHandler_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioFilterCommandHandler_8hpp.html">ioFilterCommandHandler.hpp</a> <a href="ioFilterCommandHandler_8hpp_source.html">[code]</a></td></tr>
 <tr class="memdesc:ioFilterCommandHandler_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Command handler base class for processing content and writing output through filters. <br /></td></tr>
@@ -120,7 +114,7 @@ Files</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 4 2014 16:48:35 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 20:58:19 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

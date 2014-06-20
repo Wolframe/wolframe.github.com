@@ -179,6 +179,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a4cd7c3a96a3689abfea4a4aa407eea5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test if a flag can be set (allowed)  <a href="#a4cd7c3a96a3689abfea4a4aa407eea5b">More...</a><br /></td></tr>
 <tr class="separator:a4cd7c3a96a3689abfea4a4aa407eea5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3979b32b9abb4f829b4f4d408e349c62"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1FilterBase.html#a3979b32b9abb4f829b4f4d408e349c62">name</a> () const </td></tr>
+<tr class="memdesc:a3979b32b9abb4f829b4f4d408e349c62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the filter.  <a href="#a3979b32b9abb4f829b4f4d408e349c62">More...</a><br /></td></tr>
 <tr class="separator:a3979b32b9abb4f829b4f4d408e349c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class__Wolframe_1_1utils_1_1TypeSignature"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class__Wolframe_1_1utils_1_1TypeSignature')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class__Wolframe_1_1utils_1_1TypeSignature.html">_Wolframe::utils::TypeSignature</a></td></tr>
 <tr class="memitem:af8c776dc11b715d2234198648d3c8f5e inherit pub_methods_class__Wolframe_1_1utils_1_1TypeSignature"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1utils_1_1TypeSignature.html#af8c776dc11b715d2234198648d3c8f5e">TypeSignature</a> (const char *, unsigned int)</td></tr>
@@ -201,10 +202,13 @@ Private Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a532f48ba1635ec3b961bc4cb44010b76"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1FilterBase.html#a532f48ba1635ec3b961bc4cb44010b76">m_errorbuf</a> [<a class="el" href="class__Wolframe_1_1langbind_1_1FilterBase.html#a7fa5459d687d7d45eabf2b4ed0a1cbbda24b6495c3a7592aca9ce47d1a89f0764">ErrorBufSize</a>]</td></tr>
+<tr class="memdesc:a532f48ba1635ec3b961bc4cb44010b76"><td class="mdescLeft">&#160;</td><td class="mdescRight">error string  <a href="#a532f48ba1635ec3b961bc4cb44010b76">More...</a><br /></td></tr>
 <tr class="separator:a532f48ba1635ec3b961bc4cb44010b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f2d76505d3f1d13dbd7148bc741bd9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1langbind_1_1FilterBase.html#a38fc65e847310d5c4e3a7bdb64f7f138">Flags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1FilterBase.html#a1f2d76505d3f1d13dbd7148bc741bd9a">m_flags</a></td></tr>
+<tr class="memdesc:a1f2d76505d3f1d13dbd7148bc741bd9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">flags  <a href="#a1f2d76505d3f1d13dbd7148bc741bd9a">More...</a><br /></td></tr>
 <tr class="separator:a1f2d76505d3f1d13dbd7148bc741bd9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a853860ffb0b2dcc8a91c7dc93cd6a63b"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1FilterBase.html#a853860ffb0b2dcc8a91c7dc93cd6a63b">m_name</a></td></tr>
+<tr class="memdesc:a853860ffb0b2dcc8a91c7dc93cd6a63b"><td class="mdescLeft">&#160;</td><td class="mdescRight">name of the filter  <a href="#a853860ffb0b2dcc8a91c7dc93cd6a63b">More...</a><br /></td></tr>
 <tr class="separator:a853860ffb0b2dcc8a91c7dc93cd6a63b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -560,6 +564,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Get the name of the filter. </p>
+
 </div>
 </div>
 <a class="anchor" id="aebe3fd9e5040f5099591057ec022117b"></a>
@@ -644,7 +650,7 @@ Private Attributes</h2></td></tr>
 <p>Set a flag (or a set of flags) </p>
 <dl class="section return"><dt>Returns</dt><dd>true on success, false if the (or one of) flag is not supported </dd></dl>
 
-<p>Reimplemented in <a class="el" href="class__Wolframe_1_1langbind_1_1PropertyTreeInputFilter.html#ac54b050914f62d31654f0f40d510f8c3">_Wolframe::langbind::PropertyTreeInputFilter</a>, <a class="el" href="class__Wolframe_1_1langbind_1_1TypingInputFilter.html#abd89143edeca1541333fdfc3fd4901ba">_Wolframe::langbind::TypingInputFilter</a>, <a class="el" href="class__Wolframe_1_1serialize_1_1DDLStructSerializer.html#a049ad36eab3fd8ade5c95b4a257e6049">_Wolframe::serialize::DDLStructSerializer</a>, and <a class="el" href="class__Wolframe_1_1serialize_1_1StructSerializer.html#a4e852f7fa67ee002751a95578b738bd3">_Wolframe::serialize::StructSerializer</a>.</p>
+<p>Reimplemented in <a class="el" href="class__Wolframe_1_1serialize_1_1DDLStructSerializer.html#a049ad36eab3fd8ade5c95b4a257e6049">_Wolframe::serialize::DDLStructSerializer</a>, <a class="el" href="class__Wolframe_1_1langbind_1_1PropertyTreeInputFilter.html#ac54b050914f62d31654f0f40d510f8c3">_Wolframe::langbind::PropertyTreeInputFilter</a>, and <a class="el" href="class__Wolframe_1_1langbind_1_1TypingInputFilter.html#abd89143edeca1541333fdfc3fd4901ba">_Wolframe::langbind::TypingInputFilter</a>.</p>
 
 </div>
 </div>
@@ -713,6 +719,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>error string </p>
+
 </div>
 </div>
 <a class="anchor" id="a1f2d76505d3f1d13dbd7148bc741bd9a"></a>
@@ -732,6 +740,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>flags </p>
 
 </div>
 </div>
@@ -753,6 +763,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>name of the filter </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -762,7 +774,7 @@ Private Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 4 2014 16:48:22 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 20:58:08 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

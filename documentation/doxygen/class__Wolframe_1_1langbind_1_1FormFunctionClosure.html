@@ -94,7 +94,7 @@
 </div><!--header-->
 <div class="contents">
 
-<p>Form function execution context.  
+<p>Form function execution context interface.  
  <a href="class__Wolframe_1_1langbind_1_1FormFunctionClosure.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="formFunction_8hpp_source.html">formFunction.hpp</a>&gt;</code></p>
@@ -111,19 +111,20 @@ Inheritance diagram for _Wolframe::langbind::FormFunctionClosure:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a56f7ac45575b27a404138ae55e7f2700"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1FormFunctionClosure.html#a56f7ac45575b27a404138ae55e7f2700">~FormFunctionClosure</a> ()</td></tr>
+<tr class="memdesc:a56f7ac45575b27a404138ae55e7f2700"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a56f7ac45575b27a404138ae55e7f2700">More...</a><br /></td></tr>
 <tr class="separator:a56f7ac45575b27a404138ae55e7f2700"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a383133dfba1ee7916d6e3220c3408b68"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1FormFunctionClosure.html#a383133dfba1ee7916d6e3220c3408b68">call</a> ()=0</td></tr>
 <tr class="memdesc:a383133dfba1ee7916d6e3220c3408b68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls the function with the input from the input filter specified.  <a href="#a383133dfba1ee7916d6e3220c3408b68">More...</a><br /></td></tr>
 <tr class="separator:a383133dfba1ee7916d6e3220c3408b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76699360cf908b47fd829606da15fe01"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1FormFunctionClosure.html#a76699360cf908b47fd829606da15fe01">init</a> (<a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html">proc::ExecContext</a> *c, const <a class="el" href="namespace__Wolframe_1_1langbind.html#a0b70bbec36877c46901d00c116785052">TypedInputFilterR</a> &amp;i, <a class="el" href="class__Wolframe_1_1serialize_1_1Context.html#a8659689e2108ffce5f336db4df063825">serialize::Context::Flags</a> f=<a class="el" href="class__Wolframe_1_1serialize_1_1Context.html#a8659689e2108ffce5f336db4df063825ab8c6d5e0d9e35275fa69994e6c2f9707">serialize::Context::None</a>)=0</td></tr>
-<tr class="memdesc:a76699360cf908b47fd829606da15fe01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization of call context for a new call.  <a href="#a76699360cf908b47fd829606da15fe01">More...</a><br /></td></tr>
-<tr class="separator:a76699360cf908b47fd829606da15fe01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cfc0624913a849890796f4ebe330018"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1FormFunctionClosure.html#a1cfc0624913a849890796f4ebe330018">init</a> (<a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html">proc::ExecContext</a> *c, const <a class="el" href="namespace__Wolframe_1_1langbind.html#a0b70bbec36877c46901d00c116785052">TypedInputFilterR</a> &amp;i, <a class="el" href="struct__Wolframe_1_1serialize_1_1Flags.html#aecad8696caa69abf5cc2158f002fc251">serialize::Flags::Enum</a> f=<a class="el" href="struct__Wolframe_1_1serialize_1_1Flags.html#aecad8696caa69abf5cc2158f002fc251af53343738b993add30eaf828b8d04b26">serialize::Flags::None</a>)=0</td></tr>
+<tr class="memdesc:a1cfc0624913a849890796f4ebe330018"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization of call context for a new call.  <a href="#a1cfc0624913a849890796f4ebe330018">More...</a><br /></td></tr>
+<tr class="separator:a1cfc0624913a849890796f4ebe330018"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0caaa8ba57dc9d1149d871534b510c1d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespace__Wolframe_1_1langbind.html#a0b70bbec36877c46901d00c116785052">TypedInputFilterR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1FormFunctionClosure.html#a0caaa8ba57dc9d1149d871534b510c1d">result</a> () const =0</td></tr>
 <tr class="memdesc:a0caaa8ba57dc9d1149d871534b510c1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the iterator for the function result.  <a href="#a0caaa8ba57dc9d1149d871534b510c1d">More...</a><br /></td></tr>
 <tr class="separator:a0caaa8ba57dc9d1149d871534b510c1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Form function execution context. </p>
+<div class="textblock"><p>Form function execution context interface. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a56f7ac45575b27a404138ae55e7f2700"></a>
 <div class="memitem">
@@ -145,6 +146,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Destructor. </p>
 
 </div>
 </div>
@@ -177,7 +180,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a76699360cf908b47fd829606da15fe01"></a>
+<a class="anchor" id="a1cfc0624913a849890796f4ebe330018"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -199,8 +202,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class__Wolframe_1_1serialize_1_1Context.html#a8659689e2108ffce5f336db4df063825">serialize::Context::Flags</a>&#160;</td>
-          <td class="paramname"><em>f</em> = <code><a class="el" href="class__Wolframe_1_1serialize_1_1Context.html#a8659689e2108ffce5f336db4df063825ab8c6d5e0d9e35275fa69994e6c2f9707">serialize::Context::None</a></code>&#160;</td>
+          <td class="paramtype"><a class="el" href="struct__Wolframe_1_1serialize_1_1Flags.html#aecad8696caa69abf5cc2158f002fc251">serialize::Flags::Enum</a>&#160;</td>
+          <td class="paramname"><em>f</em> = <code><a class="el" href="struct__Wolframe_1_1serialize_1_1Flags.html#aecad8696caa69abf5cc2158f002fc251af53343738b993add30eaf828b8d04b26">serialize::Flags::None</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -225,7 +228,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class__Wolframe_1_1serialize_1_1CppFormFunctionClosure.html#ab8fd9f4c3e8fdb705124c9bdd7d68497">_Wolframe::serialize::CppFormFunctionClosure</a>.</p>
+<p>Implemented in <a class="el" href="class__Wolframe_1_1serialize_1_1CppFormFunctionClosure.html#acb54dfe1f3b904d03ccba04e60b759ac">_Wolframe::serialize::CppFormFunctionClosure</a>.</p>
 
 </div>
 </div>
@@ -251,7 +254,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the iterator for the function result. </p>
-<dl class="section remark"><dt>Remarks</dt><dd>MUST be standalone (alive after destruction of this '<a class="el" href="class__Wolframe_1_1langbind_1_1FormFunctionClosure.html" title="Form function execution context. ">FormFunctionClosure</a>'!) </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>MUST be standalone (alive after destruction of this '<a class="el" href="class__Wolframe_1_1langbind_1_1FormFunctionClosure.html" title="Form function execution context interface. ">FormFunctionClosure</a>'!) </dd></dl>
 
 <p>Implemented in <a class="el" href="class__Wolframe_1_1serialize_1_1CppFormFunctionClosure.html#ab9785f73d05f7fad481ee4e935b95b4c">_Wolframe::serialize::CppFormFunctionClosure</a>.</p>
 
@@ -264,7 +267,7 @@ Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 4 2014 16:48:22 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 20:58:08 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

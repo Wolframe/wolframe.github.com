@@ -103,8 +103,10 @@
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a80807294de4ac12545947672537a210d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1langbind_1_1DDLCompiler.html#a80807294de4ac12545947672537a210d">DDLCompiler</a> (const std::string &amp;n, const std::string &amp;e)</td></tr>
+<tr class="memdesc:a80807294de4ac12545947672537a210d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a80807294de4ac12545947672537a210d">More...</a><br /></td></tr>
 <tr class="separator:a80807294de4ac12545947672537a210d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a020032c82128c142ea6894e1b28b1a1b"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1langbind_1_1DDLCompiler.html#a020032c82128c142ea6894e1b28b1a1b">~DDLCompiler</a> ()</td></tr>
+<tr class="memdesc:a020032c82128c142ea6894e1b28b1a1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a020032c82128c142ea6894e1b28b1a1b">More...</a><br /></td></tr>
 <tr class="separator:a020032c82128c142ea6894e1b28b1a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b7826e59b38967eb22ea6195020a1c3"><td class="memItemLeft" align="right" valign="top">virtual std::vector<br class="typebreak" />
 &lt; <a class="el" href="namespace__Wolframe_1_1types.html#a42836bc00f715a9d596acb4f62990e83">types::FormDescriptionR</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1langbind_1_1DDLCompiler.html#a6b7826e59b38967eb22ea6195020a1c3">compile</a> (const std::string &amp;filename, const <a class="el" href="struct__Wolframe_1_1types_1_1NormalizeFunctionMap.html">types::NormalizeFunctionMap</a> *typemap) const =0</td></tr>
@@ -120,8 +122,10 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a5153ea2dd469ca8bae97cb9b6f362d40"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1langbind_1_1DDLCompiler.html#a5153ea2dd469ca8bae97cb9b6f362d40">m_ddlname</a></td></tr>
+<tr class="memdesc:a5153ea2dd469ca8bae97cb9b6f362d40"><td class="mdescLeft">&#160;</td><td class="mdescRight">name of the data defintion language  <a href="#a5153ea2dd469ca8bae97cb9b6f362d40">More...</a><br /></td></tr>
 <tr class="separator:a5153ea2dd469ca8bae97cb9b6f362d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a8c162be87d9a4c419fcd0898b944c9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1langbind_1_1DDLCompiler.html#a6a8c162be87d9a4c419fcd0898b944c9">m_fileext</a></td></tr>
+<tr class="memdesc:a6a8c162be87d9a4c419fcd0898b944c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">file extension of a program of this data defintion language  <a href="#a6a8c162be87d9a4c419fcd0898b944c9">More...</a><br /></td></tr>
 <tr class="separator:a6a8c162be87d9a4c419fcd0898b944c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -159,6 +163,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Constructor. </p>
+
 </div>
 </div>
 <a class="anchor" id="a020032c82128c142ea6894e1b28b1a1b"></a>
@@ -181,6 +187,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Destructor. </p>
 
 </div>
 </div>
@@ -225,7 +233,8 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>compilation result (a list of public and private forms).  Forms with an empty name are declared as private and not inserted into the map of public forms. But they are also not deleted and kept in a list, so that they can still be referenced by other forms in the list (for indirection). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>compilation result (a list of public and private forms). </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Forms with an empty name are declared as private and not inserted into the map of public forms. But they are also not deleted and kept in a list, so that they can still be referenced by other forms in the list (for indirection). </dd></dl>
 
 </div>
 </div>
@@ -298,6 +307,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>name of the data defintion language </p>
+
 </div>
 </div>
 <a class="anchor" id="a6a8c162be87d9a4c419fcd0898b944c9"></a>
@@ -318,6 +329,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>file extension of a program of this data defintion language </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -327,7 +340,7 @@ Private Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 4 2014 16:48:22 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 20:58:07 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

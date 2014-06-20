@@ -87,60 +87,99 @@
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="class__Wolframe_1_1AAAA_1_1Authenticator-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">_Wolframe::AAAA::Authenticator Class Reference</div>  </div>
+<div class="title">_Wolframe::AAAA::Authenticator Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="authentication_8hpp_source.html">authentication.hpp</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for _Wolframe::AAAA::Authenticator:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="class__Wolframe_1_1AAAA_1_1Authenticator.png" usemap="#_Wolframe::AAAA::Authenticator_map" alt=""/>
-  <map id="_Wolframe::AAAA::Authenticator_map" name="_Wolframe::AAAA::Authenticator_map">
-<area href="class__Wolframe_1_1FSM.html" title="Finite State Machine interface. " alt="_Wolframe::FSM" shape="rect" coords="0,0,195,24"/>
-</map>
- </div></div>
+<p><code>#include &lt;<a class="el" href="authenticator_8hpp_source.html">authenticator.hpp</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a9dfdf77dd405ff219772c0f5aed31380"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1Authenticator.html#a9dfdf77dd405ff219772c0f5aed31380">Status</a> { <br />
+&#160;&#160;<a class="el" href="class__Wolframe_1_1AAAA_1_1Authenticator.html#a9dfdf77dd405ff219772c0f5aed31380ac3e764c3664a559a6ef2266c6f2df11f">INITIALIZED</a>, 
+<a class="el" href="class__Wolframe_1_1AAAA_1_1Authenticator.html#a9dfdf77dd405ff219772c0f5aed31380ae74cfcb1622f6a1e711f0f55e00e1dd9">MESSAGE_AVAILABLE</a>, 
+<a class="el" href="class__Wolframe_1_1AAAA_1_1Authenticator.html#a9dfdf77dd405ff219772c0f5aed31380a1f7ca32b6ba35a163f0fadb513aa9618">AWAITING_MESSAGE</a>, 
+<a class="el" href="class__Wolframe_1_1AAAA_1_1Authenticator.html#a9dfdf77dd405ff219772c0f5aed31380a606e96b7b3d25e9cae5ee16613d92b00">AUTHENTICATED</a>, 
+<br />
+&#160;&#160;<a class="el" href="class__Wolframe_1_1AAAA_1_1Authenticator.html#a9dfdf77dd405ff219772c0f5aed31380a96c0e120bd7fdb42e201df61c04f48a3">INVALID_CREDENTIALS</a>, 
+<a class="el" href="class__Wolframe_1_1AAAA_1_1Authenticator.html#a9dfdf77dd405ff219772c0f5aed31380af22e6eb98c57b06cdbc1e2b449ce32ab">MECH_UNAVAILABLE</a>, 
+<a class="el" href="class__Wolframe_1_1AAAA_1_1Authenticator.html#a9dfdf77dd405ff219772c0f5aed31380a4f0bc80c593e47ff0455bd600d39d7e0">SYSTEM_FAILURE</a>
+<br />
+ }</td></tr>
+<tr class="separator:a9dfdf77dd405ff219772c0f5aed31380"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a19b8ebdcb979f93d2b01eaa1da63be0c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1Authenticator.html#a19b8ebdcb979f93d2b01eaa1da63be0c">~Authenticator</a> ()</td></tr>
+<tr class="memdesc:a19b8ebdcb979f93d2b01eaa1da63be0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The virtual destructor.  <a href="#a19b8ebdcb979f93d2b01eaa1da63be0c">More...</a><br /></td></tr>
 <tr class="separator:a19b8ebdcb979f93d2b01eaa1da63be0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2851dabe6f6886ddd70a23427767779"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1Authenticator.html#ac2851dabe6f6886ddd70a23427767779">close</a> ()</td></tr>
-<tr class="separator:ac2851dabe6f6886ddd70a23427767779"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_class__Wolframe_1_1FSM"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class__Wolframe_1_1FSM')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class__Wolframe_1_1FSM.html">_Wolframe::FSM</a></td></tr>
-<tr class="memitem:a435cfa1f4ec98129086573ca333266de inherit pub_methods_class__Wolframe_1_1FSM"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1FSM.html#a435cfa1f4ec98129086573ca333266de">receiveData</a> (const void *data, std::size_t size)=0</td></tr>
-<tr class="memdesc:a435cfa1f4ec98129086573ca333266de inherit pub_methods_class__Wolframe_1_1FSM"><td class="mdescLeft">&#160;</td><td class="mdescRight">The input data.  <a href="#a435cfa1f4ec98129086573ca333266de">More...</a><br /></td></tr>
-<tr class="separator:a435cfa1f4ec98129086573ca333266de inherit pub_methods_class__Wolframe_1_1FSM"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73db7ad217201e4a3045735b7d18f25f inherit pub_methods_class__Wolframe_1_1FSM"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class__Wolframe_1_1FSM_1_1Operation.html">Operation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1FSM.html#a73db7ad217201e4a3045735b7d18f25f">nextOperation</a> ()=0</td></tr>
-<tr class="memdesc:a73db7ad217201e4a3045735b7d18f25f inherit pub_methods_class__Wolframe_1_1FSM"><td class="mdescLeft">&#160;</td><td class="mdescRight">What oeration the <a class="el" href="class__Wolframe_1_1FSM.html" title="Finite State Machine interface. ">FSM</a> expects next from the outside.  <a href="#a73db7ad217201e4a3045735b7d18f25f">More...</a><br /></td></tr>
-<tr class="separator:a73db7ad217201e4a3045735b7d18f25f inherit pub_methods_class__Wolframe_1_1FSM"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad591b895432d8874889e96fb66b0e90c inherit pub_methods_class__Wolframe_1_1FSM"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1FSM.html#ad591b895432d8874889e96fb66b0e90c">signal</a> (<a class="el" href="class__Wolframe_1_1FSM.html#ac10ffcbd3a74b2a0d0713fa7f29bb61d">Signal</a>)</td></tr>
-<tr class="memdesc:ad591b895432d8874889e96fb66b0e90c inherit pub_methods_class__Wolframe_1_1FSM"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal the <a class="el" href="class__Wolframe_1_1FSM.html" title="Finite State Machine interface. ">FSM</a>.  <a href="#ad591b895432d8874889e96fb66b0e90c">More...</a><br /></td></tr>
-<tr class="separator:ad591b895432d8874889e96fb66b0e90c inherit pub_methods_class__Wolframe_1_1FSM"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16831ce204b027902f0b4ee4de42ec7f inherit pub_methods_class__Wolframe_1_1FSM"><td class="memItemLeft" align="right" valign="top">virtual std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1FSM.html#a16831ce204b027902f0b4ee4de42ec7f">dataLeft</a> (const void *&amp;begin)=0</td></tr>
-<tr class="memdesc:a16831ce204b027902f0b4ee4de42ec7f inherit pub_methods_class__Wolframe_1_1FSM"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data that has not been consumed by the <a class="el" href="class__Wolframe_1_1FSM.html" title="Finite State Machine interface. ">FSM</a>.  <a href="#a16831ce204b027902f0b4ee4de42ec7f">More...</a><br /></td></tr>
-<tr class="separator:a16831ce204b027902f0b4ee4de42ec7f inherit pub_methods_class__Wolframe_1_1FSM"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af024481900f35d57a9e0b7d7224b3b51"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1Authenticator.html#af024481900f35d57a9e0b7d7224b3b51">dispose</a> ()=0</td></tr>
+<tr class="separator:af024481900f35d57a9e0b7d7224b3b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a255549cfccbdff5519e193cc315f0cde"><td class="memItemLeft" align="right" valign="top">virtual const std::vector<br class="typebreak" />
+&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1Authenticator.html#a255549cfccbdff5519e193cc315f0cde">mechs</a> () const =0</td></tr>
+<tr class="memdesc:a255549cfccbdff5519e193cc315f0cde"><td class="mdescLeft">&#160;</td><td class="mdescRight">The list of available mechs.  <a href="#a255549cfccbdff5519e193cc315f0cde">More...</a><br /></td></tr>
+<tr class="separator:a255549cfccbdff5519e193cc315f0cde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae848bd3ae80801447a8ec78d04d0989f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1Authenticator.html#ae848bd3ae80801447a8ec78d04d0989f">setMech</a> (const std::string &amp;mech)=0</td></tr>
+<tr class="separator:ae848bd3ae80801447a8ec78d04d0989f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cca7b9a53d881c58cb2a946667a34ae"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1Authenticator.html#a3cca7b9a53d881c58cb2a946667a34ae">messageIn</a> (const std::string &amp;message)=0</td></tr>
+<tr class="separator:a3cca7b9a53d881c58cb2a946667a34ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a15e5f66ea574d2185829699beccc9d"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1Authenticator.html#a8a15e5f66ea574d2185829699beccc9d">messageOut</a> ()=0</td></tr>
+<tr class="separator:a8a15e5f66ea574d2185829699beccc9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a385c9a54f3963a89c9c4e808411d9177"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class__Wolframe_1_1AAAA_1_1Authenticator.html#a9dfdf77dd405ff219772c0f5aed31380">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1Authenticator.html#a385c9a54f3963a89c9c4e808411d9177">status</a> () const =0</td></tr>
+<tr class="memdesc:a385c9a54f3963a89c9c4e808411d9177"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current status of the authenticator.  <a href="#a385c9a54f3963a89c9c4e808411d9177">More...</a><br /></td></tr>
+<tr class="separator:a385c9a54f3963a89c9c4e808411d9177"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f7ac459300afe6bd8bdd3822a631e12"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class__Wolframe_1_1AAAA_1_1User.html">User</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1Authenticator.html#a4f7ac459300afe6bd8bdd3822a631e12">user</a> ()=0</td></tr>
+<tr class="separator:a4f7ac459300afe6bd8bdd3822a631e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_class__Wolframe_1_1FSM"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class__Wolframe_1_1FSM')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class__Wolframe_1_1FSM.html">_Wolframe::FSM</a></td></tr>
-<tr class="memitem:ac10ffcbd3a74b2a0d0713fa7f29bb61d inherit pub_types_class__Wolframe_1_1FSM"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1FSM.html#ac10ffcbd3a74b2a0d0713fa7f29bb61d">Signal</a> { <br />
-&#160;&#160;<a class="el" href="class__Wolframe_1_1FSM.html#ac10ffcbd3a74b2a0d0713fa7f29bb61dad567a4e88e4e2e979a4e08ba9e0bcd5e">TIMEOUT</a>, 
-<a class="el" href="class__Wolframe_1_1FSM.html#ac10ffcbd3a74b2a0d0713fa7f29bb61da22d0fa28e20e9d7e4c4d8494e4ad5066">TERMINATE</a>, 
-<a class="el" href="class__Wolframe_1_1FSM.html#ac10ffcbd3a74b2a0d0713fa7f29bb61daf5123b1d1598806db31c5ee57b262e73">END_OF_FILE</a>, 
-<a class="el" href="class__Wolframe_1_1FSM.html#ac10ffcbd3a74b2a0d0713fa7f29bb61da89e36018338fff49da16b14606ee1f60">CANCELLED</a>, 
-<br />
-&#160;&#160;<a class="el" href="class__Wolframe_1_1FSM.html#ac10ffcbd3a74b2a0d0713fa7f29bb61da95dbdf26817ad55a0522537ec1457ee8">BROKEN_PIPE</a>, 
-<a class="el" href="class__Wolframe_1_1FSM.html#ac10ffcbd3a74b2a0d0713fa7f29bb61dae9abb71f770686a192a37982cbbfbd6c">UNKNOWN_ERROR</a>
-<br />
- }</td></tr>
-<tr class="memdesc:ac10ffcbd3a74b2a0d0713fa7f29bb61d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finite State Machine signals.  <a href="class__Wolframe_1_1FSM.html#ac10ffcbd3a74b2a0d0713fa7f29bb61d">More...</a><br /></td></tr>
-<tr class="separator:ac10ffcbd3a74b2a0d0713fa7f29bb61d inherit pub_types_class__Wolframe_1_1FSM"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ae9cb65e459fb250889aafd5d24b873dc"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1Authenticator.html#ae9cb65e459fb250889aafd5d24b873dc">statusName</a> (<a class="el" href="class__Wolframe_1_1AAAA_1_1Authenticator.html#a9dfdf77dd405ff219772c0f5aed31380">Status</a> i)</td></tr>
+<tr class="separator:ae9cb65e459fb250889aafd5d24b873dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="class__Wolframe_1_1AAAA_1_1Authenticator.html">Authenticator</a> interface This the only interface to be used by the system. All other interfaces are internal to the authentication objects.</p>
+<dl class="section note"><dt>Note</dt><dd>The authenticator works only with complete messages. Sending a message in multiple parts will most likely result in an error. But that depends also on the authentication backend. </dd></dl>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="a9dfdf77dd405ff219772c0f5aed31380"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class__Wolframe_1_1AAAA_1_1Authenticator.html#a9dfdf77dd405ff219772c0f5aed31380">_Wolframe::AAAA::Authenticator::Status</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a9dfdf77dd405ff219772c0f5aed31380ac3e764c3664a559a6ef2266c6f2df11f"></a>INITIALIZED&#160;</td><td class="fielddoc">
+<p>the authenticator is initialized, no mech has been selected yet </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9dfdf77dd405ff219772c0f5aed31380ae74cfcb1622f6a1e711f0f55e00e1dd9"></a>MESSAGE_AVAILABLE&#160;</td><td class="fielddoc">
+<p>an output message is available </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9dfdf77dd405ff219772c0f5aed31380a1f7ca32b6ba35a163f0fadb513aa9618"></a>AWAITING_MESSAGE&#160;</td><td class="fielddoc">
+<p>waiting for an input message </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9dfdf77dd405ff219772c0f5aed31380a606e96b7b3d25e9cae5ee16613d92b00"></a>AUTHENTICATED&#160;</td><td class="fielddoc">
+<p>a user has been authenticated </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9dfdf77dd405ff219772c0f5aed31380a96c0e120bd7fdb42e201df61c04f48a3"></a>INVALID_CREDENTIALS&#160;</td><td class="fielddoc">
+<p>the user authentication failed, either the username or the credentials are invalid </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9dfdf77dd405ff219772c0f5aed31380af22e6eb98c57b06cdbc1e2b449ce32ab"></a>MECH_UNAVAILABLE&#160;</td><td class="fielddoc">
+<p>the requested mech is not available, usually due to configured restrictions </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a9dfdf77dd405ff219772c0f5aed31380a4f0bc80c593e47ff0455bd600d39d7e0"></a>SYSTEM_FAILURE&#160;</td><td class="fielddoc">
+<p>some other error occurred </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a19b8ebdcb979f93d2b01eaa1da63be0c"></a>
 <div class="memitem">
@@ -163,10 +202,12 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The virtual destructor. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ac2851dabe6f6886ddd70a23427767779"></a>
+<a class="anchor" id="af024481900f35d57a9e0b7d7224b3b51"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -174,7 +215,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void _Wolframe::AAAA::Authenticator::close </td>
+          <td class="memname">virtual void _Wolframe::AAAA::Authenticator::dispose </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -182,21 +223,207 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Destroy the authenticator</p>
+<dl class="section note"><dt>Note</dt><dd>In many cases this is a suicidal function (delete this), so you should be very careful how you use it. You should use this function instead of delete because not all authentication instances are created with new. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a255549cfccbdff5519e193cc315f0cde"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const std::vector&lt;std::string&gt;&amp; _Wolframe::AAAA::Authenticator::mechs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The list of available mechs. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3cca7b9a53d881c58cb2a946667a34ae"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void _Wolframe::AAAA::Authenticator::messageIn </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The input message </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">message</td><td>the input message </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a8a15e5f66ea574d2185829699beccc9d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string _Wolframe::AAAA::Authenticator::messageOut </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The output message </p><dl class="section return"><dt>Returns</dt><dd>the output message </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae848bd3ae80801447a8ec78d04d0989f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool _Wolframe::AAAA::Authenticator::setMech </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>mech</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the authentication mech </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mech</td><td>the name of the mech (case-insensitive) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the mech could be selected false if the mech is not available </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function works like a reset function Whenever it is called it will release all the allocated resources and it will reinitialize all the data structures </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a385c9a54f3963a89c9c4e808411d9177"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class__Wolframe_1_1AAAA_1_1Authenticator.html#a9dfdf77dd405ff219772c0f5aed31380">Status</a> _Wolframe::AAAA::Authenticator::status </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The current status of the authenticator. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae9cb65e459fb250889aafd5d24b873dc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const char* _Wolframe::AAAA::Authenticator::statusName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class__Wolframe_1_1AAAA_1_1Authenticator.html#a9dfdf77dd405ff219772c0f5aed31380">Status</a>&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
+<a class="anchor" id="a4f7ac459300afe6bd8bdd3822a631e12"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class__Wolframe_1_1AAAA_1_1User.html">User</a>* _Wolframe::AAAA::Authenticator::user </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The authenticated user or NULL if not authenticated </p><dl class="section note"><dt>Note</dt><dd>It is intended that this function can be called only once. As a security precaution, all the instance information regarding the current authentication operation should be destroyed after the authentication is complete and the user is no longer available after the call of this function </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/AAAA/<a class="el" href="authentication_8hpp_source.html">authentication.hpp</a></li>
+<li>include/AAAA/<a class="el" href="authenticator_8hpp_source.html">authenticator.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 4 2014 16:48:16 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 20:58:03 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

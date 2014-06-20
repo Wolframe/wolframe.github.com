@@ -112,15 +112,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a29afa1151816fd114ae5d7d372d8673b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class__Wolframe_1_1db_1_1Database.html">Database</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1DatabaseUnit.html#a29afa1151816fd114ae5d7d372d8673b">database</a> ()=0</td></tr>
 <tr class="memdesc:a29afa1151816fd114ae5d7d372d8673b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The actual database object.  <a href="#a29afa1151816fd114ae5d7d372d8673b">More...</a><br /></td></tr>
 <tr class="separator:a29afa1151816fd114ae5d7d372d8673b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed98b1c4e6f03a9a1de7c6e5e7663c7d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1DatabaseUnit.html#aed98b1c4e6f03a9a1de7c6e5e7663c7d">loadProgram</a> (const std::string &amp;filename)=0</td></tr>
-<tr class="memdesc:aed98b1c4e6f03a9a1de7c6e5e7663c7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load the database transaction programs for this database from file.  <a href="#aed98b1c4e6f03a9a1de7c6e5e7663c7d">More...</a><br /></td></tr>
-<tr class="separator:aed98b1c4e6f03a9a1de7c6e5e7663c7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a247efc236f583752ba5b98a854b7d81c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1DatabaseUnit.html#a247efc236f583752ba5b98a854b7d81c">loadAllPrograms</a> ()=0</td></tr>
-<tr class="memdesc:a247efc236f583752ba5b98a854b7d81c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load the transaction programs for this database from all.  <a href="#a247efc236f583752ba5b98a854b7d81c">More...</a><br /></td></tr>
-<tr class="separator:a247efc236f583752ba5b98a854b7d81c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2cd5783ccfbaa9b4764b2384712a9ee"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1DatabaseUnit.html#ad2cd5783ccfbaa9b4764b2384712a9ee">addProgram</a> (const std::string &amp;program)=0</td></tr>
-<tr class="memdesc:ad2cd5783ccfbaa9b4764b2384712a9ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a database program to the list of transaction programs  <a href="#ad2cd5783ccfbaa9b4764b2384712a9ee">More...</a><br /></td></tr>
-<tr class="separator:ad2cd5783ccfbaa9b4764b2384712a9ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This is the base class for database unit implementations. </p>
@@ -149,33 +140,6 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ad2cd5783ccfbaa9b4764b2384712a9ee"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void _Wolframe::db::DatabaseUnit::addProgram </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>program</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>add a database program to the list of transaction programs </p>
-<dl class="section remark"><dt>Remarks</dt><dd>throws std::runtime_error with position info in case of error </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="a3f001d8113692f633dee0652a527c274"></a>
 <div class="memitem">
 <div class="memproto">
@@ -254,59 +218,6 @@ Class names must be unique. </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a247efc236f583752ba5b98a854b7d81c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void _Wolframe::db::DatabaseUnit::loadAllPrograms </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Load the transaction programs for this database from all. </p>
-<dl class="section remark"><dt>Remarks</dt><dd>throws std::runtime_error with position info in case of error </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="aed98b1c4e6f03a9a1de7c6e5e7663c7d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void _Wolframe::db::DatabaseUnit::loadProgram </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>filename</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Load the database transaction programs for this database from file. </p>
-<dl class="section remark"><dt>Remarks</dt><dd>throws std::runtime_error with position info in case of error </dd></dl>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/database/<a class="el" href="database_8hpp_source.html">database.hpp</a></li>
 </ul>
@@ -314,7 +225,7 @@ Class names must be unique. </dd></dl>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 4 2014 16:48:20 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 20:58:06 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

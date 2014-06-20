@@ -114,7 +114,7 @@ Inheritance diagram for _Wolframe::protocol::MemBlock:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1protocol_1_1MemBlock_1_1ArrayBoundReadError.html">ArrayBoundReadError</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1protocol_1_1MemBlock_1_1ArrayBoundReadError.html">ArrayBoundReadError</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Protocol memory block access violation exception.  <a href="struct__Wolframe_1_1protocol_1_1MemBlock_1_1ArrayBoundReadError.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -186,12 +186,16 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:aa233a5931044c4fb5087582befda985a"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1protocol_1_1MemBlock.html#aa233a5931044c4fb5087582befda985a">m_ptr</a></td></tr>
+<tr class="memdesc:aa233a5931044c4fb5087582befda985a"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointer to buffer  <a href="#aa233a5931044c4fb5087582befda985a">More...</a><br /></td></tr>
 <tr class="separator:aa233a5931044c4fb5087582befda985a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac40c02c0f137e056a165e7a6b210ebbf"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1protocol_1_1MemBlock.html#ac40c02c0f137e056a165e7a6b210ebbf">m_size</a></td></tr>
+<tr class="memdesc:ac40c02c0f137e056a165e7a6b210ebbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">allocation size in bytes of this buffer  <a href="#ac40c02c0f137e056a165e7a6b210ebbf">More...</a><br /></td></tr>
 <tr class="separator:ac40c02c0f137e056a165e7a6b210ebbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac19102c330ea8c1a4c44b4567d42820e"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1protocol_1_1MemBlock.html#ac19102c330ea8c1a4c44b4567d42820e">m_pos</a></td></tr>
+<tr class="memdesc:ac19102c330ea8c1a4c44b4567d42820e"><td class="mdescLeft">&#160;</td><td class="mdescRight">current byte position of the cursor  <a href="#ac19102c330ea8c1a4c44b4567d42820e">More...</a><br /></td></tr>
 <tr class="separator:ac19102c330ea8c1a4c44b4567d42820e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1eb72446f19bf13c0bf27d225f5c67c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1protocol_1_1MemBlock.html#aa1eb72446f19bf13c0bf27d225f5c67c">m_allocated</a></td></tr>
+<tr class="memdesc:aa1eb72446f19bf13c0bf27d225f5c67c"><td class="mdescLeft">&#160;</td><td class="mdescRight">true, if the memory of the buffer <code>m_ptr</code> is owned by this class and has to be freed again in the destructor  <a href="#aa1eb72446f19bf13c0bf27d225f5c67c">More...</a><br /></td></tr>
 <tr class="separator:aa1eb72446f19bf13c0bf27d225f5c67c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -208,6 +212,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>element typedef </p>
+<p>basic STL vector typedefs </p>
 
 </div>
 </div>
@@ -760,6 +765,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>true, if the memory of the buffer <code>m_ptr</code> is owned by this class and has to be freed again in the destructor </p>
+
 </div>
 </div>
 <a class="anchor" id="ac19102c330ea8c1a4c44b4567d42820e"></a>
@@ -779,6 +786,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>current byte position of the cursor </p>
 
 </div>
 </div>
@@ -800,6 +809,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>pointer to buffer </p>
+
 </div>
 </div>
 <a class="anchor" id="ac40c02c0f137e056a165e7a6b210ebbf"></a>
@@ -820,6 +831,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>allocation size in bytes of this buffer </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -829,7 +842,7 @@ Private Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 4 2014 16:48:29 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 20:58:13 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

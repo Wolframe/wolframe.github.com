@@ -117,11 +117,13 @@ Public Types</h2></td></tr>
 <a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#ad44a35a81bd282a6fd269e3e58fcdc93acbf871b7cebcff98ed7330adbc8dd552">Struct</a>, 
 <a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#ad44a35a81bd282a6fd269e3e58fcdc93ac4e7990e91154ab08c4239cc8344ed9c">Vector</a>
  }</td></tr>
+<tr class="memdesc:ad44a35a81bd282a6fd269e3e58fcdc93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of a structure element.  <a href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#ad44a35a81bd282a6fd269e3e58fcdc93">More...</a><br /></td></tr>
 <tr class="separator:ad44a35a81bd282a6fd269e3e58fcdc93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a3e2910b5367893fbe92dac03018db4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a4a3e2910b5367893fbe92dac03018db4">ElementRequirement</a> { <a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a4a3e2910b5367893fbe92dac03018db4ae0d9c4f2b11f51c96558241163cc3fd6">NoRequirement</a>, 
 <a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a4a3e2910b5367893fbe92dac03018db4ab8c6d50534cf4b244ffa9bf470f80134">Mandatory</a>, 
 <a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a4a3e2910b5367893fbe92dac03018db4a7aad213b15084ba0e8147292775d2139">Optional</a>
  }</td></tr>
+<tr class="memdesc:a4a3e2910b5367893fbe92dac03018db4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraints definition of a structure element.  <a href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a4a3e2910b5367893fbe92dac03018db4">More...</a><br /></td></tr>
 <tr class="separator:a4a3e2910b5367893fbe92dac03018db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c034af01d0376e178580c0bf0fde026"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; std::pair<br class="typebreak" />
 &lt; std::string, <br class="typebreak" />
@@ -139,43 +141,61 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a302ed56aa17abab78bbf100d909634fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#aa8a2f138698f5e61200ae536fe88a38d">Parse</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a302ed56aa17abab78bbf100d909634fd">parse</a> () const </td></tr>
+<tr class="memdesc:a302ed56aa17abab78bbf100d909634fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non intrusive parser call function of this sructure.  <a href="#a302ed56aa17abab78bbf100d909634fd">More...</a><br /></td></tr>
 <tr class="separator:a302ed56aa17abab78bbf100d909634fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae589d56a2437eed708bf4ab85db2e4ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a6a49cadc17c521cfdb6aa50d77094fc9">Fetch</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#ae589d56a2437eed708bf4ab85db2e4ee">fetch</a> () const </td></tr>
+<tr class="memdesc:ae589d56a2437eed708bf4ab85db2e4ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non intrusive serializer call (fetch the next element) function of this sructure.  <a href="#ae589d56a2437eed708bf4ab85db2e4ee">More...</a><br /></td></tr>
 <tr class="separator:ae589d56a2437eed708bf4ab85db2e4ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea47797cdbc6431a5828a2a16baed37a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#aea47797cdbc6431a5828a2a16baed37a">StructDescriptionBase</a> (<a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#abd7034ea90b130033f13bfcbbe86e140">Constructor</a> c, <a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#ac37a9b1dbc094fb73ccae6e4ac874251">Destructor</a> d, const char *tn, std::size_t os, std::size_t sz, <a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#ad44a35a81bd282a6fd269e3e58fcdc93">ElementType</a> t, <a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#aa8a2f138698f5e61200ae536fe88a38d">Parse</a> pa, <a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a6a49cadc17c521cfdb6aa50d77094fc9">Fetch</a> pr, <a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a4a3e2910b5367893fbe92dac03018db4">ElementRequirement</a> req_)</td></tr>
+<tr class="memdesc:aea47797cdbc6431a5828a2a16baed37a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#aea47797cdbc6431a5828a2a16baed37a">More...</a><br /></td></tr>
 <tr class="separator:aea47797cdbc6431a5828a2a16baed37a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a84d80849f36928ae56613a756bfd6e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a7a84d80849f36928ae56613a756bfd6e">StructDescriptionBase</a> (const char *tn, std::size_t os, std::size_t sz, <a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#ad44a35a81bd282a6fd269e3e58fcdc93">ElementType</a> t, <a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#aa8a2f138698f5e61200ae536fe88a38d">Parse</a> pa, <a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a6a49cadc17c521cfdb6aa50d77094fc9">Fetch</a> pr, <a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a4a3e2910b5367893fbe92dac03018db4">ElementRequirement</a> req_)</td></tr>
+<tr class="memdesc:a7a84d80849f36928ae56613a756bfd6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a7a84d80849f36928ae56613a756bfd6e">More...</a><br /></td></tr>
 <tr class="separator:a7a84d80849f36928ae56613a756bfd6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f3b9c957051c1394eb9ecd6b8ab5085"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a4f3b9c957051c1394eb9ecd6b8ab5085">StructDescriptionBase</a> (const <a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html">StructDescriptionBase</a> &amp;o)</td></tr>
+<tr class="memdesc:a4f3b9c957051c1394eb9ecd6b8ab5085"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="#a4f3b9c957051c1394eb9ecd6b8ab5085">More...</a><br /></td></tr>
 <tr class="separator:a4f3b9c957051c1394eb9ecd6b8ab5085"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d4a7c5a81b3ee1a49fe95dbb05db669"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a1d4a7c5a81b3ee1a49fe95dbb05db669">StructDescriptionBase</a> ()</td></tr>
+<tr class="memdesc:a1d4a7c5a81b3ee1a49fe95dbb05db669"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a1d4a7c5a81b3ee1a49fe95dbb05db669">More...</a><br /></td></tr>
 <tr class="separator:a1d4a7c5a81b3ee1a49fe95dbb05db669"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e9525b226bc330aca95a618cdfccdb4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a6e9525b226bc330aca95a618cdfccdb4">parse</a> (void *obj, <a class="el" href="class__Wolframe_1_1langbind_1_1TypedInputFilter.html">langbind::TypedInputFilter</a> &amp;in, <a class="el" href="class__Wolframe_1_1serialize_1_1Context.html">Context</a> &amp;ctx, <a class="el" href="class__Wolframe_1_1serialize_1_1ParseStateStack.html">ParseStateStack</a> &amp;stk) const </td></tr>
+<tr class="memdesc:a6e9525b226bc330aca95a618cdfccdb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call of parser of the serialization passed to fill an object and validate the serialization sequence.  <a href="#a6e9525b226bc330aca95a618cdfccdb4">More...</a><br /></td></tr>
 <tr class="separator:a6e9525b226bc330aca95a618cdfccdb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab471608d3d72dc245ac1ea239ef70002"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#ab471608d3d72dc245ac1ea239ef70002">setAtomicValue</a> (void *obj, std::size_t idx, const std::string &amp;value) const </td></tr>
 <tr class="memdesc:ab471608d3d72dc245ac1ea239ef70002"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes an atomic element in a structure.  <a href="#ab471608d3d72dc245ac1ea239ef70002">More...</a><br /></td></tr>
 <tr class="separator:ab471608d3d72dc245ac1ea239ef70002"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ba18217079aebe1bb9862315800a39a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a7ba18217079aebe1bb9862315800a39a">init</a> (void *obj) const </td></tr>
+<tr class="memdesc:a7ba18217079aebe1bb9862315800a39a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the structure referenced with 'obj'.  <a href="#a7ba18217079aebe1bb9862315800a39a">More...</a><br /></td></tr>
 <tr class="separator:a7ba18217079aebe1bb9862315800a39a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab057b98e1e6a3283cca31bcf0ec3257a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#ab057b98e1e6a3283cca31bcf0ec3257a">done</a> (void *obj) const </td></tr>
+<tr class="memdesc:ab057b98e1e6a3283cca31bcf0ec3257a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the structure referenced with 'obj'.  <a href="#ab057b98e1e6a3283cca31bcf0ec3257a">More...</a><br /></td></tr>
 <tr class="separator:ab057b98e1e6a3283cca31bcf0ec3257a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a611c50a924e20cb36ff8be59ab5c220a"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a611c50a924e20cb36ff8be59ab5c220a">size</a> () const </td></tr>
+<tr class="memdesc:a611c50a924e20cb36ff8be59ab5c220a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the allocation size of this structure in bytes.  <a href="#a611c50a924e20cb36ff8be59ab5c220a">More...</a><br /></td></tr>
 <tr class="separator:a611c50a924e20cb36ff8be59ab5c220a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ba745d955b48830459e92afc81a89b3"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a9ba745d955b48830459e92afc81a89b3">ofs</a> () const </td></tr>
+<tr class="memdesc:a9ba745d955b48830459e92afc81a89b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the offset of this structure inside the holding parent structure.  <a href="#a9ba745d955b48830459e92afc81a89b3">More...</a><br /></td></tr>
 <tr class="separator:a9ba745d955b48830459e92afc81a89b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b7845bde4d1176b9f002621a7be376c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#ad44a35a81bd282a6fd269e3e58fcdc93">ElementType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a8b7845bde4d1176b9f002621a7be376c">type</a> () const </td></tr>
+<tr class="memdesc:a8b7845bde4d1176b9f002621a7be376c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the element kind (type of access) of this structure or atomic element.  <a href="#a8b7845bde4d1176b9f002621a7be376c">More...</a><br /></td></tr>
 <tr class="separator:a8b7845bde4d1176b9f002621a7be376c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cc080f97a7a205936eab530d5852fcd"><td class="memItemLeft" align="right" valign="top">Map::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a5cc080f97a7a205936eab530d5852fcd">find</a> (const std::string &amp;name) const </td></tr>
+<tr class="memdesc:a5cc080f97a7a205936eab530d5852fcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find an element in this structure by name.  <a href="#a5cc080f97a7a205936eab530d5852fcd">More...</a><br /></td></tr>
 <tr class="separator:a5cc080f97a7a205936eab530d5852fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37aa5f5fd7c5c02f086653f5a5f8d4a3"><td class="memItemLeft" align="right" valign="top">Map::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a37aa5f5fd7c5c02f086653f5a5f8d4a3">find_cis</a> (const std::string &amp;name) const </td></tr>
+<tr class="memdesc:a37aa5f5fd7c5c02f086653f5a5f8d4a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Case insensitive find an element in this structure by name.  <a href="#a37aa5f5fd7c5c02f086653f5a5f8d4a3">More...</a><br /></td></tr>
 <tr class="separator:a37aa5f5fd7c5c02f086653f5a5f8d4a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d8becd0f1d7a4bba77287939fc5532f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a9d8becd0f1d7a4bba77287939fc5532f">names</a> (const char *sep) const </td></tr>
+<tr class="memdesc:a9d8becd0f1d7a4bba77287939fc5532f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the element names of this structure as string for error messages.  <a href="#a9d8becd0f1d7a4bba77287939fc5532f">More...</a><br /></td></tr>
 <tr class="separator:a9d8becd0f1d7a4bba77287939fc5532f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a766b544fc3583a815eb520fcc493ec9f"><td class="memItemLeft" align="right" valign="top">Map::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a766b544fc3583a815eb520fcc493ec9f">begin</a> () const </td></tr>
+<tr class="memdesc:a766b544fc3583a815eb520fcc493ec9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the start iterator on the elements of this structure.  <a href="#a766b544fc3583a815eb520fcc493ec9f">More...</a><br /></td></tr>
 <tr class="separator:a766b544fc3583a815eb520fcc493ec9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e07cf5112f86df081c49df0988f7707"><td class="memItemLeft" align="right" valign="top">Map::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a9e07cf5112f86df081c49df0988f7707">end</a> () const </td></tr>
+<tr class="memdesc:a9e07cf5112f86df081c49df0988f7707"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the end iterator on the elements of this structure.  <a href="#a9e07cf5112f86df081c49df0988f7707">More...</a><br /></td></tr>
 <tr class="separator:a9e07cf5112f86df081c49df0988f7707"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f6278fd227511bb127f42fe1bc18326"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a1f6278fd227511bb127f42fe1bc18326">define</a> (const std::string &amp;name, const <a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html">StructDescriptionBase</a> &amp;dd)</td></tr>
+<tr class="memdesc:a1f6278fd227511bb127f42fe1bc18326"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define an element of this structure.  <a href="#a1f6278fd227511bb127f42fe1bc18326">More...</a><br /></td></tr>
 <tr class="separator:a1f6278fd227511bb127f42fe1bc18326"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a51400c71c540b2b999a38ce4d4e688"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a1a51400c71c540b2b999a38ce4d4e688">nof_attributes</a> () const </td></tr>
 <tr class="memdesc:a1a51400c71c540b2b999a38ce4d4e688"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of attributes of a struct.  <a href="#a1a51400c71c540b2b999a38ce4d4e688">More...</a><br /></td></tr>
@@ -187,6 +207,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a2d38c4b9370480d2021b62059da27444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of elements in the structure or array.  <a href="#a2d38c4b9370480d2021b62059da27444">More...</a><br /></td></tr>
 <tr class="separator:a2d38c4b9370480d2021b62059da27444"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb82414c5df8f0550d7853b237928362"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#acb82414c5df8f0550d7853b237928362">typeName</a> () const </td></tr>
+<tr class="memdesc:acb82414c5df8f0550d7853b237928362"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the type name of this structure.  <a href="#acb82414c5df8f0550d7853b237928362">More...</a><br /></td></tr>
 <tr class="separator:acb82414c5df8f0550d7853b237928362"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d573f73bfa9a21aec7c66404fa69071"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a0d573f73bfa9a21aec7c66404fa69071">mandatory</a> () const </td></tr>
 <tr class="memdesc:a0d573f73bfa9a21aec7c66404fa69071"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find out if the element in the structure is mandatory.  <a href="#a0d573f73bfa9a21aec7c66404fa69071">More...</a><br /></td></tr>
@@ -301,12 +322,17 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Constraints definition of a structure element. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a4a3e2910b5367893fbe92dac03018db4ae0d9c4f2b11f51c96558241163cc3fd6"></a>NoRequirement&#160;</td><td class="fielddoc">
+<p>no explicit condition </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a4a3e2910b5367893fbe92dac03018db4ab8c6d50534cf4b244ffa9bf470f80134"></a>Mandatory&#160;</td><td class="fielddoc">
+<p>element is always mandatory, even if structure is filled and validated in "relaxed" mode </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a4a3e2910b5367893fbe92dac03018db4a7aad213b15084ba0e8147292775d2139"></a>Optional&#160;</td><td class="fielddoc">
+<p>element is always optional, even if structure is filled and validated in "strict" mode </p>
 </td></tr>
 </table>
 
@@ -321,12 +347,17 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Type of a structure element. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ad44a35a81bd282a6fd269e3e58fcdc93a175dfbdb3e881b1b300440490ef1e38c"></a>Atomic&#160;</td><td class="fielddoc">
+<p>Atomic element type. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ad44a35a81bd282a6fd269e3e58fcdc93acbf871b7cebcff98ed7330adbc8dd552"></a>Struct&#160;</td><td class="fielddoc">
+<p>Structure with fixed number of named elements. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ad44a35a81bd282a6fd269e3e58fcdc93ac4e7990e91154ab08c4239cc8344ed9c"></a>Vector&#160;</td><td class="fielddoc">
+<p>Array of structures or atomic values. </p>
 </td></tr>
 </table>
 
@@ -399,6 +430,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Constructor. </p>
+
 </div>
 </div>
 <a class="anchor" id="a7a84d80849f36928ae56613a756bfd6e"></a>
@@ -455,6 +488,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Constructor. </p>
+
 </div>
 </div>
 <a class="anchor" id="a4f3b9c957051c1394eb9ecd6b8ab5085"></a>
@@ -471,6 +506,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Copy constructor. </p>
+
 </div>
 </div>
 <a class="anchor" id="a1d4a7c5a81b3ee1a49fe95dbb05db669"></a>
@@ -485,6 +522,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Default constructor. </p>
 
 </div>
 </div>
@@ -509,6 +548,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Get the start iterator on the elements of this structure. </p>
 
 </div>
 </div>
@@ -543,6 +584,9 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Define an element of this structure. </p>
+<dl class="section remark"><dt>Remarks</dt><dd>Does not check for duplicate definitions </dd></dl>
 
 </div>
 </div>
@@ -595,6 +639,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Destroy the structure referenced with 'obj'. </p>
+
 </div>
 </div>
 <a class="anchor" id="a9e07cf5112f86df081c49df0988f7707"></a>
@@ -617,6 +663,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Get the end iterator on the elements of this structure. </p>
 
 </div>
 </div>
@@ -641,6 +689,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Non intrusive serializer call (fetch the next element) function of this sructure. </p>
+
 </div>
 </div>
 <a class="anchor" id="a5cc080f97a7a205936eab530d5852fcd"></a>
@@ -657,6 +707,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Find an element in this structure by name. </p>
+
 </div>
 </div>
 <a class="anchor" id="a37aa5f5fd7c5c02f086653f5a5f8d4a3"></a>
@@ -672,6 +724,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Case insensitive find an element in this structure by name. </p>
 
 </div>
 </div>
@@ -696,6 +750,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Initialize the structure referenced with 'obj'. </p>
 
 </div>
 </div>
@@ -761,6 +817,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Return the element names of this structure as string for error messages. </p>
 
 </div>
 </div>
@@ -838,6 +896,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Get the offset of this structure inside the holding parent structure. </p>
+
 </div>
 </div>
 <a class="anchor" id="a300cdc9c82ea17adf244144941221143"></a>
@@ -887,6 +947,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Non intrusive parser call function of this sructure. </p>
+
 </div>
 </div>
 <a class="anchor" id="a6e9525b226bc330aca95a618cdfccdb4"></a>
@@ -924,6 +986,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Call of parser of the serialization passed to fill an object and validate the serialization sequence. </p>
 
 </div>
 </div>
@@ -1009,6 +1073,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Get the allocation size of this structure in bytes. </p>
+
 </div>
 </div>
 <a class="anchor" id="a8b7845bde4d1176b9f002621a7be376c"></a>
@@ -1032,6 +1098,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Get the element kind (type of access) of this structure or atomic element. </p>
+
 </div>
 </div>
 <a class="anchor" id="acb82414c5df8f0550d7853b237928362"></a>
@@ -1054,6 +1122,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Get the type name of this structure. </p>
 
 </div>
 </div>
@@ -1285,7 +1355,7 @@ Private Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 4 2014 16:48:30 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 20:58:14 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

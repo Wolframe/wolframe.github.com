@@ -104,7 +104,7 @@ Inheritance diagram for _Wolframe::proc::ProcessorProviderInterface:</div>
  <div class="center">
   <img src="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.png" usemap="#_Wolframe::proc::ProcessorProviderInterface_map" alt=""/>
   <map id="_Wolframe::proc::ProcessorProviderInterface_map" name="_Wolframe::proc::ProcessorProviderInterface_map">
-<area href="class__Wolframe_1_1proc_1_1ProcessorProvider.html" title="Processor provider. " alt="_Wolframe::proc::ProcessorProvider" shape="rect" coords="0,56,267,80"/>
+<area href="class__Wolframe_1_1proc_1_1ProcessorProvider.html" title="Processor provider, the class that provides access to configured global objects to processors..." alt="_Wolframe::proc::ProcessorProvider" shape="rect" coords="0,56,267,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -113,9 +113,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5d101851f0ca5de65d8251d216d132de"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#a5d101851f0ca5de65d8251d216d132de">~ProcessorProviderInterface</a> ()</td></tr>
 <tr class="memdesc:a5d101851f0ca5de65d8251d216d132de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a5d101851f0ca5de65d8251d216d132de">More...</a><br /></td></tr>
 <tr class="separator:a5d101851f0ca5de65d8251d216d132de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb75cf79e14cea1981c740677a9c6b58"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html">cmdbind::CommandHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#aeb75cf79e14cea1981c740677a9c6b58">cmdhandler</a> (const std::string &amp;command) const =0</td></tr>
-<tr class="memdesc:aeb75cf79e14cea1981c740677a9c6b58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the command handler for a specific command.  <a href="#aeb75cf79e14cea1981c740677a9c6b58">More...</a><br /></td></tr>
-<tr class="separator:aeb75cf79e14cea1981c740677a9c6b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af921228307ece2bfd6c6ee369d2bc1e5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html">cmdbind::CommandHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#af921228307ece2bfd6c6ee369d2bc1e5">cmdhandler</a> (const std::string &amp;command, const std::string &amp;docformat) const =0</td></tr>
+<tr class="memdesc:af921228307ece2bfd6c6ee369d2bc1e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a command handler for a specific command and doc format.  <a href="#af921228307ece2bfd6c6ee369d2bc1e5">More...</a><br /></td></tr>
+<tr class="separator:af921228307ece2bfd6c6ee369d2bc1e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bc5c529300483bd311930aa9d5114d7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#a4bc5c529300483bd311930aa9d5114d7">existcmd</a> (const std::string &amp;command) const =0</td></tr>
+<tr class="memdesc:a4bc5c529300483bd311930aa9d5114d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find out if there exists a command handler for a specific command without creating it.  <a href="#a4bc5c529300483bd311930aa9d5114d7">More...</a><br /></td></tr>
+<tr class="separator:a4bc5c529300483bd311930aa9d5114d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a474707e221de6e81a98b5c7016774098"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class__Wolframe_1_1db_1_1Database.html">db::Database</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#a474707e221de6e81a98b5c7016774098">transactionDatabase</a> () const =0</td></tr>
 <tr class="memdesc:a474707e221de6e81a98b5c7016774098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the database for transactions.  <a href="#a474707e221de6e81a98b5c7016774098">More...</a><br /></td></tr>
 <tr class="separator:a474707e221de6e81a98b5c7016774098"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,16 +141,17 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="class__Wolframe_1_1types_1_1FormDescription.html">types::FormDescription</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#a64a74e99ca0945d1b2de3c07c896163c">formDescription</a> (const std::string &amp;name) const =0</td></tr>
 <tr class="memdesc:a64a74e99ca0945d1b2de3c07c896163c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a form description.  <a href="#a64a74e99ca0945d1b2de3c07c896163c">More...</a><br /></td></tr>
 <tr class="separator:a64a74e99ca0945d1b2de3c07c896163c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19f6799d8d7bffdf8dd28d431609ce38"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class__Wolframe_1_1langbind_1_1Filter.html">langbind::Filter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#a19f6799d8d7bffdf8dd28d431609ce38">filter</a> (const std::string &amp;name, const std::vector&lt; <a class="el" href="namespace__Wolframe_1_1langbind.html#a05a35c93c7da1ce63b6e929a6c22184f">langbind::FilterArgument</a> &gt; &amp;arg=std::vector&lt; <a class="el" href="namespace__Wolframe_1_1langbind.html#a05a35c93c7da1ce63b6e929a6c22184f">langbind::FilterArgument</a> &gt;()) const =0</td></tr>
-<tr class="memdesc:a19f6799d8d7bffdf8dd28d431609ce38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a filter.  <a href="#a19f6799d8d7bffdf8dd28d431609ce38">More...</a><br /></td></tr>
-<tr class="separator:a19f6799d8d7bffdf8dd28d431609ce38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cca27e0ed64e7880b6b4e08a8c45f6e"><td class="memItemLeft" align="right" valign="top">virtual const <br class="typebreak" />
+<a class="el" href="class__Wolframe_1_1langbind_1_1FilterType.html">langbind::FilterType</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#a5cca27e0ed64e7880b6b4e08a8c45f6e">filterType</a> (const std::string &amp;name) const =0</td></tr>
+<tr class="memdesc:a5cca27e0ed64e7880b6b4e08a8c45f6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a filter type.  <a href="#a5cca27e0ed64e7880b6b4e08a8c45f6e">More...</a><br /></td></tr>
+<tr class="separator:a5cca27e0ed64e7880b6b4e08a8c45f6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5077e69d22f108014336df2ae5cef0fb"><td class="memItemLeft" align="right" valign="top">virtual const <br class="typebreak" />
 <a class="el" href="class__Wolframe_1_1types_1_1CustomDataType.html">types::CustomDataType</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#a5077e69d22f108014336df2ae5cef0fb">customDataType</a> (const std::string &amp;name) const =0</td></tr>
 <tr class="memdesc:a5077e69d22f108014336df2ae5cef0fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a custom data type.  <a href="#a5077e69d22f108014336df2ae5cef0fb">More...</a><br /></td></tr>
 <tr class="separator:a5077e69d22f108014336df2ae5cef0fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e589b62f2ac9a600852236202430d08"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#a8e589b62f2ac9a600852236202430d08">guessDocumentFormat</a> (std::string &amp;result, const char *content, std::size_t contentsize) const =0</td></tr>
-<tr class="memdesc:a8e589b62f2ac9a600852236202430d08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Guess document format ('XML','JSON', etc. based on guesser modules loaded)  <a href="#a8e589b62f2ac9a600852236202430d08">More...</a><br /></td></tr>
-<tr class="separator:a8e589b62f2ac9a600852236202430d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1cbb4e15fa3b567f8e100948367e710"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class__Wolframe_1_1cmdbind_1_1DoctypeDetector.html">cmdbind::DoctypeDetector</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#af1cbb4e15fa3b567f8e100948367e710">doctypeDetector</a> () const =0</td></tr>
+<tr class="memdesc:af1cbb4e15fa3b567f8e100948367e710"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new document type and format detector (defined in modules)  <a href="#af1cbb4e15fa3b567f8e100948367e710">More...</a><br /></td></tr>
+<tr class="separator:af1cbb4e15fa3b567f8e100948367e710"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8788abb10c8c06068b9662f88b43e786"><td class="memItemLeft" align="right" valign="top">virtual const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#a8788abb10c8c06068b9662f88b43e786">referencePath</a> () const =0</td></tr>
 <tr class="memdesc:a8788abb10c8c06068b9662f88b43e786"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the application configuration reference path.  <a href="#a8788abb10c8c06068b9662f88b43e786">More...</a><br /></td></tr>
 <tr class="separator:a8788abb10c8c06068b9662f88b43e786"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,7 +185,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aeb75cf79e14cea1981c740677a9c6b58"></a>
+<a class="anchor" id="af921228307ece2bfd6c6ee369d2bc1e5"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -192,8 +196,18 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual <a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html">cmdbind::CommandHandler</a>* _Wolframe::proc::ProcessorProviderInterface::cmdhandler </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>command</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramname"><em>command</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>docformat</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -203,15 +217,17 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the command handler for a specific command. </p>
+<p>Create a command handler for a specific command and doc format. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">command</td><td>name of the command </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">docformat</td><td>document format, e.g. "XML","JSON" </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>the constructed command handler (owned now by the caller) </dd></dl>
 
-<p>Implemented in <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#a1bd04514a7408724c008df89fd4467db">_Wolframe::proc::ProcessorProvider</a>.</p>
+<p>Implemented in <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#a32a3d1f8c40a1af2620e315d7a353ee7">_Wolframe::proc::ProcessorProvider</a>.</p>
 
 </div>
 </div>
@@ -250,7 +266,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a19f6799d8d7bffdf8dd28d431609ce38"></a>
+<a class="anchor" id="af1cbb4e15fa3b567f8e100948367e710"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -258,21 +274,10 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="class__Wolframe_1_1langbind_1_1Filter.html">langbind::Filter</a>* _Wolframe::proc::ProcessorProviderInterface::filter </td>
+          <td class="memname">virtual <a class="el" href="class__Wolframe_1_1cmdbind_1_1DoctypeDetector.html">cmdbind::DoctypeDetector</a>* _Wolframe::proc::ProcessorProviderInterface::doctypeDetector </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="namespace__Wolframe_1_1langbind.html#a05a35c93c7da1ce63b6e929a6c22184f">langbind::FilterArgument</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>arg</em> = <code>std::vector&lt;&#160;<a class="el" href="namespace__Wolframe_1_1langbind.html#a05a35c93c7da1ce63b6e929a6c22184f">langbind::FilterArgument</a>&#160;&gt;()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -282,17 +287,80 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get a filter. </p>
+<p>Create a new document type and format detector (defined in modules) </p>
+<dl class="section return"><dt>Returns</dt><dd>a document type and format detector reference allocated (owned and deleted by the caller) </dd></dl>
+
+<p>Implemented in <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#a80eded8af49f6c3394f983808fce1b66">_Wolframe::proc::ProcessorProvider</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4bc5c529300483bd311930aa9d5114d7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool _Wolframe::proc::ProcessorProviderInterface::existcmd </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>command</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Find out if there exists a command handler for a specific command without creating it. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>name of the filter </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">arg</td><td>initializer arguments for the filter instance </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">command</td><td>name of the command </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>allocated filter instance now owned by the caller and to destroy by the caller with delete </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true, if yes </dd></dl>
 
-<p>Implemented in <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#a4abab0e847f89d1d69738c11629ac022">_Wolframe::proc::ProcessorProvider</a>.</p>
+<p>Implemented in <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#a63acc54788598da4455a10fa0e129f5c">_Wolframe::proc::ProcessorProvider</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5cca27e0ed64e7880b6b4e08a8c45f6e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const <a class="el" href="class__Wolframe_1_1langbind_1_1FilterType.html">langbind::FilterType</a>* _Wolframe::proc::ProcessorProviderInterface::filterType </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a filter type. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>name of the filter </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>constant filter reference </dd></dl>
+
+<p>Implemented in <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#a65b0db7de1ef40776264fcf86bb6bb7d">_Wolframe::proc::ProcessorProvider</a>.</p>
 
 </div>
 </div>
@@ -363,59 +431,6 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>reference to the function </dd></dl>
 
 <p>Implemented in <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#abd9c613ae2bff733d1b45800662c0dbd">_Wolframe::proc::ProcessorProvider</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a8e589b62f2ac9a600852236202430d08"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool _Wolframe::proc::ProcessorProviderInterface::guessDocumentFormat </td>
-          <td>(</td>
-          <td class="paramtype">std::string &amp;&#160;</td>
-          <td class="paramname"><em>result</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>content</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>contentsize</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Guess document format ('XML','JSON', etc. based on guesser modules loaded) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">content</td><td>pointer to document </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">contentsize</td><td>size of content in bytes </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>document format as string </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true, if decision was possible, false, if more data is needed </dd></dl>
-
-<p>Implemented in <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#a6235b74a7a6105812e04837465b4e289">_Wolframe::proc::ProcessorProvider</a>.</p>
 
 </div>
 </div>
@@ -587,7 +602,7 @@ Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 4 2014 16:48:28 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 20:58:12 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

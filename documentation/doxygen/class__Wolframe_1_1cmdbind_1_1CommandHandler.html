@@ -90,6 +90,7 @@
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class__Wolframe_1_1cmdbind_1_1CommandHandler-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">_Wolframe::cmdbind::CommandHandler Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -106,15 +107,11 @@ Inheritance diagram for _Wolframe::cmdbind::CommandHandler:</div>
  <div class="center">
   <img src="class__Wolframe_1_1cmdbind_1_1CommandHandler.png" usemap="#_Wolframe::cmdbind::CommandHandler_map" alt=""/>
   <map id="_Wolframe::cmdbind::CommandHandler_map" name="_Wolframe::cmdbind::CommandHandler_map">
-<area href="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html" title="Command handler for the sub protocol for authentication. " alt="_Wolframe::cmdbind::AuthCommandHandler" shape="rect" coords="0,56,475,80"/>
-<area href="class__Wolframe_1_1cmdbind_1_1ContentBufferCommandHandlerEscDLF.html" title="Command handler base class for handlers buffering the input processed. " alt="_Wolframe::cmdbind::ContentBufferCommandHandlerEscDLF" shape="rect" coords="485,56,960,80"/>
-<area href="class__Wolframe_1_1cmdbind_1_1DoctypeFilterCommandHandler.html" title="Command handler for exctracting the document type identifier from a content. " alt="_Wolframe::cmdbind::DoctypeFilterCommandHandler" shape="rect" coords="970,56,1445,80"/>
-<area href="class__Wolframe_1_1cmdbind_1_1ExecCommandHandler.html" title="Command handler for a list of predefined protocol commands. Represents one state in the protocol stat..." alt="_Wolframe::cmdbind::ExecCommandHandler" shape="rect" coords="1455,56,1930,80"/>
-<area href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html" title="Abstract class for command handler processing filter input/output. " alt="_Wolframe::cmdbind::IOFilterCommandHandler" shape="rect" coords="1940,56,2415,80"/>
-<area href="class__Wolframe_1_1cmdbind_1_1LineCommandHandler.html" alt="_Wolframe::cmdbind::LineCommandHandler" shape="rect" coords="2425,56,2900,80"/>
-<area href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html" title="Command handler processing filter input/output with end of content marked as Dot (&#39;.&#39;) LF or Dot CR LF. " alt="_Wolframe::cmdbind::IOFilterCommandHandlerEscDLF" shape="rect" coords="1940,112,2415,136"/>
-<area href="struct__Wolframe_1_1cmdbind_1_1LineCommandHandlerTemplate.html" title="Defines some template based extensions to line command handler. " alt="_Wolframe::cmdbind::LineCommandHandlerTemplate&lt; LineCommandHandlerImpl &gt;" shape="rect" coords="2425,112,2900,136"/>
-<area href="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF.html" title="Command handler that does nothing but seek for the end of content marker. Used to delegate protocol i..." alt="_Wolframe::cmdbind::DiscardInputCommandHandlerEscDLF" shape="rect" coords="1940,168,2415,192"/>
+<area href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html" title="Abstract class for command handler processing filter input/output. " alt="_Wolframe::cmdbind::IOFilterCommandHandler" shape="rect" coords="0,56,475,80"/>
+<area href="class__Wolframe_1_1cmdbind_1_1LineCommandHandler.html" alt="_Wolframe::cmdbind::LineCommandHandler" shape="rect" coords="485,56,960,80"/>
+<area href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html" title="Command handler processing filter input/output with end of content marked as Dot (&#39;.&#39;) LF or Dot CR LF. " alt="_Wolframe::cmdbind::IOFilterCommandHandlerEscDLF" shape="rect" coords="0,112,475,136"/>
+<area href="struct__Wolframe_1_1cmdbind_1_1LineCommandHandlerTemplate.html" title="Defines some template based extensions to line command handler. " alt="_Wolframe::cmdbind::LineCommandHandlerTemplate&lt; LineCommandHandlerImpl &gt;" shape="rect" coords="485,112,960,136"/>
+<area href="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF.html" title="Command handler that does nothing but seek for the end of content marker. Used to delegate protocol i..." alt="_Wolframe::cmdbind::DiscardInputCommandHandlerEscDLF" shape="rect" coords="0,168,475,192"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -157,8 +154,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a1fd9d98e772104ce2b96d2972725cf80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the data left unprocessed after close. The data belongs to the caller to process.  <a href="#a1fd9d98e772104ce2b96d2972725cf80">More...</a><br /></td></tr>
 <tr class="separator:a1fd9d98e772104ce2b96d2972725cf80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adad840aa8a67adc4b18a4467778a80bb"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#adad840aa8a67adc4b18a4467778a80bb">lastError</a> () const </td></tr>
-<tr class="memdesc:adad840aa8a67adc4b18a4467778a80bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the error code of command execution to be returned to the client.  <a href="#adad840aa8a67adc4b18a4467778a80bb">More...</a><br /></td></tr>
+<tr class="memdesc:adad840aa8a67adc4b18a4467778a80bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the last error message of command execution to be returned to the client.  <a href="#adad840aa8a67adc4b18a4467778a80bb">More...</a><br /></td></tr>
 <tr class="separator:adad840aa8a67adc4b18a4467778a80bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90c6a8e6efde45becb01c101730f6868"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a90c6a8e6efde45becb01c101730f6868">setLastError</a> (const std::string &amp;msg)</td></tr>
+<tr class="memdesc:a90c6a8e6efde45becb01c101730f6868"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the last error message of command execution to be returned to the client.  <a href="#a90c6a8e6efde45becb01c101730f6868">More...</a><br /></td></tr>
+<tr class="separator:a90c6a8e6efde45becb01c101730f6868"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7abb118a267ecdb3b3fd2723573b085b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a7abb118a267ecdb3b3fd2723573b085b">setExecContext</a> (<a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html">proc::ExecContext</a> *c)</td></tr>
 <tr class="memdesc:a7abb118a267ecdb3b3fd2723573b085b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass the reference to the execution context to the command handler.  <a href="#a7abb118a267ecdb3b3fd2723573b085b">More...</a><br /></td></tr>
 <tr class="separator:a7abb118a267ecdb3b3fd2723573b085b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,12 +174,15 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a9ffa4a3a898d6a41274d202c86b20f03"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a9ffa4a3a898d6a41274d202c86b20f03">m_lastError</a></td></tr>
-<tr class="separator:a9ffa4a3a898d6a41274d202c86b20f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cd91f2c4234298b9e70f60fc62eb89f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a8cd91f2c4234298b9e70f60fc62eb89f">m_name</a></td></tr>
 <tr class="separator:a8cd91f2c4234298b9e70f60fc62eb89f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a712d5654687812e89948d78d60a44fd5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a712d5654687812e89948d78d60a44fd5">m_argBuffer</a></td></tr>
 <tr class="separator:a712d5654687812e89948d78d60a44fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a9ffa4a3a898d6a41274d202c86b20f03"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a9ffa4a3a898d6a41274d202c86b20f03">m_lastError</a></td></tr>
+<tr class="separator:a9ffa4a3a898d6a41274d202c86b20f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e2485fab70c28dd5647fdb0b619846d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html">proc::ExecContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a5e2485fab70c28dd5647fdb0b619846d">m_execContext</a></td></tr>
 <tr class="separator:a5e2485fab70c28dd5647fdb0b619846d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -330,7 +333,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class__Wolframe_1_1cmdbind_1_1LineCommandHandler.html#aeba6a857c66a8b09a00218ca5da833a1">_Wolframe::cmdbind::LineCommandHandler</a>, <a class="el" href="class__Wolframe_1_1cmdbind_1_1ExecCommandHandler.html#a60badec9d92931a6b5b9a8ec38607f1b">_Wolframe::cmdbind::ExecCommandHandler</a>, <a class="el" href="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a185ba4654944528250c7497326bfa33e">_Wolframe::cmdbind::AuthCommandHandler</a>, <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#af555dbade9a515df2287e1cbf705c67f">_Wolframe::cmdbind::IOFilterCommandHandlerEscDLF</a>, <a class="el" href="class__Wolframe_1_1cmdbind_1_1ContentBufferCommandHandlerEscDLF.html#a2666092c75cee072389b0815764aa66b">_Wolframe::cmdbind::ContentBufferCommandHandlerEscDLF</a>, and <a class="el" href="class__Wolframe_1_1cmdbind_1_1DoctypeFilterCommandHandler.html#a29cafd16ad347e8cd6f79cebf49cf688">_Wolframe::cmdbind::DoctypeFilterCommandHandler</a>.</p>
+<p>Implemented in <a class="el" href="class__Wolframe_1_1cmdbind_1_1LineCommandHandler.html#aeba6a857c66a8b09a00218ca5da833a1">_Wolframe::cmdbind::LineCommandHandler</a>, and <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#af555dbade9a515df2287e1cbf705c67f">_Wolframe::cmdbind::IOFilterCommandHandlerEscDLF</a>.</p>
 
 </div>
 </div>
@@ -375,7 +378,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class__Wolframe_1_1cmdbind_1_1LineCommandHandler.html#a646c1c297f790f4e02fec6baf5a4b763">_Wolframe::cmdbind::LineCommandHandler</a>, <a class="el" href="class__Wolframe_1_1cmdbind_1_1ExecCommandHandler.html#a0f647e4a3eff6ffc8b9cd108a12fd893">_Wolframe::cmdbind::ExecCommandHandler</a>, <a class="el" href="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#ac5c620153d18f9fed900b56596fa4209">_Wolframe::cmdbind::AuthCommandHandler</a>, <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#abf91de1c72415fd3773eddad2ad127ce">_Wolframe::cmdbind::IOFilterCommandHandlerEscDLF</a>, <a class="el" href="class__Wolframe_1_1cmdbind_1_1ContentBufferCommandHandlerEscDLF.html#a98498bd6257d0481702b0bbd9135e9d1">_Wolframe::cmdbind::ContentBufferCommandHandlerEscDLF</a>, and <a class="el" href="class__Wolframe_1_1cmdbind_1_1DoctypeFilterCommandHandler.html#ad540cd1cd78ea11357913d72d6c65916">_Wolframe::cmdbind::DoctypeFilterCommandHandler</a>.</p>
+<p>Implemented in <a class="el" href="class__Wolframe_1_1cmdbind_1_1LineCommandHandler.html#a646c1c297f790f4e02fec6baf5a4b763">_Wolframe::cmdbind::LineCommandHandler</a>, and <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#abf91de1c72415fd3773eddad2ad127ce">_Wolframe::cmdbind::IOFilterCommandHandlerEscDLF</a>.</p>
 
 </div>
 </div>
@@ -420,7 +423,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class__Wolframe_1_1cmdbind_1_1LineCommandHandler.html#aca651324aaae30872547837850777faa">_Wolframe::cmdbind::LineCommandHandler</a>, <a class="el" href="class__Wolframe_1_1cmdbind_1_1ExecCommandHandler.html#a6378e416b90ee2baeee828d0e02c6139">_Wolframe::cmdbind::ExecCommandHandler</a>, <a class="el" href="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a7fa00ff65f13a2d00283089824ff643e">_Wolframe::cmdbind::AuthCommandHandler</a>, <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a6e5acd827ec746af98d988d5b4f25142">_Wolframe::cmdbind::IOFilterCommandHandlerEscDLF</a>, <a class="el" href="class__Wolframe_1_1cmdbind_1_1ContentBufferCommandHandlerEscDLF.html#a462b6b7332a978cafbac14baab6ea653">_Wolframe::cmdbind::ContentBufferCommandHandlerEscDLF</a>, and <a class="el" href="class__Wolframe_1_1cmdbind_1_1DoctypeFilterCommandHandler.html#a39659ab7345c95a0e0aa7c7bea7b3c4d">_Wolframe::cmdbind::DoctypeFilterCommandHandler</a>.</p>
+<p>Implemented in <a class="el" href="class__Wolframe_1_1cmdbind_1_1LineCommandHandler.html#aca651324aaae30872547837850777faa">_Wolframe::cmdbind::LineCommandHandler</a>, and <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a6e5acd827ec746af98d988d5b4f25142">_Wolframe::cmdbind::IOFilterCommandHandlerEscDLF</a>.</p>
 
 </div>
 </div>
@@ -447,7 +450,7 @@ Protected Attributes</h2></td></tr>
 
 <p>get the termination marker to send for an abort of a running data session </p>
 
-<p>Reimplemented in <a class="el" href="class__Wolframe_1_1cmdbind_1_1LineCommandHandler.html#a84437aa2d03187ad7efc2a3efaa8827b">_Wolframe::cmdbind::LineCommandHandler</a>, <a class="el" href="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#ac60f8ee92d957964de4cac824f802499">_Wolframe::cmdbind::AuthCommandHandler</a>, and <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a512380dacf4d5f6fc6c7c45feb31e037">_Wolframe::cmdbind::IOFilterCommandHandlerEscDLF</a>.</p>
+<p>Reimplemented in <a class="el" href="class__Wolframe_1_1cmdbind_1_1LineCommandHandler.html#a84437aa2d03187ad7efc2a3efaa8827b">_Wolframe::cmdbind::LineCommandHandler</a>, and <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a512380dacf4d5f6fc6c7c45feb31e037">_Wolframe::cmdbind::IOFilterCommandHandlerEscDLF</a>.</p>
 
 </div>
 </div>
@@ -472,7 +475,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the error code of command execution to be returned to the client. </p>
+<p>Get the last error message of command execution to be returned to the client. </p>
 
 </div>
 </div>
@@ -500,7 +503,7 @@ Protected Attributes</h2></td></tr>
 <p>Get the next operation to do for the connection handler. </p>
 <dl class="section return"><dt>Returns</dt><dd>the next operation for the connection handler </dd></dl>
 
-<p>Implemented in <a class="el" href="class__Wolframe_1_1cmdbind_1_1LineCommandHandler.html#aad613d9fc7c7e4022d17ef29875c7db8">_Wolframe::cmdbind::LineCommandHandler</a>, <a class="el" href="class__Wolframe_1_1cmdbind_1_1ExecCommandHandler.html#ab8fb819a641c207626425f0887b291c4">_Wolframe::cmdbind::ExecCommandHandler</a>, <a class="el" href="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a89f64e41c20892646c18e04cb0346e81">_Wolframe::cmdbind::AuthCommandHandler</a>, <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a7de43c749ef09bd9ddfa57a9e19665d8">_Wolframe::cmdbind::IOFilterCommandHandlerEscDLF</a>, <a class="el" href="class__Wolframe_1_1cmdbind_1_1ContentBufferCommandHandlerEscDLF.html#ae39f87bff378db22135b396f0f5658a4">_Wolframe::cmdbind::ContentBufferCommandHandlerEscDLF</a>, and <a class="el" href="class__Wolframe_1_1cmdbind_1_1DoctypeFilterCommandHandler.html#a002035763409ed890f53187ec98b9da0">_Wolframe::cmdbind::DoctypeFilterCommandHandler</a>.</p>
+<p>Implemented in <a class="el" href="class__Wolframe_1_1cmdbind_1_1LineCommandHandler.html#aad613d9fc7c7e4022d17ef29875c7db8">_Wolframe::cmdbind::LineCommandHandler</a>, and <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a7de43c749ef09bd9ddfa57a9e19665d8">_Wolframe::cmdbind::IOFilterCommandHandlerEscDLF</a>.</p>
 
 </div>
 </div>
@@ -587,7 +590,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class__Wolframe_1_1cmdbind_1_1LineCommandHandler.html#a864d06222fa26c9ba3339563ba23e60c">_Wolframe::cmdbind::LineCommandHandler</a>, <a class="el" href="class__Wolframe_1_1cmdbind_1_1ExecCommandHandler.html#a5f2988d62d01f78f08b3a7a20f5779d8">_Wolframe::cmdbind::ExecCommandHandler</a>, <a class="el" href="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a897a324670cb592278a569850322ce0a">_Wolframe::cmdbind::AuthCommandHandler</a>, <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#afc306f77c15ab90a345e3ae100247036">_Wolframe::cmdbind::IOFilterCommandHandlerEscDLF</a>, <a class="el" href="class__Wolframe_1_1cmdbind_1_1ContentBufferCommandHandlerEscDLF.html#a401fdc6f57a4cc8642ac028b9266b579">_Wolframe::cmdbind::ContentBufferCommandHandlerEscDLF</a>, and <a class="el" href="class__Wolframe_1_1cmdbind_1_1DoctypeFilterCommandHandler.html#a531d3656673cae3e1aea28aa0454921f">_Wolframe::cmdbind::DoctypeFilterCommandHandler</a>.</p>
+<p>Implemented in <a class="el" href="class__Wolframe_1_1cmdbind_1_1LineCommandHandler.html#a864d06222fa26c9ba3339563ba23e60c">_Wolframe::cmdbind::LineCommandHandler</a>, and <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#afc306f77c15ab90a345e3ae100247036">_Wolframe::cmdbind::IOFilterCommandHandlerEscDLF</a>.</p>
 
 </div>
 </div>
@@ -664,7 +667,33 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class__Wolframe_1_1cmdbind_1_1LineCommandHandler.html#a48e2047928f99e53f09e0599915f8bea">_Wolframe::cmdbind::LineCommandHandler</a>, <a class="el" href="class__Wolframe_1_1cmdbind_1_1ExecCommandHandler.html#a8d048de1a5a2e0d2c8baa2d63ec7368e">_Wolframe::cmdbind::ExecCommandHandler</a>, <a class="el" href="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#a7c9aad9a1a6aefb5d3a09cb5b7b79b8b">_Wolframe::cmdbind::AuthCommandHandler</a>, <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a32c33bfa8d8da553925acb60b0c89f78">_Wolframe::cmdbind::IOFilterCommandHandlerEscDLF</a>, <a class="el" href="class__Wolframe_1_1cmdbind_1_1ContentBufferCommandHandlerEscDLF.html#a80b51df8c2b28d05360db1e36a5870ac">_Wolframe::cmdbind::ContentBufferCommandHandlerEscDLF</a>, and <a class="el" href="class__Wolframe_1_1cmdbind_1_1DoctypeFilterCommandHandler.html#af5344059c3628347e17b09717aa05fba">_Wolframe::cmdbind::DoctypeFilterCommandHandler</a>.</p>
+<p>Implemented in <a class="el" href="class__Wolframe_1_1cmdbind_1_1LineCommandHandler.html#a48e2047928f99e53f09e0599915f8bea">_Wolframe::cmdbind::LineCommandHandler</a>, and <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a32c33bfa8d8da553925acb60b0c89f78">_Wolframe::cmdbind::IOFilterCommandHandlerEscDLF</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a90c6a8e6efde45becb01c101730f6868"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _Wolframe::cmdbind::CommandHandler::setLastError </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the last error message of command execution to be returned to the client. </p>
 
 </div>
 </div>
@@ -716,7 +745,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class__Wolframe_1_1cmdbind_1_1LineCommandHandler.html#ac89cdd0171dfefb7abbadff049f3a014">_Wolframe::cmdbind::LineCommandHandler</a>, <a class="el" href="class__Wolframe_1_1cmdbind_1_1ExecCommandHandler.html#a186cadb5fa3f3a406da6097c410a1ed4">_Wolframe::cmdbind::ExecCommandHandler</a>, <a class="el" href="class__Wolframe_1_1cmdbind_1_1AuthCommandHandler.html#ae75acfad488be485e59a75a37d40c7a6">_Wolframe::cmdbind::AuthCommandHandler</a>, <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a27faead7bde14a50b7637a46427bb669">_Wolframe::cmdbind::IOFilterCommandHandlerEscDLF</a>, <a class="el" href="class__Wolframe_1_1cmdbind_1_1ContentBufferCommandHandlerEscDLF.html#a6c8a06362e19c6f1715b18e25139d37e">_Wolframe::cmdbind::ContentBufferCommandHandlerEscDLF</a>, and <a class="el" href="class__Wolframe_1_1cmdbind_1_1DoctypeFilterCommandHandler.html#acde115ac2f2f54e72c80eaaae389ea60">_Wolframe::cmdbind::DoctypeFilterCommandHandler</a>.</p>
+<p>Implemented in <a class="el" href="class__Wolframe_1_1cmdbind_1_1LineCommandHandler.html#ac89cdd0171dfefb7abbadff049f3a014">_Wolframe::cmdbind::LineCommandHandler</a>, and <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a27faead7bde14a50b7637a46427bb669">_Wolframe::cmdbind::IOFilterCommandHandlerEscDLF</a>.</p>
 
 </div>
 </div>
@@ -754,7 +783,7 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -774,7 +803,7 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -808,7 +837,7 @@ Protected Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 4 2014 16:48:17 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 20:58:04 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

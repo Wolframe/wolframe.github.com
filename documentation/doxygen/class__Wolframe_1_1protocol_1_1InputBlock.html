@@ -115,7 +115,7 @@ Inheritance diagram for _Wolframe::protocol::InputBlock:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1protocol_1_1InputBlock_1_1EoD.html">EoD</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">States of the automaton recognizing end of data and unescaping escape sequences in data.  <a href="struct__Wolframe_1_1protocol_1_1InputBlock_1_1EoD.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">States of the automaton recognizing end of data and unescaping escape sequences in data See method <a class="el" href="class__Wolframe_1_1protocol_1_1InputBlock.html#a14a0cff743339f6cadce3440178defca" title="End of data calculation and unescaping of LF_DOT sequences. ">getEoD(iterator)</a> The end of data is marked with a sequence "\n.\r" or "\n.\n". If such a sequence appears by accident in the content it has to be escaped with a dot as "\n..\r" or "\n..\r". The additional dot after the end of line escapes any other character sequence too. As consequence every line starting with a dot has to be escaped.  <a href="struct__Wolframe_1_1protocol_1_1InputBlock_1_1EoD.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -172,14 +172,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a14a0cff743339f6cadce3440178defca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1protocol_1_1InputBlock.html#a9035997444261e81cc79571fb0940710">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1protocol_1_1InputBlock.html#a14a0cff743339f6cadce3440178defca">getEoD</a> (<a class="el" href="class__Wolframe_1_1protocol_1_1InputBlock.html#a9035997444261e81cc79571fb0940710">iterator</a> start)</td></tr>
 <tr class="memdesc:a14a0cff743339f6cadce3440178defca"><td class="mdescLeft">&#160;</td><td class="mdescRight">End of data calculation and unescaping of LF_DOT sequences.  <a href="#a14a0cff743339f6cadce3440178defca">More...</a><br /></td></tr>
 <tr class="separator:a14a0cff743339f6cadce3440178defca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2391ff62f97fe9d2abb2c2e8e2a74f6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1protocol_1_1InputBlock.html#a2391ff62f97fe9d2abb2c2e8e2a74f6e">resetEoD</a> ()</td></tr>
-<tr class="memdesc:a2391ff62f97fe9d2abb2c2e8e2a74f6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset end of data state machine.  <a href="#a2391ff62f97fe9d2abb2c2e8e2a74f6e">More...</a><br /></td></tr>
-<tr class="separator:a2391ff62f97fe9d2abb2c2e8e2a74f6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a744d3b9b256bbdec7375a93618a68cc7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1protocol_1_1InputBlock.html#a744d3b9b256bbdec7375a93618a68cc7">skipEoD</a> ()</td></tr>
+<tr class="memdesc:a744d3b9b256bbdec7375a93618a68cc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset end of data state machine.  <a href="#a744d3b9b256bbdec7375a93618a68cc7">More...</a><br /></td></tr>
+<tr class="separator:a744d3b9b256bbdec7375a93618a68cc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb23eb7cf9d0c0d3aae9a0cbacfb88ae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1protocol_1_1InputBlock.html#aeb23eb7cf9d0c0d3aae9a0cbacfb88ae">gotEoD</a> () const </td></tr>
 <tr class="memdesc:aeb23eb7cf9d0c0d3aae9a0cbacfb88ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if end of data was recognized with the last call of <a class="el" href="class__Wolframe_1_1protocol_1_1InputBlock.html#a14a0cff743339f6cadce3440178defca" title="End of data calculation and unescaping of LF_DOT sequences. ">getEoD(iterator)</a>  <a href="#aeb23eb7cf9d0c0d3aae9a0cbacfb88ae">More...</a><br /></td></tr>
 <tr class="separator:aeb23eb7cf9d0c0d3aae9a0cbacfb88ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c5bb540d8f17d7002955620310ec769"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1protocol_1_1InputBlock.html#a8c5bb540d8f17d7002955620310ec769">getNetworkMessageRead</a> (void *&amp;pp, std::size_t &amp;ppsize)</td></tr>
-<tr class="memdesc:a8c5bb540d8f17d7002955620310ec769"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the network message pointer and size for network input considering the <a class="el" href="struct__Wolframe_1_1protocol_1_1InputBlock_1_1EoD.html" title="States of the automaton recognizing end of data and unescaping escape sequences in data...">EoD</a> state.  <a href="#a8c5bb540d8f17d7002955620310ec769">More...</a><br /></td></tr>
+<tr class="memdesc:a8c5bb540d8f17d7002955620310ec769"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the network message pointer and size for network input considering the <a class="el" href="struct__Wolframe_1_1protocol_1_1InputBlock_1_1EoD.html" title="States of the automaton recognizing end of data and unescaping escape sequences in data See method ge...">EoD</a> state.  <a href="#a8c5bb540d8f17d7002955620310ec769">More...</a><br /></td></tr>
 <tr class="separator:a8c5bb540d8f17d7002955620310ec769"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class__Wolframe_1_1protocol_1_1MemBlock"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class__Wolframe_1_1protocol_1_1MemBlock')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class__Wolframe_1_1protocol_1_1MemBlock.html">_Wolframe::protocol::MemBlock</a></td></tr>
 <tr class="memitem:a5c7fc4d07073263c7538e071c5bde296 inherit pub_methods_class__Wolframe_1_1protocol_1_1MemBlock"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1protocol_1_1MemBlock.html#a5c7fc4d07073263c7538e071c5bde296">MemBlock</a> ()</td></tr>
@@ -247,11 +247,14 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a1c742a7afc6025bee2643a0c2b5da88a"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1protocol_1_1InputBlock.html#a1c742a7afc6025bee2643a0c2b5da88a">m_nextpos</a></td></tr>
+<tr class="memdesc:a1c742a7afc6025bee2643a0c2b5da88a"><td class="mdescLeft">&#160;</td><td class="mdescRight">follow position after <a class="el" href="struct__Wolframe_1_1protocol_1_1InputBlock_1_1EoD.html" title="States of the automaton recognizing end of data and unescaping escape sequences in data See method ge...">EoD</a> marker  <a href="#a1c742a7afc6025bee2643a0c2b5da88a">More...</a><br /></td></tr>
+<tr class="separator:a1c742a7afc6025bee2643a0c2b5da88a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e3574b6a3b7df9158b0e1d38788850d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct__Wolframe_1_1protocol_1_1InputBlock_1_1EoD.html#a1a10f0252203182374d73bb5c0f42d8d">EoD::State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1protocol_1_1InputBlock.html#a9e3574b6a3b7df9158b0e1d38788850d">m_eodState</a></td></tr>
 <tr class="memdesc:a9e3574b6a3b7df9158b0e1d38788850d"><td class="mdescLeft">&#160;</td><td class="mdescRight">State of end of data recognition.  <a href="#a9e3574b6a3b7df9158b0e1d38788850d">More...</a><br /></td></tr>
 <tr class="separator:a9e3574b6a3b7df9158b0e1d38788850d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa372e02d60a9a1d6cf3de79218697030"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1protocol_1_1Buffer.html">Buffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1protocol_1_1InputBlock.html#aa372e02d60a9a1d6cf3de79218697030">m_eodcharbuf</a></td></tr>
-<tr class="memdesc:aa372e02d60a9a1d6cf3de79218697030"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class__Wolframe_1_1protocol_1_1Buffer.html" title="Constant size byte (ASCII) character buffer that implements a subset of the std::string interface...">Buffer</a> for unprocessed <a class="el" href="struct__Wolframe_1_1protocol_1_1InputBlock_1_1EoD.html" title="States of the automaton recognizing end of data and unescaping escape sequences in data...">EoD</a> characters.  <a href="#aa372e02d60a9a1d6cf3de79218697030">More...</a><br /></td></tr>
+<tr class="memdesc:aa372e02d60a9a1d6cf3de79218697030"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class__Wolframe_1_1protocol_1_1Buffer.html" title="Constant size byte (ASCII) character buffer that implements a subset of the std::string interface...">Buffer</a> for unprocessed <a class="el" href="struct__Wolframe_1_1protocol_1_1InputBlock_1_1EoD.html" title="States of the automaton recognizing end of data and unescaping escape sequences in data See method ge...">EoD</a> characters.  <a href="#aa372e02d60a9a1d6cf3de79218697030">More...</a><br /></td></tr>
 <tr class="separator:aa372e02d60a9a1d6cf3de79218697030"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72e218b6308f54085b0dd2268e02e7dc"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1protocol_1_1InputBlock.html#a72e218b6308f54085b0dd2268e02e7dc">m_eodcharbufc</a> [8]</td></tr>
 <tr class="separator:a72e218b6308f54085b0dd2268e02e7dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -682,7 +685,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the network message pointer and size for network input considering the <a class="el" href="struct__Wolframe_1_1protocol_1_1InputBlock_1_1EoD.html" title="States of the automaton recognizing end of data and unescaping escape sequences in data...">EoD</a> state. </p>
+<p>Get the network message pointer and size for network input considering the <a class="el" href="struct__Wolframe_1_1protocol_1_1InputBlock_1_1EoD.html" title="States of the automaton recognizing end of data and unescaping escape sequences in data See method ge...">EoD</a> state. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">pp</td><td>pointer to buffer </td></tr>
@@ -690,7 +693,7 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>false, if the buffer is too small to recognize <a class="el" href="struct__Wolframe_1_1protocol_1_1InputBlock_1_1EoD.html" title="States of the automaton recognizing end of data and unescaping escape sequences in data...">EoD</a> properly </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>false, if the buffer is too small to recognize <a class="el" href="struct__Wolframe_1_1protocol_1_1InputBlock_1_1EoD.html" title="States of the automaton recognizing end of data and unescaping escape sequences in data See method ge...">EoD</a> properly </dd></dl>
 
 </div>
 </div>
@@ -743,7 +746,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2391ff62f97fe9d2abb2c2e8e2a74f6e"></a>
+<a class="anchor" id="a744d3b9b256bbdec7375a93618a68cc7"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -751,7 +754,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void _Wolframe::protocol::InputBlock::resetEoD </td>
+          <td class="memname">int _Wolframe::protocol::InputBlock::skipEoD </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -787,7 +790,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class__Wolframe_1_1protocol_1_1Buffer.html" title="Constant size byte (ASCII) character buffer that implements a subset of the std::string interface...">Buffer</a> for unprocessed <a class="el" href="struct__Wolframe_1_1protocol_1_1InputBlock_1_1EoD.html" title="States of the automaton recognizing end of data and unescaping escape sequences in data...">EoD</a> characters. </p>
+<p><a class="el" href="class__Wolframe_1_1protocol_1_1Buffer.html" title="Constant size byte (ASCII) character buffer that implements a subset of the std::string interface...">Buffer</a> for unprocessed <a class="el" href="struct__Wolframe_1_1protocol_1_1InputBlock_1_1EoD.html" title="States of the automaton recognizing end of data and unescaping escape sequences in data See method ge...">EoD</a> characters. </p>
 
 </div>
 </div>
@@ -833,6 +836,28 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a1c742a7afc6025bee2643a0c2b5da88a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t _Wolframe::protocol::InputBlock::m_nextpos</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>follow position after <a class="el" href="struct__Wolframe_1_1protocol_1_1InputBlock_1_1EoD.html" title="States of the automaton recognizing end of data and unescaping escape sequences in data See method ge...">EoD</a> marker </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/protocol/<a class="el" href="ioblocks_8hpp_source.html">ioblocks.hpp</a></li>
 </ul>
@@ -840,7 +865,7 @@ Private Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 4 2014 16:48:28 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 20 2014 20:58:13 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>
