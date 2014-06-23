@@ -58,7 +58,7 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.4. Step 4 - Implement server side customer list</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch02s03.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Steps</th><td width="20%" align="right"> <a accesskey="n" href="ch02s05.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1371695660"></a>2.4. Step 4 - Implement server side customer list</h2></div></div></div><p>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.4. Step 4 - Implement server side customer list</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch02s03.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Steps</th><td width="20%" align="right"> <a accesskey="n" href="ch02s05.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idm140557685515248"></a>2.4. Step 4 - Implement server side customer list</h2></div></div></div><p>
 		We want to store the customer data in an Sqlite database, so we have to
 		tell the server to load the database module for Sqlite:
 		</p><pre class="programlisting">
@@ -170,19 +170,22 @@
 		</p><pre class="programlisting">
 	COMMAND CustomerListRequest
 	       CALL SelectCustomerList
-	       RETURN {standalone="yes", root="list"};
+	       RETURN SKIP {standalone="yes", root="list"};
 		</pre><p>
 
-		This is we map the 'CustomerListRequest' request to a function 'SelectCustomerList'
+		We map the 'CustomerListRequest' request to a function 'SelectCustomerList'
 		that is executed to perform the request. It will return the document 
-		without a document type assigned to it (standalone='yes') and with the 
-		root element 'list' (root='list'). The attributes in curly brackets after
-		the RETURN define the meta data of the document. Depending of the output
+		without validation (SKIP). The attributes in curly brackets after the 
+		RETURN SKIP define the meta data of the document. Depending of the output 
 		filters used we have to define a set of document meta data.
+		Because we do not declare the meta data as part of the document type 
+		description as we will do later, we have to declare them here in the command.
+		The meta data attribute standalone='yes' tells the XML filter not to
+		include any document type declaration. The declaration root='list' 
+		declares the root element for the XML output.
 		In our example we need to define the root element because we use XML for
-		output and XML needs a root element to be defined. Because we did not yet
-		define the document type for the result, we need to declare the document 
-		as standalone. The returned content will be a list of customers. 
+		output and XML needs a root element to be defined. 
+		The returned content will be a list of customers. 
 		The function will be implemented in a TDL program in the server.
 		We first add the TDL program declaration to a new 'Processor' configuration 
 		section:
