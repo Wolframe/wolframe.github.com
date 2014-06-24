@@ -58,11 +58,11 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 6. Testing and Defect Handling</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch05s03.html">Prev</a> </td><th width="60%" align="center">Developing Wolframe Server Applications</th><td width="20%" align="right"> <a accesskey="n" href="bk01go01.html">Next</a></td></tr></table><hr /></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="idm139778604780080"></a>Chapter 6. Testing and Defect Handling</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="bk01ch06.html#idm139778604823456">6.1. Using wolfilter</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk01ch06.html#idm139778604777456">6.1.1. Test configuration</a></span></dt><dt><span class="sect2"><a href="bk01ch06.html#idm139778604774816">6.1.2. Testing a Filter</a></span></dt><dt><span class="sect2"><a href="bk01ch06.html#idm139778604770656">6.1.3. Testing a Form</a></span></dt><dt><span class="sect2"><a href="bk01ch06.html#idm139778604768112">6.1.4. Testing a Function</a></span></dt></dl></dd></dl></div><p>In this chapter we learn how parts of a <span class="application">Wolframe</span>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 6. Testing and Defect Handling</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch05s03.html">Prev</a> </td><th width="60%" align="center">Developing Wolframe Server Applications</th><td width="20%" align="right"> <a accesskey="n" href="bk01go01.html">Next</a></td></tr></table><hr /></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="idm139755613321904"></a>Chapter 6. Testing and Defect Handling</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="bk01ch06.html#idm139755613366160">6.1. Using wolfilter</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk01ch06.html#idm139755613319328">6.1.1. Test configuration</a></span></dt><dt><span class="sect2"><a href="bk01ch06.html#idm139755613316688">6.1.2. Testing a Filter</a></span></dt><dt><span class="sect2"><a href="bk01ch06.html#idm139755613312528">6.1.3. Testing a Form</a></span></dt><dt><span class="sect2"><a href="bk01ch06.html#idm139755613309904">6.1.4. Testing a Function</a></span></dt></dl></dd></dl></div><p>In this chapter we learn how parts of a <span class="application">Wolframe</span>
 application can be verified to work correctly. The basis for testing and debugging
 a <span class="application">Wolframe</span> application is the command line tool 
 <span class="application">wolfilter</span>. 
-</p><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idm139778604823456"></a>6.1. Using wolfilter</h2></div></div></div><p>The command line program <span class="application">wolfilter</span> allows you 
+</p><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idm139755613366160"></a>6.1. Using wolfilter</h2></div></div></div><p>The command line program <span class="application">wolfilter</span> allows you 
 	to call any <span class="application">Wolframe</span> function or filter or mapping 
 	into a form structure on command line. The program is mapping stdin or if 
 	specified the contents of a file to stdout.
@@ -74,7 +74,7 @@ a <span class="application">Wolframe</span> application is the command line tool
 	to be specified.
 	</p><p>The following examples assume the input file name to be in.xml or in.json and
 	the output file to be named out.xml or out.json respectively.
-	</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idm139778604777456"></a>6.1.1. Test configuration</h3></div></div></div><p>For the examples needing a configuration, we prepare the following simple
+	</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idm139755613319328"></a>6.1.1. Test configuration</h3></div></div></div><p>For the examples needing a configuration, we prepare the following simple
 		configuration, just declaring the processing stuff, we need. Of course wolfilter
 		can also work with any wolframe server configuration. The configuration will be
 		referenced as 'test.conf'.
@@ -93,7 +93,7 @@ Processor
     program myform.sfrm
 }
 		</pre><p>
-		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idm139778604774816"></a>6.1.2. Testing a Filter</h3></div></div></div><p>The following example shows the mapping through a libxml2 filter.
+		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idm139755613316688"></a>6.1.2. Testing a Filter</h3></div></div></div><p>The following example shows the mapping through a libxml2 filter.
 		Filters are tested by passing a dash '-' command to execute.
 		Because we do not need to load programs, we can call wolfilter without
 		a test configuration.
@@ -111,7 +111,7 @@ cat in.xml | wolfilter -e libxml2 -m mod_filter_libxml2 - &gt; out.xml
 
 cat in.xml | wolfilter -i myfilter -o token -c test.conf - &gt; out.xml
 		</pre><p>
-		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idm139778604770656"></a>6.1.3. Testing a Form</h3></div></div></div><p>The following example shows the mapping through a form defined with simpleform DDL.
+		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idm139755613312528"></a>6.1.3. Testing a Form</h3></div></div></div><p>The following example shows the mapping through a form defined with simpleform DDL.
 		Mapping through forms is tested by passing the name of the form as command to execute.
 		Because forms have to be loaded as programs, we have to specify a 
 		configuration (test.conf) too.
@@ -121,7 +121,7 @@ cat in.xml | wolfilter -e libxml2 -c test.conf MyForm &gt; out.xml
 		</pre><p>
 		we assume here that the form to use is defined in myform.sfrm that is declared
 		as program in the configuration and that the form is called MyForm.
-		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idm139778604768112"></a>6.1.4. Testing a Function</h3></div></div></div><p>The following example shows the execution of a function written in Lua.
+		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idm139755613309904"></a>6.1.4. Testing a Function</h3></div></div></div><p>The following example shows the execution of a function written in Lua.
 		A JSON filter is used for input and output.
 		</p><pre class="programlisting">
 

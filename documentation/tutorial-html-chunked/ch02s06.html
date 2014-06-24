@@ -58,7 +58,7 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.6. Step 6 - Show customer</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch02s05.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Steps</th><td width="20%" align="right"> <a accesskey="n" href="ch02s07.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idm140557685259760"></a>2.6. Step 6 - Show customer</h2></div></div></div><p>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.6. Step 6 - Show customer</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch02s05.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Steps</th><td width="20%" align="right"> <a accesskey="n" href="ch02s07.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idm140096630431440"></a>2.6. Step 6 - Show customer</h2></div></div></div><p>
 		In the next step we want to show how data is communicated between the forms
 		by implementing a simple "show me customer data" use case.
 	</p><p>
@@ -150,6 +150,13 @@
 	netcat -v localhost 7661 &lt; CustomerListRequest.netcat
 	</pre><p>
 	
+		or:
+
+	</p><pre class="programlisting">
+	wolframec -d CustomerListRequest.xml
+	</pre><p>
+
+	
 		we get now:
 
 	</p><pre class="programlisting">
@@ -215,11 +222,11 @@
 		validation of the customer request. The customer request should have except the root element
 		'customer' and a mandatory attribute 'id' to search for:
 	</p><pre class="programlisting">
-FORM CustomerRequest
-	-root customer
-{
-	id !@string
-}
+	FORM CustomerRequest
+		-root customer
+	{
+		id !@string
+	}
 
 	</pre><p>
 		Of course we have to define a transaction function 'SelectCustomer'
@@ -240,16 +247,48 @@ FORM CustomerRequest
 		we add a 'Customer' form to <code class="filename">Customer.sfrm</code>:
 
 	</p><pre class="programlisting">
-FORM Customer
-	-root customer
-{
-	id !@string
-	name string
-	address string
-}
+	FORM Customer
+		-root customer
+	{
+		id !@string
+		name string
+		address string
+	}
+
+	</pre><p>
+	
+	</p><p>
+		We can see in the shell if this new request is working. We define
+		create a file called <code class="filename">CustomerRequest.xml</code> with the
+		following content:
+
+	</p><pre class="programlisting">
+	&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+	&lt;!DOCTYPE customer SYSTEM 'CustomerRequest'&gt;
+	&lt;customer id="2"/&gt;
+
+	</pre><p>
+	
+		We can then see that our request is working by executing:
+
+	</p><pre class="programlisting">
+	wolframec -d CustomerRequest.xml
+	</pre><p>
+	
+		which returns us:
+
+	</p><pre class="programlisting">
+	&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;
+	&lt;!DOCTYPE customer SYSTEM "Customer"&gt;
+	&lt;customer id="2"&gt;
+		&lt;name&gt;John Smith&lt;/name&gt;
+		&lt;address&gt;The Wheel in Space&lt;/address&gt;
+	&lt;/customer&gt;
 
 	</pre><p>
 
+		
+	</p><p>
 		Now if we restart client and server and we click on the second
 		customer in the list we get:
 	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step6_customer_show_working.png" /></div></div><p>

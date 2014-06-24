@@ -58,28 +58,28 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 2. Clients with PHP</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk02ch01.html">Prev</a> </td><th width="60%" align="center">Wolframe Clients</th><td width="20%" align="right"> <a accesskey="n" href="bk02ch02s02.html">Next</a></td></tr></table><hr /></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="idm139778604356480"></a>Chapter 2. Clients with PHP</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="bk02ch02.html#idm139778604389392">2.1. PHP Client Modules</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk02ch02.html#idm139778604324016">2.1.1. Example Script</a></span></dt><dt><span class="sect2"><a href="bk02ch02.html#idm139778604322400">2.1.2. The Session Interface</a></span></dt></dl></dd><dt><span class="sect1"><a href="bk02ch02s02.html">2.2. Installation</a></span></dt></dl></div><p>This chapter describes how you can call Wolframe from a web service.
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 2. Clients with PHP</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk02ch01.html">Prev</a> </td><th width="60%" align="center">Wolframe Clients</th><td width="20%" align="right"> <a accesskey="n" href="bk02ch02s02.html">Next</a></td></tr></table><hr /></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="idm139755612898080"></a>Chapter 2. Clients with PHP</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="bk02ch02.html#idm139755612930992">2.1. PHP Client Modules</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk02ch02.html#idm139755612865616">2.1.1. Example Script</a></span></dt><dt><span class="sect2"><a href="bk02ch02.html#idm139755612864000">2.1.2. The Session Interface</a></span></dt></dl></dd><dt><span class="sect1"><a href="bk02ch02s02.html">2.2. Installation</a></span></dt></dl></div><p>This chapter describes how you can call Wolframe from a web service.
 	It will show how a Wolframe command can be issued as HTTP call and how it is mapped
 	in the Webserver by a scripting language. We use PHP as example language.
 	The example is so simple that you can easily map it to other languages than PHP.
 	We took PHP because its use for web services is so widespread nowadays.
-	</p><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idm139778604389392"></a>2.1. PHP Client Modules</h2></div></div></div><p>In the subdirectory clients/php of the Wolframe installation
+	</p><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idm139755612930992"></a>2.1. PHP Client Modules</h2></div></div></div><p>In the subdirectory clients/php of the Wolframe installation
 		you'll find the following source files you need.
 		The main module you need to call to establish a session and
 		to issue requests is session.php. The other files are helper classes for 
 		the client:
-		</p><div class="table"><a id="idm139778604387600"></a><p class="title"><strong>Table 2.1. PHP Client Modules</strong></p><div class="table-contents"><table summary="PHP Client Modules" border="1"><colgroup><col class="col1" /><col class="col2" /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>session.php</td><td><p>implements the Wolframe client/server protocol
+		</p><div class="table"><a id="idm139755612929200"></a><p class="title"><strong>Table 2.1. PHP Client Modules</strong></p><div class="table-contents"><table summary="PHP Client Modules" border="1"><colgroup><col class="col1" /><col class="col2" /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>session.php</td><td><p>implements the Wolframe client/server protocol
 					behind the scenes with a simple interface to send requests 
 					to the server and receive the answers.</p></td></tr><tr><td>connection.php</td><td><p>defines the base class of the connection to a Wolframe
 					server with methods to read and write messages</p></td></tr><tr><td>wolframe_cram.php</td><td><p>implements helper functions needed to implement
 					the authentication with the Wolframe-CRAM mech</p></td></tr><tr><td>pbkdf2.php</td><td><p>implements the function hash_pbkdf2 available
-					in PHP 5.5. for PHP 5.3. (patch published on php.net)</p></td></tr></tbody></table></div></div><br class="table-break" /><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idm139778604324016"></a>2.1.1. Example Script</h3></div></div></div><p>The script examples/clients/php/webclient_form_xml.php shows the 
+					in PHP 5.5. for PHP 5.3. (patch published on php.net)</p></td></tr></tbody></table></div></div><br class="table-break" /><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idm139755612865616"></a>2.1.1. Example Script</h3></div></div></div><p>The script examples/clients/php/webclient_form_xml.php shows the 
 		mechanisms of using the PHP client modules to create a client calling 
 		Wolframe from a web service. It takes a HTTP request, builds an XML 
 		document and a Wolframe server request with this document, passes 
 		the request to the server and returns the answer XML to the web client.
 		In case of error an XML with the error message is returned.
-		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idm139778604322400"></a>2.1.2. The Session Interface</h3></div></div></div><p>
+		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idm139755612864000"></a>2.1.2. The Session Interface</h3></div></div></div><p>
 		In the following we shortly introduce the Wolframe session interface 
 		implemented in clients/php/session.php. 
 		</p><pre class="programlisting">

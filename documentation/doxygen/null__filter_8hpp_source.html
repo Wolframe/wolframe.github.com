@@ -123,25 +123,46 @@
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#ifndef _Wolframe_FILTER_NULL_HPP_INCLUDED</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#define _Wolframe_FILTER_NULL_HPP_INCLUDED</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="filter_8hpp.html">filter/filter.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">namespace </span>_Wolframe {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">namespace </span>langbind {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;Filter <a class="code" href="namespace__Wolframe_1_1langbind.html#a1eebca164b4a82656929d00dbb6454c1">createNullFilter</a>( <span class="keyword">const</span> std::string&amp; name, <span class="keyword">const</span> std::string&amp; arg);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;Filter* <a class="code" href="namespace__Wolframe_1_1langbind.html#ac50c0e6ea8327dd2c91c4398862b7457">createNullFilterPtr</a>( <span class="keyword">const</span> std::string&amp; name, <span class="keyword">const</span> std::string&amp; arg);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}}<span class="comment">//namespace</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="ttc" id="namespace__Wolframe_1_1langbind_html_a1eebca164b4a82656929d00dbb6454c1"><div class="ttname"><a href="namespace__Wolframe_1_1langbind.html#a1eebca164b4a82656929d00dbb6454c1">_Wolframe::langbind::createNullFilter</a></div><div class="ttdeci">Filter createNullFilter(const std::string &amp;name, const std::string &amp;arg)</div><div class="ttdoc">Create a new null filter. </div></div>
-<div class="ttc" id="namespace__Wolframe_1_1langbind_html_ac50c0e6ea8327dd2c91c4398862b7457"><div class="ttname"><a href="namespace__Wolframe_1_1langbind.html#ac50c0e6ea8327dd2c91c4398862b7457">_Wolframe::langbind::createNullFilterPtr</a></div><div class="ttdeci">Filter * createNullFilterPtr(const std::string &amp;name, const std::string &amp;arg)</div><div class="ttdoc">Create a new null filter (with new, to be destroyed with delete) </div></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">namespace </span>_Wolframe {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">namespace </span>langbind {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;Filter <a class="code" href="namespace__Wolframe_1_1langbind.html#a25f7f4cffc92103b00d60bdd0efd8382">createNullFilter</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;Filter* <a class="code" href="namespace__Wolframe_1_1langbind.html#adf948b1ae68d9b39236952204d2f007f">createNullFilterPtr</a>( <span class="keyword">const</span> std::string&amp; name, <span class="keyword">const</span> std::vector&lt;FilterArgument&gt;&amp; arg);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1langbind_1_1NullFilterType.html">   49</a></span>&#160;<span class="keyword">class </span><a class="code" href="class__Wolframe_1_1langbind_1_1NullFilterType.html">NullFilterType</a> :<span class="keyword">public</span> <a class="code" href="class__Wolframe_1_1langbind_1_1FilterType.html">FilterType</a></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1langbind_1_1NullFilterType.html#a9c88a4e4dec52c92cf6e92804f72983e">   52</a></span>&#160;        <a class="code" href="class__Wolframe_1_1langbind_1_1NullFilterType.html#a9c88a4e4dec52c92cf6e92804f72983e">NullFilterType</a>()</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                :<a class="code" href="class__Wolframe_1_1langbind_1_1FilterType.html">FilterType</a>(<span class="stringliteral">&quot;null&quot;</span>){}</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1langbind_1_1NullFilterType.html#a90928403924a26197e2f2652a8b31b78">   54</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class__Wolframe_1_1langbind_1_1NullFilterType.html#a90928403924a26197e2f2652a8b31b78">~NullFilterType</a>(){}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1langbind_1_1NullFilterType.html#a07f8e912a8036e4b910c84107686d4db">   56</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class__Wolframe_1_1langbind_1_1Filter.html">Filter</a>* <a class="code" href="class__Wolframe_1_1langbind_1_1NullFilterType.html#a07f8e912a8036e4b910c84107686d4db">create</a>( <span class="keyword">const</span> std::vector&lt;FilterArgument&gt;&amp; arg)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="namespace__Wolframe_1_1langbind.html#adf948b1ae68d9b39236952204d2f007f">createNullFilterPtr</a>( <span class="stringliteral">&quot;null&quot;</span>, arg);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}}<span class="comment">//namespace</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="ttc" id="namespace__Wolframe_1_1langbind_html_a25f7f4cffc92103b00d60bdd0efd8382"><div class="ttname"><a href="namespace__Wolframe_1_1langbind.html#a25f7f4cffc92103b00d60bdd0efd8382">_Wolframe::langbind::createNullFilter</a></div><div class="ttdeci">Filter createNullFilter()</div><div class="ttdoc">Create a new null filter. </div></div>
+<div class="ttc" id="class__Wolframe_1_1langbind_1_1NullFilterType_html_a07f8e912a8036e4b910c84107686d4db"><div class="ttname"><a href="class__Wolframe_1_1langbind_1_1NullFilterType.html#a07f8e912a8036e4b910c84107686d4db">_Wolframe::langbind::NullFilterType::create</a></div><div class="ttdeci">virtual Filter * create(const std::vector&lt; FilterArgument &gt; &amp;arg) const </div><div class="ttdef"><b>Definition:</b> null_filter.hpp:56</div></div>
+<div class="ttc" id="class__Wolframe_1_1langbind_1_1Filter_html"><div class="ttname"><a href="class__Wolframe_1_1langbind_1_1Filter.html">_Wolframe::langbind::Filter</a></div><div class="ttdef"><b>Definition:</b> filter.hpp:48</div></div>
+<div class="ttc" id="namespace__Wolframe_1_1langbind_html_adf948b1ae68d9b39236952204d2f007f"><div class="ttname"><a href="namespace__Wolframe_1_1langbind.html#adf948b1ae68d9b39236952204d2f007f">_Wolframe::langbind::createNullFilterPtr</a></div><div class="ttdeci">Filter * createNullFilterPtr(const std::string &amp;name, const std::vector&lt; FilterArgument &gt; &amp;arg)</div><div class="ttdoc">Create a new null filter (with new, to be destroyed with delete) </div></div>
+<div class="ttc" id="class__Wolframe_1_1langbind_1_1NullFilterType_html_a90928403924a26197e2f2652a8b31b78"><div class="ttname"><a href="class__Wolframe_1_1langbind_1_1NullFilterType.html#a90928403924a26197e2f2652a8b31b78">_Wolframe::langbind::NullFilterType::~NullFilterType</a></div><div class="ttdeci">virtual ~NullFilterType()</div><div class="ttdef"><b>Definition:</b> null_filter.hpp:54</div></div>
+<div class="ttc" id="class__Wolframe_1_1langbind_1_1NullFilterType_html"><div class="ttname"><a href="class__Wolframe_1_1langbind_1_1NullFilterType.html">_Wolframe::langbind::NullFilterType</a></div><div class="ttdef"><b>Definition:</b> null_filter.hpp:49</div></div>
+<div class="ttc" id="class__Wolframe_1_1langbind_1_1FilterType_html"><div class="ttname"><a href="class__Wolframe_1_1langbind_1_1FilterType.html">_Wolframe::langbind::FilterType</a></div><div class="ttdef"><b>Definition:</b> filter.hpp:101</div></div>
+<div class="ttc" id="class__Wolframe_1_1langbind_1_1NullFilterType_html_a9c88a4e4dec52c92cf6e92804f72983e"><div class="ttname"><a href="class__Wolframe_1_1langbind_1_1NullFilterType.html#a9c88a4e4dec52c92cf6e92804f72983e">_Wolframe::langbind::NullFilterType::NullFilterType</a></div><div class="ttdeci">NullFilterType()</div><div class="ttdef"><b>Definition:</b> null_filter.hpp:52</div></div>
 <div class="ttc" id="filter_8hpp_html"><div class="ttname"><a href="filter_8hpp.html">filter.hpp</a></div><div class="ttdoc">Interface for filter class. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 20 2014 20:57:56 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 24 2014 14:13:59 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

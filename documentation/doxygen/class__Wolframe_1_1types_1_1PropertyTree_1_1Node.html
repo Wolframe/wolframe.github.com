@@ -143,6 +143,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acfbc02c370ecb50303e0ea213d00bb22"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class__Wolframe_1_1types_1_1PropertyTree_1_1Node.html">Node</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1PropertyTree_1_1Node.html#acfbc02c370ecb50303e0ea213d00bb22">getChild</a> (const std::string &amp;nodename) const </td></tr>
 <tr class="memdesc:acfbc02c370ecb50303e0ea213d00bb22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a child node by name.  <a href="#acfbc02c370ecb50303e0ea213d00bb22">More...</a><br /></td></tr>
 <tr class="separator:acfbc02c370ecb50303e0ea213d00bb22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab816a415088f690caa88ef5adf7cf672"><td class="memItemLeft" align="right" valign="top">std::vector&lt; const <a class="el" href="class__Wolframe_1_1types_1_1PropertyTree_1_1Node.html">Node</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1PropertyTree_1_1Node.html#ab816a415088f690caa88ef5adf7cf672">getChildren</a> (const std::string &amp;nodename) const </td></tr>
+<tr class="memdesc:ab816a415088f690caa88ef5adf7cf672"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a all children nodes with the a certain name.  <a href="#ab816a415088f690caa88ef5adf7cf672">More...</a><br /></td></tr>
+<tr class="separator:ab816a415088f690caa88ef5adf7cf672"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69859de9cbe6f7369a840d4c908cd8b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1types_1_1PropertyTree_1_1Node.html">Node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1PropertyTree_1_1Node.html#a69859de9cbe6f7369a840d4c908cd8b7">getChildrenJoined</a> (const std::string &amp;nodename) const </td></tr>
+<tr class="memdesc:a69859de9cbe6f7369a840d4c908cd8b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a all children nodes with the a certain name joined to one node.  <a href="#a69859de9cbe6f7369a840d4c908cd8b7">More...</a><br /></td></tr>
+<tr class="separator:a69859de9cbe6f7369a840d4c908cd8b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac04a5ce88a53ae8c9d3529bcac55f5d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1types_1_1PropertyTree_1_1Node.html#ac04a5ce88a53ae8c9d3529bcac55f5d8">add_child</a> (const std::string &amp;name_, const <a class="el" href="class__Wolframe_1_1types_1_1PropertyTree_1_1Node.html">Node</a> &amp;node_)</td></tr>
 <tr class="memdesc:ac04a5ce88a53ae8c9d3529bcac55f5d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add child reference.  <a href="#ac04a5ce88a53ae8c9d3529bcac55f5d8">More...</a><br /></td></tr>
 <tr class="separator:ac04a5ce88a53ae8c9d3529bcac55f5d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -524,6 +530,44 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ab816a415088f690caa88ef5adf7cf672"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;const <a class="el" href="class__Wolframe_1_1types_1_1PropertyTree_1_1Node.html">Node</a>*&gt; _Wolframe::types::PropertyTree::Node::getChildren </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>nodename</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a all children nodes with the a certain name. </p>
+<dl class="section remark"><dt>Remarks</dt><dd>no path expression argument allowed as in boost::property_tree </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a69859de9cbe6f7369a840d4c908cd8b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class__Wolframe_1_1types_1_1PropertyTree_1_1Node.html">Node</a> _Wolframe::types::PropertyTree::Node::getChildrenJoined </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>nodename</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a all children nodes with the a certain name joined to one node. </p>
+<dl class="section remark"><dt>Remarks</dt><dd>no path expression argument allowed as in boost::property_tree </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ad728afce787500c166bd0444b31bee79"></a>
 <div class="memitem">
 <div class="memproto">
@@ -801,7 +845,7 @@ Private Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 20 2014 20:58:16 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 24 2014 14:14:03 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>
