@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>4.6. Filters</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe documentation" /><link rel="up" href="bk01ch04.html" title="Chapter 4. Data processing" /><link rel="prev" href="bk01ch04s05.html" title="4.5. Forms" /><link rel="next" href="bk01ch04s07.html" title="4.7. Testing and defect handling" />
+	<title xmlns="">Project Wolframe</title>
+	<meta xmlns="" charset="utf-8" />
+	<meta xmlns="" name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link xmlns="" rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+
+	<link xmlns="" href="/layout/styles/main.css" rel="stylesheet" type="text/css" media="all" />
+	<link xmlns="" href="/layout/styles/mediaqueries.css" rel="stylesheet" type="text/css" media="all" />
+
+	<!--[if lt IE 9]>
+		<link href="/layout/styles/ie/ie8.css" rel="stylesheet" type="text/css" media="all" />
+		<script src="/layout/scripts/ie/css3-mediaqueries.min.js"></script>
+		<script src="/layout/scripts/ie/html5shiv.min.js"></script>
+	<![endif]-->
+
+
+</head><body>
+
+
+<div xmlns="" class="wrapper row1">
+	<header id="header" class="full_width clear">
+		<div id="header-logo">
+			<h1><a href="/index.html">Project Wolframe</a></h1>
+			<h2>The Straight Path to Successful Projects</h2>
+		</div>
+		<div id="header-search">
+			<form id="cse-search-box" action="http://www.wolframe.net/gsearch.html">
+				<input type="hidden" name="cx" value="007231504736047898702:wrnjvfljzvu" />
+				<input type="hidden" name="ie" value="UTF-8" />
+				<input type="text" name="q" size="31" />
+<!--				<input type="submit" name="sa" value="&#xf002;" /> -->
+				<input type="submit" name="sa" class="search-bttn" value="" />
+			</form>
+		</div>
+	</header>
+</div>
+
+<!-- ################################################################################################ -->
+<div xmlns="" class="wrapper row2">
+	<nav id="topnav">
+		<ul class="clear">
+<!-- BEGIN MENU -->
+			<li><a href="/index.html" title="Home">Home</a></li>
+			<li><a href="/downloads.html" title="Downloads">Downloads</a></li>
+			<li class="active"><a href="/documentation.html" title="Documentation">Documentation</a></li>
+			<li><a class="drop" href="/support.html" title="Support">Support</a>
+				<ul>
+					<li><a href="/faqs.html" title="FAQ">FAQ</a></li>
+					<li><a href="http://sourceforge.net/p/wolframe/mailman/" title="Mailing lists">Mailing lists</a></li>
+				</ul>
+			</li>
+			<li class="last-child"><a href="/contact.html" title="Contact Us">Contact Us</a></li>
+<!-- END MENU -->
+		</ul>
+	</nav>
+</div>
+
+<!-- ################################################################################################ -->
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.6. Filters</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch04s05.html">Prev</a> </td><th width="60%" align="center">Chapter 4. Data processing</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch04s07.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1398685572"></a>4.6. Filters</h2></div></div></div><p>
+Filters describe the transformation of serialized data to a unified element sequence
+of hierarchical structured data and to document meta data and back. The application does 
+not care about data formats as long as there exists a filter providing the unified form 
+of data. This unified data format is represented as iterator visiting the nodes of the 
+document tree and plus a contract to level out language differences. 
+Additioally each document type has some metadata defined. A filter interprets all meta data
+it understands (his) and uses them for output.
+</p><p>
+This chapter describes how filters for different data formats are linked to the logic tier. For each data format
+supported by <span class="application">Wolframe</span> one or more filter type is introduced. 
+</p><p>
+After reading this chapter you should be able to handle different document formats and encodings 
+in the logic tier of <span class="application">Wolframe</span>. You will know how to add programs for scriptable filters
+like <acronym class="acronym">XSLT</acronym>.
+</p><p>
+Be aware that you have to configure a data filter of the logic tier in <span class="application">Wolframe</span> before using it.
+Each chapter introducing a filter type will have a section that describes how the server configuration 
+of <span class="application">Wolframe</span> has to be extended for its availability.
+</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1398757076"></a>4.6.1. XML Filter</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1398757412"></a>Introduction</h4></div></div></div><p>You can use <acronym class="acronym">XML</acronym> for data filters in the logic tier of <span class="application">Wolframe</span>.
+	There are the following variants of <acronym class="acronym">XML</acronym> filters available:
+	</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><span class="application">libxml2</span> (<a class="ulink" href="http://www.xmlsoft.org" target="_top">http://www.xmlsoft.org</a>) or</p></li><li class="listitem"><p><span class="application">textwolf</span> (<a class="ulink" href="http://www.textwolf.net" target="_top">http://www.textwolf.net</a>)</p></li></ul></div><p>	
+	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1398790252"></a>Character set encodings</h4></div></div></div><p>The <span class="application">libxml2</span> and the <span class="application">textwolf</span> filter support at least 
+	the following character set encodings. For character set encodings that are not in the list, 
+	please ask the <span class="application">Wolframe</span> team.
+	</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><abbr class="abbrev">UTF-8</abbr> or</p></li><li class="listitem"><p><abbr class="abbrev">UTF-16LE</abbr> or</p></li><li class="listitem"><p><abbr class="abbrev">UTF-16</abbr> (<abbr class="abbrev">UTF-16BE</abbr>) or</p></li><li class="listitem"><p><abbr class="abbrev">UTF-32LE</abbr> (<abbr class="abbrev">UCS-4LE</abbr>) but only with <span class="application">textwolf</span> or</p></li><li class="listitem"><p><abbr class="abbrev">UTF-32</abbr> (<abbr class="abbrev">UTF-32BE</abbr> or <abbr class="abbrev">UCS-4BE</abbr>) or</p></li><li class="listitem"><p><abbr class="abbrev">ISO 8859</abbr> (code pages '1' to '9')</p></li></ul></div><p>
+	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1398795484"></a>Configuration</h4></div></div></div><p>For using an <acronym class="acronym">XML</acronym> filter based <span class="application">libxml2</span>, you have to load the module 'mod_filter_libxml2'.
+	For this you add the following line to the LoadModules section of your <span class="application">Wolframe</span> configuration:
+		</p><pre class="programlisting">
+		
+    module mod_filter_libxml2
+
+
+		</pre><p>
+	</p><p>
+	For using an <acronym class="acronym">XML</acronym> filter based <span class="application">textwolf</span>, you have to load the module 'mod_filter_textwolf'.
+	For this you add the following line to the LoadModules section of your <span class="application">Wolframe</span> configuration:
+		</p><pre class="programlisting">
+		
+    module mod_filter_textwolf
+
+		</pre><p>
+	</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1398756596"></a>4.6.2. JSON filter</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1398756932"></a>Introduction</h4></div></div></div><p>You can use <span class="application">JSON</span> for data filters in the logic tier of <span class="application">Wolframe</span>.
+	The standard <span class="application">JSON</span> filter of <span class="application">Wolframe</span> is called <span class="application">cjson</span> and 
+	based on the library <span class="application">cJSON</span> (<a class="ulink" href="http://sourceforge.net/projects/cjson" target="_top">http://sourceforge.net/projects/cjson</a>) from Dave Gamble.
+	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1398760324"></a>Character set encodings</h4></div></div></div><p>Without explicitly specified, the <span class="application">cjson</span> filter support the following character set 
+	encodings. For character set encodings that are not in the list, please ask the <span class="application">Wolframe</span> team.
+	</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><abbr class="abbrev">UTF-8</abbr> or</p></li><li class="listitem"><p><abbr class="abbrev">UTF-16LE</abbr> or</p></li><li class="listitem"><p><abbr class="abbrev">UTF-16</abbr> (<abbr class="abbrev">UTF-16BE</abbr>) or</p></li><li class="listitem"><p><abbr class="abbrev">UTF-32LE</abbr> (<abbr class="abbrev">UCS-4LE</abbr>) or</p></li><li class="listitem"><p><abbr class="abbrev">UTF-32</abbr> (<abbr class="abbrev">UTF-32BE</abbr> or <abbr class="abbrev">UCS-4BE</abbr>) or</p></li></ul></div><p>
+	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1398782260"></a>Configuration</h4></div></div></div><p>For using the JSON filter based <span class="application">cJSON</span>, you have to load the module 'mod_filter_cjson'. 
+	For this you add the following line to the LoadModules section of your <span class="application">Wolframe</span> configuration:
+		</p><pre class="programlisting">
+		
+    module mod_filter_cjson
+
+		</pre><p>
+	</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1398774892"></a>4.6.3. XSLT Filter</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1398775228"></a>Introduction</h4></div></div></div><p>You can use <acronym class="acronym">XSLT</acronym> for data filters in the logic tier of <span class="application">Wolframe</span>.
+	The <acronym class="acronym">XSLT</acronym> filter of <span class="application">Wolframe</span> for is based on <span class="application">libxml2</span> 
+	(<a class="ulink" href="http://www.xmlsoft.org" target="_top">http://www.xmlsoft.org</a>).
+	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1398771508"></a>Character set encodings</h4></div></div></div><p>Without explicitly specified, the <acronym class="acronym">XSLT</acronym> filter support the following character set 
+	encodings. For character set encodings that are not in the list, please ask the <span class="application">Wolframe</span> team.
+	</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><abbr class="abbrev">UTF-8</abbr> or</p></li><li class="listitem"><p><abbr class="abbrev">UTF-16LE</abbr> or</p></li><li class="listitem"><p><abbr class="abbrev">UTF-16</abbr> (<abbr class="abbrev">UTF-16BE</abbr>) or</p></li><li class="listitem"><p><abbr class="abbrev">UTF-32LE</abbr> (<abbr class="abbrev">UCS-4LE</abbr>) or</p></li><li class="listitem"><p><abbr class="abbrev">UTF-32</abbr> (<abbr class="abbrev">UTF-32BE</abbr> or <abbr class="abbrev">UCS-4BE</abbr>) or</p></li></ul></div><p>
+	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1398818436"></a>Configuration</h4></div></div></div><p>For using an XSLT filter based <span class="application">libxml2</span>, you have to load the module 'mod_filter_libxml2'.
+	For this you add the following line to the LoadModules section of your <span class="application">Wolframe</span> configuration:
+		</p><pre class="programlisting">
+		
+    module mod_filter_libxml2
+
+
+		</pre><p>
+	</p><p>You also have to add the program of the XSLT filter into the Processor section of the configuration.
+	The name of the filter is the filename of the XSLT filter program without path and extension. In our example
+	the filter would be named invoice_ISOxxxx:
+	</p><pre class="programlisting">
+	
+    program invoice_ISOxxxx.xslt
+
+	</pre><p>
+	</p></div></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk01ch04s05.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk01ch04.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk01ch04s07.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">4.5. Forms </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 4.7. Testing and defect handling</td></tr></table></div></div></div>
+
+<!-- Footer -->
+<div xmlns="" class="wrapper row2">
+	<div id="footer" class="clear">
+		<div class="one_third first">
+			<h2 class="footer_title">Documentation</h2>
+			<nav class="footer_nav">
+				<ul class="nospace">
+					<li><a href="/documentation.html">User documentation</a></li>
+					<li><a href="/documentation.html">Developer documentation</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="one_third">
+			<h2 class="footer_title">Downloads</h2>
+			<nav class="footer_nav">
+				<ul class="nospace">
+					<li><a href="/downloads.html">Hosted on Github</a></li>
+					<li><a href="/downloads.html">Packages on Sourceforge</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="one_third">
+			<h2 class="footer_title">Contact Us</h2>
+			<nav class="footer_nav">
+				<ul class="nospace">
+					<li><strong>Email:</strong> <a href="/mailto:contact@wolframe.net">contact@wolframe.net</a></li>
+					<li>
+						<a id="googleplus-bttn" href="http://plus.google.com/116915890857205562872?prsrc=3" rel="publisher" target="_top" style="text-decoration:none;">
+							<span>Google+</span></a>
+						<a id="linkedin-bttn" href="#" target="_top" style="text-decoration:none;">
+							<span>LinkedIn</span></a>
+						<a id="twitter-bttn" href="http://twitter.com/ProjectWolframe" target="_top" style="text-decoration:none;">
+							<span>twitter</span></a>
+						<a id="rss-bttn" href="#" target="_top" style="text-decoration:none;">
+							<span>rss</span></a>
+					</li>
+					<li>
+						<a href="https://twitter.com/ProjectWolframe" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @ProjectWolframe</a>
+						<div class="google-follow-button"><div class="g-follow" data-annotation="none" data-height="20" data-href="http://plus.google.com/116915890857205562872" data-rel="publisher"></div></div>
+						<div class="google-plusone-button"><div class="g-plusone" data-href="http://www.wolframe.net" data-size="medium"></div></div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+
+<div xmlns="" class="wrapper row4">
+	<div id="copyright" class="clear">
+		<p class="fl_left">Copyright © 2014 - <a href="#">Project Wolframe</a> - All Rights Reserved</p>
+		<p class="fl_right"><a href="/copyright.html">Copyrights and credits</a></p>
+	</div>
+</div>
+
+<!-- Scripts -->
+<script xmlns="" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script xmlns="" src="http://code.jquery.com/ui/1.10.1/jquery-ui.min.js"></script>
+<script xmlns="">window.jQuery || document.write('\x3Cscript src="/layout/scripts/jquery-latest.min.js"&gt;\x3C\/script&gt;\
+\x3Cscript src="/layout/scripts/jquery-ui.min.js"&gt;\x3C\/script&gt;')</script>
+<script xmlns="">jQuery(document).ready(function($){ $('img').removeAttr('width height'); });</script>
+<script xmlns="" src="/layout/scripts/jquery-mobilemenu.min.js"></script>
+<script xmlns="" src="/layout/scripts/custom.js"></script>
+
+<!-- Google analytics tracking -->
+<script xmlns="" type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-46433226-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Tweeter follow script -->
+<script xmlns="">
+	!function( d, s, id )	{
+		var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location)?'http':'https';
+		if( !d.getElementById( id ))	{
+			js = d.createElement( s );
+			js.id = id;
+			js.src = p + '://platform.twitter.com/widgets.js';
+			fjs.parentNode.insertBefore( js,fjs );
+		}
+	} ( document, 'script', 'twitter-wjs' );
+</script>
+
+<!-- Google +1, follow -->
+<script xmlns="" type="text/javascript">
+	window.___gcfg = {
+		lang: 'en-US',
+		parsetags: 'onload'
+	};
+	( function()	{
+		var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		po.src = 'https://apis.google.com/js/plusone.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	}) ();
+</script>
+
+</body></html>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Glossary</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe documentation" /><link rel="up" href="bk01.html" title="Developing Wolframe Server Applications" /><link rel="prev" href="bk01ch06.html" title="Chapter 6. Testing and Defect Handling" /><link rel="next" href="bk01ix01.html" title="Index" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Glossary</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe documentation" /><link rel="up" href="bk01.html" title="Developing Wolframe Server Applications" /><link rel="prev" href="bk01ch04s07.html" title="4.7. Testing and defect handling" /><link rel="next" href="bk01ix01.html" title="Index" />
 	<title xmlns="">Project Wolframe</title>
 	<meta xmlns="" charset="utf-8" />
 	<meta xmlns="" name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -58,17 +58,27 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Glossary</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch06.html">Prev</a> </td><th width="60%" align="center">Developing Wolframe Server Applications</th><td width="20%" align="right"> <a accesskey="n" href="bk01ix01.html">Next</a></td></tr></table><hr /></div><div class="glossary"><div class="titlepage"><div><div><h1 class="title"><a id="idm139755613335312"></a>Glossary</h1></div></div></div><p>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Glossary</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch04s07.html">Prev</a> </td><th width="60%" align="center">Developing Wolframe Server Applications</th><td width="20%" align="right"> <a accesskey="n" href="bk01ix01.html">Next</a></td></tr></table><hr /></div><div class="glossary"><div class="titlepage"><div><div><h1 class="title"><a id="idp1399317588"></a>Glossary</h1></div></div></div><p>
 		This is the glossary for the Wolframe Application Building Manual. Although it
 		covers most of the terms used in the Wolframe world, some terms might be skipped
 		if they are rarely used in this context. These terms are explained in the
 		Application Building Manual.
 	</p><div class="glossdiv"><h3 class="title">External glossary</h3><dl><dt><a id="DDL"></a><span class="glossterm">Data Definition Language</span></dt><dd class="glossdef"><p>A domain specific language for describing data structures</p></dd></dl></div><div class="glossdiv"><h3 class="title">Wolframe glossary</h3><dl><dt><span class="glossterm">Connection Handler</span></dt><dd class="glossdef"><p>Interface for the networking to one client/server connection during its whole lifetime.
-			</p></dd><dt><span class="glossterm">Command Handler</span></dt><dd class="glossdef"><p>Interface for delegating processing of client protocol commands in a hierarchical way. A command handler is created by a connection handler or another command handler. During command execution the input/output of the connection is entirely handled by the command handler. Command Handlers are used to build the communication protocol processing as hierarchical state machine.
+			</p></dd><dt><span class="glossterm">Command Handler</span></dt><dd class="glossdef"><p>Interface for delegating processing of client protocol 
+			commands in a hierarchical way. A command handler is 
+			created by a connection handler or another command handler.
+			During command execution the input/output of the connection
+			is entirely handled by the command handler. 
+			Command Handlers are used to build the communication
+			protocol processing as hierarchical state machine.
 			</p></dd><dt><span class="glossterm">Program</span></dt><dd class="glossdef"><p>A set of named units of description of processing or data in a source file. The source file is loaded at server startup.
 			</p></dd><dt><span class="glossterm">Transaction</span></dt><dd class="glossdef"><p>A transaction is a call of a database defined in a transaction program. A transaction either fails completely or succeeds as whole. Auditing is seen as part of the transaction. Transactions have an object as input and return an object or an error as result.
 				Authorization tags that are checked against the user privileges of the connection can be attached to transactions.
-			</p></dd><dt><span class="glossterm">Lua</span></dt><dd class="glossdef"><p>Lua (www.lua.org) is a scripting language. It is used in Wolframe as one language for writing programs. It distinguishes itself by being lightweight. It has to be lightweight because the language context has to be recreated with every start of a clients command execution for security reasons.
+			</p></dd><dt><span class="glossterm">Lua</span></dt><dd class="glossdef"><p>Lua (www.lua.org) is a scripting language.
+			It is used in Wolframe as one language for writing 
+			programs. Lua integrates nice into a 
+			cooperative system with a single threaded execution
+			model as Wolframe is.
 			</p></dd><dt><span class="glossterm">Filter</span></dt><dd class="glossdef"><p>Filters are attached to network input and output to read and write input in a well defined format. Filters let you process input and print output in an iterative way. Filters are loaded by the system at startup and have a unique name.
 			</p></dd><dt><span class="glossterm">Form</span></dt><dd class="glossdef"><p>A form is a hierarchical description of typed data. Forms are used to create objects from a serialization and to validate input. Forms are defined in programs written in a DDL (Data Definition Language) or as declared as part of a build-in function API.
 			</p></dd><dt><span class="glossterm">Channel</span></dt><dd class="glossdef"><p>The flow for a single connection. Not all objects have channels (e.g. databases).
@@ -95,7 +105,7 @@
 			are cryptographic protocols that provide communication security over the Internet.
 			TLS and SSL encrypt the segments of network connections above the Transport Layer,
 			using asymmetric cryptography for key exchange, symmetric encryption for privacy,
-			and message authentication codes for message integrity.</p><p>See Also <a class="glossseealso" href="bk01go01.html#SSL"><acronym class="acronym">SSL</acronym></a>.</p></dd></dl></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk01ch06.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk01.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk01ix01.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter 6. Testing and Defect Handling </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> Index</td></tr></table></div></div></div>
+			and message authentication codes for message integrity.</p><p>See Also <a class="glossseealso" href="bk01go01.html#SSL"><acronym class="acronym">SSL</acronym></a>.</p></dd></dl></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk01ch04s07.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk01.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk01ix01.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">4.7. Testing and defect handling </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> Index</td></tr></table></div></div></div>
 
 <!-- Footer -->
 <div xmlns="" class="wrapper row2">

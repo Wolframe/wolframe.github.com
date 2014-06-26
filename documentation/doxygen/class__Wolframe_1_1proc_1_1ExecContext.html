@@ -130,6 +130,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a00afde7f9b7b657d22d5670a2554fd27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a00afde7f9b7b657d22d5670a2554fd27">setDefaultTimeout</a> (unsigned int timeout_sec_)</td></tr>
 <tr class="memdesc:a00afde7f9b7b657d22d5670a2554fd27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the default timeout for read operations in seconds (0=forever)  <a href="#a00afde7f9b7b657d22d5670a2554fd27">More...</a><br /></td></tr>
 <tr class="separator:a00afde7f9b7b657d22d5670a2554fd27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8486a275e130a5e37f421c5713604ba3"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a8486a275e130a5e37f421c5713604ba3">socketIdentifier</a> () const </td></tr>
+<tr class="memdesc:a8486a275e130a5e37f421c5713604ba3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the socket identifier for authorization checks.  <a href="#a8486a275e130a5e37f421c5713604ba3">More...</a><br /></td></tr>
+<tr class="separator:a8486a275e130a5e37f421c5713604ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5436cd3dd68104ed0c0c665d36621a09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a5436cd3dd68104ed0c0c665d36621a09">setSocketIdentifier</a> (const char *socket_identifier_)</td></tr>
+<tr class="memdesc:a5436cd3dd68104ed0c0c665d36621a09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the socket identifier for authorization checks.  <a href="#a5436cd3dd68104ed0c0c665d36621a09">More...</a><br /></td></tr>
+<tr class="separator:a5436cd3dd68104ed0c0c665d36621a09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bfc653409b81e5533b5b5a14921e6a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1AAAA_1_1Authenticator.html">AAAA::Authenticator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a2bfc653409b81e5533b5b5a14921e6a8">authenticator</a> (const <a class="el" href="class__Wolframe_1_1net_1_1RemoteEndpoint.html">net::RemoteEndpoint</a> &amp;client) const </td></tr>
 <tr class="memdesc:a2bfc653409b81e5533b5b5a14921e6a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an authenticator.  <a href="#a2bfc653409b81e5533b5b5a14921e6a8">More...</a><br /></td></tr>
 <tr class="separator:a2bfc653409b81e5533b5b5a14921e6a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,6 +168,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a87d1fd2eb7774ee064132aac51749bb3"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a87d1fd2eb7774ee064132aac51749bb3">m_default_timeout</a></td></tr>
 <tr class="memdesc:a87d1fd2eb7774ee064132aac51749bb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">default timeout  <a href="#a87d1fd2eb7774ee064132aac51749bb3">More...</a><br /></td></tr>
 <tr class="separator:a87d1fd2eb7774ee064132aac51749bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9922709d221ed3d03dc9231aa653ed62"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a9922709d221ed3d03dc9231aa653ed62">m_socket_identifier</a></td></tr>
+<tr class="memdesc:a9922709d221ed3d03dc9231aa653ed62"><td class="mdescLeft">&#160;</td><td class="mdescRight">configured "identifier" in socket configuration  <a href="#a9922709d221ed3d03dc9231aa653ed62">More...</a><br /></td></tr>
+<tr class="separator:a9922709d221ed3d03dc9231aa653ed62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Execution context passed to functions for referencing resources and to define authorization dependend processing. </p>
@@ -457,6 +466,32 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a5436cd3dd68104ed0c0c665d36621a09"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _Wolframe::proc::ExecContext::setSocketIdentifier </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>socket_identifier_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the socket identifier for authorization checks. </p>
+
+</div>
+</div>
 <a class="anchor" id="a33ed8ec104f4453ed2a53a6baf633c70"></a>
 <div class="memitem">
 <div class="memproto">
@@ -480,6 +515,31 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set the user instance (own by this from now) </p>
+
+</div>
+</div>
+<a class="anchor" id="a8486a275e130a5e37f421c5713604ba3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* _Wolframe::proc::ExecContext::socketIdentifier </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the socket identifier for authorization checks. </p>
 
 </div>
 </div>
@@ -597,6 +657,28 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a9922709d221ed3d03dc9231aa653ed62"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* _Wolframe::proc::ExecContext::m_socket_identifier</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>configured "identifier" in socket configuration </p>
+
+</div>
+</div>
 <a class="anchor" id="afece1a87a8436860c4592721e25a6086"></a>
 <div class="memitem">
 <div class="memproto">
@@ -626,7 +708,7 @@ Private Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 24 2014 14:14:02 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 26 2014 09:36:04 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

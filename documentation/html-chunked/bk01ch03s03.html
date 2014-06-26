@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>3.3. Functions in Python</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe documentation" /><link rel="up" href="bk01ch03.html" title="Chapter 3. Functions" /><link rel="prev" href="bk01ch03s02.html" title="3.2. Functions in .NET" /><link rel="next" href="bk01ch03s04.html" title="3.4. Functions in Lua" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>3.3. Authorization</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe documentation" /><link rel="up" href="bk01ch03.html" title="Chapter 3. AAAA" /><link rel="prev" href="bk01ch03s02.html" title="3.2. Authentication" /><link rel="next" href="bk01ch03s04.html" title="3.4. Auditing And Accounting" />
 	<title xmlns="">Project Wolframe</title>
 	<meta xmlns="" charset="utf-8" />
 	<meta xmlns="" name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -58,12 +58,40 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.3. Functions in Python</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch03s02.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Functions</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch03s04.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idm139755614894944"></a>3.3. Functions in Python</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idm139755614927552"></a>3.3.1. Current Development State</h3></div></div></div><p>You can write functions for the logic tier of <span class="application">Wolframe</span> in the 
-		<span class="application">Python</span> programming language (<a class="ulink" href="http://www.python.org" target="_top">http://www.python.org</a>).
-		</p><p>
-		The implementation of <span class="application">Python</span> calls is not yet available. 
-		But <span class="application">Wolframe</span> will provide <span class="application">Python</span> functions soon.
-		</p></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk01ch03s02.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk01ch03.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk01ch03s04.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">3.2. Functions in .NET </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 3.4. Functions in Lua</td></tr></table></div></div></div>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.3. Authorization</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch03s02.html">Prev</a> </td><th width="60%" align="center">Chapter 3. AAAA</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch03s04.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1397311268"></a>3.3. Authorization</h2></div></div></div><p>The aspect of authorization is configured in the 
+	subsection <code class="code">Authorization</code> of the <code class="code">AAAA</code> section
+	in the server configuration.
+	Authorization in Wolframe has two levels. The first level is authorization
+	based on connection info, e.g. is a client allowed/denied to connect
+	from a certain ip range. Connection info based authorization happens on
+	connect to the server. The second level is command execution authorization
+	that happens on execution of a function or on access of some resources 
+	based on authentication info and connection info.
+	</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1397308556"></a>3.3.1. Authorization based on connection info</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1397308876"></a>Development status</h4></div></div></div><p>The authorization based on connection info is not
+		implemented yet. Authorization based on connection info
+		will be a subject of the next release.
+		The only working configuration is the
+		default <code class="code">Authorization</code> configuration with 
+		the setting to allow access to anybody authenticated 
+		that is not explicitely denied:
+		</p><pre class="programlisting">
+AAAA
+{
+    Authorization
+    {
+        Authorization {
+            default allow
+        }
+    }
+}
+		</pre><p>
+		</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1397449956"></a>3.3.2. Command execution authorization</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1397450276"></a>Development status</h4></div></div></div><p>The command execution authorization is implemented as
+		call of a function of the global context. The function has
+		access to the user and connection data. Unfortunately there
+		is no support implemented yet to configure an authentication
+		schema. But authorization based on command execution
+		will be a subject of the next release.
+		</p></div></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk01ch03s02.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk01ch03.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk01ch03s04.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">3.2. Authentication </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 3.4. Auditing And Accounting</td></tr></table></div></div></div>
 
 <!-- Footer -->
 <div xmlns="" class="wrapper row2">
