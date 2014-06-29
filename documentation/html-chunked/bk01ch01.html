@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Chapter 1. Introduction</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe documentation" /><link rel="up" href="bk01.html" title="Developing Wolframe Server Applications" /><link rel="prev" href="bk01pr01.html" title="Foreword" /><link rel="next" href="bk01ch02.html" title="Chapter 2. Server Configuration" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Chapter 1. Introduction</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe documentation" /><link rel="up" href="bk01.html" title="Developing Wolframe Server Applications" /><link rel="prev" href="bk01pr01.html" title="Foreword" /><link rel="next" href="bk01ch02.html" title="Chapter 2. Installation via binary packages" />
 	<title xmlns="">Project Wolframe</title>
 	<meta xmlns="" charset="utf-8" />
 	<meta xmlns="" name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -58,25 +58,25 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 1. Introduction</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01pr01.html">Prev</a> </td><th width="60%" align="center">Developing Wolframe Server Applications</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch02.html">Next</a></td></tr></table><hr /></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="idp1394073524"></a>Chapter 1. Introduction</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="bk01ch01.html#idp1393961700">1.1. Architecture</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk01ch01.html#idp1393973636">1.1.1. Presentation tier</a></span></dt><dt><span class="sect2"><a href="bk01ch01.html#idp1393974900">1.1.2. Logic tier</a></span></dt><dt><span class="sect2"><a href="bk01ch01.html#idp1393890148">1.1.3. Data tier</a></span></dt></dl></dd></dl></div><p>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 1. Introduction</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01pr01.html">Prev</a> </td><th width="60%" align="center">Developing Wolframe Server Applications</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch02.html">Next</a></td></tr></table><hr /></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="idp1396852108"></a>Chapter 1. Introduction</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="bk01ch01.html#idp1396729508">1.1. Architecture</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk01ch01.html#idp1396718476">1.1.1. Presentation tier</a></span></dt><dt><span class="sect2"><a href="bk01ch01.html#idp1396628948">1.1.2. Logic tier</a></span></dt><dt><span class="sect2"><a href="bk01ch01.html#idp1396642484">1.1.3. Data tier</a></span></dt></dl></dd></dl></div><p>
 	First we describe the overall architecture and the data flow in a <span class="application">Wolframe</span> application.
-	</p><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1393961700"></a>1.1. Architecture</h2></div></div></div><p><span class="application">Wolframe</span> is a 3-tier application server.
-		</p><div class="figure"><a id="idp1393962516"></a><p class="title"><strong>Figure 1.1. Overview</strong></p><div class="figure-contents"><div class="mediaobject"><img src="images/3-tier.png" alt="Overview" /><div class="caption"><p></p></div></div></div></div><br class="figure-break" /><p></p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1393973636"></a>1.1.1. Presentation tier</h3></div></div></div><p>The presentation tier of <span class="application">Wolframe</span> is implemented as a thin client.
+	</p><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1396729508"></a>1.1. Architecture</h2></div></div></div><p><span class="application">Wolframe</span> is a 3-tier application server.
+		</p><div class="figure"><a id="idp1396730324"></a><p class="title"><strong>Figure 1.1. Overview</strong></p><div class="figure-contents"><div class="mediaobject"><img src="images/3-tier.png" alt="Overview" /><div class="caption"><p></p></div></div></div></div><br class="figure-break" /><p></p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1396718476"></a>1.1.1. Presentation tier</h3></div></div></div><p>The presentation tier of <span class="application">Wolframe</span> is implemented as a thin client.
 			It maps the presentation of the application from the request answers it gets from the server.
 			For some clients the data describing this mapping can also be loaded from the server when connecting to it.
 			The whole processing ot the application is made by the server.
-		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1393974900"></a>1.1.2. Logic tier</h3></div></div></div><p>The logic tier of <span class="application">Wolframe</span>
+		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1396628948"></a>1.1.2. Logic tier</h3></div></div></div><p>The logic tier of <span class="application">Wolframe</span>
 			defines the processing of application server requests
 			and the rules for access control with the configurable
 			mechanisms for authorization.
-			</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1393975956"></a>Access control</h5></div></div></div><p>A client that logs in to the system passes an 
+			</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1396630004"></a>Access control</h5></div></div></div><p>A client that logs in to the system passes an 
 			authentication procedure. The resulting authentication
 			defines the privileges to execute functions or 
 			accessing resources (authorization).
-			The chapter <a class="link" href="bk01ch03.html" title="Chapter 3. AAAA">AAAA (Authentication,Authorization,Auditing and Accounting)</a>
+			The chapter <a class="link" href="bk01ch04.html" title="Chapter 4. AAAA">AAAA (Authentication,Authorization,Auditing and Accounting)</a>
 			will introduce the several aspects covered by Wolframe
 			besides data processing.
-			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1393977300"></a>Data processing</h5></div></div></div><p>
+			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1396637500"></a>Data processing</h5></div></div></div><p>
 			A client that passed authentication can send application
 			server requests to the server.
 			A request consists of a command name plus a structured 
@@ -90,9 +90,9 @@
 			concepts as data processing building blocks for handling
 			the server requests:
 				</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><em class="glossterm">Filters</em>: Filters are transforming serialized input data (XML,JSON,CSV,etc.) to a unified serialization of hierarchically structured data and to serialize any form of processed data for output. Filters are implemented as loadable modules (e.g. XML filter based on libxml2, JSON filter based on cJSON) or as scripts based on a filter module (XSLT filter script for rewriting input or output)</p></li><li class="listitem"><p><em class="glossterm">Forms</em>: Forms are data structures defined in a data definition language (DDL). Forms are used to validate and normalize input (XML validation, token normalization, structure definition). The recommended definition of a command in the logic tier has a form to validate its input and a form to validate its output before returning it to the caller.</p></li><li class="listitem"><p><em class="glossterm">Functions</em>: Functions delegate processing to the data tier (transactions) or they are simple data transformations or they serve as interface to integrate with other environments (e.g. <span class="application">.NET</span>). Functions have a unique name and are called with a structure as argument and a structure as result. Functions can call other functions for delegation, e.g. a transaction definition can call a .NET function for preprocessing its input or a .NET function can call a Python function to do parts of the processing.</p></li></ul></div><p>
-			The chapter <a class="link" href="bk01ch04.html" title="Chapter 4. Data processing">data processing</a>
+			The chapter <a class="link" href="bk01ch05.html" title="Chapter 5. Data processing">data processing</a>
 			will describe these building blocks.
-			</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1393890148"></a>1.1.3. Data tier</h3></div></div></div><p>The data tier of <span class="application">Wolframe</span> defines the 
+			</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1396642484"></a>1.1.3. Data tier</h3></div></div></div><p>The data tier of <span class="application">Wolframe</span> defines the 
 			interface to the databases of the application. A transaction description
 			is passed as a complete data structure to the database that returns the
 			result of the transaction.
@@ -106,7 +106,7 @@
 			of the underlying database. Wolframe supports many databases like 
 			for example PostgreSQL, Sqlite and Oracle and others can be added 
 			by just implementing the database interface as a loadable module.
-			</p></div></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk01pr01.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk01.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk01ch02.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Foreword </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> Chapter 2. Server Configuration</td></tr></table></div></div></div>
+			</p></div></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk01pr01.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk01.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk01ch02.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Foreword </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> Chapter 2. Installation via binary packages</td></tr></table></div></div></div>
 
 <!-- Footer -->
 <div xmlns="" class="wrapper row2">

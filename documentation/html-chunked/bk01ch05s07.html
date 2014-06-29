@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>3.5. Eliminating Interface Defects</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe documentation" /><link rel="up" href="bk02ch03.html" title="Chapter 3. The Wolframe Standard Client" /><link rel="prev" href="bk02ch03s04.html" title="3.4. Programming Server Requests/Answers" /><link rel="next" href="bk02ix01.html" title="Index" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>5.7. Testing and defect handling</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe documentation" /><link rel="up" href="bk01ch05.html" title="Chapter 5. Data processing" /><link rel="prev" href="bk01ch05s06.html" title="5.6. Filters" /><link rel="next" href="bk01go01.html" title="Glossary" />
 	<title xmlns="">Project Wolframe</title>
 	<meta xmlns="" charset="utf-8" />
 	<meta xmlns="" name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -58,34 +58,79 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.5. Eliminating Interface Defects</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk02ch03s04.html">Prev</a> </td><th width="60%" align="center">Chapter 3. The Wolframe Standard Client</th><td width="20%" align="right"> <a accesskey="n" href="bk02ix01.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1394146180"></a>3.5. Eliminating Interface Defects</h2></div></div></div><p>
-		Functional defects in the user interface like for example syntax errors in the
-		definitions of the request answer can be eliminated by inspecting the error messages
-		reported by the <span class="application">wolfclient</span> in developer mode
-		and fixing the interface accordingly.
-	</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1394147820"></a>3.5.1. Switch the Developer Mode On</h3></div></div></div><p>In order to inspect the internals of your client program, we have first
-		to switch on "Developer Mode" in the "Developer" context of the "Preferences Dialog".
-		The following picture emphasizes the check box you have to enable (highlighted green).
-		</p><div class="screenshot"><div class="mediaobject"><img src="images/clients/preferences_developper_develmode.png" /></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1394144884"></a>3.5.2. Inspect Errors and Warnings and Debug Messages Reported</h3></div></div></div><p>To inspect internal messages reported by the <span class="application">wolfclient</span>
-		in developer mode we have to open the debug window.
-		The debug window is opened by clicking on the bug icon in the
-		main tool bar or via the developer context menu. The following picture
-		shows an example debug output. Each action we do from now on with
-		the debug window opened can be followed on the level of messages it emits.
-		</p><p>
-		We can see the messages in the message list when clicking on the
-		"Refresh" button. The navigation allows us to restrict our focus 
-		on messages on a node in the object tree by clicking on it. 
-		Clicking on the root node shows all messages in the recent history.
-		The history starts with the last main node created
-		before opening the debug window. All message restrictions
-		show the messages in order of their emission. We can restrict also on
-		the severity of messages in the severity level selection (the select
-		box set to "Debug" as default left of the "Refresh" button).
-		</p><p>
-		The "Clear" button allows us to empty the recent history without closing
-		the debug window.
-		</p><div class="screenshot"><div class="mediaobject"><img src="images/clients/debug_window.png" /></div></div></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk02ch03s04.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk02ch03.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk02ix01.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">3.4. Programming Server Requests/Answers </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> Index</td></tr></table></div></div></div>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">5.7. Testing and defect handling</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch05s06.html">Prev</a> </td><th width="60%" align="center">Chapter 5. Data processing</th><td width="20%" align="right"> <a accesskey="n" href="bk01go01.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1401848132"></a>5.7. Testing and defect handling</h2></div></div></div><p>In this chapter we learn how parts of a <span class="application">Wolframe</span>
+application can be verified to work correctly. The basis for testing and debugging
+a <span class="application">Wolframe</span> application is the command line tool 
+<span class="application">wolfilter</span>. 
+</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1401850412"></a>5.7.1. Using wolfilter</h3></div></div></div><p>The command line program <span class="application">wolfilter</span> allows you 
+	to call any <span class="application">Wolframe</span> function or filter or mapping 
+	into a form structure on command line. The program is mapping stdin or if 
+	specified the contents of a file to stdout.
+	</p><p>
+	The option '--config' (or '-c') specifies the configuration to use, the only argument of the
+	wolfilter program specifies the function to call or form to fill. If a dash '-' is
+	specified as command then no command is called. The input is just mapped through
+	the filters specified. In case of a form or filter mapping, no configuration has
+	to be specified.
+	</p><p>The following examples assume the input file name to be in.xml or in.json and
+	the output file to be named out.xml or out.json respectively.
+	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1401846540"></a>Test configuration</h4></div></div></div><p>For the examples needing a configuration, we prepare the following simple
+		configuration, just declaring the processing stuff, we need. Of course wolfilter
+		can also work with any wolframe server configuration. The configuration will be
+		referenced as 'test.conf'.
+		</p><pre class="programlisting">
+LoadModules
+{
+    module mod_command_lua
+    module mod_doctype_xml
+    module mod_filter_libxml2
+    module mod_filter_json
+    module mod_filter_token
+}
+Processor
+{
+    program test.lua
+    program myfilter.xslt
+    program myform.sfrm
+}
+		</pre><p>
+		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1401971476"></a>Testing a filter</h4></div></div></div><p>The following example shows the mapping through a libxml2 filter.
+		Filters are tested by passing a dash '-' command to execute.
+		Because we do not need to load programs, we can call wolfilter without
+		a test configuration.
+		</p><pre class="programlisting">
+
+cat in.xml | wolfilter -e libxml2 -m mod_filter_libxml2 - &gt; out.xml
+		</pre><p>
+		</p><p>The following example shows the processing of the input
+		through an xslt filter and mapping the output through a token filter
+		that shows the tokenization of the input by the input filter.
+		Because the referenced XSLT filter is defined as source in a program,
+		we have to specify a configuration (test.conf) that declares the
+		programs to load.
+		</p><pre class="programlisting">
+
+cat in.xml | wolfilter -i myfilter -o token -c test.conf - &gt; out.xml
+		</pre><p>
+		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1401973964"></a>Testing a Form</h4></div></div></div><p>The following example shows the mapping through a form defined with simpleform DDL.
+		Mapping through forms is tested by passing the name of the form as command to execute.
+		Because forms have to be loaded as programs, we have to specify a 
+		configuration (test.conf) too.
+		</p><pre class="programlisting">
+
+cat in.xml | wolfilter -e libxml2 -c test.conf MyForm &gt; out.xml
+		</pre><p>
+		we assume here that the form to use is defined in myform.sfrm that is declared
+		as program in the configuration and that the form is called MyForm.
+		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1401975548"></a>Testing a Function</h4></div></div></div><p>The following example shows the execution of a function written in Lua.
+		A JSON filter is used for input and output.
+		</p><pre class="programlisting">
+
+cat in.xml | wolfilter -e cjson -c test.conf MyFunc &gt; out.json
+		</pre><p>
+		we assume here that the exported function to call defined in myfunc.lua 
+		declared in test.conf and is called MyFunc.
+		</p></div></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk01ch05s06.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk01ch05.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk01go01.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">5.6. Filters </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> Glossary</td></tr></table></div></div></div>
 
 <!-- Footer -->
 <div xmlns="" class="wrapper row2">

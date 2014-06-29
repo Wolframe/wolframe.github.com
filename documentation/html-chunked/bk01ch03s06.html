@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>3.2. Artifacts</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe documentation" /><link rel="up" href="bk02ch03.html" title="Chapter 3. The Wolframe Standard Client" /><link rel="prev" href="bk02ch03.html" title="Chapter 3. The Wolframe Standard Client" /><link rel="next" href="bk02ch03s03.html" title="3.3. Programming the Interface" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>3.6. Database Configuration</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe documentation" /><link rel="up" href="bk01ch03.html" title="Chapter 3. Server Configuration" /><link rel="prev" href="bk01ch03s05.html" title="3.5. Global Settings" /><link rel="next" href="bk01ch04.html" title="Chapter 4. AAAA" />
 	<title xmlns="">Project Wolframe</title>
 	<meta xmlns="" charset="utf-8" />
 	<meta xmlns="" name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -58,39 +58,13 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.2. Artifacts</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk02ch03.html">Prev</a> </td><th width="60%" align="center">Chapter 3. The Wolframe Standard Client</th><td width="20%" align="right"> <a accesskey="n" href="bk02ch03s03.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1393965636"></a>3.2. Artifacts</h2></div></div></div><p>
-	The <span class="application">wolfclient</span> renders user interface forms dynamically,
-	this means no code generation or compilation is involved when creating
-	user interfaces for Wolframe.
-</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1393954356"></a>3.2.1. UI forms</h3></div></div></div><p>
-			The UI files follow the schema
-			'qt-ui-4.7.xsd', as documented in
-			<a class="ulink" href="http://qt-project.org/doc/qt-4.8/designer-ui-file-format.html" target="_top"><em class="citetitle">http://qt-project.org/doc/qt-4.8/designer-ui-file-format.html</em></a>.
-			The UI files have the extension <span class="emphasis"><em>.ui</em></span>
-		</p><p>
-			UI files are created and edited with the Qt designer.
-		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1393956004"></a>3.2.2. UI form translations</h3></div></div></div><p>
-			The <span class="application">wolfclient</span> uses the Qt translation format, version 2.0 for form translations
-			as described in
-			<a class="ulink" href="http://qt-project.org/doc/qt-4.8/linguist-ts-file-format.html" target="_top"><em class="citetitle">http://qt-project.org/doc/qt-4.8/linguist-ts-file-format.htmll</em></a>.
-			Those are the files with extension <span class="emphasis"><em>.ts</em></span>.
-		</p><p>
-			The translation files can get merged and generated with the <span class="emphasis"><em>lupdate</em></span>
-			tool, then translated with the <span class="emphasis"><em>Qt Linguist</em></span>.
-		</p><p>
-			The Qt client needs the files in compiled form as files with the extension
-			<span class="emphasis"><em>.qm</em></span>. The <span class="emphasis"><em>lupdate</em></span> tool is taking
-			care of that.
-		</p><p>
-			Read more on translations in
-			<a class="ulink" href="http://qt-project.org/doc/qt-4.8/linguist-manual.html" target="_top"><em class="citetitle">http://qt-project.org/doc/qt-4.8/linguist-manual.html</em></a>.
-		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1394001764"></a>3.2.3. Resources</h3></div></div></div><p>
-			Binary resource files contain images for the user interface.
-		</p><p>
-			Binary resource files (extension <span class="emphasis"><em>.rss</em></span>) are compiled from
-			a XML file (extension <span class="emphasis"><em>.qrc</em></span>) with the <span class="emphasis"><em>rcc</em></span>
-			resource compiler.
-		</p></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk02ch03.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk02ch03.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk02ch03s03.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter 3. The Wolframe Standard Client </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 3.3. Programming the Interface</td></tr></table></div></div></div>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.6. Database Configuration</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch03s05.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Server Configuration</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch04.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1400405444"></a>3.6. Database Configuration</h2></div></div></div><p>
+	The Databases for Wolframe are configured in the <code class="code">Database</code>
+	section of the configuration.
+	</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1400415228"></a>3.6.1. PostgreSQL</h3></div></div></div><p>
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1400402196"></a>3.6.2. Sqlite3</h3></div></div></div><p>
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1400402788"></a>3.6.3. Oracle</h3></div></div></div><p>
+	</p></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk01ch03s05.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk01ch03.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk01ch04.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">3.5. Global Settings </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> Chapter 4. AAAA</td></tr></table></div></div></div>
 
 <!-- Footer -->
 <div xmlns="" class="wrapper row2">

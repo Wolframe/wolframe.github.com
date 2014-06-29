@@ -139,9 +139,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2bfc653409b81e5533b5b5a14921e6a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1AAAA_1_1Authenticator.html">AAAA::Authenticator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a2bfc653409b81e5533b5b5a14921e6a8">authenticator</a> (const <a class="el" href="class__Wolframe_1_1net_1_1RemoteEndpoint.html">net::RemoteEndpoint</a> &amp;client) const </td></tr>
 <tr class="memdesc:a2bfc653409b81e5533b5b5a14921e6a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an authenticator.  <a href="#a2bfc653409b81e5533b5b5a14921e6a8">More...</a><br /></td></tr>
 <tr class="separator:a2bfc653409b81e5533b5b5a14921e6a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a620b007861a2b4e732740b74dd8397ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a620b007861a2b4e732740b74dd8397ad">checkAuthorization</a> (const std::string &amp;authorizationFunction, const std::string &amp;authorizationResource)</td></tr>
-<tr class="memdesc:a620b007861a2b4e732740b74dd8397ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a function tagged with AUTHORIZE( authorizationFunction, authorizationResource) is allowed to be executed.  <a href="#a620b007861a2b4e732740b74dd8397ad">More...</a><br /></td></tr>
-<tr class="separator:a620b007861a2b4e732740b74dd8397ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5307648928aab6703a439ea9a0aa3ccf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a5307648928aab6703a439ea9a0aa3ccf">checkAuthorization</a> (const std::string &amp;funcname, const std::string &amp;resource, std::string &amp;errmsg)</td></tr>
+<tr class="memdesc:a5307648928aab6703a439ea9a0aa3ccf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a function tagged with AUTHORIZE( funcname, resource) is allowed to be executed.  <a href="#a5307648928aab6703a439ea9a0aa3ccf">More...</a><br /></td></tr>
+<tr class="separator:a5307648928aab6703a439ea9a0aa3ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -312,7 +312,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a620b007861a2b4e732740b74dd8397ad"></a>
+<a class="anchor" id="a5307648928aab6703a439ea9a0aa3ccf"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -320,13 +320,19 @@ Private Attributes</h2></td></tr>
           <td class="memname">bool _Wolframe::proc::ExecContext::checkAuthorization </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>authorizationFunction</em>, </td>
+          <td class="paramname"><em>funcname</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>authorizationResource</em>&#160;</td>
+          <td class="paramname"><em>resource</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>errmsg</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -336,7 +342,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Checks if a function tagged with AUTHORIZE( authorizationFunction, authorizationResource) is allowed to be executed. </p>
+<p>Checks if a function tagged with AUTHORIZE( funcname, resource) is allowed to be executed. </p>
 
 </div>
 </div>
@@ -708,7 +714,7 @@ Private Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 26 2014 09:36:04 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 29 2014 13:47:59 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

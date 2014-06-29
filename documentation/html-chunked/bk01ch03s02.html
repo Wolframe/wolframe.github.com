@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>3.2. Authentication</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe documentation" /><link rel="up" href="bk01ch03.html" title="Chapter 3. AAAA" /><link rel="prev" href="bk01ch03.html" title="Chapter 3. AAAA" /><link rel="next" href="bk01ch03s03.html" title="3.3. Authorization" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>3.2. Listener Configuration</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe documentation" /><link rel="up" href="bk01ch03.html" title="Chapter 3. Server Configuration" /><link rel="prev" href="bk01ch03.html" title="Chapter 3. Server Configuration" /><link rel="next" href="bk01ch03s03.html" title="3.3. Logger Configuration" />
 	<title xmlns="">Project Wolframe</title>
 	<meta xmlns="" charset="utf-8" />
 	<meta xmlns="" name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -58,29 +58,68 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.2. Authentication</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch03.html">Prev</a> </td><th width="60%" align="center">Chapter 3. AAAA</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch03s03.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1397372764"></a>3.2. Authentication</h2></div></div></div><p>The aspect of authentication is configured in the 
-	subsection <code class="code">Authentication</code> of the <code class="code">AAAA</code> section
-	in the server configuration.
-	The following example shows an <code class="code">Authentication</code>
-	configuration with the Wolframe textfile authentication module
-	that provides an authentication over the "WOLFRAME-CRAM" protocol:
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.2. Listener Configuration</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch03.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Server Configuration</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch03s03.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1400280308"></a>3.2. Listener Configuration</h2></div></div></div><p>
+	The listener configuration is defined in the <code class="code">Listener</code>
+	section. The listener specifies the set of accepted connections
+	and their attributes. It also defines some global settings listed
+	in the following table:
+
+	</p><div class="table"><a id="idp1400271036"></a><p class="title"><strong>Table 3.3. Global listener settings</strong></p><div class="table-contents"><table summary="Global listener settings" border="1"><colgroup><col class="col1" /><col class="col2" /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>MaxConnections</td><td>The maximum number of total simultaneous connections (clients). When set to 0 then the default is used. The Default is the operating system limit.</td></tr><tr><td>Threads</td><td>Number of threads for serving client connections</td></tr></tbody></table></div></div><p><br class="table-break" />
+	Here is an example configuration of the global settings:
 	</p><pre class="programlisting">
-AAAA
+Listener
 {
-    Authentication
-    {
-        randomDevice /dev/urandom
-        TextFile
-        {
-            identifier "TextFileAuth"
-            file /var/tmp/wolframe.auth
-        }
+    MaxConnections 12
+    Threads 7
 }
 	</pre><p>
-	</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1397371356"></a>3.2.1. Authentication mechs</h3></div></div></div><p>Currently only the authentication protocol for
-		<code class="code">WOLFRAME-CRAM</code> is implemented. You configure
-		it as shown in the example above.
-		</p></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk01ch03.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk01ch03.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk01ch03s03.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter 3. AAAA </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 3.3. Authorization</td></tr></table></div></div></div>
+	The listener allows 2 different types of connections to configure.
+	The types are also the section names where they are configured in
+	the listener configuration. One is <code class="code">Socket</code> that describes 
+	a plain connection. The other is <code class="code">SslSsocket</code> that describes 
+	a connection with transport layer encryption based on SSL/TLS. In the 
+	following 2 sections they are introduced:
+	</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1400327964"></a>3.2.1. Socket</h3></div></div></div><p>In subsections <code class="code">Socket</code> of the section <code class="code">Listener</code>
+	of the configuration we describe plain connections based on TCP.
+	The follwing table describes the attributes you can set for plain TCP
+	connections:
+	</p><div class="table"><a id="idp1400328956"></a><p class="title"><strong>Table 3.4. Socket settings</strong></p><div class="table-contents"><table summary="Socket settings" border="1"><colgroup><col class="col1" /><col class="col2" /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>Address</td><td>Listening address (IPv4 or IPv6) of the server</td></tr><tr><td>Port</td><td>Connection port</td></tr><tr><td>Identifier</td><td>Identifier that can be reference in authorization functions to classify connections and do authorization based on it.</td></tr><tr><td>MaxConnections</td><td>The maximum number of simultaneus connections for this port.</td></tr></tbody></table></div></div><p><br class="table-break" />
+	The following configuration shows an example plain TCP connection definition:
+	</p><pre class="programlisting">
+Listener
+{
+    Socket
+    {
+        address     localhost
+        port        7662
+        identifier  "Interface 1"
+    }
+}
+	</pre><p>
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1400335172"></a>3.2.2. SslSocket</h3></div></div></div><p>In subsections <code class="code">SslSocket</code> of the section <code class="code">Listener</code>
+	of the configuration we describe connections connection with transport 
+	layer encryption based on SSL/TLS.
+	The follwing table describes the attributes you can set for SSL/TLS
+	connections. The first 4 attributes are the same as for TCP/IP plain:
+	</p><div class="table"><a id="idp1400336260"></a><p class="title"><strong>Table 3.5. SslSocket settings</strong></p><div class="table-contents"><table summary="SslSocket settings" border="1"><colgroup><col class="col1" /><col class="col2" /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>Address</td><td>IPv4 or IPv6 address of the server</td></tr><tr><td>Port</td><td>Connection port</td></tr><tr><td>Identifier</td><td>Identifier that can be reference in authorization functions to classify connections and do authorization based on it.</td></tr><tr><td>MaxConnections</td><td>The maximum number of simultaneus connections for this port.</td></tr><tr><td>Certificate</td><td>File with the SSL certificate</td></tr><tr><td>Key</td><td>File with the SSL key</td></tr><tr><td>CAdirectory</td><td>Directory holding the CA certificate files</td></tr><tr><td>CAchainFile</td><td>SSL CA chain file</td></tr><tr><td>verify</td><td>ON/OFF switch to enabe/disable client certificate verification</td></tr></tbody></table></div></div><p><br class="table-break" />
+	The following configuration shows an example SSL connection definition:
+	</p><pre class="programlisting">
+Listener
+{
+    SslSocket
+    {
+        address        localhost
+        port           7662
+        identifier     "Interface 1"
+        maxConnections 2
+        certificate    SSL/wolframed.crt
+        key            SSL/wolframed.key
+        CAchainFile    SSL/CAchain.pem
+        verify         OFF
+    }
+}
+	</pre><p>
+	</p></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk01ch03.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk01ch03.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk01ch03s03.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter 3. Server Configuration </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 3.3. Logger Configuration</td></tr></table></div></div></div>
 
 <!-- Footer -->
 <div xmlns="" class="wrapper row2">

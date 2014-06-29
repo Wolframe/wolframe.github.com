@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>3.3. Authorization</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe documentation" /><link rel="up" href="bk01ch03.html" title="Chapter 3. AAAA" /><link rel="prev" href="bk01ch03s02.html" title="3.2. Authentication" /><link rel="next" href="bk01ch03s04.html" title="3.4. Auditing And Accounting" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>3.3. Logger Configuration</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe documentation" /><link rel="up" href="bk01ch03.html" title="Chapter 3. Server Configuration" /><link rel="prev" href="bk01ch03s02.html" title="3.2. Listener Configuration" /><link rel="next" href="bk01ch03s04.html" title="3.4. Modules" />
 	<title xmlns="">Project Wolframe</title>
 	<meta xmlns="" charset="utf-8" />
 	<meta xmlns="" name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -58,40 +58,87 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.3. Authorization</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch03s02.html">Prev</a> </td><th width="60%" align="center">Chapter 3. AAAA</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch03s04.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1397311268"></a>3.3. Authorization</h2></div></div></div><p>The aspect of authorization is configured in the 
-	subsection <code class="code">Authorization</code> of the <code class="code">AAAA</code> section
-	in the server configuration.
-	Authorization in Wolframe has two levels. The first level is authorization
-	based on connection info, e.g. is a client allowed/denied to connect
-	from a certain ip range. Connection info based authorization happens on
-	connect to the server. The second level is command execution authorization
-	that happens on execution of a function or on access of some resources 
-	based on authentication info and connection info.
-	</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1397308556"></a>3.3.1. Authorization based on connection info</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1397308876"></a>Development status</h4></div></div></div><p>The authorization based on connection info is not
-		implemented yet. Authorization based on connection info
-		will be a subject of the next release.
-		The only working configuration is the
-		default <code class="code">Authorization</code> configuration with 
-		the setting to allow access to anybody authenticated 
-		that is not explicitely denied:
-		</p><pre class="programlisting">
-AAAA
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.3. Logger Configuration</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch03s02.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Server Configuration</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch03s04.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1400324892"></a>3.3. Logger Configuration</h2></div></div></div><p>
+	The logger configuration is defined in the <code class="code">Logging</code>
+	section. The logger is defined for different backends.
+	We can define several backends for the logger. 
+	</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1400323772"></a>3.3.1. Log message types and log levels</h3></div></div></div><p>
+	Each backend defines the level (verbosity) of logging. For the
+	log levels we use the type of the log message. The types of log
+	messages can be listed in ascending order of their severity.
+	Setting the log level to a type of log message means that the system
+	logs all messages with equal or higher severity than the specified
+	type. The log message types are listed in the following table.
+	They are listed in ascending order of severity:
+
+	</p><div class="table"><a id="idp1400312668"></a><p class="title"><strong>Table 3.6. Log message types</strong></p><div class="table-contents"><table summary="Log message types" border="1"><colgroup><col class="col1" /><col class="col2" /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>DATA2</td><td>Processing data messages, not truncated</td></tr><tr><td>DATA</td><td>Processing data messages with big chunks truncated</td></tr><tr><td>TRACE</td><td>Processing trace messages</td></tr><tr><td>DEBUG</td><td>Debug messages</td></tr><tr><td>INFO</td><td>Information messages</td></tr><tr><td>NOTICE</td><td>Important information messages</td></tr><tr><td>WARNING</td><td>Warning messages</td></tr><tr><td>ERROR</td><td>Processing error messages</td></tr><tr><td>SEVERE</td><td>Severe errors that should be analyzed.</td></tr><tr><td>CRITICAL</td><td>Critical errors that have to notified.</td></tr><tr><td>ALERT</td><td>Critical errors that have to be escalated to a person responsible immediately.</td></tr><tr><td>FATAL</td><td>Fatal errors that cause the server to shut down.</td></tr></tbody></table></div></div><p><br class="table-break" />
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1400385348"></a>3.3.2. Log backends</h3></div></div></div><p>
+	In the following sub sections we list the different backends and how 
+	they can be configured.
+	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400385964"></a>Backend console</h4></div></div></div><p>For defining the backend to log to console (stderr), we
+			have to configure a subsection <code class="code">stderr</code> of the
+			<code class="code">Logging</code> section. For console logging we just
+			can define the logging level with <code class="code">level</code>.
+Example configuration:
+</p><pre class="programlisting">
+Logging
 {
-    Authorization
-    {
-        Authorization {
-            default allow
-        }
+    stderr {
+        level INFO
     }
 }
-		</pre><p>
-		</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1397449956"></a>3.3.2. Command execution authorization</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1397450276"></a>Development status</h4></div></div></div><p>The command execution authorization is implemented as
-		call of a function of the global context. The function has
-		access to the user and connection data. Unfortunately there
-		is no support implemented yet to configure an authentication
-		schema. But authorization based on command execution
-		will be a subject of the next release.
-		</p></div></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk01ch03s02.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk01ch03.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk01ch03s04.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">3.2. Authentication </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 3.4. Auditing And Accounting</td></tr></table></div></div></div>
+</pre><p>
+			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400387780"></a>Backend logfile</h4></div></div></div><p>For defining the backend to log to a file, we
+			have to configure a subsection <code class="code">LogFile</code> of the
+			<code class="code">Logging</code> section. For logging to file we 
+			can define the logging level with <code class="code">level</code>
+			and the file name with <code class="code">filename</code>.
+Example configuration:
+</p><pre class="programlisting">
+Logging
+{
+    LogFile {
+        filename  /var/log/wolframed.log
+        level     NOTICE
+    }
+}
+</pre><p>
+			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400389828"></a>Backend syslog</h4></div></div></div><p>For defining the backend to log to syslog, we
+			have to configure a subsection <code class="code">syslog</code> of the
+			<code class="code">Logging</code> section. For logging to syslog we 
+			can define the logging level with <code class="code">level</code>,
+			the syslog facility with <code class="code">facility</code>
+			and the identifier with <code class="code">ident</code>.
+Example configuration:
+</p><pre class="programlisting">
+Logging
+{
+    syslog {
+        ident    wolframed
+        facility LOCAL2
+        level    INFO
+    }
+}
+</pre><p>
+			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400392156"></a>Backend eventlog</h4></div></div></div><p>On Windows we can also log to eventlog.
+			For defining the backend to log to eventlog, we
+			have to configure a subsection <code class="code">eventlog</code> of the
+			<code class="code">Logging</code> section. For logging to eventlog we 
+			can define the logging level with <code class="code">level</code>,
+			the eventlog source with <code class="code">source</code>
+			and the identifier with <code class="code">name</code>.
+Example configuration:
+</p><pre class="programlisting">
+Logging
+{
+    eventlog	{
+        name   Wolframe
+        source wolframed
+        level  WARNING
+    }
+}
+</pre><p>
+			</p></div></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk01ch03s02.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk01ch03.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk01ch03s04.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">3.2. Listener Configuration </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 3.4. Modules</td></tr></table></div></div></div>
 
 <!-- Footer -->
 <div xmlns="" class="wrapper row2">

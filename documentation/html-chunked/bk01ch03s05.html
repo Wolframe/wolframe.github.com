@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>3.5. Functions in Native C++</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe documentation" /><link rel="up" href="bk01ch03.html" title="Chapter 3. Functions" /><link rel="prev" href="bk01ch03s04.html" title="3.4. Functions in Lua" /><link rel="next" href="bk01ch04.html" title="Chapter 4. Forms" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>3.5. Global Settings</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe documentation" /><link rel="up" href="bk01ch03.html" title="Chapter 3. Server Configuration" /><link rel="prev" href="bk01ch03s04.html" title="3.4. Modules" /><link rel="next" href="bk01ch03s06.html" title="3.6. Database Configuration" />
 	<title xmlns="">Project Wolframe</title>
 	<meta xmlns="" charset="utf-8" />
 	<meta xmlns="" name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -58,160 +58,15 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.5. Functions in Native C++</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch03s04.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Functions</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch04.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idm139755614464976"></a>3.5. Functions in Native C++</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idm139755614497616"></a>3.5.1. Introduction</h3></div></div></div><p>You can write functions for the logic tier of <span class="application">Wolframe</span> with <span class="application">C++</span>. 
-		Because native <span class="application">C++</span> is by nature a compiled and not an
-		interpreted language, you have to build a module out of your function implementation.
-		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idm139755614508528"></a>3.5.2. Prerequisites</h3></div></div></div><p>For native <span class="application">C++</span> you need a <span class="application">C++</span>
-	build system with compiler and linker or an integrated
-	development environment for <span class="application">C++</span>. 
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idm139755614462496"></a>3.5.3. Declaring Functions</h3></div></div></div><p>
-		Form functions declared in <span class="application">C++</span> have two arguments. The output structure to fill
-		is passed by reference as first and the input structure passed is by value.
-		The input structure copy should not be modified by the callee. 
-		This means in <span class="application">C++</span> that it is passed as const 
-		reference.
-		The function returns an <code class="code">int</code> that is <code class="code">0</code> on success 
-		and any other value indicating an error code. The function may also throw a 
-		runtime error exception in case of an error.
-		The following example shows a function declaration. The function declaration
-		is not complete because the input output structures need to be declared with some
-		additional attributes needed for introspection. We will explain this in the following
-		section.
-	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idm139755614458816"></a>Example Function Declaration</h4></div></div></div><p>The function takes a structure as input and writes the result into an
-		output structure. In this example input and output type are the same, but this
-		is not required. It's just the same here for simplicity. 
-		</p><p>
-		The elements of the function declaration are put into a structure with four elements.
-		The <code class="code">typedef</code> for the InputType and OutputType structures is required,
-		because the input and output types should be recogniceable without complicated 
-		type introspection templates. (Template based introspection might cause spurious
-		and hard to understand error messages when building the module). 
-		</p><p>
-		The function <code class="code">name</code> returns the name of the function that
-		identifies the function in the Wolframe global scope.
-		</p><p>
-		The <code class="code">exec</code> function declared as static function with this signature refers to 
-		the function implementation.</p><pre class="programlisting">
-		
-// ... PUT THE INCLUDES FOR THE "Customer" STRUCTURE DECLARATION HERE !
-
-struct ProcessCustomer
-{
-    typedef Customer InputType; 
-    typedef Customer OutputType; 
-    static const char* name() {return "process_customer";}
-
-    static int exec( const proc::ProcessorProvider* provider, InputType&amp; res, const OutputType&amp; param);
-};
-
-
-		</pre></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idm139755614452672"></a>3.5.4. Input/Output Data Structures</h3></div></div></div><p>For defining input and output parameter structures in <span class="application">C++</span> you have to define the 
-		structure and its serialization description. The serialization description is a static 
-		function <code class="code">getStructDescription</code> without arguments returning a const structure that describes 
-		what element names to bind to which structure elements.
-	</p><p>
-		The following example shows a form function parameter structure defined in <span class="application">C++</span>.
-	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idm139755614449248"></a>Header File</h4></div></div></div><p>Declares the structure and the serialization description of the structure.
-		Structures may contain structures with their own serialization description.</p><pre class="programlisting">
-		
-#include "serialize/struct/structDescriptionBase.hpp"
-#include &lt;string&gt;
-
-namespace _Wolframe {
-namespace example {
-
-struct Customer
-{
-    int ID;                         // Internal customer id
-    std::string name;               // Name of the customer
-    std::string canonical_Name;     // Customer name in canonical form
-    std::string country;            // Country
-    std::string locality;           // Locality
-
-    static const serialize::StructDescriptionBase* getStructDescription();
-};
-
-}}//namespace
-
-
-		</pre></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idm139755614446224"></a>Source File</h4></div></div></div><p>Declares 'ID' as attribute and name, canonical_Name, country, locality as tags. 
-		The '--' operator marks the end of attributes section and the start of content 
-		section.</p><pre class="programlisting">
-		
-#include "serialize/struct/structDescription.hpp"
-
-using namespace _Wolframe;
-
-namespace {
-struct CustomerDescription :public serialize::StructDescription&lt;Customer&gt;
-{
-    CustomerDescription()
-    {
-        (*this)
-        ("ID", &amp;Customer::ID)
-        --
-        ("name", &amp;Customer::name)
-        ("canonical_Name", &amp;Customer::canonical_Name)
-        ("country", &amp;Customer::country)
-        ("locality", &amp;Customer::locality)
-        ;
-    }
-};
-
-const serialize::StructDescriptionBase* Customer::getStructDescription()
-{
-    static CustomerDescription rt;
-    return &amp;rt;
-}
-
-
-		</pre></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idm139755614443152"></a>3.5.5. Writing the Module</h3></div></div></div><p>Now we have all pieces together to build a loadable
-	<span class="application">Wolframe</span> module with our example <span class="application">C++</span>
-	function. The following example shows what you have to
-	declare in the main module source file.
-	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idm139755614440768"></a>Module Declaration</h4></div></div></div><p>The module declaration needs to include <code class="code">appdevel.hpp</code> and
-		of course all headers with the function and data structure declarations needed.
-		The module starts with the header macro CPP_APPLICATION_FORM_FUNCTION_MODULE
-		with a short description of the module.
-		What follows are the function declarations declared with the macro
-		CPP_APPLICATION_FORM_FUNCTION. This macro has the following arguments in
-		this order:
-		</p><table border="0" summary="Simple list" class="simplelist"><tr><td>Name</td><td>Description</td></tr><tr><td>NAME</td><td>identifier of the function</td></tr><tr><td>FUNCTION</td><td>implementation of the function</td></tr><tr><td>OUTPUT</td><td>output structure of the function</td></tr><tr><td>INPUT</td><td>input structure of the function</td></tr></table><p>
-		The declaration list is closed with the parameterless footer macro
-		CPP_APPLICATION_FORM_FUNCTION_MODULE_END.
-		The following example shows an example module declaration:
-		</p><pre class="programlisting">
-		
-#include "appDevel.hpp"
-// ... PUT THE INCLUDES FOR THE "ProcessCustomer" FUNCTION DECLARATION HERE !
-
-#include "customersFunction.hpp"
-
-using namespace _Wolframe;
-
-WF_MODULE_BEGIN( "ProcessCustomerFunction", "process customer function")
-WF_FORM_FUNCTION("process_customer",ProcessCustomer::exec,Customer,Customer)
-WF_MODULE_END
-
-
-		</pre></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idm139755614432480"></a>3.5.6. Building the Module</h3></div></div></div><p>For building the module we have to include all modules introduced here and
-	to link at against the wolframe serialization library (wolframe_serialize)
-	and the wolframe core library (wolframe).
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idm139755614431120"></a>3.5.7. Using the Module</h3></div></div></div><p>The module built can be loaded as the other modules by declaring it in the wolframe
-	LoadModules section of the configuration. Simply list it there with 
-	<code class="code">module &lt;yourModuleName&gt;</code> with &lt;yourModuleName&gt; being the name
-	or path to your module.
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idm139755614429104"></a>3.5.8. Validation Issues</h3></div></div></div><p>
-	<span class="application">C++</span> is a strongly typed language. This means that the
-	input of a function and the output is already validated to be of a strictly
-	defined structure. So a validation by passing the input through a form
-	might not be needed anymore. The constructs used to describe structures of
-	<span class="application">Wolframe</span>
-	in native <span class="application">C++</span> are even capable of describing attributes
-	like used in XML (section 'Input/Output Data Structures' above).
-	See in the documentation of the standard command handler how validation can be
-	skipped with the attribute <code class="code">SKIP</code>.
-	</p></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk01ch03s04.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk01ch03.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk01ch04.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">3.4. Functions in Lua </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> Chapter 4. Forms</td></tr></table></div></div></div>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.5. Global Settings</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch03s04.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Server Configuration</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch03s06.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1400371204"></a>3.5. Global Settings</h2></div></div></div><p>
+	The following table describes the global settings you can configure:
+	</p><div class="table"><a id="idp1400405652"></a><p class="title"><strong>Table 3.8. Global Settings</strong></p><div class="table-contents"><table summary="Global Settings" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th>Name</th><th>Arguments</th><th>Description</th></tr></thead><tbody><tr><td>ServerTokens</td><td>One of ProductOnly, Major, Minor, Revision, OS, None</td><td>Define what to print in the initial greeting of the protocol (first message of the server)</td></tr><tr><td>ServerSignature</td><td>string</td><td>Define the string to be printed in the initial greeting of the protocol (first message of the server)</td></tr></tbody></table></div></div><p><br class="table-break" />
+	Example configuration:
+	</p><pre class="programlisting">
+ServerTokens OS
+ServerSignature "Wolframe"
+	</pre><p>
+	</p></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk01ch03s04.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk01ch03.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk01ch03s06.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">3.4. Modules </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 3.6. Database Configuration</td></tr></table></div></div></div>
 
 <!-- Footer -->
 <div xmlns="" class="wrapper row2">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Chapter 2. Server Configuration</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe documentation" /><link rel="up" href="bk01.html" title="Developing Wolframe Server Applications" /><link rel="prev" href="bk01ch01.html" title="Chapter 1. Introduction" /><link rel="next" href="bk01ch02s02.html" title="2.2. Listener Configuration" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Chapter 2. Installation via binary packages</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe documentation" /><link rel="up" href="bk01.html" title="Developing Wolframe Server Applications" /><link rel="prev" href="bk01ch01.html" title="Chapter 1. Introduction" /><link rel="next" href="bk01ch02s02.html" title="2.2. Other Unix systems" />
 	<title xmlns="">Project Wolframe</title>
 	<meta xmlns="" charset="utf-8" />
 	<meta xmlns="" name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -58,42 +58,442 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 2. Server Configuration</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch01.html">Prev</a> </td><th width="60%" align="center">Developing Wolframe Server Applications</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch02s02.html">Next</a></td></tr></table><hr /></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="chapterServerConfiguration"></a>Chapter 2. Server Configuration</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="bk01ch02.html#idp1394067292">2.1. Service / Daemon</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk01ch02.html#idp1394067996">2.1.1. Windows</a></span></dt><dt><span class="sect2"><a href="bk01ch02.html#idp1397353636">2.1.2. Unix</a></span></dt></dl></dd><dt><span class="sect1"><a href="bk01ch02s02.html">2.2. Listener Configuration</a></span></dt><dt><span class="sect1"><a href="bk01ch02s03.html">2.3. Logger Configuration</a></span></dt><dt><span class="sect1"><a href="bk01ch02s04.html">2.4. Modules</a></span></dt><dt><span class="sect1"><a href="bk01ch02s05.html">2.5. Global Settings</a></span></dt></dl></div><p>
-	This chapter describes the configuration of the server besides the
-	data processing described in the section <a class="link" href="bk01ch04.html" title="Chapter 4. Data processing">data processing</a>
-	and AAAA described in the section <a class="link" href="bk01ch03.html" title="Chapter 3. AAAA">AAAA</a>.
-	</p><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1394067292"></a>2.1. Service / Daemon</h2></div></div></div><p>
-	The service configuration is depending on the platform you run 
-	the Wolframe server. We show the configuration for Windows and 
-	Unix in different sections:
-	</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1394067996"></a>2.1.1. Windows</h3></div></div></div><p>
-	The service configuration for Windows is defined in the section
-	<code class="code">Service</code>. The following table describes the settings
-	in the service configuration for Windows:
-	</p><div class="table"><a id="idp1394069060"></a><p class="title"><strong>Table 2.1. Windows service configuration settings</strong></p><div class="table-contents"><table summary="Windows service configuration settings" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th>Name</th><th>Arguments</th><th>Description</th></tr></thead><tbody><tr><td>ServiceName</td><td>string</td><td>Parameter for service registration. Defines the name of the service</td></tr><tr><td>DisplayName</td><td>string</td><td>Parameter for service registration. Defines the display name of the service</td></tr><tr><td>Description</td><td>string</td><td>Parameter for service registration. Defines the description of the service</td></tr></tbody></table></div></div><p><br class="table-break" />
-	Example configuration:
-	</p><pre class="programlisting">
-Service {
-    ServiceName wolframe
-    DisplayName "Wolframe Daemon"
-    Description "Wolframe Daemon"
-}
-	</pre><p>
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1397353636"></a>2.1.2. Unix</h3></div></div></div><p>
-	The daemon configuration for Unix systems is defined in the section
-	<code class="code">Daemon</code>. The following table describes the settings
-	in a daemon configuration:
-	</p><div class="table"><a id="idp1397354436"></a><p class="title"><strong>Table 2.2. Unix daemon configuration settings</strong></p><div class="table-contents"><table summary="Unix daemon configuration settings" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th>Name</th><th>Arguments</th><th>Description</th></tr></thead><tbody><tr><td>user</td><td>identifier</td><td>Defines the name of the user the Wolframe server should run as.</td></tr><tr><td>group</td><td>identifier</td><td>Defines the name of the group of the user the Wolframe server should run as.</td></tr><tr><td>pidFile</td><td>filepath</td><td>Defines the path to the file used as pid file</td></tr><tr><td>Description</td><td>string</td><td>Defines the name displayed in the list of processes</td></tr></tbody></table></div></div><p><br class="table-break" />
-	Example configuration:
-	</p><pre class="programlisting">
-Daemon {
-    User    nobody
-    Group   nobody
-    PidFile /tmp/wolframed.pid
-    ServiceName wolframe
-}
-	</pre><p>
-	</p></div></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk01ch01.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk01.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk01ch02s02.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter 1. Introduction </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 2.2. Listener Configuration</td></tr></table></div></div></div>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter 2. Installation via binary packages</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch01.html">Prev</a> </td><th width="60%" align="center">Developing Wolframe Server Applications</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch02s02.html">Next</a></td></tr></table><hr /></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="idp1396727628"></a>Chapter 2. Installation via binary packages</h1></div></div></div><div class="toc"><p><strong>Table of Contents</strong></p><dl class="toc"><dt><span class="sect1"><a href="bk01ch02.html#idp1396839892">2.1. Linux distributions</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk01ch02.html#idp1396830756">2.1.1. RedHat, Fedora, CentOS, Scientific Linux and similar Linux distributions</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk01ch02.html#idp1396848588">Available packages</a></span></dt><dt><span class="sect3"><a href="bk01ch02.html#idp1400071972">Prerequisites</a></span></dt><dt><span class="sect3"><a href="bk01ch02.html#idp1400072596">Install binary packages manually</a></span></dt><dt><span class="sect3"><a href="bk01ch02.html#idp1400073284">Install from repository</a></span></dt></dl></dd><dt><span class="sect2"><a href="bk01ch02.html#idp1400078596">2.1.2. Debian, Ubuntu and similar Linux distributions</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk01ch02.html#idp1400078972">Available packages</a></span></dt><dt><span class="sect3"><a href="bk01ch02.html#idp1400087204">Prerequisites</a></span></dt><dt><span class="sect3"><a href="bk01ch02.html#idp1400087780">Install binary packages manually</a></span></dt><dt><span class="sect3"><a href="bk01ch02.html#idp1400088444">Install from repository</a></span></dt></dl></dd><dt><span class="sect2"><a href="bk01ch02.html#idp1400096596">2.1.3. openSUSE, SLES and similar Linux distributions</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk01ch02.html#idp1400096972">Available packages</a></span></dt><dt><span class="sect3"><a href="bk01ch02.html#idp1400105092">Prerequisites</a></span></dt><dt><span class="sect3"><a href="bk01ch02.html#idp1400105668">Install binary packages manually</a></span></dt><dt><span class="sect3"><a href="bk01ch02.html#idp1400106324">Install from repository</a></span></dt></dl></dd><dt><span class="sect2"><a href="bk01ch02.html#idp1400116220">2.1.4. ArchLinux</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk01ch02.html#idp1400116540">Available packages</a></span></dt><dt><span class="sect3"><a href="bk01ch02.html#idp1400118684">Prerequisites</a></span></dt><dt><span class="sect3"><a href="bk01ch02.html#idp1400119260">Install binary packages manually</a></span></dt><dt><span class="sect3"><a href="bk01ch02.html#idp1400120380">Install from repository</a></span></dt><dt><span class="sect3"><a href="bk01ch02.html#idp1400125668">Install from the AUR</a></span></dt></dl></dd><dt><span class="sect2"><a href="bk01ch02.html#idp1400127756">2.1.5. Slackware</a></span></dt><dd><dl><dt><span class="sect3"><a href="bk01ch02.html#idp1400128076">Available packages</a></span></dt><dt><span class="sect3"><a href="bk01ch02.html#idp1400130220">Prerequisites</a></span></dt><dt><span class="sect3"><a href="bk01ch02.html#idp1400130796">Install binary packages manually</a></span></dt></dl></dd></dl></dd><dt><span class="sect1"><a href="bk01ch02s02.html">2.2. Other Unix systems</a></span></dt><dd><dl><dt><span class="sect2"><a href="bk01ch02s02.html#idp1400134068">2.2.1. FreeBSD</a></span></dt><dt><span class="sect2"><a href="bk01ch02s02.html#idp1400138668">2.2.2. NetBSD</a></span></dt><dt><span class="sect2"><a href="bk01ch02s02.html#idp1400143644">2.2.3. Solaris 10</a></span></dt></dl></dd></dl></div><p>
+		This section describes how to install the <span class="application">Wolframe</span> application via
+		packages on various operating systems.
+	</p><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1396839892"></a>2.1. Linux distributions</h2></div></div></div><p>
+			Linux distributions are currently built on the <acronym class="acronym">Open Build Server</acronym>
+			(<a class="ulink" href="http://openbuildservice.org" target="_top">http://openbuildservice.org</a>) and
+			on a bunch of virtual machines.
+		</p><p>
+			The resulting packages and the repository metadata is hosted on Sourceforge
+			(<a class="ulink" href="http://sourceforge.net" target="_top">http://sourceforge.net</a>).
+		</p><p>
+			The packages are always build with the default system compiler, which
+			is currently GNU gcc.
+		</p><p>
+			Packages for proprietary software (like the Oracle database module) have
+			to be built manually, they can not be distributed as binary packages due
+			to license problems.
+		</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1396830756"></a>2.1.1. RedHat, Fedora, CentOS, Scientific Linux and similar Linux distributions</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396848588"></a>Available packages</h4></div></div></div><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
+							wolframe-0.0.2
+.x86_64.rpm: contains the <span class="application">Wolframe</span>
+							core server with minimal 3rd party software requirements
+						</p></li><li class="listitem"><p>
+							wolframe-sqlite3-0.0.2
+.x86_64.rpm: the database module for Sqlite3 databases
+						</p></li><li class="listitem"><p>
+							wolframe-postgresql-0.0.2
+.x86_64.rpm: the database module for PostgreSQL databases
+						</p></li><li class="listitem"><p>
+							wolframe-libxml2-0.0.2
+.x86_64.rpm: filtering module for XML and XSLT (using libxml2/libxslt)
+						</p></li><li class="listitem"><p>
+							wolframe-textwolf-0.0.2
+.x86_64.rpm: filtering module for XML (using textwolf)
+						</p></li><li class="listitem"><p>
+							wolframe-cjson-0.0.2
+.x86_64.rpm: filtering module for JSON (using cJSON)
+						</p></li><li class="listitem"><p>
+							wolframe-pam-0.0.2
+.x86_64.rpm: authentication module for PAM
+						</p></li><li class="listitem"><p>
+							wolframe-sasl-0.0.2
+.x86_64.rpm: authentication module for SASL
+						</p></li><li class="listitem"><p>
+							wolframe-python-0.0.2
+.x86_64.rpm: language bindings for Python
+						</p></li><li class="listitem"><p>
+							wolframe-lua-0.0.2
+.x86_64.rpm: language bindings for Lua
+						</p></li><li class="listitem"><p>
+							wolframe-libhpdf-0.0.2
+.x86_64.rpm: printing module using libhpdf
+						</p></li><li class="listitem"><p>
+							wolframe-freeimage-0.0.2
+.x86_64.rpm: image manipuation module using FreeImage
+						</p></li><li class="listitem"><p>
+							wolframe-libclient-0.0.2
+.x86_64.rpm: C/C++ client library
+						</p></li><li class="listitem"><p>
+							wolframe-client-0.0.2
+.x86_64.rpm: command line tool
+						</p></li><li class="listitem"><p>
+							wolfclient-0.0.4
+.x86_64.rpm: Wolframe graphical frontend
+						</p></li></ul></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400071972"></a>Prerequisites</h4></div></div></div><p>
+					
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400072596"></a>Install binary packages manually</h4></div></div></div><p>
+					Installing the packages via repositories is usually the prefered way.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400073284"></a>Install from repository</h4></div></div></div><p>
+				First install the repository file for the corresponding distribution
+				(as example we choose Centos 6):
+				</p><pre class="programlisting">
+	cd /etc/yum.repos.d
+	wget http://sourceforge.net/projects/wolframe/files/repositories/CentOS-6/wolframe.repo
+				</pre><p>
+			</p><p>
+				You can list all available Wolframe packages with:
+				</p><pre class="programlisting">
+	yum search wolframe
+				</pre><p>
+			</p><p>
+				You install the main Wolframe package with:
+				</p><pre class="programlisting">
+	yum install wolframe
+				</pre><p>
+			</p><p>
+				You have to accept the signing key:
+				</p><pre class="programlisting">
+	Retrieving key from http://sourceforge.net/projects/wolframe/files/repositories/CentOS-6/repodata/repomd.xml.key
+	Importing GPG key 0x9D404026:
+	Userid: "home:wolframe_user OBS Project &lt;home:wolframe_user@build.opensuse.org&gt;"
+	From  : http://sourceforge.net/projects/wolframe/files/repositories/CentOS-6/repodata/repomd.xml.key
+	Is this ok [y/N]: y
+				</pre><p>
+			</p><p>
+				You can start the service with:
+				</p><pre class="programlisting">
+	service wolframed start
+				</pre><p>
+				
+				respectively
+
+				</p><pre class="programlisting">
+	systemctl start wolframed
+				</pre><p>
+				
+				on newer Fedora systems.
+			</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1400078596"></a>2.1.2. Debian, Ubuntu and similar Linux distributions</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400078972"></a>Available packages</h4></div></div></div><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
+							wolframe_0.0.2
+_amd64.deb: contains the <span class="application">Wolframe</span>
+							core server with minimal 3rd party software requirements
+						</p></li><li class="listitem"><p>
+							wolframe_sqlite3-0.0.2
+_amd64.deb: the database module for Sqlite3 databases
+						</p></li><li class="listitem"><p>
+							wolframe_postgresql-0.0.2
+_amd64.deb: the database module for PostgreSQL databases
+						</p></li><li class="listitem"><p>
+							wolframe-libxml2_0.0.2
+_amd64.deb: filtering module for XML and XSLT (using libxml2/libxslt)
+						</p></li><li class="listitem"><p>
+							wolframe_textwolf_0.0.2
+_amd64.deb: filtering module for XML (using textwolf)
+						</p></li><li class="listitem"><p>
+							wolframe-cjson_0.0.2
+_amd64.deb: filtering module for JSON (using cJSON)
+						</p></li><li class="listitem"><p>
+							wolframe-pam_0.0.2
+_amd64.deb: authentication module for PAM
+						</p></li><li class="listitem"><p>
+							wolframe-sasl_0.0.2
+_amd64.deb: authentication module for SASL
+						</p></li><li class="listitem"><p>
+							wolframe-python_0.0.2
+_amd64.deb: language bindings for Python
+						</p></li><li class="listitem"><p>
+							wolframe-lua_0.0.2
+_amd64.deb: language bindings for Lua
+						</p></li><li class="listitem"><p>
+							wolframe-libhpdf_0.0.2
+_amd64.deb: printing module using libhpdf
+						</p></li><li class="listitem"><p>
+							wolframe-freeimage_0.0.2
+_amd64.deb: image manipuation module using FreeImage
+						</p></li><li class="listitem"><p>
+							wolframe-libclient_0.0.2
+_amd64.deb: C/C++ client library
+						</p></li><li class="listitem"><p>
+							wolframe-client_0.0.2
+_amd64.deb: command line tool
+						</p></li><li class="listitem"><p>
+							wolfclient_0.0.4
+_amd64.deb: Wolframe graphical frontend
+						</p></li></ul></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400087204"></a>Prerequisites</h4></div></div></div><p>
+					
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400087780"></a>Install binary packages manually</h4></div></div></div><p>
+					Installing the packages via repositories is usually the prefered way.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400088444"></a>Install from repository</h4></div></div></div><p>
+				<span class="bold"><strong>Note</strong></span>: Some older versions of Ubuntu
+				(like Ubuntu 12.04 LTS, 10.04 LTS or Debian 6) have problems to download the metadata files from
+				Sourceforge. If you get messages like:
+			</p><pre class="programlisting">
+	W: Failed to fetch http://sourceforge.net/projects/wolframe/files/repositories/Ubuntu-12.04_LTS/Release.gpg  Got a single header line over 360 chars
+	Err http://sourceforge.net  Packages               
+			</pre><p>
+				then you have to download the binaries manually.
+			</p><p>
+				Add a new repository file <code class="filename">/etc/apt/sources.list.d/wolframe.list</code>
+				which contains:
+				</p><pre class="programlisting">
+	deb http://sourceforge.net/projects/wolframe/files/repositories/Ubuntu-14.04_LTS/ /
+				</pre><p>
+				(as example we choose Ubuntu 14.04).
+			</p><p>
+				Download the signing key:
+				</p><pre class="programlisting">
+	wget http://wolframe.net/Release.key
+				</pre><p>
+			</p><p>
+				Verify that the key then add it with:
+				</p><pre class="programlisting">
+	apt-key add - &lt; Release.key
+				</pre><p>
+			</p><p>
+				Update the repository with:
+				</p><pre class="programlisting">
+	apt-get update
+				</pre><p>
+			</p><p>
+				You can list all available Wolframe packages with:
+				</p><pre class="programlisting">
+	apt-cache search wolframe
+				</pre><p>
+			</p><p>
+				You install the main Wolframe package with:
+				</p><pre class="programlisting">
+	apt-get install wolframe
+				</pre><p>
+			</p><p>
+				To start the Wolframe service you have to
+				edit the file <code class="filename">/etc/default/wolframe</code>
+				and enable the wolframe daemon there:
+				</p><pre class="programlisting">
+	RUN=yes
+				</pre><p>
+		
+				You can start the service now with:
+				</p><pre class="programlisting">
+	service wolframed start
+				</pre><p>
+			</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1400096596"></a>2.1.3. openSUSE, SLES and similar Linux distributions</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400096972"></a>Available packages</h4></div></div></div><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
+							wolframe-0.0.2
+.x86_64.rpm: contains the <span class="application">Wolframe</span>
+							core server with minimal 3rd party software requirements
+						</p></li><li class="listitem"><p>
+							wolframe-sqlite3-0.0.2
+.x86_64.rpm: the database module for Sqlite3 databases
+						</p></li><li class="listitem"><p>
+							wolframe-postgresql-0.0.2
+.x86_64.rpm: the database module for PostgreSQL databases
+						</p></li><li class="listitem"><p>
+							wolframe-libxml2-0.0.2
+.x86_64.rpm: filtering module for XML and XSLT (using libxml2/libxslt)
+						</p></li><li class="listitem"><p>
+							wolframe-textwolf-0.0.2
+.x86_64.rpm: filtering module for XML (using textwolf)
+						</p></li><li class="listitem"><p>
+							wolframe-cjson-0.0.2
+.x86_64.rpm: filtering module for JSON (using cJSON)
+						</p></li><li class="listitem"><p>
+							wolframe-pam-0.0.2
+.x86_64.rpm: authentication module for PAM
+						</p></li><li class="listitem"><p>
+							wolframe-sasl-0.0.2
+.x86_64.rpm: authentication module for SASL
+						</p></li><li class="listitem"><p>
+							wolframe-python-0.0.2
+.x86_64.rpm: language bindings for Python
+						</p></li><li class="listitem"><p>
+							wolframe-lua-0.0.2
+.x86_64.rpm: language bindings for Lua
+						</p></li><li class="listitem"><p>
+							wolframe-libhpdf-0.0.2
+.x86_64.rpm: printing module using libhpdf
+						</p></li><li class="listitem"><p>
+							wolframe-freeimage-0.0.2
+.x86_64.rpm: image manipuation module using FreeImage
+						</p></li><li class="listitem"><p>
+							wolframe-libclient-0.0.2
+.x86_64.rpm: C/C++ client library
+						</p></li><li class="listitem"><p>
+							wolframe-client-0.0.2
+.x86_64.rpm: command line tool
+						</p></li><li class="listitem"><p>
+							wolfclient-0.0.4
+.x86_64.rpm: Wolframe graphical frontend
+						</p></li></ul></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400105092"></a>Prerequisites</h4></div></div></div><p>
+					
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400105668"></a>Install binary packages manually</h4></div></div></div><p>
+					Currently installing the packages directly is the prefered way.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400106324"></a>Install from repository</h4></div></div></div><p>
+				<span class="bold"><strong>Note</strong></span>: This is currently not working perfectly
+				and some steps have to be done manually.
+			</p><p>
+				First we add the Wolframe repository for the corresponding distribution
+				(as example we choose OpenSUSE 13.1):
+				</p><pre class="programlisting">
+	zypper addrepo http://sourceforge.net/projects/wolframe/files/repositories/openSUSE-13.1/wolframe.repo
+				</pre><p>
+			</p><p>
+				You may get the following error:
+				</p><pre class="programlisting">
+	/var/adm/mount/AP_0xmiyYP3/projects/wolframe/files/repositories/openSUSE-13.1/wolframe.repo: Line 1 is missing '=' sign
+	Is it a .repo file? See http://en.opensuse.org/Standards/RepoInfo for details.
+				</pre><p>
+				
+				Try to download the repo file by hand and install it by hand:
+				</p><pre class="programlisting">
+	wget http://sourceforge.net/projects/wolframe/files/repositories/openSUSE-13.1/wolframe.repo
+	zypper addrepo wolframe.repo
+				</pre><p>
+			</p><p>
+				Now refresh your repositories with:
+				</p><pre class="programlisting">
+	zypper refresh
+				</pre><p>
+			</p><p>
+				If you get the following message
+				</p><pre class="programlisting">
+	File 'repomd.xml' from repository 'Wolframe Project (openSUSE-13.1)' is unsigned, continue? [yes/no] (no): yes
+				</pre><p>
+				
+				the signing key could not be downloaded from SourceForge.
+				Accept it in this case anyway.				
+			</p><p>
+				If you get the following message
+				</p><pre class="programlisting">
+	File './repodata/ea7cb8d9a0caa2c3d8977919be124accdf55c6b8952ddee72f1b48f4decb0644-primary.xml.gz' not found on medium 'http://sourceforge.net/projects/wolframe/files/repositories/openSUSE-13.1/'
+
+	Abort, retry, ignore? [a/r/i/? shows all options] (a): u^H
+	Invalid answer ''. [a/r/i/? shows all options] (a): ?
+
+	a - Skip retrieval of the file and abort current operation.
+	r - Try to retrieve the file again.
+	i - Skip retrieval of the file and try to continue with the operation without the file.
+	u - Change current base URI and try retrieving the file again.
+
+	[a/r/i/? shows all options] (a): u				
+				</pre><p>
+				
+				the Sourceforge redirect didn't work and you have to
+				force the baseURL to be a SourceForge mirror like:
+
+				</p><pre class="programlisting">
+	New URI: http://freefr.dl.sourceforge.net/project/wolframe/repositories/openSUSE-13.1/
+				</pre><p>
+			</p><p>
+				You can list all available Wolframe packages with:
+				</p><pre class="programlisting">
+	zypper se wolframe
+	zypper se wolfclient
+				</pre><p>
+			</p><p>
+				You install the main Wolframe package with:
+				</p><pre class="programlisting">
+	zypper install wolframe
+				</pre><p>
+			</p><p>
+				You can start the service with:
+				</p><pre class="programlisting">
+	service wolframed start
+				</pre><p>
+				
+				respectively
+
+				</p><pre class="programlisting">
+	systemctl start wolframed
+				</pre><p>
+				
+				on newer openSUSE systems.
+			</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1400116220"></a>2.1.4. ArchLinux</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400116540"></a>Available packages</h4></div></div></div><p>
+					Wolframe is currently only available as two monolithic packages:
+				</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
+							wolframe-0.0.2
+.x86_64.rpm: contains the <span class="application">Wolframe</span>
+							core server with all modules for 3rdParty software included,
+						</p></li><li class="listitem"><p>
+							wolfclient-0.0.4
+.x86_64.rpm: Wolframe graphical frontend
+						</p></li></ul></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400118684"></a>Prerequisites</h4></div></div></div><p>
+					
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400119260"></a>Install binary packages manually</h4></div></div></div><p>
+					You can use the packages from
+					<a class="ulink" href="http://sourceforge.net/projects/wolframe/files/wolframe-binaries/" target="_top">http://sourceforge.net/projects/wolframe/files/wolframe-binaries/</a>
+					directly.
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400120380"></a>Install from repository</h4></div></div></div><p>
+				First add the following section to <code class="filename">/etc/pacman.conf</code>:
+				</p><pre class="programlisting">
+	[wolframe]
+	SigLevel = Optional DatabaseRequired
+	Server = http://sourceforge.net/projects/wolframe/files/repositories/ArchLinux/$arch
+				</pre><p>
+			</p><p>
+				Fetch and verify the sigining key, import and locally sign the key:
+				</p><pre class="programlisting">
+	wget http://wolframe.net/Release.key
+	pacman-key --add Release.key
+	pacman-key --lsign 9D404026
+				</pre><p>
+				
+				Alternatively you can also disable the verification of the signature
+				of the database by removing 'DatabaseRequired' from the 'SigLevel'
+				option.
+			</p><p>
+				Update the repository data with:
+				</p><pre class="programlisting">
+	pacman -Syy
+				</pre><p>
+			</p><p>
+				You can list all available Wolframe packages with:
+				</p><pre class="programlisting">
+	pacman -Sl wolframe
+				</pre><p>
+			</p><p>
+				You install the main Wolframe package with:
+				</p><pre class="programlisting">
+	pacman -S wolframe
+				</pre><p>
+			</p><p>
+				You can start the service with:
+
+				</p><pre class="programlisting">
+	systemctl start wolframed
+				</pre><p>
+			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400125668"></a>Install from the AUR</h4></div></div></div><p>
+				You can also customize your build by downloading the 
+				build files from the AUR at <a class="ulink" href="https://aur.archlinux.org/packages/?O=0&amp;K=wolframe" target="_top">https://aur.archlinux.org/packages/?O=0&amp;K=wolframe</a>
+				and customize them to your needs.
+			</p><p>
+				For instance:
+
+				</p><pre class="programlisting">
+	yaourt -G wolframe
+	cd wolframe
+	makepkg 
+				</pre><p>
+			</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1400127756"></a>2.1.5. Slackware</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400128076"></a>Available packages</h4></div></div></div><p>
+					Wolframe is currently only available as two monolithic packages:
+				</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
+							wolframe-0.0.2
+.x86_64.rpm: contains the <span class="application">Wolframe</span>
+							core server with all modules for 3rdParty software included,
+						</p></li><li class="listitem"><p>
+							wolfclient-0.0.4
+.x86_64.rpm: Wolframe graphical frontend
+						</p></li></ul></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400130220"></a>Prerequisites</h4></div></div></div><p>
+					
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400130796"></a>Install binary packages manually</h4></div></div></div><p>
+				Download the package file (we picked 64-bit Slackware 14 for example):
+				</p><pre class="programlisting">
+	wget http://sourceforge.net/projects/wolframe/files/wolframe-binaries/0.0.2
+/Slackware-14/x86_64/wolframe-0.0.2
+-x86_64.tgz
+				</pre><p>
+			</p><p>
+				You install the Wolframe package with:
+				</p><pre class="programlisting">
+	installpkg wolframe-0.0.2
+-x86_64.tgz 
+				</pre><p>
+			</p><p>
+				You can start the service with:
+
+				</p><pre class="programlisting">
+	/etc/rc.d/rc.wolframed start
+				</pre><p>
+			</p></div></div></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk01ch01.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk01.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk01ch02s02.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter 1. Introduction </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 2.2. Other Unix systems</td></tr></table></div></div></div>
 
 <!-- Footer -->
 <div xmlns="" class="wrapper row2">

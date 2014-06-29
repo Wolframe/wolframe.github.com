@@ -120,6 +120,7 @@ logSyslogFacility_8hpp_source.html
 constructor_8hpp_source.html
 moduleDirectory_8hpp_source.html
 moduleInterface_8hpp_source.html
+authorizationProgram_8hpp_source.html
 ddlProgram_8hpp_source.html
 normalizeProgram_8hpp_source.html
 program_8hpp_source.html
@@ -166,6 +167,7 @@ objectPool_8hpp_source.html
 randomGenerator_8hpp_source.html
 serverEndpoint_8hpp_source.html
 SSLcertificateInfo_8hpp_source.html
+authorizationFunction_8hpp_source.html
 base64_8h_source.html
 base64_8hpp_source.html
 bignumber_8hpp_source.html
@@ -311,6 +313,7 @@ logSyslogFacility_8hpp.html
 constructor_8hpp.html
 moduleDirectory_8hpp.html
 moduleInterface_8hpp.html
+authorizationProgram_8hpp.html
 ddlProgram_8hpp.html
 normalizeProgram_8hpp.html
 program_8hpp.html
@@ -357,6 +360,7 @@ objectPool_8hpp.html
 randomGenerator_8hpp.html
 serverEndpoint_8hpp.html
 SSLcertificateInfo_8hpp.html
+authorizationFunction_8hpp.html
 base64_8h.html
 base64_8hpp.html
 bignumber_8hpp.html
@@ -786,6 +790,8 @@ class__Wolframe_1_1net_1_1SendString-members.html
 class__Wolframe_1_1net_1_1ServerTCPendpoint.html
 class__Wolframe_1_1net_1_1ServerTCPendpoint-members.html
 namespace__Wolframe_1_1prgbind.html
+class__Wolframe_1_1prgbind_1_1AuthorizationProgram.html
+class__Wolframe_1_1prgbind_1_1AuthorizationProgram-members.html
 class__Wolframe_1_1prgbind_1_1DDLProgram.html
 class__Wolframe_1_1prgbind_1_1DDLProgram-members.html
 class__Wolframe_1_1prgbind_1_1NormalizeProgram.html
@@ -891,6 +897,8 @@ struct__Wolframe_1_1serialize_1_1traits_1_1has__description__method__noprm_1_1te
 struct__Wolframe_1_1serialize_1_1traits_1_1struct__.html
 struct__Wolframe_1_1serialize_1_1traits_1_1vector__.html
 namespace__Wolframe_1_1types.html
+class__Wolframe_1_1types_1_1AuthorizationFunction.html
+class__Wolframe_1_1types_1_1AuthorizationFunction-members.html
 class__Wolframe_1_1types_1_1BigNumber.html
 class__Wolframe_1_1types_1_1BigNumber-members.html
 class__Wolframe_1_1types_1_1BigNumberConst.html
@@ -1271,6 +1279,7 @@ class__Wolframe_1_1net_1_1RemoteTCPendpoint.png
 class__Wolframe_1_1net_1_1SendData.png
 class__Wolframe_1_1net_1_1SendString.png
 class__Wolframe_1_1net_1_1ServerTCPendpoint.png
+class__Wolframe_1_1prgbind_1_1AuthorizationProgram.png
 class__Wolframe_1_1prgbind_1_1DDLProgram.png
 class__Wolframe_1_1prgbind_1_1NormalizeProgram.png
 struct__Wolframe_1_1prgbind_1_1Program.png

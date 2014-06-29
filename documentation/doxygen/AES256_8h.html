@@ -109,8 +109,50 @@ Functions</h2></td></tr>
 <tr class="separator:a5f4012a6d29124f03badb516c9cd8885"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50aa060f46240dff47bd94385a5c60da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AES256_8h.html#a50aa060f46240dff47bd94385a5c60da">AES256_decrypt_ECB</a> (<a class="el" href="structAES256__context.html">AES256_context</a> *ctx, unsigned char *ciphertext)</td></tr>
 <tr class="separator:a50aa060f46240dff47bd94385a5c60da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a7bb2fd182ed50823eba8228681bea4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AES256_8h.html#a9a7bb2fd182ed50823eba8228681bea4">AES256_encrypt_CBC</a> (<a class="el" href="structAES256__context.html">AES256_context</a> *ctx, unsigned char *IV, unsigned char *plaintext, unsigned size)</td></tr>
+<tr class="separator:a9a7bb2fd182ed50823eba8228681bea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a0eff62d67c4fefe413e2d19f94fe49"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="AES256_8h.html#a4a0eff62d67c4fefe413e2d19f94fe49">AES256_decrypt_CBC</a> (<a class="el" href="structAES256__context.html">AES256_context</a> *ctx, unsigned char *IV, unsigned char *ciphertext, unsigned size)</td></tr>
+<tr class="separator:a4a0eff62d67c4fefe413e2d19f94fe49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a4a0eff62d67c4fefe413e2d19f94fe49"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int AES256_decrypt_CBC </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structAES256__context.html">AES256_context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>IV</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>ciphertext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a50aa060f46240dff47bd94385a5c60da"></a>
 <div class="memitem">
 <div class="memproto">
@@ -147,6 +189,44 @@ Functions</h2></td></tr>
           <td class="paramtype"><a class="el" href="structAES256__context.html">AES256_context</a> *&#160;</td>
           <td class="paramname"><em>ctx</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9a7bb2fd182ed50823eba8228681bea4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int AES256_encrypt_CBC </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structAES256__context.html">AES256_context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>IV</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>plaintext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -209,7 +289,7 @@ Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 26 2014 09:35:51 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 29 2014 13:47:47 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

@@ -125,6 +125,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad36da9add266c8b6581ffb7b597d6e90"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class__Wolframe_1_1db_1_1Transaction.html">db::Transaction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#ad36da9add266c8b6581ffb7b597d6e90">transaction</a> (const std::string &amp;name) const =0</td></tr>
 <tr class="memdesc:ad36da9add266c8b6581ffb7b597d6e90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a database transaction object for the given name.  <a href="#ad36da9add266c8b6581ffb7b597d6e90">More...</a><br /></td></tr>
 <tr class="separator:ad36da9add266c8b6581ffb7b597d6e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a257e2057181a727054e360d2bb8ca574"><td class="memItemLeft" align="right" valign="top">virtual const <br class="typebreak" />
+<a class="el" href="class__Wolframe_1_1types_1_1AuthorizationFunction.html">types::AuthorizationFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#a257e2057181a727054e360d2bb8ca574">authorizationFunction</a> (const std::string &amp;name) const =0</td></tr>
+<tr class="memdesc:a257e2057181a727054e360d2bb8ca574"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an authorization function by name.  <a href="#a257e2057181a727054e360d2bb8ca574">More...</a><br /></td></tr>
+<tr class="separator:a257e2057181a727054e360d2bb8ca574"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab8e9d3be245c373074cf5dbc8318700"><td class="memItemLeft" align="right" valign="top">virtual const <br class="typebreak" />
 <a class="el" href="class__Wolframe_1_1types_1_1NormalizeFunction.html">types::NormalizeFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#aab8e9d3be245c373074cf5dbc8318700">normalizeFunction</a> (const std::string &amp;name) const =0</td></tr>
 <tr class="memdesc:aab8e9d3be245c373074cf5dbc8318700"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a normalization function.  <a href="#aab8e9d3be245c373074cf5dbc8318700">More...</a><br /></td></tr>
@@ -185,6 +189,41 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a257e2057181a727054e360d2bb8ca574"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const <a class="el" href="class__Wolframe_1_1types_1_1AuthorizationFunction.html">types::AuthorizationFunction</a>* _Wolframe::proc::ProcessorProviderInterface::authorizationFunction </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get an authorization function by name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>name of the function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>reference to function </dd></dl>
+
+<p>Implemented in <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#a799746b3c9af9cb8ebb306e655685c25">_Wolframe::proc::ProcessorProvider</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="af921228307ece2bfd6c6ee369d2bc1e5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -602,7 +641,7 @@ Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 26 2014 09:36:04 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 29 2014 13:47:59 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>
