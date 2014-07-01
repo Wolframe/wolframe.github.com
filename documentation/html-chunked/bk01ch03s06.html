@@ -58,13 +58,101 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.6. Database Configuration</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch03s05.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Server Configuration</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch04.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1400405444"></a>3.6. Database Configuration</h2></div></div></div><p>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.6. Database Configuration</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch03s05.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Server Configuration</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch04.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1376488820"></a>3.6. Database Configuration</h2></div></div></div><p>
 	The Databases for Wolframe are configured in the <code class="code">Database</code>
 	section of the configuration.
-	</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1400415228"></a>3.6.1. PostgreSQL</h3></div></div></div><p>
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1400402196"></a>3.6.2. Sqlite3</h3></div></div></div><p>
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1400402788"></a>3.6.3. Oracle</h3></div></div></div><p>
-	</p></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk01ch03s05.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk01ch03.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk01ch04.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">3.5. Global Settings </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> Chapter 4. AAAA</td></tr></table></div></div></div>
+	</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376477572"></a>3.6.1. PostgreSQL</h3></div></div></div><p>This section explains how to configure a Postgres database.
+</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376478172"></a>Requirements</h4></div></div></div><p>In order to use a Postgres database in Wolframe you have to configure the 
+loading of the module mod_db_postgresql in the LoadModules section 
+of your configuration. The addressed Postgres database server must be running
+and the database and the user configured must have been created before.
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376505932"></a>Configuration settings</h4></div></div></div><p>The configuration settings for PostgreSQL are splitted in two parts:
+The database configuration settings and the SSL configuration settings.
+The following three tables show the PostgreSQL database configuration settings,
+the PostgreSQL SSL configuration settings and the table with configurable SSL modes:
+</p><div class="table"><a id="idp1376506980"></a><p class="title"><strong>Table 3.9. PostgreSQL database configuration settings</strong></p><div class="table-contents"><table summary="PostgreSQL database configuration settings" border="1"><colgroup><col class="col1" /><col class="col2" /><col class="col3" /></colgroup><thead><tr><th>Name</th><th>Parameter</th><th>Description</th></tr></thead><tbody><tr><td>Identifier</td><td>identifier</td><td>Database identifier used to reference this database.</td></tr><tr><td>Host</td><td>identifier or string</td><td>Address of the PostgreSQL database server</td></tr><tr><td>Port</td><td>number</td><td>Port of the PostgreSQL database server</td></tr><tr><td>Database</td><td>identifier</td><td>Name of the database to connect to</td></tr><tr><td>User</td><td>identifier</td><td>User to connect to the database with</td></tr><tr><td>Password</td><td>string</td><td>Password to connect to the database with</td></tr><tr><td>ConnectionTimeout</td><td>number</td><td>Connection timeout in seconds</td></tr><tr><td>Connections</td><td>number</td><td>Maximum number of simoultaneus database connections (size of connection pool)</td></tr><tr><td>AcquireTimeout</td><td>number</td><td>Maximum time allowed to acquire a database connection in seconds</td></tr><tr><td>StatementTimeout</td><td>number</td><td>The maximum allowed time to execute a statement in milliseconds.</td></tr></tbody></table></div></div><br class="table-break" /><div class="table"><a id="idp1376590028"></a><p class="title"><strong>Table 3.10. SSL configuration settings</strong></p><div class="table-contents"><table summary="SSL configuration settings" border="1"><colgroup><col class="col1" /><col class="col2" /><col class="col3" /></colgroup><thead><tr><th>Name</th><th>Parameter</th><th>Description</th></tr></thead><tbody><tr><td>SslMode</td><td>identifier</td><td>How a SSL TCP/IP connection should be negotiated with the server.
+				Possible values and their explanation can be found in the 
+				SSL Mode table below.</td></tr><tr><td>SslCert</td><td>filename</td><td>The file name of the client SSL certificate in case of an SSL connection to the database.</td></tr><tr><td>SslKey</td><td>filename</td><td>The file with the secret key used for the client certificate in case of an SSL connection to the database.</td></tr><tr><td>SslRootCert</td><td>filename</td><td>The File name of the root SSL CA certificate in case of an SSL connection to the database.</td></tr><tr><td>SslCRL</td><td>filename</td><td>The File name of the SSL certificate revocation list (CRL) in case of an SSL connection to the database.</td></tr></tbody></table></div></div><br class="table-break" /><div class="table"><a id="idp1376585948"></a><p class="title"><strong>Table 3.11. SSL modes</strong></p><div class="table-contents"><table summary="SSL modes" border="1"><colgroup><col class="col1" /><col class="col2" /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>disable</td><td>Only try a non-SSL connection</td></tr><tr><td>allow</td><td>First try a non-SSL connection. If that fails, try an SSL connection</td></tr><tr><td>prefer</td><td>First try an SSL connection. If that fails, try a non-SSL connection. This is the default.</td></tr><tr><td>require</td><td>Only try an SSL connection. If a root CA file is present, verify the certificate.</td></tr><tr><td>verify-ca</td><td>Only try an SSL connection, and verify that the server. The certificate is issued by a trusted CA.</td></tr><tr><td>verify-full</td><td>Only try an SSL connection, verify that the server certificate is issued by a trusted CA and that the server hostname matches that in the certificate.</td></tr></tbody></table></div></div><br class="table-break" /></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376596796"></a>Example configuration</h4></div></div></div><p>Here follows an example PostgreSQL database configuration:
+</p><pre class="programlisting">
+Database
+{
+    PostgreSQL
+    {
+        Identifier        pgdb
+        Host              localhost
+        Port              5432
+        Database          wolframe
+        User              wolfusr
+        Password          wolfpwd
+        ConnectionTimeout 10
+        Connections       40
+        AcquireTimeout    10
+    }
+}
+</pre></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376558868"></a>3.6.2. Sqlite3</h3></div></div></div><p>This section explains how to configure a Sqlite database.
+</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376559460"></a>Requirements</h4></div></div></div><p>In order to use an Sqlite3 database in Wolframe you have to configure the 
+loading of the module mod_db_sqlite3 in the LoadModules section 
+of your configuration. The database file configured must have been created
+before.</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376568788"></a>Configuration settings</h4></div></div></div><p>The following table shows the configuration settings for a Sqlite3 database
+in Wolframe.
+</p><div class="table"><a id="idp1376569620"></a><p class="title"><strong>Table 3.12. Sqlite3 database configuration settings</strong></p><div class="table-contents"><table summary="Sqlite3 database configuration settings" border="1"><colgroup><col class="col1" /><col class="col2" /><col class="col3" /></colgroup><thead><tr><th>Name</th><th>Parameter</th><th>Description</th></tr></thead><tbody><tr><td>Identifier</td><td>identifier</td><td>Database identifier used to reference this database.</td></tr><tr><td>File</td><td>filepath</td><td>Store the SQLite database into the file specified as argument.
+			This parameter is required and the file must have been created before.</td></tr><tr><td>Connections</td><td>number</td><td>Number of simultaneus connections to the database.
+			Specifies the size of the pool of connections used
+			for database transactions.</td></tr><tr><td>ForeignKeys</td><td><code class="code">yes</code> or <code class="code">no</code></td><td>Setting <code class="code">foreignKeys</code> to <code class="code">yes</code>
+			enables referential integrity in the database. This is 
+			actually the same as executing 'PRAGMA foreign_keys=true'.
+			The default is <code class="code">yes</code>.</td></tr><tr><td>Profiling</td><td><code class="code">yes</code> or <code class="code">no</code></td><td>Shows the SQL commands being executed and their 
+			execution time in milliseconds. Default is <code class="code">no</code>.</td></tr><tr><td>Extension</td><td>filename</td><td>Loads the SQLite3 extension module specified
+			as argument. This is useful to load native code into 
+			SQLite3 imlementing for instance new database functions.
+			Have a look at the SQLite3 'Run-Time Loadable Extensions'
+			section at
+			<a class="ulink" href="http://www.sqlite.org/loadext.html" target="_top">http://www.sqlite.org/loadext.html</a>.
+			</td></tr></tbody></table></div></div><br class="table-break" /></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376658588"></a>Example configuration</h4></div></div></div><p>Here follows an example Sqlite3 database configuration:
+</p><pre class="programlisting">
+Database
+{
+    SQLite
+    {
+        Identifier    sqlitedb
+        File          sqlite.db
+        ForeignKeys   yes
+        Profiling     no
+        Connections   3
+        Program       sqlite.prg
+        Extension     sqlite_module.so
+    }
+}
+</pre></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376558084"></a>3.6.3. Oracle</h3></div></div></div><p>This section explains how to configure an Oracle database.
+</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376558676"></a>Requirements</h4></div></div></div><p>In order to use an Oracle database in Wolframe you have to configure the 
+loading of the module mod_db_oracle in the LoadModules section 
+of your configuration. The addressed Oracle database server must be running
+and the database and the user configured must have been created before.
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376639044"></a>Configuration settings</h4></div></div></div><p>The configuration settings for Oracle are splitted in two parts:
+The database configuration settings and the SSL configuration settings.
+The following three tables show the Oracle database configuration settings,
+the Oracle SSL configuration settings and the table with configurable SSL modes:
+</p><div class="table"><a id="idp1376628292"></a><p class="title"><strong>Table 3.13. Oracle database configuration settings</strong></p><div class="table-contents"><table summary="Oracle database configuration settings" border="1"><colgroup><col class="col1" /><col class="col2" /><col class="col3" /></colgroup><thead><tr><th>Name</th><th>Parameter</th><th>Description</th></tr></thead><tbody><tr><td>Identifier</td><td>identifier</td><td>Database identifier used to reference this database.</td></tr><tr><td>Host</td><td>identifier or string</td><td>Address of the Oracle database server</td></tr><tr><td>Port</td><td>number</td><td>Port of the Oracle database server</td></tr><tr><td>Database</td><td>identifier</td><td>Name of the database to connect to</td></tr><tr><td>User</td><td>identifier</td><td>User to connect to the database with</td></tr><tr><td>Password</td><td>string</td><td>Password to connect to the database with</td></tr><tr><td>ConnectionTimeout</td><td>number</td><td>Connection timeout in seconds</td></tr><tr><td>Connections</td><td>number</td><td>Maximum number of simoultaneus database connections (size of connection pool)</td></tr><tr><td>AcquireTimeout</td><td>number</td><td>Maximum time allowed to acquire a database connection in seconds</td></tr><tr><td>StatementTimeout</td><td>number</td><td>The maximum allowed time to execute a statement in milliseconds.</td></tr></tbody></table></div></div><br class="table-break" /><div class="table"><a id="idp1376702700"></a><p class="title"><strong>Table 3.14. SSL configuration settings</strong></p><div class="table-contents"><table summary="SSL configuration settings" border="1"><colgroup><col class="col1" /><col class="col2" /><col class="col3" /></colgroup><thead><tr><th>Name</th><th>Parameter</th><th>Description</th></tr></thead><tbody><tr><td>SslMode</td><td>identifier</td><td>How a SSL TCP/IP connection should be negotiated with the server.
+				Possible values and their explanation can be found in the 
+				SSL Mode table below.</td></tr><tr><td>SslCert</td><td>filename</td><td>The file name of the client SSL certificate in case of an SSL connection to the database.</td></tr><tr><td>SslKey</td><td>filename</td><td>The file with the secret key used for the client certificate in case of an SSL connection to the database.</td></tr><tr><td>SslRootCert</td><td>filename</td><td>The File name of the root SSL CA certificate in case of an SSL connection to the database.</td></tr><tr><td>SslCRL</td><td>filename</td><td>The File name of the SSL certificate revocation list (CRL) in case of an SSL connection to the database.</td></tr></tbody></table></div></div><br class="table-break" /><div class="table"><a id="idp1376698620"></a><p class="title"><strong>Table 3.15. SSL modes</strong></p><div class="table-contents"><table summary="SSL modes" border="1"><colgroup><col class="col1" /><col class="col2" /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>disable</td><td>Only try a non-SSL connection</td></tr><tr><td>allow</td><td>First try a non-SSL connection. If that fails, try an SSL connection</td></tr><tr><td>prefer</td><td>First try an SSL connection. If that fails, try a non-SSL connection. This is the default.</td></tr><tr><td>require</td><td>Only try an SSL connection. If a root CA file is present, verify the certificate.</td></tr><tr><td>verify-ca</td><td>Only try an SSL connection, and verify that the server. The certificate is issued by a trusted CA.</td></tr><tr><td>verify-full</td><td>Only try an SSL connection, verify that the server certificate is issued by a trusted CA and that the server hostname matches that in the certificate.</td></tr></tbody></table></div></div><br class="table-break" /></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376709612"></a>Example configuration</h4></div></div></div><p>Here follows an example Oracle database configuration:
+</p><pre class="programlisting">
+Database
+{
+    Oracle
+    {
+        Identifier        oradb
+        Host              localhost
+        Port              1521
+        Database          orcl
+        User              wolfusr
+        Password          wolfpwd
+        ConnectionTimeout 10
+        Connections       40
+        AcquireTimeout    10
+    }
+}
+
+</pre></div></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk01ch03s05.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk01ch03.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk01ch04.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">3.5. Global Settings </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> Chapter 4. AAAA</td></tr></table></div></div></div>
 
 <!-- Footer -->
 <div xmlns="" class="wrapper row2">

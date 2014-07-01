@@ -387,6 +387,15 @@
 <li>m_device
 : <a class="el" href="class__Wolframe_1_1GlobalRandomGenerator.html#acdcd42246d99e9182e3023b26e22de85">_Wolframe::GlobalRandomGenerator</a>
 </li>
+<li>m_distro
+: <a class="el" href="class__Wolframe_1_1Platform.html#acccb60534d6d9efb8b58970aa14ffbb8">_Wolframe::Platform</a>
+</li>
+<li>m_distro_major
+: <a class="el" href="class__Wolframe_1_1Platform.html#aa860f7a4f77ea87e3e59e1493fff59fa">_Wolframe::Platform</a>
+</li>
+<li>m_distro_minor
+: <a class="el" href="class__Wolframe_1_1Platform.html#aa6153fc86c368b07c6d9816f909bb25b">_Wolframe::Platform</a>
+</li>
 <li>m_dkLen
 : <a class="el" href="class__Wolframe_1_1crypto_1_1PBKDF2__HMAC__SHA1.html#a5357e27f3b94a74768477059d2834232">_Wolframe::crypto::PBKDF2_HMAC_SHA1</a>
 </li>
@@ -501,10 +510,19 @@
 <li>m_hasBuild
 : <a class="el" href="class__Wolframe_1_1Version.html#aefae1492888a3aec4a733f01a4686c13">_Wolframe::Version</a>
 </li>
+<li>m_hasDisto
+: <a class="el" href="class__Wolframe_1_1Platform.html#a5edcc9414b8f7db9c38581ad56c686bb">_Wolframe::Platform</a>
+</li>
+<li>m_hasDistroVersion
+: <a class="el" href="class__Wolframe_1_1Platform.html#ae856936ae3db1e5583451b010694b4aa">_Wolframe::Platform</a>
+</li>
 <li>m_hash
 : <a class="el" href="class__Wolframe_1_1AAAA_1_1PasswordHash_1_1Hash.html#aae3a508af4ce4d387c04f77614c271b6">_Wolframe::AAAA::PasswordHash::Hash</a>
 , <a class="el" href="class__Wolframe_1_1AAAA_1_1PasswordHash.html#a5a92b3d8556d9c738fce024c9cb2940e">_Wolframe::AAAA::PasswordHash</a>
 , <a class="el" href="class__Wolframe_1_1crypto_1_1PBKDF2__HMAC__SHA1.html#a660f770f44a9f5b25bd95dc31416a623">_Wolframe::crypto::PBKDF2_HMAC_SHA1</a>
+</li>
+<li>m_hasOsVersion
+: <a class="el" href="class__Wolframe_1_1Platform.html#a99505c053d43ebafa990758f5dd4e853">_Wolframe::Platform</a>
 </li>
 <li>m_hasRevision
 : <a class="el" href="class__Wolframe_1_1Version.html#aa9b8fa24aa5e83b50ede73b5ebb19753">_Wolframe::Version</a>
@@ -653,6 +671,9 @@
 <li>m_mech
 : <a class="el" href="class__Wolframe_1_1AAAA_1_1User.html#ab997916ef7a83f0e63c0ce68f41b8393">_Wolframe::AAAA::User</a>
 </li>
+<li>m_message
+: <a class="el" href="class__Wolframe_1_1AAAA_1_1PasswordChangeMessage.html#a91cffdb1af10f6ae8cbde3d8d2c49e46">_Wolframe::AAAA::PasswordChangeMessage</a>
+</li>
 <li>m_metadata
 : <a class="el" href="class__Wolframe_1_1langbind_1_1InputFilter.html#abbb8f2b777d292143f51042d3164d4e2">_Wolframe::langbind::InputFilter</a>
 , <a class="el" href="class__Wolframe_1_1langbind_1_1OutputFilter.html#a19258c6c2fa296f5ee85d5011b2b4aa0">_Wolframe::langbind::OutputFilter</a>
@@ -759,6 +780,13 @@
 </li>
 <li>m_os
 : <a class="el" href="class__Wolframe_1_1log_1_1Logger.html#ae7984823fbf91dcd6b7a1641c151a448">_Wolframe::log::Logger</a>
+, <a class="el" href="class__Wolframe_1_1Platform.html#a2cb4e6b06106faaa35802afd31e32341">_Wolframe::Platform</a>
+</li>
+<li>m_os_major
+: <a class="el" href="class__Wolframe_1_1Platform.html#a9e483fb2b90ed73e13140be79acef36d">_Wolframe::Platform</a>
+</li>
+<li>m_os_minor
+: <a class="el" href="class__Wolframe_1_1Platform.html#abdc22f7e9728d8197fcb13eb41153663">_Wolframe::Platform</a>
 </li>
 <li>m_out
 : <a class="el" href="class__Wolframe_1_1serialize_1_1DDLStructSerializer.html#afe7270e60aa660f1e9177d98b6db8dc9">_Wolframe::serialize::DDLStructSerializer</a>
@@ -897,7 +925,8 @@
 : <a class="el" href="class__Wolframe_1_1db_1_1Transaction_1_1Result.html#ab0397ba68fff3f4e8a2d9905a03d8fe0">_Wolframe::db::Transaction::Result</a>
 </li>
 <li>m_salt
-: <a class="el" href="class__Wolframe_1_1AAAA_1_1PasswordHash.html#a480b3e69708145ec5751625c00fb42b3">_Wolframe::AAAA::PasswordHash</a>
+: <a class="el" href="class__Wolframe_1_1AAAA_1_1CRAMsalt.html#a007c98a7ae3704261345804e72508057">_Wolframe::AAAA::CRAMsalt</a>
+, <a class="el" href="class__Wolframe_1_1AAAA_1_1PasswordHash.html#a480b3e69708145ec5751625c00fb42b3">_Wolframe::AAAA::PasswordHash</a>
 , <a class="el" href="class__Wolframe_1_1AAAA_1_1PasswordHash_1_1Salt.html#aab31459302b0b4b56a7155f613e3f049">_Wolframe::AAAA::PasswordHash::Salt</a>
 </li>
 <li>m_sbuf
@@ -1091,7 +1120,7 @@
 : <a class="el" href="class__Wolframe_1_1ApplicationInfo.html#a67f9b4c7565beaf312fe097a15c40a13">_Wolframe::ApplicationInfo</a>
 </li>
 <li>m_vmt
-: <a class="el" href="class__Wolframe_1_1types_1_1CustomDataType.html#a82473e40def60e7a88b026f57528e4cd">_Wolframe::types::CustomDataType</a>
+: <a class="el" href="class__Wolframe_1_1types_1_1CustomDataType.html#a8e931b457cef40c72c331ea6a2b4499d">_Wolframe::types::CustomDataType</a>
 </li>
 <li>m_writedata
 : <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a9e506fad7d98bc8ad20805ddbd8fb890">_Wolframe::cmdbind::IOFilterCommandHandlerEscDLF</a>
@@ -1109,6 +1138,9 @@
 : <a class="el" href="class__Wolframe_1_1types_1_1VariantStruct.html#a7480d9b7353e4c18b4d42a57f5a21b7e">_Wolframe::types::VariantStruct</a>
 , <a class="el" href="struct__Wolframe_1_1types_1_1VariantStructDescription_1_1Element.html#a20a2ec81a4d9add4a11549d894bd5f23">_Wolframe::types::VariantStructDescription::Element</a>
 </li>
+<li>makePlatform()
+: <a class="el" href="class__Wolframe_1_1Platform.html#a4b99a4df01d1548d74615eb93b01a0b1">_Wolframe::Platform</a>
+</li>
 <li>mandatory()
 : <a class="el" href="struct__Wolframe_1_1serialize_1_1StructDescription.html#a48ab1aa76fe8e1041a351a0bc0892b43">_Wolframe::serialize::StructDescription&lt; Structure &gt;</a>
 </li>
@@ -1117,31 +1149,33 @@
 </li>
 <li>mandatory()
 : <a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a0d573f73bfa9a21aec7c66404fa69071">_Wolframe::serialize::StructDescriptionBase</a>
-, <a class="el" href="struct__Wolframe_1_1types_1_1VariantStructDescription_1_1Element.html#a2f0cb00b0941073b39828e6e8b2b3e26">_Wolframe::types::VariantStructDescription::Element</a>
 </li>
 <li>Mandatory
 : <a class="el" href="struct__Wolframe_1_1types_1_1VariantStructDescription_1_1Element.html#a2879bc52a280af47de5b6ca45555c98da10a0e531fc521c589311a31c63f98b95">_Wolframe::types::VariantStructDescription::Element</a>
+</li>
+<li>mandatory()
+: <a class="el" href="struct__Wolframe_1_1types_1_1VariantStructDescription_1_1Element.html#a2f0cb00b0941073b39828e6e8b2b3e26">_Wolframe::types::VariantStructDescription::Element</a>
 </li>
 <li>Map
 : <a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a8c034af01d0376e178580c0bf0fde026">_Wolframe::serialize::StructDescriptionBase</a>
 </li>
 <li>Mask_ArgumentIndex
-: <a class="el" href="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a01bf3bcfa07f3a9067533c00bae9b1ecafed7eda60623d04d8cdeb23dd58de26d">_Wolframe::db::vm::InstructionSet</a>
+: <a class="el" href="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#adcd2b0482bf2c22ad7b8e4336bfd6756afed7eda60623d04d8cdeb23dd58de26d">_Wolframe::db::vm::InstructionSet</a>
 </li>
 <li>Mask_CondCode
-: <a class="el" href="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a01bf3bcfa07f3a9067533c00bae9b1ecad3aa819b96fcf0e09c2816730201bc74">_Wolframe::db::vm::InstructionSet</a>
+: <a class="el" href="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#adcd2b0482bf2c22ad7b8e4336bfd6756ad3aa819b96fcf0e09c2816730201bc74">_Wolframe::db::vm::InstructionSet</a>
 </li>
 <li>Mask_OpCode
-: <a class="el" href="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a01bf3bcfa07f3a9067533c00bae9b1ecaaa45a992fb24f7d403fbc3cdedec84f4">_Wolframe::db::vm::InstructionSet</a>
+: <a class="el" href="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#adcd2b0482bf2c22ad7b8e4336bfd6756aaa45a992fb24f7d403fbc3cdedec84f4">_Wolframe::db::vm::InstructionSet</a>
 </li>
 <li>Max_ArgumentIndex
-: <a class="el" href="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a9957b8add8c9d72be62d2d3a527da1b8a52a5f8cd3aaeac12a3a6f6d6b00b2f30">_Wolframe::db::vm::InstructionSet</a>
+: <a class="el" href="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#afb4205e0f36543ed836100bd5e506664a52a5f8cd3aaeac12a3a6f6d6b00b2f30">_Wolframe::db::vm::InstructionSet</a>
 </li>
 <li>Max_CondCode
-: <a class="el" href="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a9957b8add8c9d72be62d2d3a527da1b8a3f025abe0398ed0480dc882bd6bd5b19">_Wolframe::db::vm::InstructionSet</a>
+: <a class="el" href="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#afb4205e0f36543ed836100bd5e506664a3f025abe0398ed0480dc882bd6bd5b19">_Wolframe::db::vm::InstructionSet</a>
 </li>
 <li>Max_OpCode
-: <a class="el" href="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a9957b8add8c9d72be62d2d3a527da1b8a94a7134865092ee8384047ec6da9276b">_Wolframe::db::vm::InstructionSet</a>
+: <a class="el" href="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#afb4205e0f36543ed836100bd5e506664a94a7134865092ee8384047ec6da9276b">_Wolframe::db::vm::InstructionSet</a>
 </li>
 <li>maxConnections
 : <a class="el" href="struct__Wolframe_1_1net_1_1Configuration.html#a8aeee3b472a37632c6afb685a0bdc5bc">_Wolframe::net::Configuration</a>
@@ -1151,7 +1185,7 @@
 : <a class="el" href="struct__Wolframe_1_1utils_1_1PrintFormat.html#a77a1cc0e553edebcdaf6826f138b297a">_Wolframe::utils::PrintFormat</a>
 </li>
 <li>MaxNofParams
-: <a class="el" href="class__Wolframe_1_1db_1_1BaseStatement.html#ace9eb56dea15c8c75562ba522811e20daf78e92a67a8c50d9305f53a1ac5ca9cd">_Wolframe::db::BaseStatement</a>
+: <a class="el" href="class__Wolframe_1_1db_1_1BaseStatement.html#a9bbb50f6abb6bd47dbf3e05286b5fdc7af78e92a67a8c50d9305f53a1ac5ca9cd">_Wolframe::db::BaseStatement</a>
 </li>
 <li>mech()
 : <a class="el" href="class__Wolframe_1_1AAAA_1_1User.html#a193c2414db71dec62c18b2097a78a380">_Wolframe::AAAA::User</a>
@@ -1164,7 +1198,7 @@
 , <a class="el" href="class__Wolframe_1_1AAAA_1_1Authenticator.html#a255549cfccbdff5519e193cc315f0cde">_Wolframe::AAAA::Authenticator</a>
 </li>
 <li>MemBlock()
-: <a class="el" href="class__Wolframe_1_1protocol_1_1MemBlock.html#a5c7fc4d07073263c7538e071c5bde296">_Wolframe::protocol::MemBlock</a>
+: <a class="el" href="class__Wolframe_1_1protocol_1_1MemBlock.html#aa8b50057100991448a02932389f011bc">_Wolframe::protocol::MemBlock</a>
 </li>
 <li>Message()
 : <a class="el" href="struct__Wolframe_1_1config_1_1PositionalErrorMessageBase_1_1Message.html#ab660b69809b03d3b5dfc103976e15a91">_Wolframe::config::PositionalErrorMessageBase::Message</a>
@@ -1176,19 +1210,16 @@
 : <a class="el" href="class__Wolframe_1_1AAAA_1_1Authenticator.html#a9dfdf77dd405ff219772c0f5aed31380ae74cfcb1622f6a1e711f0f55e00e1dd9">_Wolframe::AAAA::Authenticator</a>
 , <a class="el" href="class__Wolframe_1_1AAAA_1_1AuthenticatorSlice.html#a73d7382cdbebff714b96b0a306943ae0a0383f401fcada1505c9a9b2ec0994197">_Wolframe::AAAA::AuthenticatorSlice</a>
 , <a class="el" href="class__Wolframe_1_1AAAA_1_1PasswordChanger.html#a6881bad362da4ab420b94af2fadb864baf23c64a1393b41b2dc9e92ec694b0362">_Wolframe::AAAA::PasswordChanger</a>
-, <a class="el" href="class__Wolframe_1_1AAAA_1_1PasswordChangerSlice.html#a3d84f7728c64c2059175ebc67dc0d6edadab7d3f8151839da8d7d6c84de7227ab">_Wolframe::AAAA::PasswordChangerSlice</a>
 </li>
 <li>messageIn()
 : <a class="el" href="class__Wolframe_1_1AAAA_1_1Authenticator.html#a3cca7b9a53d881c58cb2a946667a34ae">_Wolframe::AAAA::Authenticator</a>
 , <a class="el" href="class__Wolframe_1_1AAAA_1_1AuthenticatorSlice.html#aef35ea3f264ad487be4294302d962bb0">_Wolframe::AAAA::AuthenticatorSlice</a>
 , <a class="el" href="class__Wolframe_1_1AAAA_1_1PasswordChanger.html#ac4b41cba44cf309eef8f91fb9b19be40">_Wolframe::AAAA::PasswordChanger</a>
-, <a class="el" href="class__Wolframe_1_1AAAA_1_1PasswordChangerSlice.html#a9e9e3a0f6d18f11726e4fcb33182ac5e">_Wolframe::AAAA::PasswordChangerSlice</a>
 </li>
 <li>messageOut()
 : <a class="el" href="class__Wolframe_1_1AAAA_1_1Authenticator.html#a8a15e5f66ea574d2185829699beccc9d">_Wolframe::AAAA::Authenticator</a>
 , <a class="el" href="class__Wolframe_1_1AAAA_1_1AuthenticatorSlice.html#ac86d3c536e38db82b082978e1fcfdcc7">_Wolframe::AAAA::AuthenticatorSlice</a>
 , <a class="el" href="class__Wolframe_1_1AAAA_1_1PasswordChanger.html#a1aa77ca2e4b04179df3d88fe2f081976">_Wolframe::AAAA::PasswordChanger</a>
-, <a class="el" href="class__Wolframe_1_1AAAA_1_1PasswordChangerSlice.html#a20a82f8a87d2e1e3bb583515cee2502b">_Wolframe::AAAA::PasswordChangerSlice</a>
 </li>
 <li>metadata()
 : <a class="el" href="class__Wolframe_1_1types_1_1FormDescription.html#a7e443285aff5bea1b22a446d367b3738">_Wolframe::types::FormDescription</a>
@@ -1245,7 +1276,7 @@
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 29 2014 13:48:07 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 1 2014 17:48:29 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

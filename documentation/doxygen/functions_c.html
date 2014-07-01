@@ -238,13 +238,13 @@
 , <a class="el" href="class__Wolframe_1_1AAAA_1_1AuthenticationUnit.html#a4ff4caf18b4824c405c77ff3482051f4">_Wolframe::AAAA::AuthenticationUnit</a>
 , <a class="el" href="class__Wolframe_1_1AAAA_1_1AuthenticatorSlice.html#abd3b18d87b5124936f83fcbf6be1d718">_Wolframe::AAAA::AuthenticatorSlice</a>
 , <a class="el" href="class__Wolframe_1_1AAAA_1_1AuthorizationUnit.html#a993fedccc8ad7fa7dcccd211669d79de">_Wolframe::AAAA::AuthorizationUnit</a>
-, <a class="el" href="class__Wolframe_1_1AAAA_1_1PasswordChangerSlice.html#aa2b03378be7621721c82b1ada7f428f7">_Wolframe::AAAA::PasswordChangerSlice</a>
 , <a class="el" href="class__Wolframe_1_1config_1_1NamedConfiguration.html#a34386bd19e997d908d54063a86e6a74c">_Wolframe::config::NamedConfiguration</a>
 , <a class="el" href="class__Wolframe_1_1db_1_1Database.html#a8fc33e6ef3cc401a1a0937bbccacbe51">_Wolframe::db::Database</a>
 , <a class="el" href="class__Wolframe_1_1db_1_1DatabaseUnit.html#a3f001d8113692f633dee0652a527c274">_Wolframe::db::DatabaseUnit</a>
 </li>
 <li>clear()
-: <a class="el" href="class__Wolframe_1_1db_1_1BaseStatement.html#ac49d080cf5455648e3ab755c6fb23e57">_Wolframe::db::BaseStatement</a>
+: <a class="el" href="class__Wolframe_1_1AAAA_1_1PasswordChangeMessage.html#a2cd05bd35ec8374314a804a62acc6cf7">_Wolframe::AAAA::PasswordChangeMessage</a>
+, <a class="el" href="class__Wolframe_1_1db_1_1BaseStatement.html#ac49d080cf5455648e3ab755c6fb23e57">_Wolframe::db::BaseStatement</a>
 , <a class="el" href="class__Wolframe_1_1db_1_1Statement.html#a4346b41b890efd8eaf591dba376adb67">_Wolframe::db::Statement</a>
 , <a class="el" href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#a145c60e2b77638532fe5f2000efb07f2">_Wolframe::db::SubstitutingStatement</a>
 , <a class="el" href="struct__Wolframe_1_1db_1_1vm_1_1ProgramInstance_1_1ResultFlags.html#a645ed86bc44ed042891d1b06c35a8c26">_Wolframe::db::vm::ProgramInstance::ResultFlags</a>
@@ -540,7 +540,7 @@
 : <a class="el" href="class__Wolframe_1_1protocol_1_1CArgBuffer.html#a03252f4126b3221b22513af57089e1e5acd93be1547a1973efd6fdd31699a5a9c">_Wolframe::protocol::CArgBuffer&lt; Buffer &gt;</a>
 </li>
 <li>Context()
-: <a class="el" href="class__Wolframe_1_1serialize_1_1Context.html#ace475f32f4afbc14e39acd7221246e31">_Wolframe::serialize::Context</a>
+: <a class="el" href="class__Wolframe_1_1serialize_1_1Context.html#a669debc81e4f2f0c579197e9298b35f5">_Wolframe::serialize::Context</a>
 </li>
 <li>ConversionOperator
 : <a class="el" href="class__Wolframe_1_1types_1_1CustomDataType.html#acd7dc85c9d504f02aca125d8dd958beb">_Wolframe::types::CustomDataType</a>
@@ -620,6 +620,9 @@
 <li>CRAMresponse()
 : <a class="el" href="class__Wolframe_1_1AAAA_1_1CRAMresponse.html#a99895733c72ae55eff5ddb5153fb205c">_Wolframe::AAAA::CRAMresponse</a>
 </li>
+<li>CRAMsalt()
+: <a class="el" href="class__Wolframe_1_1AAAA_1_1CRAMsalt.html#aabe361680a156647e36f3fc23f87319b">_Wolframe::AAAA::CRAMsalt</a>
+</li>
 <li>create()
 : <a class="el" href="class__Wolframe_1_1cmdbind_1_1DoctypeDetectorType.html#afca9ff766462f9a64cca4dcd172abeff">_Wolframe::cmdbind::DoctypeDetectorType</a>
 , <a class="el" href="struct__Wolframe_1_1langbind_1_1FilterDef.html#a0df9fd95af2678981609ab62e77ec694">_Wolframe::langbind::FilterDef</a>
@@ -654,7 +657,7 @@
 : <a class="el" href="class__Wolframe_1_1net_1_1LocalEndpoint.html#a9bb349223141596905071bba6216e94f">_Wolframe::net::LocalEndpoint</a>
 </li>
 <li>CRITICAL
-: <a class="el" href="class__Wolframe_1_1ErrorLevel.html#a8416d7d92a9d547be4b5320bf25d072ba4acbca25330f1059eadd9988f9a23f8a">_Wolframe::ErrorLevel</a>
+: <a class="el" href="class__Wolframe_1_1ErrorLevel.html#a7b8da1944a98a0432a85f4dda502d0e2a4acbca25330f1059eadd9988f9a23f8a">_Wolframe::ErrorLevel</a>
 </li>
 <li>Custom
 : <a class="el" href="class__Wolframe_1_1types_1_1Variant.html#a9b83ec175a5f88adbd1b67605b4ccd3ca557a82446eb0253dd02c34781eea3869">_Wolframe::types::Variant</a>
@@ -668,10 +671,10 @@
 : <a class="el" href="class__Wolframe_1_1types_1_1CustomDataInitializer.html#a2e8f17c51d826a093a8d7043efff4f20">_Wolframe::types::CustomDataInitializer</a>
 </li>
 <li>CustomDataMethodCallNormalizer()
-: <a class="el" href="class__Wolframe_1_1types_1_1CustomDataMethodCallNormalizer.html#a6cef3b665163e89998283663634a037f">_Wolframe::types::CustomDataMethodCallNormalizer</a>
+: <a class="el" href="class__Wolframe_1_1types_1_1CustomDataMethodCallNormalizer.html#afaee59a55e0cb4455bf0554528cc60e5">_Wolframe::types::CustomDataMethodCallNormalizer</a>
 </li>
 <li>CustomDataNormalizer()
-: <a class="el" href="class__Wolframe_1_1types_1_1CustomDataNormalizer.html#a0193daa55ce73fa9a563dd0a8cd0bf06">_Wolframe::types::CustomDataNormalizer</a>
+: <a class="el" href="class__Wolframe_1_1types_1_1CustomDataNormalizer.html#a0b5071b278eff0d1ef0a951cb0eed22b">_Wolframe::types::CustomDataNormalizer</a>
 </li>
 <li>customDataType()
 : <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#a1eb68c68e0135947a9445ae1b81227a2">_Wolframe::proc::ProcessorProvider</a>
@@ -688,7 +691,7 @@
 : <a class="el" href="class__Wolframe_1_1module_1_1CustomDataTypeConstructor.html#a473b6568d79933aca41ccbf98af5061f">_Wolframe::module::CustomDataTypeConstructor</a>
 </li>
 <li>CustomDataValue()
-: <a class="el" href="class__Wolframe_1_1types_1_1CustomDataValue.html#a098a6ee5a5f5e3a4c6f986a78937a367">_Wolframe::types::CustomDataValue</a>
+: <a class="el" href="class__Wolframe_1_1types_1_1CustomDataValue.html#ac2490bbe98373553077c1cc7c0710166">_Wolframe::types::CustomDataValue</a>
 </li>
 <li>CustomDataValueConstructor
 : <a class="el" href="class__Wolframe_1_1types_1_1CustomDataType.html#a3f2cc08fad855f62df43c4c9158525a8">_Wolframe::types::CustomDataType</a>
@@ -704,7 +707,7 @@
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 29 2014 13:48:07 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 1 2014 17:48:29 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

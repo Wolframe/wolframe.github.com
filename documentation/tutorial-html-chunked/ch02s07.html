@@ -58,7 +58,7 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.7. Step 7 - Editing customer</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch02s06.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Steps</th><td width="20%" align="right"> <a accesskey="n" href="ch02s08.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1383470476"></a>2.7. Step 7 - Editing customer</h2></div></div></div><p>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.7. Step 7 - Editing customer</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch02s06.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Steps</th><td width="20%" align="right"> <a accesskey="n" href="ch02s08.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1381475076"></a>2.7. Step 7 - Editing customer</h2></div></div></div><p>
 		We change the show customer use case slightly, so that we can also
 		edit the customer in the <code class="filename">customer_show.ui</code> form.
 	</p><p>
@@ -70,7 +70,7 @@
 		set to:
 
 		</p><pre class="programlisting">
-	customer_edit?id={customer.selected}
+customer_edit?id={customer.selected}
 		</pre><p>
 	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step7_customers_edit_button.png" /></div></div><p>	
 		We change the form <code class="filename">customer_edit.ui</code>
@@ -81,11 +81,11 @@
 		'CustomerUpdate' request:
 
 		</p><pre class="programlisting">
-	CustomerUpdate customer {
-	    id={main.id};
-	    name {{main.name}};
-	    address {{main.address}}
-	}
+CustomerUpdate customer {
+    id={main.id};
+    name {{main.name}};
+    address {{main.address}}
+}
 		</pre><p>
 		
 		We also set 'form' to 'customers', so the user gets taken back
@@ -93,41 +93,41 @@
 	</p><div class="screenshot"><div class="mediaobject"><img src="images/Tutorial/step7_customer_edit.png" /></div></div><p>
 		The resulting 'CustomerUpdate' XML request looks as follows:
 	</p><pre class="programlisting">
-	&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-	&lt;!DOCTYPE customer SYSTEM 'CustomerUpdate'&gt;
-	&lt;customer id="2"&gt;
-	  &lt;name&gt;John Smith&lt;/name&gt;
-	  &lt;address&gt;The Wheel in Space&lt;/address&gt;
-	&lt;/customer&gt;
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE customer SYSTEM 'CustomerUpdate'&gt;
+&lt;customer id="2"&gt;
+    &lt;name&gt;John Smith&lt;/name&gt;
+    &lt;address&gt;The Wheel in Space&lt;/address&gt;
+&lt;/customer&gt;
 
 	</pre><p>
 		Similar to to the "show customer" case we add now a new command mapping
 		in <code class="filename">tutorial.dmap</code>:
 
 	</p><pre class="programlisting">
-	COMMAND CustomerUpdate CALL UpdateCustomer;
+COMMAND CustomerUpdate CALL UpdateCustomer;
 	</pre><p>
 
 		We also add a simple form 'CustomerUpdate' to <code class="filename">Customer.sfrm</code>
 		which looks very similar to the 'Customer' form:
 	</p><pre class="programlisting">
 FORM CustomerUpdate
-	-root customer
+    -root customer
 {
-	id !@string
-	name string
-	address string
+    id !@string
+    name string
+    address string
 }
 
 	</pre><p>
 		Finally we write the transaction function 'CustomerUpdate' in
 		<code class="filename">Customer.tdl</code>:
 	</p><pre class="programlisting">
-	TRANSACTION UpdateCustomer
-	BEGIN
-		DO UPDATE Customer SET name=$(name), address=$(address)
-			WHERE id=$(id);
-	END
+TRANSACTION UpdateCustomer
+BEGIN
+    DO UPDATE Customer SET name=$(name), address=$(address)
+        WHERE id=$(id);
+END
 	</pre><p>
 		Note, that this time the database transaction doesn't return a result.
 

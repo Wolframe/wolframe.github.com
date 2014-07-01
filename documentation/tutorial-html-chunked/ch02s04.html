@@ -58,61 +58,60 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.4. Step 4 - Implement server side customer list</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch02s03.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Steps</th><td width="20%" align="right"> <a accesskey="n" href="ch02s05.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1383223380"></a>2.4. Step 4 - Implement server side customer list</h2></div></div></div><p>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.4. Step 4 - Implement server side customer list</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch02s03.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Steps</th><td width="20%" align="right"> <a accesskey="n" href="ch02s05.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1381212028"></a>2.4. Step 4 - Implement server side customer list</h2></div></div></div><p>
 		We want to store the customer data in an Sqlite database, so we have to
 		tell the server to load the database module for Sqlite:
 		</p><pre class="programlisting">
-	LoadModules {
-		<span class="bold"><strong>module mod_db_sqlite3</strong></span>
-	}
+LoadModules {
+    <span class="bold"><strong>module mod_db_sqlite3</strong></span>
+}
 		</pre><p>
 	</p><p>
 		Now we also have to create a database and populate it with the
 		following schema:
 
 		</p><pre class="programlisting">
-	CREATE TABLE Customer (
-	    id              INTEGER PRIMARY KEY AUTOINCREMENT,
-	    name            TEXT    NOT NULL,
-	    address         TEXT
-	);
+CREATE TABLE Customer (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    name            TEXT    NOT NULL,
+    address         TEXT
+);
 		</pre><p>
 	</p><p>
 		Store this into <code class="filename">schema.sql</code>. Then execute:
 
 		</p><pre class="programlisting">
-	sqlite3 tutorial.db &lt; schema.sql
+sqlite3 tutorial.db &lt; schema.sql
 		</pre><p>
 	</p><p>
 		Now we have to tell server to use this sqlite database file:
 
 		</p><pre class="programlisting">
-	database {
-	    SQLite {
-	        identifier     sqlitedb
-	        file           tutorial.db
-	        foreignKeys    yes
-		}
-	}
+database {
+    SQLite {
+        identifier     sqlitedb
+        file           tutorial.db
+        foreignKeys    yes
+    }
+}
 		</pre><p>
 	
 	</p><p>
 		When we restart the server we see:
 
 		</p><pre class="programlisting">
-	DEBUG: SQLite database unit 'sqlitedb' created with 3 connections
-		to file 'tutorial.db'
+DEBUG: SQLite database unit 'sqlitedb' created with 3 connections to file 'tutorial.db'
 		</pre><p>
 	</p><p>
 		Now we want to use some XML filters to send/receive XML over the protocol,
 		so we have to add the following modules to <code class="filename">tutorial.conf</code>:
 
 		</p><pre class="programlisting">
-	LoadModules {
-	    module mod_db_sqlite3
-	    <span class="bold"><strong>module mod_doctype_xml</strong></span>
-	    <span class="bold"><strong>module mod_filter_libxml2</strong></span>
-	}
+LoadModules {
+    module mod_db_sqlite3
+    <span class="bold"><strong>module mod_doctype_xml</strong></span>
+    <span class="bold"><strong>module mod_filter_libxml2</strong></span>
+}
 		</pre><p>
 	</p><p>
 		The module mod_doctype_xml is there to detect documents of type XML.
@@ -121,18 +120,18 @@
 		use:
 
 		</p><pre class="programlisting">
-	/usr/sbin/wolframed -p -c tutorial.conf
+/usr/sbin/wolframed -p -c tutorial.conf
 		</pre><p>
 	</p><p>
 		We see:
 
 		</p><pre class="programlisting">
-	..
-	Module files to load:
-	  /usr/lib/wolframe/modules/mod_db_sqlite3
-	  /usr/lib/wolframe/modules/mod_doctype_xml
-	  /usr/lib/wolframe/modules/mod_filter_libxml2
-	..
+..
+Module files to load:
+  /usr/lib/wolframe/modules/mod_db_sqlite3
+  /usr/lib/wolframe/modules/mod_doctype_xml
+  /usr/lib/wolframe/modules/mod_filter_libxml2
+..
 		</pre><p>
 		which looks ok.
 	</p><p>
@@ -141,24 +140,24 @@
 		<code class="filename">tutorial.conf</code>:
 
 		</p><pre class="programlisting">
-	LoadModules {
-		module mod_db_sqlite3
-		module mod_doctype_xml
-		module mod_filter_libxml2
-		<span class="bold"><strong>module mod_command_directmap</strong></span>
-	}
+LoadModules {
+    module mod_db_sqlite3
+    module mod_doctype_xml
+    module mod_filter_libxml2
+    <span class="bold"><strong>module mod_command_directmap</strong></span>
+}
 		</pre><p>
 		and a new section 'Processor' on the same level as 'LoadModules'
 		</p><pre class="programlisting">
-	Processor {
-	    database sqlitedb
-	    cmdhandler {
-	        directmap {
-	            filter XML=libxml2
-	            program tutorial.dmap
-	        }
-	    }
+Processor {
+    database sqlitedb
+    cmdhandler {
+	directmap {
+	    filter XML=libxml2
+	    program tutorial.dmap
 	}
+    }
+}
 		</pre><p>
 	</p><p>
 		The "filter" directive denotes that the command handler should
@@ -168,9 +167,9 @@
 		This file maps the requests to the corresponding transaction definitions:
 
 		</p><pre class="programlisting">
-	COMMAND CustomerListRequest
-	       CALL SelectCustomerList
-	       RETURN SKIP {standalone="yes", root="list"};
+COMMAND CustomerListRequest
+    CALL SelectCustomerList
+    RETURN SKIP {standalone="yes", root="list"};
 		</pre><p>
 
 		We map the 'CustomerListRequest' request to a function 'SelectCustomerList'
@@ -191,16 +190,16 @@
 		section:
 
 		</p><pre class="programlisting">
-	Processor {
-	    database sqlitedb
-	    cmdhandler {
-	        directmap {
-	            filter XML=libxml2
-	            program tutorial.dmap
-	        }
-	    }
-	    <span class="bold"><strong>program Customer.tdl</strong></span>
-	}
+Processor {
+    database sqlitedb
+    cmdhandler {
+        directmap {
+            filter XML=libxml2
+            program tutorial.dmap
+        }
+    }
+    <span class="bold"><strong>program Customer.tdl</strong></span>
+}
 		</pre><p>
 
 		The <code class="filename">Customer.tdl</code> file contains the database transaction 'SelectCustomerList' 
@@ -209,10 +208,10 @@
 		we are going to retrieve with 'INTO customer'.
 
 		</p><pre class="programlisting">
-	TRANSACTION SelectCustomerList
-	BEGIN
-		INTO customer DO SELECT * from Customer;
-	END
+TRANSACTION SelectCustomerList
+BEGIN
+    INTO customer DO SELECT * from Customer;
+END
 		</pre><p>
 
 	We also need a validator for the input when the client sends a 'CustomerListRequest'.
@@ -220,25 +219,25 @@
 	register the simpleform program <code class="filename">Customer.sfrm</code> to the list of programs in the same file:
 
 		</p><pre class="programlisting">
-	LoadModules {
-	    module mod_db_sqlite3
-	    module mod_doctype_xml
-	    module mod_filter_libxml2
-	    module mod_command_directmap
-	    <span class="bold"><strong>module mod_ddlcompiler_simpleform</strong></span>
-	}
+LoadModules {
+    module mod_db_sqlite3
+    module mod_doctype_xml
+    module mod_filter_libxml2
+    module mod_command_directmap
+    <span class="bold"><strong>module mod_ddlcompiler_simpleform</strong></span>
+}
 
-	Processor {
-	    database sqlitedb
-	    cmdhandler {
-	        directmap {
-	            filter XML=libxml2
-	            program tutorial.dmap
-	        }
-	    }
-	    program Customer.tdl
-	    <span class="bold"><strong>program Customer.sfrm</strong></span>	
-	}
+Processor {
+    database sqlitedb
+    cmdhandler {
+        directmap {
+            filter XML=libxml2
+            program tutorial.dmap
+        }
+    }
+    program Customer.tdl
+    <span class="bold"><strong>program Customer.sfrm</strong></span>	
+}
 		</pre><p>
 
 	and we add a simple form file <code class="filename">Customer.sfrm</code>.
@@ -246,15 +245,16 @@
 	but for the root element 'customer':
 
 		</p><pre class="programlisting">
-	FORM CustomerListRequest
-	    -root customer
-	{}
+FORM CustomerListRequest
+    -root customer
+{
+}
 		</pre><p>
 	</p><p>
-		We have to restart the wolframe daemon now and restart it with
+		We have to restart the wolframe daemon now and restart it with:
 		</p><pre class="programlisting">
-	pkill wolframed
-	/usr/sbin/wolframed -f -c tutorial.conf			
+pkill wolframed
+/usr/sbin/wolframed -f -c tutorial.conf			
 		</pre><p>	
 	
 		This we have to do <span class="bold"><strong>every time</strong></span> we
@@ -266,7 +266,7 @@
 		loaded:
 		
 		</p><pre class="programlisting">
-	DEBUG: Loaded transaction function 'SelectCustomerList'
+DEBUG: Loaded transaction function 'SelectCustomerList'
 		</pre><p>
 	</p><p>
 		Now we create a telnet request which contains pseudo authentication credentials 
@@ -274,37 +274,37 @@
 		<code class="filename">~/tutorial/client/CustomerListRequest.netcat</code>:
 
 		</p><pre class="programlisting">
-	AUTH
-	MECH NONE
-	REQUEST
-	&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-	&lt;!DOCTYPE customer SYSTEM 'CustomerListRequest'&gt;
-	&lt;customer/&gt;
-	.
-	QUIT
+AUTH
+MECH NONE
+REQUEST
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE customer SYSTEM 'CustomerListRequest'&gt;
+&lt;customer/&gt;
+.
+QUIT
 
 		</pre><p>
 
 		This we can execute with:
 
 		</p><pre class="programlisting">
-	netcat -v localhost 7661 &lt; CustomerListRequest.netcat
+netcat -v localhost 7661 &lt; CustomerListRequest.netcat
 		</pre><p>
 
 		and we get:
 
 		</p><pre class="programlisting">
-	Wolframe
-	OK
-	MECHS NONE
-	OK authorization
-	ANSWER
-	&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
-	&lt;list/&gt;
+Wolframe
+OK
+MECHS NONE
+OK authorization
+ANSWER
+&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;list/&gt;
 	
-	.
-	OK REQUEST CustomerListRequest
-	BYE
+.
+OK REQUEST CustomerListRequest
+BYE
 
 		</pre><p>
 	</p><p>
@@ -314,31 +314,31 @@
 		Let's add some customer data now:
 
 		</p><pre class="programlisting">
-	cat &gt; data.sql
-	insert into customer(name,address) values('Dr Who','Blue Police Box');
-	insert into customer(name,address) values('John Smith','The Wheel in Space');
-	Ctrl-D
+cat &gt; data.sql
+insert into customer(name,address) values('Dr Who','Blue Police Box');
+insert into customer(name,address) values('John Smith','The Wheel in Space');
+Ctrl-D
 
-	sqlite3 tutorial.db &lt; data.sql
+sqlite3 tutorial.db &lt; data.sql
 		</pre><p>
 	</p><p>
 		When we reexecute the netcat command we see that the answer contains now
 		the list of customers:
 
 		</p><pre class="programlisting">
-	&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
-	&lt;list&gt;
-	  &lt;customer&gt;
-	    &lt;id&gt;1&lt;/id&gt;
-	    &lt;name&gt;Dr Who&lt;/name&gt;
-	    &lt;address&gt;Blue Police Box&lt;/address&gt;
-	  &lt;/customer&gt;
-	  &lt;customer&gt;
-	    &lt;id&gt;2&lt;/id&gt;
-	    &lt;name&gt;John Smith&lt;/name&gt;
-	    &lt;address&gt;The Wheel in Space&lt;/address&gt;
-	  &lt;/customer&gt;
-	&lt;/list&gt;
+&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;list&gt;
+    &lt;customer&gt;
+        &lt;id&gt;1&lt;/id&gt;
+        &lt;name&gt;Dr Who&lt;/name&gt;
+        &lt;address&gt;Blue Police Box&lt;/address&gt;
+    &lt;/customer&gt;
+    &lt;customer&gt;
+        &lt;id&gt;2&lt;/id&gt;
+        &lt;name&gt;John Smith&lt;/name&gt;
+        &lt;address&gt;The Wheel in Space&lt;/address&gt;
+    &lt;/customer&gt;
+&lt;/list&gt;
 
 		</pre><p>
 
@@ -350,26 +350,26 @@
 		First create an XML file containing just the request and name
 		it <code class="filename">CustomerListRequest.xml</code>:
 		</p><pre class="programlisting">
-	&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-	&lt;!DOCTYPE customer SYSTEM 'CustomerListRequest'&gt;
-	&lt;customer/&gt;
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE customer SYSTEM 'CustomerListRequest'&gt;
+&lt;customer/&gt;
 
 		</pre><p>		
 	</p><p>
 		The request can be executed by calling:
 		</p><pre class="programlisting">
-	wolframec -d CustomerListRequest.xml
+wolframec -d CustomerListRequest.xml
 		</pre><p>		
 	</p><p>
 		We can also test the command without even starting the <span class="command"><strong>wolframed</strong></span>
 		daemon process. We use the <span class="command"><strong>wolfilter</strong></span> program for that in the
 		following way:
 		</p><pre class="programlisting">
-	cat ~/tutorial/client/CustomerListRequest.xml | wolfilter -c ~/tutorial/server/tutorial.conf CustomerListRequest
+cat ~/tutorial/client/CustomerListRequest.xml | \
+    wolfilter -c ~/tutorial/server/tutorial.conf CustomerListRequest
 		</pre><p>
 	</p><p>
 		We can move now to the wolfclient to make our first request visible.
-
 	</p></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch02s03.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="ch02.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="ch02s05.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">2.3. Step 3 - Get the whole chain working </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 2.5. Step 5 - Implement client side customer list</td></tr></table></div></div></div>
 
 <!-- Footer -->

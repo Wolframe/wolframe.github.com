@@ -120,12 +120,16 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1CRAMresponse.html">CRAMresponse</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1CRAMsalt.html">CRAMsalt</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract the password seed from the challenge message.  <a href="class__Wolframe_1_1AAAA_1_1CRAMsalt.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1Information.html">Information</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for <a class="el" href="namespace__Wolframe_1_1AAAA.html">AAAA</a> information objects.  <a href="class__Wolframe_1_1AAAA_1_1Information.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1PasswordChanger.html">PasswordChanger</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1PasswordChangeMessage.html">PasswordChangeMessage</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Password changer data structure.  <a href="class__Wolframe_1_1AAAA_1_1PasswordChangeMessage.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1PasswordChangerSlice.html">PasswordChangerSlice</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1PasswordChanger.html">PasswordChanger</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1PasswordHash.html">PasswordHash</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,6 +153,8 @@ Variables</h2></td></tr>
 <tr class="separator:ab41785a47c617d01b11c406c77a3dc07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c77aab0986e9c17074e82a2b16c54c5"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1AAAA.html#a7c77aab0986e9c17074e82a2b16c54c5">CRAM_RESPONSE_SIZE</a> = <a class="el" href="namespace__Wolframe_1_1AAAA.html#a90431121efab0d8751b534421da5c95f">CRAM_DIGEST_SIZE</a></td></tr>
 <tr class="separator:a7c77aab0986e9c17074e82a2b16c54c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89e47762ed3b61f07d57c21a47836527"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1AAAA.html#a89e47762ed3b61f07d57c21a47836527">CRAM_SALT_SIZE</a> = <a class="el" href="namespace__Wolframe_1_1AAAA.html#a9b73499766023a966eb293ffe957947f">PASSWORD_SALT_SIZE</a></td></tr>
+<tr class="separator:a89e47762ed3b61f07d57c21a47836527"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71fe836f316101d0959bbca4fc219b47"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1AAAA.html#a71fe836f316101d0959bbca4fc219b47">PASSWORD_HASH_SIZE</a> = 384 / 8</td></tr>
 <tr class="separator:a71fe836f316101d0959bbca4fc219b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b73499766023a966eb293ffe957947f"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1AAAA.html#a9b73499766023a966eb293ffe957947f">PASSWORD_SALT_SIZE</a> = 128 / 8</td></tr>
@@ -266,6 +272,26 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a89e47762ed3b61f07d57c21a47836527"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t _Wolframe::AAAA::CRAM_SALT_SIZE = <a class="el" href="namespace__Wolframe_1_1AAAA.html#a9b73499766023a966eb293ffe957947f">PASSWORD_SALT_SIZE</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a71fe836f316101d0959bbca4fc219b47"></a>
 <div class="memitem">
 <div class="memproto">
@@ -310,7 +336,7 @@ Variables</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 29 2014 13:47:49 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 1 2014 17:48:12 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

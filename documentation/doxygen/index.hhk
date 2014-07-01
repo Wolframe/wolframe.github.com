@@ -4,7 +4,7 @@
 <param name="FrameName" value="right">
 </OBJECT>
 <UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1ErrorLevel.html#a8416d7d92a9d547be4b5320bf25d072ba79831705c2a51618412b8c2d2db0f995"><param name="Name" value="_ERROR"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1ErrorLevel.html#a7b8da1944a98a0432a85f4dda502d0e2a79831705c2a51618412b8c2d2db0f995"><param name="Name" value="_ERROR"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1log_1_1LogError.html#a48b64b2ef8ac93f8d424ecf7f13cfd00"><param name="Name" value="_error"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace__Wolframe.html"><param name="Name" value="_Wolframe"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace__Wolframe_1_1AAAA.html"><param name="Name" value="_Wolframe::AAAA"></OBJECT>
@@ -56,7 +56,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AuthenticationUnit.html#a4373f1c59b8112a9ca674e1dfe4b943e"><param name="Name" value="identifier"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AuthenticationUnit.html#ac15a819f664584e6a2e071927e10b991"><param name="Name" value="m_identifier"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AuthenticationUnit.html#ac7e556fbd73833981f4218f299e48d90"><param name="Name" value="mechs"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AuthenticationUnit.html#abfc1d2a34f1c419d7314243fd0947bf6"><param name="Name" value="pwdChanger"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AuthenticationUnit.html#a98a915186970047fdfc89138a5fbb404"><param name="Name" value="passwordChanger"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AuthenticationUnit.html#a05795fa1334b1a3c4a32ae88f9cf2472"><param name="Name" value="resolveDB"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AuthenticationUnit.html#a42888af4db067102ac6c4f86423e4063"><param name="Name" value="slice"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AuthenticationUnit.html#a457e0464d630b7b428b62e422360ab57"><param name="Name" value="~AuthenticationUnit"></OBJECT>
@@ -151,6 +151,16 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1CRAMresponse.html#a7d0ed421987cd5002bf5cb4cdc73de28"><param name="Name" value="toString"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1CRAMresponse.html#a8ff7ce85e7fbbbccdddead248f62f587"><param name="Name" value="~CRAMresponse"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1CRAMsalt.html"><param name="Name" value="_Wolframe::AAAA::CRAMsalt"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1CRAMsalt.html#aabe361680a156647e36f3fc23f87319b"><param name="Name" value="CRAMsalt"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1CRAMsalt.html#a007c98a7ae3704261345804e72508057"><param name="Name" value="m_salt"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1CRAMsalt.html#a78584571234bfe460d306515de757226"><param name="Name" value="salt"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1CRAMsalt.html#a17b308f4f51a4cdcf0b429072885750c"><param name="Name" value="size"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1CRAMsalt.html#aefd11b777cf80a030a8ac9cb8e691db5"><param name="Name" value="toBCD"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1CRAMsalt.html#ad51635154a543755e2b817c127fcac7c"><param name="Name" value="toString"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1CRAMsalt.html#aa6ce2764bde3dbf94e5e94dafc82814b"><param name="Name" value="~CRAMsalt"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1Information.html"><param name="Name" value="_Wolframe::AAAA::Information"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1Information.html#aa7b0fb3d0f0f8d7e20c89121b8112a26a66666bf9b74c8d630dfd18c1b16de965"><param name="Name" value="CONNECTION"></OBJECT>
@@ -159,35 +169,35 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1Information.html#aa7b0fb3d0f0f8d7e20c89121b8112a26a3abf2246054fdfe49299a8059d66e701"><param name="Name" value="TRANSACTION"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1Information.html#ad5dfd6c5ab12927dbc7d4e5c9bf8463f"><param name="Name" value="type"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangeMessage.html"><param name="Name" value="_Wolframe::AAAA::PasswordChangeMessage"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangeMessage.html#a2cd05bd35ec8374314a804a62acc6cf7"><param name="Name" value="clear"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangeMessage.html#a927eab0991433533afd42be43f48f411"><param name="Name" value="data"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangeMessage.html#a610b6492c77c5215ee6e4d2b9c73b501"><param name="Name" value="fromBase64"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangeMessage.html#a1eb1b7a5fdc8f55619d181e65e0e8040"><param name="Name" value="isValid"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangeMessage.html#a91cffdb1af10f6ae8cbde3d8d2c49e46"><param name="Name" value="m_message"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangeMessage.html#ac409516ef4efbb2587ca105f9a470a0a"><param name="Name" value="password"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangeMessage.html#ad0dcccb6ef17fe8da0501ff33825bedda2a0c76b7ba928904e90b3b41a8d2757c"><param name="Name" value="PASSWORD_MAX_LENGTH"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangeMessage.html#abdab1b95919b30e3dd9bb28116308408"><param name="Name" value="PasswordChangeMessage"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangeMessage.html#ad0dcccb6ef17fe8da0501ff33825bedda95a711c0b298f8486807adb24bd6b7eb"><param name="Name" value="PAYLOAD_LENGTH"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangeMessage.html#afe6eab5e59cc98be4458527530724cb7"><param name="Name" value="size"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangeMessage.html#a364e83bb208299a23d9d5c1b50c3f31d"><param name="Name" value="toBase64"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangeMessage.html#ab22e7ccfa26fed8afaa21ef5d4828bd9"><param name="Name" value="~PasswordChangeMessage"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChanger.html"><param name="Name" value="_Wolframe::AAAA::PasswordChanger"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChanger.html#a6881bad362da4ab420b94af2fadb864ba49308d82b56155c202ae463c7f788e6f"><param name="Name" value="AWAITING_MESSAGE"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChanger.html#ab4cae315c0e6cc9ea4e3555a02af1a6d"><param name="Name" value="dispose"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChanger.html#a6881bad362da4ab420b94af2fadb864ba5f7bae240a56e9d39881088224ddb26e"><param name="Name" value="INVALID_DATA"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChanger.html#a6881bad362da4ab420b94af2fadb864ba6c62daebdc70256807635a0f20849598"><param name="Name" value="INVALID_MESSAGE"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChanger.html#a6881bad362da4ab420b94af2fadb864baf23c64a1393b41b2dc9e92ec694b0362"><param name="Name" value="MESSAGE_AVAILABLE"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChanger.html#ac4b41cba44cf309eef8f91fb9b19be40"><param name="Name" value="messageIn"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChanger.html#a1aa77ca2e4b04179df3d88fe2f081976"><param name="Name" value="messageOut"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChanger.html#a6881bad362da4ab420b94af2fadb864ba400757c37b9c186c25b811449e8edc2b"><param name="Name" value="PASSWORD_CHANGED"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChanger.html#a2329e0e5fb0b45732ffebe0b41c65f13"><param name="Name" value="password"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChanger.html#a6881bad362da4ab420b94af2fadb864bae3b22dbb6475505fd3e2ada877fbbde2"><param name="Name" value="PASSWORD_EXCHANGED"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChanger.html#a05ac4697d6df99eb54e1a6405761e85b"><param name="Name" value="status"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChanger.html#a537f80972c25b0eeabc36ee5132f109a"><param name="Name" value="statusName"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChanger.html#a6881bad362da4ab420b94af2fadb864babf218a1c31080478ba358cfec8826cc2"><param name="Name" value="SYSTEM_FAILURE"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChanger.html#a8fb292e68da3eddb53f49a4480236f2b"><param name="Name" value="~PasswordChanger"></OBJECT>
-  </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangerSlice.html"><param name="Name" value="_Wolframe::AAAA::PasswordChangerSlice"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangerSlice.html#a3d84f7728c64c2059175ebc67dc0d6edae13d5a6d957c3d3916d48ac43c5176d6"><param name="Name" value="AWAITING_MESSAGE"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangerSlice.html#aa2b03378be7621721c82b1ada7f428f7"><param name="Name" value="className"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangerSlice.html#a4080d683acc5a953fb2d6ccf16ee4284"><param name="Name" value="dispose"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangerSlice.html#a829dc3577a5c2f8d2e0876bc4bfca533"><param name="Name" value="identifier"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangerSlice.html#a3d84f7728c64c2059175ebc67dc0d6eda7bbcd510cf66c47e7d2239c2e9244d0d"><param name="Name" value="INVALID_DATA"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangerSlice.html#a3d84f7728c64c2059175ebc67dc0d6edadab7d3f8151839da8d7d6c84de7227ab"><param name="Name" value="MESSAGE_AVAILABLE"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangerSlice.html#a9e9e3a0f6d18f11726e4fcb33182ac5e"><param name="Name" value="messageIn"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangerSlice.html#a20a82f8a87d2e1e3bb583515cee2502b"><param name="Name" value="messageOut"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangerSlice.html#a3d84f7728c64c2059175ebc67dc0d6edaf02ae9fde76953f9d5203a8d3baf18b1"><param name="Name" value="PASSWORD_CHANGED"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangerSlice.html#acac5cf1f35095d5b855d8f96a841a7a0"><param name="Name" value="status"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangerSlice.html#aa5d1bab35a05dd5b503c5380235c7f4f"><param name="Name" value="statusName"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangerSlice.html#a3d84f7728c64c2059175ebc67dc0d6eda5f44c71b3d56a49e7d964f11c6102d18"><param name="Name" value="SYSTEM_FAILURE"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangerSlice.html#a919dac03eba0840ee0f6607372f92649"><param name="Name" value="~PasswordChangerSlice"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordHash.html"><param name="Name" value="_Wolframe::AAAA::PasswordHash"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordHash_1_1Hash.html"><param name="Name" value="_Wolframe::AAAA::PasswordHash::Hash"></OBJECT>
@@ -248,6 +258,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace__Wolframe_1_1AAAA.html#ab41785a47c617d01b11c406c77a3dc07"><param name="Name" value="CRAM_CHALLENGE_SIZE"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace__Wolframe_1_1AAAA.html#a90431121efab0d8751b534421da5c95f"><param name="Name" value="CRAM_DIGEST_SIZE"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace__Wolframe_1_1AAAA.html#a7c77aab0986e9c17074e82a2b16c54c5"><param name="Name" value="CRAM_RESPONSE_SIZE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace__Wolframe_1_1AAAA.html#a89e47762ed3b61f07d57c21a47836527"><param name="Name" value="CRAM_SALT_SIZE"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace__Wolframe_1_1AAAA.html#a843b4a2a9e6f233a94344506307fe7fd"><param name="Name" value="getLogin"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace__Wolframe_1_1AAAA.html#a45c8f52488a3ee27459e4e9253c01c9d"><param name="Name" value="getPassword"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace__Wolframe_1_1AAAA.html#a71fe836f316101d0959bbca4fc219b47"><param name="Name" value="PASSWORD_HASH_SIZE"></OBJECT>
@@ -461,8 +472,8 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1LineCommandHandlerSTM.html#a094d1bcf2becf014afd7b746ce621d99"><param name="Name" value="defineState"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1LineCommandHandlerSTM.html#a2a751338eb722c1ef0e042ca3fa4fb23"><param name="Name" value="get"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1LineCommandHandlerSTM.html#a6ec12b89f0a50432cb7331458ecf3ba3"><param name="Name" value="m_statear"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1LineCommandHandlerSTM.html#a779fed9476c8345fcdf7442e66a096bd"><param name="Name" value="RunCommand"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1LineCommandHandlerSTM.html#a4ca2878ff295de9ba950c3a15bdeb39a"><param name="Name" value="runCommand"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1LineCommandHandlerSTM.html#a779fed9476c8345fcdf7442e66a096bd"><param name="Name" value="RunCommand"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1cmdbind_1_1LineCommandHandlerSTMTemplate.html"><param name="Name" value="_Wolframe::cmdbind::LineCommandHandlerSTMTemplate"></OBJECT>
   <UL>
@@ -566,7 +577,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1config_1_1Parser_1_1BoolDomain.html#a61d11a194b3f3aa6ae5be8a02661fa61"><param name="Name" value="BoolDomain"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1config_1_1Parser_1_1BoolDomain.html#af6bd3e4c6067fd477e132e24d5d75ff9"><param name="Name" value="booleanEnum"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1config_1_1Parser_1_1BoolDomain.html#ac04a1abe7ed8a346064ed10c1ffde82a"><param name="Name" value="getBooleanValue"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1config_1_1Parser_1_1BoolDomain.html#a035b49431cab0c5f0562ae3c0131f7c4a31a6d15364d88c6e0323d6baa1a413a4"><param name="Name" value="NofBooleanEnum"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1config_1_1Parser_1_1BoolDomain.html#a430a218e828840a5e803ebd02e68049ea31a6d15364d88c6e0323d6baa1a413a4"><param name="Name" value="NofBooleanEnum"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1config_1_1Parser_1_1BoolDomain.html#a87d70f612428417e6dc2fa6033627be8"><param name="Name" value="parse"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1config_1_1Parser_1_1EnumDomain.html"><param name="Name" value="_Wolframe::config::Parser::EnumDomain"></OBJECT>
@@ -741,7 +752,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1db_1_1BaseStatement.html#aa78cae86f20c6d67df5c6be637df6ba7"><param name="Name" value="m_setIdx"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1db_1_1BaseStatement.html#a524d63d8679f20b3d7c3995ec3409564"><param name="Name" value="m_stmtStr"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1db_1_1BaseStatement.html#a36ab249f11823297c1a83301b4d1aaaf"><param name="Name" value="m_usedIdx"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1db_1_1BaseStatement.html#ace9eb56dea15c8c75562ba522811e20daf78e92a67a8c50d9305f53a1ac5ca9cd"><param name="Name" value="MaxNofParams"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1db_1_1BaseStatement.html#a9bbb50f6abb6bd47dbf3e05286b5fdc7af78e92a67a8c50d9305f53a1ac5ca9cd"><param name="Name" value="MaxNofParams"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1db_1_1BaseStatement.html#a59fc560542f56e6bd9e39e8108a8e3f2"><param name="Name" value="nativeSQL"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1db_1_1BaseStatement.html#ad855c104e5ad91d20129be0726f92c23"><param name="Name" value="originalSQL"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1db_1_1BaseStatement.html#a9748a6e6ce5ee0b6a76566b486fd481b"><param name="Name" value="parse"></OBJECT>
@@ -896,9 +907,9 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#ae42e2f9acb63395b68a386f09b96a141a20242fce4a901462d1c47323a842d482"><param name="Name" value="At_SubroutineSignature"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#ae42e2f9acb63395b68a386f09b96a141a8f61332bb50c5acacfb9cdadb8cfab5a"><param name="Name" value="At_TagName"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#ae42e2f9acb63395b68a386f09b96a141a5e1b505707318305b122dbb1b726a43d"><param name="Name" value="At_TupleSet"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a919d700259af8ff5f0b8587c3e132a6ba2aeefd9e8191dd11c69324bbed871b4a"><param name="Name" value="BitCnt_ArgumentIndex"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a919d700259af8ff5f0b8587c3e132a6bad874a89709483c06b3fe9b4bf649d51d"><param name="Name" value="BitCnt_CondCode"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a919d700259af8ff5f0b8587c3e132a6bac96c3e79e7ca09251ce188289021b459"><param name="Name" value="BitCnt_OpCode"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a8cdc859b1dc39958fa01f0f6210529eaa2aeefd9e8191dd11c69324bbed871b4a"><param name="Name" value="BitCnt_ArgumentIndex"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a8cdc859b1dc39958fa01f0f6210529eaad874a89709483c06b3fe9b4bf649d51d"><param name="Name" value="BitCnt_CondCode"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a8cdc859b1dc39958fa01f0f6210529eaac96c3e79e7ca09251ce188289021b459"><param name="Name" value="BitCnt_OpCode"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#ae80e5c8e0c11bff24403de97a321a936aae1af2a62c59866c5ac3eb4114f3334d"><param name="Name" value="Co_ALWAYS"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#ae80e5c8e0c11bff24403de97a321a936a92a7b2ea6927c7b1df938b66f4f643c6"><param name="Name" value="Co_IF_COND"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#ae80e5c8e0c11bff24403de97a321a936a44e7f0c475d902ff89a7cb8280c3700d"><param name="Name" value="Co_NOT_IF_COND"></OBJECT>
@@ -907,12 +918,12 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#acb6f4eeef67d295ac478ccea5f04dd28"><param name="Name" value="Instruction"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a145fcda6ffad8ee57ade5d69ea78b414"><param name="Name" value="instruction"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a708f69dc8b4440f1521dfb2031830b36"><param name="Name" value="instructionstr"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a01bf3bcfa07f3a9067533c00bae9b1ecafed7eda60623d04d8cdeb23dd58de26d"><param name="Name" value="Mask_ArgumentIndex"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a01bf3bcfa07f3a9067533c00bae9b1ecad3aa819b96fcf0e09c2816730201bc74"><param name="Name" value="Mask_CondCode"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a01bf3bcfa07f3a9067533c00bae9b1ecaaa45a992fb24f7d403fbc3cdedec84f4"><param name="Name" value="Mask_OpCode"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a9957b8add8c9d72be62d2d3a527da1b8a52a5f8cd3aaeac12a3a6f6d6b00b2f30"><param name="Name" value="Max_ArgumentIndex"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a9957b8add8c9d72be62d2d3a527da1b8a3f025abe0398ed0480dc882bd6bd5b19"><param name="Name" value="Max_CondCode"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a9957b8add8c9d72be62d2d3a527da1b8a94a7134865092ee8384047ec6da9276b"><param name="Name" value="Max_OpCode"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#adcd2b0482bf2c22ad7b8e4336bfd6756afed7eda60623d04d8cdeb23dd58de26d"><param name="Name" value="Mask_ArgumentIndex"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#adcd2b0482bf2c22ad7b8e4336bfd6756ad3aa819b96fcf0e09c2816730201bc74"><param name="Name" value="Mask_CondCode"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#adcd2b0482bf2c22ad7b8e4336bfd6756aaa45a992fb24f7d403fbc3cdedec84f4"><param name="Name" value="Mask_OpCode"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#afb4205e0f36543ed836100bd5e506664a52a5f8cd3aaeac12a3a6f6d6b00b2f30"><param name="Name" value="Max_ArgumentIndex"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#afb4205e0f36543ed836100bd5e506664a3f025abe0398ed0480dc882bd6bd5b19"><param name="Name" value="Max_CondCode"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#afb4205e0f36543ed836100bd5e506664a94a7134865092ee8384047ec6da9276b"><param name="Name" value="Max_OpCode"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#aab066c2db55711490c3dba7facdedbbaa9ffd181d5d04d15760a82c7e051c7006"><param name="Name" value="Op_DBSTM_BIND_CONST"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#aab066c2db55711490c3dba7facdedbbaa7c34466893e25273ba22d2d5c2c98cb8"><param name="Name" value="Op_DBSTM_BIND_ITR_IDX"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#aab066c2db55711490c3dba7facdedbbaacd908aa40462ce89c9787293b9d650b2"><param name="Name" value="Op_DBSTM_BIND_ITR_NAM"></OBJECT>
@@ -968,9 +979,9 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a3f9d5fee384e9cf0c93f9c3e5df7a216"><param name="Name" value="opCode"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a8ea936c28112f79616a0fbafc70f339b"><param name="Name" value="opCodeName"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#afe8f6ed1362b25e7149e31b314cfb6cb"><param name="Name" value="printProgramRaw"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a919d700259af8ff5f0b8587c3e132a6badbb72b6147e62fba8c64c5eee8bd7fc5"><param name="Name" value="Shift_ArgumentIndex"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a919d700259af8ff5f0b8587c3e132a6ba2151a671388be92b23e58d7eef958932"><param name="Name" value="Shift_CondCode"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a919d700259af8ff5f0b8587c3e132a6bad3526a5a4ab709d2c46291c4a59a59c4"><param name="Name" value="Shift_OpCode"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a8cdc859b1dc39958fa01f0f6210529eaadbb72b6147e62fba8c64c5eee8bd7fc5"><param name="Name" value="Shift_ArgumentIndex"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a8cdc859b1dc39958fa01f0f6210529eaa2151a671388be92b23e58d7eef958932"><param name="Name" value="Shift_CondCode"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a8cdc859b1dc39958fa01f0f6210529eaad3526a5a4ab709d2c46291c4a59a59c4"><param name="Name" value="Shift_OpCode"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1db_1_1vm_1_1Output.html"><param name="Name" value="_Wolframe::db::vm::Output"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1db_1_1vm_1_1Output_1_1Element.html"><param name="Name" value="_Wolframe::db::vm::Output::Element"></OBJECT>
@@ -1178,17 +1189,17 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1ErrorCode.html"><param name="Name" value="_Wolframe::ErrorCode"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1ErrorCode.html#a391a29c1632612213999270db0840d5ba1deeab5987d4b68fc267fa4f6c09da02"><param name="Name" value="FAILURE"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1ErrorCode.html#a391a29c1632612213999270db0840d5babeb1ca4e9efa854d5a10d520f98e0ce9"><param name="Name" value="OK"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1ErrorCode.html#ab55f8e7dcfb2992c33b34880dd7158a4a1deeab5987d4b68fc267fa4f6c09da02"><param name="Name" value="FAILURE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1ErrorCode.html#ab55f8e7dcfb2992c33b34880dd7158a4abeb1ca4e9efa854d5a10d520f98e0ce9"><param name="Name" value="OK"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1ErrorLevel.html"><param name="Name" value="_Wolframe::ErrorLevel"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1ErrorLevel.html#a8416d7d92a9d547be4b5320bf25d072ba79831705c2a51618412b8c2d2db0f995"><param name="Name" value="_ERROR"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1ErrorLevel.html#a8416d7d92a9d547be4b5320bf25d072ba4acbca25330f1059eadd9988f9a23f8a"><param name="Name" value="CRITICAL"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1ErrorLevel.html#a8416d7d92a9d547be4b5320bf25d072ba6803620fd919a956b03aa0cb94b4de53"><param name="Name" value="FATAL"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1ErrorLevel.html#a8416d7d92a9d547be4b5320bf25d072ba1411aa990e17d35d3d2741264a13bb82"><param name="Name" value="NORMAL"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1ErrorLevel.html#a8416d7d92a9d547be4b5320bf25d072ba04b234e1e29ca4fc31ad2988306fc683"><param name="Name" value="SEVERE"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1ErrorLevel.html#a8416d7d92a9d547be4b5320bf25d072ba3fe32785da04c0fb342bc60db4b5ff23"><param name="Name" value="WARNING"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1ErrorLevel.html#a7b8da1944a98a0432a85f4dda502d0e2a79831705c2a51618412b8c2d2db0f995"><param name="Name" value="_ERROR"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1ErrorLevel.html#a7b8da1944a98a0432a85f4dda502d0e2a4acbca25330f1059eadd9988f9a23f8a"><param name="Name" value="CRITICAL"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1ErrorLevel.html#a7b8da1944a98a0432a85f4dda502d0e2a6803620fd919a956b03aa0cb94b4de53"><param name="Name" value="FATAL"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1ErrorLevel.html#a7b8da1944a98a0432a85f4dda502d0e2a1411aa990e17d35d3d2741264a13bb82"><param name="Name" value="NORMAL"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1ErrorLevel.html#a7b8da1944a98a0432a85f4dda502d0e2a04b234e1e29ca4fc31ad2988306fc683"><param name="Name" value="SEVERE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1ErrorLevel.html#a7b8da1944a98a0432a85f4dda502d0e2a3fe32785da04c0fb342bc60db4b5ff23"><param name="Name" value="WARNING"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1GlobalRandomGenerator.html"><param name="Name" value="_Wolframe::GlobalRandomGenerator"></OBJECT>
   <UL>
@@ -1257,7 +1268,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1langbind_1_1FilterBase.html#a4cd7c3a96a3689abfea4a4aa407eea5b"><param name="Name" value="checkSetFlags"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1langbind_1_1FilterBase.html#a293c57a669e78026544777e502574fb1ada40dfb54d34b4d4dacb55dd2bb0ce1d"><param name="Name" value="CloseTag"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1langbind_1_1FilterBase.html#a68ae413632d4cdb2d703a3a69347903e"><param name="Name" value="elementTypeName"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1langbind_1_1FilterBase.html#a7fa5459d687d7d45eabf2b4ed0a1cbbda24b6495c3a7592aca9ce47d1a89f0764"><param name="Name" value="ErrorBufSize"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1langbind_1_1FilterBase.html#a0622b83cb04fe98ce132e4e58472c8e8a24b6495c3a7592aca9ce47d1a89f0764"><param name="Name" value="ErrorBufSize"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1langbind_1_1FilterBase.html#ac5ecb6713c8881c43a75df1ac392d4e8"><param name="Name" value="FilterBase"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1langbind_1_1FilterBase.html#a9db18a4bb7bdc27f67b546eb0b4d5f03"><param name="Name" value="flag"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1langbind_1_1FilterBase.html#a07d55af7ea2d7381945d1c004a6eae30"><param name="Name" value="flags"></OBJECT>
@@ -2145,6 +2156,22 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1ObjectPool.html#a20433c6bf5df1de8bd508953bed18a46"><param name="Name" value="~ObjectPool"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1ObjectPoolTimeout.html"><param name="Name" value="_Wolframe::ObjectPoolTimeout"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1Platform.html"><param name="Name" value="_Wolframe::Platform"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1Platform.html#acccb60534d6d9efb8b58970aa14ffbb8"><param name="Name" value="m_distro"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1Platform.html#aa860f7a4f77ea87e3e59e1493fff59fa"><param name="Name" value="m_distro_major"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1Platform.html#aa6153fc86c368b07c6d9816f909bb25b"><param name="Name" value="m_distro_minor"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1Platform.html#a5edcc9414b8f7db9c38581ad56c686bb"><param name="Name" value="m_hasDisto"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1Platform.html#ae856936ae3db1e5583451b010694b4aa"><param name="Name" value="m_hasDistroVersion"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1Platform.html#a99505c053d43ebafa990758f5dd4e853"><param name="Name" value="m_hasOsVersion"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1Platform.html#a2cb4e6b06106faaa35802afd31e32341"><param name="Name" value="m_os"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1Platform.html#a9e483fb2b90ed73e13140be79acef36d"><param name="Name" value="m_os_major"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1Platform.html#abdc22f7e9728d8197fcb13eb41153663"><param name="Name" value="m_os_minor"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1Platform.html#a4b99a4df01d1548d74615eb93b01a0b1"><param name="Name" value="makePlatform"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1Platform.html#a71bbb2dec9b0c4d26aeb98508631705d"><param name="Name" value="Platform"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1Platform.html#a4b38f90bc142a376cb37b02ca1e06a34"><param name="Name" value="runtimePlatform"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1Platform.html#a80b05292702bf1b87e3498ef0f3e2710"><param name="Name" value="toString"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1PoolObject.html"><param name="Name" value="_Wolframe::PoolObject"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1PoolObject.html#a63d9ba943601b9b9d10157a2dc15278b"><param name="Name" value="m_object"></OBJECT>
@@ -2363,7 +2390,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1protocol_1_1CArgBuffer.html#a49c7e355568bb37ad9b57e3f8dbb087c"><param name="Name" value="operator[]"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1protocol_1_1CArgBuffer.html#a5994a6c5445415de89a28cc4e2853a10"><param name="Name" value="push_back"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1protocol_1_1CArgBuffer.html#a8d14b6ecacb1f13842d77b0e140f0d8f"><param name="Name" value="size"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1protocol_1_1CArgBuffer.html#a584dcafc3d6819b966f0fdc2bbc60aa4ac5aa5cb1d08c0289048c2bc774f7e02b"><param name="Name" value="Size"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1protocol_1_1CArgBuffer.html#ad4ce343c5c5025783bb1626587dad571ac5aa5cb1d08c0289048c2bc774f7e02b"><param name="Name" value="Size"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1protocol_1_1CArgBuffer.html#a03252f4126b3221b22513af57089e1e5ae180ef6b25cb0a4e456dbed9f93ad30d"><param name="Name" value="SQContent"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1protocol_1_1CArgBuffer.html#a03252f4126b3221b22513af57089e1e5a54fbda324f9f84079e23487052f3d01f"><param name="Name" value="SQContentEsc"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1protocol_1_1CArgBuffer.html#a7b1d6c86678710cf9dea7727d75f5c33"><param name="Name" value="stateName"></OBJECT>
@@ -2392,7 +2419,7 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1protocol_1_1EscapeBuffer.html#a9741064b7e90d2834b1acfb3b3bd668f"><param name="Name" value="EscapeBuffer"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1protocol_1_1EscapeBuffer.html#af78d196bef0526a3df1479036db57897"><param name="Name" value="hasData"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1protocol_1_1EscapeBuffer.html#a7f08b86a2c53274a3c02c9514a62ef60a8b07bdafd1c53cdd97bd2fbe21eb0b0b"><param name="Name" value="InitDataSize"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1protocol_1_1EscapeBuffer.html#a3fb7d8caaee20a4aacba835903ab97b6a8b07bdafd1c53cdd97bd2fbe21eb0b0b"><param name="Name" value="InitDataSize"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1protocol_1_1EscapeBuffer.html#ac530ffc5b1c2d5ae4ba84001d92bdc2fa8aa815ac10407e0697c6190e640c4992"><param name="Name" value="LF"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1protocol_1_1EscapeBuffer.html#a36abd4d38143f5ede4ce9adeb76dbd6a"><param name="Name" value="m_data"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1protocol_1_1EscapeBuffer.html#ae36e4c1ddf648ccc385a360134cf85b6"><param name="Name" value="m_end"></OBJECT>
@@ -2998,21 +3025,21 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#a1978278860a99b9ebcd8ea47cd5fddc5"><param name="Name" value="getMethod"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#a943ad8622e5ad9e8a628ef9e5c2cd127"><param name="Name" value="getOperator"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#aa4bfa247a8afb2547ec90d88454fb715"><param name="Name" value="hasInitializer"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#a3cd7310988fcf7d44b85a8b8092f6f3c"><param name="Name" value="ID"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#a770809fcfabbe292f0b9ce00aca9f0a3"><param name="Name" value="id"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#a3cd7310988fcf7d44b85a8b8092f6f3c"><param name="Name" value="ID"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#a2017761315d0d6489415646097208485aab8a1c7ec1b4186d0643092e8be19c50"><param name="Name" value="Increment"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#a47c5cc2b65b90d607a8e4ba427e8ed9fa517cdd08e657fdc9e1c6ccfb2504f015"><param name="Name" value="Length"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#a6cef6e3edc9870859705506903018838"><param name="Name" value="m_id"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#a369b8883304c142888f7f419f45a27f2"><param name="Name" value="m_methodmap"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#ad7b4c947ecc3cc4acd528ac8884021e9"><param name="Name" value="m_name"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#a82473e40def60e7a88b026f57528e4cd"><param name="Name" value="m_vmt"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#a8e931b457cef40c72c331ea6a2b4499d"><param name="Name" value="m_vmt"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#ac9a6c1f9d4ddbc2cb3623eafd6d8e275ad660e172efa57a3bc0831d4969f681b4"><param name="Name" value="Multiply"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#afbd9a5b30f60fcce6f31ed27e0f65982"><param name="Name" value="name"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#a2017761315d0d6489415646097208485ac1a675f7354fe5311269f7a29a4a6316"><param name="Name" value="Negation"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#a16d27797def4a21669db0514c31ce744ac9f88e40b7d3059076ee7428db742719"><param name="Name" value="NofBinaryOperators"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#a5a50ac8535eb6a8a34f4c2b09ecae003a349b14db70128971ad6099e71b79c375"><param name="Name" value="NofConversionOperators"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#ad01f4ad7bde1a2fb6676b7988fc569e6a717ec486c44407eb5e9d463686613abd"><param name="Name" value="NofDimensionOperators"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#a05763120292690d925f15fef5db44957a234fcebf1bf1bbc99f76e64bf0429418"><param name="Name" value="NofUnaryOperators"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#ad9f12b75b5f63fee4ed739688304228cac9f88e40b7d3059076ee7428db742719"><param name="Name" value="NofBinaryOperators"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#a210d71cfb7d362a1519f7c183bd327eca349b14db70128971ad6099e71b79c375"><param name="Name" value="NofConversionOperators"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#adc03d72ac66f7504bfcb87cc085c9348a717ec486c44407eb5e9d463686613abd"><param name="Name" value="NofDimensionOperators"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#ad01f4ad7bde1a2fb6676b7988fc569e6a234fcebf1bf1bbc99f76e64bf0429418"><param name="Name" value="NofUnaryOperators"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#ac9a6c1f9d4ddbc2cb3623eafd6d8e275acb5ae0dce4a89aa0ffdeb2c88f9d30c5"><param name="Name" value="Power"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#af13b4ff5d98fc744c4fb876b87e979a2"><param name="Name" value="proc::ProcessorProvider"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#ac9a6c1f9d4ddbc2cb3623eafd6d8e275ae29035a9c12b6d82f8e6dd9b101c6640"><param name="Name" value="Subtract"></OBJECT>
@@ -3320,11 +3347,11 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1Variant.html"><param name="Name" value="_Wolframe::types::Variant"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1types_1_1Variant_1_1Data.html"><param name="Name" value="_Wolframe::types::Variant::Data"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1types_1_1Variant_1_1Data.html#af61f6a1f6f98013e4ff2bf753aaa5dfa"><param name="Name" value="dim"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1types_1_1Variant_1_1Data.html#a6b0f7c8b2e42ff1569511c858fbd65da"><param name="Name" value="dim"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1types_1_1Variant_1_1Data.html#a802fd5dd1f9985f4aabab8c4c2c7c7ac"><param name="Name" value="Int"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1types_1_1Variant_1_1Data.html#a91dfbe17f515ceec6868aed7604402b4"><param name="Name" value="Timestamp"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1types_1_1Variant_1_1Data.html#a33f8441cfe1118ede6714b45d592e6be"><param name="Name" value="UInt"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1types_1_1Variant_1_1Data.html#a749acf97b84f372e64a7e33783da5fb7"><param name="Name" value="value"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1types_1_1Variant_1_1Data.html#a8ac2ce65b4ea5eb37b79a8ccebeafc9b"><param name="Name" value="value"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1Variant.html"><param name="Name" value="_Wolframe::types::Variant"></OBJECT>
   <UL>
@@ -3635,7 +3662,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1utils_1_1ArrayDoublingAllocator.html#a0b179ce1453761f33053b24b718d888f"><param name="Name" value="alloc"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1utils_1_1ArrayDoublingAllocator.html#af0ed8ebbea021ebae7b54723bb37cd8a"><param name="Name" value="ArrayDoublingAllocator"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1utils_1_1ArrayDoublingAllocator.html#a12f07cee1c283d691f392bd69becb2c0"><param name="Name" value="base"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1utils_1_1ArrayDoublingAllocator.html#acac8713a25b0ba4a96d4d59457dcab79a2560c8a7af44a51da5ceb51c7764b5ff"><param name="Name" value="InitBlockSize"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1utils_1_1ArrayDoublingAllocator.html#a2f5ecd8f61d4c86b75b17739bfddbe17a2560c8a7af44a51da5ceb51c7764b5ff"><param name="Name" value="InitBlockSize"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1utils_1_1ArrayDoublingAllocator.html#acf9fda0ea35218c61a1f28f277d437f5"><param name="Name" value="m_ar"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1utils_1_1ArrayDoublingAllocator.html#aa9e8f31846d556862ff1f201479f558c"><param name="Name" value="m_pos"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1utils_1_1ArrayDoublingAllocator.html#a051468a91bf233d23dd793f876f986e4"><param name="Name" value="m_size"></OBJECT>
@@ -3645,7 +3672,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1utils_1_1AsciiCharParser.html"><param name="Name" value="_Wolframe::utils::AsciiCharParser"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1utils_1_1AsciiCharParser.html#a4a34c30d55d5ed022f2bb1714bba4986"><param name="Name" value="AsciiCharParser"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1utils_1_1AsciiCharParser.html#a7bd4db9feef31f4ab4c416285d5c0d6fa39f0e7524a0a51242d1a045798a51d10"><param name="Name" value="BufSize"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1utils_1_1AsciiCharParser.html#adeb3ce693c12d1576d2460562af432fba39f0e7524a0a51242d1a045798a51d10"><param name="Name" value="BufSize"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1utils_1_1AsciiCharParser.html#a1200d211629baa19504dd2db665b106c"><param name="Name" value="consumeChar"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1utils_1_1AsciiCharParser.html#ad458b41aeb59b001b680f2b50160783c"><param name="Name" value="getNext"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1utils_1_1AsciiCharParser.html#a408d3b3ed005ffae722818a0faa01762"><param name="Name" value="lastError"></OBJECT>
@@ -3853,12 +3880,12 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1db_1_1vm_1_1Output.html#af877207186d3f6781a5602372afbae22"><param name="Name" value="addValue"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="AES256_8h.html"><param name="Name" value="AES256.h"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="AES256_8h.html#a4a0eff62d67c4fefe413e2d19f94fe49"><param name="Name" value="AES256_decrypt_CBC"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="AES256_8h.html#ab994ae19bef2b5ee35a49f516aa7a025"><param name="Name" value="AES256_decrypt_CBC"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="AES256_8h.html#a50aa060f46240dff47bd94385a5c60da"><param name="Name" value="AES256_decrypt_ECB"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="AES256_8h.html#a2e5d5d12355f0eb3bd54208e0b9d8b6e"><param name="Name" value="AES256_done"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="AES256_8h.html#a9a7bb2fd182ed50823eba8228681bea4"><param name="Name" value="AES256_encrypt_CBC"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="AES256_8h.html#a55d7da5efce8afe43d2a2acaa487674f"><param name="Name" value="AES256_encrypt_CBC"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="AES256_8h.html#a5f4012a6d29124f03badb516c9cd8885"><param name="Name" value="AES256_encrypt_ECB"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="AES256_8h.html#a2d62c0f52f5a1f2aade8878c17f7cce2"><param name="Name" value="AES256_init"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="AES256_8h.html#a8427b139f2591952f46560143c0fdc05"><param name="Name" value="AES256_init"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structAES256__context.html"><param name="Name" value="AES256_context"></OBJECT>
   <UL>
@@ -3866,12 +3893,12 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structAES256__context.html#a1fc956dc74852a17c0145f3adf0f1c2f"><param name="Name" value="enckey"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structAES256__context.html#a8d3ad18122d2db750740df09ed84d42d"><param name="Name" value="key"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="AES256_8h.html#a4a0eff62d67c4fefe413e2d19f94fe49"><param name="Name" value="AES256_decrypt_CBC"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="AES256_8h.html#ab994ae19bef2b5ee35a49f516aa7a025"><param name="Name" value="AES256_decrypt_CBC"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="AES256_8h.html#a50aa060f46240dff47bd94385a5c60da"><param name="Name" value="AES256_decrypt_ECB"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="AES256_8h.html#a2e5d5d12355f0eb3bd54208e0b9d8b6e"><param name="Name" value="AES256_done"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="AES256_8h.html#a9a7bb2fd182ed50823eba8228681bea4"><param name="Name" value="AES256_encrypt_CBC"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="AES256_8h.html#a55d7da5efce8afe43d2a2acaa487674f"><param name="Name" value="AES256_encrypt_CBC"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="AES256_8h.html#a5f4012a6d29124f03badb516c9cd8885"><param name="Name" value="AES256_encrypt_ECB"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="AES256_8h.html#a2d62c0f52f5a1f2aade8878c17f7cce2"><param name="Name" value="AES256_init"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="AES256_8h.html#a8427b139f2591952f46560143c0fdc05"><param name="Name" value="AES256_init"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1utils_1_1ArrayDoublingAllocator.html#a0b179ce1453761f33053b24b718d888f"><param name="Name" value="alloc"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1utils_1_1ArrayDoublingAllocator.html#a0b179ce1453761f33053b24b718d888f"><param name="Name" value="_Wolframe::utils::ArrayDoublingAllocator"></OBJECT>
@@ -3938,11 +3965,8 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#ac5784ddba356b7e5b9859d30e117133d"><param name="Name" value="argumentTypeName"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1protocol_1_1CArgBuffer.html#a81ef9051ef016da1585fc6e124d0afc0"><param name="Name" value="argv"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1VariantStruct.html#a7d294515f8f832121d483182e9280af4adb331c08e7c327aeb6d55e07c86c4795"><param name="Name" value="Array"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1VariantStruct.html#a7d294515f8f832121d483182e9280af4adb331c08e7c327aeb6d55e07c86c4795"><param name="Name" value="_Wolframe::types::VariantStruct"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1types_1_1VariantStructDescription_1_1Element.html#a2879bc52a280af47de5b6ca45555c98da7796b1a17fa89e639b9f8a932db344ee"><param name="Name" value="_Wolframe::types::VariantStructDescription::Element"></OBJECT>
-  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1types_1_1VariantStructDescription_1_1Element.html#aa0bb79d62808285839c62762359719ee"><param name="Name" value="array"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1types_1_1VariantStructDescription_1_1Element.html#a2879bc52a280af47de5b6ca45555c98da7796b1a17fa89e639b9f8a932db344ee"><param name="Name" value="Array"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1protocol_1_1iterator__t.html#aae52608c18b8a0f8dcdaecb3196a23fc"><param name="Name" value="array_type"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1protocol_1_1MemBlock_1_1ArrayBoundReadError.html#ab08b0a118e1d01b904f73bb462201fad"><param name="Name" value="ArrayBoundReadError"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1utils_1_1ArrayDoublingAllocator.html#af0ed8ebbea021ebae7b54723bb37cd8a"><param name="Name" value="ArrayDoublingAllocator"></OBJECT>
@@ -3983,8 +4007,11 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1types_1_1DocMetaData_1_1Attribute.html#a35a172a712088eb122dfd4832e9b2081"><param name="Name" value="_Wolframe::types::DocMetaData::Attribute"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1FormDescription.html#ac81cac96d996f9dfa153e6e83b6d3ccc"><param name="Name" value="attribute"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1FormDescription.html#ac81cac96d996f9dfa153e6e83b6d3ccc"><param name="Name" value="_Wolframe::types::FormDescription"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1types_1_1VariantStructDescription_1_1Element.html#a7633eace5f5d249e8d9d40c757060462"><param name="Name" value="_Wolframe::types::VariantStructDescription::Element"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1types_1_1VariantStructDescription_1_1Element.html#a2879bc52a280af47de5b6ca45555c98da227ba95fe7887ef2f0408533e6a5280d"><param name="Name" value="Attribute"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1types_1_1VariantStructDescription_1_1Element.html#a7633eace5f5d249e8d9d40c757060462"><param name="Name" value="attribute"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1types_1_1DocMetaData.html#a26fc2c407abacd410a6191eb2081d3ba"><param name="Name" value="attributes"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1Auditor.html#a1e8b628a560ba5c3d4374724ac421a83"><param name="Name" value="audit"></OBJECT>
   <UL>
@@ -4039,7 +4066,6 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1Authenticator.html#a9dfdf77dd405ff219772c0f5aed31380a1f7ca32b6ba35a163f0fadb513aa9618"><param name="Name" value="_Wolframe::AAAA::Authenticator"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AuthenticatorSlice.html#a73d7382cdbebff714b96b0a306943ae0ac82a7c85542e1081c52223a9befd1159"><param name="Name" value="_Wolframe::AAAA::AuthenticatorSlice"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChanger.html#a6881bad362da4ab420b94af2fadb864ba49308d82b56155c202ae463c7f788e6f"><param name="Name" value="_Wolframe::AAAA::PasswordChanger"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangerSlice.html#a3d84f7728c64c2059175ebc67dc0d6edae13d5a6d957c3d3916d48ac43c5176d6"><param name="Name" value="_Wolframe::AAAA::PasswordChangerSlice"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structmd5__ctx.html#a82b6724f15425651751bf0f1bcd422cd"><param name="Name" value="b"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1VariantStruct.html#af8872f0f396a3d8eb93d3edf873c18c9"><param name="Name" value="back"></OBJECT>
@@ -4049,6 +4075,7 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="base64_8h.html"><param name="Name" value="base64.h"></OBJECT>
   <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="base64_8h.html#af0874ea8c85e1a794fec31dc300e4862"><param name="Name" value="BASE64_BUFFER_OVERFLOW"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="base64_8h.html#aaa364dfc88de6b58a445b6dd9bb2fd3e"><param name="Name" value="base64_decode"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="base64_8h.html#a4d1afaa3c53cb6467d05b41645896e01"><param name="Name" value="base64_decodeChunk"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="base64_8h.html#ad6edcdb579424595ee4ed3bda56dea54"><param name="Name" value="base64_encode"></OBJECT>
@@ -4058,11 +4085,10 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="base64_8h.html#a7edab6eccece0a1146a489bf80770bc2"><param name="Name" value="base64_encodeEndChunk"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="base64_8h.html#a65ef9e8c02e73e5c20a39661187f9497"><param name="Name" value="base64_initDecodeState"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="base64_8h.html#aa76bc90d9ff66679f766a69dceda74e1"><param name="Name" value="base64_initEncodeState"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="base64_8h.html#a5c4ff896271ead1234a164d08d878c05"><param name="Name" value="BASE64_INVALID_BUFFER"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="base64_8h.html#ae2314ec4e485e257c39e52d9f84a7a92"><param name="Name" value="BASE64_INVALID_DATA"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="base64_8h.html#aa6aa41a58caf60baa70f9067a1bfcd3c"><param name="Name" value="base64_resetEncodeState"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="base64_8h.html#a6f03a5b05aec3a0d5f69128cee8b4968"><param name="Name" value="BUFFER_OVERFLOW"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="base64_8h.html#a9b011611eafc6878975842cde62464ce"><param name="Name" value="DEFAULT_BASE64_LINE_LENGTH"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="base64_8h.html#a9f45976a0d1fa6f0a85a74b6efd93835"><param name="Name" value="INVALID_BUFFER"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="base64_8h.html#a20cea74fde071e770e94c04e10d02d11"><param name="Name" value="INVALID_DATA"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="base64_8h.html#aac19a08030fbb6de0b1ab4de2d5f2b4fafcd1e7968ee43178f3c10d68b718c9d5"><param name="Name" value="STEP_A"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="base64_8h.html#aac19a08030fbb6de0b1ab4de2d5f2b4faaf5890e5d1aa51386e1495daecd6def7"><param name="Name" value="STEP_B"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="base64_8h.html#aac19a08030fbb6de0b1ab4de2d5f2b4fa5be0267e16ab007c71a81947414a71b6"><param name="Name" value="STEP_C"></OBJECT>
@@ -4074,6 +4100,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="base64_8hpp.html#a26fd544f765da88d084f20c2ffea0de0"><param name="Name" value="encode"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="base64_8hpp.html#a8a8b87c0e619500b2fd1802b02b16356"><param name="Name" value="encodedSize"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="base64_8h.html#af0874ea8c85e1a794fec31dc300e4862"><param name="Name" value="BASE64_BUFFER_OVERFLOW"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="base64_8h.html#aaa364dfc88de6b58a445b6dd9bb2fd3e"><param name="Name" value="base64_decode"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="base64_8h.html#a4d1afaa3c53cb6467d05b41645896e01"><param name="Name" value="base64_decodeChunk"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structbase64__DecodeState.html"><param name="Name" value="base64_DecodeState"></OBJECT>
@@ -4096,6 +4123,8 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="base64_8h.html#a65ef9e8c02e73e5c20a39661187f9497"><param name="Name" value="base64_initDecodeState"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="base64_8h.html#aa76bc90d9ff66679f766a69dceda74e1"><param name="Name" value="base64_initEncodeState"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="base64_8h.html#a5c4ff896271ead1234a164d08d878c05"><param name="Name" value="BASE64_INVALID_BUFFER"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="base64_8h.html#ae2314ec4e485e257c39e52d9f84a7a92"><param name="Name" value="BASE64_INVALID_DATA"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="base64_8h.html#aa6aa41a58caf60baa70f9067a1bfcd3c"><param name="Name" value="base64_resetEncodeState"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1utils_1_1ArrayDoublingAllocator.html#a12f07cee1c283d691f392bd69becb2c0"><param name="Name" value="base"></OBJECT>
   <UL>
@@ -4141,9 +4170,9 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1db_1_1SubstitutingStatement.html#a5027ebf3ae2357835fe670860c57de37"><param name="Name" value="_Wolframe::db::SubstitutingStatement"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1db_1_1TransactionExecStatemachine.html#a82a38d640bc600576d86321e90038eb0"><param name="Name" value="_Wolframe::db::TransactionExecStatemachine"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a919d700259af8ff5f0b8587c3e132a6ba2aeefd9e8191dd11c69324bbed871b4a"><param name="Name" value="BitCnt_ArgumentIndex"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a919d700259af8ff5f0b8587c3e132a6bad874a89709483c06b3fe9b4bf649d51d"><param name="Name" value="BitCnt_CondCode"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a919d700259af8ff5f0b8587c3e132a6bac96c3e79e7ca09251ce188289021b459"><param name="Name" value="BitCnt_OpCode"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a8cdc859b1dc39958fa01f0f6210529eaa2aeefd9e8191dd11c69324bbed871b4a"><param name="Name" value="BitCnt_ArgumentIndex"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a8cdc859b1dc39958fa01f0f6210529eaad874a89709483c06b3fe9b4bf649d51d"><param name="Name" value="BitCnt_CondCode"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a8cdc859b1dc39958fa01f0f6210529eaac96c3e79e7ca09251ce188289021b459"><param name="Name" value="BitCnt_OpCode"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structmd5__ctx.html#a8898b5469422a573e4a8762a6cbfd1c0"><param name="Name" value="block"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structmd5__ctx.html#a8898b5469422a573e4a8762a6cbfd1c0"><param name="Name" value="md5_ctx"></OBJECT>
@@ -4165,14 +4194,13 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structmd5__ctx.html#a72256766fb1a364fe9398dcacff6bb63"><param name="Name" value="md5_ctx"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structsha1__ctx.html#a28d812ca124763268f907cc104a99fb9"><param name="Name" value="sha1_ctx"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="base64_8h.html#a6f03a5b05aec3a0d5f69128cee8b4968"><param name="Name" value="BUFFER_OVERFLOW"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1langbind_1_1BufferingInputFilter.html#ace2386c7b75e33e5a76cdc91cf3701fe"><param name="Name" value="BufferingInputFilter"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1base64_1_1Decoder.html#a401d314f896cb2d9a60b9f256c238c3e"><param name="Name" value="BUFFERSIZE"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1base64_1_1Decoder.html#a401d314f896cb2d9a60b9f256c238c3e"><param name="Name" value="_Wolframe::base64::Decoder"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1base64_1_1Encoder.html#a0c4f2ffaa49f5eade921c0bcc17f997a"><param name="Name" value="_Wolframe::base64::Encoder"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1utils_1_1AsciiCharParser.html#a7bd4db9feef31f4ab4c416285d5c0d6fa39f0e7524a0a51242d1a045798a51d10"><param name="Name" value="BufSize"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1utils_1_1AsciiCharParser.html#adeb3ce693c12d1576d2460562af432fba39f0e7524a0a51242d1a045798a51d10"><param name="Name" value="BufSize"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1serialize_1_1ParseStateStack.html#aa957bea575363dc632585249ac1b7efd"><param name="Name" value="bufvalue"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1Version.html#a9c3954ad5c258bcc55f8273f7c6bef83"><param name="Name" value="Build"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="byte2hex_8h.html"><param name="Name" value="byte2hex.h"></OBJECT>
@@ -4256,13 +4284,13 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AuthenticationUnit.html#a4ff4caf18b4824c405c77ff3482051f4"><param name="Name" value="_Wolframe::AAAA::AuthenticationUnit"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AuthenticatorSlice.html#abd3b18d87b5124936f83fcbf6be1d718"><param name="Name" value="_Wolframe::AAAA::AuthenticatorSlice"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AuthorizationUnit.html#a993fedccc8ad7fa7dcccd211669d79de"><param name="Name" value="_Wolframe::AAAA::AuthorizationUnit"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangerSlice.html#aa2b03378be7621721c82b1ada7f428f7"><param name="Name" value="_Wolframe::AAAA::PasswordChangerSlice"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1config_1_1NamedConfiguration.html#a34386bd19e997d908d54063a86e6a74c"><param name="Name" value="_Wolframe::config::NamedConfiguration"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1db_1_1Database.html#a8fc33e6ef3cc401a1a0937bbccacbe51"><param name="Name" value="_Wolframe::db::Database"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1db_1_1DatabaseUnit.html#a3f001d8113692f633dee0652a527c274"><param name="Name" value="_Wolframe::db::DatabaseUnit"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1db_1_1BaseStatement.html#ac49d080cf5455648e3ab755c6fb23e57"><param name="Name" value="clear"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangeMessage.html#a2cd05bd35ec8374314a804a62acc6cf7"><param name="Name" value="clear"></OBJECT>
   <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangeMessage.html#a2cd05bd35ec8374314a804a62acc6cf7"><param name="Name" value="_Wolframe::AAAA::PasswordChangeMessage"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1db_1_1BaseStatement.html#ac49d080cf5455648e3ab755c6fb23e57"><param name="Name" value="_Wolframe::db::BaseStatement"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1db_1_1Statement.html#a4346b41b890efd8eaf591dba376adb67"><param name="Name" value="_Wolframe::db::Statement"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1db_1_1SubstitutingStatement.html#a145c60e2b77638532fe5f2000efb07f2"><param name="Name" value="_Wolframe::db::SubstitutingStatement"></OBJECT>
@@ -4575,6 +4603,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="CRAM_8hpp.html#ab41785a47c617d01b11c406c77a3dc07"><param name="Name" value="CRAM_CHALLENGE_SIZE"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="CRAM_8hpp.html#a90431121efab0d8751b534421da5c95f"><param name="Name" value="CRAM_DIGEST_SIZE"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="CRAM_8hpp.html#a7c77aab0986e9c17074e82a2b16c54c5"><param name="Name" value="CRAM_RESPONSE_SIZE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="CRAM_8hpp.html#a89e47762ed3b61f07d57c21a47836527"><param name="Name" value="CRAM_SALT_SIZE"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace__Wolframe_1_1AAAA.html#a4f528121fe305a0c054f5fe489c6ce8a"><param name="Name" value="CRAM_BLOCK_SIZE"></OBJECT>
   <UL>
@@ -4596,8 +4625,14 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace__Wolframe_1_1AAAA.html#a7c77aab0986e9c17074e82a2b16c54c5"><param name="Name" value="_Wolframe::AAAA"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace__Wolframe_1_1AAAA.html#a7c77aab0986e9c17074e82a2b16c54c5"><param name="Name" value="CRAM.hpp"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace__Wolframe_1_1AAAA.html#a89e47762ed3b61f07d57c21a47836527"><param name="Name" value="CRAM_SALT_SIZE"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace__Wolframe_1_1AAAA.html#a89e47762ed3b61f07d57c21a47836527"><param name="Name" value="_Wolframe::AAAA"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace__Wolframe_1_1AAAA.html#a89e47762ed3b61f07d57c21a47836527"><param name="Name" value="CRAM.hpp"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1CRAMchallenge.html#adf20dec11870b9952475d38c9b82331b"><param name="Name" value="CRAMchallenge"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1CRAMresponse.html#ac3d96974dcc232bdc1881525d45385ed"><param name="Name" value="CRAMresponse"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1CRAMsalt.html#aabe361680a156647e36f3fc23f87319b"><param name="Name" value="CRAMsalt"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1DoctypeDetectorType.html#afca9ff766462f9a64cca4dcd172abeff"><param name="Name" value="create"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1DoctypeDetectorType.html#afca9ff766462f9a64cca4dcd172abeff"><param name="Name" value="_Wolframe::cmdbind::DoctypeDetectorType"></OBJECT>
@@ -4664,7 +4699,7 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#a1b05d9a155ccbd280dc5a0058d75001a"><param name="Name" value="createValue"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1net_1_1LocalEndpoint.html#a9bb349223141596905071bba6216e94f"><param name="Name" value="creationTime"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1ErrorLevel.html#a8416d7d92a9d547be4b5320bf25d072ba4acbca25330f1059eadd9988f9a23f8a"><param name="Name" value="CRITICAL"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1ErrorLevel.html#a7b8da1944a98a0432a85f4dda502d0e2a4acbca25330f1059eadd9988f9a23f8a"><param name="Name" value="CRITICAL"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1Variant.html#a9b83ec175a5f88adbd1b67605b4ccd3ca557a82446eb0253dd02c34781eea3869"><param name="Name" value="Custom"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1Variant.html#a9b83ec175a5f88adbd1b67605b4ccd3ca557a82446eb0253dd02c34781eea3869"><param name="Name" value="_Wolframe::types::Variant"></OBJECT>
@@ -4720,6 +4755,7 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1Variant.html#a33a6736b85f05360ff08785fc1606149"><param name="Name" value="customref"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="structmd5__ctx.html#a8daf0bd96ccf55b96fe268e47c014e24"><param name="Name" value="d"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangeMessage.html#a927eab0991433533afd42be43f48f411"><param name="Name" value="data"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1langbind_1_1TypedInputFilter_1_1Data.html#a9ca8c530e612f02f74fe483b5accf5ea"><param name="Name" value="Data"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1net_1_1NetworkOperation.html#a3c284568b6df423448a6b597746b72ab"><param name="Name" value="data"></OBJECT>
   <UL>
@@ -4893,7 +4929,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1GlobalRandomGenerator.html#a5182ca8e461455269872f9914d2cc57a"><param name="Name" value="device"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1protocol_1_1iterator__t.html#a2e49fa3ee8c63cbfd80f1e27a0913968"><param name="Name" value="difference_type"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1BigNumber.html#a84fd8938570e782e5b28ca75f74912ac"><param name="Name" value="digits"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1types_1_1Variant_1_1Data.html#af61f6a1f6f98013e4ff2bf753aaa5dfa"><param name="Name" value="dim"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1types_1_1Variant_1_1Data.html#a6b0f7c8b2e42ff1569511c858fbd65da"><param name="Name" value="dim"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#a7f38ab8d482773e0d4c676f5705bf38d"><param name="Name" value="DimensionOperator"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#aa1c28736a6a171ecca01525a188905da"><param name="Name" value="dimensionOperatorTypeName"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a1c63eaf6d3f6afb8b7278392aecb59e1a8ed681d50a869c1e9b691ad7ecba11ca"><param name="Name" value="DiscardInput"></OBJECT>
@@ -4903,7 +4939,6 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1Authenticator.html#af024481900f35d57a9e0b7d7224b3b51"><param name="Name" value="_Wolframe::AAAA::Authenticator"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AuthenticatorSlice.html#a6cb12a2a46f41bb5b04196196f04b479"><param name="Name" value="_Wolframe::AAAA::AuthenticatorSlice"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChanger.html#ab4cae315c0e6cc9ea4e3555a02af1a6d"><param name="Name" value="_Wolframe::AAAA::PasswordChanger"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangerSlice.html#a4080d683acc5a953fb2d6ccf16ee4284"><param name="Name" value="_Wolframe::AAAA::PasswordChangerSlice"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1protocol_1_1iterator__t.html#a2b2faff5c9aeb99b3b7981e3370fd61c"><param name="Name" value="distance_type"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#ac9a6c1f9d4ddbc2cb3623eafd6d8e275acebd81189fa31d93dbd7da0f3f1e6d7c"><param name="Name" value="Divide"></OBJECT>
@@ -5068,7 +5103,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1langbind_1_1OutputFilter.html#ae5dac34cab43c8fd1d6a95c6a866dccaa77e46587719eaac862cd06a496461643"><param name="Name" value="_Wolframe::langbind::OutputFilter"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1log_1_1LogError.html#ad0917fe3355f2bfe2f40565fe3c7d2c7"><param name="Name" value="error"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1langbind_1_1FilterBase.html#a7fa5459d687d7d45eabf2b4ed0a1cbbda24b6495c3a7592aca9ce47d1a89f0764"><param name="Name" value="ErrorBufSize"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1langbind_1_1FilterBase.html#a0622b83cb04fe98ce132e4e58472c8e8a24b6495c3a7592aca9ce47d1a89f0764"><param name="Name" value="ErrorBufSize"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1db_1_1DatabaseError.html#a1e87eaf635d4632a9785811ec040e63a"><param name="Name" value="errorclass"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1db_1_1DatabaseError.html#a1e87eaf635d4632a9785811ec040e63a"><param name="Name" value="_Wolframe::db::DatabaseError"></OBJECT>
@@ -5125,16 +5160,13 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1types_1_1DateTime_1_1StringFormat.html#ad1bb30e9a490f2fd917db79f3193f43faf22f7fd05bb2679064ff052085395bbc"><param name="Name" value="ExtendedISOdateTime"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1types_1_1DocMetaData.html#a9c813bef31259adb9b440682bcc00fbc"><param name="Name" value="extractStem"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1types_1_1String_1_1EncodingClass.html#a946856dfd5881c1c96b79985057f4e51af4d6cab898aed8a4283747128f0f751f"><param name="Name" value="FAIL"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1ErrorCode.html#a391a29c1632612213999270db0840d5ba1deeab5987d4b68fc267fa4f6c09da02"><param name="Name" value="FAILURE"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1ErrorLevel.html#a8416d7d92a9d547be4b5320bf25d072ba6803620fd919a956b03aa0cb94b4de53"><param name="Name" value="FATAL"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1ErrorCode.html#ab55f8e7dcfb2992c33b34880dd7158a4a1deeab5987d4b68fc267fa4f6c09da02"><param name="Name" value="FAILURE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1ErrorLevel.html#a7b8da1944a98a0432a85f4dda502d0e2a6803620fd919a956b03aa0cb94b4de53"><param name="Name" value="FATAL"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1serialize_1_1IntrusiveSerializer.html#aca38197b7f8cca5eb2cd84381040266b"><param name="Name" value="fetch"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1serialize_1_1IntrusiveSerializer.html#aca38197b7f8cca5eb2cd84381040266b"><param name="Name" value="_Wolframe::serialize::IntrusiveSerializer"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1serialize_1_1SerializeState.html#a66ecbd73f0b7d28dc082d7add9c00761"><param name="Name" value="_Wolframe::serialize::SerializeState"></OBJECT>
-  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1serialize_1_1SerializeState.html#ac288d16ce082e5464b924d6e8c2a904b"><param name="Name" value="Fetch"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#ae589d56a2437eed708bf4ab85db2e4ee"><param name="Name" value="fetch"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1serialize_1_1SerializeState.html#a66ecbd73f0b7d28dc082d7add9c00761"><param name="Name" value="fetch"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a6a49cadc17c521cfdb6aa50d77094fc9"><param name="Name" value="Fetch"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#ae589d56a2437eed708bf4ab85db2e4ee"><param name="Name" value="fetch"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace__Wolframe_1_1serialize.html#ab669e858cdf069cd0e4bca8ce8d9c8e7"><param name="Name" value="fetchCloseTag"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace__Wolframe_1_1serialize.html#ab669e858cdf069cd0e4bca8ce8d9c8e7"><param name="Name" value="_Wolframe::serialize"></OBJECT>
@@ -5326,6 +5358,7 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1prgbind_1_1Program.html#a6094df47101ece1b2040661d5a63dd59a760005ad568059f839e574adedcfc8bc"><param name="Name" value="FormType"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1prgbind_1_1ProgramLibrary.html#a47ad7a29c1062769163e10fdefa9c088"><param name="Name" value="formtypemap"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangeMessage.html#a610b6492c77c5215ee6e4d2b9c73b501"><param name="Name" value="fromBase64"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1DateTime.html#a09ac75e13193fcfdebbaf0dc28cf677b"><param name="Name" value="fromMSDNtimestamp"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1module_1_1CppFormFunctionDef.html#a17ef72c27410b696bd896fb409dfc60b"><param name="Name" value="func"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1cmdbind_1_1LineCommandHandlerTerminateDelegationWrapper.html#aa4e0def6cb90a243066b6d0b655027b2"><param name="Name" value="function"></OBJECT>
@@ -5570,10 +5603,13 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1serialize_1_1ParseStateStack.html#a1e46776118b0d03af520e918574254bd"><param name="Name" value="hasbufvalue"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1protocol_1_1EscapeBuffer.html#af78d196bef0526a3df1479036db57897"><param name="Name" value="hasData"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordHash.html#a7ba334428a23e217f1a6cfbe4f4cd38e"><param name="Name" value="hash"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordHash_1_1Hash.html#a57ad2cab9657f8c30e4d7dca4811e163"><param name="Name" value="Hash"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordHash_1_1Hash.html#a41b9aa46858a3fc581fe13842d76ed86"><param name="Name" value="hash"></OBJECT>
   <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordHash.html#a7ba334428a23e217f1a6cfbe4f4cd38e"><param name="Name" value="_Wolframe::AAAA::PasswordHash"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordHash_1_1Hash.html#a41b9aa46858a3fc581fe13842d76ed86"><param name="Name" value="_Wolframe::AAAA::PasswordHash::Hash"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordHash_1_1Hash.html#a57ad2cab9657f8c30e4d7dca4811e163"><param name="Name" value="Hash"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1crypto_1_1HMAC__SHA1.html#a13c003f21a40024562b48f5219808256"><param name="Name" value="hash"></OBJECT>
+  <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1crypto_1_1HMAC__SHA1.html#a13c003f21a40024562b48f5219808256"><param name="Name" value="_Wolframe::crypto::HMAC_SHA1"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1crypto_1_1HMAC__SHA256.html#a368b8b1b88764743ab8d226c4df5ca80"><param name="Name" value="_Wolframe::crypto::HMAC_SHA256"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1crypto_1_1PBKDF2__HMAC__SHA1.html#ae6512abf3bee9579ab5402e980740128"><param name="Name" value="_Wolframe::crypto::PBKDF2_HMAC_SHA1"></OBJECT>
@@ -5601,15 +5637,14 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1db_1_1Database.html#ac328da357a65760222e9e5570ddf1744"><param name="Name" value="_Wolframe::db::Database"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1db_1_1DatabaseUnit.html#a790b45c2df62478c588b3e3d20f312d3"><param name="Name" value="_Wolframe::db::DatabaseUnit"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#a3cd7310988fcf7d44b85a8b8092f6f3c"><param name="Name" value="_Wolframe::types::CustomDataType"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#a770809fcfabbe292f0b9ce00aca9f0a3"><param name="Name" value="id"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#a3cd7310988fcf7d44b85a8b8092f6f3c"><param name="Name" value="ID"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AuthenticationUnit.html#a4373f1c59b8112a9ca674e1dfe4b943e"><param name="Name" value="identifier"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AuthenticationUnit.html#a4373f1c59b8112a9ca674e1dfe4b943e"><param name="Name" value="_Wolframe::AAAA::AuthenticationUnit"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AuthenticatorSlice.html#a934af5627f55e2ffd710381fc29d9a59"><param name="Name" value="_Wolframe::AAAA::AuthenticatorSlice"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AuthorizationUnit.html#a1a4cc7759d1bce1dd9aeb1967cdf962b"><param name="Name" value="_Wolframe::AAAA::AuthorizationUnit"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangerSlice.html#a829dc3577a5c2f8d2e0876bc4bfca533"><param name="Name" value="_Wolframe::AAAA::PasswordChangerSlice"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1module_1_1CppFormFunctionConstructor.html#a549770dea6b152d93984197061293d4b"><param name="Name" value="_Wolframe::module::CppFormFunctionConstructor"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1module_1_1CustomDataTypeConstructor.html#ab15b0d5b0533d57fe609b2900e917306"><param name="Name" value="_Wolframe::module::CustomDataTypeConstructor"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1module_1_1NormalizeFunctionConstructor.html#a3da04a48d30acff20797460a0ba525e3"><param name="Name" value="_Wolframe::module::NormalizeFunctionConstructor"></OBJECT>
@@ -5668,7 +5703,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1VariantStructConst.html#ae3dcf49ca1ac41b028d1f0afbdd42045"><param name="Name" value="_Wolframe::types::VariantStructConst"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1Variant.html#ab9a3200c2cddc5cbca7c6d41c5b7ff6a"><param name="Name" value="initBigNumber"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1utils_1_1ArrayDoublingAllocator.html#acac8713a25b0ba4a96d4d59457dcab79a2560c8a7af44a51da5ceb51c7764b5ff"><param name="Name" value="InitBlockSize"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1utils_1_1ArrayDoublingAllocator.html#a2f5ecd8f61d4c86b75b17739bfddbe17a2560c8a7af44a51da5ceb51c7764b5ff"><param name="Name" value="InitBlockSize"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1Variant.html#a38f1cacfba1d9a63c0225308421e2e98"><param name="Name" value="initConstant"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1Variant.html#a7a80624751df4a669b72bd66481bf165"><param name="Name" value="initConstCopy"></OBJECT>
   <UL>
@@ -5688,7 +5723,7 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1serialize_1_1ParseState.html#a6c046320d948ca20460ee07346a453e0"><param name="Name" value="initCount"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1Variant.html#a48c8f51403299c044a3181fd2afc0eb0"><param name="Name" value="initCustom"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1protocol_1_1EscapeBuffer.html#a7f08b86a2c53274a3c02c9514a62ef60a8b07bdafd1c53cdd97bd2fbe21eb0b0b"><param name="Name" value="InitDataSize"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1protocol_1_1EscapeBuffer.html#a3fb7d8caaee20a4aacba835903ab97b6a8b07bdafd1c53cdd97bd2fbe21eb0b0b"><param name="Name" value="InitDataSize"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1Variant.html#ae33aa399c80dc35d91f9616d7ec89e65"><param name="Name" value="initDateTime"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1Authenticator.html#a9dfdf77dd405ff219772c0f5aed31380ac3e764c3664a559a6ef2266c6f2df11f"><param name="Name" value="INITIALIZED"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1Variant.html#a8a98081d783633f1958a455b4a70cfdea345ae2de70efad102a965f1bd060e3d0"><param name="Name" value="Initialized"></OBJECT>
@@ -5803,18 +5838,12 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="intrusiveSerializer_8hpp.html#a211ef079ff8132080e171e8e3ce90784"><param name="Name" value="printValue_uint64"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="intrusiveSerializer_8hpp.html#a4d20440ac9f2b9ef2a3349e13743237b"><param name="Name" value="printValue_ushort"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="base64_8h.html#a9f45976a0d1fa6f0a85a74b6efd93835"><param name="Name" value="INVALID_BUFFER"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1Authenticator.html#a9dfdf77dd405ff219772c0f5aed31380a96c0e120bd7fdb42e201df61c04f48a3"><param name="Name" value="INVALID_CREDENTIALS"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1Authenticator.html#a9dfdf77dd405ff219772c0f5aed31380a96c0e120bd7fdb42e201df61c04f48a3"><param name="Name" value="_Wolframe::AAAA::Authenticator"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AuthenticatorSlice.html#a73d7382cdbebff714b96b0a306943ae0a9bf5734757c8b022250c85491d83bb96"><param name="Name" value="_Wolframe::AAAA::AuthenticatorSlice"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChanger.html#a6881bad362da4ab420b94af2fadb864ba5f7bae240a56e9d39881088224ddb26e"><param name="Name" value="INVALID_DATA"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChanger.html#a6881bad362da4ab420b94af2fadb864ba5f7bae240a56e9d39881088224ddb26e"><param name="Name" value="_Wolframe::AAAA::PasswordChanger"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangerSlice.html#a3d84f7728c64c2059175ebc67dc0d6eda7bbcd510cf66c47e7d2239c2e9244d0d"><param name="Name" value="_Wolframe::AAAA::PasswordChangerSlice"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="base64_8h.html#a20cea74fde071e770e94c04e10d02d11"><param name="Name" value="base64.h"></OBJECT>
-  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChanger.html#a6881bad362da4ab420b94af2fadb864ba6c62daebdc70256807635a0f20849598"><param name="Name" value="INVALID_MESSAGE"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="ioblocks_8hpp.html"><param name="Name" value="ioblocks.hpp"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="ioblocks_8hpp.html#acc3394bd9adfa07193f75b4ece203448"><param name="Name" value="escapeStringDLF"></OBJECT>
@@ -5850,6 +5879,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1String.html#a7004738a4b73fd0b09512101d890767aa7e9949514585639a9b8c8cbab3a0d941"><param name="Name" value="ISO8859"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1types_1_1DateTime_1_1StringFormat.html#ad1bb30e9a490f2fd917db79f3193f43fa752dfa374cb82225bd410d5ad87fae30"><param name="Name" value="ISOdateTime"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="classJobScheduleProvider.html#a810af494fc6fae6d684b3aace9fadd88"><param name="Name" value="isUpdatable"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangeMessage.html#a1eb1b7a5fdc8f55619d181e65e0e8040"><param name="Name" value="isValid"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1BigNumber.html#a5d8b2dffdbeb2debddd08f420dd5aed2"><param name="Name" value="isvalid"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1utils_1_1PrintFormat.html#a379987818e2ac651e0acb30ee5a586b0"><param name="Name" value="itemdelimiter"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1db_1_1vm_1_1ProgramCode.html#a819a3f5cad908bfadf20be6a9f123f04"><param name="Name" value="iterator"></OBJECT>
@@ -6207,6 +6237,9 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1Form.html#ad30142e64e4a8323af1d37acf8141c8d"><param name="Name" value="m_description"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a6ccfa393208c63c8d5e7dd8cbf15c737"><param name="Name" value="m_destructor"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1GlobalRandomGenerator.html#acdcd42246d99e9182e3023b26e22de85"><param name="Name" value="m_device"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1Platform.html#acccb60534d6d9efb8b58970aa14ffbb8"><param name="Name" value="m_distro"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1Platform.html#aa860f7a4f77ea87e3e59e1493fff59fa"><param name="Name" value="m_distro_major"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1Platform.html#aa6153fc86c368b07c6d9816f909bb25b"><param name="Name" value="m_distro_minor"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1crypto_1_1PBKDF2__HMAC__SHA1.html#a5357e27f3b94a74768477059d2834232"><param name="Name" value="m_dkLen"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1langbind_1_1RedirectFilterClosure.html#af5fb9aa93f1255e8d2858882adaece90"><param name="Name" value="m_do_print_final_close"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1langbind_1_1Input.html#ac0001a1310790aa6011456403a8ab480"><param name="Name" value="m_docformat"></OBJECT>
@@ -6287,12 +6320,15 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a35557c99be204152379ae52d4e1c5718"><param name="Name" value="m_gotEoD"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1serialize_1_1Context.html#a1f37e6943eb6b317a309ab130975335d"><param name="Name" value="m_has_elem"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1Version.html#aefae1492888a3aec4a733f01a4686c13"><param name="Name" value="m_hasBuild"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1Platform.html#a5edcc9414b8f7db9c38581ad56c686bb"><param name="Name" value="m_hasDisto"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1Platform.html#ae856936ae3db1e5583451b010694b4aa"><param name="Name" value="m_hasDistroVersion"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordHash.html#a5a92b3d8556d9c738fce024c9cb2940e"><param name="Name" value="m_hash"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordHash.html#a5a92b3d8556d9c738fce024c9cb2940e"><param name="Name" value="_Wolframe::AAAA::PasswordHash"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordHash_1_1Hash.html#aae3a508af4ce4d387c04f77614c271b6"><param name="Name" value="_Wolframe::AAAA::PasswordHash::Hash"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1crypto_1_1PBKDF2__HMAC__SHA1.html#a660f770f44a9f5b25bd95dc31416a623"><param name="Name" value="_Wolframe::crypto::PBKDF2_HMAC_SHA1"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1Platform.html#a99505c053d43ebafa990758f5dd4e853"><param name="Name" value="m_hasOsVersion"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1Version.html#aa9b8fa24aa5e83b50ede73b5ebb19753"><param name="Name" value="m_hasRevision"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1ProgramInstance_1_1StackElement.html#af5d3f30a003803dc47199e4af1dadb80"><param name="Name" value="m_hintidx"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1crypto_1_1HMAC__SHA1.html#a349c50ea090a1a095a0d5ff50f2161fa"><param name="Name" value="m_HMAC"></OBJECT>
@@ -6392,6 +6428,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1net_1_1ServerTCPendpoint.html#a476318f5a3072b73eca8edf547797470"><param name="Name" value="m_maxConn"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1db_1_1BaseStatement.html#a28b14795652e4a265201067f0420b6a9"><param name="Name" value="m_maxParam"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1User.html#ab997916ef7a83f0e63c0ce68f41b8393"><param name="Name" value="m_mech"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangeMessage.html#a91cffdb1af10f6ae8cbde3d8d2c49e46"><param name="Name" value="m_message"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1langbind_1_1InputFilter.html#abbb8f2b777d292143f51042d3164d4e2"><param name="Name" value="m_metadata"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1langbind_1_1InputFilter.html#abbb8f2b777d292143f51042d3164d4e2"><param name="Name" value="_Wolframe::langbind::InputFilter"></OBJECT>
@@ -6454,6 +6491,12 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a34d78cd2f35a346e781b1ad119a16a6c"><param name="Name" value="m_ofs"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1db_1_1vm_1_1Output_1_1Element.html#af003a2e71472b86ce4e4f1703a08adf9"><param name="Name" value="m_op"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1log_1_1Logger.html#ae7984823fbf91dcd6b7a1641c151a448"><param name="Name" value="m_os"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1log_1_1Logger.html#ae7984823fbf91dcd6b7a1641c151a448"><param name="Name" value="_Wolframe::log::Logger"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1Platform.html#a2cb4e6b06106faaa35802afd31e32341"><param name="Name" value="_Wolframe::Platform"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1Platform.html#a9e483fb2b90ed73e13140be79acef36d"><param name="Name" value="m_os_major"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1Platform.html#abdc22f7e9728d8197fcb13eb41153663"><param name="Name" value="m_os_minor"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1serialize_1_1DDLStructSerializer.html#afe7270e60aa660f1e9177d98b6db8dc9"><param name="Name" value="m_out"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1serialize_1_1DDLStructSerializer.html#afe7270e60aa660f1e9177d98b6db8dc9"><param name="Name" value="_Wolframe::serialize::DDLStructSerializer"></OBJECT>
@@ -6547,8 +6590,9 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1Version.html#afbf3ef612f66d4158c6e9cfe9442a837"><param name="Name" value="m_revision"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1PropertyTree.html#a09be670c8bfe5867c6e9c8353cc0958d"><param name="Name" value="m_root"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1db_1_1Transaction_1_1Result.html#ab0397ba68fff3f4e8a2d9905a03d8fe0"><param name="Name" value="m_rows"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordHash.html#a480b3e69708145ec5751625c00fb42b3"><param name="Name" value="m_salt"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1CRAMsalt.html#a007c98a7ae3704261345804e72508057"><param name="Name" value="m_salt"></OBJECT>
   <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1CRAMsalt.html#a007c98a7ae3704261345804e72508057"><param name="Name" value="_Wolframe::AAAA::CRAMsalt"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordHash.html#a480b3e69708145ec5751625c00fb42b3"><param name="Name" value="_Wolframe::AAAA::PasswordHash"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordHash_1_1Salt.html#aab31459302b0b4b56a7155f613e3f049"><param name="Name" value="_Wolframe::AAAA::PasswordHash::Salt"></OBJECT>
   </UL>
@@ -6681,7 +6725,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1ProgramInstance_1_1StackElement.html#ab37c6ea76100f1c1a1fb2823008a40b7"><param name="Name" value="m_valueIter"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1ProgramInstance_1_1StackElement.html#a69344833840dac270530fa594776e640"><param name="Name" value="m_valueSet"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1ApplicationInfo.html#a67f9b4c7565beaf312fe097a15c40a13"><param name="Name" value="m_version"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#a82473e40def60e7a88b026f57528e4cd"><param name="Name" value="m_vmt"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#a8e931b457cef40c72c331ea6a2b4499d"><param name="Name" value="m_vmt"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a9e506fad7d98bc8ad20805ddbd8fb890"><param name="Name" value="m_writedata"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#adf010b057271eecf2e0c4c028bc433eb"><param name="Name" value="m_writedatasize"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1DateTime.html#ae8743202b4205c1eea374852daa2037f"><param name="Name" value="m_year"></OBJECT>
@@ -6691,6 +6735,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1VariantStruct.html#a7480d9b7353e4c18b4d42a57f5a21b7e"><param name="Name" value="_Wolframe::types::VariantStruct"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1types_1_1VariantStructDescription_1_1Element.html#a20a2ec81a4d9add4a11549d894bd5f23"><param name="Name" value="_Wolframe::types::VariantStructDescription::Element"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1Platform.html#a4b99a4df01d1548d74615eb93b01a0b1"><param name="Name" value="makePlatform"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="malloc_8hpp.html"><param name="Name" value="malloc.hpp"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="malloc_8hpp.html#ac8db1bf5e201d6f6dbb666ce958e9aa6"><param name="Name" value="wolframe_calloc"></OBJECT>
@@ -6699,24 +6744,30 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="malloc_8hpp.html#ad645ecbbaf8c1bd91b1b4dd75373320f"><param name="Name" value="wolframe_realloc"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1serialize_1_1StructDescription.html#a48ab1aa76fe8e1041a351a0bc0892b43"><param name="Name" value="mandatory"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1serialize_1_1StructDescription.html#a48ab1aa76fe8e1041a351a0bc0892b43"><param name="Name" value="_Wolframe::serialize::StructDescription"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a0d573f73bfa9a21aec7c66404fa69071"><param name="Name" value="_Wolframe::serialize::StructDescriptionBase"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a4a3e2910b5367893fbe92dac03018db4ab8c6d50534cf4b244ffa9bf470f80134"><param name="Name" value="Mandatory"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a0d573f73bfa9a21aec7c66404fa69071"><param name="Name" value="mandatory"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1types_1_1VariantStructDescription_1_1Element.html#a2879bc52a280af47de5b6ca45555c98da10a0e531fc521c589311a31c63f98b95"><param name="Name" value="Mandatory"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a4a3e2910b5367893fbe92dac03018db4ab8c6d50534cf4b244ffa9bf470f80134"><param name="Name" value="_Wolframe::serialize::StructDescriptionBase"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1types_1_1VariantStructDescription_1_1Element.html#a2879bc52a280af47de5b6ca45555c98da10a0e531fc521c589311a31c63f98b95"><param name="Name" value="_Wolframe::types::VariantStructDescription::Element"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1types_1_1VariantStructDescription_1_1Element.html#a2f0cb00b0941073b39828e6e8b2b3e26"><param name="Name" value="mandatory"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a8c034af01d0376e178580c0bf0fde026"><param name="Name" value="Map"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a01bf3bcfa07f3a9067533c00bae9b1ecafed7eda60623d04d8cdeb23dd58de26d"><param name="Name" value="Mask_ArgumentIndex"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a01bf3bcfa07f3a9067533c00bae9b1ecad3aa819b96fcf0e09c2816730201bc74"><param name="Name" value="Mask_CondCode"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a01bf3bcfa07f3a9067533c00bae9b1ecaaa45a992fb24f7d403fbc3cdedec84f4"><param name="Name" value="Mask_OpCode"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a9957b8add8c9d72be62d2d3a527da1b8a52a5f8cd3aaeac12a3a6f6d6b00b2f30"><param name="Name" value="Max_ArgumentIndex"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a9957b8add8c9d72be62d2d3a527da1b8a3f025abe0398ed0480dc882bd6bd5b19"><param name="Name" value="Max_CondCode"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a9957b8add8c9d72be62d2d3a527da1b8a94a7134865092ee8384047ec6da9276b"><param name="Name" value="Max_OpCode"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#adcd2b0482bf2c22ad7b8e4336bfd6756afed7eda60623d04d8cdeb23dd58de26d"><param name="Name" value="Mask_ArgumentIndex"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#adcd2b0482bf2c22ad7b8e4336bfd6756ad3aa819b96fcf0e09c2816730201bc74"><param name="Name" value="Mask_CondCode"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#adcd2b0482bf2c22ad7b8e4336bfd6756aaa45a992fb24f7d403fbc3cdedec84f4"><param name="Name" value="Mask_OpCode"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#afb4205e0f36543ed836100bd5e506664a52a5f8cd3aaeac12a3a6f6d6b00b2f30"><param name="Name" value="Max_ArgumentIndex"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#afb4205e0f36543ed836100bd5e506664a3f025abe0398ed0480dc882bd6bd5b19"><param name="Name" value="Max_CondCode"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#afb4205e0f36543ed836100bd5e506664a94a7134865092ee8384047ec6da9276b"><param name="Name" value="Max_OpCode"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1net_1_1Configuration.html#a8aeee3b472a37632c6afb685a0bdc5bc"><param name="Name" value="maxConnections"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1net_1_1Configuration.html#a8aeee3b472a37632c6afb685a0bdc5bc"><param name="Name" value="_Wolframe::net::Configuration"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1net_1_1ServerTCPendpoint.html#a4b9ca69846052f7b617fdbcffce39ba4"><param name="Name" value="_Wolframe::net::ServerTCPendpoint"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1utils_1_1PrintFormat.html#a77a1cc0e553edebcdaf6826f138b297a"><param name="Name" value="maxitemsize"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1db_1_1BaseStatement.html#ace9eb56dea15c8c75562ba522811e20daf78e92a67a8c50d9305f53a1ac5ca9cd"><param name="Name" value="MaxNofParams"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1db_1_1BaseStatement.html#a9bbb50f6abb6bd47dbf3e05286b5fdc7af78e92a67a8c50d9305f53a1ac5ca9cd"><param name="Name" value="MaxNofParams"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="md5_8h.html"><param name="Name" value="md5.h"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="md5_8h.html#a847e89d37b8dbef6bb614836f32ff750"><param name="Name" value="md5"></OBJECT>
@@ -6758,21 +6809,18 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1Authenticator.html#a9dfdf77dd405ff219772c0f5aed31380ae74cfcb1622f6a1e711f0f55e00e1dd9"><param name="Name" value="_Wolframe::AAAA::Authenticator"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AuthenticatorSlice.html#a73d7382cdbebff714b96b0a306943ae0a0383f401fcada1505c9a9b2ec0994197"><param name="Name" value="_Wolframe::AAAA::AuthenticatorSlice"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChanger.html#a6881bad362da4ab420b94af2fadb864baf23c64a1393b41b2dc9e92ec694b0362"><param name="Name" value="_Wolframe::AAAA::PasswordChanger"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangerSlice.html#a3d84f7728c64c2059175ebc67dc0d6edadab7d3f8151839da8d7d6c84de7227ab"><param name="Name" value="_Wolframe::AAAA::PasswordChangerSlice"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1Authenticator.html#a3cca7b9a53d881c58cb2a946667a34ae"><param name="Name" value="messageIn"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1Authenticator.html#a3cca7b9a53d881c58cb2a946667a34ae"><param name="Name" value="_Wolframe::AAAA::Authenticator"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AuthenticatorSlice.html#aef35ea3f264ad487be4294302d962bb0"><param name="Name" value="_Wolframe::AAAA::AuthenticatorSlice"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChanger.html#ac4b41cba44cf309eef8f91fb9b19be40"><param name="Name" value="_Wolframe::AAAA::PasswordChanger"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangerSlice.html#a9e9e3a0f6d18f11726e4fcb33182ac5e"><param name="Name" value="_Wolframe::AAAA::PasswordChangerSlice"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1Authenticator.html#a8a15e5f66ea574d2185829699beccc9d"><param name="Name" value="messageOut"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1Authenticator.html#a8a15e5f66ea574d2185829699beccc9d"><param name="Name" value="_Wolframe::AAAA::Authenticator"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AuthenticatorSlice.html#ac86d3c536e38db82b082978e1fcfdcc7"><param name="Name" value="_Wolframe::AAAA::AuthenticatorSlice"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChanger.html#a1aa77ca2e4b04179df3d88fe2f081976"><param name="Name" value="_Wolframe::AAAA::PasswordChanger"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangerSlice.html#a20a82f8a87d2e1e3bb583515cee2502b"><param name="Name" value="_Wolframe::AAAA::PasswordChangerSlice"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1FormDescription.html#a7e443285aff5bea1b22a446d367b3738"><param name="Name" value="metadata"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1DateTime.html#a8698cd84860ed554561ca8738365f7c2"><param name="Name" value="microsecond"></OBJECT>
@@ -6871,17 +6919,17 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a2d38c4b9370480d2021b62059da27444"><param name="Name" value="_Wolframe::serialize::StructDescriptionBase"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1VariantStruct.html#a4c2ddea8eac87dd05e02ebbf80db59dd"><param name="Name" value="_Wolframe::types::VariantStruct"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#a16d27797def4a21669db0514c31ce744ac9f88e40b7d3059076ee7428db742719"><param name="Name" value="NofBinaryOperators"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1config_1_1Parser_1_1BoolDomain.html#a035b49431cab0c5f0562ae3c0131f7c4a31a6d15364d88c6e0323d6baa1a413a4"><param name="Name" value="NofBooleanEnum"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#ad9f12b75b5f63fee4ed739688304228cac9f88e40b7d3059076ee7428db742719"><param name="Name" value="NofBinaryOperators"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1config_1_1Parser_1_1BoolDomain.html#a430a218e828840a5e803ebd02e68049ea31a6d15364d88c6e0323d6baa1a413a4"><param name="Name" value="NofBooleanEnum"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1db_1_1TransactionExecStatemachine.html#a8d2de417992ac34648b7b2e2fd96932b"><param name="Name" value="nofColumns"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1db_1_1TransactionExecStatemachine.html#a8d2de417992ac34648b7b2e2fd96932b"><param name="Name" value="_Wolframe::db::TransactionExecStatemachine"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1db_1_1vm_1_1ValueTupleSet.html#a11b21884e9b29782deef5cee3c8621db"><param name="Name" value="_Wolframe::db::vm::ValueTupleSet"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#a5a50ac8535eb6a8a34f4c2b09ecae003a349b14db70128971ad6099e71b79c375"><param name="Name" value="NofConversionOperators"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#ad01f4ad7bde1a2fb6676b7988fc569e6a717ec486c44407eb5e9d463686613abd"><param name="Name" value="NofDimensionOperators"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#a210d71cfb7d362a1519f7c183bd327eca349b14db70128971ad6099e71b79c375"><param name="Name" value="NofConversionOperators"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#adc03d72ac66f7504bfcb87cc085c9348a717ec486c44407eb5e9d463686613abd"><param name="Name" value="NofDimensionOperators"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1types_1_1VariantStructDescription_1_1Element.html#a2879bc52a280af47de5b6ca45555c98da73229bdd55b3ec0366ae68d828d24cd2"><param name="Name" value="NoFlags"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#a05763120292690d925f15fef5db44957a234fcebf1bf1bbc99f76e64bf0429418"><param name="Name" value="NofUnaryOperators"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#ad01f4ad7bde1a2fb6676b7988fc569e6a234fcebf1bf1bbc99f76e64bf0429418"><param name="Name" value="NofUnaryOperators"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1config_1_1ServiceBanner.html#a77cad9bd3e651fbee720df673ca54da6a0e375681f4ac687011e1dd9ce8379b87"><param name="Name" value="NONE"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1langbind_1_1FilterBase.html#a38fc65e847310d5c4e3a7bdb64f7f138a1f0cd0ad036eb6ed18b4c1c9426567ae"><param name="Name" value="None"></OBJECT>
   <UL>
@@ -6898,7 +6946,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1net_1_1NetworkOperation.html#a4c4ab7c51d8bc7bbf984f22d86a93d0fa6e3a8028dfabf2bb783c67d4a619a475"><param name="Name" value="NOOP"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1net_1_1NoOp.html#a6614ffd5d461b57274b20600799823e7"><param name="Name" value="NoOp"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a4a3e2910b5367893fbe92dac03018db4ae0d9c4f2b11f51c96558241163cc3fd6"><param name="Name" value="NoRequirement"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1ErrorLevel.html#a8416d7d92a9d547be4b5320bf25d072ba1411aa990e17d35d3d2741264a13bb82"><param name="Name" value="NORMAL"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1ErrorLevel.html#a7b8da1944a98a0432a85f4dda502d0e2a1411aa990e17d35d3d2741264a13bb82"><param name="Name" value="NORMAL"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2ea1d82e94c31742dd14cb7f7fbf3454dc0"><param name="Name" value="NORMALIZE_FUNCTION_OBJECT"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="normalizeFunction_8hpp.html"><param name="Name" value="normalizeFunction.hpp"></OBJECT>
   <UL>
@@ -7040,7 +7088,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1log_1_1LogObjectDescriptionBase.html#aca99ad489967bc5f990a0e59f29ebef5"><param name="Name" value="objToString"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a9ba745d955b48830459e92afc81a89b3"><param name="Name" value="ofs"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#aecc292c24bc75e9f0e087f2f1f8edfd1a72b64374b57d7ff9939606228661746b"><param name="Name" value="Ok"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1ErrorCode.html#a391a29c1632612213999270db0840d5babeb1ca4e9efa854d5a10d520f98e0ce9"><param name="Name" value="OK"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1ErrorCode.html#ab55f8e7dcfb2992c33b34880dd7158a4abeb1ca4e9efa854d5a10d520f98e0ce9"><param name="Name" value="OK"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1db_1_1vm_1_1Output_1_1Element.html#abf356d3f69ed69c8d1ab396083b8c6fa"><param name="Name" value="op"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#aab066c2db55711490c3dba7facdedbbaa9ffd181d5d04d15760a82c7e051c7006"><param name="Name" value="Op_DBSTM_BIND_CONST"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#aab066c2db55711490c3dba7facdedbbaa7c34466893e25273ba22d2d5c2c98cb8"><param name="Name" value="Op_DBSTM_BIND_ITR_IDX"></OBJECT>
@@ -7326,9 +7374,15 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1utils_1_1TypedArrayDoublingAllocator.html#a1574580ed448073b8e5e6895654531ee"><param name="Name" value="_Wolframe::utils::TypedArrayDoublingAllocator"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1serialize_1_1StructDescription.html#a00c52872fc50beaae828ca00be45100d"><param name="Name" value="optional"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1serialize_1_1StructDescription.html#a00c52872fc50beaae828ca00be45100d"><param name="Name" value="_Wolframe::serialize::StructDescription"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a300cdc9c82ea17adf244144941221143"><param name="Name" value="_Wolframe::serialize::StructDescriptionBase"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a4a3e2910b5367893fbe92dac03018db4a7aad213b15084ba0e8147292775d2139"><param name="Name" value="Optional"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a300cdc9c82ea17adf244144941221143"><param name="Name" value="optional"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1types_1_1VariantStructDescription_1_1Element.html#a2879bc52a280af47de5b6ca45555c98da874bdc04bb4eb6953798062d9c8960ab"><param name="Name" value="Optional"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a4a3e2910b5367893fbe92dac03018db4a7aad213b15084ba0e8147292775d2139"><param name="Name" value="_Wolframe::serialize::StructDescriptionBase"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1types_1_1VariantStructDescription_1_1Element.html#a2879bc52a280af47de5b6ca45555c98da874bdc04bb4eb6953798062d9c8960ab"><param name="Name" value="_Wolframe::types::VariantStructDescription::Element"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1types_1_1VariantStructDescription_1_1Element.html#af5cd0c7d18ff1fecd9dd1c2b6a3988f4"><param name="Name" value="optional"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1db_1_1BaseStatement.html#ad855c104e5ad91d20129be0726f92c23"><param name="Name" value="originalSQL"></OBJECT>
   <UL>
@@ -7382,14 +7436,14 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1net_1_1Configuration.html#a11e13c7c70864020273cb3a95b94cfd2"><param name="Name" value="_Wolframe::net::Configuration"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1proc_1_1ProcProviderConfig.html#a2fbcb6b5f655adf2be01f2acf4c93ed3"><param name="Name" value="_Wolframe::proc::ProcProviderConfig"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1serialize_1_1IntrusiveParser.html#a56699b05e3bc776f412173f51e077f47"><param name="Name" value="_Wolframe::serialize::IntrusiveParser"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1serialize_1_1ParseState.html#af4503c5bc06f9cd68593843a8e6b2940"><param name="Name" value="_Wolframe::serialize::ParseState"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1serialize_1_1ParseState.html#ad9b8d27a3499979d77c04f50c8216900"><param name="Name" value="Parse"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1serialize_1_1ParseState.html#af4503c5bc06f9cd68593843a8e6b2940"><param name="Name" value="parse"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1serialize_1_1ParseState.html#af4503c5bc06f9cd68593843a8e6b2940"><param name="Name" value="_Wolframe::serialize::ParseState"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a302ed56aa17abab78bbf100d909634fd"><param name="Name" value="_Wolframe::serialize::StructDescriptionBase"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1serialize_1_1ParseState.html#ad9b8d27a3499979d77c04f50c8216900"><param name="Name" value="_Wolframe::serialize::ParseState"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#aa8a2f138698f5e61200ae536fe88a38d"><param name="Name" value="_Wolframe::serialize::StructDescriptionBase"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#aa8a2f138698f5e61200ae536fe88a38d"><param name="Name" value="Parse"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a302ed56aa17abab78bbf100d909634fd"><param name="Name" value="parse"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1LineCommandHandler.html#ae60f5046a90f1b66d028e555f9cf57e9a519d402dc2fa4d5bf9e8b24278413948"><param name="Name" value="ParseArgs"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1LineCommandHandler.html#ae60f5046a90f1b66d028e555f9cf57e9a4add89ab12048d11d07800a08fa75d75"><param name="Name" value="ParseArgsEOL"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace__Wolframe_1_1serialize.html#af7378d0979735b2aa8afaf9d1e454373"><param name="Name" value="parseAtomicElementEndTag"></OBJECT>
@@ -7539,22 +7593,29 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace__Wolframe_1_1serialize.html#afb0a12d0e91c374340cd59e4c4cce61c"><param name="Name" value="intrusiveParser.hpp"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#ab4ddcd6002e80f6b991aa1321f41dea1"><param name="Name" value="passParameters"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChanger.html#a6881bad362da4ab420b94af2fadb864ba400757c37b9c186c25b811449e8edc2b"><param name="Name" value="PASSWORD_CHANGED"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangeMessage.html#ac409516ef4efbb2587ca105f9a470a0a"><param name="Name" value="password"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChanger.html#a6881bad362da4ab420b94af2fadb864ba400757c37b9c186c25b811449e8edc2b"><param name="Name" value="_Wolframe::AAAA::PasswordChanger"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangerSlice.html#a3d84f7728c64c2059175ebc67dc0d6edaf02ae9fde76953f9d5203a8d3baf18b1"><param name="Name" value="_Wolframe::AAAA::PasswordChangerSlice"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangeMessage.html#ac409516ef4efbb2587ca105f9a470a0a"><param name="Name" value="_Wolframe::AAAA::PasswordChangeMessage"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChanger.html#a2329e0e5fb0b45732ffebe0b41c65f13"><param name="Name" value="_Wolframe::AAAA::PasswordChanger"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChanger.html#a6881bad362da4ab420b94af2fadb864bae3b22dbb6475505fd3e2ada877fbbde2"><param name="Name" value="PASSWORD_EXCHANGED"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace__Wolframe_1_1AAAA.html#a71fe836f316101d0959bbca4fc219b47"><param name="Name" value="PASSWORD_HASH_SIZE"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace__Wolframe_1_1AAAA.html#a71fe836f316101d0959bbca4fc219b47"><param name="Name" value="_Wolframe::AAAA"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace__Wolframe_1_1AAAA.html#a71fe836f316101d0959bbca4fc219b47"><param name="Name" value="passwordHash.hpp"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangeMessage.html#ad0dcccb6ef17fe8da0501ff33825bedda2a0c76b7ba928904e90b3b41a8d2757c"><param name="Name" value="PASSWORD_MAX_LENGTH"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace__Wolframe_1_1AAAA.html#a9b73499766023a966eb293ffe957947f"><param name="Name" value="PASSWORD_SALT_SIZE"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace__Wolframe_1_1AAAA.html#a9b73499766023a966eb293ffe957947f"><param name="Name" value="_Wolframe::AAAA"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace__Wolframe_1_1AAAA.html#a9b73499766023a966eb293ffe957947f"><param name="Name" value="passwordHash.hpp"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangeMessage.html#abdab1b95919b30e3dd9bb28116308408"><param name="Name" value="PasswordChangeMessage"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AAAAprovider.html#a835ce1936bb4c4fbe3e581972d2d334c"><param name="Name" value="passwordChanger"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AAAAprovider.html#a835ce1936bb4c4fbe3e581972d2d334c"><param name="Name" value="_Wolframe::AAAA::AAAAprovider"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AuthenticationUnit.html#a98a915186970047fdfc89138a5fbb404"><param name="Name" value="_Wolframe::AAAA::AuthenticationUnit"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="passwordHash_8hpp.html"><param name="Name" value="passwordHash.hpp"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="passwordHash_8hpp.html#a71fe836f316101d0959bbca4fc219b47"><param name="Name" value="PASSWORD_HASH_SIZE"></OBJECT>
@@ -7566,10 +7627,12 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordHash_1_1Hash.html#a108256a6635c0e629992adf6d972e12a"><param name="Name" value="_Wolframe::AAAA::PasswordHash::Hash"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordHash_1_1Salt.html#a108256a6635c0e629992adf6d972e12a"><param name="Name" value="_Wolframe::AAAA::PasswordHash::Salt"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangeMessage.html#ad0dcccb6ef17fe8da0501ff33825bedda95a711c0b298f8486807adb24bd6b7eb"><param name="Name" value="PAYLOAD_LENGTH"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="PBKDF2_8h.html"><param name="Name" value="PBKDF2.h"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1crypto_1_1PBKDF2__HMAC__SHA1.html#a3eaa913b6b2532c12d3b9e33e6204475"><param name="Name" value="PBKDF2_HMAC_SHA1"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="PBKDF2_8h.html#a47511f7544dc1247948ec24281fec2e3"><param name="Name" value="pbkdf2_hmac_sha1"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1config_1_1ServiceConfiguration.html#ac7eb78989fb7206d24fea8b2c883655c"><param name="Name" value="pidFile"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1Platform.html#a71bbb2dec9b0c4d26aeb98508631705d"><param name="Name" value="Platform"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1protocol_1_1iterator__t.html#a9ceabcd36b952f52991836119fdecd50"><param name="Name" value="pointer"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1types_1_1CountedReference_1_1Pointer.html#aed1db3488ab5351924dc7eb1e234ae45"><param name="Name" value="Pointer"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1PoolObject.html#ad17db4db840d25659cb19af457bc14a8"><param name="Name" value="PoolObject"></OBJECT>
@@ -7791,7 +7854,6 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1langbind_1_1InputFilterScope.html#ab2963a481688f09c6297cc5bfd43eea7"><param name="Name" value="_Wolframe::langbind::InputFilterScope"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1utils_1_1AsciiCharParser.html#a2d8e793c4d7fbf24be73b86535c4e1d6"><param name="Name" value="_Wolframe::utils::AsciiCharParser"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AuthenticationUnit.html#abfc1d2a34f1c419d7314243fd0947bf6"><param name="Name" value="pwdChanger"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1crypto_1_1RandomGenerator.html#ad0da5775586add5357212099f775923a"><param name="Name" value="random"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1crypto_1_1RandomGenerator.html#ad0da5775586add5357212099f775923a"><param name="Name" value="_Wolframe::crypto::RandomGenerator"></OBJECT>
@@ -7949,9 +8011,14 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace__Wolframe_1_1langbind.html#a78f75ab2b62e6802f299b47ad637757a"><param name="Name" value="_Wolframe::langbind"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace__Wolframe_1_1langbind.html#a78f75ab2b62e6802f299b47ad637757a"><param name="Name" value="runtimeEnvironment.hpp"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordHash.html#a964b8d1eccb2afbe4ada5dd523025278"><param name="Name" value="salt"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1Platform.html#a4b38f90bc142a376cb37b02ca1e06a34"><param name="Name" value="runtimePlatform"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1CRAMsalt.html#a78584571234bfe460d306515de757226"><param name="Name" value="salt"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1CRAMsalt.html#a78584571234bfe460d306515de757226"><param name="Name" value="_Wolframe::AAAA::CRAMsalt"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordHash.html#a964b8d1eccb2afbe4ada5dd523025278"><param name="Name" value="_Wolframe::AAAA::PasswordHash"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordHash_1_1Salt.html#a05bd56e3d0e62106510579fa0772e0cd"><param name="Name" value="_Wolframe::AAAA::PasswordHash::Salt"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordHash_1_1Salt.html#a5bcd9f736a532d3008018c1bd56a0195"><param name="Name" value="Salt"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordHash_1_1Salt.html#a05bd56e3d0e62106510579fa0772e0cd"><param name="Name" value="salt"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1BigNumber.html#ad7a2fcada5595bb4e18de90cbbd73f2b"><param name="Name" value="scale"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1DateTime.html#a7d6b9ec3168496320ae48d637f4bf6ad"><param name="Name" value="second"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1config_1_1ConfigurationBase.html#ab27bb96d7c0f7994938d452797d1bc50"><param name="Name" value="sectionName"></OBJECT>
@@ -8077,7 +8144,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1langbind_1_1FilterBase.html#a19d37dce59079acc64ed50466c650191"><param name="Name" value="_Wolframe::langbind::FilterBase"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1PropertyTree_1_1Node.html#a18c4ed40945d6639e0bfbce82ae858db"><param name="Name" value="_Wolframe::types::PropertyTree::Node"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1ErrorLevel.html#a8416d7d92a9d547be4b5320bf25d072ba04b234e1e29ca4fc31ad2988306fc683"><param name="Name" value="SEVERE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1ErrorLevel.html#a7b8da1944a98a0432a85f4dda502d0e2a04b234e1e29ca4fc31ad2988306fc683"><param name="Name" value="SEVERE"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="sha1_8h.html"><param name="Name" value="sha1.h"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="sha1_8h.html#a8630170b5382d69a6aba0f5e631eb3b0"><param name="Name" value="sha1"></OBJECT>
@@ -8173,9 +8240,9 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="sha2_8h.html#ad2952303794500fc52468e7c78b6af8f"><param name="Name" value="sha512_final"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="sha2_8h.html#ae4153d552c0f7c54f4f9596212136bb5"><param name="Name" value="sha512_init"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="sha2_8h.html#aea6ab702737ad9837493fb0b9e9e07e8"><param name="Name" value="sha512_update"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a919d700259af8ff5f0b8587c3e132a6badbb72b6147e62fba8c64c5eee8bd7fc5"><param name="Name" value="Shift_ArgumentIndex"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a919d700259af8ff5f0b8587c3e132a6ba2151a671388be92b23e58d7eef958932"><param name="Name" value="Shift_CondCode"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a919d700259af8ff5f0b8587c3e132a6bad3526a5a4ab709d2c46291c4a59a59c4"><param name="Name" value="Shift_OpCode"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a8cdc859b1dc39958fa01f0f6210529eaadbb72b6147e62fba8c64c5eee8bd7fc5"><param name="Name" value="Shift_ArgumentIndex"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a8cdc859b1dc39958fa01f0f6210529eaa2151a671388be92b23e58d7eef958932"><param name="Name" value="Shift_CondCode"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a8cdc859b1dc39958fa01f0f6210529eaad3526a5a4ab709d2c46291c4a59a59c4"><param name="Name" value="Shift_OpCode"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1BigNumber.html#a24d38870d6dc6fd2e547b05051d2439e"><param name="Name" value="sign"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1net_1_1ConnectionHandler.html#abd7c71cbff432ce52ad9244b8eb16c42"><param name="Name" value="signalOccured"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1module_1_1ModuleEntryPoint.html#a077be0fea028112785f983aa08c36c4e"><param name="Name" value="signature"></OBJECT>
@@ -8194,6 +8261,8 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1CRAMchallenge.html#a859a689492fbd8a050267dd400b42a57"><param name="Name" value="_Wolframe::AAAA::CRAMchallenge"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1CRAMresponse.html#a355c76572efb9364ffa359b12784aa1f"><param name="Name" value="_Wolframe::AAAA::CRAMresponse"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1CRAMsalt.html#a17b308f4f51a4cdcf0b429072885750c"><param name="Name" value="_Wolframe::AAAA::CRAMsalt"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangeMessage.html#afe6eab5e59cc98be4458527530724cb7"><param name="Name" value="_Wolframe::AAAA::PasswordChangeMessage"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordHash_1_1Hash.html#a9efeabf3471c0fe4a77570c12b73a57b"><param name="Name" value="_Wolframe::AAAA::PasswordHash::Hash"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordHash_1_1Salt.html#a3a4e2a30253632aa99d63d64838ba9c4"><param name="Name" value="_Wolframe::AAAA::PasswordHash::Salt"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1crypto_1_1HMAC__SHA1.html#ab6cf144959850901c752b2ee8b17c381"><param name="Name" value="_Wolframe::crypto::HMAC_SHA1"></OBJECT>
@@ -8206,7 +8275,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1protocol_1_1Buffer.html#a2fb84216e167bd71c98ab80b14b3a8d9"><param name="Name" value="_Wolframe::protocol::Buffer"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1protocol_1_1CArgBuffer.html#a8d14b6ecacb1f13842d77b0e140f0d8f"><param name="Name" value="_Wolframe::protocol::CArgBuffer"></OBJECT>
   </UL>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1protocol_1_1CArgBuffer.html#a584dcafc3d6819b966f0fdc2bbc60aa4ac5aa5cb1d08c0289048c2bc774f7e02b"><param name="Name" value="Size"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1protocol_1_1CArgBuffer.html#ad4ce343c5c5025783bb1626587dad571ac5aa5cb1d08c0289048c2bc774f7e02b"><param name="Name" value="Size"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1protocol_1_1CmdParser.html#adb9af5eb80fbff582739db9b9cdb7ab3"><param name="Name" value="size"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1protocol_1_1CmdParser.html#adb9af5eb80fbff582739db9b9cdb7ab3"><param name="Name" value="_Wolframe::protocol::CmdParser"></OBJECT>
@@ -8269,12 +8338,12 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1langbind_1_1OutputFilter.html#a80b7f92fb4df8347b0914cc4b94b4bf5"><param name="Name" value="_Wolframe::langbind::OutputFilter"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1langbind_1_1PropertyTreeOutputFilter_1_1State.html#a356464801c58ecefc6220f58113385df"><param name="Name" value="State"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1langbind_1_1TypedInputFilter.html#ae56c8d88afc81b23bc188de7a44633d1"><param name="Name" value="state"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1langbind_1_1TypedInputFilter.html#a7abc9f0be9859c1c05ef1b74c4c586b7"><param name="Name" value="State"></OBJECT>
   <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1langbind_1_1PropertyTreeOutputFilter_1_1State.html#a356464801c58ecefc6220f58113385df"><param name="Name" value="_Wolframe::langbind::PropertyTreeOutputFilter::State"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1langbind_1_1TypedInputFilter.html#a7abc9f0be9859c1c05ef1b74c4c586b7"><param name="Name" value="_Wolframe::langbind::TypedInputFilter"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1langbind_1_1TypedOutputFilter.html#af58b5041c5d1e47f4c9cde657596e377"><param name="Name" value="_Wolframe::langbind::TypedOutputFilter"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1langbind_1_1TypedInputFilter.html#ae56c8d88afc81b23bc188de7a44633d1"><param name="Name" value="state"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1langbind_1_1TypedOutputFilter.html#af58b5041c5d1e47f4c9cde657596e377"><param name="Name" value="State"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1langbind_1_1TypedOutputFilter.html#a98828300ad5a3056f919d2148470cc15"><param name="Name" value="state"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1langbind_1_1TypedOutputFilter.html#a98828300ad5a3056f919d2148470cc15"><param name="Name" value="_Wolframe::langbind::TypedOutputFilter"></OBJECT>
@@ -8297,14 +8366,12 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1Authenticator.html#a385c9a54f3963a89c9c4e808411d9177"><param name="Name" value="_Wolframe::AAAA::Authenticator"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AuthenticatorSlice.html#a0c8ac4ee9d44e2ba95d0b6b8af286944"><param name="Name" value="_Wolframe::AAAA::AuthenticatorSlice"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChanger.html#a05ac4697d6df99eb54e1a6405761e85b"><param name="Name" value="_Wolframe::AAAA::PasswordChanger"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangerSlice.html#acac5cf1f35095d5b855d8f96a841a7a0"><param name="Name" value="_Wolframe::AAAA::PasswordChangerSlice"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1Authenticator.html#ae9cb65e459fb250889aafd5d24b873dc"><param name="Name" value="statusName"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1Authenticator.html#ae9cb65e459fb250889aafd5d24b873dc"><param name="Name" value="_Wolframe::AAAA::Authenticator"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AuthenticatorSlice.html#ab905c84627af7d21c20af39d2edfa745"><param name="Name" value="_Wolframe::AAAA::AuthenticatorSlice"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChanger.html#a537f80972c25b0eeabc36ee5132f109a"><param name="Name" value="_Wolframe::AAAA::PasswordChanger"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangerSlice.html#aa5d1bab35a05dd5b503c5380235c7f4f"><param name="Name" value="_Wolframe::AAAA::PasswordChangerSlice"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacestd.html"><param name="Name" value="std"></OBJECT>
   <UL>
@@ -8392,7 +8459,6 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1Authenticator.html#a9dfdf77dd405ff219772c0f5aed31380a4f0bc80c593e47ff0455bd600d39d7e0"><param name="Name" value="_Wolframe::AAAA::Authenticator"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1AuthenticatorSlice.html#a73d7382cdbebff714b96b0a306943ae0a1fab9388e835713ebd24f3a77fd0f3e7"><param name="Name" value="_Wolframe::AAAA::AuthenticatorSlice"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChanger.html#a6881bad362da4ab420b94af2fadb864babf218a1c31080478ba358cfec8826cc2"><param name="Name" value="_Wolframe::AAAA::PasswordChanger"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangerSlice.html#a3d84f7728c64c2059175ebc67dc0d6eda5f44c71b3d56a49e7d964f11c6102d18"><param name="Name" value="_Wolframe::AAAA::PasswordChangerSlice"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1serialize_1_1DDLSerializeState.html#ab972815c8ca608fe45d62aadcf2f695f"><param name="Name" value="tag"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1db_1_1vm_1_1ProgramInstance.html#aa4154c7533bba1e1ba20aaf78690c1d1"><param name="Name" value="tagnameArgument"></OBJECT>
@@ -8426,10 +8492,12 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1VariantStruct.html#a7d294515f8f832121d483182e9280af4a21f964f20c5608672b238f994c2563d7"><param name="Name" value="_Wolframe::types::VariantStruct"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace__Wolframe_1_1types.html#a9aaefa8c94770095836ed428e76c5d11"><param name="Name" value="datetime.hpp"></OBJECT>
   </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangeMessage.html#a364e83bb208299a23d9d5c1b50c3f31d"><param name="Name" value="toBase64"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1CRAMchallenge.html#a85ddf0a3d771b35b5435bb93720d2ab1"><param name="Name" value="toBCD"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1CRAMchallenge.html#a85ddf0a3d771b35b5435bb93720d2ab1"><param name="Name" value="_Wolframe::AAAA::CRAMchallenge"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1CRAMresponse.html#a5427d5bec3a287abd44d96e9692239e8"><param name="Name" value="_Wolframe::AAAA::CRAMresponse"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1CRAMsalt.html#aefd11b777cf80a030a8ac9cb8e691db5"><param name="Name" value="_Wolframe::AAAA::CRAMsalt"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordHash.html#a9d8e6760fb69a62780912d83f323dff1"><param name="Name" value="_Wolframe::AAAA::PasswordHash"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordHash_1_1Hash.html#a5d944493146fbc21f28c230028dead1c"><param name="Name" value="_Wolframe::AAAA::PasswordHash::Hash"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordHash_1_1Salt.html#a1028b35d35f404cfc257bfd5352e5894"><param name="Name" value="_Wolframe::AAAA::PasswordHash::Salt"></OBJECT>
@@ -8455,6 +8523,7 @@
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1CRAMchallenge.html#a4d9a10b265ea0358760797ed2993af15"><param name="Name" value="_Wolframe::AAAA::CRAMchallenge"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1CRAMresponse.html#a7d0ed421987cd5002bf5cb4cdc73de28"><param name="Name" value="_Wolframe::AAAA::CRAMresponse"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1CRAMsalt.html#ad51635154a543755e2b817c127fcac7c"><param name="Name" value="_Wolframe::AAAA::CRAMsalt"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordHash.html#af80152bcd866d66f323c9da000bbb5a7"><param name="Name" value="_Wolframe::AAAA::PasswordHash"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordHash_1_1Hash.html#ab3f8868739cfd740739b22fe04a40d70"><param name="Name" value="_Wolframe::AAAA::PasswordHash::Hash"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordHash_1_1Salt.html#a1c7cedb4d5d71e308504bca9e424d6a2"><param name="Name" value="_Wolframe::AAAA::PasswordHash::Salt"></OBJECT>
@@ -8470,6 +8539,10 @@
     <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1log_1_1LogObjectDescriptionBase_1_1FormatElement.html#a98b8bddba9a641e9127e92db93e5ea4b"><param name="Name" value="_Wolframe::log::LogObjectDescriptionBase::FormatElement"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1net_1_1ConnectionEndpoint.html#a5dbf0c6adafcadcc72e5549d6991a31a"><param name="Name" value="toString"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1net_1_1ConnectionEndpoint.html#a5dbf0c6adafcadcc72e5549d6991a31a"><param name="Name" value="_Wolframe::net::ConnectionEndpoint"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1Platform.html#a80b05292702bf1b87e3498ef0f3e2710"><param name="Name" value="_Wolframe::Platform"></OBJECT>
+  </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1BigNumber.html#a2af07b1ade66b53523a0b24f2a61831d"><param name="Name" value="tostring"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataType.html#af6252f8eb827802e97e6e610e42bf0bca4a9f7ce2e3bea24b81160af2fe56072e"><param name="Name" value="ToString"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataValue.html#a62a87ef5c08c1e09645759da6cbd285d"><param name="Name" value="tostring"></OBJECT>
@@ -8705,7 +8778,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1types_1_1traits_1_1is__back__insertion__sequence.html#ade8d21cdf4ec1e30e0db3ba5848ed61a"><param name="Name" value="value"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1types_1_1traits_1_1is__back__insertion__sequence.html#ade8d21cdf4ec1e30e0db3ba5848ed61a"><param name="Name" value="_Wolframe::types::traits::is_back_insertion_sequence"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1types_1_1Variant_1_1Data.html#a749acf97b84f372e64a7e33783da5fb7"><param name="Name" value="_Wolframe::types::Variant::Data"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1types_1_1Variant_1_1Data.html#a8ac2ce65b4ea5eb37b79a8ccebeafc9b"><param name="Name" value="_Wolframe::types::Variant::Data"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1protocol_1_1iterator__t.html#afb3a03a6ef3817cbc4324514639c85cf"><param name="Name" value="value_type"></OBJECT>
   <UL>
@@ -8760,7 +8833,7 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1db_1_1VmTransactionOutput.html#a26211e5929185fb392bf25b7777e791b"><param name="Name" value="VmTransactionOutput"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1String.html#a868cace8dafdeb2555605d6d51b4417e"><param name="Name" value="w_str"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1ErrorLevel.html#a8416d7d92a9d547be4b5320bf25d072ba3fe32785da04c0fb342bc60db4b5ff23"><param name="Name" value="WARNING"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1ErrorLevel.html#a7b8da1944a98a0432a85f4dda502d0e2a3fe32785da04c0fb342bc60db4b5ff23"><param name="Name" value="WARNING"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="authenticationModuleMacros_8hpp.html#ab782c01deda60acb1a09e0b63c278dae"><param name="Name" value="WF_AUTHENTICATOR"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="commandHandlerModuleMacros_8hpp.html#aaf2b977b9619e27363795a61e7cdb441"><param name="Name" value="WF_COMMAND_HANDLER"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="customDatatypeModuleMacros_8hpp.html#a3bf00fa9fee9b2aed5ca8a9468626dd1"><param name="Name" value="WF_CUSTOM_DATATYPE"></OBJECT>
@@ -8885,6 +8958,7 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1module_1_1CppFormFunctionConstructor.html#ae7dda56919df0efb84cca4cc6bd55e75"><param name="Name" value="~CppFormFunctionConstructor"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1CRAMchallenge.html#a7b0b56c940c38d4848169133707d78ea"><param name="Name" value="~CRAMchallenge"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1CRAMresponse.html#a8ff7ce85e7fbbbccdddead248f62f587"><param name="Name" value="~CRAMresponse"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1CRAMsalt.html#aa6ce2764bde3dbf94e5e94dafc82814b"><param name="Name" value="~CRAMsalt"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataInitializer.html#a34d8109914df42722266ed8940580e72"><param name="Name" value="~CustomDataInitializer"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataMethodCallNormalizer.html#a9842f9a7c1ccef6779eac813d5c55299"><param name="Name" value="~CustomDataMethodCallNormalizer"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1types_1_1CustomDataNormalizer.html#a38a926dde05eef6d2edfc27e579dc223"><param name="Name" value="~CustomDataNormalizer"></OBJECT>
@@ -8952,8 +9026,8 @@
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1langbind_1_1Output.html#a9a0aa1f8cf2979a31b38394bf308ac57"><param name="Name" value="~Output"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1langbind_1_1OutputFilter.html#a8b29cb080a5be4ec68e14ce5fdd41dbf"><param name="Name" value="~OutputFilter"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1serialize_1_1ParseState.html#a452723e768a7d6afd1cbdb4506e990b8"><param name="Name" value="~ParseState"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangeMessage.html#ab22e7ccfa26fed8afaa21ef5d4828bd9"><param name="Name" value="~PasswordChangeMessage"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChanger.html#a8fb292e68da3eddb53f49a4480236f2b"><param name="Name" value="~PasswordChanger"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1AAAA_1_1PasswordChangerSlice.html#a919dac03eba0840ee0f6607372f92649"><param name="Name" value="~PasswordChangerSlice"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1crypto_1_1PBKDF2__HMAC__SHA1.html#a6ce4b8ed2298ae6a6ee0c6a2b754d6fe"><param name="Name" value="~PBKDF2_HMAC_SHA1"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="struct__Wolframe_1_1types_1_1CountedReference_1_1Pointer.html#a6dcaec4ecc5be03335447e4250595c5d"><param name="Name" value="~Pointer"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="class__Wolframe_1_1PoolObject.html#a82b264c644b96dcf17bc75a4cf32d08a"><param name="Name" value="~PoolObject"></OBJECT>

@@ -24,7 +24,7 @@ authUnit_8hpp_source.html
 CRAM_8hpp_source.html
 passwordChanger_8hpp_source.html
 passwordHash_8hpp_source.html
-pwdChangerSlice_8hpp_source.html
+pwdChangeMessage_8hpp_source.html
 user_8hpp_source.html
 appConfig_8hpp_source.html
 appDevel_8hpp_source.html
@@ -120,6 +120,7 @@ logSyslogFacility_8hpp_source.html
 constructor_8hpp_source.html
 moduleDirectory_8hpp_source.html
 moduleInterface_8hpp_source.html
+platform_8hpp_source.html
 authorizationProgram_8hpp_source.html
 ddlProgram_8hpp_source.html
 normalizeProgram_8hpp_source.html
@@ -217,7 +218,7 @@ authUnit_8hpp.html
 CRAM_8hpp.html
 passwordChanger_8hpp.html
 passwordHash_8hpp.html
-pwdChangerSlice_8hpp.html
+pwdChangeMessage_8hpp.html
 user_8hpp.html
 appConfig_8hpp.html
 appDevel_8hpp.html
@@ -313,6 +314,7 @@ logSyslogFacility_8hpp.html
 constructor_8hpp.html
 moduleDirectory_8hpp.html
 moduleInterface_8hpp.html
+platform_8hpp.html
 authorizationProgram_8hpp.html
 ddlProgram_8hpp.html
 normalizeProgram_8hpp.html
@@ -436,6 +438,8 @@ class__Wolframe_1_1ObjectConstructorBase-members.html
 class__Wolframe_1_1ObjectPool.html
 class__Wolframe_1_1ObjectPool-members.html
 class__Wolframe_1_1ObjectPoolTimeout.html
+class__Wolframe_1_1Platform.html
+class__Wolframe_1_1Platform-members.html
 class__Wolframe_1_1PoolObject.html
 class__Wolframe_1_1PoolObject-members.html
 class__Wolframe_1_1ServerHandler.html
@@ -469,12 +473,14 @@ class__Wolframe_1_1AAAA_1_1CRAMchallenge.html
 class__Wolframe_1_1AAAA_1_1CRAMchallenge-members.html
 class__Wolframe_1_1AAAA_1_1CRAMresponse.html
 class__Wolframe_1_1AAAA_1_1CRAMresponse-members.html
+class__Wolframe_1_1AAAA_1_1CRAMsalt.html
+class__Wolframe_1_1AAAA_1_1CRAMsalt-members.html
 class__Wolframe_1_1AAAA_1_1Information.html
 class__Wolframe_1_1AAAA_1_1Information-members.html
+class__Wolframe_1_1AAAA_1_1PasswordChangeMessage.html
+class__Wolframe_1_1AAAA_1_1PasswordChangeMessage-members.html
 class__Wolframe_1_1AAAA_1_1PasswordChanger.html
 class__Wolframe_1_1AAAA_1_1PasswordChanger-members.html
-class__Wolframe_1_1AAAA_1_1PasswordChangerSlice.html
-class__Wolframe_1_1AAAA_1_1PasswordChangerSlice-members.html
 class__Wolframe_1_1AAAA_1_1PasswordHash.html
 class__Wolframe_1_1AAAA_1_1PasswordHash-members.html
 class__Wolframe_1_1AAAA_1_1PasswordHash_1_1Hash.html

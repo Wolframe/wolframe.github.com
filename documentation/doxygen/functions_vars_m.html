@@ -382,6 +382,15 @@
 <li>m_device
 : <a class="el" href="class__Wolframe_1_1GlobalRandomGenerator.html#acdcd42246d99e9182e3023b26e22de85">_Wolframe::GlobalRandomGenerator</a>
 </li>
+<li>m_distro
+: <a class="el" href="class__Wolframe_1_1Platform.html#acccb60534d6d9efb8b58970aa14ffbb8">_Wolframe::Platform</a>
+</li>
+<li>m_distro_major
+: <a class="el" href="class__Wolframe_1_1Platform.html#aa860f7a4f77ea87e3e59e1493fff59fa">_Wolframe::Platform</a>
+</li>
+<li>m_distro_minor
+: <a class="el" href="class__Wolframe_1_1Platform.html#aa6153fc86c368b07c6d9816f909bb25b">_Wolframe::Platform</a>
+</li>
 <li>m_dkLen
 : <a class="el" href="class__Wolframe_1_1crypto_1_1PBKDF2__HMAC__SHA1.html#a5357e27f3b94a74768477059d2834232">_Wolframe::crypto::PBKDF2_HMAC_SHA1</a>
 </li>
@@ -496,10 +505,19 @@
 <li>m_hasBuild
 : <a class="el" href="class__Wolframe_1_1Version.html#aefae1492888a3aec4a733f01a4686c13">_Wolframe::Version</a>
 </li>
+<li>m_hasDisto
+: <a class="el" href="class__Wolframe_1_1Platform.html#a5edcc9414b8f7db9c38581ad56c686bb">_Wolframe::Platform</a>
+</li>
+<li>m_hasDistroVersion
+: <a class="el" href="class__Wolframe_1_1Platform.html#ae856936ae3db1e5583451b010694b4aa">_Wolframe::Platform</a>
+</li>
 <li>m_hash
 : <a class="el" href="class__Wolframe_1_1AAAA_1_1PasswordHash_1_1Hash.html#aae3a508af4ce4d387c04f77614c271b6">_Wolframe::AAAA::PasswordHash::Hash</a>
 , <a class="el" href="class__Wolframe_1_1AAAA_1_1PasswordHash.html#a5a92b3d8556d9c738fce024c9cb2940e">_Wolframe::AAAA::PasswordHash</a>
 , <a class="el" href="class__Wolframe_1_1crypto_1_1PBKDF2__HMAC__SHA1.html#a660f770f44a9f5b25bd95dc31416a623">_Wolframe::crypto::PBKDF2_HMAC_SHA1</a>
+</li>
+<li>m_hasOsVersion
+: <a class="el" href="class__Wolframe_1_1Platform.html#a99505c053d43ebafa990758f5dd4e853">_Wolframe::Platform</a>
 </li>
 <li>m_hasRevision
 : <a class="el" href="class__Wolframe_1_1Version.html#aa9b8fa24aa5e83b50ede73b5ebb19753">_Wolframe::Version</a>
@@ -648,6 +666,9 @@
 <li>m_mech
 : <a class="el" href="class__Wolframe_1_1AAAA_1_1User.html#ab997916ef7a83f0e63c0ce68f41b8393">_Wolframe::AAAA::User</a>
 </li>
+<li>m_message
+: <a class="el" href="class__Wolframe_1_1AAAA_1_1PasswordChangeMessage.html#a91cffdb1af10f6ae8cbde3d8d2c49e46">_Wolframe::AAAA::PasswordChangeMessage</a>
+</li>
 <li>m_metadata
 : <a class="el" href="class__Wolframe_1_1langbind_1_1InputFilter.html#abbb8f2b777d292143f51042d3164d4e2">_Wolframe::langbind::InputFilter</a>
 , <a class="el" href="class__Wolframe_1_1langbind_1_1OutputFilter.html#a19258c6c2fa296f5ee85d5011b2b4aa0">_Wolframe::langbind::OutputFilter</a>
@@ -754,6 +775,13 @@
 </li>
 <li>m_os
 : <a class="el" href="class__Wolframe_1_1log_1_1Logger.html#ae7984823fbf91dcd6b7a1641c151a448">_Wolframe::log::Logger</a>
+, <a class="el" href="class__Wolframe_1_1Platform.html#a2cb4e6b06106faaa35802afd31e32341">_Wolframe::Platform</a>
+</li>
+<li>m_os_major
+: <a class="el" href="class__Wolframe_1_1Platform.html#a9e483fb2b90ed73e13140be79acef36d">_Wolframe::Platform</a>
+</li>
+<li>m_os_minor
+: <a class="el" href="class__Wolframe_1_1Platform.html#abdc22f7e9728d8197fcb13eb41153663">_Wolframe::Platform</a>
 </li>
 <li>m_out
 : <a class="el" href="class__Wolframe_1_1serialize_1_1DDLStructSerializer.html#afe7270e60aa660f1e9177d98b6db8dc9">_Wolframe::serialize::DDLStructSerializer</a>
@@ -892,7 +920,8 @@
 : <a class="el" href="class__Wolframe_1_1db_1_1Transaction_1_1Result.html#ab0397ba68fff3f4e8a2d9905a03d8fe0">_Wolframe::db::Transaction::Result</a>
 </li>
 <li>m_salt
-: <a class="el" href="class__Wolframe_1_1AAAA_1_1PasswordHash.html#a480b3e69708145ec5751625c00fb42b3">_Wolframe::AAAA::PasswordHash</a>
+: <a class="el" href="class__Wolframe_1_1AAAA_1_1CRAMsalt.html#a007c98a7ae3704261345804e72508057">_Wolframe::AAAA::CRAMsalt</a>
+, <a class="el" href="class__Wolframe_1_1AAAA_1_1PasswordHash.html#a480b3e69708145ec5751625c00fb42b3">_Wolframe::AAAA::PasswordHash</a>
 , <a class="el" href="class__Wolframe_1_1AAAA_1_1PasswordHash_1_1Salt.html#aab31459302b0b4b56a7155f613e3f049">_Wolframe::AAAA::PasswordHash::Salt</a>
 </li>
 <li>m_sbuf
@@ -1086,7 +1115,7 @@
 : <a class="el" href="class__Wolframe_1_1ApplicationInfo.html#a67f9b4c7565beaf312fe097a15c40a13">_Wolframe::ApplicationInfo</a>
 </li>
 <li>m_vmt
-: <a class="el" href="class__Wolframe_1_1types_1_1CustomDataType.html#a82473e40def60e7a88b026f57528e4cd">_Wolframe::types::CustomDataType</a>
+: <a class="el" href="class__Wolframe_1_1types_1_1CustomDataType.html#a8e931b457cef40c72c331ea6a2b4499d">_Wolframe::types::CustomDataType</a>
 </li>
 <li>m_writedata
 : <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a9e506fad7d98bc8ad20805ddbd8fb890">_Wolframe::cmdbind::IOFilterCommandHandlerEscDLF</a>
@@ -1118,7 +1147,7 @@
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 29 2014 13:48:08 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 1 2014 17:48:30 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

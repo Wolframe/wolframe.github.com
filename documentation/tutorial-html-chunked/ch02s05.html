@@ -58,7 +58,7 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.5. Step 5 - Implement client side customer list</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch02s04.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Steps</th><td width="20%" align="right"> <a accesskey="n" href="ch02s06.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1383259060"></a>2.5. Step 5 - Implement client side customer list</h2></div></div></div><p>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.5. Step 5 - Implement client side customer list</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch02s04.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Steps</th><td width="20%" align="right"> <a accesskey="n" href="ch02s06.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1381288100"></a>2.5. Step 5 - Implement client side customer list</h2></div></div></div><p>
 		It's time now to get something working visually, so we start to add a first
 		simple interface to our wolfclient.
 	</p><p>
@@ -96,7 +96,7 @@
 		the following value:
 
 		</p><pre class="programlisting">
-	CustomerListRequest customer { }
+CustomerListRequest customer { }
 		</pre><p>
 		
 		We define the 'action' to be executed, when the form is loaded. In our
@@ -117,19 +117,19 @@
 		We want to map the following XML:
 
 		</p><pre class="programlisting">
-	&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
-	&lt;list&gt;
-	  &lt;customer&gt;
-	    &lt;id&gt;1&lt;/id&gt;
-	    &lt;name&gt;Dr Who&lt;/name&gt;
-	    &lt;address&gt;Blue Police Box&lt;/address&gt;
-	  &lt;/customer&gt;
-	  &lt;customer&gt;
-	    &lt;id&gt;2&lt;/id&gt;
-	    &lt;name&gt;John Smith&lt;/name&gt;
-	    &lt;address&gt;The Wheel in Space&lt;/address&gt;
-	  &lt;/customer&gt;
-	&lt;/list&gt;
+&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;list&gt;
+    &lt;customer&gt;
+        &lt;id&gt;1&lt;/id&gt;
+        &lt;name&gt;Dr Who&lt;/name&gt;
+        &lt;address&gt;Blue Police Box&lt;/address&gt;
+    &lt;/customer&gt;
+    &lt;customer&gt;
+        &lt;id&gt;2&lt;/id&gt;
+        &lt;name&gt;John Smith&lt;/name&gt;
+        &lt;address&gt;The Wheel in Space&lt;/address&gt;
+    &lt;/customer&gt;
+&lt;/list&gt;
 
 		</pre><p>
 		
@@ -138,13 +138,13 @@
 		dynamic property 'answer' similar to the 'action' property:
 		
 		</p><pre class="programlisting">
-	CustomerList list {
-	    customer[] {
-	        id={?};
-	        name{{row.name}};
-	        address{{row.address}}
-	    }
-	}
+CustomerList list {
+    customer[] {
+        id={?};
+        name{{row.name}};
+        address{{row.address}}
+    }
+}
 		</pre><p>
 		
 		The line breaks and indentation are optional and you can write the mapping
@@ -167,9 +167,9 @@
 		change the definition in the file <code class="filename">tutorial.dmap</code> we 
 		created in step 4 in the following way:
 	</p><pre class="programlisting">
-	COMMAND CustomerListRequest
-	        CALL SelectCustomerList
-	        RETURN SKIP CustomerList {root='list'};
+COMMAND CustomerListRequest
+    CALL SelectCustomerList
+    RETURN SKIP CustomerList {root='list'};
 	</pre><p>
 	The directive "RETURN SKIP CustomerList {root='list'}" states that a document
 	of type 'CustomerList' with the root element 'list' is returned

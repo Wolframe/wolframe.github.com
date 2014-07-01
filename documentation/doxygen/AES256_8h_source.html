@@ -111,43 +111,48 @@
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">*   The original code is available from http://www.literatecode.com/aes256</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="structAES256__context.html">   28</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct  </span>{</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="structAES256__context.html#a8d3ad18122d2db750740df09ed84d42d">   29</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>   key[ 32 ];</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="structAES256__context.html#a1fc956dc74852a17c0145f3adf0f1c2f">   30</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>   enckey[ 32 ];</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="structAES256__context.html#af51072b8b837476e41d42d5d28deec80">   31</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>   deckey[ 32 ];</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;} <a class="code" href="structAES256__context.html">AES256_context</a>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">void</span> <a class="code" href="AES256_8h.html#a2d62c0f52f5a1f2aade8878c17f7cce2">AES256_init</a>( <a class="code" href="structAES256__context.html">AES256_context</a> *ctx, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *key );</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keywordtype">void</span> <a class="code" href="AES256_8h.html#a2e5d5d12355f0eb3bd54208e0b9d8b6e">AES256_done</a>( <a class="code" href="structAES256__context.html">AES256_context</a> *ctx );</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#ifndef _AES256_HPP_INCLUDED</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#define _AES256_HPP_INCLUDED</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="structAES256__context.html">   31</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct  </span>{</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="structAES256__context.html#a8d3ad18122d2db750740df09ed84d42d">   32</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>   key[ 32 ];</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structAES256__context.html#a1fc956dc74852a17c0145f3adf0f1c2f">   33</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>   enckey[ 32 ];</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="structAES256__context.html#af51072b8b837476e41d42d5d28deec80">   34</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>   deckey[ 32 ];</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;} <a class="code" href="structAES256__context.html">AES256_context</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">void</span> <a class="code" href="AES256_8h.html#a5f4012a6d29124f03badb516c9cd8885">AES256_encrypt_ECB</a>( <a class="code" href="structAES256__context.html">AES256_context</a> *ctx, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *plaintext );</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">void</span> <a class="code" href="AES256_8h.html#a50aa060f46240dff47bd94385a5c60da">AES256_decrypt_ECB</a>( <a class="code" href="structAES256__context.html">AES256_context</a> *ctx, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *ciphertext );</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">void</span> <a class="code" href="AES256_8h.html#a8427b139f2591952f46560143c0fdc05">AES256_init</a>( <a class="code" href="structAES256__context.html">AES256_context</a> *ctx, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *key );</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">void</span> <a class="code" href="AES256_8h.html#a2e5d5d12355f0eb3bd54208e0b9d8b6e">AES256_done</a>( <a class="code" href="structAES256__context.html">AES256_context</a> *ctx );</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">int</span> <a class="code" href="AES256_8h.html#a9a7bb2fd182ed50823eba8228681bea4">AES256_encrypt_CBC</a>( <a class="code" href="structAES256__context.html">AES256_context</a> *ctx, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *IV,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *plaintext, <span class="keywordtype">unsigned</span> size );</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">int</span> <a class="code" href="AES256_8h.html#a4a0eff62d67c4fefe413e2d19f94fe49">AES256_decrypt_CBC</a>( <a class="code" href="structAES256__context.html">AES256_context</a> *ctx, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *IV,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *ciphertext, <span class="keywordtype">unsigned</span> size );</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="structAES256__context_html"><div class="ttname"><a href="structAES256__context.html">AES256_context</a></div><div class="ttdef"><b>Definition:</b> AES256.h:28</div></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">void</span> <a class="code" href="AES256_8h.html#a5f4012a6d29124f03badb516c9cd8885">AES256_encrypt_ECB</a>( <a class="code" href="structAES256__context.html">AES256_context</a> *ctx, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *plaintext );</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">void</span> <a class="code" href="AES256_8h.html#a50aa060f46240dff47bd94385a5c60da">AES256_decrypt_ECB</a>( <a class="code" href="structAES256__context.html">AES256_context</a> *ctx, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *ciphertext );</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">int</span> <a class="code" href="AES256_8h.html#a55d7da5efce8afe43d2a2acaa487674f">AES256_encrypt_CBC</a>( <a class="code" href="structAES256__context.html">AES256_context</a> *ctx, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *IV,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *plaintext, <span class="keywordtype">unsigned</span> size );</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">int</span> <a class="code" href="AES256_8h.html#ab994ae19bef2b5ee35a49f516aa7a025">AES256_decrypt_CBC</a>( <a class="code" href="structAES256__context.html">AES256_context</a> *ctx, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *IV,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *ciphertext, <span class="keywordtype">unsigned</span> size );</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif // _AES256_HPP_INCLUDED</span></div>
+<div class="ttc" id="AES256_8h_html_ab994ae19bef2b5ee35a49f516aa7a025"><div class="ttname"><a href="AES256_8h.html#ab994ae19bef2b5ee35a49f516aa7a025">AES256_decrypt_CBC</a></div><div class="ttdeci">int AES256_decrypt_CBC(AES256_context *ctx, const unsigned char *IV, unsigned char *ciphertext, unsigned size)</div></div>
+<div class="ttc" id="structAES256__context_html"><div class="ttname"><a href="structAES256__context.html">AES256_context</a></div><div class="ttdef"><b>Definition:</b> AES256.h:31</div></div>
 <div class="ttc" id="AES256_8h_html_a5f4012a6d29124f03badb516c9cd8885"><div class="ttname"><a href="AES256_8h.html#a5f4012a6d29124f03badb516c9cd8885">AES256_encrypt_ECB</a></div><div class="ttdeci">void AES256_encrypt_ECB(AES256_context *ctx, unsigned char *plaintext)</div></div>
 <div class="ttc" id="AES256_8h_html_a2e5d5d12355f0eb3bd54208e0b9d8b6e"><div class="ttname"><a href="AES256_8h.html#a2e5d5d12355f0eb3bd54208e0b9d8b6e">AES256_done</a></div><div class="ttdeci">void AES256_done(AES256_context *ctx)</div></div>
-<div class="ttc" id="AES256_8h_html_a9a7bb2fd182ed50823eba8228681bea4"><div class="ttname"><a href="AES256_8h.html#a9a7bb2fd182ed50823eba8228681bea4">AES256_encrypt_CBC</a></div><div class="ttdeci">int AES256_encrypt_CBC(AES256_context *ctx, unsigned char *IV, unsigned char *plaintext, unsigned size)</div></div>
-<div class="ttc" id="AES256_8h_html_a2d62c0f52f5a1f2aade8878c17f7cce2"><div class="ttname"><a href="AES256_8h.html#a2d62c0f52f5a1f2aade8878c17f7cce2">AES256_init</a></div><div class="ttdeci">void AES256_init(AES256_context *ctx, unsigned char *key)</div></div>
-<div class="ttc" id="AES256_8h_html_a4a0eff62d67c4fefe413e2d19f94fe49"><div class="ttname"><a href="AES256_8h.html#a4a0eff62d67c4fefe413e2d19f94fe49">AES256_decrypt_CBC</a></div><div class="ttdeci">int AES256_decrypt_CBC(AES256_context *ctx, unsigned char *IV, unsigned char *ciphertext, unsigned size)</div></div>
+<div class="ttc" id="AES256_8h_html_a55d7da5efce8afe43d2a2acaa487674f"><div class="ttname"><a href="AES256_8h.html#a55d7da5efce8afe43d2a2acaa487674f">AES256_encrypt_CBC</a></div><div class="ttdeci">int AES256_encrypt_CBC(AES256_context *ctx, const unsigned char *IV, unsigned char *plaintext, unsigned size)</div></div>
 <div class="ttc" id="AES256_8h_html_a50aa060f46240dff47bd94385a5c60da"><div class="ttname"><a href="AES256_8h.html#a50aa060f46240dff47bd94385a5c60da">AES256_decrypt_ECB</a></div><div class="ttdeci">void AES256_decrypt_ECB(AES256_context *ctx, unsigned char *ciphertext)</div></div>
+<div class="ttc" id="AES256_8h_html_a8427b139f2591952f46560143c0fdc05"><div class="ttname"><a href="AES256_8h.html#a8427b139f2591952f46560143c0fdc05">AES256_init</a></div><div class="ttdeci">void AES256_init(AES256_context *ctx, const unsigned char *key)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 29 2014 13:47:41 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 1 2014 17:48:04 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>
