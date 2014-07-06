@@ -142,6 +142,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afaccb39ff8aa5cf1447eddba189250f2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class__Wolframe_1_1db_1_1Transaction.html">db::Transaction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#afaccb39ff8aa5cf1447eddba189250f2">transaction</a> (const std::string &amp;name) const </td></tr>
 <tr class="memdesc:afaccb39ff8aa5cf1447eddba189250f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a database transaction object for a transaction identified by name.  <a href="#afaccb39ff8aa5cf1447eddba189250f2">More...</a><br /></td></tr>
 <tr class="separator:afaccb39ff8aa5cf1447eddba189250f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa90184a9100281bbe736167c3c415f8e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class__Wolframe_1_1db_1_1Transaction.html">db::Transaction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#aa90184a9100281bbe736167c3c415f8e">transaction</a> (const std::string &amp;dbname, const std::string &amp;name) const </td></tr>
+<tr class="memdesc:aa90184a9100281bbe736167c3c415f8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a database transaction object for a transaction identified by name on an alternative database than the default transaction database.  <a href="#aa90184a9100281bbe736167c3c415f8e">More...</a><br /></td></tr>
+<tr class="separator:aa90184a9100281bbe736167c3c415f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a799746b3c9af9cb8ebb306e655685c25"><td class="memItemLeft" align="right" valign="top">virtual const <br class="typebreak" />
 <a class="el" href="class__Wolframe_1_1types_1_1AuthorizationFunction.html">types::AuthorizationFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#a799746b3c9af9cb8ebb306e655685c25">authorizationFunction</a> (const std::string &amp;name) const </td></tr>
 <tr class="memdesc:a799746b3c9af9cb8ebb306e655685c25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a reference to an authorization function identified by name.  <a href="#a799746b3c9af9cb8ebb306e655685c25">More...</a><br /></td></tr>
@@ -189,6 +192,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:abc72dd1207e405ae6375cf99b2c16851"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1db_1_1Database.html">db::Database</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#abc72dd1207e405ae6375cf99b2c16851">m_db</a></td></tr>
 <tr class="memdesc:abc72dd1207e405ae6375cf99b2c16851"><td class="mdescLeft">&#160;</td><td class="mdescRight">reference to the transaction database  <a href="#abc72dd1207e405ae6375cf99b2c16851">More...</a><br /></td></tr>
 <tr class="separator:abc72dd1207e405ae6375cf99b2c16851"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade2e36a0ab79c6e269689cf3d7e81ec6"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class__Wolframe_1_1db_1_1DatabaseProvider.html">db::DatabaseProvider</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#ade2e36a0ab79c6e269689cf3d7e81ec6">m_dbProvider</a></td></tr>
+<tr class="memdesc:ade2e36a0ab79c6e269689cf3d7e81ec6"><td class="mdescLeft">&#160;</td><td class="mdescRight">alternative database  <a href="#ade2e36a0ab79c6e269689cf3d7e81ec6">More...</a><br /></td></tr>
+<tr class="separator:ade2e36a0ab79c6e269689cf3d7e81ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ad6ad65792acc656d0e82614cdd2b5d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider_1_1CommandHandlerDef.html">CommandHandlerDef</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#a7ad6ad65792acc656d0e82614cdd2b5d">m_cmd</a></td></tr>
 <tr class="memdesc:a7ad6ad65792acc656d0e82614cdd2b5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">list of defined command handlers  <a href="#a7ad6ad65792acc656d0e82614cdd2b5d">More...</a><br /></td></tr>
 <tr class="separator:a7ad6ad65792acc656d0e82614cdd2b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -652,6 +658,44 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aa90184a9100281bbe736167c3c415f8e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class__Wolframe_1_1db_1_1Transaction.html">db::Transaction</a>* _Wolframe::proc::ProcessorProvider::transaction </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>dbname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return a database transaction object for a transaction identified by name on an alternative database than the default transaction database. </p>
+
+<p>Implements <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#a2d60fa26aa3aa3a7717e646afb635ed4">_Wolframe::proc::ProcessorProviderInterface</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a1ef973b01f9603462b50b7f4258fd3a2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -768,6 +812,28 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ade2e36a0ab79c6e269689cf3d7e81ec6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class__Wolframe_1_1db_1_1DatabaseProvider.html">db::DatabaseProvider</a>* _Wolframe::proc::ProcessorProvider::m_dbProvider</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>alternative database </p>
+
+</div>
+</div>
 <a class="anchor" id="a3e5300daff23b2d39faf4ab4bac40b2b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -863,7 +929,7 @@ Private Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 2 2014 08:37:30 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 6 2014 09:41:48 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

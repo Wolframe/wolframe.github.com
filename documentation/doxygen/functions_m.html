@@ -360,6 +360,12 @@
 : <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#ab3da9bc4c68101b20f4a849b0c2d13b6">_Wolframe::proc::ProcessorProvider</a>
 , <a class="el" href="class__Wolframe_1_1proc_1_1ProcProviderConfig.html#a3298273f8cd31a8039ca629909a175a4">_Wolframe::proc::ProcProviderConfig</a>
 </li>
+<li>m_dbProvider
+: <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#ade2e36a0ab79c6e269689cf3d7e81ec6">_Wolframe::proc::ProcessorProvider</a>
+</li>
+<li>m_dbstack
+: <a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#aaf31fa0547e9b61a8992a8bc4809160f">_Wolframe::proc::ExecContext</a>
+</li>
 <li>m_ddlname
 : <a class="el" href="struct__Wolframe_1_1langbind_1_1DDLCompiler.html#a5153ea2dd469ca8bae97cb9b6f362d40">_Wolframe::langbind::DDLCompiler</a>
 , <a class="el" href="class__Wolframe_1_1types_1_1FormDescription.html#a0c2cc13719719baa489a5ff602160605">_Wolframe::types::FormDescription</a>
@@ -638,6 +644,9 @@
 <li>m_line
 : <a class="el" href="class__Wolframe_1_1utils_1_1SourceLineInfo.html#a81c89c9547ee21ee756086935345c7fd">_Wolframe::utils::SourceLineInfo</a>
 </li>
+<li>m_localEndpoint
+: <a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#ab2c1dad8c04343756d5895b46dbfce2c">_Wolframe::proc::ExecContext</a>
+</li>
 <li>m_logBk
 : <a class="el" href="class__Wolframe_1_1log_1_1Logger.html#a6b47473ddad5f87dd062931d93c400c6">_Wolframe::log::Logger</a>
 </li>
@@ -879,6 +888,9 @@
 : <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#afc277d315761b012bbc46418918230c5">_Wolframe::proc::ProcessorProvider</a>
 , <a class="el" href="class__Wolframe_1_1proc_1_1ProcProviderConfig.html#abf00fdaede2ff47c82c5fd83dc8f1f41">_Wolframe::proc::ProcProviderConfig</a>
 </li>
+<li>m_remoteEndpoint
+: <a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a08c78295af450e9934e3cdd82dde64ae">_Wolframe::proc::ExecContext</a>
+</li>
 <li>m_requirement
 : <a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a088760a2e48f178959fa36d6c30fa60d">_Wolframe::serialize::StructDescriptionBase</a>
 </li>
@@ -975,9 +987,6 @@
 , <a class="el" href="class__Wolframe_1_1types_1_1VariantStructDescription.html#a2514a448e9907f761ddfcc9749d95eb7">_Wolframe::types::VariantStructDescription</a>
 , <a class="el" href="class__Wolframe_1_1utils_1_1ArrayDoublingAllocator.html#a051468a91bf233d23dd793f876f986e4">_Wolframe::utils::ArrayDoublingAllocator</a>
 </li>
-<li>m_socket_identifier
-: <a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a9922709d221ed3d03dc9231aa653ed62">_Wolframe::proc::ExecContext</a>
-</li>
 <li>m_socketIdentifier
 : <a class="el" href="class__Wolframe_1_1net_1_1LocalEndpoint.html#ac350d7ae9c05b448b0fb32de7129f491">_Wolframe::net::LocalEndpoint</a>
 </li>
@@ -1071,6 +1080,9 @@
 <li>m_tokens
 : <a class="el" href="class__Wolframe_1_1config_1_1ServiceBanner.html#ac7eab1816f3c20f133729803b54694c4">_Wolframe::config::ServiceBanner</a>
 </li>
+<li>m_transaction_env
+: <a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a9b178fdc59d66bb4bdab660a2491dcdd">_Wolframe::proc::ExecContext</a>
+</li>
 <li>m_type
 : <a class="el" href="struct__Wolframe_1_1config_1_1ApplicationConfiguration.html#a874ecdc5bff8a169f9310012ba12c4a4">_Wolframe::config::ApplicationConfiguration</a>
 , <a class="el" href="struct__Wolframe_1_1serialize_1_1Context_1_1ElementBuffer.html#a99b1107899d12e65903bcd3df838ced0">_Wolframe::serialize::Context::ElementBuffer</a>
@@ -1143,18 +1155,16 @@
 </li>
 <li>mandatory()
 : <a class="el" href="struct__Wolframe_1_1serialize_1_1StructDescription.html#a48ab1aa76fe8e1041a351a0bc0892b43">_Wolframe::serialize::StructDescription&lt; Structure &gt;</a>
+, <a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a0d573f73bfa9a21aec7c66404fa69071">_Wolframe::serialize::StructDescriptionBase</a>
 </li>
 <li>Mandatory
 : <a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a4a3e2910b5367893fbe92dac03018db4ab8c6d50534cf4b244ffa9bf470f80134">_Wolframe::serialize::StructDescriptionBase</a>
 </li>
 <li>mandatory()
-: <a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a0d573f73bfa9a21aec7c66404fa69071">_Wolframe::serialize::StructDescriptionBase</a>
+: <a class="el" href="struct__Wolframe_1_1types_1_1VariantStructDescription_1_1Element.html#a2f0cb00b0941073b39828e6e8b2b3e26">_Wolframe::types::VariantStructDescription::Element</a>
 </li>
 <li>Mandatory
 : <a class="el" href="struct__Wolframe_1_1types_1_1VariantStructDescription_1_1Element.html#a2879bc52a280af47de5b6ca45555c98da10a0e531fc521c589311a31c63f98b95">_Wolframe::types::VariantStructDescription::Element</a>
-</li>
-<li>mandatory()
-: <a class="el" href="struct__Wolframe_1_1types_1_1VariantStructDescription_1_1Element.html#a2f0cb00b0941073b39828e6e8b2b3e26">_Wolframe::types::VariantStructDescription::Element</a>
 </li>
 <li>Map
 : <a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a8c034af01d0376e178580c0bf0fde026">_Wolframe::serialize::StructDescriptionBase</a>
@@ -1198,7 +1208,7 @@
 , <a class="el" href="class__Wolframe_1_1AAAA_1_1Authenticator.html#a255549cfccbdff5519e193cc315f0cde">_Wolframe::AAAA::Authenticator</a>
 </li>
 <li>MemBlock()
-: <a class="el" href="class__Wolframe_1_1protocol_1_1MemBlock.html#aa8b50057100991448a02932389f011bc">_Wolframe::protocol::MemBlock</a>
+: <a class="el" href="class__Wolframe_1_1protocol_1_1MemBlock.html#ab7811346c0f869fb737dc4fb2335c190">_Wolframe::protocol::MemBlock</a>
 </li>
 <li>Message()
 : <a class="el" href="struct__Wolframe_1_1config_1_1PositionalErrorMessageBase_1_1Message.html#ab660b69809b03d3b5dfc103976e15a91">_Wolframe::config::PositionalErrorMessageBase::Message</a>
@@ -1276,7 +1286,7 @@
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 2 2014 08:37:38 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 6 2014 09:41:55 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

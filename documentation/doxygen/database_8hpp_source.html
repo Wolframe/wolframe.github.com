@@ -140,8 +140,6 @@
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1db_1_1Database.html#aca2b6191f839bac9cb4e0d6e9a4c10ba">   53</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class__Wolframe_1_1db_1_1Database.html#aca2b6191f839bac9cb4e0d6e9a4c10ba">~Database</a>()                     {}</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="comment">// All databases must have an identifier as they are referenced using this identifier.</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="comment">// The identifier must be unique (of course).</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">virtual</span> <span class="keyword">const</span> std::string&amp; <a class="code" href="class__Wolframe_1_1db_1_1Database.html#ac328da357a65760222e9e5570ddf1744">ID</a>() <span class="keyword">const</span> = 0;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="class__Wolframe_1_1db_1_1Database.html#a8fc33e6ef3cc401a1a0937bbccacbe51">className</a>() <span class="keyword">const</span> = 0;</div>
@@ -175,7 +173,7 @@
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#endif // _DATABASE_HPP_INCLUDED</span></div>
 <div class="ttc" id="class__Wolframe_1_1db_1_1Transaction_html"><div class="ttname"><a href="class__Wolframe_1_1db_1_1Transaction.html">_Wolframe::db::Transaction</a></div><div class="ttdoc">Transaction interface. </div><div class="ttdef"><b>Definition:</b> transaction.hpp:51</div></div>
 <div class="ttc" id="class__Wolframe_1_1db_1_1Database_html_a8fc33e6ef3cc401a1a0937bbccacbe51"><div class="ttname"><a href="class__Wolframe_1_1db_1_1Database.html#a8fc33e6ef3cc401a1a0937bbccacbe51">_Wolframe::db::Database::className</a></div><div class="ttdeci">virtual const char * className() const =0</div><div class="ttdoc">Database type identification. </div></div>
-<div class="ttc" id="class__Wolframe_1_1db_1_1Database_html_ac328da357a65760222e9e5570ddf1744"><div class="ttname"><a href="class__Wolframe_1_1db_1_1Database.html#ac328da357a65760222e9e5570ddf1744">_Wolframe::db::Database::ID</a></div><div class="ttdeci">virtual const std::string &amp; ID() const =0</div><div class="ttdoc">Database identification. </div></div>
+<div class="ttc" id="class__Wolframe_1_1db_1_1Database_html_ac328da357a65760222e9e5570ddf1744"><div class="ttname"><a href="class__Wolframe_1_1db_1_1Database.html#ac328da357a65760222e9e5570ddf1744">_Wolframe::db::Database::ID</a></div><div class="ttdeci">virtual const std::string &amp; ID() const =0</div><div class="ttdoc">Database identification. All databases must have an identifier as they are referenced using this iden...</div></div>
 <div class="ttc" id="class__Wolframe_1_1db_1_1Database_html_a843c5c072cbd31bdebcd86ec2dceb3c5"><div class="ttname"><a href="class__Wolframe_1_1db_1_1Database.html#a843c5c072cbd31bdebcd86ec2dceb3c5">_Wolframe::db::Database::getLanguageDescription</a></div><div class="ttdeci">virtual const LanguageDescription * getLanguageDescription() const </div><div class="ttdef"><b>Definition:</b> database.hpp:66</div></div>
 <div class="ttc" id="class__Wolframe_1_1db_1_1Database_html_aca2b6191f839bac9cb4e0d6e9a4c10ba"><div class="ttname"><a href="class__Wolframe_1_1db_1_1Database.html#aca2b6191f839bac9cb4e0d6e9a4c10ba">_Wolframe::db::Database::~Database</a></div><div class="ttdeci">virtual ~Database()</div><div class="ttdef"><b>Definition:</b> database.hpp:53</div></div>
 <div class="ttc" id="class__Wolframe_1_1db_1_1DatabaseUnit_html"><div class="ttname"><a href="class__Wolframe_1_1db_1_1DatabaseUnit.html">_Wolframe::db::DatabaseUnit</a></div><div class="ttdoc">This is the base class for database unit implementations. </div><div class="ttdef"><b>Definition:</b> database.hpp:80</div></div>
@@ -193,7 +191,7 @@
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 2 2014 08:37:12 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 6 2014 09:41:30 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

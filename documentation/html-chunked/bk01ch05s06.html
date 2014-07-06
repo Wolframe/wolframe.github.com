@@ -58,7 +58,7 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">5.6. Filters</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch05s05.html">Prev</a> </td><th width="60%" align="center">Chapter 5. Data processing</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch05s07.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1391068620"></a>5.6. Filters</h2></div></div></div><p>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">5.6. Filters</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch05s05.html">Prev</a> </td><th width="60%" align="center">Chapter 5. Data processing</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch05s07.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1397381796"></a>5.6. Filters</h2></div></div></div><p>
 Filters describe the transformation of serialized data to a unified element sequence
 of hierarchical structured data and to document meta data and back. The application does 
 not care about data formats as long as there exists a filter providing the unified form 
@@ -77,58 +77,71 @@ like <acronym class="acronym">XSLT</acronym>.
 Be aware that you have to configure a data filter of the logic tier in <span class="application">Wolframe</span> before using it.
 Each chapter introducing a filter type will have a section that describes how the server configuration 
 of <span class="application">Wolframe</span> has to be extended for its availability.
-</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1391140660"></a>5.6.1. XML Filter</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1391140996"></a>Introduction</h4></div></div></div><p>You can use <acronym class="acronym">XML</acronym> for data filters in the logic tier of <span class="application">Wolframe</span>.
+</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1397453836"></a>5.6.1. XML Filter</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1397454156"></a>Introduction</h4></div></div></div><p>You can use <acronym class="acronym">XML</acronym> for data filters in the logic tier of <span class="application">Wolframe</span>.
 	There are the following variants of <acronym class="acronym">XML</acronym> filters available:
 	</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><span class="application">libxml2</span> (<a class="ulink" href="http://www.xmlsoft.org" target="_top">http://www.xmlsoft.org</a>) or</p></li><li class="listitem"><p><span class="application">textwolf</span> (<a class="ulink" href="http://www.textwolf.net" target="_top">http://www.textwolf.net</a>)</p></li></ul></div><p>	
-	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1391174036"></a>Character set encodings</h4></div></div></div><p>The <span class="application">libxml2</span> and the <span class="application">textwolf</span> filter support at least 
-	the following character set encodings. For character set encodings that are not in the list, 
-	please ask the <span class="application">Wolframe</span> team.
+	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1397487212"></a>Character set encodings</h4></div></div></div><p>The <span class="application">libxml2</span> and the <span class="application">textwolf</span>
+	filter support at least the following character set encodings. For character
+	set encodings that are not in the list, please ask the 
+	<span class="application">Wolframe</span> team.
 	</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><abbr class="abbrev">UTF-8</abbr> or</p></li><li class="listitem"><p><abbr class="abbrev">UTF-16LE</abbr> or</p></li><li class="listitem"><p><abbr class="abbrev">UTF-16</abbr> (<abbr class="abbrev">UTF-16BE</abbr>) or</p></li><li class="listitem"><p><abbr class="abbrev">UTF-32LE</abbr> (<abbr class="abbrev">UCS-4LE</abbr>) but only with <span class="application">textwolf</span> or</p></li><li class="listitem"><p><abbr class="abbrev">UTF-32</abbr> (<abbr class="abbrev">UTF-32BE</abbr> or <abbr class="abbrev">UCS-4BE</abbr>) or</p></li><li class="listitem"><p><abbr class="abbrev">ISO 8859</abbr> (code pages '1' to '9')</p></li></ul></div><p>
-	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1391179740"></a>Configuration</h4></div></div></div><p>For using an <acronym class="acronym">XML</acronym> filter based <span class="application">libxml2</span>, you have to load the module 'mod_filter_libxml2'.
-	For this you add the following line to the LoadModules section of your <span class="application">Wolframe</span> configuration:
+	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1397492884"></a>Configuration</h4></div></div></div><p>For using an <acronym class="acronym">XML</acronym> filter based <span class="application">libxml2</span>,
+		you have to load the modules <code class="code">mod_filter_libxml2</code> and
+		<code class="code">mod_doctype_xml</code>.
+		For this you add the two following lines to the <code class="code">LoadModules</code>
+		section of your <span class="application">Wolframe</span> configuration:
 		</p><pre class="programlisting">
 		
+    module mod_doctype_xml
     module mod_filter_libxml2
 
 
 		</pre><p>
 	</p><p>
-	For using an <acronym class="acronym">XML</acronym> filter based <span class="application">textwolf</span>, you have to load the module 'mod_filter_textwolf'.
-	For this you add the following line to the LoadModules section of your <span class="application">Wolframe</span> configuration:
+		For using an <acronym class="acronym">XML</acronym> filter based <span class="application">textwolf</span>,
+		you have to load the modules <code class="code">mod_filter_textwolf</code> and
+		<code class="code">mod_doctype_xml</code>.
+		For this you add the following two lines to the <code class="code">LoadModules</code>
+		section of your <span class="application">Wolframe</span> configuration:
 		</p><pre class="programlisting">
 		
+    module mod_doctype_xml
     module mod_filter_textwolf
 
 		</pre><p>
-	</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1391140580"></a>5.6.2. JSON filter</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1391152716"></a>Introduction</h4></div></div></div><p>You can use <span class="application">JSON</span> for data filters in the logic tier of <span class="application">Wolframe</span>.
+	</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1397466596"></a>5.6.2. JSON filter</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1397466932"></a>Introduction</h4></div></div></div><p>You can use <span class="application">JSON</span> for data filters in the logic tier of <span class="application">Wolframe</span>.
 	The standard <span class="application">JSON</span> filter of <span class="application">Wolframe</span> is called <span class="application">cjson</span> and 
 	based on the library <span class="application">cJSON</span> (<a class="ulink" href="http://sourceforge.net/projects/cjson" target="_top">http://sourceforge.net/projects/cjson</a>) from Dave Gamble.
-	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1391161820"></a>Character set encodings</h4></div></div></div><p>Without explicitly specified, the <span class="application">cjson</span> filter support the following character set 
+	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1397476284"></a>Character set encodings</h4></div></div></div><p>Without explicitly specified, the <span class="application">cjson</span> filter support the following character set 
 	encodings. For character set encodings that are not in the list, please ask the <span class="application">Wolframe</span> team.
 	</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><abbr class="abbrev">UTF-8</abbr> or</p></li><li class="listitem"><p><abbr class="abbrev">UTF-16LE</abbr> or</p></li><li class="listitem"><p><abbr class="abbrev">UTF-16</abbr> (<abbr class="abbrev">UTF-16BE</abbr>) or</p></li><li class="listitem"><p><abbr class="abbrev">UTF-32LE</abbr> (<abbr class="abbrev">UCS-4LE</abbr>) or</p></li><li class="listitem"><p><abbr class="abbrev">UTF-32</abbr> (<abbr class="abbrev">UTF-32BE</abbr> or <abbr class="abbrev">UCS-4BE</abbr>) or</p></li></ul></div><p>
-	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1391166324"></a>Configuration</h4></div></div></div><p>For using the JSON filter based <span class="application">cJSON</span>, you have to load the module 'mod_filter_cjson'. 
+	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1397524028"></a>Configuration</h4></div></div></div><p>For using the JSON filter based <span class="application">cJSON</span>, you have to load the module 'mod_filter_cjson'. 
 	For this you add the following line to the LoadModules section of your <span class="application">Wolframe</span> configuration:
 		</p><pre class="programlisting">
 		
+    module mod_doctype_json
     module mod_filter_cjson
 
 		</pre><p>
-	</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1391158636"></a>5.6.3. XSLT Filter</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1391158972"></a>Introduction</h4></div></div></div><p>You can use <acronym class="acronym">XSLT</acronym> for data filters in the logic tier of <span class="application">Wolframe</span>.
+	</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1397472980"></a>5.6.3. XSLT Filter</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1397473316"></a>Introduction</h4></div></div></div><p>You can use <acronym class="acronym">XSLT</acronym> for data filters in the logic tier of <span class="application">Wolframe</span>.
 	The <acronym class="acronym">XSLT</acronym> filter of <span class="application">Wolframe</span> for is based on <span class="application">libxml2</span> 
 	(<a class="ulink" href="http://www.xmlsoft.org" target="_top">http://www.xmlsoft.org</a>).
-	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1391155348"></a>Character set encodings</h4></div></div></div><p>Without explicitly specified, the <acronym class="acronym">XSLT</acronym> filter support the following character set 
+	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1397469692"></a>Character set encodings</h4></div></div></div><p>Without explicitly specified, the <acronym class="acronym">XSLT</acronym> filter support the following character set 
 	encodings. For character set encodings that are not in the list, please ask the <span class="application">Wolframe</span> team.
 	</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><abbr class="abbrev">UTF-8</abbr> or</p></li><li class="listitem"><p><abbr class="abbrev">UTF-16LE</abbr> or</p></li><li class="listitem"><p><abbr class="abbrev">UTF-16</abbr> (<abbr class="abbrev">UTF-16BE</abbr>) or</p></li><li class="listitem"><p><abbr class="abbrev">UTF-32LE</abbr> (<abbr class="abbrev">UCS-4LE</abbr>) or</p></li><li class="listitem"><p><abbr class="abbrev">UTF-32</abbr> (<abbr class="abbrev">UTF-32BE</abbr> or <abbr class="abbrev">UCS-4BE</abbr>) or</p></li></ul></div><p>
-	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1391203420"></a>Configuration</h4></div></div></div><p>For using an XSLT filter based <span class="application">libxml2</span>, you have to load the module 'mod_filter_libxml2'.
-	For this you add the following line to the LoadModules section of your <span class="application">Wolframe</span> configuration:
+	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1397517860"></a>Configuration</h4></div></div></div><p>For using an XSLT filter based <span class="application">libxml2</span>, you have to load the modules 
+		<code class="code">mod_filter_libxml2</code> and <code class="code">mod_doctype_xml</code>.
+		For this you add the following 2 lines to the LoadModules section of your <span class="application">Wolframe</span> configuration:
 		</p><pre class="programlisting">
 		
+    module mod_doctype_xml
     module mod_filter_libxml2
 
 
 		</pre><p>
-	</p><p>You also have to add the program of the XSLT filter into the Processor section of the configuration.
-	The name of the filter is the filename of the XSLT filter program without path and extension. In our example
+	</p><p>You also have to add the program of the XSLT filter into the Processor 
+	section of the configuration. The name of the filter is the filename 
+	of the XSLT filter program without path and extension. In our example
 	the filter would be named invoice_ISOxxxx:
 	</p><pre class="programlisting">
 	
