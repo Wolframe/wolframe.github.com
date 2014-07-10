@@ -98,6 +98,9 @@
 </div><!--header-->
 <div class="contents">
 
+<p>Instance of a program with statevariables.  
+ <a href="class__Wolframe_1_1db_1_1vm_1_1ProgramInstance.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="programInstance_8hpp_source.html">programInstance.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for _Wolframe::db::vm::ProgramInstance:</div>
@@ -235,18 +238,25 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad92e5b5faf1b4351d1362c281074a59f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramInstance.html#ad92e5b5faf1b4351d1362c281074a59f">ProgramInstance</a> ()</td></tr>
+<tr class="memdesc:ad92e5b5faf1b4351d1362c281074a59f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="#ad92e5b5faf1b4351d1362c281074a59f">More...</a><br /></td></tr>
 <tr class="separator:ad92e5b5faf1b4351d1362c281074a59f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbdb19fb6a0e3a96f6cd02765743243e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramInstance.html#afbdb19fb6a0e3a96f6cd02765743243e">ProgramInstance</a> (const <a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramInstance.html">ProgramInstance</a> &amp;o)</td></tr>
+<tr class="memdesc:afbdb19fb6a0e3a96f6cd02765743243e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="#afbdb19fb6a0e3a96f6cd02765743243e">More...</a><br /></td></tr>
 <tr class="separator:afbdb19fb6a0e3a96f6cd02765743243e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88c5ce74e65ef214a74a5d3f954900c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramInstance.html#a88c5ce74e65ef214a74a5d3f954900c8">ProgramInstance</a> (const <a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramImage.html">ProgramImage</a> &amp;program_, <a class="el" href="class__Wolframe_1_1db_1_1TransactionExecStatemachine.html">TransactionExecStatemachine</a> *db_stm_, <a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramInstance.html#a84b140942aa7b326817f63e05b27f275">LogTraceCallBack</a> logTraceCallBack_=0, const LogTraceContext *logTraceContext_=0)</td></tr>
+<tr class="memdesc:a88c5ce74e65ef214a74a5d3f954900c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a88c5ce74e65ef214a74a5d3f954900c8">More...</a><br /></td></tr>
 <tr class="separator:a88c5ce74e65ef214a74a5d3f954900c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65dc567e399367fce5cd1418914e3f35"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramInstance.html#a65dc567e399367fce5cd1418914e3f35">execute</a> ()</td></tr>
+<tr class="memdesc:a65dc567e399367fce5cd1418914e3f35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute the program.  <a href="#a65dc567e399367fce5cd1418914e3f35">More...</a><br /></td></tr>
 <tr class="separator:a65dc567e399367fce5cd1418914e3f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaca44303c727b090dfdd7b11eacda6a9"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespace__Wolframe_1_1db_1_1vm.html#a41296b630a361d0743e88911e9d8fc8b">OutputR</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramInstance.html#aaca44303c727b090dfdd7b11eacda6a9">output</a> () const </td></tr>
+<tr class="memdesc:aaca44303c727b090dfdd7b11eacda6a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the output of the executed program.  <a href="#aaca44303c727b090dfdd7b11eacda6a9">More...</a><br /></td></tr>
 <tr class="separator:aaca44303c727b090dfdd7b11eacda6a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca7cd68d4d92533ed8f23f3c94df8982"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class__Wolframe_1_1db_1_1DatabaseError.html">DatabaseError</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramInstance.html#aca7cd68d4d92533ed8f23f3c94df8982">lastError</a> () const </td></tr>
+<tr class="memdesc:aca7cd68d4d92533ed8f23f3c94df8982"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the last error of the executed program.  <a href="#aca7cd68d4d92533ed8f23f3c94df8982">More...</a><br /></td></tr>
 <tr class="separator:aca7cd68d4d92533ed8f23f3c94df8982"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3cf8a781866700b624bedf4a5b269ad"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramInstance.html#aa3cf8a781866700b624bedf4a5b269ad">ip</a> () const </td></tr>
+<tr class="memdesc:aa3cf8a781866700b624bedf4a5b269ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current IP of program execution (instruction pointer)  <a href="#aa3cf8a781866700b624bedf4a5b269ad">More...</a><br /></td></tr>
 <tr class="separator:aa3cf8a781866700b624bedf4a5b269ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
@@ -283,24 +293,34 @@ Private Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a45752cb7901cd79fc729f29fa41d9e53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramImage.html">ProgramImage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramInstance.html#a45752cb7901cd79fc729f29fa41d9e53">m_program</a></td></tr>
+<tr class="memdesc:a45752cb7901cd79fc729f29fa41d9e53"><td class="mdescLeft">&#160;</td><td class="mdescRight">image of program to execute  <a href="#a45752cb7901cd79fc729f29fa41d9e53">More...</a><br /></td></tr>
 <tr class="separator:a45752cb7901cd79fc729f29fa41d9e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ad68d7e3e9748e6f074c41d4746c2c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1db_1_1TransactionExecStatemachine.html">TransactionExecStatemachine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramInstance.html#a2ad68d7e3e9748e6f074c41d4746c2c9">m_db_stm</a></td></tr>
+<tr class="memdesc:a2ad68d7e3e9748e6f074c41d4746c2c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">engine to process database instructions  <a href="#a2ad68d7e3e9748e6f074c41d4746c2c9">More...</a><br /></td></tr>
 <tr class="separator:a2ad68d7e3e9748e6f074c41d4746c2c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2f906a6c585681d8674962344b67bdd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#a6eafe057e0dd41cb7d4e5b4b08cb694a">Address</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramInstance.html#ae2f906a6c585681d8674962344b67bdd">m_ip</a></td></tr>
+<tr class="memdesc:ae2f906a6c585681d8674962344b67bdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">instruction pointer  <a href="#ae2f906a6c585681d8674962344b67bdd">More...</a><br /></td></tr>
 <tr class="separator:ae2f906a6c585681d8674962344b67bdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5615dead126a6b1e099e7a2e438065e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1SubroutineFrame.html">SubroutineFrame</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramInstance.html#ad5615dead126a6b1e099e7a2e438065e">m_subroutine_frame</a></td></tr>
+<tr class="memdesc:ad5615dead126a6b1e099e7a2e438065e"><td class="mdescLeft">&#160;</td><td class="mdescRight">prepared subroutine call parameter structure  <a href="#ad5615dead126a6b1e099e7a2e438065e">More...</a><br /></td></tr>
 <tr class="separator:ad5615dead126a6b1e099e7a2e438065e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1947264f05277ebf7256ec6321845744"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramInstance.html#a1947264f05277ebf7256ec6321845744">m_cond</a></td></tr>
+<tr class="memdesc:a1947264f05277ebf7256ec6321845744"><td class="mdescLeft">&#160;</td><td class="mdescRight">current condition flag for conditional execution ('<a class="el" href="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#ae80e5c8e0c11bff24403de97a321a936" title="Enumeration of conditional codes. ">InstructionSet::CondCode</a>')  <a href="#a1947264f05277ebf7256ec6321845744">More...</a><br /></td></tr>
 <tr class="separator:a1947264f05277ebf7256ec6321845744"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a004a02be9b408a14a8a47444b28c0c08"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="struct__Wolframe_1_1db_1_1vm_1_1ProgramInstance_1_1StackElement.html">StackElement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramInstance.html#a004a02be9b408a14a8a47444b28c0c08">m_stack</a></td></tr>
+<tr class="memdesc:a004a02be9b408a14a8a47444b28c0c08"><td class="mdescLeft">&#160;</td><td class="mdescRight">execution stack  <a href="#a004a02be9b408a14a8a47444b28c0c08">More...</a><br /></td></tr>
 <tr class="separator:a004a02be9b408a14a8a47444b28c0c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb5dbdb26ab3459932fcae4e09a907b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace__Wolframe_1_1db_1_1vm.html#a41296b630a361d0743e88911e9d8fc8b">OutputR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramInstance.html#abb5dbdb26ab3459932fcae4e09a907b2">m_output</a></td></tr>
+<tr class="memdesc:abb5dbdb26ab3459932fcae4e09a907b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">output  <a href="#abb5dbdb26ab3459932fcae4e09a907b2">More...</a><br /></td></tr>
 <tr class="separator:abb5dbdb26ab3459932fcae4e09a907b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05a4f6dcf6dac2b26a60111670d7c0bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1db_1_1DatabaseError.html">DatabaseError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramInstance.html#a05a4f6dcf6dac2b26a60111670d7c0bb">m_lastError</a></td></tr>
+<tr class="memdesc:a05a4f6dcf6dac2b26a60111670d7c0bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">last database error reported  <a href="#a05a4f6dcf6dac2b26a60111670d7c0bb">More...</a><br /></td></tr>
 <tr class="separator:a05a4f6dcf6dac2b26a60111670d7c0bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64e7833b8cd5a2e37779a4f22d71b418"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramInstance.html#a84b140942aa7b326817f63e05b27f275">LogTraceCallBack</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramInstance.html#a64e7833b8cd5a2e37779a4f22d71b418">m_logTraceCallBack</a></td></tr>
+<tr class="memdesc:a64e7833b8cd5a2e37779a4f22d71b418"><td class="mdescLeft">&#160;</td><td class="mdescRight">NULL or callback procedure for logging execution that is be called after every instruction executed.  <a href="#a64e7833b8cd5a2e37779a4f22d71b418">More...</a><br /></td></tr>
 <tr class="separator:a64e7833b8cd5a2e37779a4f22d71b418"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9514acd80fda344dafc9a1818c58674b"><td class="memItemLeft" align="right" valign="top">const LogTraceContext *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramInstance.html#a9514acd80fda344dafc9a1818c58674b">m_logTraceContext</a></td></tr>
+<tr class="memdesc:a9514acd80fda344dafc9a1818c58674b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Context for 'm_logTraceCallBack'.  <a href="#a9514acd80fda344dafc9a1818c58674b">More...</a><br /></td></tr>
 <tr class="separator:a9514acd80fda344dafc9a1818c58674b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
@@ -339,7 +359,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memdesc:a708f69dc8b4440f1521dfb2031830b36 inherit pub_static_methods_struct__Wolframe_1_1db_1_1vm_1_1InstructionSet"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the instruction as string.  <a href="#a708f69dc8b4440f1521dfb2031830b36">More...</a><br /></td></tr>
 <tr class="separator:a708f69dc8b4440f1521dfb2031830b36 inherit pub_static_methods_struct__Wolframe_1_1db_1_1vm_1_1InstructionSet"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Instance of a program with statevariables. </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a84b140942aa7b326817f63e05b27f275"></a>
 <div class="memitem">
 <div class="memproto">
@@ -374,6 +396,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Copy constructor. </p>
+
 </div>
 </div>
 <a class="anchor" id="afbdb19fb6a0e3a96f6cd02765743243e"></a>
@@ -397,6 +421,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Copy constructor. </p>
 
 </div>
 </div>
@@ -435,6 +461,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Constructor. </p>
 
 </div>
 </div>
@@ -509,6 +537,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Execute the program. </p>
 
 </div>
 </div>
@@ -605,6 +635,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Get the current IP of program execution (instruction pointer) </p>
+
 </div>
 </div>
 <a class="anchor" id="a334e8cffa056d851aedfadf259345f21"></a>
@@ -676,6 +708,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Get the last error of the executed program. </p>
+
 </div>
 </div>
 <a class="anchor" id="a19dfe72985793100c78bd1922178e5a3"></a>
@@ -721,6 +755,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Get the output of the executed program. </p>
 
 </div>
 </div>
@@ -885,6 +921,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>current condition flag for conditional execution ('<a class="el" href="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#ae80e5c8e0c11bff24403de97a321a936" title="Enumeration of conditional codes. ">InstructionSet::CondCode</a>') </p>
+
 </div>
 </div>
 <a class="anchor" id="a2ad68d7e3e9748e6f074c41d4746c2c9"></a>
@@ -904,6 +942,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>engine to process database instructions </p>
 
 </div>
 </div>
@@ -925,6 +965,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>instruction pointer </p>
+
 </div>
 </div>
 <a class="anchor" id="a05a4f6dcf6dac2b26a60111670d7c0bb"></a>
@@ -944,6 +986,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>last database error reported </p>
 
 </div>
 </div>
@@ -965,6 +1009,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>NULL or callback procedure for logging execution that is be called after every instruction executed. </p>
+
 </div>
 </div>
 <a class="anchor" id="a9514acd80fda344dafc9a1818c58674b"></a>
@@ -984,6 +1030,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Context for 'm_logTraceCallBack'. </p>
 
 </div>
 </div>
@@ -1005,6 +1053,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>output </p>
+
 </div>
 </div>
 <a class="anchor" id="a45752cb7901cd79fc729f29fa41d9e53"></a>
@@ -1024,6 +1074,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>image of program to execute </p>
 
 </div>
 </div>
@@ -1045,6 +1097,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>execution stack </p>
+
 </div>
 </div>
 <a class="anchor" id="ad5615dead126a6b1e099e7a2e438065e"></a>
@@ -1065,6 +1119,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>prepared subroutine call parameter structure </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -1074,7 +1130,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 6 2014 09:41:42 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 10 2014 18:13:31 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

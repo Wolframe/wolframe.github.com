@@ -132,6 +132,7 @@
 : <a class="el" href="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF.html#a89ec74b491d3f38b84f907ce691b5f66">_Wolframe::cmdbind::DiscardInputCommandHandlerEscDLF</a>
 , <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#a91064aba46fd02fa20af8905354922a9">_Wolframe::cmdbind::IOFilterCommandHandler</a>
 , <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a5734f798dbd5e553a3a211f869f5187f">_Wolframe::cmdbind::IOFilterCommandHandlerEscDLF</a>
+, <a class="el" href="class__Wolframe_1_1langbind_1_1AuthorizationFunction.html#a21d592a422d1ea4a3c4217220fa318ce">_Wolframe::langbind::AuthorizationFunction</a>
 , <a class="el" href="class__Wolframe_1_1langbind_1_1FormFunctionClosure.html#a383133dfba1ee7916d6e3220c3408b68">_Wolframe::langbind::FormFunctionClosure</a>
 , <a class="el" href="class__Wolframe_1_1langbind_1_1RedirectFilterClosure.html#a11274ffd791ec3da2e5fd800da875152">_Wolframe::langbind::RedirectFilterClosure</a>
 , <a class="el" href="class__Wolframe_1_1serialize_1_1CppFormFunction.html#ad4253ab8c8d488367a891a1137cae53d">_Wolframe::serialize::CppFormFunction</a>
@@ -140,7 +141,6 @@
 , <a class="el" href="class__Wolframe_1_1serialize_1_1DDLStructSerializer.html#a2c8496da922c6856ef97dda4a132ba64">_Wolframe::serialize::DDLStructSerializer</a>
 , <a class="el" href="class__Wolframe_1_1serialize_1_1StructParser.html#abc9ac6c2b0b82f1540cbc42b7a86b4d3">_Wolframe::serialize::StructParser</a>
 , <a class="el" href="class__Wolframe_1_1serialize_1_1StructSerializer.html#aef24b9d57d26f38ba01d2453b00b12f9">_Wolframe::serialize::StructSerializer</a>
-, <a class="el" href="class__Wolframe_1_1types_1_1AuthorizationFunction.html#a77241d36b1230b6d78a97f82d7e27fc8">_Wolframe::types::AuthorizationFunction</a>
 </li>
 <li>called()
 : <a class="el" href="class__Wolframe_1_1langbind_1_1Output.html#a189f88e11d1adea7a99bc1790d42ec68">_Wolframe::langbind::Output</a>
@@ -194,7 +194,7 @@
 : <a class="el" href="class__Wolframe_1_1types_1_1DateTime.html#a632a8698b3f712caed05512d938259a1">_Wolframe::types::DateTime</a>
 </li>
 <li>checkAuthorization()
-: <a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a5307648928aab6703a439ea9a0aa3ccf">_Wolframe::proc::ExecContext</a>
+: <a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a9907126c9f739545e08397ee2460fb83">_Wolframe::proc::ExecContext</a>
 </li>
 <li>checkConstraintNonEmpty()
 : <a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ValueTupleSet.html#a0f4991a2028b86fe0096536f0b9f67e3">_Wolframe::db::vm::ValueTupleSet</a>
@@ -207,6 +207,7 @@
 </li>
 <li>checkSetFlags()
 : <a class="el" href="class__Wolframe_1_1langbind_1_1FilterBase.html#a4cd7c3a96a3689abfea4a4aa407eea5b">_Wolframe::langbind::FilterBase</a>
+, <a class="el" href="class__Wolframe_1_1langbind_1_1JoinInputFilter.html#a38db371091fe5edd15b6abb932a6204e">_Wolframe::langbind::JoinInputFilter</a>
 , <a class="el" href="class__Wolframe_1_1langbind_1_1PropertyTreeInputFilter.html#af51f6c63fe1e97cf4a2b93cfc3152e0e">_Wolframe::langbind::PropertyTreeInputFilter</a>
 , <a class="el" href="class__Wolframe_1_1langbind_1_1TypingInputFilter.html#ae19e364f4071d190a42c0007fbb58698">_Wolframe::langbind::TypingInputFilter</a>
 </li>
@@ -341,7 +342,7 @@
 : <a class="el" href="class__Wolframe_1_1config_1_1ConfigurationBase.html#a1ebd505903a49ae807f7a2b5a411a7bb">_Wolframe::config::ConfigurationBase</a>
 </li>
 <li>ConfigurationTree()
-: <a class="el" href="class__Wolframe_1_1config_1_1ConfigurationTree.html#a039bcddd21173b8a3a49a8757748ae07">_Wolframe::config::ConfigurationTree</a>
+: <a class="el" href="class__Wolframe_1_1config_1_1ConfigurationTree.html#a113f4ba49e859acd60463d9fbc900dcb">_Wolframe::config::ConfigurationTree</a>
 </li>
 <li>ConfiguredBuilder()
 : <a class="el" href="class__Wolframe_1_1module_1_1ConfiguredBuilder.html#a8dcbb992c98b79252292ac5637d65e9e">_Wolframe::module::ConfiguredBuilder</a>
@@ -366,8 +367,8 @@
 </li>
 <li>const_iterator()
 : <a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ValueTupleSet_1_1const__iterator.html#a69827d7b568ec36a02aeb86447ff975c">_Wolframe::db::vm::ValueTupleSet::const_iterator</a>
-, <a class="el" href="class__Wolframe_1_1types_1_1VariantStruct_1_1const__iterator.html#a6fe3bf87fda30620fd93d57d100ada72">_Wolframe::types::VariantStruct::const_iterator</a>
-, <a class="el" href="class__Wolframe_1_1types_1_1VariantStructDescription_1_1const__iterator.html#a020d0036deff41c9c8c813975c6bc3bf">_Wolframe::types::VariantStructDescription::const_iterator</a>
+, <a class="el" href="class__Wolframe_1_1types_1_1VariantStruct_1_1const__iterator.html#ae551664541e9630ff22506da3ec71564">_Wolframe::types::VariantStruct::const_iterator</a>
+, <a class="el" href="class__Wolframe_1_1types_1_1VariantStructDescription_1_1const__iterator.html#a008c5bb43b0aa17a9aef722ebb79bc55">_Wolframe::types::VariantStructDescription::const_iterator</a>
 </li>
 <li>constant()
 : <a class="el" href="class__Wolframe_1_1types_1_1Variant.html#ada90d5f70db27447e1292e96a9b7901e">_Wolframe::types::Variant</a>
@@ -388,7 +389,7 @@
 , <a class="el" href="class__Wolframe_1_1module_1_1ProgramTypeBuilder.html#a134e1511bcd88acdbce06b12ca181d0a">_Wolframe::module::ProgramTypeBuilder</a>
 , <a class="el" href="class__Wolframe_1_1module_1_1SimpleBuilder.html#a4da225f9ba118e9956ae4d304d500e84">_Wolframe::module::SimpleBuilder</a>
 , <a class="el" href="struct__Wolframe_1_1serialize_1_1StructDescription.html#a801f65a3121508308c987d3ad31d1b32">_Wolframe::serialize::StructDescription&lt; Structure &gt;</a>
-, <a class="el" href="class__Wolframe_1_1types_1_1BigNumber.html#a3550daf0540dd7c2f7efc46ffcbf71fa">_Wolframe::types::BigNumber</a>
+, <a class="el" href="class__Wolframe_1_1types_1_1BigNumber.html#af63cdb3684b1b1ce9c5f92be0f08e8b3">_Wolframe::types::BigNumber</a>
 </li>
 <li>consumeChar()
 : <a class="el" href="class__Wolframe_1_1utils_1_1AsciiCharParser.html#a1200d211629baa19504dd2db665b106c">_Wolframe::utils::AsciiCharParser</a>
@@ -404,7 +405,7 @@
 , <a class="el" href="class__Wolframe_1_1langbind_1_1ToStringFilter.html#a54243579693053899984cf1cd8669893">_Wolframe::langbind::ToStringFilter</a>
 </li>
 <li>Context()
-: <a class="el" href="class__Wolframe_1_1serialize_1_1Context.html#ace475f32f4afbc14e39acd7221246e31">_Wolframe::serialize::Context</a>
+: <a class="el" href="class__Wolframe_1_1serialize_1_1Context.html#a669debc81e4f2f0c579197e9298b35f5">_Wolframe::serialize::Context</a>
 </li>
 <li>conversionOperatorTypeName()
 : <a class="el" href="class__Wolframe_1_1types_1_1CustomDataType.html#a462e1b0ef3934aa5ceda169ba83dcac2">_Wolframe::types::CustomDataType</a>
@@ -417,6 +418,7 @@
 : <a class="el" href="class__Wolframe_1_1langbind_1_1BufferingInputFilter.html#aac27e5c0aae9f89338c7a437f720c332">_Wolframe::langbind::BufferingInputFilter</a>
 , <a class="el" href="class__Wolframe_1_1langbind_1_1InputFilter.html#a2faf58ca7c3bb901f842931486c366ca">_Wolframe::langbind::InputFilter</a>
 , <a class="el" href="class__Wolframe_1_1langbind_1_1InputFilterScope.html#abceaea96507415f00f11bbd08d54b02c">_Wolframe::langbind::InputFilterScope</a>
+, <a class="el" href="class__Wolframe_1_1langbind_1_1JoinInputFilter.html#ad5497a6ea7db77612945349566f80a52">_Wolframe::langbind::JoinInputFilter</a>
 , <a class="el" href="class__Wolframe_1_1langbind_1_1OutputFilter.html#aa4f6302acd594750a417fbde93bdd6f0">_Wolframe::langbind::OutputFilter</a>
 , <a class="el" href="class__Wolframe_1_1langbind_1_1PropertyTreeInputFilter.html#a05e8cbdb236917a6afffd44ac8ebba74">_Wolframe::langbind::PropertyTreeInputFilter</a>
 , <a class="el" href="class__Wolframe_1_1langbind_1_1PropertyTreeOutputFilter.html#ac82cdcd3b4e7f24e2df92da97489aafb">_Wolframe::langbind::PropertyTreeOutputFilter</a>
@@ -437,10 +439,10 @@
 , <a class="el" href="struct__Wolframe_1_1types_1_1VariantStructDescription_1_1Element.html#a502eb33bd3d287f23843bc01b1f7afaf">_Wolframe::types::VariantStructDescription::Element</a>
 </li>
 <li>CountedReference()
-: <a class="el" href="class__Wolframe_1_1types_1_1CountedReference.html#a00ed9486218ca9d31a35e556c3504037">_Wolframe::types::CountedReference&lt; OBJ &gt;</a>
+: <a class="el" href="class__Wolframe_1_1types_1_1CountedReference.html#a93ca47308db0b84ea351f16512dd6dd9">_Wolframe::types::CountedReference&lt; OBJ &gt;</a>
 </li>
 <li>CppFormFunction()
-: <a class="el" href="class__Wolframe_1_1serialize_1_1CppFormFunction.html#a24a346bceba592f7da607c90b07b94f9">_Wolframe::serialize::CppFormFunction</a>
+: <a class="el" href="class__Wolframe_1_1serialize_1_1CppFormFunction.html#a22d57268fff8974b4d4422a9f7077bee">_Wolframe::serialize::CppFormFunction</a>
 </li>
 <li>CppFormFunctionBuilder()
 : <a class="el" href="class__Wolframe_1_1module_1_1CppFormFunctionBuilder.html#aa52512e30633a5cdf5bd34976f34b11f">_Wolframe::module::CppFormFunctionBuilder</a>
@@ -467,7 +469,8 @@
 , <a class="el" href="class__Wolframe_1_1langbind_1_1NullFilterType.html#a07f8e912a8036e4b910c84107686d4db">_Wolframe::langbind::NullFilterType</a>
 </li>
 <li>createClosure()
-: <a class="el" href="struct__Wolframe_1_1langbind_1_1FormFunction.html#a66959e4a5333c4628f8a03df424ef29a">_Wolframe::langbind::FormFunction</a>
+: <a class="el" href="class__Wolframe_1_1langbind_1_1AuditFunction.html#a2def50e8f1548f089ea9c56a0f33d67a">_Wolframe::langbind::AuditFunction</a>
+, <a class="el" href="class__Wolframe_1_1langbind_1_1FormFunction.html#a66959e4a5333c4628f8a03df424ef29a">_Wolframe::langbind::FormFunction</a>
 , <a class="el" href="class__Wolframe_1_1langbind_1_1RuntimeEnvironment.html#a910301c73fb406214fc741dceb0b99e4">_Wolframe::langbind::RuntimeEnvironment</a>
 , <a class="el" href="class__Wolframe_1_1langbind_1_1RuntimeEnvironmentFormFunction.html#a259c33cfac40532ee0caf8b260d07de5">_Wolframe::langbind::RuntimeEnvironmentFormFunction</a>
 , <a class="el" href="class__Wolframe_1_1serialize_1_1CppFormFunction.html#a90fdaeb12db377b37dcf1fa63d7147f2">_Wolframe::serialize::CppFormFunction</a>
@@ -494,14 +497,14 @@
 : <a class="el" href="class__Wolframe_1_1types_1_1CustomDataMethodCallNormalizer.html#afaee59a55e0cb4455bf0554528cc60e5">_Wolframe::types::CustomDataMethodCallNormalizer</a>
 </li>
 <li>CustomDataNormalizer()
-: <a class="el" href="class__Wolframe_1_1types_1_1CustomDataNormalizer.html#a0193daa55ce73fa9a563dd0a8cd0bf06">_Wolframe::types::CustomDataNormalizer</a>
+: <a class="el" href="class__Wolframe_1_1types_1_1CustomDataNormalizer.html#a0b5071b278eff0d1ef0a951cb0eed22b">_Wolframe::types::CustomDataNormalizer</a>
 </li>
 <li>customDataType()
 : <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#a1eb68c68e0135947a9445ae1b81227a2">_Wolframe::proc::ProcessorProvider</a>
 , <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#a5077e69d22f108014336df2ae5cef0fb">_Wolframe::proc::ProcessorProviderInterface</a>
 </li>
 <li>CustomDataType()
-: <a class="el" href="class__Wolframe_1_1types_1_1CustomDataType.html#aa6e930ed9ea8e1cacd187ee4c05a3bfc">_Wolframe::types::CustomDataType</a>
+: <a class="el" href="class__Wolframe_1_1types_1_1CustomDataType.html#a759ba866988458738a5c9f115cb719a6">_Wolframe::types::CustomDataType</a>
 </li>
 <li>CustomDataTypeBuilder()
 : <a class="el" href="class__Wolframe_1_1module_1_1CustomDataTypeBuilder.html#a35163689723f3453966a28b03ef67e89">_Wolframe::module::CustomDataTypeBuilder</a>
@@ -513,14 +516,14 @@
 : <a class="el" href="class__Wolframe_1_1types_1_1CustomDataValue.html#a098a6ee5a5f5e3a4c6f986a78937a367">_Wolframe::types::CustomDataValue</a>
 </li>
 <li>customref()
-: <a class="el" href="class__Wolframe_1_1types_1_1Variant.html#a25523c61908dd1d73d1862f9657a627c">_Wolframe::types::Variant</a>
+: <a class="el" href="class__Wolframe_1_1types_1_1Variant.html#a33a6736b85f05360ff08785fc1606149">_Wolframe::types::Variant</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 6 2014 09:41:56 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 10 2014 18:13:45 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

@@ -87,8 +87,7 @@
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">_Wolframe::db Namespace Reference</div>  </div>
 </div><!--header-->
@@ -102,12 +101,13 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1BaseStatement.html">BaseStatement</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements basic parsing of the Wolframe SQL statement with.  <a href="class__Wolframe_1_1db_1_1BaseStatement.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements basic parsing of the Wolframe SQL statement with placeholders, derived classes can steer how the SQL string is converted to native format.  <a href="class__Wolframe_1_1db_1_1BaseStatement.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1Database.html">Database</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for database interface. All databases should provide this interface.  <a href="class__Wolframe_1_1db_1_1Database.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1DatabaseError.html">DatabaseError</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for describing database errors.  <a href="class__Wolframe_1_1db_1_1DatabaseError.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1DatabaseProvider.html">DatabaseProvider</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class__Wolframe_1_1db_1_1Database.html" title="Base class for database interface. All databases should provide this interface. ">Database</a> provider.  <a href="class__Wolframe_1_1db_1_1DatabaseProvider.html#details">More...</a><br /></td></tr>
@@ -119,12 +119,13 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">database configuration  <a href="class__Wolframe_1_1db_1_1DBproviderConfig.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1LanguageDescription.html">LanguageDescription</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface to properties of the database language (SQL)  <a href="class__Wolframe_1_1db_1_1LanguageDescription.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1Statement.html">Statement</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The interface of a statement SQL parameter substutution class.  <a href="class__Wolframe_1_1db_1_1Statement.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1SubstitutingStatement.html">SubstitutingStatement</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An abstract statement class which allows derived classes to.  <a href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An abstract statement class which allows derived classes to provide a simple escaping function which encodes the data which is stored directly in the SQL statement.  <a href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1Transaction.html">Transaction</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class__Wolframe_1_1db_1_1Transaction.html" title="Transaction interface. ">Transaction</a> interface.  <a href="class__Wolframe_1_1db_1_1Transaction.html#details">More...</a><br /></td></tr>
@@ -133,16 +134,13 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface to the database transaction execution statemechine.  <a href="class__Wolframe_1_1db_1_1TransactionExecStatemachine.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1VmTransactionInput.html">VmTransactionInput</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Input of a transaction.  <a href="class__Wolframe_1_1db_1_1VmTransactionInput.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1VmTransactionOutput.html">VmTransactionOutput</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a7c7aac99b9d246cb46a6d2bae6351826"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; std::pair<br class="typebreak" />
-&lt; std::string, <br class="typebreak" />
-<a class="el" href="namespace__Wolframe_1_1langbind.html#af9ff4fca992718af99493df4d4c6d999">langbind::FormFunctionR</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1db.html#a7c7aac99b9d246cb46a6d2bae6351826">TdlTransactionFunctionList</a></td></tr>
-<tr class="separator:a7c7aac99b9d246cb46a6d2bae6351826"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a361d9fdd8c35bed787132c00995c49b7"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
 <a class="el" href="class__Wolframe_1_1types_1_1CountedReference.html">types::CountedReference</a><br class="typebreak" />
 &lt; <a class="el" href="class__Wolframe_1_1db_1_1Transaction.html">Transaction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1db.html#a361d9fdd8c35bed787132c00995c49b7">TransactionR</a></td></tr>
@@ -153,25 +151,8 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a46b64b5c50e930c054d1b1b27f99265d"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak" />
 &lt; <a class="el" href="class__Wolframe_1_1db_1_1VmTransactionInput.html">VmTransactionInput</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1db.html#a46b64b5c50e930c054d1b1b27f99265d">VmTransactionInputR</a></td></tr>
 <tr class="separator:a46b64b5c50e930c054d1b1b27f99265d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a215f2b9ee96034bbfdc6c7bae909daf6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace__Wolframe_1_1db.html#a7c7aac99b9d246cb46a6d2bae6351826">TdlTransactionFunctionList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1db.html#a215f2b9ee96034bbfdc6c7bae909daf6">loadTransactionProgramFile</a> (const std::string &amp;filename, const std::string &amp;databaseId, const std::string &amp;databaseClassName, const <a class="el" href="class__Wolframe_1_1db_1_1LanguageDescription.html">LanguageDescription</a> *langdescr)</td></tr>
-<tr class="separator:a215f2b9ee96034bbfdc6c7bae909daf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a class="anchor" id="a7c7aac99b9d246cb46a6d2bae6351826"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std::vector&lt;std::pair&lt;std::string,<a class="el" href="namespace__Wolframe_1_1langbind.html#af9ff4fca992718af99493df4d4c6d999">langbind::FormFunctionR</a>&gt; &gt; <a class="el" href="namespace__Wolframe_1_1db.html#a7c7aac99b9d246cb46a6d2bae6351826">_Wolframe::db::TdlTransactionFunctionList</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="ab3d3fa46f95d886ce2ea62150e21be66"></a>
 <div class="memitem">
 <div class="memproto">
@@ -208,50 +189,11 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a215f2b9ee96034bbfdc6c7bae909daf6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespace__Wolframe_1_1db.html#a7c7aac99b9d246cb46a6d2bae6351826">TdlTransactionFunctionList</a> _Wolframe::db::loadTransactionProgramFile </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>databaseId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>databaseClassName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const LanguageDescription *&#160;</td>
-          <td class="paramname"><em>langdescr</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 6 2014 09:41:41 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 10 2014 18:13:30 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>4.4. Programming Server Requests/Answers</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe documentation" /><link rel="up" href="bk02ch04.html" title="Chapter 4. Clients With Qt" /><link rel="prev" href="bk02ch04s03.html" title="4.3. Programming the Interface" /><link rel="next" href="bk02ch04s05.html" title="4.5. Eliminating Interface Defects" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>4.4. Programming server requests/answers</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe documentation" /><link rel="up" href="bk02ch04.html" title="Chapter 4. Clients with Qt" /><link rel="prev" href="bk02ch04s03.html" title="4.3. Programming the interface" /><link rel="next" href="bk02ch04s05.html" title="4.5. Eliminating interface defects" />
 	<title xmlns="">Project Wolframe</title>
 	<meta xmlns="" charset="utf-8" />
 	<meta xmlns="" name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -58,21 +58,21 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.4. Programming Server Requests/Answers</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk02ch04s03.html">Prev</a> </td><th width="60%" align="center">Chapter 4. Clients With Qt</th><td width="20%" align="right"> <a accesskey="n" href="bk02ch04s05.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1398548076"></a>4.4. Programming Server Requests/Answers</h2></div></div></div><p>
-</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1398548588"></a>4.4.1. Adressing Widget Data</h3></div></div></div><p>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.4. Programming server requests/answers</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk02ch04s03.html">Prev</a> </td><th width="60%" align="center">Chapter 4. Clients with Qt</th><td width="20%" align="right"> <a accesskey="n" href="bk02ch04s05.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1398779548"></a>4.4. Programming server requests/answers</h2></div></div></div><p>
+</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1398780060"></a>4.4.1. Adressing widget data</h3></div></div></div><p>
 	Widget data elements elements are addressed by using the relative path of the element
 	from the widget where the request or answer was specified. The relative path is 
 	a sequence of widget object names separated by dots ('.'). Only atomic element 
 	references are specified in request/answer structure.
-	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1398536628"></a>Biggest Common Ancestor Path</h4></div></div></div><p>
+	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1398768108"></a>Biggest common ancestor path</h4></div></div></div><p>
 	The grouping of elements into structures is
 	done by the biggest common ancestor path of all atomic element references in
 	a structure. It is assumed that this biggest common ancestor is addressing the structure.
 	If for example a structure has the atomic widget element references "home.user.name"
 	and "home.user.id" then we assume that "home.user" is adressing the structure 
 	containing "name" and "id" in the widget data.
-	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1398537644"></a>Addressing Atomic Elements</h4></div></div></div><div class="table"><a id="idp1398538268"></a><p class="title"><strong>Table 4.8. Basic Elements of Request/Answer</strong></p><div class="table-contents"><table summary="Basic Elements of Request/Answer" border="1"><colgroup><col /><col /></colgroup><thead><tr><th>Description</th><th>Syntax</th></tr></thead><tbody><tr><td>Constant (server request only)</td><td>string with single (') or double (") quotes or numeric integral constant</td></tr><tr><td>Mandatory attribute</td><td>name={variablepath}</td></tr><tr><td>Mandatory content value</td><td>name{{variablepath}}</td></tr><tr><td>Optional attribute</td><td>name={variablepath:?}</td></tr><tr><td>Optional content value</td><td>name{{variablepath:?}}</td></tr><tr><td>Optional attribute with default</td><td>name={variablepath:default}</td></tr><tr><td>Optional content with default value</td><td>name{{variablepath:default}}</td></tr><tr><td>Ignored attribute</td><td>name={?}</td></tr><tr><td>Ignored content value</td><td>name{{?}}</td></tr><tr><td>Ignored sub structure</td><td>name{?}</td></tr></tbody></table></div></div><br class="table-break" /></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1398588876"></a>Special Path Elements</h4></div></div></div><p>Variable references can address other widgets than sub widgets of the current widget.
-	</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1398589516"></a>Addressing the Form Widget</h5></div></div></div><p>The reserved path element 'main' addresses the form widget root.</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1398590196"></a>Widget Links</h5></div></div></div><p>A dynamic property with the prefix 'link:' followed by an identifier
+	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1398769124"></a>Addressing atomic elements</h4></div></div></div><div class="table"><a id="idp1398769748"></a><p class="title"><strong>Table 4.8. Basic elements of request/answer</strong></p><div class="table-contents"><table summary="Basic elements of request/answer" border="1"><colgroup><col /><col /></colgroup><thead><tr><th>Description</th><th>Syntax</th></tr></thead><tbody><tr><td>Constant (server request only)</td><td>string with single (') or double (") quotes or numeric integral constant</td></tr><tr><td>Mandatory attribute</td><td>name={variablepath}</td></tr><tr><td>Mandatory content value</td><td>name{{variablepath}}</td></tr><tr><td>Optional attribute</td><td>name={variablepath:?}</td></tr><tr><td>Optional content value</td><td>name{{variablepath:?}}</td></tr><tr><td>Optional attribute with default</td><td>name={variablepath:default}</td></tr><tr><td>Optional content with default value</td><td>name{{variablepath:default}}</td></tr><tr><td>Ignored attribute</td><td>name={?}</td></tr><tr><td>Ignored content value</td><td>name{{?}}</td></tr><tr><td>Ignored sub structure</td><td>name{?}</td></tr></tbody></table></div></div><br class="table-break" /></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1398820348"></a>Special path elements</h4></div></div></div><p>Variable references can address other widgets than sub widgets of the current widget.
+	</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1398820988"></a>Addressing the form widget</h5></div></div></div><p>The reserved path element 'main' addresses the form widget root.</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1398821668"></a>Widget links</h5></div></div></div><p>A dynamic property with the prefix 'link:' followed by an identifier
 		as name declares the widget with the widget id as dynamic property value of
 		the link definition to be referencable by name. The referencing name 
 		is the identifier after the prefix 'link:'. So if we for example define
@@ -84,9 +84,9 @@
 		A link is defined to the sub-form with the widget id passed to it. 
 		The subform signals some action to the parent that can address the data
 		entered in the subform via this link.
-		</p></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1398591940"></a>4.4.2. Data Structures</h3></div></div></div><p>Structure elements are separated by semicolon ';' and put into '{' brackets '}' 
+		</p></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1398823412"></a>4.4.2. Data structures</h3></div></div></div><p>Structure elements are separated by semicolon ';' and put into '{' brackets '}' 
 	with the name of the structure in front.
-	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1398592612"></a>Example</h4></div></div></div><p>The following example shows an address as structure:
+	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1398824084"></a>Example</h4></div></div></div><p>The following example shows an address as structure:
 		</p><pre class="programlisting">
 		
 address{
@@ -96,8 +96,8 @@ address{
   street{{address.street}}
 }
 
-		</pre></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1398594388"></a>4.4.3. Arrays</h3></div></div></div><p>Arrays are marked with opened and closed square brackets '[' ']' without specifying dimension (arbitrary size or empty when missing).
-	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1398595060"></a>Description</h4></div></div></div><div class="table"><a id="idp1398595396"></a><p class="title"><strong>Table 4.9. Types of Arrays</strong></p><div class="table-contents"><table summary="Types of Arrays" border="1"><colgroup><col /><col /></colgroup><thead><tr><th>Description</th><th>Syntax</th></tr></thead><tbody><tr><td>Arbitrary Size Array of Content Values</td><td>name[]{{variablepath}}</td></tr><tr><td>Arbitrary Size Array of Structures</td><td>name[]{structure definition}</td></tr></tbody></table></div></div><br class="table-break" /></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1398598716"></a>Example</h4></div></div></div><p>
+		</pre></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1398825860"></a>4.4.3. Arrays</h3></div></div></div><p>Arrays are marked with opened and closed square brackets '[' ']' without specifying dimension (arbitrary size or empty when missing).
+	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1398826532"></a>Description</h4></div></div></div><div class="table"><a id="idp1398826868"></a><p class="title"><strong>Table 4.9. Types of arrays</strong></p><div class="table-contents"><table summary="Types of arrays" border="1"><colgroup><col /><col /></colgroup><thead><tr><th>Description</th><th>Syntax</th></tr></thead><tbody><tr><td>Arbitrary Size Array of Content Values</td><td>name[]{{variablepath}}</td></tr><tr><td>Arbitrary Size Array of Structures</td><td>name[]{structure definition}</td></tr></tbody></table></div></div><br class="table-break" /></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1398830188"></a>Example</h4></div></div></div><p>
 		The following example shows an array of addresses:
 		</p><pre class="programlisting">
 		address[]{
@@ -115,11 +115,11 @@ address{
 		adresses and the case of having an array of surnames, and array of prenames and an array
 		of streets. The later makes not much sense here. With the common prefix we state how entities
 		are grouped together to structures in the representation in the widget.
-		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1398601436"></a>4.4.4. Indirection and Recursion</h3></div></div></div><p>Indirection allows to define recursive structures. Indirection means that an element is 
+		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1398832908"></a>4.4.4. Indirection and recursion</h3></div></div></div><p>Indirection allows to define recursive structures. Indirection means that an element is 
 	specified as reference that is expanded when the element appears in the data structure to map.
 	The grouping element of the indirection elements is the common ancestor of all non indirection 
 	elements in the structure containing the indirection.
-	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1398602292"></a>Description</h4></div></div></div><div class="table"><a id="idp1398602612"></a><p class="title"><strong>Table 4.10. Types of Indirections</strong></p><div class="table-contents"><table summary="Types of Indirections" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th>Description</th><th>Syntax (name equals ancestor name)</th><th>Syntax (name differs from ancestor name)</th></tr></thead><tbody><tr><td>Single Element Indirection</td><td>^ancestor</td><td>^item:ancestor</td></tr><tr><td>Multiple Indirection</td><td>^ancestor[]</td><td>^item:ancestor[]</td></tr></tbody></table></div></div><br class="table-break" /></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1398606580"></a>Example (Arbitrary Tree)</h4></div></div></div><p>Example representing a tree with arbitrary number of children per node:
+	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1398833764"></a>Description</h4></div></div></div><div class="table"><a id="idp1398834084"></a><p class="title"><strong>Table 4.10. Types of indirections</strong></p><div class="table-contents"><table summary="Types of indirections" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th>Description</th><th>Syntax (name equals ancestor name)</th><th>Syntax (name differs from ancestor name)</th></tr></thead><tbody><tr><td>Single Element Indirection</td><td>^ancestor</td><td>^item:ancestor</td></tr><tr><td>Multiple Indirection</td><td>^ancestor[]</td><td>^item:ancestor[]</td></tr></tbody></table></div></div><br class="table-break" /></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1398838052"></a>Example (arbitrary tree)</h4></div></div></div><p>Example representing a tree with arbitrary number of children per node:
 		</p><pre class="programlisting">
 		
 item{
@@ -128,7 +128,7 @@ item{
   ^item[]
 }
 
-		</pre></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1398608284"></a>Example (Binary Tree)</h4></div></div></div><p>Example representing a binary tree:
+		</pre></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1398839756"></a>Example (binary tree)</h4></div></div></div><p>Example representing a binary tree:
 		</p><pre class="programlisting">
 		
 item{
@@ -138,7 +138,7 @@ item{
   ^right:item
 }
 
-		</pre></div></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk02ch04s03.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk02ch04.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk02ch04s05.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">4.3. Programming the Interface </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 4.5. Eliminating Interface Defects</td></tr></table></div></div></div>
+		</pre></div></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk02ch04s03.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk02ch04.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk02ch04s05.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">4.3. Programming the interface </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 4.5. Eliminating interface defects</td></tr></table></div></div></div>
 
 <!-- Footer -->
 <div xmlns="" class="wrapper row2">

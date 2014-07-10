@@ -95,37 +95,47 @@
 </div><!--header-->
 <div class="contents">
 
+<p>Interface to properties of the database language (SQL)  
+ <a href="class__Wolframe_1_1db_1_1LanguageDescription.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="databaseLanguage_8hpp_source.html">databaseLanguage.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a6dc9c99555b6a56647fd3a26a50a02b2"><td class="memItemLeft" align="right" valign="top">typedef std::pair&lt; std::string, <br class="typebreak" />
 std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1LanguageDescription.html#a6dc9c99555b6a56647fd3a26a50a02b2">TemplateArgumentAssignment</a></td></tr>
+<tr class="memdesc:a6dc9c99555b6a56647fd3a26a50a02b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Substitute all template arguments in the specified embedded database statement.  <a href="#a6dc9c99555b6a56647fd3a26a50a02b2">More...</a><br /></td></tr>
 <tr class="separator:a6dc9c99555b6a56647fd3a26a50a02b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4061242dff22ab7d3ad928624672ab9f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1LanguageDescription.html#a4061242dff22ab7d3ad928624672ab9f">LanguageDescription</a> ()</td></tr>
+<tr class="memdesc:a4061242dff22ab7d3ad928624672ab9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a4061242dff22ab7d3ad928624672ab9f">More...</a><br /></td></tr>
 <tr class="separator:a4061242dff22ab7d3ad928624672ab9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81c568032b0b50ffddb4ebfaa2dd2128"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1LanguageDescription.html#a81c568032b0b50ffddb4ebfaa2dd2128">~LanguageDescription</a> ()</td></tr>
+<tr class="memdesc:a81c568032b0b50ffddb4ebfaa2dd2128"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a81c568032b0b50ffddb4ebfaa2dd2128">More...</a><br /></td></tr>
 <tr class="separator:a81c568032b0b50ffddb4ebfaa2dd2128"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a198d96b218fa3b6af5c5dfcc6e92d076"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1LanguageDescription.html#a198d96b218fa3b6af5c5dfcc6e92d076">eoln_commentopr</a> () const </td></tr>
-<tr class="memdesc:a198d96b218fa3b6af5c5dfcc6e92d076"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operator marking the start of an end of line comment.  <a href="#a198d96b218fa3b6af5c5dfcc6e92d076">More...</a><br /></td></tr>
+<tr class="memdesc:a198d96b218fa3b6af5c5dfcc6e92d076"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operator marking the start of an end of line comment. Default is the SQL standard EOLN comment marker.  <a href="#a198d96b218fa3b6af5c5dfcc6e92d076">More...</a><br /></td></tr>
 <tr class="separator:a198d96b218fa3b6af5c5dfcc6e92d076"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8e74fdeaafe760c11def065200af43d"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1LanguageDescription.html#af8e74fdeaafe760c11def065200af43d">stm_argument_reference</a> (int index) const </td></tr>
-<tr class="memdesc:af8e74fdeaafe760c11def065200af43d"><td class="mdescLeft">&#160;</td><td class="mdescRight">String used for declaring a reference to an argument by index (starting with 1).  <a href="#af8e74fdeaafe760c11def065200af43d">More...</a><br /></td></tr>
+<tr class="memdesc:af8e74fdeaafe760c11def065200af43d"><td class="mdescLeft">&#160;</td><td class="mdescRight">String used for declaring a reference to an argument by index (starting with 1). Default is the SQL standard argument reference in embedded database statements.  <a href="#af8e74fdeaafe760c11def065200af43d">More...</a><br /></td></tr>
 <tr class="separator:af8e74fdeaafe760c11def065200af43d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0569dbf5f5afd4cfd8536d48e916fbc8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1LanguageDescription.html#a0569dbf5f5afd4cfd8536d48e916fbc8">isEmbeddedStatement</a> (std::string::const_iterator si, std::string::const_iterator se) const </td></tr>
+<tr class="memdesc:a0569dbf5f5afd4cfd8536d48e916fbc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate if the start of the block specified as argument is forming an embedded statement in the database language.  <a href="#a0569dbf5f5afd4cfd8536d48e916fbc8">More...</a><br /></td></tr>
 <tr class="separator:a0569dbf5f5afd4cfd8536d48e916fbc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89b9c1238df44512ba2b617670dff2f5"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1LanguageDescription.html#a89b9c1238df44512ba2b617670dff2f5">parseEmbeddedStatement</a> (std::string::const_iterator &amp;si, std::string::const_iterator se) const </td></tr>
+<tr class="memdesc:a89b9c1238df44512ba2b617670dff2f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse an embedded statement in the database language.  <a href="#a89b9c1238df44512ba2b617670dff2f5">More...</a><br /></td></tr>
 <tr class="separator:a89b9c1238df44512ba2b617670dff2f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf7d420f8f6b02ed7d76031607a9f958"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1LanguageDescription.html#adf7d420f8f6b02ed7d76031607a9f958">substituteTemplateArguments</a> (const std::string &amp;cmd, const std::vector&lt; <a class="el" href="class__Wolframe_1_1db_1_1LanguageDescription.html#a6dc9c99555b6a56647fd3a26a50a02b2">TemplateArgumentAssignment</a> &gt; &amp;arg) const </td></tr>
 <tr class="separator:adf7d420f8f6b02ed7d76031607a9f958"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebc61440dbdfdc47fe150198b5e740d2"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1LanguageDescription.html#aebc61440dbdfdc47fe150198b5e740d2">isCaseSensitive</a> () const </td></tr>
-<tr class="memdesc:aebc61440dbdfdc47fe150198b5e740d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define if a database is case-insensitive. This has influence on TDL parsing.  <a href="#aebc61440dbdfdc47fe150198b5e740d2">More...</a><br /></td></tr>
+<tr class="memdesc:aebc61440dbdfdc47fe150198b5e740d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define if a database is case-insensitive. This has influence on TDL parsing Default is according SQL standard 'false'.  <a href="#aebc61440dbdfdc47fe150198b5e740d2">More...</a><br /></td></tr>
 <tr class="separator:aebc61440dbdfdc47fe150198b5e740d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Interface to properties of the database language (SQL) </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a6dc9c99555b6a56647fd3a26a50a02b2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -135,6 +145,15 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Substitute all template arguments in the specified embedded database statement. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cmd</td><td>embedded database statement </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">arg</td><td>template arguments to substitute in the embedded database statement </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -160,6 +179,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Default constructor. </p>
+
 </div>
 </div>
 <a class="anchor" id="a81c568032b0b50ffddb4ebfaa2dd2128"></a>
@@ -182,6 +203,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Destructor. </p>
 
 </div>
 </div>
@@ -207,7 +230,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Operator marking the start of an end of line comment. </p>
+<p>Operator marking the start of an end of line comment. Default is the SQL standard EOLN comment marker. </p>
 
 </div>
 </div>
@@ -232,7 +255,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Define if a database is case-insensitive. This has influence on TDL parsing. </p>
+<p>Define if a database is case-insensitive. This has influence on TDL parsing Default is according SQL standard 'false'. </p>
 
 </div>
 </div>
@@ -268,6 +291,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Evaluate if the start of the block specified as argument is forming an embedded statement in the database language. </p>
+
 </div>
 </div>
 <a class="anchor" id="a89b9c1238df44512ba2b617670dff2f5"></a>
@@ -302,6 +327,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Parse an embedded statement in the database language. </p>
+
 </div>
 </div>
 <a class="anchor" id="af8e74fdeaafe760c11def065200af43d"></a>
@@ -326,7 +353,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>String used for declaring a reference to an argument by index (starting with 1). </p>
+<p>String used for declaring a reference to an argument by index (starting with 1). Default is the SQL standard argument reference in embedded database statements. </p>
 
 </div>
 </div>
@@ -371,7 +398,7 @@ Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 6 2014 09:41:41 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 10 2014 18:13:30 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

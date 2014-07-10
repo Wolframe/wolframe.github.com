@@ -122,49 +122,51 @@
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">************************************************************************/</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#ifndef _WOLFRAME_TYPES_SECURE_STRING_HPP_INCLUDED</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#define _WOLFRAME_TYPES_SECURE_STRING_HPP_INCLUDED</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">namespace </span>_Wolframe {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">namespace </span>types {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1types_1_1SecureString.html">   44</a></span>&#160;<span class="keyword">class </span><a class="code" href="class__Wolframe_1_1types_1_1SecureString.html">SecureString</a></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        :<span class="keyword">public</span> std::string</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1types_1_1SecureString.html#a1aa3a983a1630be18f4a602b6042a216">   48</a></span>&#160;        <a class="code" href="class__Wolframe_1_1types_1_1SecureString.html#a1aa3a983a1630be18f4a602b6042a216">SecureString</a>(){}</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1types_1_1SecureString.html#a29979ad3504391f44f9fe5b1e4ff5aab">   49</a></span>&#160;        <a class="code" href="class__Wolframe_1_1types_1_1SecureString.html#a29979ad3504391f44f9fe5b1e4ff5aab">SecureString</a>( <span class="keyword">const</span> std::string&amp; o)</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                :std::string(o){}</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1types_1_1SecureString.html#a78a97fd31f605e6e485d3d8d2f8bfd46">   51</a></span>&#160;        <a class="code" href="class__Wolframe_1_1types_1_1SecureString.html#a78a97fd31f605e6e485d3d8d2f8bfd46">~SecureString</a>()</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                <a class="code" href="class__Wolframe_1_1types_1_1SecureString.html#ad161ca4059ebf40e59809fd06276c194">eraseContent</a>();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1types_1_1SecureString.html#afe222e89dfb6f9fbcfc69e67832eae76">   55</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class__Wolframe_1_1types_1_1SecureString.html#afe222e89dfb6f9fbcfc69e67832eae76">clear</a>()</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                <a class="code" href="class__Wolframe_1_1types_1_1SecureString.html#ad161ca4059ebf40e59809fd06276c194">eraseContent</a>();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                std::string::clear();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1types_1_1SecureString.html#ad161ca4059ebf40e59809fd06276c194">   62</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class__Wolframe_1_1types_1_1SecureString.html#ad161ca4059ebf40e59809fd06276c194">eraseContent</a>()</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                std::string::iterator si = begin(), se = end();</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                <span class="keywordflow">for</span> (; si != se; ++si) *si = <span class="charliteral">&#39;\0&#39;</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;};</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}}<span class="comment">//namespace</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="ttc" id="class__Wolframe_1_1types_1_1SecureString_html_ad161ca4059ebf40e59809fd06276c194"><div class="ttname"><a href="class__Wolframe_1_1types_1_1SecureString.html#ad161ca4059ebf40e59809fd06276c194">_Wolframe::types::SecureString::eraseContent</a></div><div class="ttdeci">void eraseContent()</div><div class="ttdef"><b>Definition:</b> secureString.hpp:62</div></div>
-<div class="ttc" id="class__Wolframe_1_1types_1_1SecureString_html_a78a97fd31f605e6e485d3d8d2f8bfd46"><div class="ttname"><a href="class__Wolframe_1_1types_1_1SecureString.html#a78a97fd31f605e6e485d3d8d2f8bfd46">_Wolframe::types::SecureString::~SecureString</a></div><div class="ttdeci">~SecureString()</div><div class="ttdef"><b>Definition:</b> secureString.hpp:51</div></div>
-<div class="ttc" id="class__Wolframe_1_1types_1_1SecureString_html_a29979ad3504391f44f9fe5b1e4ff5aab"><div class="ttname"><a href="class__Wolframe_1_1types_1_1SecureString.html#a29979ad3504391f44f9fe5b1e4ff5aab">_Wolframe::types::SecureString::SecureString</a></div><div class="ttdeci">SecureString(const std::string &amp;o)</div><div class="ttdef"><b>Definition:</b> secureString.hpp:49</div></div>
-<div class="ttc" id="class__Wolframe_1_1types_1_1SecureString_html_a1aa3a983a1630be18f4a602b6042a216"><div class="ttname"><a href="class__Wolframe_1_1types_1_1SecureString.html#a1aa3a983a1630be18f4a602b6042a216">_Wolframe::types::SecureString::SecureString</a></div><div class="ttdeci">SecureString()</div><div class="ttdef"><b>Definition:</b> secureString.hpp:48</div></div>
-<div class="ttc" id="class__Wolframe_1_1types_1_1SecureString_html_afe222e89dfb6f9fbcfc69e67832eae76"><div class="ttname"><a href="class__Wolframe_1_1types_1_1SecureString.html#afe222e89dfb6f9fbcfc69e67832eae76">_Wolframe::types::SecureString::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdef"><b>Definition:</b> secureString.hpp:55</div></div>
-<div class="ttc" id="class__Wolframe_1_1types_1_1SecureString_html"><div class="ttname"><a href="class__Wolframe_1_1types_1_1SecureString.html">_Wolframe::types::SecureString</a></div><div class="ttdoc">String definition with the intention to hold sensitive data. </div><div class="ttdef"><b>Definition:</b> secureString.hpp:44</div></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">namespace </span>_Wolframe {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">namespace </span>types {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1types_1_1SecureString.html">   45</a></span>&#160;<span class="keyword">class </span><a class="code" href="class__Wolframe_1_1types_1_1SecureString.html">SecureString</a></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        :<span class="keyword">public</span> std::string</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1types_1_1SecureString.html#a1aa3a983a1630be18f4a602b6042a216">   49</a></span>&#160;        <a class="code" href="class__Wolframe_1_1types_1_1SecureString.html#a1aa3a983a1630be18f4a602b6042a216">SecureString</a>(){}</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1types_1_1SecureString.html#a29979ad3504391f44f9fe5b1e4ff5aab">   50</a></span>&#160;        <a class="code" href="class__Wolframe_1_1types_1_1SecureString.html#a29979ad3504391f44f9fe5b1e4ff5aab">SecureString</a>( <span class="keyword">const</span> std::string&amp; o)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                :std::string(o){}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1types_1_1SecureString.html#a78a97fd31f605e6e485d3d8d2f8bfd46">   53</a></span>&#160;        <a class="code" href="class__Wolframe_1_1types_1_1SecureString.html#a78a97fd31f605e6e485d3d8d2f8bfd46">~SecureString</a>()</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                <a class="code" href="class__Wolframe_1_1types_1_1SecureString.html#ad161ca4059ebf40e59809fd06276c194">eraseContent</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1types_1_1SecureString.html#afe222e89dfb6f9fbcfc69e67832eae76">   57</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class__Wolframe_1_1types_1_1SecureString.html#afe222e89dfb6f9fbcfc69e67832eae76">clear</a>()</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                <a class="code" href="class__Wolframe_1_1types_1_1SecureString.html#ad161ca4059ebf40e59809fd06276c194">eraseContent</a>();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                std::string::clear();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1types_1_1SecureString.html#ad161ca4059ebf40e59809fd06276c194">   64</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class__Wolframe_1_1types_1_1SecureString.html#ad161ca4059ebf40e59809fd06276c194">eraseContent</a>()</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                std::string::iterator si = begin(), se = end();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                <span class="keywordflow">for</span> (; si != se; ++si) *si = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}}<span class="comment">//namespace</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="ttc" id="class__Wolframe_1_1types_1_1SecureString_html_ad161ca4059ebf40e59809fd06276c194"><div class="ttname"><a href="class__Wolframe_1_1types_1_1SecureString.html#ad161ca4059ebf40e59809fd06276c194">_Wolframe::types::SecureString::eraseContent</a></div><div class="ttdeci">void eraseContent()</div><div class="ttdef"><b>Definition:</b> secureString.hpp:64</div></div>
+<div class="ttc" id="class__Wolframe_1_1types_1_1SecureString_html_a78a97fd31f605e6e485d3d8d2f8bfd46"><div class="ttname"><a href="class__Wolframe_1_1types_1_1SecureString.html#a78a97fd31f605e6e485d3d8d2f8bfd46">_Wolframe::types::SecureString::~SecureString</a></div><div class="ttdeci">~SecureString()</div><div class="ttdef"><b>Definition:</b> secureString.hpp:53</div></div>
+<div class="ttc" id="class__Wolframe_1_1types_1_1SecureString_html_a29979ad3504391f44f9fe5b1e4ff5aab"><div class="ttname"><a href="class__Wolframe_1_1types_1_1SecureString.html#a29979ad3504391f44f9fe5b1e4ff5aab">_Wolframe::types::SecureString::SecureString</a></div><div class="ttdeci">SecureString(const std::string &amp;o)</div><div class="ttdef"><b>Definition:</b> secureString.hpp:50</div></div>
+<div class="ttc" id="class__Wolframe_1_1types_1_1SecureString_html_a1aa3a983a1630be18f4a602b6042a216"><div class="ttname"><a href="class__Wolframe_1_1types_1_1SecureString.html#a1aa3a983a1630be18f4a602b6042a216">_Wolframe::types::SecureString::SecureString</a></div><div class="ttdeci">SecureString()</div><div class="ttdef"><b>Definition:</b> secureString.hpp:49</div></div>
+<div class="ttc" id="class__Wolframe_1_1types_1_1SecureString_html_afe222e89dfb6f9fbcfc69e67832eae76"><div class="ttname"><a href="class__Wolframe_1_1types_1_1SecureString.html#afe222e89dfb6f9fbcfc69e67832eae76">_Wolframe::types::SecureString::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdef"><b>Definition:</b> secureString.hpp:57</div></div>
+<div class="ttc" id="class__Wolframe_1_1types_1_1SecureString_html"><div class="ttname"><a href="class__Wolframe_1_1types_1_1SecureString.html">_Wolframe::types::SecureString</a></div><div class="ttdoc">String definition with the intention to hold sensitive data. </div><div class="ttdef"><b>Definition:</b> secureString.hpp:45</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 6 2014 09:41:34 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 10 2014 18:13:22 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

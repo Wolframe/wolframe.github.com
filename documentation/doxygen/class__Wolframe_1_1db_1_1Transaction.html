@@ -111,6 +111,7 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3c35164be74e5fae03bc4f2fa029cea2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1Transaction.html#a3c35164be74e5fae03bc4f2fa029cea2">Transaction</a> (const std::string &amp;name_, const <a class="el" href="namespace__Wolframe_1_1db.html#ab3d3fa46f95d886ce2ea62150e21be66">TransactionExecStatemachineR</a> &amp;stm_)</td></tr>
+<tr class="memdesc:a3c35164be74e5fae03bc4f2fa029cea2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a3c35164be74e5fae03bc4f2fa029cea2">More...</a><br /></td></tr>
 <tr class="separator:a3c35164be74e5fae03bc4f2fa029cea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb34fd13abf6c364ae42d264ebd14026"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1Transaction.html#aeb34fd13abf6c364ae42d264ebd14026">~Transaction</a> ()</td></tr>
 <tr class="memdesc:aeb34fd13abf6c364ae42d264ebd14026"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#aeb34fd13abf6c364ae42d264ebd14026">More...</a><br /></td></tr>
@@ -134,6 +135,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a38dede0a4eb8c2f9056870054a01c59f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute a transaction.  <a href="#a38dede0a4eb8c2f9056870054a01c59f">More...</a><br /></td></tr>
 <tr class="separator:a38dede0a4eb8c2f9056870054a01c59f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a143a861f149c859d76cb8be8c6d50901"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1Transaction.html#a143a861f149c859d76cb8be8c6d50901">name</a> () const </td></tr>
+<tr class="memdesc:a143a861f149c859d76cb8be8c6d50901"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the transaction.  <a href="#a143a861f149c859d76cb8be8c6d50901">More...</a><br /></td></tr>
 <tr class="separator:a143a861f149c859d76cb8be8c6d50901"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5a9aa986f576cc43cbc7944a55858ea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1Transaction.html#aa5a9aa986f576cc43cbc7944a55858ea">executeStatement</a> (<a class="el" href="class__Wolframe_1_1db_1_1Transaction_1_1Result.html">Result</a> &amp;result, const std::string &amp;stm, const std::vector&lt; <a class="el" href="class__Wolframe_1_1types_1_1Variant.html">types::Variant</a> &gt; &amp;params=std::vector&lt; <a class="el" href="class__Wolframe_1_1types_1_1Variant.html">types::Variant</a> &gt;())</td></tr>
 <tr class="memdesc:aa5a9aa986f576cc43cbc7944a55858ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute a single statement with result.  <a href="#aa5a9aa986f576cc43cbc7944a55858ea">More...</a><br /></td></tr>
@@ -142,8 +144,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a0ff5fc3321239eff4428f1c2e4fac9ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute a single statement without result.  <a href="#a0ff5fc3321239eff4428f1c2e4fac9ba">More...</a><br /></td></tr>
 <tr class="separator:a0ff5fc3321239eff4428f1c2e4fac9ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ff8ff2f87cb0632e05cfbd314423513"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1db_1_1TransactionExecStatemachine.html">TransactionExecStatemachine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1Transaction.html#a5ff8ff2f87cb0632e05cfbd314423513">execStatemachine</a> ()</td></tr>
+<tr class="memdesc:a5ff8ff2f87cb0632e05cfbd314423513"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the lower lever database specific execution statemachine of the transaction.  <a href="#a5ff8ff2f87cb0632e05cfbd314423513">More...</a><br /></td></tr>
 <tr class="separator:a5ff8ff2f87cb0632e05cfbd314423513"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9dc48e72dd5c28fb957dca7caee9452"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class__Wolframe_1_1db_1_1DatabaseError.html">DatabaseError</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1Transaction.html#ae9dc48e72dd5c28fb957dca7caee9452">getLastError</a> () const </td></tr>
+<tr class="memdesc:ae9dc48e72dd5c28fb957dca7caee9452"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the last error occurred.  <a href="#ae9dc48e72dd5c28fb957dca7caee9452">More...</a><br /></td></tr>
 <tr class="separator:ae9dc48e72dd5c28fb957dca7caee9452"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
@@ -194,6 +198,15 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name_</td><td>name of the transaction (for logging purpose only) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stm_</td><td>database interface needed by the virtual machine to execute the transaction </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -352,6 +365,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Get the lower lever database specific execution statemachine of the transaction. </p>
+
 </div>
 </div>
 <a class="anchor" id="a38dede0a4eb8c2f9056870054a01c59f"></a>
@@ -476,6 +491,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Get the last error occurred. </p>
+
 </div>
 </div>
 <a class="anchor" id="a143a861f149c859d76cb8be8c6d50901"></a>
@@ -498,6 +515,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Get the name of the transaction. </p>
 
 </div>
 </div>
@@ -586,7 +605,7 @@ Private Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 6 2014 09:41:42 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 10 2014 18:13:30 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

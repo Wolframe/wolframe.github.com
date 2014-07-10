@@ -124,9 +124,15 @@
 <li>m_aaaaProvider
 : <a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a018804e3df8baad2f89401a9e33b58e2">_Wolframe::proc::ExecContext</a>
 </li>
+<li>m_addressRestriction
+: <a class="el" href="class__Wolframe_1_1net_1_1ServerTCPendpoint.html#a2c6bb258fea9e8819e7a6e04d8d4d896">_Wolframe::net::ServerTCPendpoint</a>
+</li>
 <li>m_allocated
 : <a class="el" href="class__Wolframe_1_1protocol_1_1Buffer.html#aaa342aaac64415d8400466a46c9644f4">_Wolframe::protocol::Buffer</a>
 , <a class="el" href="class__Wolframe_1_1protocol_1_1MemBlock.html#aa1eb72446f19bf13c0bf27d225f5c67c">_Wolframe::protocol::MemBlock</a>
+</li>
+<li>m_allowedar
+: <a class="el" href="class__Wolframe_1_1net_1_1AddressRestriction.html#a6579c2a1ce5d9c8ab29c96e09177a4f5">_Wolframe::net::AddressRestriction</a>
 </li>
 <li>m_api_param
 : <a class="el" href="class__Wolframe_1_1serialize_1_1CppFormFunction.html#af9e70eb081b4b36b5605b440accef22c">_Wolframe::serialize::CppFormFunction</a>
@@ -167,13 +173,16 @@
 : <a class="el" href="class__Wolframe_1_1AAAA_1_1AAAAconfiguration.html#ae41257d4691627d2d61e6e72cff3ab59">_Wolframe::AAAA::AAAAconfiguration</a>
 </li>
 <li>m_authenticator
-: <a class="el" href="class__Wolframe_1_1AAAA_1_1User.html#a9e69e7d8ab955e5744e99dde41c9f5c1">_Wolframe::AAAA::User</a>
+: <a class="el" href="class__Wolframe_1_1AAAA_1_1User.html#a894415e0be0a0642d78f610db1dd2abc">_Wolframe::AAAA::User</a>
 </li>
 <li>m_authorizer
 : <a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a9ac97e51db0833eae06b3f5f09d95cb9">_Wolframe::proc::ExecContext</a>
 </li>
 <li>m_authzConfig
 : <a class="el" href="class__Wolframe_1_1AAAA_1_1AAAAconfiguration.html#a5721980443fcd33ebc5fc13c4a68a37c">_Wolframe::AAAA::AAAAconfiguration</a>
+</li>
+<li>m_authzConfigDefined
+: <a class="el" href="class__Wolframe_1_1AAAA_1_1AAAAconfiguration.html#a96038ea6cc19eed74d9ecb8c4a6b0830">_Wolframe::AAAA::AAAAconfiguration</a>
 </li>
 <li>m_authzDefault
 : <a class="el" href="class__Wolframe_1_1AAAA_1_1AAAAconfiguration.html#a86d8bd83ae5403ee020fde7ceb32b96b">_Wolframe::AAAA::AAAAconfiguration</a>
@@ -495,8 +504,7 @@
 : <a class="el" href="class__Wolframe_1_1langbind_1_1RuntimeEnvironmentFormFunction.html#a520df9d1a92932c44edaeabb7006cdbd">_Wolframe::langbind::RuntimeEnvironmentFormFunction</a>
 </li>
 <li>m_function
-: <a class="el" href="class__Wolframe_1_1langbind_1_1Authorization.html#a2e374c3423443c42a30459bff0221d84">_Wolframe::langbind::Authorization</a>
-, <a class="el" href="class__Wolframe_1_1module_1_1CppFormFunctionBuilder.html#a702b4eda32671e5764a0405707d92108">_Wolframe::module::CppFormFunctionBuilder</a>
+: <a class="el" href="class__Wolframe_1_1module_1_1CppFormFunctionBuilder.html#a702b4eda32671e5764a0405707d92108">_Wolframe::module::CppFormFunctionBuilder</a>
 , <a class="el" href="class__Wolframe_1_1module_1_1CppFormFunctionConstructor.html#a072b7f41d229726f1fdcaf3f10b53663">_Wolframe::module::CppFormFunctionConstructor</a>
 , <a class="el" href="class__Wolframe_1_1module_1_1NormalizeFunctionBuilder.html#a5bd7503ff81af6ea306fba68f01d5416">_Wolframe::module::NormalizeFunctionBuilder</a>
 , <a class="el" href="class__Wolframe_1_1module_1_1NormalizeFunctionConstructor.html#acd603567a8262d8acc54c685c4c23886">_Wolframe::module::NormalizeFunctionConstructor</a>
@@ -597,6 +605,12 @@
 , <a class="el" href="class__Wolframe_1_1langbind_1_1TypedInputFilterScope.html#a9cf8808a4676d255ea7ddec42e227a3e">_Wolframe::langbind::TypedInputFilterScope</a>
 , <a class="el" href="class__Wolframe_1_1langbind_1_1TypingInputFilter.html#a3efb672f582ed41476ca1de040a0c884">_Wolframe::langbind::TypingInputFilter</a>
 </li>
+<li>m_inputfilter1
+: <a class="el" href="class__Wolframe_1_1langbind_1_1JoinInputFilter.html#a4ade20cd0fddbf28fe0bd6455cda6949">_Wolframe::langbind::JoinInputFilter</a>
+</li>
+<li>m_inputfilter2
+: <a class="el" href="class__Wolframe_1_1langbind_1_1JoinInputFilter.html#a9179fc57e2b7276c0bec12024ba9cf09">_Wolframe::langbind::JoinInputFilter</a>
+</li>
 <li>m_ip
 : <a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramInstance.html#ae2f906a6c585681d8674962344b67bdd">_Wolframe::db::vm::ProgramInstance</a>
 </li>
@@ -620,6 +634,9 @@
 </li>
 <li>m_itrpos
 : <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#aed961f2e0f438051d52b735235850dc8">_Wolframe::cmdbind::IOFilterCommandHandlerEscDLF</a>
+</li>
+<li>m_joinstate
+: <a class="el" href="class__Wolframe_1_1langbind_1_1JoinInputFilter.html#a7d0b0c9a5b87023d029e9979768a6541">_Wolframe::langbind::JoinInputFilter</a>
 </li>
 <li>m_keyword
 : <a class="el" href="class__Wolframe_1_1module_1_1ConfiguredBuilder.html#ad632c1e9fc7243d4e297c7d7625ec6a9">_Wolframe::module::ConfiguredBuilder</a>
@@ -673,7 +690,7 @@
 : <a class="el" href="class__Wolframe_1_1db_1_1BaseStatement.html#a28b14795652e4a265201067f0420b6a9">_Wolframe::db::BaseStatement</a>
 </li>
 <li>m_mech
-: <a class="el" href="class__Wolframe_1_1AAAA_1_1User.html#ab997916ef7a83f0e63c0ce68f41b8393">_Wolframe::AAAA::User</a>
+: <a class="el" href="class__Wolframe_1_1AAAA_1_1User.html#a34a99fab626e636819852878cdf72c96">_Wolframe::AAAA::User</a>
 </li>
 <li>m_message
 : <a class="el" href="class__Wolframe_1_1AAAA_1_1PasswordChangeMessage.html#a91cffdb1af10f6ae8cbde3d8d2c49e46">_Wolframe::AAAA::PasswordChangeMessage</a>
@@ -723,7 +740,7 @@
 : <a class="el" href="class__Wolframe_1_1ObjectPool.html#a5c5d6eeb913e0367ef1c26f16945c7de">_Wolframe::ObjectPool&lt; objectType &gt;</a>
 </li>
 <li>m_name
-: <a class="el" href="class__Wolframe_1_1AAAA_1_1User.html#a13ab7df25d107f973d42585105b132eb">_Wolframe::AAAA::User</a>
+: <a class="el" href="class__Wolframe_1_1AAAA_1_1User.html#a585bcc64370d9dee1289a03380f9b3c0">_Wolframe::AAAA::User</a>
 , <a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a8cd91f2c4234298b9e70f60fc62eb89f">_Wolframe::cmdbind::CommandHandler</a>
 , <a class="el" href="class__Wolframe_1_1cmdbind_1_1DoctypeDetectorType.html#acf5da635f642ac890efeebc2bae8ddfe">_Wolframe::cmdbind::DoctypeDetectorType</a>
 , <a class="el" href="class__Wolframe_1_1db_1_1Transaction.html#a4ab81c7783d57cf81379697b322e5dd7">_Wolframe::db::Transaction</a>
@@ -888,9 +905,6 @@
 </li>
 <li>m_requirement
 : <a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a088760a2e48f178959fa36d6c30fa60d">_Wolframe::serialize::StructDescriptionBase</a>
-</li>
-<li>m_resource
-: <a class="el" href="class__Wolframe_1_1langbind_1_1Authorization.html#ac5308f1f57848c0220460a9f03505f3b">_Wolframe::langbind::Authorization</a>
 </li>
 <li>m_resources
 : <a class="el" href="class__Wolframe_1_1types_1_1NormalizeFunctionType.html#a58b28d1ebada4e8dfa330c8a3e02abcd">_Wolframe::types::NormalizeFunctionType</a>
@@ -1059,6 +1073,7 @@
 </li>
 <li>m_taglevel
 : <a class="el" href="class__Wolframe_1_1langbind_1_1InputFilterScope.html#a15f28380473caa7538aa9fe2c24a4740">_Wolframe::langbind::InputFilterScope</a>
+, <a class="el" href="class__Wolframe_1_1langbind_1_1JoinInputFilter.html#aaac221300afd77d3bc423ee4898d8726">_Wolframe::langbind::JoinInputFilter</a>
 , <a class="el" href="class__Wolframe_1_1langbind_1_1RedirectFilterClosure.html#a3ef304dbf20c8eeb61c0f0069f6d1043">_Wolframe::langbind::RedirectFilterClosure</a>
 , <a class="el" href="class__Wolframe_1_1langbind_1_1ToStringFilter.html#aafec71e92e7b2dea2cd758c46c5209b0">_Wolframe::langbind::ToStringFilter</a>
 , <a class="el" href="class__Wolframe_1_1langbind_1_1TypedInputFilterScope.html#ac92d9732735c92ac7507e48ca644e201">_Wolframe::langbind::TypedInputFilterScope</a>
@@ -1075,9 +1090,6 @@
 <li>m_tokens
 : <a class="el" href="class__Wolframe_1_1config_1_1ServiceBanner.html#ac7eab1816f3c20f133729803b54694c4">_Wolframe::config::ServiceBanner</a>
 </li>
-<li>m_transaction_env
-: <a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a9b178fdc59d66bb4bdab660a2491dcdd">_Wolframe::proc::ExecContext</a>
-</li>
 <li>m_type
 : <a class="el" href="struct__Wolframe_1_1config_1_1ApplicationConfiguration.html#a874ecdc5bff8a169f9310012ba12c4a4">_Wolframe::config::ApplicationConfiguration</a>
 , <a class="el" href="struct__Wolframe_1_1serialize_1_1Context_1_1ElementBuffer.html#a99b1107899d12e65903bcd3df838ced0">_Wolframe::serialize::Context::ElementBuffer</a>
@@ -1090,7 +1102,7 @@
 : <a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a45dd05fdc9ab1a46065225695fd14cad">_Wolframe::serialize::StructDescriptionBase</a>
 </li>
 <li>m_uname
-: <a class="el" href="class__Wolframe_1_1AAAA_1_1User.html#a6db651bc7d72e979aa8fa38ced316373">_Wolframe::AAAA::User</a>
+: <a class="el" href="class__Wolframe_1_1AAAA_1_1User.html#a15cd94cdf72dcfb2bab02bbeb77ee06e">_Wolframe::AAAA::User</a>
 </li>
 <li>m_unconsumedInput
 : <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a2f7f911b14f4185e35e7d213d5d28580">_Wolframe::cmdbind::IOFilterCommandHandlerEscDLF</a>
@@ -1159,7 +1171,7 @@
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 6 2014 09:41:56 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 10 2014 18:13:45 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

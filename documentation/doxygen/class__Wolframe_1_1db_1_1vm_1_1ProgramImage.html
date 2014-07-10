@@ -97,6 +97,9 @@
 </div><!--header-->
 <div class="contents">
 
+<p>Program addressing only flat data structures and with symbolic information stripped out.  
+ <a href="class__Wolframe_1_1db_1_1vm_1_1ProgramImage.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="programImage_8hpp_source.html">programImage.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for _Wolframe::db::vm::ProgramImage:</div>
@@ -110,7 +113,8 @@ Inheritance diagram for _Wolframe::db::vm::ProgramImage:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1db_1_1vm_1_1ProgramImage_1_1ErrorHint.html">ErrorHint</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1db_1_1vm_1_1ProgramImage_1_1ErrorHint.html">ErrorHint</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hint for adding user information to the database error.  <a href="struct__Wolframe_1_1db_1_1vm_1_1ProgramImage_1_1ErrorHint.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -234,35 +238,46 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad78df69079280120d5dfd9bb883bcfef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramImage.html#ad78df69079280120d5dfd9bb883bcfef">ProgramImage</a> ()</td></tr>
+<tr class="memdesc:ad78df69079280120d5dfd9bb883bcfef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#ad78df69079280120d5dfd9bb883bcfef">More...</a><br /></td></tr>
 <tr class="separator:ad78df69079280120d5dfd9bb883bcfef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ced63c9e069ce0b7a47d02deb207906"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramImage.html#a6ced63c9e069ce0b7a47d02deb207906">ProgramImage</a> (const Program &amp;program)</td></tr>
-<tr class="separator:a6ced63c9e069ce0b7a47d02deb207906"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8236a128e8b04c916c4094e3cf8f0cbb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramImage.html#a8236a128e8b04c916c4094e3cf8f0cbb">ProgramImage</a> (const <a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramImage.html">ProgramImage</a> &amp;o)</td></tr>
+<tr class="memdesc:a8236a128e8b04c916c4094e3cf8f0cbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="#a8236a128e8b04c916c4094e3cf8f0cbb">More...</a><br /></td></tr>
 <tr class="separator:a8236a128e8b04c916c4094e3cf8f0cbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6612bb4c4a32e45175d4f38ca0e2124b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramImage.html#a6612bb4c4a32e45175d4f38ca0e2124b">printInstruction</a> (std::ostream &amp;out, const <a class="el" href="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#acb6f4eeef67d295ac478ccea5f04dd28">Instruction</a> &amp;instr) const </td></tr>
+<tr class="memdesc:a6612bb4c4a32e45175d4f38ca0e2124b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print one instruction without symbolic information.  <a href="#a6612bb4c4a32e45175d4f38ca0e2124b">More...</a><br /></td></tr>
 <tr class="separator:a6612bb4c4a32e45175d4f38ca0e2124b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8beda41de2e4b9ffea3649a50666e351"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramImage.html#a8beda41de2e4b9ffea3649a50666e351">print</a> (std::ostream &amp;out) const </td></tr>
+<tr class="memdesc:a8beda41de2e4b9ffea3649a50666e351"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the whole program without symbolic information.  <a href="#a8beda41de2e4b9ffea3649a50666e351">More...</a><br /></td></tr>
 <tr class="separator:a8beda41de2e4b9ffea3649a50666e351"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a08023a5a613f6f0e6a7c1d586c8239a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramCode.html">ProgramCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramImage.html#a08023a5a613f6f0e6a7c1d586c8239a4">code</a></td></tr>
+<tr class="memdesc:a08023a5a613f6f0e6a7c1d586c8239a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">program code  <a href="#a08023a5a613f6f0e6a7c1d586c8239a4">More...</a><br /></td></tr>
 <tr class="separator:a08023a5a613f6f0e6a7c1d586c8239a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68eb51d13c6c2ae1d6e80a5d89ec9e27"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class__Wolframe_1_1types_1_1Variant.html">types::Variant</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramImage.html#a68eb51d13c6c2ae1d6e80a5d89ec9e27">constants</a></td></tr>
+<tr class="memdesc:a68eb51d13c6c2ae1d6e80a5d89ec9e27"><td class="mdescLeft">&#160;</td><td class="mdescRight">constants  <a href="#a68eb51d13c6c2ae1d6e80a5d89ec9e27">More...</a><br /></td></tr>
 <tr class="separator:a68eb51d13c6c2ae1d6e80a5d89ec9e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad45504bd7da4511673fc439af0c2166b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramImage.html#ad45504bd7da4511673fc439af0c2166b">colnames</a></td></tr>
+<tr class="memdesc:ad45504bd7da4511673fc439af0c2166b"><td class="mdescLeft">&#160;</td><td class="mdescRight">column names  <a href="#ad45504bd7da4511673fc439af0c2166b">More...</a><br /></td></tr>
 <tr class="separator:ad45504bd7da4511673fc439af0c2166b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c2986e31d8be2804b7ac1edb05a8762"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramImage.html#a0c2986e31d8be2804b7ac1edb05a8762">tagnames</a></td></tr>
+<tr class="memdesc:a0c2986e31d8be2804b7ac1edb05a8762"><td class="mdescLeft">&#160;</td><td class="mdescRight">tag names  <a href="#a0c2986e31d8be2804b7ac1edb05a8762">More...</a><br /></td></tr>
 <tr class="separator:a0c2986e31d8be2804b7ac1edb05a8762"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad5642ca4c03a8c00d447635051dd799"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramImage.html#aad5642ca4c03a8c00d447635051dd799">resultnames</a></td></tr>
+<tr class="memdesc:aad5642ca4c03a8c00d447635051dd799"><td class="mdescLeft">&#160;</td><td class="mdescRight">result name table  <a href="#aad5642ca4c03a8c00d447635051dd799">More...</a><br /></td></tr>
 <tr class="separator:aad5642ca4c03a8c00d447635051dd799"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31de0bb1cad3a03840045f6c6a476fa2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramImage.html#a31de0bb1cad3a03840045f6c6a476fa2">statements</a></td></tr>
+<tr class="memdesc:a31de0bb1cad3a03840045f6c6a476fa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">database statements  <a href="#a31de0bb1cad3a03840045f6c6a476fa2">More...</a><br /></td></tr>
 <tr class="separator:a31de0bb1cad3a03840045f6c6a476fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab381a27a0352d5b10328f86d2da11d12"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramImage.html#a52c9723d8ed075373feb531aebe5d0be">ErrorHintList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramImage.html#ab381a27a0352d5b10328f86d2da11d12">errorhints</a></td></tr>
+<tr class="memdesc:ab381a27a0352d5b10328f86d2da11d12"><td class="mdescLeft">&#160;</td><td class="mdescRight">hints for error classes of failing database statements  <a href="#ab381a27a0352d5b10328f86d2da11d12">More...</a><br /></td></tr>
 <tr class="separator:ab381a27a0352d5b10328f86d2da11d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa5db2de24605f92b8d9dbaadfcb58bd"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramImage.html#ae4dd8db600ff103ee2a5bf54ecd5249a">SubroutineSignature</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramImage.html#afa5db2de24605f92b8d9dbaadfcb58bd">signatures</a></td></tr>
+<tr class="memdesc:afa5db2de24605f92b8d9dbaadfcb58bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">subroutine signatures  <a href="#afa5db2de24605f92b8d9dbaadfcb58bd">More...</a><br /></td></tr>
 <tr class="separator:afa5db2de24605f92b8d9dbaadfcb58bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac80a2028301669dba156de4000e229f4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespace__Wolframe_1_1db_1_1vm.html#a0c96c31b6a0c3ef18f463b0645fccd7b">ValueTupleSetR</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramImage.html#ac80a2028301669dba156de4000e229f4">tuplesets</a></td></tr>
+<tr class="memdesc:ac80a2028301669dba156de4000e229f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">value sets from input path expressions  <a href="#ac80a2028301669dba156de4000e229f4">More...</a><br /></td></tr>
 <tr class="separator:ac80a2028301669dba156de4000e229f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
@@ -301,7 +316,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memdesc:a708f69dc8b4440f1521dfb2031830b36 inherit pub_static_methods_struct__Wolframe_1_1db_1_1vm_1_1InstructionSet"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the instruction as string.  <a href="#a708f69dc8b4440f1521dfb2031830b36">More...</a><br /></td></tr>
 <tr class="separator:a708f69dc8b4440f1521dfb2031830b36 inherit pub_static_methods_struct__Wolframe_1_1db_1_1vm_1_1InstructionSet"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Program addressing only flat data structures and with symbolic information stripped out. </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a52c9723d8ed075373feb531aebe5d0be"></a>
 <div class="memitem">
 <div class="memproto">
@@ -348,21 +365,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="a6ced63c9e069ce0b7a47d02deb207906"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">_Wolframe::db::vm::ProgramImage::ProgramImage </td>
-          <td>(</td>
-          <td class="paramtype">const Program &amp;&#160;</td>
-          <td class="paramname"><em>program</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Constructor. </p>
 
 </div>
 </div>
@@ -388,6 +391,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Copy constructor. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -404,6 +409,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Print the whole program without symbolic information. </p>
 
 </div>
 </div>
@@ -431,6 +438,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Print one instruction without symbolic information. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -444,6 +453,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>program code </p>
+
 </div>
 </div>
 <a class="anchor" id="ad45504bd7da4511673fc439af0c2166b"></a>
@@ -455,6 +466,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>column names </p>
 
 </div>
 </div>
@@ -468,6 +481,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>constants </p>
+
 </div>
 </div>
 <a class="anchor" id="ab381a27a0352d5b10328f86d2da11d12"></a>
@@ -479,6 +494,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>hints for error classes of failing database statements </p>
 
 </div>
 </div>
@@ -492,6 +509,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>result name table </p>
+
 </div>
 </div>
 <a class="anchor" id="afa5db2de24605f92b8d9dbaadfcb58bd"></a>
@@ -503,6 +522,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>subroutine signatures </p>
 
 </div>
 </div>
@@ -516,6 +537,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>database statements </p>
+
 </div>
 </div>
 <a class="anchor" id="a0c2986e31d8be2804b7ac1edb05a8762"></a>
@@ -527,6 +550,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>tag names </p>
 
 </div>
 </div>
@@ -540,6 +565,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>value sets from input path expressions </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -549,7 +576,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 6 2014 09:41:42 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 10 2014 18:13:31 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

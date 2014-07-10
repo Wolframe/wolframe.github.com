@@ -88,12 +88,15 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class__Wolframe_1_1db_1_1VmTransactionInput-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">_Wolframe::db::VmTransactionInput Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Input of a transaction.  
+ <a href="class__Wolframe_1_1db_1_1VmTransactionInput.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="vmTransactionInput_8hpp_source.html">vmTransactionInput.hpp</a>&gt;</code></p>
 <table class="memberdecls">
@@ -105,8 +108,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4ed60dde2643ac419dfcd47d94bc3761"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1VmTransactionInput.html#a4ed60dde2643ac419dfcd47d94bc3761">VmTransactionInput</a> (const <a class="el" href="class__Wolframe_1_1db_1_1VmTransactionInput.html">VmTransactionInput</a> &amp;o)</td></tr>
 <tr class="memdesc:a4ed60dde2643ac419dfcd47d94bc3761"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="#a4ed60dde2643ac419dfcd47d94bc3761">More...</a><br /></td></tr>
 <tr class="separator:a4ed60dde2643ac419dfcd47d94bc3761"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15a89be87ea003741bd7f8f65dacaa1f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1VmTransactionInput.html#a15a89be87ea003741bd7f8f65dacaa1f">VmTransactionInput</a> (const vm::Program &amp;p, const vm::InputStructure &amp;input)</td></tr>
-<tr class="separator:a15a89be87ea003741bd7f8f65dacaa1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a7cc407ca57f813d16a2fc7db68d71e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1VmTransactionInput.html#a7a7cc407ca57f813d16a2fc7db68d71e">VmTransactionInput</a> (const <a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramImage.html">vm::ProgramImage</a> &amp;p)</td></tr>
+<tr class="separator:a7a7cc407ca57f813d16a2fc7db68d71e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1388faeb53a91faa399c87b0dfa21d14"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1VmTransactionInput.html#a1388faeb53a91faa399c87b0dfa21d14">tostring</a> () const </td></tr>
 <tr class="memdesc:a1388faeb53a91faa399c87b0dfa21d14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the input as readable serialization.  <a href="#a1388faeb53a91faa399c87b0dfa21d14">More...</a><br /></td></tr>
 <tr class="separator:a1388faeb53a91faa399c87b0dfa21d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -115,12 +118,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af40c8f450242a31dc20db010b27e7ba4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramImage.html">vm::ProgramImage</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1VmTransactionInput.html#af40c8f450242a31dc20db010b27e7ba4">program</a> () const </td></tr>
 <tr class="separator:af40c8f450242a31dc20db010b27e7ba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
 <tr class="memitem:a5c78903c2b482d5c3e2b2d0fa73ace9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramImage.html">vm::ProgramImage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1VmTransactionInput.html#a5c78903c2b482d5c3e2b2d0fa73ace9b">m_program</a></td></tr>
 <tr class="separator:a5c78903c2b482d5c3e2b2d0fa73ace9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Input of a transaction. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aef61ef14233e7d4c6686513405462c18"></a>
 <div class="memitem">
 <div class="memproto">
@@ -172,28 +177,26 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a15a89be87ea003741bd7f8f65dacaa1f"></a>
+<a class="anchor" id="a7a7cc407ca57f813d16a2fc7db68d71e"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">_Wolframe::db::VmTransactionInput::VmTransactionInput </td>
           <td>(</td>
-          <td class="paramtype">const vm::Program &amp;&#160;</td>
-          <td class="paramname"><em>p</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const <a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramImage.html">vm::ProgramImage</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const vm::InputStructure &amp;&#160;</td>
-          <td class="paramname"><em>input</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -269,7 +272,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -283,7 +286,7 @@ Private Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 6 2014 09:41:42 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 10 2014 18:13:30 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

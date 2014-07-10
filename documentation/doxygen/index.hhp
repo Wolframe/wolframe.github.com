@@ -17,8 +17,7 @@ AAAAinformation_8hpp_source.html
 AAAAprovider_8hpp_source.html
 audit_8hpp_source.html
 authenticator_8hpp_source.html
-AAAA_2authorization_8hpp_source.html
-langbind_2authorization_8hpp_source.html
+authorization_8hpp_source.html
 authSlice_8hpp_source.html
 authUnit_8hpp_source.html
 CRAM_8hpp_source.html
@@ -77,7 +76,6 @@ database_8hpp_source.html
 databaseError_8hpp_source.html
 databaseLanguage_8hpp_source.html
 DBprovider_8hpp_source.html
-loadTransactionProgram_8hpp_source.html
 statement_8hpp_source.html
 substitutingStatement_8hpp_source.html
 transaction_8hpp_source.html
@@ -98,6 +96,7 @@ filterbase_8hpp_source.html
 filterdef_8hpp_source.html
 inputfilter_8hpp_source.html
 inputfilterScope_8hpp_source.html
+joinfilter_8hpp_source.html
 null__filter_8hpp_source.html
 outputfilter_8hpp_source.html
 ptreefilter_8hpp_source.html
@@ -107,6 +106,8 @@ tostringfilter_8hpp_source.html
 typedfilter_8hpp_source.html
 typedfilterScope_8hpp_source.html
 typingfilter_8hpp_source.html
+auditFunction_8hpp_source.html
+authorizationFunction_8hpp_source.html
 ddlCompilerInterface_8hpp_source.html
 formFunction_8hpp_source.html
 input_8hpp_source.html
@@ -125,7 +126,6 @@ ddlProgram_8hpp_source.html
 normalizeProgram_8hpp_source.html
 program_8hpp_source.html
 programLibrary_8hpp_source.html
-transactionProgram_8hpp_source.html
 execContext_8hpp_source.html
 jobSchedule_8hpp_source.html
 procProvider_8hpp_source.html
@@ -159,6 +159,7 @@ traits__getCategory_8hpp_source.html
 structOptionParser_8hpp_source.html
 tostringUtils_8hpp_source.html
 standardConfigs_8hpp_source.html
+addressRestriction_8hpp_source.html
 connectionEndpoint_8hpp_source.html
 connectionHandler_8hpp_source.html
 errorCode_8hpp_source.html
@@ -167,7 +168,6 @@ objectPool_8hpp_source.html
 randomGenerator_8hpp_source.html
 serverEndpoint_8hpp_source.html
 SSLcertificateInfo_8hpp_source.html
-authorizationFunction_8hpp_source.html
 base64_8h_source.html
 base64_8hpp_source.html
 bignumber_8hpp_source.html
@@ -210,8 +210,7 @@ AAAAinformation_8hpp.html
 AAAAprovider_8hpp.html
 audit_8hpp.html
 authenticator_8hpp.html
-AAAA_2authorization_8hpp.html
-langbind_2authorization_8hpp.html
+authorization_8hpp.html
 authSlice_8hpp.html
 authUnit_8hpp.html
 CRAM_8hpp.html
@@ -270,7 +269,6 @@ database_8hpp.html
 databaseError_8hpp.html
 databaseLanguage_8hpp.html
 DBprovider_8hpp.html
-loadTransactionProgram_8hpp.html
 statement_8hpp.html
 substitutingStatement_8hpp.html
 transaction_8hpp.html
@@ -291,6 +289,7 @@ filterbase_8hpp.html
 filterdef_8hpp.html
 inputfilter_8hpp.html
 inputfilterScope_8hpp.html
+joinfilter_8hpp.html
 null__filter_8hpp.html
 outputfilter_8hpp.html
 ptreefilter_8hpp.html
@@ -300,6 +299,8 @@ tostringfilter_8hpp.html
 typedfilter_8hpp.html
 typedfilterScope_8hpp.html
 typingfilter_8hpp.html
+auditFunction_8hpp.html
+authorizationFunction_8hpp.html
 ddlCompilerInterface_8hpp.html
 formFunction_8hpp.html
 input_8hpp.html
@@ -318,7 +319,6 @@ ddlProgram_8hpp.html
 normalizeProgram_8hpp.html
 program_8hpp.html
 programLibrary_8hpp.html
-transactionProgram_8hpp.html
 execContext_8hpp.html
 jobSchedule_8hpp.html
 procProvider_8hpp.html
@@ -352,6 +352,7 @@ traits__getCategory_8hpp.html
 structOptionParser_8hpp.html
 tostringUtils_8hpp.html
 standardConfigs_8hpp.html
+addressRestriction_8hpp.html
 connectionEndpoint_8hpp.html
 connectionHandler_8hpp.html
 errorCode_8hpp.html
@@ -360,7 +361,6 @@ objectPool_8hpp.html
 randomGenerator_8hpp.html
 serverEndpoint_8hpp.html
 SSLcertificateInfo_8hpp.html
-authorizationFunction_8hpp.html
 base64_8h.html
 base64_8hpp.html
 bignumber_8hpp.html
@@ -417,7 +417,6 @@ structsha256__ctx.html
 structsha256__ctx-members.html
 structsha512__ctx.html
 structsha512__ctx-members.html
-classTransactionInput.html
 classTransactionOutput.html
 classVariantStructIndirection.html
 namespace__Wolframe.html
@@ -616,7 +615,7 @@ class__Wolframe_1_1db_1_1vm_1_1ProgramCode-members.html
 class__Wolframe_1_1db_1_1vm_1_1ProgramImage.html
 class__Wolframe_1_1db_1_1vm_1_1ProgramImage-members.html
 struct__Wolframe_1_1db_1_1vm_1_1ProgramImage_1_1ErrorHint.html
-struct__Wolframe_1_1db_1_1vm_1_1ProgramImage_1_1ErrorHint-members.html
+class__Wolframe_1_1db_1_1vm_1_1ProgramImage_1_1ErrorHint-members.html
 class__Wolframe_1_1db_1_1vm_1_1ProgramInstance.html
 class__Wolframe_1_1db_1_1vm_1_1ProgramInstance-members.html
 struct__Wolframe_1_1db_1_1vm_1_1ProgramInstance_1_1ResultFlags.html
@@ -630,8 +629,12 @@ class__Wolframe_1_1db_1_1vm_1_1ValueTupleSet-members.html
 class__Wolframe_1_1db_1_1vm_1_1ValueTupleSet_1_1const__iterator.html
 class__Wolframe_1_1db_1_1vm_1_1ValueTupleSet_1_1const__iterator-members.html
 namespace__Wolframe_1_1langbind.html
-class__Wolframe_1_1langbind_1_1Authorization.html
-class__Wolframe_1_1langbind_1_1Authorization-members.html
+class__Wolframe_1_1langbind_1_1AuditFunction.html
+class__Wolframe_1_1langbind_1_1AuditFunction-members.html
+class__Wolframe_1_1langbind_1_1AuthorizationFunction.html
+class__Wolframe_1_1langbind_1_1AuthorizationFunction-members.html
+struct__Wolframe_1_1langbind_1_1AuthorizationFunction_1_1Attribute.html
+class__Wolframe_1_1langbind_1_1AuthorizationFunction_1_1Attribute-members.html
 class__Wolframe_1_1langbind_1_1BufferingInputFilter.html
 class__Wolframe_1_1langbind_1_1BufferingInputFilter-members.html
 struct__Wolframe_1_1langbind_1_1DDLCompiler.html
@@ -644,7 +647,7 @@ struct__Wolframe_1_1langbind_1_1FilterDef.html
 struct__Wolframe_1_1langbind_1_1FilterDef-members.html
 class__Wolframe_1_1langbind_1_1FilterType.html
 class__Wolframe_1_1langbind_1_1FilterType-members.html
-struct__Wolframe_1_1langbind_1_1FormFunction.html
+class__Wolframe_1_1langbind_1_1FormFunction.html
 class__Wolframe_1_1langbind_1_1FormFunction-members.html
 class__Wolframe_1_1langbind_1_1FormFunctionClosure.html
 class__Wolframe_1_1langbind_1_1FormFunctionClosure-members.html
@@ -654,6 +657,8 @@ class__Wolframe_1_1langbind_1_1InputFilter.html
 class__Wolframe_1_1langbind_1_1InputFilter-members.html
 class__Wolframe_1_1langbind_1_1InputFilterScope.html
 class__Wolframe_1_1langbind_1_1InputFilterScope-members.html
+class__Wolframe_1_1langbind_1_1JoinInputFilter.html
+class__Wolframe_1_1langbind_1_1JoinInputFilter-members.html
 class__Wolframe_1_1langbind_1_1NullFilterType.html
 class__Wolframe_1_1langbind_1_1NullFilterType-members.html
 class__Wolframe_1_1langbind_1_1Output.html
@@ -765,6 +770,8 @@ class__Wolframe_1_1module_1_1RuntimeEnvironmentConstructor-members.html
 class__Wolframe_1_1module_1_1SimpleBuilder.html
 class__Wolframe_1_1module_1_1SimpleBuilder-members.html
 namespace__Wolframe_1_1net.html
+class__Wolframe_1_1net_1_1AddressRestriction.html
+class__Wolframe_1_1net_1_1AddressRestriction-members.html
 class__Wolframe_1_1net_1_1CloseConnection.html
 class__Wolframe_1_1net_1_1CloseConnection-members.html
 struct__Wolframe_1_1net_1_1Configuration.html
@@ -802,8 +809,6 @@ struct__Wolframe_1_1prgbind_1_1Program.html
 class__Wolframe_1_1prgbind_1_1Program-members.html
 class__Wolframe_1_1prgbind_1_1ProgramLibrary.html
 class__Wolframe_1_1prgbind_1_1ProgramLibrary-members.html
-class__Wolframe_1_1prgbind_1_1TransactionDefinitionProgram.html
-class__Wolframe_1_1prgbind_1_1TransactionDefinitionProgram-members.html
 namespace__Wolframe_1_1proc.html
 class__Wolframe_1_1proc_1_1ExecContext.html
 class__Wolframe_1_1proc_1_1ExecContext-members.html
@@ -899,8 +904,6 @@ struct__Wolframe_1_1serialize_1_1traits_1_1has__description__method__noprm_1_1te
 struct__Wolframe_1_1serialize_1_1traits_1_1struct__.html
 struct__Wolframe_1_1serialize_1_1traits_1_1vector__.html
 namespace__Wolframe_1_1types.html
-class__Wolframe_1_1types_1_1AuthorizationFunction.html
-class__Wolframe_1_1types_1_1AuthorizationFunction-members.html
 class__Wolframe_1_1types_1_1BigNumber.html
 class__Wolframe_1_1types_1_1BigNumber-members.html
 class__Wolframe_1_1types_1_1BigNumberConst.html
@@ -1222,14 +1225,16 @@ class__Wolframe_1_1db_1_1SubstitutingStatement.png
 struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.png
 class__Wolframe_1_1db_1_1vm_1_1ProgramImage.png
 class__Wolframe_1_1db_1_1vm_1_1ProgramInstance.png
+class__Wolframe_1_1langbind_1_1AuditFunction.png
 class__Wolframe_1_1langbind_1_1BufferingInputFilter.png
 class__Wolframe_1_1langbind_1_1FilterBase.png
 class__Wolframe_1_1langbind_1_1FilterType.png
-struct__Wolframe_1_1langbind_1_1FormFunction.png
+class__Wolframe_1_1langbind_1_1FormFunction.png
 class__Wolframe_1_1langbind_1_1FormFunctionClosure.png
 class__Wolframe_1_1langbind_1_1Input.png
 class__Wolframe_1_1langbind_1_1InputFilter.png
 class__Wolframe_1_1langbind_1_1InputFilterScope.png
+class__Wolframe_1_1langbind_1_1JoinInputFilter.png
 class__Wolframe_1_1langbind_1_1NullFilterType.png
 class__Wolframe_1_1langbind_1_1Output.png
 class__Wolframe_1_1langbind_1_1OutputFilter.png
@@ -1284,7 +1289,6 @@ class__Wolframe_1_1net_1_1ServerTCPendpoint.png
 class__Wolframe_1_1prgbind_1_1DDLProgram.png
 class__Wolframe_1_1prgbind_1_1NormalizeProgram.png
 struct__Wolframe_1_1prgbind_1_1Program.png
-class__Wolframe_1_1prgbind_1_1TransactionDefinitionProgram.png
 class__Wolframe_1_1proc_1_1ProcessorProvider.png
 class__Wolframe_1_1proc_1_1ProcessorProviderInterface.png
 class__Wolframe_1_1proc_1_1ProcProviderConfig.png

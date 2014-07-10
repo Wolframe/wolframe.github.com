@@ -115,12 +115,13 @@ Inheritance diagram for _Wolframe::langbind::FilterBase:</div>
 <area href="class__Wolframe_1_1langbind_1_1TypedOutputFilter.html" title="Output filter with atomic values having a type. " alt="_Wolframe::langbind::TypedOutputFilter" shape="rect" coords="1132,112,1405,136"/>
 <area href="class__Wolframe_1_1langbind_1_1BufferingInputFilter.html" title="Input filter that buffers the input before redirecting to InputFilter::getNext(ElementType&,const void*&,std::size_t&) " alt="_Wolframe::langbind::BufferingInputFilter" shape="rect" coords="283,168,556,192"/>
 <area href="class__Wolframe_1_1langbind_1_1InputFilterScope.html" title="InputFilter that stops fetching elements after the creation tag level has been left. " alt="_Wolframe::langbind::InputFilterScope" shape="rect" coords="283,224,556,248"/>
-<area href="class__Wolframe_1_1langbind_1_1PropertyTreeInputFilter.html" alt="_Wolframe::langbind::PropertyTreeInputFilter" shape="rect" coords="849,168,1122,192"/>
-<area href="class__Wolframe_1_1langbind_1_1SingleElementInputFilter.html" title="Input filter returning one content element only. " alt="_Wolframe::langbind::SingleElementInputFilter" shape="rect" coords="849,224,1122,248"/>
-<area href="class__Wolframe_1_1langbind_1_1TypedInputFilterScope.html" title="TypedInputFilter that stops fetching elements after the creation tag level has been left..." alt="_Wolframe::langbind::TypedInputFilterScope" shape="rect" coords="849,280,1122,304"/>
-<area href="class__Wolframe_1_1langbind_1_1TypingInputFilter.html" title="Typed fascade for input filter. " alt="_Wolframe::langbind::TypingInputFilter" shape="rect" coords="849,336,1122,360"/>
-<area href="class__Wolframe_1_1serialize_1_1DDLStructSerializer.html" title="Iterator on a DDL structure (serializer of VariantStruct) " alt="_Wolframe::serialize::DDLStructSerializer" shape="rect" coords="849,392,1122,416"/>
-<area href="class__Wolframe_1_1serialize_1_1StructSerializer.html" title="Iterator on elements of structures based on a structure description. " alt="_Wolframe::serialize::StructSerializer" shape="rect" coords="849,448,1122,472"/>
+<area href="class__Wolframe_1_1langbind_1_1JoinInputFilter.html" title="Input filter as join of two input filters. " alt="_Wolframe::langbind::JoinInputFilter" shape="rect" coords="849,168,1122,192"/>
+<area href="class__Wolframe_1_1langbind_1_1PropertyTreeInputFilter.html" alt="_Wolframe::langbind::PropertyTreeInputFilter" shape="rect" coords="849,224,1122,248"/>
+<area href="class__Wolframe_1_1langbind_1_1SingleElementInputFilter.html" title="Input filter returning one content element only. " alt="_Wolframe::langbind::SingleElementInputFilter" shape="rect" coords="849,280,1122,304"/>
+<area href="class__Wolframe_1_1langbind_1_1TypedInputFilterScope.html" title="TypedInputFilter that stops fetching elements after the creation tag level has been left..." alt="_Wolframe::langbind::TypedInputFilterScope" shape="rect" coords="849,336,1122,360"/>
+<area href="class__Wolframe_1_1langbind_1_1TypingInputFilter.html" title="Typed fascade for input filter. " alt="_Wolframe::langbind::TypingInputFilter" shape="rect" coords="849,392,1122,416"/>
+<area href="class__Wolframe_1_1serialize_1_1DDLStructSerializer.html" title="Iterator on a DDL structure (serializer of VariantStruct) " alt="_Wolframe::serialize::DDLStructSerializer" shape="rect" coords="849,448,1122,472"/>
+<area href="class__Wolframe_1_1serialize_1_1StructSerializer.html" title="Iterator on elements of structures based on a structure description. " alt="_Wolframe::serialize::StructSerializer" shape="rect" coords="849,504,1122,528"/>
 <area href="class__Wolframe_1_1langbind_1_1PropertyTreeOutputFilter.html" title="Output filter for serializing a structure as property tree. " alt="_Wolframe::langbind::PropertyTreeOutputFilter" shape="rect" coords="1415,168,1688,192"/>
 <area href="class__Wolframe_1_1langbind_1_1ToStringFilter.html" title="Output filter for tostring methods in language bindings. " alt="_Wolframe::langbind::ToStringFilter" shape="rect" coords="1415,224,1688,248"/>
 <area href="class__Wolframe_1_1langbind_1_1TypingOutputFilter.html" title="Typed fascade for output filter. " alt="_Wolframe::langbind::TypingOutputFilter" shape="rect" coords="1415,280,1688,304"/>
@@ -381,7 +382,7 @@ Private Attributes</h2></td></tr>
 
 <p>Test if a flag can be set (allowed) </p>
 
-<p>Reimplemented in <a class="el" href="class__Wolframe_1_1langbind_1_1PropertyTreeInputFilter.html#af51f6c63fe1e97cf4a2b93cfc3152e0e">_Wolframe::langbind::PropertyTreeInputFilter</a>, and <a class="el" href="class__Wolframe_1_1langbind_1_1TypingInputFilter.html#ae19e364f4071d190a42c0007fbb58698">_Wolframe::langbind::TypingInputFilter</a>.</p>
+<p>Reimplemented in <a class="el" href="class__Wolframe_1_1langbind_1_1JoinInputFilter.html#a38db371091fe5edd15b6abb932a6204e">_Wolframe::langbind::JoinInputFilter</a>, <a class="el" href="class__Wolframe_1_1langbind_1_1PropertyTreeInputFilter.html#af51f6c63fe1e97cf4a2b93cfc3152e0e">_Wolframe::langbind::PropertyTreeInputFilter</a>, and <a class="el" href="class__Wolframe_1_1langbind_1_1TypingInputFilter.html#ae19e364f4071d190a42c0007fbb58698">_Wolframe::langbind::TypingInputFilter</a>.</p>
 
 </div>
 </div>
@@ -650,7 +651,7 @@ Private Attributes</h2></td></tr>
 <p>Set a flag (or a set of flags) </p>
 <dl class="section return"><dt>Returns</dt><dd>true on success, false if the (or one of) flag is not supported </dd></dl>
 
-<p>Reimplemented in <a class="el" href="class__Wolframe_1_1serialize_1_1DDLStructSerializer.html#a049ad36eab3fd8ade5c95b4a257e6049">_Wolframe::serialize::DDLStructSerializer</a>, <a class="el" href="class__Wolframe_1_1langbind_1_1PropertyTreeInputFilter.html#ac54b050914f62d31654f0f40d510f8c3">_Wolframe::langbind::PropertyTreeInputFilter</a>, and <a class="el" href="class__Wolframe_1_1langbind_1_1TypingInputFilter.html#abd89143edeca1541333fdfc3fd4901ba">_Wolframe::langbind::TypingInputFilter</a>.</p>
+<p>Reimplemented in <a class="el" href="class__Wolframe_1_1serialize_1_1DDLStructSerializer.html#a049ad36eab3fd8ade5c95b4a257e6049">_Wolframe::serialize::DDLStructSerializer</a>, <a class="el" href="class__Wolframe_1_1langbind_1_1JoinInputFilter.html#a613a0d6746a07ca0672012f7d3015340">_Wolframe::langbind::JoinInputFilter</a>, <a class="el" href="class__Wolframe_1_1langbind_1_1PropertyTreeInputFilter.html#ac54b050914f62d31654f0f40d510f8c3">_Wolframe::langbind::PropertyTreeInputFilter</a>, and <a class="el" href="class__Wolframe_1_1langbind_1_1TypingInputFilter.html#abd89143edeca1541333fdfc3fd4901ba">_Wolframe::langbind::TypingInputFilter</a>.</p>
 
 </div>
 </div>
@@ -774,7 +775,7 @@ Private Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 6 2014 09:41:43 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 10 2014 18:13:31 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

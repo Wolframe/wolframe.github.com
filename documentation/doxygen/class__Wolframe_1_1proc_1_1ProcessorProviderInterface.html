@@ -128,10 +128,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2d60fa26aa3aa3a7717e646afb635ed4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class__Wolframe_1_1db_1_1Transaction.html">db::Transaction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#a2d60fa26aa3aa3a7717e646afb635ed4">transaction</a> (const std::string &amp;dbname, const std::string &amp;name) const =0</td></tr>
 <tr class="memdesc:a2d60fa26aa3aa3a7717e646afb635ed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a database transaction object for a transaction identified by name on an alternative database than the default transaction database.  <a href="#a2d60fa26aa3aa3a7717e646afb635ed4">More...</a><br /></td></tr>
 <tr class="separator:a2d60fa26aa3aa3a7717e646afb635ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a257e2057181a727054e360d2bb8ca574"><td class="memItemLeft" align="right" valign="top">virtual const <br class="typebreak" />
-<a class="el" href="class__Wolframe_1_1types_1_1AuthorizationFunction.html">types::AuthorizationFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#a257e2057181a727054e360d2bb8ca574">authorizationFunction</a> (const std::string &amp;name) const =0</td></tr>
-<tr class="memdesc:a257e2057181a727054e360d2bb8ca574"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an authorization function by name.  <a href="#a257e2057181a727054e360d2bb8ca574">More...</a><br /></td></tr>
-<tr class="separator:a257e2057181a727054e360d2bb8ca574"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ecdfcbf83dfa3a373aeb80caa6f6641"><td class="memItemLeft" align="right" valign="top">virtual const <br class="typebreak" />
+<a class="el" href="class__Wolframe_1_1langbind_1_1AuthorizationFunction.html">langbind::AuthorizationFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#a9ecdfcbf83dfa3a373aeb80caa6f6641">authorizationFunction</a> (const std::string &amp;name) const =0</td></tr>
+<tr class="memdesc:a9ecdfcbf83dfa3a373aeb80caa6f6641"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an authorization function by name.  <a href="#a9ecdfcbf83dfa3a373aeb80caa6f6641">More...</a><br /></td></tr>
+<tr class="separator:a9ecdfcbf83dfa3a373aeb80caa6f6641"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0c036732461b4ae92f13d006a9ae197"><td class="memItemLeft" align="right" valign="top">virtual const <br class="typebreak" />
+<a class="el" href="class__Wolframe_1_1langbind_1_1AuditFunction.html">langbind::AuditFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#ac0c036732461b4ae92f13d006a9ae197">auditFunction</a> (const std::string &amp;name) const =0</td></tr>
+<tr class="memdesc:ac0c036732461b4ae92f13d006a9ae197"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an audit function by name.  <a href="#ac0c036732461b4ae92f13d006a9ae197">More...</a><br /></td></tr>
+<tr class="separator:ac0c036732461b4ae92f13d006a9ae197"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab8e9d3be245c373074cf5dbc8318700"><td class="memItemLeft" align="right" valign="top">virtual const <br class="typebreak" />
 <a class="el" href="class__Wolframe_1_1types_1_1NormalizeFunction.html">types::NormalizeFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#aab8e9d3be245c373074cf5dbc8318700">normalizeFunction</a> (const std::string &amp;name) const =0</td></tr>
 <tr class="memdesc:aab8e9d3be245c373074cf5dbc8318700"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a normalization function.  <a href="#aab8e9d3be245c373074cf5dbc8318700">More...</a><br /></td></tr>
@@ -141,7 +145,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a34f6396c6e3bff41c4c201a6ded12b52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a normalization function type.  <a href="#a34f6396c6e3bff41c4c201a6ded12b52">More...</a><br /></td></tr>
 <tr class="separator:a34f6396c6e3bff41c4c201a6ded12b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a743f090e6b6a918df21d837c532e13"><td class="memItemLeft" align="right" valign="top">virtual const <br class="typebreak" />
-<a class="el" href="struct__Wolframe_1_1langbind_1_1FormFunction.html">langbind::FormFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#a9a743f090e6b6a918df21d837c532e13">formFunction</a> (const std::string &amp;name) const =0</td></tr>
+<a class="el" href="class__Wolframe_1_1langbind_1_1FormFunction.html">langbind::FormFunction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#a9a743f090e6b6a918df21d837c532e13">formFunction</a> (const std::string &amp;name) const =0</td></tr>
 <tr class="memdesc:a9a743f090e6b6a918df21d837c532e13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a form function.  <a href="#a9a743f090e6b6a918df21d837c532e13">More...</a><br /></td></tr>
 <tr class="separator:a9a743f090e6b6a918df21d837c532e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64a74e99ca0945d1b2de3c07c896163c"><td class="memItemLeft" align="right" valign="top">virtual const <br class="typebreak" />
@@ -192,7 +196,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a257e2057181a727054e360d2bb8ca574"></a>
+<a class="anchor" id="ac0c036732461b4ae92f13d006a9ae197"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -200,7 +204,42 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const <a class="el" href="class__Wolframe_1_1types_1_1AuthorizationFunction.html">types::AuthorizationFunction</a>* _Wolframe::proc::ProcessorProviderInterface::authorizationFunction </td>
+          <td class="memname">virtual const <a class="el" href="class__Wolframe_1_1langbind_1_1AuditFunction.html">langbind::AuditFunction</a>* _Wolframe::proc::ProcessorProviderInterface::auditFunction </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get an audit function by name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>name of the audit function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>reference to function </dd></dl>
+
+<p>Implemented in <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#a6d6eef3cf653d50502df4e0c003b5568">_Wolframe::proc::ProcessorProvider</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9ecdfcbf83dfa3a373aeb80caa6f6641"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const <a class="el" href="class__Wolframe_1_1langbind_1_1AuthorizationFunction.html">langbind::AuthorizationFunction</a>* _Wolframe::proc::ProcessorProviderInterface::authorizationFunction </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
@@ -217,13 +256,13 @@ Public Member Functions</h2></td></tr>
 <p>Get an authorization function by name. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>name of the function </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>name of the authorization function </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>reference to function </dd></dl>
 
-<p>Implemented in <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#a799746b3c9af9cb8ebb306e655685c25">_Wolframe::proc::ProcessorProvider</a>.</p>
+<p>Implemented in <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#a7897e3d3ab48b3b7a8ff67bb94c1cbfc">_Wolframe::proc::ProcessorProvider</a>.</p>
 
 </div>
 </div>
@@ -449,7 +488,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const <a class="el" href="struct__Wolframe_1_1langbind_1_1FormFunction.html">langbind::FormFunction</a>* _Wolframe::proc::ProcessorProviderInterface::formFunction </td>
+          <td class="memname">virtual const <a class="el" href="class__Wolframe_1_1langbind_1_1FormFunction.html">langbind::FormFunction</a>* _Wolframe::proc::ProcessorProviderInterface::formFunction </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
@@ -690,7 +729,7 @@ Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 6 2014 09:41:48 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 10 2014 18:13:36 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>
