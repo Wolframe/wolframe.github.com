@@ -3146,18 +3146,12 @@
             <LI><OBJECT type="text/sitemap"><param name="Name" value="netMask"><param name="Local" value="struct__Wolframe_1_1types_1_1AddressRestriction_1_1Element.html#a7164aa087c7fe97f62cb57f732dd0536"><param name="ImageNumber" value="11"></OBJECT>
             </UL>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="IPAddress"><param name="Local" value="class__Wolframe_1_1types_1_1AddressRestriction.html#a81417db38694f2f6b94f4b2de68fbd2d"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="Order"><param name="Local" value="class__Wolframe_1_1types_1_1AddressRestriction.html#a5c360b567be4e3510aa9ba1e480df1e8"><param name="ImageNumber" value="1"></OBJECT>
-            <UL>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="Deny_Allow"><param name="Local" value="class__Wolframe_1_1types_1_1AddressRestriction.html#a5c360b567be4e3510aa9ba1e480df1e8ac7d49c0e2619e492911df469a79426bf"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="Allow_Deny"><param name="Local" value="class__Wolframe_1_1types_1_1AddressRestriction.html#a5c360b567be4e3510aa9ba1e480df1e8af4b2f5b28338fab17e17921477ac6eef"><param name="ImageNumber" value="11"></OBJECT>
-            </UL>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="AddressRestriction"><param name="Local" value="class__Wolframe_1_1types_1_1AddressRestriction.html#a9047a0c871d3df0b4b4d167531943c8e"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="AddressRestriction"><param name="Local" value="class__Wolframe_1_1types_1_1AddressRestriction.html#a2515b51bcd403554b3e42a07ba89eb83"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="defineAddressAllowed"><param name="Local" value="class__Wolframe_1_1types_1_1AddressRestriction.html#ae433e490c336027f900a40b0377f2199"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="defineAddressDenied"><param name="Local" value="class__Wolframe_1_1types_1_1AddressRestriction.html#a9a66ce20964484abdd0344f79b9ddf6d"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="defineAllowedAll"><param name="Local" value="class__Wolframe_1_1types_1_1AddressRestriction.html#a853567691afdcec630cc8d2e375f9e5b"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="defineDeniedAll"><param name="Local" value="class__Wolframe_1_1types_1_1AddressRestriction.html#acf891a2e7ee327f3f2ba5691cc066b68"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="defineOrder"><param name="Local" value="class__Wolframe_1_1types_1_1AddressRestriction.html#a1462be4bc131dadc7eb48f0ab0b57173"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="isAllowed"><param name="Local" value="class__Wolframe_1_1types_1_1AddressRestriction.html#a949c11e73f7c380ffcbb028522ba740f"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="matches"><param name="Local" value="class__Wolframe_1_1types_1_1AddressRestriction.html#add0e6d2fc2690fe8e09ef5e49a8472fc"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="parseAddress"><param name="Local" value="class__Wolframe_1_1types_1_1AddressRestriction.html#aa8835196c5f28050ea292293be5bda97"><param name="ImageNumber" value="11"></OBJECT>
@@ -3165,7 +3159,6 @@
           <LI><OBJECT type="text/sitemap"><param name="Name" value="tostring"><param name="Local" value="class__Wolframe_1_1types_1_1AddressRestriction.html#a237cec3686a93f3f077a4acbe69836a4"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="m_allowedar"><param name="Local" value="class__Wolframe_1_1types_1_1AddressRestriction.html#a3f9abd881a76c87301e2c974775766e9"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="m_deniedar"><param name="Local" value="class__Wolframe_1_1types_1_1AddressRestriction.html#a66c70059ad2d9930e84f61c7e5747c89"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="m_order"><param name="Local" value="class__Wolframe_1_1types_1_1AddressRestriction.html#a9d6cc001d219f32d9887bf8c8689f473"><param name="ImageNumber" value="11"></OBJECT>
           </UL>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="BigNumber"><param name="Local" value="class__Wolframe_1_1types_1_1BigNumber.html"><param name="ImageNumber" value="1"></OBJECT>
           <UL>
@@ -9082,18 +9075,12 @@
               <LI><OBJECT type="text/sitemap"><param name="Name" value="netMask"><param name="Local" value="struct__Wolframe_1_1types_1_1AddressRestriction_1_1Element.html#a7164aa087c7fe97f62cb57f732dd0536"><param name="ImageNumber" value="11"></OBJECT>
               </UL>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="IPAddress"><param name="Local" value="class__Wolframe_1_1types_1_1AddressRestriction.html#a81417db38694f2f6b94f4b2de68fbd2d"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="Order"><param name="Local" value="class__Wolframe_1_1types_1_1AddressRestriction.html#a5c360b567be4e3510aa9ba1e480df1e8"><param name="ImageNumber" value="1"></OBJECT>
-              <UL>
-              <LI><OBJECT type="text/sitemap"><param name="Name" value="Deny_Allow"><param name="Local" value="class__Wolframe_1_1types_1_1AddressRestriction.html#a5c360b567be4e3510aa9ba1e480df1e8ac7d49c0e2619e492911df469a79426bf"><param name="ImageNumber" value="11"></OBJECT>
-              <LI><OBJECT type="text/sitemap"><param name="Name" value="Allow_Deny"><param name="Local" value="class__Wolframe_1_1types_1_1AddressRestriction.html#a5c360b567be4e3510aa9ba1e480df1e8af4b2f5b28338fab17e17921477ac6eef"><param name="ImageNumber" value="11"></OBJECT>
-              </UL>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="AddressRestriction"><param name="Local" value="class__Wolframe_1_1types_1_1AddressRestriction.html#a9047a0c871d3df0b4b4d167531943c8e"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="AddressRestriction"><param name="Local" value="class__Wolframe_1_1types_1_1AddressRestriction.html#a2515b51bcd403554b3e42a07ba89eb83"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="defineAddressAllowed"><param name="Local" value="class__Wolframe_1_1types_1_1AddressRestriction.html#ae433e490c336027f900a40b0377f2199"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="defineAddressDenied"><param name="Local" value="class__Wolframe_1_1types_1_1AddressRestriction.html#a9a66ce20964484abdd0344f79b9ddf6d"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="defineAllowedAll"><param name="Local" value="class__Wolframe_1_1types_1_1AddressRestriction.html#a853567691afdcec630cc8d2e375f9e5b"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="defineDeniedAll"><param name="Local" value="class__Wolframe_1_1types_1_1AddressRestriction.html#acf891a2e7ee327f3f2ba5691cc066b68"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="defineOrder"><param name="Local" value="class__Wolframe_1_1types_1_1AddressRestriction.html#a1462be4bc131dadc7eb48f0ab0b57173"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="isAllowed"><param name="Local" value="class__Wolframe_1_1types_1_1AddressRestriction.html#a949c11e73f7c380ffcbb028522ba740f"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="matches"><param name="Local" value="class__Wolframe_1_1types_1_1AddressRestriction.html#add0e6d2fc2690fe8e09ef5e49a8472fc"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="parseAddress"><param name="Local" value="class__Wolframe_1_1types_1_1AddressRestriction.html#aa8835196c5f28050ea292293be5bda97"><param name="ImageNumber" value="11"></OBJECT>
@@ -9101,7 +9088,6 @@
             <LI><OBJECT type="text/sitemap"><param name="Name" value="tostring"><param name="Local" value="class__Wolframe_1_1types_1_1AddressRestriction.html#a237cec3686a93f3f077a4acbe69836a4"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="m_allowedar"><param name="Local" value="class__Wolframe_1_1types_1_1AddressRestriction.html#a3f9abd881a76c87301e2c974775766e9"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="m_deniedar"><param name="Local" value="class__Wolframe_1_1types_1_1AddressRestriction.html#a66c70059ad2d9930e84f61c7e5747c89"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="m_order"><param name="Local" value="class__Wolframe_1_1types_1_1AddressRestriction.html#a9d6cc001d219f32d9887bf8c8689f473"><param name="ImageNumber" value="11"></OBJECT>
             </UL>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="Element"><param name="Local" value="struct__Wolframe_1_1types_1_1AddressRestriction_1_1Element.html"><param name="ImageNumber" value="1"></OBJECT>
             <UL>

@@ -58,7 +58,7 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">5.4. Functions</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch05s03.html">Prev</a> </td><th width="60%" align="center">Chapter 5. Data processing</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch05s05.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1375810100"></a>5.4. Functions</h2></div></div></div><p>This chapter describes how functions are linked to the logic tier. 
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">5.4. Functions</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch05s03.html">Prev</a> </td><th width="60%" align="center">Chapter 5. Data processing</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch05s05.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1395871172"></a>5.4. Functions</h2></div></div></div><p>This chapter describes how functions are linked to the logic tier. 
 It gives an overview on the language bindings available for Wolframe.
 </p><p>
 For defining database transactions Wolframe introduces a language called TDL (Transaction Definition Language).
@@ -73,7 +73,7 @@ After reading this chapter you should be able to write functions of the <span cl
 Be aware that you have to configure a programming language of the logic tier in <span class="application">Wolframe</span>
 before using it. Each chapter introducing a programming language will have a section that describes how the server
 configuration of <span class="application">Wolframe</span> has to be extended for its availability.
-</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1375855180"></a>5.4.1. Transactions in TDL</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1375855524"></a>Introduction</h4></div></div></div><p>
+</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1395916260"></a>5.4.1. Transactions in TDL</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1395916604"></a>Introduction</h4></div></div></div><p>
 			For the description of transactions <span class="application">Wolframe</span>
 			provides the transaction definition language (<acronym class="acronym">TDL</acronym>)
 			introduced here. <span class="application">Wolframe</span> transactions 
@@ -124,16 +124,16 @@ configuration of <span class="application">Wolframe</span> has to be extended fo
 			For clearness and better readability TDL keywords are written in 
 			uppercase here. We recommend in general to use uppercase letters 
 			for TDL keywords. It makes the source more readable.
-		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1375891252"></a>Configuration</h4></div></div></div><p>
+		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1395952332"></a>Configuration</h4></div></div></div><p>
 		Each TDL program source referenced has to be declared in the 
 		<code class="code">Processor</code> section of the configuration with 
 		<code class="code">program &lt;sourcefile&gt;</code>.
-		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1375892380"></a>Language description</h4></div></div></div><p>
+		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1395953460"></a>Language description</h4></div></div></div><p>
 		A TDL program consists of subroutine declarations and exported
 		transaction function declarations. Subroutines have the same
 		structure as transaction function blocks but without pre- and postprocessing
 		and authorization method declarations.
-		</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1375893148"></a>Subroutines</h5></div></div></div><p>A subroutine declaration starts with the Keyword <code class="code">SUBROUTINE</code>
+		</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1395954228"></a>Subroutines</h5></div></div></div><p>A subroutine declaration starts with the Keyword <code class="code">SUBROUTINE</code>
 			followed by the subroutine name and optionally some parameter names
 			in brackets ('(' ')') separated by comma.
 			The declared subroutine name identifies the function in the scope 
@@ -170,7 +170,7 @@ configuration of <span class="application">Wolframe</span> has to be extended fo
 			END
 			</pre><p>
 			The DATABASE declaration is optional.
-			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1375898500"></a>Transaction function declarations</h5></div></div></div><p>A transaction function declaration starts with the Keyword <code class="code">TRANSACTION</code>
+			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1395959580"></a>Transaction function declarations</h5></div></div></div><p>A transaction function declaration starts with the Keyword <code class="code">TRANSACTION</code>
 			followed by the name of the transaction function. This name identifies the
 			function globally. The body of the function contains the following parts:
 			</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><pre class="programlisting">AUTHORIZE ( &lt;auth-function&gt;, &lt;auth-resource&gt; )</pre><p>
@@ -263,7 +263,7 @@ configuration of <span class="application">Wolframe</span> has to be extended fo
 				...&lt;instructions&gt;...
 			END
 			</pre><p>
-			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1375910036"></a>Main processing instructions</h5></div></div></div><p>Main processing instructions defined in the main execution block 
+			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1395971116"></a>Main processing instructions</h5></div></div></div><p>Main processing instructions defined in the main execution block 
 			of a subroutine or transaction function consist of three parts in the
 			following order terminated by a semicolon ';' (the order of the 
 			INTO and FOREACH expression can be switched):
@@ -325,7 +325,7 @@ configuration of <span class="application">Wolframe</span> has to be extended fo
 						can only be referenced if they are bound to 
 						the FOREACH quantifier.
 					</p></li></ul></div><p>
-			</p><div class="sect5"><div class="titlepage"><div><div><h6 class="title"><a id="idp1375916164"></a>Main processing example</h6></div></div></div><p>The following example illustrate how the FOREACH,INTO,DO
+			</p><div class="sect5"><div class="titlepage"><div><div><h6 class="title"><a id="idp1395977244"></a>Main processing example</h6></div></div></div><p>The following example illustrate how the FOREACH,INTO,DO
 				expressions in the main processing block work together:
 				</p><pre class="programlisting">
 				
@@ -339,7 +339,7 @@ BEGIN
 END
 
 				</pre><p>
-				</p></div></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1375917876"></a>Preprocessing instructions</h5></div></div></div><p>Preprocessing instructions defined in the PREPROC execution block 
+				</p></div></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1395978956"></a>Preprocessing instructions</h5></div></div></div><p>Preprocessing instructions defined in the PREPROC execution block 
 			of a transaction function consist similar to the instructions
 			in the main execution block of three parts in the
 			following order terminated by a semicolon ';' (the order of the INTO and FOREACH expression can be
@@ -364,7 +364,7 @@ END
 					path in the FOREACH selection. They are uniquely
 					referencing elements in the context of a selected element.
 				</p></li></ul></div><p>
-		</p><div class="sect5"><div class="titlepage"><div><div><h6 class="title"><a id="idp1375921908"></a>Preprocessing example</h6></div></div></div><p>The following example illustrate how the "FOREACH, INTO, DO"
+		</p><div class="sect5"><div class="titlepage"><div><div><h6 class="title"><a id="idp1395982988"></a>Preprocessing example</h6></div></div></div><p>The following example illustrate how the "FOREACH, INTO, DO"
 				expressions in the main processing block work together:
 				</p><pre class="programlisting">
 				
@@ -384,7 +384,7 @@ BEGIN
 END
 
 				</pre><p>
-				</p></div></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1375923628"></a>Selector path</h5></div></div></div><p>An element of the input or a set of input elements can be selected by a path.
+				</p></div></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1395984708"></a>Selector path</h5></div></div></div><p>An element of the input or a set of input elements can be selected by a path.
 			A path is a sequence of one of the following elements separated by slashes:
 			</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><pre class="programlisting">Identifier</pre><p>
 				An identifier uniquely selects a sub element of the current position in the tree.
@@ -414,9 +414,9 @@ END
 			function or subroutine call arguments path expressions can be used in
 			plain without '$' and '(' ')' markers. These markers are just used to 
 			identify substitution entities.
-		</p><div class="sect5"><div class="titlepage"><div><div><h6 class="title"><a id="idp1375929276"></a>Path expression examples</h6></div></div></div><p>The following list shows different ways of addressing an element by path:
+		</p><div class="sect5"><div class="titlepage"><div><div><h6 class="title"><a id="idp1395990356"></a>Path expression examples</h6></div></div></div><p>The following list shows different ways of addressing an element by path:
 				</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><pre class="programlisting">/</pre><p>Root element</p></li><li class="listitem"><pre class="programlisting">/organization</pre><p>Root element with name "organization"</p></li><li class="listitem"><pre class="programlisting">/organization/address/city</pre><p>Element "city" of root "organization" descendant "address"</p></li><li class="listitem"><pre class="programlisting">.//id</pre><p>Any descendant element with name "id" of the current element</p></li><li class="listitem"><pre class="programlisting">//person/id</pre><p>Child with name "id" of any descendant "person" of the root element</p></li><li class="listitem"><pre class="programlisting">//id</pre><p>Any descendant element with name "id" of the root element</p></li><li class="listitem"><pre class="programlisting">/address/*</pre><p>Any direct descendant of the root element "address"</p></li><li class="listitem"><pre class="programlisting">.</pre><p>Currently selected element</p></li></ul></div><p>
-				</p></div><div class="sect5"><div class="titlepage"><div><div><h6 class="title"><a id="idp1375935516"></a>Path usage example</h6></div></div></div><p>This example shows the usage of path expression in the
+				</p></div><div class="sect5"><div class="titlepage"><div><div><h6 class="title"><a id="idp1395996596"></a>Path usage example</h6></div></div></div><p>This example shows the usage of path expression in the
 			preprocessing and the main processing part of a transaction function:
 			</p><pre class="programlisting">
 			
@@ -435,7 +435,7 @@ END
 
 
 			</pre><p>
-			</p></div></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1375937180"></a>Referencing Database Results</h5></div></div></div><p>Database results of the previous instruction are referenced 
+			</p></div></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1395998260"></a>Referencing Database Results</h5></div></div></div><p>Database results of the previous instruction are referenced 
 			with a '$RESULT.' followed by the column identifier or column number.
 			Column numbers start always from 1, independent from the database!
 			So be aware that even if the database counts column from 0 you have
@@ -488,12 +488,12 @@ END
 			    DO SELECT name FROM Company
 			        WHERE id = $id
 			</pre><p>
-			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1375942596"></a>Naming database results</h5></div></div></div><p>Database results can be hold and made referenceable by name
+			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1396003676"></a>Naming database results</h5></div></div></div><p>Database results can be hold and made referenceable by name
 				with the declaration <code class="code">KEEP AS &lt;resultname&gt;</code>
 				following immediately the instruction with the result to be referenced.
 				The identifier &lt;resultname&gt; references the
 				result in a variable reference or a FOREACH selector expression.
-				</p><div class="sect5"><div class="titlepage"><div><div><h6 class="title"><a id="idp1375944020"></a>Named Result Example</h6></div></div></div><p>This example illustrates how a result is declared by name and referenced:
+				</p><div class="sect5"><div class="titlepage"><div><div><h6 class="title"><a id="idp1396005100"></a>Named Result Example</h6></div></div></div><p>This example illustrates how a result is declared by name and referenced:
 				</p><pre class="programlisting">
 TRANSACTION selectDevices
 BEGIN
@@ -507,7 +507,7 @@ END
 
 
 				</pre><p>
-				</p></div></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1375945572"></a>Referencing Subroutine Parameters</h5></div></div></div><p>
+				</p></div></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1396006652"></a>Referencing Subroutine Parameters</h5></div></div></div><p>
 				Subroutine Parameters are addressed like results but with
 				the prefix <code class="code">PARAM.</code> instead of <code class="code">RESULT.</code>
 				or a named result prefix. "PARAM." is reserved for parameters.
@@ -526,7 +526,7 @@ BEGIN
 END
 
 				</pre><p>
-				</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1375947732"></a>Constraints on database results</h5></div></div></div><p>Database commands returning results can have constraints to catch
+				</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1396008812"></a>Constraints on database results</h5></div></div></div><p>Database commands returning results can have constraints to catch
 			certain errors that would not be recognized at all or too late otherwise.
 			For example a transaction having a result of a previous command as argument
 			would not be executed if the result of the previous command is empty.
@@ -548,7 +548,7 @@ END
 					want to declare each result to have to exist, 
 					you have to put the double constraint
 					"UNIQUE NONEMPTY" or "NONEMPTY UNIQUE".</p></li></ul></div><p>
-			</p><div class="sect5"><div class="titlepage"><div><div><h6 class="title"><a id="idp1375951364"></a>Example with result constraints</h6></div></div></div><p>
+			</p><div class="sect5"><div class="titlepage"><div><div><h6 class="title"><a id="idp1396012444"></a>Example with result constraints</h6></div></div></div><p>
 				This example illustrates how to add result constraint for
 				database commands returning results:
 				</p><pre class="programlisting">
@@ -564,7 +564,7 @@ END
 
 
 				</pre><p>
-				</p></div></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1375953060"></a>Rewriting error messages for the client</h5></div></div></div><p>Sometimes internal error messages are confusing and are not helpful
+				</p></div></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1396014140"></a>Rewriting error messages for the client</h5></div></div></div><p>Sometimes internal error messages are confusing and are not helpful
 			to the user that does not have a deeper knowledge about the database
 			internals. For a set of error types it is possible to add a message
 			to be shown to the user if an error of a certain class happens.
@@ -573,7 +573,7 @@ END
 			and add the string &lt;message&gt; to the error message show to the user.
 			</p><p>We can have many subsequent ON ERROR definitions in a row if the
 			error classes to be caught are various.
-			</p><div class="sect5"><div class="titlepage"><div><div><h6 class="title"><a id="idp1375954804"></a>Database error HINT example</h6></div></div></div><p>The following example shows the usage HINTs in error cases. It
+			</p><div class="sect5"><div class="titlepage"><div><div><h6 class="title"><a id="idp1396015884"></a>Database error HINT example</h6></div></div></div><p>The following example shows the usage HINTs in error cases. It
 			catches errors that are constraint violations (error class CONSTRAINT)
 			and extends the error message with a hint that will be shown to the client as error message:
 			</p><pre class="programlisting">
@@ -592,7 +592,7 @@ END
 			unique constaint violation in transaction 'insertCustomer'
 			-- Customers must have a unique name.
 			</pre><p>
-			</p></div></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1375957388"></a>substructures in the result</h5></div></div></div><p>We already learned how to define substructures of the 
+			</p></div></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1396018468"></a>substructures in the result</h5></div></div></div><p>We already learned how to define substructures of the 
 			transaction function result with the <code class="code">RESULT INTO</code>
 			directive of a TRANSACTION. 
 			But we can also define a scope in the result structure
@@ -608,7 +608,7 @@ END
 			will be attached to the substructure with name &lt;resulttag&gt;.
 			The nesting of result blocks can be arbitrary and the path of the 
 			elements in the result follows the scope of the sub-blocks.
-			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1375959748"></a>Explicit sefinition of elements in the result</h5></div></div></div><p>The result of a transaction consists normally of database command 
+			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1396020828"></a>Explicit sefinition of elements in the result</h5></div></div></div><p>The result of a transaction consists normally of database command 
 			results that are mapped into the result with the attached INTO directive.
 			For printing variable values or constant values you can in certain
 			SQL databases use a select constant statement without specifying a table.
@@ -631,7 +631,7 @@ END
 
 
 			</pre><p>
-			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1375962228"></a>Database specific code</h5></div></div></div><p>TDL allows the support of different transaction databases with one code base. 
+			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1396023308"></a>Database specific code</h5></div></div></div><p>TDL allows the support of different transaction databases with one code base. 
 			For example one for testing and demonstration and one for the productive system.
 			We can tag transactions,subroutines or whole TDL sources as beeing valid for one or a list of databases
 			with the command <code class="code">DATABASE</code> followed by a comma separated list of database names as declared in
@@ -663,7 +663,7 @@ END
 
 
 			</pre><p>
-			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1375965556"></a>Subroutine templates</h5></div></div></div><p>To reuse code with different context, for example for doing the same
+			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1396026636"></a>Subroutine templates</h5></div></div></div><p>To reuse code with different context, for example for doing the same
 			procedure on different tables, subroutine templates can be defined in TDL.
 			Subroutine templates become useful when we want to make items instantiable
 			that are not allowed to be dependent on variable arguments.
@@ -702,7 +702,7 @@ END
 
 
 			</pre><p>
-			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1375967916"></a>Includes</h5></div></div></div><p>TDL has the possibility to include files for reusing subroutines 
+			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1396028996"></a>Includes</h5></div></div></div><p>TDL has the possibility to include files for reusing subroutines 
 			or subroutine templates in different modules.
 			The keyword INCLUDE followed by the name of the relative path of the TDL file without the extension .tdl includes the declarations of the included file.
 			The declarations in the included file are treated as they would have been
@@ -727,7 +727,7 @@ END
 
 
 			</pre><p>
-			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1375970828"></a>Auditing</h5></div></div></div><p>TDL defines hooks to add function calls for auditing transactions. An
+			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1396031908"></a>Auditing</h5></div></div></div><p>TDL defines hooks to add function calls for auditing transactions. An
 			audit call is a form function call with a structure build from transaction input
 			and some database results. An auditing function call can be marked as critical, so
 			that the final commit is dependent not only on the transaction success but also on
@@ -736,7 +736,7 @@ END
 			(only atomic parameters) as parameter and one with the parameter build from a
 			result structure of a BEGIN..END block executed. The later one can be used for
 			audit function calls with a more complex parameter structure.
-			</p><div class="sect5"><div class="titlepage"><div><div><h6 class="title"><a id="idp1375972076"></a>Audit example with function call syntax</h6></div></div></div><pre class="programlisting">
+			</p><div class="sect5"><div class="titlepage"><div><div><h6 class="title"><a id="idp1396033156"></a>Audit example with function call syntax</h6></div></div></div><pre class="programlisting">
 				
 TRANSACTION doInsertUser
 BEGIN
@@ -747,7 +747,7 @@ AUDIT CRITICAL auditUserInsert( $RESULT.id, $(name) )
 
 
 
-				</pre></div><div class="sect5"><div class="titlepage"><div><div><h6 class="title"><a id="idp1375973396"></a>Audit example with parameter as structure</h6></div></div></div><pre class="programlisting">
+				</pre></div><div class="sect5"><div class="titlepage"><div><div><h6 class="title"><a id="idp1396034476"></a>Audit example with parameter as structure</h6></div></div></div><pre class="programlisting">
 				
 TRANSACTION doInsertUser
 BEGIN
@@ -762,7 +762,7 @@ END
 
 
 
-				</pre></div></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376035060"></a>5.4.2. Functions in .NET</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376035380"></a>Introduction</h4></div></div></div><p>You can write functions for the logic tier of <span class="application">Wolframe</span> in languages based
+				</pre></div></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1396096188"></a>5.4.2. Functions in .NET</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396096508"></a>Introduction</h4></div></div></div><p>You can write functions for the logic tier of <span class="application">Wolframe</span> in languages based
 		on <span class="application">.NET</span> (<a class="ulink" href="http://www.microsoft.com/net" target="_top">http://www.microsoft.com/net</a>) like for example
 		<span class="application">C#</span> and <span class="application">VB.NET</span>.  
 		Because <span class="application">.NET</span> based libraries can only be called 
@@ -773,7 +773,7 @@ END
 		We will discuss all of them, so that you should be able
 		to write and configure <span class="application">.NET</span> assemblies for using in 
 		<span class="application">Wolframe</span> on your own after reading this chapter.
-		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376069756"></a>Configuration</h4></div></div></div><p>For enabling <span class="application">.NET</span> you have to declare the loading of the module 'mod_command_dotnet'
+		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396130884"></a>Configuration</h4></div></div></div><p>For enabling <span class="application">.NET</span> you have to declare the loading of the module 'mod_command_dotnet'
 		in the main section of the server configuration file.
 		</p><pre class="programlisting">
 		
@@ -781,7 +781,7 @@ END
 
 		</pre><p>
 		For the configuration of the <span class="application">.NET</span> assemblies to be loaded, see section 'Configure .NET Modules'.
-	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376072100"></a>Function interface</h4></div></div></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376072420"></a>Function context</h5></div></div></div><p>In <span class="application">.NET</span> the building blocks for functions called by <span class="application">Wolframe</span>
+	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396133228"></a>Function interface</h4></div></div></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1396133548"></a>Function context</h5></div></div></div><p>In <span class="application">.NET</span> the building blocks for functions called by <span class="application">Wolframe</span>
 		are classes and method calls. The way of defining callable items for 
 		<span class="application">Wolframe</span> is restricted either due to the current 
 		state of the <span class="application">Wolframe</span> COM/.NET interoperability
@@ -795,7 +795,7 @@ END
 			exported declared.</p></li><li class="listitem"><p>The methods must not be static because COM/.NET interop,
 			as far as we know, cannot cope with static method calls. Even if the 
 			methods nature is static, they have to be defined as ordinary method calls.</p></li></ul></div><p>
-		</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376076964"></a>Function signature</h5></div></div></div><p>
+		</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1396138092"></a>Function signature</h5></div></div></div><p>
 		Functions callable from <span class="application">Wolframe</span> take an arbitrary 
 		number of arguments as input and return a structure (<code class="code">struct</code>) as 
 		output. The named input parameters referencing atomic elements or complex 
@@ -810,7 +810,7 @@ END
 		a <code class="code">ProcProvider</code> interface from <span class="application">Wolframe</span>
 		namespace as additional parameter. We will describe the <code class="code">ProcProvider</code>
 		interface in a separate section of this chapter.
-		</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376081052"></a>Example</h5></div></div></div><p>The following simple example without provider context is declared 
+		</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1396142180"></a>Example</h5></div></div></div><p>The following simple example without provider context is declared 
 		without marshalling and introspection tags. It can therefore not be called
 		by <code class="code">Wolframe</code>. We explain later how to make it callable. 
 		The example just illustrates the structure of the exported object with
@@ -844,31 +844,31 @@ public class Functions : FunctionInterface
 
 
 		</pre><p>
-		</p></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376083452"></a>Prepare .NET assemblies</h4></div></div></div><p>
+		</p></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396144580"></a>Prepare .NET assemblies</h4></div></div></div><p>
 	<span class="application">Wolframe</span> itself is not a <span class="application">.NET</span> application. Therefore it has to call
 	<span class="application">.NET</span> functions via COM/.NET interop interface of a hosted CLR
 	(Common Language Runtime).
 	To make functions written in <span class="application">.NET</span> callable by <span class="application">Wolframe</span>, the following steps
 	have to be performed:
-	</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376085708"></a>Make assemblies COM visible</h5></div></div></div><p>
+	</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1396146836"></a>Make assemblies COM visible</h5></div></div></div><p>
 		First the asseblies with the functions exported to <span class="application">Wolframe</span> have to be build COM visible.
 		To make the <span class="application">.NET</span> functions called from <span class="application">Wolframe</span> COM visible, you have to tick
 		"Properties/Assembly Information" the switch "Make assembly COM visible". Furthermore
 		every object and method that is part of the exported API (also objects used as parameters)
 		has to be tagged in the source as COM visible with <code class="code">[ComVisible(true)]</code>.
-		</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376087804"></a>Tag exported objects with a Guid</h5></div></div></div><p>Each object that is part of the exported API has to be tagged with a global unique
+		</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1396148932"></a>Tag exported objects with a Guid</h5></div></div></div><p>Each object that is part of the exported API has to be tagged with a global unique
 		identifier (Guid) in order to be adressable. Modules with <span class="application">.NET</span> functions will have to be globally
 		registered and the objects need to be identified by the Guid because that's the only way
 		to make the record info structure visible for <span class="application">Wolframe</span>. The record info structure is
 		needed to serialize/deserialize <span class="application">.NET</span> objects from another interpreter context that
 		is not registered for <span class="application">.NET</span>. There are many ways to create a Guid and
 		tag an object like this: <code class="code">[Guid("390E047F-36FD-4F23-8CE8-3A4C24B33AD3")]</code>.
-		</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376090484"></a>Add marshalling tags to values</h5></div></div></div><p>For marshalling function calls correctly, <span class="application">Wolframe</span> needs
+		</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1396151612"></a>Add marshalling tags to values</h5></div></div></div><p>For marshalling function calls correctly, <span class="application">Wolframe</span> needs
 		tags for every parameter and member of a sub structure of a parameter
 		of methods exported as functions.
 		The following table lists the supported types and their marshalling tags:
-		</p><div class="table"><a id="idp1376091596"></a><p class="title"><strong>Table 5.2. Marshalling Tags</strong></p><div class="table-contents"><table summary="Marshalling Tags" border="1"><colgroup><col /><col /></colgroup><thead><tr><th>.NET Type</th><th>Marshalling Tag</th></tr></thead><tbody><tr><td>I2</td><td><code class="code">[MarshalAs(UnmanagedType.I2)]</code></td></tr><tr><td>I4</td><td><code class="code">[MarshalAs(UnmanagedType.I4)]</code></td></tr><tr><td>I8</td><td><code class="code">[MarshalAs(UnmanagedType.I8)]</code></td></tr><tr><td>UI2</td><td><code class="code">[MarshalAs(UnmanagedType.UI2)]</code></td></tr><tr><td>UI4</td><td><code class="code">[MarshalAs(UnmanagedType.UI4)]</code></td></tr><tr><td>UI8</td><td><code class="code">[MarshalAs(UnmanagedType.UI8)]</code></td></tr><tr><td>R4</td><td><code class="code">[MarshalAs(UnmanagedType.R4)]</code></td></tr><tr><td>R8</td><td><code class="code">[MarshalAs(UnmanagedType.R8)]</code></td></tr><tr><td>BOOL</td><td><code class="code">[MarshalAs(UnmanagedType.BOOL)]</code></td></tr><tr><td>string</td><td><code class="code">[MarshalAs(UnmanagedType.BStr)]</code></td></tr><tr><td>RECORD</td><td><p>no tag needed</p></td></tr><tr><td>array of structures</td><td><code class="code">[MarshalAs(UnmanagedType.SafeArray, SafeArraySubType = VarEnum.VT_RECORD)]</code></td></tr><tr><td>array of strings</td><td><code class="code">[MarshalAs(UnmanagedType.SafeArray, SafeArraySubType = VarEnum.VT_BSTR)]</code></td></tr><tr><td>array of XX (XX=I2,I4,I8,..)</td><td><code class="code">[MarshalAs(UnmanagedType.SafeArray, SafeArraySubType = VarEnum.VT_XX)]</code></td></tr></tbody></table></div></div><br class="table-break" /><p>Decimal floating point and numeric types (DECIMAL) are not yet supported, but
-		will soon be available.</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376104236"></a>Example with COM introspection tags</h5></div></div></div><p>The following C# module definition repeats the example introduced above with the
+		</p><div class="table"><a id="idp1396152724"></a><p class="title"><strong>Table 5.2. Marshalling Tags</strong></p><div class="table-contents"><table summary="Marshalling Tags" border="1"><colgroup><col /><col /></colgroup><thead><tr><th>.NET Type</th><th>Marshalling Tag</th></tr></thead><tbody><tr><td>I2</td><td><code class="code">[MarshalAs(UnmanagedType.I2)]</code></td></tr><tr><td>I4</td><td><code class="code">[MarshalAs(UnmanagedType.I4)]</code></td></tr><tr><td>I8</td><td><code class="code">[MarshalAs(UnmanagedType.I8)]</code></td></tr><tr><td>UI2</td><td><code class="code">[MarshalAs(UnmanagedType.UI2)]</code></td></tr><tr><td>UI4</td><td><code class="code">[MarshalAs(UnmanagedType.UI4)]</code></td></tr><tr><td>UI8</td><td><code class="code">[MarshalAs(UnmanagedType.UI8)]</code></td></tr><tr><td>R4</td><td><code class="code">[MarshalAs(UnmanagedType.R4)]</code></td></tr><tr><td>R8</td><td><code class="code">[MarshalAs(UnmanagedType.R8)]</code></td></tr><tr><td>BOOL</td><td><code class="code">[MarshalAs(UnmanagedType.BOOL)]</code></td></tr><tr><td>string</td><td><code class="code">[MarshalAs(UnmanagedType.BStr)]</code></td></tr><tr><td>RECORD</td><td><p>no tag needed</p></td></tr><tr><td>array of structures</td><td><code class="code">[MarshalAs(UnmanagedType.SafeArray, SafeArraySubType = VarEnum.VT_RECORD)]</code></td></tr><tr><td>array of strings</td><td><code class="code">[MarshalAs(UnmanagedType.SafeArray, SafeArraySubType = VarEnum.VT_BSTR)]</code></td></tr><tr><td>array of XX (XX=I2,I4,I8,..)</td><td><code class="code">[MarshalAs(UnmanagedType.SafeArray, SafeArraySubType = VarEnum.VT_XX)]</code></td></tr></tbody></table></div></div><br class="table-break" /><p>Decimal floating point and numeric types (DECIMAL) are not yet supported, but
+		will soon be available.</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1396165364"></a>Example with COM introspection tags</h5></div></div></div><p>The following C# module definition repeats the example introduced above with the
 		correct tagging for COM visibility and introspection:
 		</p><pre class="programlisting">
 		
@@ -904,18 +904,18 @@ public class Functions : FunctionInterface
 
 
 		</pre><p>
-		</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376105948"></a>Create a type library</h5></div></div></div><p>For making the API introspectable by <span class="application">Wolframe</span>, we have to create a TLB
+		</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1396167076"></a>Create a type library</h5></div></div></div><p>For making the API introspectable by <span class="application">Wolframe</span>, we have to create a TLB
 		(Type Library) file from the assembly (DLL) after build. The type library has
 		to be recreated every time the module interface (API) changes. The type library is
 		created with the program <code class="code">tlbexp</code>. All created type library (.tlb) file
 		that will be loaded with the same runtime environment have to be copied into
 		the same directory. They will be referenced for introspection in the 
 		configuration. The configuration of <span class="application">.NET</span> will be explained later.
-		</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376107844"></a>Register the type library</h5></div></div></div><p>The type library created with <code class="code">tlbexp</code> has also to be registered.
+		</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1396168972"></a>Register the type library</h5></div></div></div><p>The type library created with <code class="code">tlbexp</code> has also to be registered.
 		For this you call the program <code class="code">regtlibv12</code> with your type library file
 		(.tlb file) as argument. The type libary fegistration has to be repeated when
 		the the module interface (API) changes.
-		</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376109076"></a>Register the assembly in the GAC</h5></div></div></div><p><span class="application">Wolframe</span> does not accept local assemblies. In order to be addressable over
+		</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1396170204"></a>Register the assembly in the GAC</h5></div></div></div><p><span class="application">Wolframe</span> does not accept local assemblies. In order to be addressable over
 		the type library interface assemblies need to be put into the global assembly cache (GAC).
 		Unfortunately this has to be repeated every time the assembly binary changes.
 		There is no way around. For the registration in the GAC we have to call the program
@@ -924,7 +924,7 @@ public class Functions : FunctionInterface
 		administrator command line. Before calling <code class="code">gacutil</code>, assemblies
 		have to be strongly signed. We refer here to the MSDN documentation for how
 		to sign an application.
-		</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376111228"></a>Register the types in the assembly</h5></div></div></div><p>We have to register the types declared in the assembly
+		</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1396172356"></a>Register the types in the assembly</h5></div></div></div><p>We have to register the types declared in the assembly
 		to enable <span class="application">Wolframe</span> to create these types.
 		An example could be a provider function returning a structure that is called
 		from a <span class="application">Wolframe</span> .NET function. The structure
@@ -934,7 +934,7 @@ public class Functions : FunctionInterface
 		<code class="code">regasm &lt;assemblypath&gt;</code> with the assembly path &lt;assemblypath&gt;
 		as argument. The command <code class="code">regasm</code> has to be called from
 		administrator command line.
-		</p></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376113660"></a>Calling Wolframe functions</h4></div></div></div><p>Wolframe functions in <span class="application">.NET</span> calling globally 
+		</p></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396174788"></a>Calling Wolframe functions</h4></div></div></div><p>Wolframe functions in <span class="application">.NET</span> calling globally 
 	defined <span class="application">Wolframe</span> 
 	functions need to declare the processor provider interface as an additional parameter.
 	The processor provider interface is defined as follows (example <span class="application">C#</span>):
@@ -981,7 +981,7 @@ public Address GetUserAddress(
 	</pre><p>
 	The objects involved in this example need no more tagging because the provider context and also
 	structures (<code class="code">struct</code>) need no additional mashalling tags.
-	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376121676"></a>Configure .NET assemblies</h4></div></div></div><p>
+	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396182804"></a>Configure .NET assemblies</h4></div></div></div><p>
 	<span class="application">.NET</span> modules are grouped together in a configuration block that specifies the configuration
 	of the Microsoft Common Language Runtime (CLR) used for <span class="application">.NET</span> interop calls. The configuration
 	block has the header <code class="code">runtimeEnv dotNET</code> and configures the version of the 
@@ -1000,12 +1000,12 @@ RuntimeEnv dotNet
 }
 
 	</pre><p>
-	</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376124716"></a>Assembly Declaration</h5></div></div></div><div class="table"><a id="idp1376125036"></a><p class="title"><strong>Table 5.3. Attributes of assembly declarations</strong></p><div class="table-contents"><table summary="Attributes of assembly declarations" border="1"><colgroup><col /><col /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>&lt;no identifier&gt;</td><td>The first element of the assembly definition does not have an attribute identifier. 
+	</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1396185844"></a>Assembly Declaration</h5></div></div></div><div class="table"><a id="idp1396186164"></a><p class="title"><strong>Table 5.3. Attributes of assembly declarations</strong></p><div class="table-contents"><table summary="Attributes of assembly declarations" border="1"><colgroup><col /><col /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>&lt;no identifier&gt;</td><td>The first element of the assembly definition does not have an attribute identifier. 
 					The value is the name of the assembly (and also of the type library)</td></tr><tr><td>Version</td><td>4 element (Major.Minor.Build.Revision) version number of the assembly.
 					This value is defined in the assembly info file of the assembly project.</td></tr><tr><td>Culture</td><td>For <span class="application">Wolframe</span> applications until now always "neutral".
 					Functionality is in Wolframe not yet culture dependent on the server side.</td></tr><tr><td>PublicKeyToken</td><td>Public key token values for signed assemblies. See next section how to set it.</td></tr><tr><td>processorArchitecture</td><td>Meaning not explained here. Has on ordinary Windows <span class="application">.NET</span>
 					plattforms usually the value "MSIL". Read the MSDN 
-					documentation to dig deeper.</td></tr></tbody></table></div></div><br class="table-break" /></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376131284"></a>Get the PublicKeyToken</h5></div></div></div><p>
+					documentation to dig deeper.</td></tr></tbody></table></div></div><br class="table-break" /></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1396192412"></a>Get the PublicKeyToken</h5></div></div></div><p>
 		We already found out that <span class="application">Wolframe</span> <span class="application">.NET</span> modules 
 		have to be strongly signed. 
 		Each strongly signed assembly has such a public key token
@@ -1016,7 +1016,7 @@ RuntimeEnv dotNet
 		with &lt;assemblypath&gt; as the path of the assembly. The printed value is the
 		public key to insert as attribute value of <code class="code">PublicKeyToken</code> in the
 		<span class="application">Wolframe</span> configuration for each <span class="application">.NET</span> assembly.
-		</p></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376134620"></a>Validation issues</h4></div></div></div><p>
+		</p></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396195748"></a>Validation issues</h4></div></div></div><p>
 	Languages of <span class="application">.NET</span> called via the CLR are strongly typed languages. This means that
 	the input of a function and the output is already validated to be of a strictly
 	defined structure. So a validation by passing the input through a form
@@ -1026,17 +1026,17 @@ RuntimeEnv dotNet
 	is an issue. 
 	See in the documentation of the standard command handler how validation can be
 	skipped with the attribute <code class="code">SKIP</code>.
-	</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376182500"></a>5.4.3. Functions in python</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376182820"></a>Current development status</h4></div></div></div><p>You can write functions for the logic tier of <span class="application">Wolframe</span> in the 
+	</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1396243628"></a>5.4.3. Functions in python</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396243948"></a>Current development status</h4></div></div></div><p>You can write functions for the logic tier of <span class="application">Wolframe</span> in the 
 		<span class="application">Python</span> programming language (<a class="ulink" href="http://www.python.org" target="_top">http://www.python.org</a>).
 		</p><p>
 		The implementation of <span class="application">Python</span> calls is not yet available. 
 		But <span class="application">Wolframe</span> will provide <span class="application">Python</span> functions soon.
-		</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376181436"></a>5.4.4. Functions in Lua</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376181780"></a>Introduction</h4></div></div></div><p>You can write functions for the logic tier of <span class="application">Wolframe</span> with <span class="application">Lua</span>. <span class="application">Lua</span> is a scripting language designed, implemented, and maintained
+		</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1396241076"></a>5.4.4. Functions in Lua</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396241420"></a>Introduction</h4></div></div></div><p>You can write functions for the logic tier of <span class="application">Wolframe</span> with <span class="application">Lua</span>. <span class="application">Lua</span> is a scripting language designed, implemented, and maintained
 		at PUC-Rio in Brazil by Roberto Ierusalimschy, Waldemar Celes and Luiz Henrique de Figueiredo
 		(see <a class="ulink" href="http://www.lua.org/authors.html" target="_top">http://www.lua.org/authors.html</a>). A description of <span class="application">Lua</span> is not provided here.
 		For an introduction into programming with <span class="application">Lua</span> see <a class="ulink" href="http://www.lua.org" target="_top">http://www.lua.org</a>. The official manual which is also available as book
 		is very good. <span class="application">Wolframe</span> introduces some <span class="application">Lua</span> interfaces to access input and output and to execute functions.
-	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376223708"></a>Configuration</h4></div></div></div><p>For enabling <span class="application">Lua</span> you have to declare the loading of the module 'mod_command_lua'
+	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396239324"></a>Configuration</h4></div></div></div><p>For enabling <span class="application">Lua</span> you have to declare the loading of the module 'mod_command_lua'
 		in the main section of the server configuration file.
 		</p><pre class="programlisting">
 		
@@ -1047,17 +1047,17 @@ RuntimeEnv dotNet
 		section of the configuration with <code class="code">program &lt;sourcefile&gt;</code>.
 		The script is recognized as <span class="application">Lua</span> script by the file extension ".lua".
 		Files without this extension cannot be loaded as <span class="application">Lua</span> scripts.
-		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376227164"></a>Declaring functions</h4></div></div></div><p>For <span class="application">Lua</span> we do not have to declare anything in addition to the 
+		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396288332"></a>Declaring functions</h4></div></div></div><p>For <span class="application">Lua</span> we do not have to declare anything in addition to the 
 		<span class="application">Lua</span> script. If you configure a <span class="application">Lua</span>
 		script as program, all global functions declared in this script are declared as global form
 		functions. For avoiding name conflicts you should declare private functions
 		of the script as <code class="code">local</code>.
-	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376229172"></a>Wolframe provider library</h4></div></div></div><p><span class="application">Wolframe</span> lets you access objects of the global context through
+	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396290340"></a>Wolframe provider library</h4></div></div></div><p><span class="application">Wolframe</span> lets you access objects of the global context through
 		a library called <code class="code">provider</code> offering the following functions:
 
-		</p><div class="table"><a id="idp1376230188"></a><p class="title"><strong>Table 5.4. Method</strong></p><div class="table-contents"><table summary="Method" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th>Name</th><th>Parameter</th><th>Returns</th></tr></thead><tbody><tr><td>form</td><td>Name of the form</td><td>An instance of the form</td></tr><tr><td>type</td><td>Type name and initializer list</td><td>A constructor function to create a value instance of this type</td></tr><tr><td>formfunction</td><td>Name of the function</td><td>Form function defined in a <span class="application">Wolframe</span> program or module</td></tr><tr><td>document</td><td>Content string of the document to process</td><td>Returns an object of type "document" that allows the processing of the contents passed as argument.
+		</p><div class="table"><a id="idp1396291356"></a><p class="title"><strong>Table 5.4. Method</strong></p><div class="table-contents"><table summary="Method" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th>Name</th><th>Parameter</th><th>Returns</th></tr></thead><tbody><tr><td>form</td><td>Name of the form</td><td>An instance of the form</td></tr><tr><td>type</td><td>Type name and initializer list</td><td>A constructor function to create a value instance of this type</td></tr><tr><td>formfunction</td><td>Name of the function</td><td>Form function defined in a <span class="application">Wolframe</span> program or module</td></tr><tr><td>document</td><td>Content string of the document to process</td><td>Returns an object of type "document" that allows the processing of the contents passed as argument.
 						See description of type "document"</td></tr><tr><td>authorize</td><td>1) authorization function 2) (optional) authorization resource</td><td>Calls the specified authorization function and returns true on success (authorized) and false on failure (authorization denied or error)</td></tr></tbody></table></div></div><p><br class="table-break" />
-	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376237084"></a>Using atomic data types</h4></div></div></div><p><span class="application">Wolframe</span> lets us extend the type system consisting 
+	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396298252"></a>Using atomic data types</h4></div></div></div><p><span class="application">Wolframe</span> lets us extend the type system consisting 
 		of Lua basic data types with our own. We can create atomic data types 
 		defined in a module or in a DDL datatype definition program (.wnmp file).
 		For this you call the <code class="code">type</code> method of the provider with 
@@ -1068,14 +1068,14 @@ RuntimeEnv dotNet
 		value instance of this type. The name of the type can refer to 
 		one of the following:
 
-		</p><div class="table"><a id="idp1376238548"></a><p class="title"><strong>Table 5.5. List of Atomic Data Types</strong></p><div class="table-contents"><table summary="List of Atomic Data Types" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th>Class</th><th>Initializer Arguments</th><th>Description</th></tr></thead><tbody><tr><td>Custom data type</td><td>Custom Type Parameters</td><td>A custom data type defined in a module with arithmetic operators and methods</td></tr><tr><td>Normalization function</td><td>Dimension parameters</td><td>A type defined as normalization function in a module</td></tr><tr><td>DDL data type</td><td>(no arguments)</td><td>A normalizer defined as sequence of normalization functions in a .wnmp source file</td></tr><tr><td>Data type 'bignumber'</td><td>(no arguments)</td><td>Arbitrary precision number type</td></tr><tr><td>Data fype 'datetime'</td><td>(no arguments)</td><td>Data type representing date and time down to a granularity of microseconds</td></tr></tbody></table></div></div><p><br class="table-break" />
-		</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376246004"></a>Data type 'datetime'</h5></div></div></div><p>
+		</p><div class="table"><a id="idp1396299716"></a><p class="title"><strong>Table 5.5. List of Atomic Data Types</strong></p><div class="table-contents"><table summary="List of Atomic Data Types" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th>Class</th><th>Initializer Arguments</th><th>Description</th></tr></thead><tbody><tr><td>Custom data type</td><td>Custom Type Parameters</td><td>A custom data type defined in a module with arithmetic operators and methods</td></tr><tr><td>Normalization function</td><td>Dimension parameters</td><td>A type defined as normalization function in a module</td></tr><tr><td>DDL data type</td><td>(no arguments)</td><td>A normalizer defined as sequence of normalization functions in a .wnmp source file</td></tr><tr><td>Data type 'bignumber'</td><td>(no arguments)</td><td>Arbitrary precision number type</td></tr><tr><td>Data fype 'datetime'</td><td>(no arguments)</td><td>Data type representing date and time down to a granularity of microseconds</td></tr></tbody></table></div></div><p><br class="table-break" />
+		</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1396307172"></a>Data type 'datetime'</h5></div></div></div><p>
 			The data type 'datetime' is used as interface for date time values.
-			</p><div class="table"><a id="idp1376246532"></a><p class="title"><strong>Table 5.6. Methods of 'datetime'</strong></p><div class="table-contents"><table summary="Methods of 'datetime'" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th>Method Name</th><th>Arguments</th><th>Description</th></tr></thead><tbody><tr><td>&lt;constructor&gt;</td><td>year, month, day, hour, minute, second ,millisecond, microsecond</td><td>Creates a date and time value with a granularity down to microseconds</td></tr><tr><td>&lt;constructor&gt;</td><td>year, month, day, hour, minute, second ,millisecond</td><td>Creates a date and time value with a granularity down to milliseconds</td></tr><tr><td>&lt;constructor&gt;</td><td>year, month, day, hour, minute, second</td><td>Creates a date and time value</td></tr><tr><td>&lt;constructor&gt;</td><td>year, month, day</td><td>Creates a date value</td></tr><tr><td>year</td><td>(no arguments)</td><td>Return the value of the year</td></tr><tr><td>month</td><td>(no arguments)</td><td>Return the value of the month (1..12)</td></tr><tr><td>day</td><td>(no arguments)</td><td>Return the value of the day in the month (1..31)</td></tr><tr><td>hour</td><td>(no arguments)</td><td>Return the value of the hour in the day (0..23)</td></tr><tr><td>minute</td><td>(no arguments)</td><td>Return the value of the minute (0..59)</td></tr><tr><td>second</td><td>(no arguments)</td><td>Return the value of the second (0..63 : 59 + leap seconds)</td></tr><tr><td>millisecond</td><td>(no arguments)</td><td>Return the value of the millisecond (0..1023)</td></tr><tr><td>microsecond</td><td>(no arguments)</td><td>Return the value of the microsecond (0..1023)</td></tr><tr><td>__tostring</td><td>(no arguments)</td><td>Return the date as string in the format YYYYMMDD, YYYYMMDDhhmmss, YYYYMMDDhhmmssll or YYYYMMDDhhmmssllcc, depending on constructor used to create the date and time value.</td></tr></tbody></table></div></div><p><br class="table-break" />
-		</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376259708"></a>Data Type 'bignumber'</h5></div></div></div><p>
+			</p><div class="table"><a id="idp1396307700"></a><p class="title"><strong>Table 5.6. Methods of 'datetime'</strong></p><div class="table-contents"><table summary="Methods of 'datetime'" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th>Method Name</th><th>Arguments</th><th>Description</th></tr></thead><tbody><tr><td>&lt;constructor&gt;</td><td>year, month, day, hour, minute, second ,millisecond, microsecond</td><td>Creates a date and time value with a granularity down to microseconds</td></tr><tr><td>&lt;constructor&gt;</td><td>year, month, day, hour, minute, second ,millisecond</td><td>Creates a date and time value with a granularity down to milliseconds</td></tr><tr><td>&lt;constructor&gt;</td><td>year, month, day, hour, minute, second</td><td>Creates a date and time value</td></tr><tr><td>&lt;constructor&gt;</td><td>year, month, day</td><td>Creates a date value</td></tr><tr><td>year</td><td>(no arguments)</td><td>Return the value of the year</td></tr><tr><td>month</td><td>(no arguments)</td><td>Return the value of the month (1..12)</td></tr><tr><td>day</td><td>(no arguments)</td><td>Return the value of the day in the month (1..31)</td></tr><tr><td>hour</td><td>(no arguments)</td><td>Return the value of the hour in the day (0..23)</td></tr><tr><td>minute</td><td>(no arguments)</td><td>Return the value of the minute (0..59)</td></tr><tr><td>second</td><td>(no arguments)</td><td>Return the value of the second (0..63 : 59 + leap seconds)</td></tr><tr><td>millisecond</td><td>(no arguments)</td><td>Return the value of the millisecond (0..1023)</td></tr><tr><td>microsecond</td><td>(no arguments)</td><td>Return the value of the microsecond (0..1023)</td></tr><tr><td>__tostring</td><td>(no arguments)</td><td>Return the date as string in the format YYYYMMDD, YYYYMMDDhhmmss, YYYYMMDDhhmmssll or YYYYMMDDhhmmssllcc, depending on constructor used to create the date and time value.</td></tr></tbody></table></div></div><p><br class="table-break" />
+		</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1396320876"></a>Data Type 'bignumber'</h5></div></div></div><p>
 			The data type 'bignumber' is used to reference fixed point BCD numbers with a precision of 32767 digits between -1E32767 and +1E32767.
-			</p><div class="table"><a id="idp1376260308"></a><p class="title"><strong>Table 5.7. Methods of 'datetime'</strong></p><div class="table-contents"><table summary="Methods of 'datetime'" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th>Method name</th><th>Arguments</th><th>Description</th></tr></thead><tbody><tr><td>&lt;constructor&gt;</td><td>number value as string</td><td>Creates a bignumber from its string representation</td></tr><tr><td>&lt;constructor&gt;</td><td>number value</td><td>Creates a bignumber from a lua number value (double precision floating point number)</td></tr><tr><td>precision</td><td>(no arguments)</td><td>Return the number of significant digits in the number</td></tr><tr><td>scale</td><td>(no arguments)</td><td>Return the number of fractional digits (may be negative, may be bigger than precision)</td></tr><tr><td>digits</td><td>(no arguments)</td><td>Return the significant digits in the number</td></tr><tr><td>tonumber</td><td>(no arguments)</td><td>Return the number as lua number value (double precision floating point number) with possible lost of accurancy</td></tr><tr><td>__tostring</td><td>(no arguments)</td><td>Return the big number value as string (not normalized).</td></tr></tbody></table></div></div><p><br class="table-break" />
-		</p></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376268508"></a>Filter interface iterators</h4></div></div></div><p>Lua provides an interface to the iterators internally used to couple 
+			</p><div class="table"><a id="idp1396321476"></a><p class="title"><strong>Table 5.7. Methods of 'datetime'</strong></p><div class="table-contents"><table summary="Methods of 'datetime'" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th>Method name</th><th>Arguments</th><th>Description</th></tr></thead><tbody><tr><td>&lt;constructor&gt;</td><td>number value as string</td><td>Creates a bignumber from its string representation</td></tr><tr><td>&lt;constructor&gt;</td><td>number value</td><td>Creates a bignumber from a lua number value (double precision floating point number)</td></tr><tr><td>precision</td><td>(no arguments)</td><td>Return the number of significant digits in the number</td></tr><tr><td>scale</td><td>(no arguments)</td><td>Return the number of fractional digits (may be negative, may be bigger than precision)</td></tr><tr><td>digits</td><td>(no arguments)</td><td>Return the significant digits in the number</td></tr><tr><td>tonumber</td><td>(no arguments)</td><td>Return the number as lua number value (double precision floating point number) with possible lost of accurancy</td></tr><tr><td>__tostring</td><td>(no arguments)</td><td>Return the big number value as string (not normalized).</td></tr></tbody></table></div></div><p><br class="table-break" />
+		</p></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396329676"></a>Filter interface iterators</h4></div></div></div><p>Lua provides an interface to the iterators internally used to couple 
 		objects and functions. They are accessible as iterator function closure
 		in <span class="application">Lua</span>. 
 		The look similar to <span class="application">Lua</span> iterators but are not.
@@ -1086,19 +1086,19 @@ RuntimeEnv dotNet
 		and build the object during traversal if you want.
 		The returned elements of the Filter interface iterators are tuples 
 		with the following meaning:
-	</p><div class="table"><a id="idp1376270588"></a><p class="title"><strong>Table 5.8. Filter interface iterator elements</strong></p><div class="table-contents"><table summary="Filter interface iterator elements" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th>Tuple First Element</th><th>Tuple Second Element</th><th>Description</th></tr></thead><tbody><tr><td>NIL/false</td><td>string/number</td><td>Open (tag is second element)</td></tr><tr><td>NIL/false</td><td>NIL/false</td><td>Close</td></tr><tr><td>Any non NIL/false</td><td>string/number</td><td>Attribute assignment (value is first, tag is second element)</td></tr><tr><td>string/number</td><td>NIL/false</td><td>Content value (value is first element)</td></tr></tbody></table></div></div><br class="table-break" /></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376276012"></a>Iterator library</h4></div></div></div><p><span class="application">Wolframe</span> lets you access filter interface
+	</p><div class="table"><a id="idp1396331756"></a><p class="title"><strong>Table 5.8. Filter interface iterator elements</strong></p><div class="table-contents"><table summary="Filter interface iterator elements" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th>Tuple First Element</th><th>Tuple Second Element</th><th>Description</th></tr></thead><tbody><tr><td>NIL/false</td><td>string/number</td><td>Open (tag is second element)</td></tr><tr><td>NIL/false</td><td>NIL/false</td><td>Close</td></tr><tr><td>Any non NIL/false</td><td>string/number</td><td>Attribute assignment (value is first, tag is second element)</td></tr><tr><td>string/number</td><td>NIL/false</td><td>Content value (value is first element)</td></tr></tbody></table></div></div><br class="table-break" /></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396337180"></a>Iterator library</h4></div></div></div><p><span class="application">Wolframe</span> lets you access filter interface
 		iterators through a library called <code class="code">iterator</code> 
 		offering the following functions:
 
-		</p><div class="table"><a id="idp1376277028"></a><p class="title"><strong>Table 5.9. Method</strong></p><div class="table-contents"><table summary="Method" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th>Name</th><th>Parameter</th><th>Returns</th></tr></thead><tbody><tr><td>scope</td><td>serialization iterator (*)</td><td>An iterator restricted on the subnodes of the last visited node (**)</td></tr></tbody></table></div></div><p><br class="table-break" />
+		</p><div class="table"><a id="idp1396338196"></a><p class="title"><strong>Table 5.9. Method</strong></p><div class="table-contents"><table summary="Method" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th>Name</th><th>Parameter</th><th>Returns</th></tr></thead><tbody><tr><td>scope</td><td>serialization iterator (*)</td><td>An iterator restricted on the subnodes of the last visited node (**)</td></tr></tbody></table></div></div><p><br class="table-break" />
 	</p><p>
 		(*) See section "serialization iterator"
 	</p><p>
 		(**) If iterator.scope is called, all elements of the returned iterator has to be visited in order to continue 
 		iteration with the origin iterator on which iterator.scope was called.
-	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376280732"></a>Global objects</h4></div></div></div><p>Besides the provider library <span class="application">Wolframe</span> defines the following objects global in the script execution context:
+	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396341900"></a>Global objects</h4></div></div></div><p>Besides the provider library <span class="application">Wolframe</span> defines the following objects global in the script execution context:
 		</p><table border="0" summary="Simple list" class="simplelist"><tr><td>Name</td><td>Description</td></tr><tr><td>logger</td><td>object with methods for logging or debugging</td></tr></table><p>
-	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376282868"></a>Using forms</h4></div></div></div><p>The provider function <code class="code">provider.form( )</code> with the name of the form as string as 
+	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396344036"></a>Using forms</h4></div></div></div><p>The provider function <code class="code">provider.form( )</code> with the name of the form as string as 
 		parameter returns an empty instance of a form. It takes the name of 
 		the form as string argument. If you for example have a form configured 
 		called "employee" and you want to create an employee object from 
@@ -1146,7 +1146,7 @@ bc = provider.form( "employee" ):fill( {company='Wolframe'}, "strict" )
 		There is also a method <code class="code">value()</code> that returns the form data as
 		<span class="application">Lua</span> data structure
 		(a <span class="application">Lua</span> table or atomic value).
-		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376289956"></a>Form functions</h4></div></div></div><p>
+		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396351124"></a>Form functions</h4></div></div></div><p>
 		For calling transactions or built-in functions loaded as modules the <span class="application">Lua</span> layer defines the
 		concept of functions. The provider function <code class="code">provider.formfunction</code> with the name of the function
 		as argument returns a <span class="application">Lua</span> function. This function takes a table or a filter interface iterator as argument
@@ -1170,29 +1170,29 @@ output:print( t[ "id" ] )
 		The first line creates the function called "insertEmployee" as <span class="application">Lua</span> function.
 		The second calls the transaction, the third creates a <span class="application">Lua</span> table out of the result
 		and the fourth selects and prints the "id" element in the table.
-	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376295028"></a>List of <span class="application">Lua</span> objects</h4></div></div></div><p>This is a list of all objects and functions declared by <span class="application">Wolframe</span>:</p><div class="table"><a id="idp1376296228"></a><p class="title"><strong>Table 5.10. Data forms declared by DDL</strong></p><div class="table-contents"><table summary="Data forms declared by DDL" border="1"><colgroup><col /><col /><col /><col /></colgroup><thead><tr><th>Method Name</th><th>Arguments</th><th>Returns</th><th>Description</th></tr></thead><tbody><tr><td>get</td><td> </td><td>filter interface iterator (*)</td><td>Returns a filter interface iterator on the form elements</td></tr><tr><td>value</td><td> </td><td><span class="application">Lua</span> table</td><td>Returns the contents of the data form as <span class="application">Lua</span> table or atomic value</td></tr><tr><td>__tostring</td><td> </td><td>string</td><td>String representation of form for debugging</td></tr><tr><td>name</td><td> </td><td>string</td><td>Returns the global name of the form.
+	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396356196"></a>List of <span class="application">Lua</span> objects</h4></div></div></div><p>This is a list of all objects and functions declared by <span class="application">Wolframe</span>:</p><div class="table"><a id="idp1396357396"></a><p class="title"><strong>Table 5.10. Data forms declared by DDL</strong></p><div class="table-contents"><table summary="Data forms declared by DDL" border="1"><colgroup><col /><col /><col /><col /></colgroup><thead><tr><th>Method Name</th><th>Arguments</th><th>Returns</th><th>Description</th></tr></thead><tbody><tr><td>get</td><td> </td><td>filter interface iterator (*)</td><td>Returns a filter interface iterator on the form elements</td></tr><tr><td>value</td><td> </td><td><span class="application">Lua</span> table</td><td>Returns the contents of the data form as <span class="application">Lua</span> table or atomic value</td></tr><tr><td>__tostring</td><td> </td><td>string</td><td>String representation of form for debugging</td></tr><tr><td>name</td><td> </td><td>string</td><td>Returns the global name of the form.
 					</td></tr><tr><td>fill</td><td><span class="application">Lua</span> table or 
 					filter interface iterator (*), optional validation mode (**)</td><td>the filled form (for concatenation)</td><td>Validates input and fills the input data into the form.</td></tr></tbody></table></div></div><br class="table-break" /><p>
 			(*) See section "filter interface iterator"
 		</p><p>
 			(**) "strict" (full validation), "complete" (only check for all non optional elements initialization) or "relaxed" (no validation except matching of input to elements)
-		</p><div class="table"><a id="idp1376304876"></a><p class="title"><strong>Table 5.11. Data forms returned by functions</strong></p><div class="table-contents"><table summary="Data forms returned by functions" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th>Method Name</th><th>Returns</th><th>Description</th></tr></thead><tbody><tr><td>get</td><td>filter interface iterator (*)</td><td>Returns a filter interface iterator on the form elements</td></tr><tr><td>value</td><td><span class="application">Lua</span> table or atomic value</td><td>Returns the contents of the data form as <span class="application">Lua</span> table or atomic value</td></tr><tr><td>__tostring</td><td>string</td><td>String representation of form for debugging</td></tr></tbody></table></div></div><br class="table-break" /><p>
+		</p><div class="table"><a id="idp1396366044"></a><p class="title"><strong>Table 5.11. Data forms returned by functions</strong></p><div class="table-contents"><table summary="Data forms returned by functions" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th>Method Name</th><th>Returns</th><th>Description</th></tr></thead><tbody><tr><td>get</td><td>filter interface iterator (*)</td><td>Returns a filter interface iterator on the form elements</td></tr><tr><td>value</td><td><span class="application">Lua</span> table or atomic value</td><td>Returns the contents of the data form as <span class="application">Lua</span> table or atomic value</td></tr><tr><td>__tostring</td><td>string</td><td>String representation of form for debugging</td></tr></tbody></table></div></div><br class="table-break" /><p>
 			(*) See section "filter interface iterator"
-		</p><div class="table"><a id="idp1376310316"></a><p class="title"><strong>Table 5.12. Document</strong></p><div class="table-contents"><table summary="Document" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th>Method Name</th><th>Arguments</th><th>Description</th></tr></thead><tbody><tr><td>docformat</td><td> - </td><td>Returns the format of the document {'XML','JSON',etc..}</td></tr><tr><td>as</td><td>filter and/or document type table</td><td>Attaches a filter to the document to be used for processing</td></tr><tr><td>doctype</td><td> - </td><td>Returns the document type of the content. For retrieving the document type you have first to define a filter.</td></tr><tr><td>metadata</td><td> - </td><td>Returns the meta data structure of the content. For retrieving the document meta data you have first to define a filter.</td></tr><tr><td>value</td><td> - </td><td>Returns the contents of the document as <span class="application">Lua</span> table or atomic value. The method 'table' does the same but is considered to be deprecated.</td></tr><tr><td>table</td><td> - </td><td>Deprecated. Does return the same as the method 'value'</td></tr><tr><td>form</td><td> - </td><td>Returns the contents of the document as filled form instace</td></tr><tr><td>get</td><td> - </td><td>Returns a filter interface iterator (*) on the form elements</td></tr></tbody></table></div></div><br class="table-break" /><p>
+		</p><div class="table"><a id="idp1396371484"></a><p class="title"><strong>Table 5.12. Document</strong></p><div class="table-contents"><table summary="Document" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th>Method Name</th><th>Arguments</th><th>Description</th></tr></thead><tbody><tr><td>docformat</td><td> - </td><td>Returns the format of the document {'XML','JSON',etc..}</td></tr><tr><td>as</td><td>filter and/or document type table</td><td>Attaches a filter to the document to be used for processing</td></tr><tr><td>doctype</td><td> - </td><td>Returns the document type of the content. For retrieving the document type you have first to define a filter.</td></tr><tr><td>metadata</td><td> - </td><td>Returns the meta data structure of the content. For retrieving the document meta data you have first to define a filter.</td></tr><tr><td>value</td><td> - </td><td>Returns the contents of the document as <span class="application">Lua</span> table or atomic value. The method 'table' does the same but is considered to be deprecated.</td></tr><tr><td>table</td><td> - </td><td>Deprecated. Does return the same as the method 'value'</td></tr><tr><td>form</td><td> - </td><td>Returns the contents of the document as filled form instace</td></tr><tr><td>get</td><td> - </td><td>Returns a filter interface iterator (*) on the form elements</td></tr></tbody></table></div></div><br class="table-break" /><p>
 			(*) See section "filter interface iterator"
-		</p><div class="table"><a id="idp1376319636"></a><p class="title"><strong>Table 5.13. Logger functions</strong></p><div class="table-contents"><table summary="Logger functions" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th>Method Name</th><th>Arguments</th><th>Description</th></tr></thead><tbody><tr><td>logger.printc</td><td>arbitrary list of arguments</td><td>Print arguments to standard console output</td></tr><tr><td>logger.print</td><td>loglevel (string) plus arbitrary list of arguments</td><td>log argument list with defined log level</td></tr></tbody></table></div></div><br class="table-break" /><div class="table"><a id="idp1376323412"></a><p class="title"><strong>Table 5.14. Global functions</strong></p><div class="table-contents"><table summary="Global functions" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th>Function Name</th><th>Arguments</th><th>Description</th></tr></thead><tbody><tr><td>provider.form</td><td>name of form (string)</td><td>Returns an empty data form object of the given type</td></tr><tr><td>provider.formfunction</td><td>name of function (string)</td><td>Returns a lua function to execute the <span class="application">Wolframe</span> function specified by name</td></tr><tr><td>provider.type</td><td>name of data type (string)</td><td>Returns a constructor function for the data type given by name. The name specifies either a custom data type or a normalization function as used in forms or one of the additional userdata types 'datetime' or 'bignumber'.</td></tr><tr><td>provider.document</td><td>Content string of the document to process</td><td>Returns an object of type "document" that allows the processing of the contents passed as argument.
+		</p><div class="table"><a id="idp1396380804"></a><p class="title"><strong>Table 5.13. Logger functions</strong></p><div class="table-contents"><table summary="Logger functions" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th>Method Name</th><th>Arguments</th><th>Description</th></tr></thead><tbody><tr><td>logger.printc</td><td>arbitrary list of arguments</td><td>Print arguments to standard console output</td></tr><tr><td>logger.print</td><td>loglevel (string) plus arbitrary list of arguments</td><td>log argument list with defined log level</td></tr></tbody></table></div></div><br class="table-break" /><div class="table"><a id="idp1396384580"></a><p class="title"><strong>Table 5.14. Global functions</strong></p><div class="table-contents"><table summary="Global functions" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th>Function Name</th><th>Arguments</th><th>Description</th></tr></thead><tbody><tr><td>provider.form</td><td>name of form (string)</td><td>Returns an empty data form object of the given type</td></tr><tr><td>provider.formfunction</td><td>name of function (string)</td><td>Returns a lua function to execute the <span class="application">Wolframe</span> function specified by name</td></tr><tr><td>provider.type</td><td>name of data type (string)</td><td>Returns a constructor function for the data type given by name. The name specifies either a custom data type or a normalization function as used in forms or one of the additional userdata types 'datetime' or 'bignumber'.</td></tr><tr><td>provider.document</td><td>Content string of the document to process</td><td>Returns an object of type "document" that allows the processing of the contents passed as argument.
 						See description of type "document"</td></tr></tbody></table></div></div><br class="table-break" /><p>
 			(*) See section "filter interface iterator "
 		</p><p>
 			(**) The filter interface iterator  of a defined scope must be consumed completely before consuming anything of the parent iterator.
 			Otherwise it may lead to unexpected results because they share some part of the iterator state.
-		</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376415988"></a>5.4.5. Functions in native C++</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376416308"></a>Introduction</h4></div></div></div><p>You can write functions for the logic tier of <span class="application">Wolframe</span> with <span class="application">C++</span>. 
+		</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1396477196"></a>5.4.5. Functions in native C++</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396477516"></a>Introduction</h4></div></div></div><p>You can write functions for the logic tier of <span class="application">Wolframe</span> with <span class="application">C++</span>. 
 		Because native <span class="application">C++</span> is by nature a compiled and not an
 		interpreted language, you have to build a module out of your function implementation.
-		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376405748"></a>Prerequisites</h4></div></div></div><p>For native <span class="application">C++</span> you need a <span class="application">C++</span>
+		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396466940"></a>Prerequisites</h4></div></div></div><p>For native <span class="application">C++</span> you need a <span class="application">C++</span>
 	build system with compiler and linker or an integrated
 	development environment for <span class="application">C++</span>. 
-	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376449420"></a>Declaring functions</h4></div></div></div><p>
+	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396510628"></a>Declaring functions</h4></div></div></div><p>
 		Form functions declared in <span class="application">C++</span> have two arguments. The output structure to fill
 		is passed by reference as first and the input structure passed is by value.
 		The input structure copy should not be modified by the callee. 
@@ -1205,7 +1205,7 @@ output:print( t[ "id" ] )
 		is not complete because the input output structures need to be declared with some
 		additional attributes needed for introspection. We will explain this in the following
 		section.
-	</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376451644"></a>Example Function Declaration</h5></div></div></div><p>The function takes a structure as input and writes the result into an
+	</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1396512852"></a>Example Function Declaration</h5></div></div></div><p>The function takes a structure as input and writes the result into an
 		output structure. In this example input and output type are the same, but this
 		is not required. It's just the same here for simplicity. 
 		</p><p>
@@ -1233,13 +1233,13 @@ struct ProcessCustomer
 };
 
 
-		</pre></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376455212"></a>Input/output data structures</h4></div></div></div><p>For defining input and output parameter structures in <span class="application">C++</span> you have to define the 
+		</pre></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396516420"></a>Input/output data structures</h4></div></div></div><p>For defining input and output parameter structures in <span class="application">C++</span> you have to define the 
 		structure and its serialization description. The serialization description is a static 
 		function <code class="code">getStructDescription</code> without arguments returning a const structure that describes 
 		what element names to bind to which structure elements.
 	</p><p>
 		The following example shows a form function parameter structure defined in <span class="application">C++</span>.
-	</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376457188"></a>Header file</h5></div></div></div><p>Declares the structure and the serialization description of the structure.
+	</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1396518396"></a>Header file</h5></div></div></div><p>Declares the structure and the serialization description of the structure.
 		Structures may contain structures with their own serialization description.</p><pre class="programlisting">
 		
 #include "serialize/struct/structDescriptionBase.hpp"
@@ -1262,7 +1262,7 @@ struct Customer
 }}//namespace
 
 
-		</pre></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376458852"></a>Source file</h5></div></div></div><p>Declares 'ID' as attribute and name, canonical_Name, country, locality as tags. 
+		</pre></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1396520060"></a>Source file</h5></div></div></div><p>Declares 'ID' as attribute and name, canonical_Name, country, locality as tags. 
 		The '--' operator marks the end of attributes section and the start of content 
 		section.</p><pre class="programlisting">
 		
@@ -1293,11 +1293,11 @@ const serialize::StructDescriptionBase* Customer::getStructDescription()
 }
 
 
-		</pre></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376460556"></a>Writing the module</h4></div></div></div><p>Now we have all pieces together to build a loadable
+		</pre></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396521764"></a>Writing the module</h4></div></div></div><p>Now we have all pieces together to build a loadable
 	<span class="application">Wolframe</span> module with our example <span class="application">C++</span>
 	function. The following example shows what you have to
 	declare in the main module source file.
-	</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376461860"></a>Module declaration</h5></div></div></div><p>The module declaration needs to include <code class="code">appdevel.hpp</code> and
+	</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1396523068"></a>Module declaration</h5></div></div></div><p>The module declaration needs to include <code class="code">appdevel.hpp</code> and
 		of course all headers with the function and data structure declarations needed.
 		The module starts with the header macro CPP_APPLICATION_FORM_FUNCTION_MODULE
 		with a short description of the module.
@@ -1322,14 +1322,14 @@ WF_FORM_FUNCTION("process_customer",ProcessCustomer::exec,Customer,Customer)
 WF_MODULE_END
 
 
-		</pre></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376466484"></a>Building the module</h4></div></div></div><p>For building the module we have to include all modules introduced here and
+		</pre></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396527692"></a>Building the module</h4></div></div></div><p>For building the module we have to include all modules introduced here and
 	to link at against the wolframe serialization library (wolframe_serialize)
 	and the wolframe core library (wolframe).
-	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376467260"></a>Using the module</h4></div></div></div><p>The module built can be loaded as the other modules by declaring it in the wolframe
+	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396528468"></a>Using the module</h4></div></div></div><p>The module built can be loaded as the other modules by declaring it in the wolframe
 	LoadModules section of the configuration. Simply list it there with 
 	<code class="code">module &lt;yourModuleName&gt;</code> with &lt;yourModuleName&gt; being the name
 	or path to your module.
-	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376468468"></a>Validation issues</h4></div></div></div><p>
+	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1396529676"></a>Validation issues</h4></div></div></div><p>
 	<span class="application">C++</span> is a strongly typed language. This means that the
 	input of a function and the output is already validated to be of a strictly
 	defined structure. So a validation by passing the input through a form

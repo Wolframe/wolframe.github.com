@@ -58,13 +58,13 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.3. Exported Objects of a Module</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk04ch03s02.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Module Declaration</th><td width="20%" align="right"> <a accesskey="n" href="bk04go01.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1380141876"></a>3.3. Exported Objects of a Module</h2></div></div></div><p>In this section we explain how modules are filled with functionality. We can define
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.3. Exported Objects of a Module</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk04ch03s02.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Module Declaration</th><td width="20%" align="right"> <a accesskey="n" href="bk04go01.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1400207516"></a>3.3. Exported Objects of a Module</h2></div></div></div><p>In this section we explain how modules are filled with functionality. We can define
 	an arbitrary number of objects in a module as long as they do not conflict (e.g. have 
-	name clashes etc.)</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1380154980"></a>3.3.1. Define Normalization Functions (Normalizers)</h3></div></div></div><p>In this chapter we introduce how to declare a normalizer function in a module 
+	name clashes etc.)</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1400220620"></a>3.3.1. Define Normalization Functions (Normalizers)</h3></div></div></div><p>In this chapter we introduce how to declare a normalizer function in a module 
 	for defining your own DLL form data types. First we introduce the data structures you
 	have to know to implement normalizer functions and then we will show the module building
 	blocks to declare a normalizer function in a module.
-	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1380155868"></a>Normalizer Interface</h4></div></div></div><p>
+	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400221508"></a>Normalizer Interface</h4></div></div></div><p>
 	A normalize function is defined as interface in order to be able to define it as object with data.
 	This is because normalizer functions can be parametrized. For example to express the normalize function domain.
 	The following listing shows the interface definition:
@@ -97,10 +97,10 @@ _Wolframe::types::NormalizeFunction* CreateNormalizeFunction(
 	is referenced in a <code class="code">.wnmp</code> file (type normalization declaration file, see section 
 	"Data Types in DDLs" in the chapter "Forms" of the "Application Development Manual")
 	or constructed with the provider.type method in a script.
-	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1380190204"></a>Building Blocks</h4></div></div></div><p>
+	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400255844"></a>Building Blocks</h4></div></div></div><p>
 	When you include "appdevel/normalizeModuleMacros.hpp" or simply "appDevel.hpp" you get the building
 	blocks declared to build a normalizer function in a module. These building blocks will be exmplained in this section.
-	</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1380190948"></a>Declaring a resource singleton object</h5></div></div></div><p>
+	</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1400256588"></a>Declaring a resource singleton object</h5></div></div></div><p>
 	Some normalizer functions share resource object declared only once as a singleton in this module.
 	Such a resource class is defined as a class derived from <code class="code">types::NormalizeResourceHandle</code>
 	with an empty constructor. When we have declared this resource signleton class we can include 
@@ -108,13 +108,13 @@ _Wolframe::types::NormalizeFunction* CreateNormalizeFunction(
 	</p><pre class="programlisting">
     WF_NORMALIZER_RESOURCE( ResourceClass )
 	</pre><p>with <code class="code">ResourceClass</code> identifying the module singleton resource class and object.
-	</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1380193076"></a>Declaring a normalizer not using any resource</h5></div></div></div><p>The following declaration shows a declaration of a simple normalizer function.
+	</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1400258716"></a>Declaring a normalizer not using any resource</h5></div></div></div><p>The following declaration shows a declaration of a simple normalizer function.
 	</p><pre class="programlisting">
     WF_NORMALIZER_FUNCTION(name,constructor)
 	</pre><p>where name is the identifier string of the function in the system and constructor a
 	function with the signature of the <code class="code">CreateNormalizeFunction</code> shown in the
 	section 'Normalize Interface' above.
-	</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1380194916"></a>Declaring a normalizer using a resource</h5></div></div></div><p>The following declaration shows a declaration of a normalizer function using a resource
+	</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1400260556"></a>Declaring a normalizer using a resource</h5></div></div></div><p>The following declaration shows a declaration of a normalizer function using a resource
 	module singleton object defined as class 'ResourceClass' and declared with the
 	<code class="code">WF_NORMALIZER_RESOURCE</code> macro (section 'Declaring a resource singleton object').
 	</p><pre class="programlisting">
@@ -122,7 +122,7 @@ _Wolframe::types::NormalizeFunction* CreateNormalizeFunction(
 	</pre><p>
 	The parameter <code class="code">name</code> and <code class="code">constructor</code> are defined as in the
 	<code class="code">WF_NORMALIZER_FUNCTION</code> macro.
-	</p></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1380197516"></a>Examples</h4></div></div></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1380197852"></a>Example without resources</h5></div></div></div><p>As first example we show a module that implements 2 normalization functions <code class="code">Int</code> 
+	</p></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400263156"></a>Examples</h4></div></div></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1400263492"></a>Example without resources</h5></div></div></div><p>As first example we show a module that implements 2 normalization functions <code class="code">Int</code> 
 		and <code class="code">Float</code> without a global resource class. <code class="code">Int</code> converts a value to an
 		64 bit integer or throws an exception, if this is not possible. <code class="code">Float</code> converts a value 
 		to a double presicion floating point number or throws an exception, if this is not possible. 
@@ -186,7 +186,7 @@ WF_MODULE_END
 
 
 	</pre><p>
-		</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1380200724"></a>Example with resources</h5></div></div></div><p>The second example show one of the functions in the example above (<code class="code">Int</code>) but 
+		</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1400266340"></a>Example with resources</h5></div></div></div><p>The second example show one of the functions in the example above (<code class="code">Int</code>) but 
 		declares to use resources. The resource object is not really used, but you see in the example 
 		how it gets bound to the function that uses it.
 
@@ -245,14 +245,14 @@ WF_MODULE_END
 
 
 	</pre><p>
-		</p></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1380179692"></a>3.3.2. Define Custom Data Types</h3></div></div></div><p>In this chapter we introduce how to declare a custom data type in a module.
+		</p></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1400245332"></a>3.3.2. Define Custom Data Types</h3></div></div></div><p>In this chapter we introduce how to declare a custom data type in a module.
 	Custom data types can be used in scripting language bindings and as normalizers
 	referenced in a <code class="code">.wnmp</code> file (type normalization declaration file, see section 
 	"Data Types in DDLs" in the chapter "Forms" of the "Application Development Manual")
 	First we introduce the data structures you
 	have to know to implement a custom data type and then we will show the module building
 	block to declare a custom data type in a module.
-	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1380170596"></a>Custom Data Type Interface</h4></div></div></div><p>
+	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400236236"></a>Custom Data Type Interface</h4></div></div></div><p>
 	A custom data type definition involves 3 classes: CustomDataType,CustomDataValue and CustomDataInitializer.
 	The CustomDataInitializer class is optional and only needed when value construction has to
 	be parametrized. If an initializer is involved then it is created and passed as argument to
@@ -262,7 +262,7 @@ WF_MODULE_END
 	The class CustomDataInitializer, if specified, defines an object describing the parametrization
 	of the value construction. An example of an initializer could be the format of a date or
 	the precision in a fixed point number. The following listings show these interfaces:
-	</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1380180596"></a>CustomDataType Structure</h5></div></div></div><p>The class to build the custom data type definition structure composed of methods added 
+	</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1400246236"></a>CustomDataType Structure</h5></div></div></div><p>The class to build the custom data type definition structure composed of methods added 
 	with <code class="code">CustomDataType::define( .. )</code>. From this class we do not derive. We incrementally
 	add method by method by calling <code class="code">CustomDataType::define( .. )</code> in the type constructor
 	function.
@@ -320,7 +320,7 @@ typedef CustomDataType* (*CreateCustomDataType)( const std::string&amp; name);
 }}//namespace
 
 
-	</pre></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1380226868"></a>CustomDataInitializer Interface</h5></div></div></div><p>The custom data inizializer definition. From this class we have to derive our own
+	</pre></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1400292484"></a>CustomDataInitializer Interface</h5></div></div></div><p>The custom data inizializer definition. From this class we have to derive our own
 	initializer definions.</p><pre class="programlisting">
 
 namespace _Wolframe {
@@ -337,7 +337,7 @@ public:
 }}//namespace
 
 
-	</pre></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1380228628"></a>Class CustomDataValue</h5></div></div></div><p>The custom data type value instance definition. From this class we have to derive our own
+	</pre></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1400294244"></a>Class CustomDataValue</h5></div></div></div><p>The custom data type value instance definition. From this class we have to derive our own
 	custom value definions.
 	</p><pre class="programlisting">
 
@@ -368,10 +368,10 @@ public:
 }}//namespace
 
 
-	</pre></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1380230332"></a>Building Blocks</h4></div></div></div><p>
+	</pre></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400295948"></a>Building Blocks</h4></div></div></div><p>
 	When you include "appdevel/customDatatypeModuleMacros.hpp" or simply "appDevel.hpp" you get 
 	the building block declared to build a custom data type in a module. 
-	</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1380231020"></a>Declaring a custom data type</h5></div></div></div><p>The following declaration shows a declaration of a simple custom data type.
+	</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1400296636"></a>Declaring a custom data type</h5></div></div></div><p>The following declaration shows a declaration of a simple custom data type.
 	</p><pre class="programlisting">
     WF_CUSTOM_DATATYPE(name,constructor)
 	</pre><p>where name is the identifier string of the function in the system and constructor a
@@ -383,23 +383,23 @@ typedef CustomDataType* (*CreateCustomDataType)( const std::string&amp; name);
 
 
 	</pre><p>
-	</p></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1380179172"></a>3.3.3. Define Filters</h3></div></div></div><p>In this chapter we introduce how to declare a filter type in a module.
+	</p></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1400244812"></a>3.3.3. Define Filters</h3></div></div></div><p>In this chapter we introduce how to declare a filter type in a module.
 	Filters are used to deserialize input and to serialize output. 
-	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1380178100"></a>Filter element types</h4></div></div></div><p>
+	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400243740"></a>Filter element types</h4></div></div></div><p>
 	Filters provide a uniform interface to content as sequence of elements. The elements have
 	one of the following types.
-	</p><div class="table"><a id="idp1380174524"></a><p class="title"><strong>Table 3.2. Filter element types</strong></p><div class="table-contents"><table summary="Filter element types" border="1"><colgroup><col /><col /></colgroup><thead><tr><th>Identifier</th><th>Description</th></tr></thead><tbody><tr><td>OpenTag</td><td>Open a substructure (element value is the name of the structure)
+	</p><div class="table"><a id="idp1400240164"></a><p class="title"><strong>Table 3.2. Filter element types</strong></p><div class="table-contents"><table summary="Filter element types" border="1"><colgroup><col /><col /></colgroup><thead><tr><th>Identifier</th><th>Description</th></tr></thead><tbody><tr><td>OpenTag</td><td>Open a substructure (element value is the name of the structure)
 			as the current scope.</td></tr><tr><td>CloseTag</td><td>Close the current substructure scope or marks the end of the document
 			if there is no substructure scope open left (top level close).</td></tr><tr><td>Attribute</td><td>Declare an attribute (element value is the name of the attribute)</td></tr><tr><td>Value</td><td>Declare a value. If the previous element was an attribute then the
 			value specifies the content value of the attribute. Otherwise the value
 			specifies the content value (only one allowed) of the current
 			substructure scope.
-			</td></tr></tbody></table></div></div><br class="table-break" /></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1380222396"></a>Filter element values</h4></div></div></div><p>
+			</td></tr></tbody></table></div></div><br class="table-break" /></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400288012"></a>Filter element values</h4></div></div></div><p>
 	Filter values are chunks of the input and are interpreted depending on the filter element type.
-	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1380223108"></a>Filter Interface</h4></div></div></div><p>
+	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400288724"></a>Filter Interface</h4></div></div></div><p>
 	A filter definition is a structure with 2 substructure references: An input filter (InputFilter)
 	and an output filter (OutputFilter). You have to include "filter/filter.hpp" to declare a filter.
-	</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1380223852"></a>Input Filter Structure</h5></div></div></div><p>From this interface you have to derive to get an input filter class.
+	</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1400289468"></a>Input Filter Structure</h5></div></div></div><p>From this interface you have to derive to get an input filter class.
 	</p><pre class="programlisting">
 
 namespace _Wolframe {
@@ -472,7 +472,7 @@ typedef types::CountedReference&lt;InputFilter&gt; InputFilterR;
 
 
 
-	</pre></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1380225492"></a>Output Filter Structure</h5></div></div></div><p>From this interface you have to derive to get an output filter class.
+	</pre></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1400291108"></a>Output Filter Structure</h5></div></div></div><p>From this interface you have to derive to get an output filter class.
 	</p><pre class="programlisting">
 
 namespace _Wolframe {
@@ -536,7 +536,7 @@ typedef types::CountedReference&lt;OutputFilter&gt; OutputFilterR;
 
 
 
-	</pre></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1380258084"></a>Filter Structure</h5></div></div></div><p>The structure 'filter' you have to create and instantiate with an input filter and an output filter
+	</pre></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1400323700"></a>Filter Structure</h5></div></div></div><p>The structure 'filter' you have to create and instantiate with an input filter and an output filter
 	reference. There is a filter type defined with a virtual constructor to instantiate the filter.
 	From this class you have to derive.
 	</p><pre class="programlisting">
@@ -557,10 +557,10 @@ public:
 
 
 
-	</pre></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1380260004"></a>Building Blocks</h4></div></div></div><p>
+	</pre></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1400325620"></a>Building Blocks</h4></div></div></div><p>
 	When you include "appdevel/filterModuleMacros.hpp" or simply "appDevel.hpp" you get 
 	the building block declared to build a filter in a module. 
-	</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1380260676"></a>Declaring a filter</h5></div></div></div><p>The following declaration shows a declaration of a simple custom data type.
+	</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1400326292"></a>Declaring a filter</h5></div></div></div><p>The following declaration shows a declaration of a simple custom data type.
 	</p><pre class="programlisting">
     WF_FILTER_TYPE(name,constructor)
 	</pre><p>where name is the identifier string of the function in the system and constructor a

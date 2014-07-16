@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>3.2. Listener Configuration</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe documentation" /><link rel="up" href="bk01ch03.html" title="Chapter 3. Server Configuration" /><link rel="prev" href="bk01ch03.html" title="Chapter 3. Server Configuration" /><link rel="next" href="bk01ch03s03.html" title="3.3. Logger Configuration" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>3.2. Server configuration</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe documentation" /><link rel="up" href="bk01ch03.html" title="Chapter 3. Configuration" /><link rel="prev" href="bk01ch03.html" title="Chapter 3. Configuration" /><link rel="next" href="bk01ch03s03.html" title="3.3. Logger configuration" />
 	<title xmlns="">Project Wolframe</title>
 	<meta xmlns="" charset="utf-8" />
 	<meta xmlns="" name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -58,38 +58,56 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.2. Listener Configuration</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch03.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Server Configuration</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch03s03.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1375065396"></a>3.2. Listener Configuration</h2></div></div></div><p>
-	The listener configuration is defined in the <code class="code">Listener</code>
-	section. The listener specifies the set of accepted connections
-	and their attributes. It also defines some global settings listed
-	in the following table:
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.2. Server configuration</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch03.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Configuration</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch03s03.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1395090868"></a>3.2. Server configuration</h2></div></div></div><p>
+	The server configuration is defined in the <code class="code">Server</code>
+	section. The server specifies the set of sockets a client can
+	connect to. It defines rules for how and from where a client
+	can connect and the properties of the connection. 
+	</p><p>
+	It also defines some global settings listed in the following table:
 
-	</p><div class="table"><a id="idp1375075076"></a><p class="title"><strong>Table 3.3. Global listener settings</strong></p><div class="table-contents"><table summary="Global listener settings" border="1"><colgroup><col class="col1" /><col class="col2" /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>MaxConnections</td><td>The maximum number of total simultaneous connections (clients). When set to 0 then the default is used. The Default is the operating system limit.</td></tr><tr><td>Threads</td><td>Number of threads for serving client connections</td></tr></tbody></table></div></div><p><br class="table-break" />
-	Here is an example configuration of the global settings:
+	</p><div class="table"><a id="idp1395100732"></a><p class="title"><strong>Table 3.3. Global server settings</strong></p><div class="table-contents"><table summary="Global server settings" border="1"><colgroup><col class="col1" /><col class="col2" /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>MaxConnections</td><td>The maximum number of total simultaneous connections (clients). When set to 0 then the default is used. The Default is the operating system limit.</td></tr><tr><td>Threads</td><td>Number of threads for serving client connections</td></tr></tbody></table></div></div><p><br class="table-break" />
+	Here is an example configuration of the server global settings:
 	</p><pre class="programlisting">
-Listener
+Server
 {
     MaxConnections 12
     Threads 7
 }
 	</pre><p>
-	The listener allows 2 different types of connections to configure.
-	The types are also the section names where they are configured in
-	the listener configuration. One is <code class="code">Socket</code> that describes 
-	a plain connection. The other is <code class="code">SslSsocket</code> that describes 
-	a connection with transport layer encryption based on SSL/TLS. In the 
-	following 2 sections they are introduced:
-	</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1375121764"></a>3.2.1. Socket</h3></div></div></div><p>In subsections <code class="code">Socket</code> of the section <code class="code">Listener</code>
-	of the configuration we describe plain connections based on TCP.
-	The follwing table describes the attributes you can set for plain TCP
-	connections:
-	</p><div class="table"><a id="idp1375122756"></a><p class="title"><strong>Table 3.4. Socket settings</strong></p><div class="table-contents"><table summary="Socket settings" border="1"><colgroup><col class="col1" /><col class="col2" /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>Address</td><td>Listening address (IPv4 or IPv6) of the server. '127.0.0.1' and '::1' stand for the loopback address (IPv4 an IPv6 respectively).
-				       The listener wildcards '*' or '0.0.0.0' (IPv4) or '::' (IPv6) are also accepted.</td></tr><tr><td>Port</td><td>Connection port</td></tr><tr><td>Identifier</td><td>Identifier that can be reference in authorization functions to classify connections and do authorization based on it.</td></tr><tr><td>MaxConnections</td><td>The maximum number of simultaneus connections for this port.</td></tr></tbody></table></div></div><p><br class="table-break" />
-	The following configuration shows an example plain TCP connection definition:
+	The server has two types of sockets to configure in the
+	sections <code class="code">Listen</code> and <code class="code">ListenSSL</code>.
+	<code class="code">ListenSSL</code> is describing a secure connection 
+	with a transport layer encryption based on SSL/TLS. 
+	<code class="code">Listen</code> on the other hand is describing a plain 
+	TCP/IP connection.
+	In the following two sections they are introduced:
+	</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1395147708"></a>3.2.1. Listen</h3></div></div></div><p>In the subsections named <code class="code">Listen</code> of the server
+	configuration we define sockets providing plain connections based 
+	on TCP/IP. The following table describes the attributes you can set 
+	for plain TCP/IP connections:
+	</p><div class="table"><a id="idp1395148540"></a><p class="title"><strong>Table 3.4. Listen settings</strong></p><div class="table-contents"><table summary="Listen settings" border="1"><colgroup><col class="col1" /><col class="col2" /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>Address</td><td>Listening address (IPv4 or IPv6) 
+					of the server. '127.0.0.1' and '::1' 
+					stand for the loopback address 
+					(IPv4 an IPv6 respectively).
+					The listener wildcards '*' 
+					or '0.0.0.0' (IPv4) or '::' (IPv6) 
+					are also accepted.</td></tr><tr><td>Port</td><td>Connection port</td></tr><tr><td>Identifier</td><td>Identifier that can be referenced
+					in authorization functions to 
+					classify connections and to define
+					authorization based on it.</td></tr><tr><td>MaxConnections</td><td>The maximum number of simultaneus 
+					connections for this socket.</td></tr><tr><td>Restrictions</td><td>Defines the subsection containing IP
+					restrictions on the connection. If not 
+					defined, the connection is allowed 
+					from everywhere. The configuration
+					of IP restrictions will be defined in the
+					<a class="link" href="bk01ch03s02.html#sectionIpRestrictions" title="3.2.3. IP restrictions">section IP restrictions</a>.</td></tr></tbody></table></div></div><p><br class="table-break" />
+	The following <code class="code">Listen</code> configuration shows an example plain TCP/IP
+	connection definition:
 	</p><pre class="programlisting">
-Listener
+Server
 {
-    Socket
+    Listen
     {
         Address localhost
         Port 7661
@@ -97,18 +115,37 @@ Listener
     }
 }
 	</pre><p>
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1375129132"></a>3.2.2. SslSocket</h3></div></div></div><p>In subsections <code class="code">SslSocket</code> of the section <code class="code">Listener</code>
-	of the configuration we describe connections connection with transport 
-	layer encryption based on SSL/TLS.
-	The follwing table describes the attributes you can set for SSL/TLS
-	connections. The first 4 attributes are the same as for TCP/IP plain:
-	</p><div class="table"><a id="idp1375130220"></a><p class="title"><strong>Table 3.5. SslSocket settings</strong></p><div class="table-contents"><table summary="SslSocket settings" border="1"><colgroup><col class="col1" /><col class="col2" /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>Address</td><td>Listening address (IPv4 or IPv6) of the server. '127.0.0.1' and '::1' stand for the loopback address (IPv4 an IPv6 respectively).
-				       The listener wildcards '*' or '0.0.0.0'/'::' (IPv4 or IPv6) are also accepted.</td></tr><tr><td>Port</td><td>Connection port</td></tr><tr><td>Identifier</td><td>Identifier that can be reference in authorization functions to classify connections and do authorization based on it.</td></tr><tr><td>MaxConnections</td><td>The maximum number of simultaneus connections for this port.</td></tr><tr><td>Certificate</td><td>File with the SSL certificate</td></tr><tr><td>Key</td><td>File with the SSL key</td></tr><tr><td>CAdirectory</td><td>Directory holding the CA certificate files</td></tr><tr><td>CAchainFile</td><td>SSL CA chain file</td></tr><tr><td>Verify</td><td>ON/OFF switch to enabe/disable client certificate verification</td></tr></tbody></table></div></div><p><br class="table-break" />
-	The following configuration shows an example SSL connection definition:
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1395156268"></a>3.2.2. ListenSSL</h3></div></div></div><p>In the subsections named <code class="code">ListenSSL</code> of the 
+	server configuration we define sockets providing secured connections
+	with full transport layer encryption based on SSL/TLS.
+	The following table describes the attributes you can set for secured
+	connections. The first five attributes are the same as for
+	sockets configured as plain TCP/IP (<code class="code">Listen</code>) 
+	as shown before:
+	</p><div class="table"><a id="idp1395157412"></a><p class="title"><strong>Table 3.5. ListenSSL settings</strong></p><div class="table-contents"><table summary="ListenSSL settings" border="1"><colgroup><col class="col1" /><col class="col2" /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>Address</td><td>Listening address (IPv4 or IPv6) of 
+					the server. '127.0.0.1' and '::1'
+					stand for the loopback address 
+					(IPv4 an IPv6 respectively).
+					The listener wildcards '*'
+					or '0.0.0.0' (IPv4) or '::' (IPv6)
+					are also accepted.</td></tr><tr><td>Port</td><td>Connection port</td></tr><tr><td>Identifier</td><td>Identifier that can be referenced
+					in authorization functions to classify 
+					connections and to define authorization
+					based on it.</td></tr><tr><td>MaxConnections</td><td>The maximum number of simultaneus
+					connections for this port.</td></tr><tr><td>Restrictions</td><td>Defines the subsection containing 
+					IP restrictions on the connection. 
+					If not defined, the connection is 
+					allowed from everywhere. The configuration
+					of IP restrictions will be defined in the
+					<a class="link" href="bk01ch03s02.html#sectionIpRestrictions" title="3.2.3. IP restrictions">section IP restrictions</a>.</td></tr><tr><td>Certificate</td><td>File with the SSL certificate</td></tr><tr><td>Key</td><td>File with the SSL key</td></tr><tr><td>CAdirectory</td><td>Directory holding the CA certificate
+					files.</td></tr><tr><td>CAchainFile</td><td>SSL CA chain file</td></tr><tr><td>Verify</td><td>ON/OFF switch to enabe/disable 
+					client certificate verification.</td></tr></tbody></table></div></div><p><br class="table-break" />
+	The following configuration shows an example <code class="code">ListenSSL</code>
+	definition:
 	</p><pre class="programlisting">
-Listener
+Server
 {
-    SslSocket
+    ListenSSL
     {
         Address localhost
         Port 7961
@@ -121,7 +158,25 @@ Listener
     }
 }
 	</pre><p>
-	</p></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk01ch03.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk01ch03.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk01ch03s03.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter 3. Server Configuration </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 3.3. Logger Configuration</td></tr></table></div></div></div>
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="sectionIpRestrictions"></a>3.2.3. IP restrictions</h3></div></div></div><p>IP restrictions are defined as sub section <code class="code">restrictions</code>
+	of the socket configurations (<code class="code">Listener</code> and <code class="code">ListenerSSL</code>)
+	in the server configuration.
+	</p><div class="table"><a id="idp1395169564"></a><p class="title"><strong>Table 3.6. Restrictions settings</strong></p><div class="table-contents"><table summary="Restrictions settings" border="1"><colgroup><col class="col1" /><col class="col2" /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>Allow</td><td>Define an IP or network address
+				as allowed to connect from, if not explicitely
+				defined by a <code class="code">Deny</code> directive.
+				If no <code class="code">allow</code> is specified then 
+				all IPs are allowed to connect from, if not
+				explicitely excluded by a <code class="code">deny</code>
+				directive. So no <code class="code">allow</code> is equivalent
+				to <code class="code">allow all</code>
+				</td></tr><tr><td>Deny</td><td>Define an IP or network address
+				as forbidden to connect from. If a
+				<code class="code">deny</code> directive refers to
+				an IP explictely defined or part of an
+				<code class="code">allow</code> then the <code class="code">deny</code>
+				is stronger and overrides the <code class="code">allow</code>
+				declaration.
+				</td></tr></tbody></table></div></div><br class="table-break" /></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk01ch03.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk01ch03.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk01ch03s03.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter 3. Configuration </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 3.3. Logger configuration</td></tr></table></div></div></div>
 
 <!-- Footer -->
 <div xmlns="" class="wrapper row2">
