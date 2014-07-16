@@ -140,7 +140,7 @@
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="class__Wolframe_1_1langbind_1_1PropertyTreeInputFilter.html">langbind::PropertyTreeInputFilter</a>* filter;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="namespace__Wolframe_1_1langbind.html#a0b70bbec36877c46901d00c116785052">langbind::TypedInputFilterR</a> inp( filter=<span class="keyword">new</span> <a class="code" href="class__Wolframe_1_1langbind_1_1PropertyTreeInputFilter.html">langbind::PropertyTreeInputFilter</a>( pt));</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="class__Wolframe_1_1serialize_1_1StructParser.html">serialize::StructParser</a> parser( (<span class="keywordtype">void</span>*)&amp;st, st.getStructDescription());</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        parser.<a class="code" href="class__Wolframe_1_1serialize_1_1StructParser.html#a2ceb4ff92b5e4b0aaa3d39e70af2c1dc">init</a>( inp);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        parser.<a class="code" href="class__Wolframe_1_1serialize_1_1StructParser.html#a2ceb4ff92b5e4b0aaa3d39e70af2c1dc">init</a>( inp, <a class="code" href="struct__Wolframe_1_1serialize_1_1Flags.html#aecad8696caa69abf5cc2158f002fc251aad06a2d2b7bb8bfe8e923a2a6f500b98">serialize::Flags::CaseInsensitiveCompare</a>);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">try</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        {</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                <span class="keywordflow">if</span> (!parser.call()) <span class="keywordflow">throw</span> std::runtime_error( <span class="stringliteral">&quot;illegal state in structure parser&quot;</span>);</div>
@@ -182,6 +182,7 @@
 <div class="ttc" id="structSerializer_8hpp_html"><div class="ttname"><a href="structSerializer_8hpp.html">structSerializer.hpp</a></div><div class="ttdoc">Serialization interface. </div></div>
 <div class="ttc" id="class__Wolframe_1_1langbind_1_1ToStringFilter_html_a54243579693053899984cf1cd8669893"><div class="ttname"><a href="class__Wolframe_1_1langbind_1_1ToStringFilter.html#a54243579693053899984cf1cd8669893">_Wolframe::langbind::ToStringFilter::content</a></div><div class="ttdeci">const std::string &amp; content() const </div><div class="ttdoc">Get the content. </div><div class="ttdef"><b>Definition:</b> tostringfilter.hpp:77</div></div>
 <div class="ttc" id="class__Wolframe_1_1types_1_1PropertyTree_1_1Node_html"><div class="ttname"><a href="class__Wolframe_1_1types_1_1PropertyTree_1_1Node.html">_Wolframe::types::PropertyTree::Node</a></div><div class="ttdoc">Property tree node. </div><div class="ttdef"><b>Definition:</b> propertyTree.hpp:86</div></div>
+<div class="ttc" id="struct__Wolframe_1_1serialize_1_1Flags_html_aecad8696caa69abf5cc2158f002fc251aad06a2d2b7bb8bfe8e923a2a6f500b98"><div class="ttname"><a href="struct__Wolframe_1_1serialize_1_1Flags.html#aecad8696caa69abf5cc2158f002fc251aad06a2d2b7bb8bfe8e923a2a6f500b98">_Wolframe::serialize::Flags::CaseInsensitiveCompare</a></div><div class="ttdoc">Do validate with case insensitive compare. </div><div class="ttdef"><b>Definition:</b> flags.hpp:53</div></div>
 <div class="ttc" id="class__Wolframe_1_1langbind_1_1ToStringFilter_html"><div class="ttname"><a href="class__Wolframe_1_1langbind_1_1ToStringFilter.html">_Wolframe::langbind::ToStringFilter</a></div><div class="ttdoc">Output filter for tostring methods in language bindings. </div><div class="ttdef"><b>Definition:</b> tostringfilter.hpp:45</div></div>
 <div class="ttc" id="ptreefilter_8hpp_html"><div class="ttname"><a href="ptreefilter_8hpp.html">ptreefilter.hpp</a></div><div class="ttdoc">Filter for serialization/deserialization of a property tree. </div></div>
 <div class="ttc" id="class__Wolframe_1_1serialize_1_1StructParser_html"><div class="ttname"><a href="class__Wolframe_1_1serialize_1_1StructParser.html">_Wolframe::serialize::StructParser</a></div><div class="ttdoc">Initializer of a structure based on a structure description feeded with a serialization. </div><div class="ttdef"><b>Definition:</b> structParser.hpp:43</div></div>
@@ -208,7 +209,7 @@
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 10 2014 18:13:18 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 16 2014 11:29:33 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

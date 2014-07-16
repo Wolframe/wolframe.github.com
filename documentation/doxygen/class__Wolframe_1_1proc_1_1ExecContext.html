@@ -108,7 +108,11 @@ Public Types</h2></td></tr>
 <tr class="memitem:a34f27f4c431c6440045f8dece916c548"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a34f27f4c431c6440045f8dece916c548">BasicAuthorizationFunction</a> { <a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a34f27f4c431c6440045f8dece916c548af264be1fabc41cd3b2a5ce865f61c640">CONNECT</a>, 
 <a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a34f27f4c431c6440045f8dece916c548a0ac21c8ac859dc3785fbaf4239b892e7">PASSWD</a>
  }</td></tr>
+<tr class="memdesc:a34f27f4c431c6440045f8dece916c548"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hardcoded basic authorization function enumeration.  <a href="class__Wolframe_1_1proc_1_1ExecContext.html#a34f27f4c431c6440045f8dece916c548">More...</a><br /></td></tr>
 <tr class="separator:a34f27f4c431c6440045f8dece916c548"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2f0fed3913af9c2f03b323d086829fc"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
+<a class="el" href="struct__Wolframe_1_1net_1_1LocalEndpointConfig.html#afb00039ac6cf2e32b0e89cd4aaa5deba">net::LocalEndpointConfig::ProtocolCapability</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#ab2f0fed3913af9c2f03b323d086829fc">Capability</a></td></tr>
+<tr class="separator:ab2f0fed3913af9c2f03b323d086829fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -151,6 +155,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8fc4f4fd866dfceea2fd891f576c8bc3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a8fc4f4fd866dfceea2fd891f576c8bc3">setConnectionData</a> (const <a class="el" href="class__Wolframe_1_1net_1_1RemoteEndpoint.html">net::RemoteEndpoint</a> *remoteEndpoint_, const <a class="el" href="class__Wolframe_1_1net_1_1LocalEndpoint.html">net::LocalEndpoint</a> *localEndpoint_)</td></tr>
 <tr class="memdesc:a8fc4f4fd866dfceea2fd891f576c8bc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the socket identifier for authorization checks.  <a href="#a8fc4f4fd866dfceea2fd891f576c8bc3">More...</a><br /></td></tr>
 <tr class="separator:a8fc4f4fd866dfceea2fd891f576c8bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa23688dcfc69f1d8801e5caf68648252"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#aa23688dcfc69f1d8801e5caf68648252">setCapability</a> (<a class="el" href="struct__Wolframe_1_1net_1_1LocalEndpointConfig.html#afb00039ac6cf2e32b0e89cd4aaa5deba">Capability</a> c)</td></tr>
+<tr class="memdesc:aa23688dcfc69f1d8801e5caf68648252"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a capability for this execution context.  <a href="#aa23688dcfc69f1d8801e5caf68648252">More...</a><br /></td></tr>
+<tr class="separator:aa23688dcfc69f1d8801e5caf68648252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cf44fbeb1aa2a17dd445a25fc942d45"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a9cf44fbeb1aa2a17dd445a25fc942d45">hasCapability</a> (<a class="el" href="struct__Wolframe_1_1net_1_1LocalEndpointConfig.html#afb00039ac6cf2e32b0e89cd4aaa5deba">Capability</a> c) const </td></tr>
+<tr class="memdesc:a9cf44fbeb1aa2a17dd445a25fc942d45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ask for a capability for this execution context.  <a href="#a9cf44fbeb1aa2a17dd445a25fc942d45">More...</a><br /></td></tr>
+<tr class="separator:a9cf44fbeb1aa2a17dd445a25fc942d45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bfc653409b81e5533b5b5a14921e6a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1AAAA_1_1Authenticator.html">AAAA::Authenticator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a2bfc653409b81e5533b5b5a14921e6a8">authenticator</a> (const <a class="el" href="class__Wolframe_1_1net_1_1RemoteEndpoint.html">net::RemoteEndpoint</a> &amp;client) const </td></tr>
 <tr class="memdesc:a2bfc653409b81e5533b5b5a14921e6a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an authenticator.  <a href="#a2bfc653409b81e5533b5b5a14921e6a8">More...</a><br /></td></tr>
 <tr class="separator:a2bfc653409b81e5533b5b5a14921e6a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,6 +171,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a9907126c9f739545e08397ee2460fb83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a function tagged with AUTHORIZE( funcname, resource) is allowed to be executed.  <a href="#a9907126c9f739545e08397ee2460fb83">More...</a><br /></td></tr>
 <tr class="separator:a9907126c9f739545e08397ee2460fb83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f2f49b36755f2171f57ccb75b18fd36"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a5f2f49b36755f2171f57ccb75b18fd36">checkAuthorization</a> (<a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a34f27f4c431c6440045f8dece916c548">BasicAuthorizationFunction</a> f)</td></tr>
+<tr class="memdesc:a5f2f49b36755f2171f57ccb75b18fd36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks authorization for a basic function.  <a href="#a5f2f49b36755f2171f57ccb75b18fd36">More...</a><br /></td></tr>
 <tr class="separator:a5f2f49b36755f2171f57ccb75b18fd36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2265a8b58889cf2d7474aab6a746c2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1db_1_1Transaction.html">db::Transaction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#ab2265a8b58889cf2d7474aab6a746c2c">transaction</a> (const std::string &amp;name)</td></tr>
 <tr class="memdesc:ab2265a8b58889cf2d7474aab6a746c2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new transaction object.  <a href="#ab2265a8b58889cf2d7474aab6a746c2c">More...</a><br /></td></tr>
@@ -175,6 +186,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aca9344d6e5f0999b17aef19c56f24906"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#aca9344d6e5f0999b17aef19c56f24906">basicAuthorizationFunctionName</a> (<a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#a34f27f4c431c6440045f8dece916c548">BasicAuthorizationFunction</a> n)</td></tr>
+<tr class="memdesc:aca9344d6e5f0999b17aef19c56f24906"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of a basic function.  <a href="#aca9344d6e5f0999b17aef19c56f24906">More...</a><br /></td></tr>
 <tr class="separator:aca9344d6e5f0999b17aef19c56f24906"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
@@ -211,10 +223,26 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:aaf31fa0547e9b61a8992a8bc4809160f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#aaf31fa0547e9b61a8992a8bc4809160f">m_dbstack</a></td></tr>
 <tr class="memdesc:aaf31fa0547e9b61a8992a8bc4809160f"><td class="mdescLeft">&#160;</td><td class="mdescRight">stack for implementing current database as scope  <a href="#aaf31fa0547e9b61a8992a8bc4809160f">More...</a><br /></td></tr>
 <tr class="separator:aaf31fa0547e9b61a8992a8bc4809160f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeba843980b0e63e7cd2513cc07e7e0f0"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html#aeba843980b0e63e7cd2513cc07e7e0f0">m_capabilities</a></td></tr>
+<tr class="memdesc:aeba843980b0e63e7cd2513cc07e7e0f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">configured capability set  <a href="#aeba843980b0e63e7cd2513cc07e7e0f0">More...</a><br /></td></tr>
+<tr class="separator:aeba843980b0e63e7cd2513cc07e7e0f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Execution context passed to functions for referencing resources and to define authorization dependend processing. </p>
-</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="ab2f0fed3913af9c2f03b323d086829fc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="struct__Wolframe_1_1net_1_1LocalEndpointConfig.html#afb00039ac6cf2e32b0e89cd4aaa5deba">net::LocalEndpointConfig::ProtocolCapability</a> <a class="el" href="struct__Wolframe_1_1net_1_1LocalEndpointConfig.html#afb00039ac6cf2e32b0e89cd4aaa5deba">_Wolframe::proc::ExecContext::Capability</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="a34f27f4c431c6440045f8dece916c548"></a>
 <div class="memitem">
 <div class="memproto">
@@ -224,6 +252,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Hardcoded basic authorization function enumeration. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a34f27f4c431c6440045f8dece916c548af264be1fabc41cd3b2a5ce865f61c640"></a>CONNECT&#160;</td><td class="fielddoc">
 </td></tr>
@@ -393,6 +423,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Get the name of a basic function. </p>
+
 </div>
 </div>
 <a class="anchor" id="a9907126c9f739545e08397ee2460fb83"></a>
@@ -457,6 +489,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Checks authorization for a basic function. </p>
+
 </div>
 </div>
 <a class="anchor" id="abff3b2084e999d5c75e4db5f58e09fc0"></a>
@@ -481,6 +515,32 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the default timeout for read operations in seconds. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9cf44fbeb1aa2a17dd445a25fc942d45"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _Wolframe::proc::ExecContext::hasCapability </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct__Wolframe_1_1net_1_1LocalEndpointConfig.html#afb00039ac6cf2e32b0e89cd4aaa5deba">Capability</a>&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ask for a capability for this execution context. </p>
 
 </div>
 </div>
@@ -686,6 +746,32 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aa23688dcfc69f1d8801e5caf68648252"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _Wolframe::proc::ExecContext::setCapability </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct__Wolframe_1_1net_1_1LocalEndpointConfig.html#afb00039ac6cf2e32b0e89cd4aaa5deba">Capability</a>&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set a capability for this execution context. </p>
+
+</div>
+</div>
 <a class="anchor" id="a8fc4f4fd866dfceea2fd891f576c8bc3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -888,6 +974,28 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aeba843980b0e63e7cd2513cc07e7e0f0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int _Wolframe::proc::ExecContext::m_capabilities</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>configured capability set </p>
+
+</div>
+</div>
 <a class="anchor" id="aaf31fa0547e9b61a8992a8bc4809160f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1027,7 +1135,7 @@ Private Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 10 2014 18:13:36 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 16 2014 11:29:53 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>
