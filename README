@@ -67,3 +67,6 @@ Notes
 You have to check manually what you have to add or delete with git!
 
 Don't use symlinks, they don't work on the github webservers!
+
+If you update doxygen (even patch levels!), compare CSS here and the one generated
+by Doxygen for changes!
