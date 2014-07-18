@@ -94,18 +94,26 @@
 </div><!--header-->
 <div class="contents">
 
+<p>Class that defines a command handler class and is able to create instances of it.  
+ <a href="class__Wolframe_1_1cmdbind_1_1CommandHandlerUnit.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="commandHandlerUnit_8hpp_source.html">commandHandlerUnit.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af0a708075deca5fd46c26520e6338bd9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandlerUnit.html#af0a708075deca5fd46c26520e6338bd9">loadPrograms</a> (const <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html">proc::ProcessorProviderInterface</a> *)=0</td></tr>
-<tr class="separator:af0a708075deca5fd46c26520e6338bd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38a0c4794ce1644c5298f2029d633ac9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandlerUnit.html#a38a0c4794ce1644c5298f2029d633ac9">loadPrograms</a> (const <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html">proc::ProcessorProviderInterface</a> *provider)=0</td></tr>
+<tr class="memdesc:a38a0c4794ce1644c5298f2029d633ac9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load all configured programs.  <a href="#a38a0c4794ce1644c5298f2029d633ac9">More...</a><br /></td></tr>
+<tr class="separator:a38a0c4794ce1644c5298f2029d633ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a954b1ea9e6ad4fa762688cf01c263006"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandlerUnit.html#a954b1ea9e6ad4fa762688cf01c263006">commands</a> () const =0</td></tr>
+<tr class="memdesc:a954b1ea9e6ad4fa762688cf01c263006"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of all commands inplemented by this command handler.  <a href="#a954b1ea9e6ad4fa762688cf01c263006">More...</a><br /></td></tr>
 <tr class="separator:a954b1ea9e6ad4fa762688cf01c263006"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accb8a53ea7c69527392d2da95e476475"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html">CommandHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandlerUnit.html#accb8a53ea7c69527392d2da95e476475">createCommandHandler</a> (const std::string &amp;cmdname, const std::string &amp;docformat)=0</td></tr>
+<tr class="memdesc:accb8a53ea7c69527392d2da95e476475"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an instance of this command handler.  <a href="#accb8a53ea7c69527392d2da95e476475">More...</a><br /></td></tr>
 <tr class="separator:accb8a53ea7c69527392d2da95e476475"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class that defines a command handler class and is able to create instances of it. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a954b1ea9e6ad4fa762688cf01c263006"></a>
 <div class="memitem">
 <div class="memproto">
@@ -126,6 +134,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Get the list of all commands inplemented by this command handler. </p>
 
 </div>
 </div>
@@ -161,9 +171,11 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Create an instance of this command handler. </p>
+
 </div>
 </div>
-<a class="anchor" id="af0a708075deca5fd46c26520e6338bd9"></a>
+<a class="anchor" id="a38a0c4794ce1644c5298f2029d633ac9"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -174,7 +186,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual bool _Wolframe::cmdbind::CommandHandlerUnit::loadPrograms </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html">proc::ProcessorProviderInterface</a> *&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><em>provider</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -185,6 +197,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Load all configured programs. </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -194,7 +208,7 @@ Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 16 2014 15:31:05 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 18 2014 09:15:34 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

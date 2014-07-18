@@ -98,6 +98,9 @@
 </div><!--header-->
 <div class="contents">
 
+<p>Class for parsing ascii character by character from a source in an unicode based encoding.  
+ <a href="class__Wolframe_1_1utils_1_1AsciiCharParser.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="asciiCharParser_8hpp_source.html">asciiCharParser.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -117,19 +120,23 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4a34c30d55d5ed022f2bb1714bba4986"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1utils_1_1AsciiCharParser.html#a4a34c30d55d5ed022f2bb1714bba4986">AsciiCharParser</a> ()</td></tr>
+<tr class="memdesc:a4a34c30d55d5ed022f2bb1714bba4986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a4a34c30d55d5ed022f2bb1714bba4986">More...</a><br /></td></tr>
 <tr class="separator:a4a34c30d55d5ed022f2bb1714bba4986"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d8e793c4d7fbf24be73b86535c4e1d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1utils_1_1AsciiCharParser.html#a2d8e793c4d7fbf24be73b86535c4e1d6">putInput</a> (const char *src, std::size_t srcsize)</td></tr>
+<tr class="memdesc:a2d8e793c4d7fbf24be73b86535c4e1d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Feed next input block.  <a href="#a2d8e793c4d7fbf24be73b86535c4e1d6">More...</a><br /></td></tr>
 <tr class="separator:a2d8e793c4d7fbf24be73b86535c4e1d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad458b41aeb59b001b680f2b50160783c"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1utils_1_1AsciiCharParser.html#ad458b41aeb59b001b680f2b50160783c">getNext</a> ()</td></tr>
+<tr class="memdesc:ad458b41aeb59b001b680f2b50160783c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next ASCII character or 0, if at the end of the current input block or an error occurred (to check with <a class="el" href="class__Wolframe_1_1utils_1_1AsciiCharParser.html#a408d3b3ed005ffae722818a0faa01762" title="Get the last error occurred. ">lastError()const</a>)  <a href="#ad458b41aeb59b001b680f2b50160783c">More...</a><br /></td></tr>
 <tr class="separator:ad458b41aeb59b001b680f2b50160783c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a408d3b3ed005ffae722818a0faa01762"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1utils_1_1AsciiCharParser.html#a408d3b3ed005ffae722818a0faa01762">lastError</a> () const </td></tr>
+<tr class="memdesc:a408d3b3ed005ffae722818a0faa01762"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the last error occurred.  <a href="#a408d3b3ed005ffae722818a0faa01762">More...</a><br /></td></tr>
 <tr class="separator:a408d3b3ed005ffae722818a0faa01762"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:adeb3ce693c12d1576d2460562af432fb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="class__Wolframe_1_1utils_1_1AsciiCharParser.html#adeb3ce693c12d1576d2460562af432fba39f0e7524a0a51242d1a045798a51d10">BufSize</a> =8
+<tr class="memitem:a3a3fcdad4eac8c769d5f3e95018fb8e5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="class__Wolframe_1_1utils_1_1AsciiCharParser.html#a3a3fcdad4eac8c769d5f3e95018fb8e5a39f0e7524a0a51242d1a045798a51d10">BufSize</a> =8
  }</td></tr>
-<tr class="separator:adeb3ce693c12d1576d2460562af432fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a3a3fcdad4eac8c769d5f3e95018fb8e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -150,13 +157,15 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a3c2ff24e8dbd33a676bdd8a145006c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e8377beb07642a7afdd409b92c12cce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1utils_1_1AsciiCharParser.html#aa63c5ea767f5eabb2aad1bdc27bf239a">Encoding</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1utils_1_1AsciiCharParser.html#a5e8377beb07642a7afdd409b92c12cce">m_encoding</a></td></tr>
 <tr class="separator:a5e8377beb07642a7afdd409b92c12cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a301a91c5d26d16b61f73dccef3239d75"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1utils_1_1AsciiCharParser.html#a301a91c5d26d16b61f73dccef3239d75">m_buf</a> [<a class="el" href="class__Wolframe_1_1utils_1_1AsciiCharParser.html#adeb3ce693c12d1576d2460562af432fba39f0e7524a0a51242d1a045798a51d10">BufSize</a>]</td></tr>
+<tr class="memitem:a301a91c5d26d16b61f73dccef3239d75"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1utils_1_1AsciiCharParser.html#a301a91c5d26d16b61f73dccef3239d75">m_buf</a> [<a class="el" href="class__Wolframe_1_1utils_1_1AsciiCharParser.html#a3a3fcdad4eac8c769d5f3e95018fb8e5a39f0e7524a0a51242d1a045798a51d10">BufSize</a>]</td></tr>
 <tr class="separator:a301a91c5d26d16b61f73dccef3239d75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac821e2782aa1ca149bbce52ba5351887"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1utils_1_1AsciiCharParser.html#ac821e2782aa1ca149bbce52ba5351887">m_bufsize</a></td></tr>
 <tr class="separator:ac821e2782aa1ca149bbce52ba5351887"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="adeb3ce693c12d1576d2460562af432fb"></a>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class for parsing ascii character by character from a source in an unicode based encoding. </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="a3a3fcdad4eac8c769d5f3e95018fb8e5"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -174,7 +183,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="adeb3ce693c12d1576d2460562af432fba39f0e7524a0a51242d1a045798a51d10"></a>BufSize&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a3a3fcdad4eac8c769d5f3e95018fb8e5a39f0e7524a0a51242d1a045798a51d10"></a>BufSize&#160;</td><td class="fielddoc">
 </td></tr>
 </table>
 
@@ -228,6 +237,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Constructor. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -268,6 +279,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get the next ASCII character or 0, if at the end of the current input block or an error occurred (to check with <a class="el" href="class__Wolframe_1_1utils_1_1AsciiCharParser.html#a408d3b3ed005ffae722818a0faa01762" title="Get the last error occurred. ">lastError()const</a>) </p>
+
 </div>
 </div>
 <a class="anchor" id="a408d3b3ed005ffae722818a0faa01762"></a>
@@ -290,6 +303,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Get the last error occurred. </p>
 
 </div>
 </div>
@@ -341,6 +356,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Feed next input block. </p>
+<dl class="section remark"><dt>Remarks</dt><dd>The previous block has been consumed completely </dd></dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -352,7 +370,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned char _Wolframe::utils::AsciiCharParser::m_buf[<a class="el" href="class__Wolframe_1_1utils_1_1AsciiCharParser.html#adeb3ce693c12d1576d2460562af432fba39f0e7524a0a51242d1a045798a51d10">BufSize</a>]</td>
+          <td class="memname">unsigned char _Wolframe::utils::AsciiCharParser::m_buf[<a class="el" href="class__Wolframe_1_1utils_1_1AsciiCharParser.html#a3a3fcdad4eac8c769d5f3e95018fb8e5a39f0e7524a0a51242d1a045798a51d10">BufSize</a>]</td>
         </tr>
       </table>
   </td>
@@ -491,7 +509,7 @@ Private Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 16 2014 15:31:22 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 18 2014 09:15:53 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

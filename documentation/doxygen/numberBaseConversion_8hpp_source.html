@@ -144,29 +144,29 @@
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <a class="code" href="namespace__Wolframe_1_1types.html#af1812738d18dd78f57bfb8a431819b5c">convertBCDtoBinary</a>( digits, nofdigits, (<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*)&amp;val, <span class="keyword">sizeof</span>(val));</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1Endian.html">   83</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct__Wolframe_1_1types_1_1Endian.html">Endian</a></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> UINTTYPE&gt;</div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1Endian.html#afb55f830d7ec04dc9aa1e99a951cb199">   86</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="struct__Wolframe_1_1types_1_1Endian.html#afb55f830d7ec04dc9aa1e99a951cb199">reorder</a>( UINTTYPE&amp; num)</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* ref = (<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*)&amp;num;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ii=0, nn=<span class="keyword">sizeof</span>(UINTTYPE)/2;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                <span class="keywordflow">for</span> (; ii&lt;nn; ++ii)</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> tmp = ref[ii];</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                        ref[ii] = ref[ <span class="keyword">sizeof</span>(UINTTYPE)-ii-1];</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                        ref[ <span class="keyword">sizeof</span>(UINTTYPE)-ii-1] = tmp;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                }</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        }</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;};</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}}<span class="comment">//namespace</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1Endian.html">   84</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct__Wolframe_1_1types_1_1Endian.html">Endian</a></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;{</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> UINTTYPE&gt;</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="struct__Wolframe_1_1types_1_1Endian.html#afb55f830d7ec04dc9aa1e99a951cb199">   87</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="struct__Wolframe_1_1types_1_1Endian.html#afb55f830d7ec04dc9aa1e99a951cb199">reorder</a>( UINTTYPE&amp; num)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* ref = (<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*)&amp;num;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ii=0, nn=<span class="keyword">sizeof</span>(UINTTYPE)/2;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                <span class="keywordflow">for</span> (; ii&lt;nn; ++ii)</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> tmp = ref[ii];</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                        ref[ii] = ref[ <span class="keyword">sizeof</span>(UINTTYPE)-ii-1];</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                        ref[ <span class="keyword">sizeof</span>(UINTTYPE)-ii-1] = tmp;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;};</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}}<span class="comment">//namespace</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
 <div class="ttc" id="integer_8hpp_html"><div class="ttname"><a href="integer_8hpp.html">integer.hpp</a></div><div class="ttdoc">Application wide definitions of integer number value types. </div></div>
-<div class="ttc" id="struct__Wolframe_1_1types_1_1Endian_html_afb55f830d7ec04dc9aa1e99a951cb199"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1Endian.html#afb55f830d7ec04dc9aa1e99a951cb199">_Wolframe::types::Endian::reorder</a></div><div class="ttdeci">static void reorder(UINTTYPE &amp;num)</div><div class="ttdef"><b>Definition:</b> numberBaseConversion.hpp:86</div></div>
+<div class="ttc" id="struct__Wolframe_1_1types_1_1Endian_html_afb55f830d7ec04dc9aa1e99a951cb199"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1Endian.html#afb55f830d7ec04dc9aa1e99a951cb199">_Wolframe::types::Endian::reorder</a></div><div class="ttdeci">static void reorder(UINTTYPE &amp;num)</div><div class="ttdef"><b>Definition:</b> numberBaseConversion.hpp:87</div></div>
 <div class="ttc" id="namespace__Wolframe_1_1types_html_a956a62ccfc6c3ec7e20292685493e8f9"><div class="ttname"><a href="namespace__Wolframe_1_1types.html#a956a62ccfc6c3ec7e20292685493e8f9">_Wolframe::types::convertBinaryToBCD</a></div><div class="ttdeci">unsigned int convertBinaryToBCD(const unsigned char *uintptr, unsigned int uintsize, unsigned char *digitsbuf, unsigned int digitsbufsize)</div><div class="ttdoc">Convert a large but limited size big endian integer value to a BCD number. </div></div>
-<div class="ttc" id="struct__Wolframe_1_1types_1_1Endian_html"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1Endian.html">_Wolframe::types::Endian</a></div><div class="ttdef"><b>Definition:</b> numberBaseConversion.hpp:83</div></div>
+<div class="ttc" id="struct__Wolframe_1_1types_1_1Endian_html"><div class="ttname"><a href="struct__Wolframe_1_1types_1_1Endian.html">_Wolframe::types::Endian</a></div><div class="ttdoc">Class for little/big endian operations. </div><div class="ttdef"><b>Definition:</b> numberBaseConversion.hpp:84</div></div>
 <div class="ttc" id="namespace__Wolframe_1_1types_html_af1812738d18dd78f57bfb8a431819b5c"><div class="ttname"><a href="namespace__Wolframe_1_1types.html#af1812738d18dd78f57bfb8a431819b5c">_Wolframe::types::convertBCDtoBinary</a></div><div class="ttdeci">void convertBCDtoBinary(const unsigned char *digits, unsigned int nofdigits, unsigned char *buf, unsigned int bufsize)</div><div class="ttdoc">Convert a large but limited size BCD number to a big endian integer value. </div></div>
 <div class="ttc" id="namespace__Wolframe_1_1types_html_aa6b54f3c3acbf01a7917dbe6f4060627"><div class="ttname"><a href="namespace__Wolframe_1_1types.html#aa6b54f3c3acbf01a7917dbe6f4060627">_Wolframe::types::convertBigEndianUintToBCD</a></div><div class="ttdeci">unsigned int convertBigEndianUintToBCD(const UINTTYPE &amp;val, unsigned char *digitsbuf, unsigned int digitsbufsize)</div><div class="ttdoc">Convert a large but limited size big endian integer value to a BCD number. </div><div class="ttdef"><b>Definition:</b> numberBaseConversion.hpp:66</div></div>
 <div class="ttc" id="namespace__Wolframe_1_1types_html_abf73259c681b8b08b9390324ca193842"><div class="ttname"><a href="namespace__Wolframe_1_1types.html#abf73259c681b8b08b9390324ca193842">_Wolframe::types::convertBCDtoBigEndianUint</a></div><div class="ttdeci">void convertBCDtoBigEndianUint(const unsigned char *digits, unsigned int nofdigits, UINTTYPE &amp;val)</div><div class="ttdoc">Convert a large but limited size BCD number to a big endian integer value. </div><div class="ttdef"><b>Definition:</b> numberBaseConversion.hpp:78</div></div>
@@ -174,7 +174,7 @@
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 16 2014 15:30:57 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 18 2014 09:15:29 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

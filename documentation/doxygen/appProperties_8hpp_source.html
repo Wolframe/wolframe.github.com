@@ -120,40 +120,37 @@
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> Project Wolframe.</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">************************************************************************/</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">// application properties</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#ifndef _APP_PROPERTIES_HPP_INCLUDED</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#define _APP_PROPERTIES_HPP_INCLUDED</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="version_8hpp.html">version.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">namespace </span>_Wolframe     {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>*     <a class="code" href="namespace__Wolframe.html#acb6e0ef9b53c13d1b6d575f1ae083170">applicationName</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">const</span> Version   <a class="code" href="namespace__Wolframe.html#a0f8b27347ed9e1713f1d5a5b2911585f">applicationVersion</a>();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">namespace </span>config        {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>*     <a class="code" href="namespace__Wolframe_1_1config.html#aa1b7549d33239900af20e5c5248ef53c">defaultMainConfig</a>();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>*     <a class="code" href="namespace__Wolframe_1_1config.html#a8354e053b53bd748b89a9ad7634e2819">defaultUserConfig</a>();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>*     <a class="code" href="namespace__Wolframe_1_1config.html#a776490365e034d99f2fdcf4f1f03d448">defaultLocalConfig</a>();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>*     <a class="code" href="namespace__Wolframe_1_1config.html#accfa4af3e16bff777478aafa4ede5163">defaultServiceName</a>();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#if defined( _WIN32 )</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>*     defaultServiceDisplayName();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>*     defaultServiceDescription();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif // defined( _WIN32 )</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;} <span class="comment">// namespace config</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">namespace </span>net   {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span>  <a class="code" href="namespace__Wolframe_1_1net.html#a37d6fe1d5bda2b7110e8a91e072dfabe">defaultTCPport</a>();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span>  <a class="code" href="namespace__Wolframe_1_1net.html#a49614441f9a9fed20b20d0e154627f14">defaultSSLport</a>();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;} <span class="comment">// namespace net</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;} <span class="comment">// namespace _Wolframe</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif // _APP_PROPERTIES_HPP_INCLUDED</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#ifndef _APP_PROPERTIES_HPP_INCLUDED</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#define _APP_PROPERTIES_HPP_INCLUDED</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="version_8hpp.html">version.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">namespace </span>_Wolframe     {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>*     <a class="code" href="namespace__Wolframe.html#acb6e0ef9b53c13d1b6d575f1ae083170">applicationName</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keyword">const</span> Version   <a class="code" href="namespace__Wolframe.html#a0f8b27347ed9e1713f1d5a5b2911585f">applicationVersion</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">namespace </span>config        {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>*     <a class="code" href="namespace__Wolframe_1_1config.html#aa1b7549d33239900af20e5c5248ef53c">defaultMainConfig</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>*     <a class="code" href="namespace__Wolframe_1_1config.html#a8354e053b53bd748b89a9ad7634e2819">defaultUserConfig</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>*     <a class="code" href="namespace__Wolframe_1_1config.html#a776490365e034d99f2fdcf4f1f03d448">defaultLocalConfig</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>*     <a class="code" href="namespace__Wolframe_1_1config.html#accfa4af3e16bff777478aafa4ede5163">defaultServiceName</a>();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#if defined( _WIN32 )</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>*     defaultServiceDisplayName();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>*     defaultServiceDescription();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif // defined( _WIN32 )</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;} <span class="comment">// namespace config</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">namespace </span>net   {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span>  <a class="code" href="namespace__Wolframe_1_1net.html#a37d6fe1d5bda2b7110e8a91e072dfabe">defaultTCPport</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span>  <a class="code" href="namespace__Wolframe_1_1net.html#a49614441f9a9fed20b20d0e154627f14">defaultSSLport</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;} <span class="comment">// namespace net</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;} <span class="comment">// namespace _Wolframe</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif // _APP_PROPERTIES_HPP_INCLUDED</span></div>
 <div class="ttc" id="namespace__Wolframe_1_1config_html_accfa4af3e16bff777478aafa4ede5163"><div class="ttname"><a href="namespace__Wolframe_1_1config.html#accfa4af3e16bff777478aafa4ede5163">_Wolframe::config::defaultServiceName</a></div><div class="ttdeci">const char * defaultServiceName()</div></div>
 <div class="ttc" id="namespace__Wolframe_html_a0f8b27347ed9e1713f1d5a5b2911585f"><div class="ttname"><a href="namespace__Wolframe.html#a0f8b27347ed9e1713f1d5a5b2911585f">_Wolframe::applicationVersion</a></div><div class="ttdeci">const Version applicationVersion()</div></div>
 <div class="ttc" id="namespace__Wolframe_html_acb6e0ef9b53c13d1b6d575f1ae083170"><div class="ttname"><a href="namespace__Wolframe.html#acb6e0ef9b53c13d1b6d575f1ae083170">_Wolframe::applicationName</a></div><div class="ttdeci">const char * applicationName()</div></div>
@@ -161,13 +158,13 @@
 <div class="ttc" id="namespace__Wolframe_1_1config_html_aa1b7549d33239900af20e5c5248ef53c"><div class="ttname"><a href="namespace__Wolframe_1_1config.html#aa1b7549d33239900af20e5c5248ef53c">_Wolframe::config::defaultMainConfig</a></div><div class="ttdeci">const char * defaultMainConfig()</div></div>
 <div class="ttc" id="namespace__Wolframe_1_1net_html_a49614441f9a9fed20b20d0e154627f14"><div class="ttname"><a href="namespace__Wolframe_1_1net.html#a49614441f9a9fed20b20d0e154627f14">_Wolframe::net::defaultSSLport</a></div><div class="ttdeci">unsigned short defaultSSLport()</div></div>
 <div class="ttc" id="namespace__Wolframe_1_1config_html_a776490365e034d99f2fdcf4f1f03d448"><div class="ttname"><a href="namespace__Wolframe_1_1config.html#a776490365e034d99f2fdcf4f1f03d448">_Wolframe::config::defaultLocalConfig</a></div><div class="ttdeci">const char * defaultLocalConfig()</div></div>
-<div class="ttc" id="version_8hpp_html"><div class="ttname"><a href="version_8hpp.html">version.hpp</a></div></div>
+<div class="ttc" id="version_8hpp_html"><div class="ttname"><a href="version_8hpp.html">version.hpp</a></div><div class="ttdoc">Header file for the Version class. </div></div>
 <div class="ttc" id="namespace__Wolframe_1_1net_html_a37d6fe1d5bda2b7110e8a91e072dfabe"><div class="ttname"><a href="namespace__Wolframe_1_1net.html#a37d6fe1d5bda2b7110e8a91e072dfabe">_Wolframe::net::defaultTCPport</a></div><div class="ttdeci">unsigned short defaultTCPport()</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 16 2014 15:30:49 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 18 2014 09:15:24 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

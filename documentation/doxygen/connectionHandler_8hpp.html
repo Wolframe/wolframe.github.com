@@ -91,6 +91,9 @@
 <div class="title">connectionHandler.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Base class for the connection handler and related objects.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;string&gt;</code><br />
 <code>#include &lt;cstddef&gt;</code><br />
 <code>#include &lt;cstring&gt;</code><br />
@@ -102,6 +105,7 @@
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1net_1_1NetworkOperation.html">_Wolframe::net::NetworkOperation</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for a network operation. It should never be accessed directly by the user code.  <a href="class__Wolframe_1_1net_1_1NetworkOperation.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1net_1_1ReadData.html">_Wolframe::net::ReadData</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Network operation: asynchronously read a block of data.  <a href="class__Wolframe_1_1net_1_1ReadData.html#details">More...</a><br /></td></tr>
@@ -110,6 +114,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Network operation: asynchronously send a block of data.  <a href="class__Wolframe_1_1net_1_1SendData.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1net_1_1SendString.html">_Wolframe::net::SendString</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Network operation: asynchronously send a string (message) This is just some syntactic sugar, simplifying <a class="el" href="class__Wolframe_1_1net_1_1SendData.html" title="Network operation: asynchronously send a block of data. ">SendData</a>.  <a href="class__Wolframe_1_1net_1_1SendString.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1net_1_1CloseConnection.html">_Wolframe::net::CloseConnection</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Network operation: close the current network connection.  <a href="class__Wolframe_1_1net_1_1CloseConnection.html#details">More...</a><br /></td></tr>
@@ -121,24 +126,25 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The common handler for the connection status.  <a href="class__Wolframe_1_1net_1_1ConnectionHandler.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1ServerHandler.html">_Wolframe::ServerHandler</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The server main handler All it should do is to provide connection handlers.  <a href="class__Wolframe_1_1ServerHandler.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace__Wolframe"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe.html">_Wolframe</a></td></tr>
-<tr class="memdesc:namespace__Wolframe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processor Provider configuration. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace__Wolframe_1_1net"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1net.html">_Wolframe::net</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespace__Wolframe_1_1module"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1module.html">_Wolframe::module</a></td></tr>
-<tr class="memdesc:namespace__Wolframe_1_1module"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opaque definitions for <a class="el" href="class__Wolframe_1_1module_1_1ModulesDirectory.html">ModulesDirectory</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Base class for the connection handler and related objects. </p>
+</div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 16 2014 15:31:01 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 18 2014 09:15:32 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

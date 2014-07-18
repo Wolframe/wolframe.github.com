@@ -120,48 +120,47 @@
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> Project Wolframe.</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">************************************************************************/</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#ifndef _DATABASE_SUBSTITUTING_STATEMENT_HPP_INCLUDED</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#define _DATABASE_SUBSTITUTING_STATEMENT_HPP_INCLUDED</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="baseStatement_8hpp.html">database/baseStatement.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">namespace </span>_Wolframe {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">namespace </span>db {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1db_1_1SubstitutingStatement.html">   54</a></span>&#160;<span class="keyword">class </span><a class="code" href="class__Wolframe_1_1db_1_1SubstitutingStatement.html">SubstitutingStatement</a> : <span class="keyword">public</span> <a class="code" href="class__Wolframe_1_1db_1_1BaseStatement.html">BaseStatement</a></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                <a class="code" href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#a53a897e6b1f2d96e6706d8ddfcf26bdc">SubstitutingStatement</a>( );</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                <a class="code" href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#a53a897e6b1f2d96e6706d8ddfcf26bdc">SubstitutingStatement</a>( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1db_1_1SubstitutingStatement.html">SubstitutingStatement</a> &amp;o );</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#aaf418f11bf432295f8fb1ee0b20004bb">init</a>( <span class="keyword">const</span> std::string &amp;stmtStr );</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#a145c60e2b77638532fe5f2000efb07f2">clear</a>( );</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#a5027ebf3ae2357835fe670860c57de37">bind</a>( <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> idx, <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1types_1_1Variant.html">types::Variant</a> &amp;value );</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                <span class="keyword">virtual</span> <span class="keyword">const</span> std::string <a class="code" href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#a3f96886b11238ea3e2ddf6237c63aedc">convert</a>( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1types_1_1Variant.html">types::Variant</a> &amp;value ) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                <span class="keyword">virtual</span> <span class="keyword">const</span> std::string <a class="code" href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#a0e247a47ff47b75bf3fcab450dfa5b5d">replace</a>( <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> idx ) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#a267d8cd634f728321f4b8eae29d99e1d">   78</a></span>&#160;                std::map&lt; unsigned int, std::string &gt; <a class="code" href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#a267d8cd634f728321f4b8eae29d99e1d">m_bind</a>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}}<span class="comment">//namespace</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="ttc" id="class__Wolframe_1_1db_1_1SubstitutingStatement_html_a267d8cd634f728321f4b8eae29d99e1d"><div class="ttname"><a href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#a267d8cd634f728321f4b8eae29d99e1d">_Wolframe::db::SubstitutingStatement::m_bind</a></div><div class="ttdeci">std::map&lt; unsigned int, std::string &gt; m_bind</div><div class="ttdoc">Stores the placeholders in calls of bind till they are used to create the substituted SQL statement w...</div><div class="ttdef"><b>Definition:</b> substitutingStatement.hpp:78</div></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#ifndef _DATABASE_SUBSTITUTING_STATEMENT_HPP_INCLUDED</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#define _DATABASE_SUBSTITUTING_STATEMENT_HPP_INCLUDED</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="baseStatement_8hpp.html">database/baseStatement.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">namespace </span>_Wolframe {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">namespace </span>db {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1db_1_1SubstitutingStatement.html">   55</a></span>&#160;<span class="keyword">class </span><a class="code" href="class__Wolframe_1_1db_1_1SubstitutingStatement.html">SubstitutingStatement</a> : <span class="keyword">public</span> <a class="code" href="class__Wolframe_1_1db_1_1BaseStatement.html">BaseStatement</a></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                <a class="code" href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#a53a897e6b1f2d96e6706d8ddfcf26bdc">SubstitutingStatement</a>( );</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                <a class="code" href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#a53a897e6b1f2d96e6706d8ddfcf26bdc">SubstitutingStatement</a>( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1db_1_1SubstitutingStatement.html">SubstitutingStatement</a> &amp;o );</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#aaf418f11bf432295f8fb1ee0b20004bb">init</a>( <span class="keyword">const</span> std::string &amp;stmtStr );</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#a145c60e2b77638532fe5f2000efb07f2">clear</a>( );</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#a5027ebf3ae2357835fe670860c57de37">bind</a>( <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> idx, <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1types_1_1Variant.html">types::Variant</a> &amp;value );</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                <span class="keyword">virtual</span> <span class="keyword">const</span> std::string <a class="code" href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#a3f96886b11238ea3e2ddf6237c63aedc">convert</a>( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1types_1_1Variant.html">types::Variant</a> &amp;value ) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                <span class="keyword">virtual</span> <span class="keyword">const</span> std::string <a class="code" href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#a0e247a47ff47b75bf3fcab450dfa5b5d">replace</a>( <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> idx ) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#a267d8cd634f728321f4b8eae29d99e1d">   79</a></span>&#160;                std::map&lt; unsigned int, std::string &gt; <a class="code" href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#a267d8cd634f728321f4b8eae29d99e1d">m_bind</a>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}}<span class="comment">//namespace</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="ttc" id="class__Wolframe_1_1db_1_1SubstitutingStatement_html_a267d8cd634f728321f4b8eae29d99e1d"><div class="ttname"><a href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#a267d8cd634f728321f4b8eae29d99e1d">_Wolframe::db::SubstitutingStatement::m_bind</a></div><div class="ttdeci">std::map&lt; unsigned int, std::string &gt; m_bind</div><div class="ttdoc">Stores the placeholders in calls of bind till they are used to create the substituted SQL statement w...</div><div class="ttdef"><b>Definition:</b> substitutingStatement.hpp:79</div></div>
 <div class="ttc" id="class__Wolframe_1_1db_1_1SubstitutingStatement_html_a5027ebf3ae2357835fe670860c57de37"><div class="ttname"><a href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#a5027ebf3ae2357835fe670860c57de37">_Wolframe::db::SubstitutingStatement::bind</a></div><div class="ttdeci">virtual void bind(const unsigned int idx, const types::Variant &amp;value)</div><div class="ttdoc">Binds parameter at position idx with variant data in the format with Wolframe placeholders. </div></div>
 <div class="ttc" id="class__Wolframe_1_1db_1_1SubstitutingStatement_html_a53a897e6b1f2d96e6706d8ddfcf26bdc"><div class="ttname"><a href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#a53a897e6b1f2d96e6706d8ddfcf26bdc">_Wolframe::db::SubstitutingStatement::SubstitutingStatement</a></div><div class="ttdeci">SubstitutingStatement()</div></div>
 <div class="ttc" id="class__Wolframe_1_1db_1_1SubstitutingStatement_html_a145c60e2b77638532fe5f2000efb07f2"><div class="ttname"><a href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#a145c60e2b77638532fe5f2000efb07f2">_Wolframe::db::SubstitutingStatement::clear</a></div><div class="ttdeci">virtual void clear()</div><div class="ttdoc">Clear current statement. </div></div>
 <div class="ttc" id="class__Wolframe_1_1types_1_1Variant_html"><div class="ttname"><a href="class__Wolframe_1_1types_1_1Variant.html">_Wolframe::types::Variant</a></div><div class="ttdoc">Forward declaration. </div><div class="ttdef"><b>Definition:</b> variant.hpp:65</div></div>
-<div class="ttc" id="class__Wolframe_1_1db_1_1SubstitutingStatement_html"><div class="ttname"><a href="class__Wolframe_1_1db_1_1SubstitutingStatement.html">_Wolframe::db::SubstitutingStatement</a></div><div class="ttdoc">An abstract statement class which allows derived classes to provide a simple escaping function which ...</div><div class="ttdef"><b>Definition:</b> substitutingStatement.hpp:54</div></div>
+<div class="ttc" id="class__Wolframe_1_1db_1_1SubstitutingStatement_html"><div class="ttname"><a href="class__Wolframe_1_1db_1_1SubstitutingStatement.html">_Wolframe::db::SubstitutingStatement</a></div><div class="ttdoc">An abstract statement class which allows derived classes to provide a simple escaping function which ...</div><div class="ttdef"><b>Definition:</b> substitutingStatement.hpp:55</div></div>
 <div class="ttc" id="class__Wolframe_1_1db_1_1SubstitutingStatement_html_a0e247a47ff47b75bf3fcab450dfa5b5d"><div class="ttname"><a href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#a0e247a47ff47b75bf3fcab450dfa5b5d">_Wolframe::db::SubstitutingStatement::replace</a></div><div class="ttdeci">virtual const std::string replace(const unsigned int idx) const </div><div class="ttdoc">Funtion called when the placeholder should be put into the final string (this is either for subsituti...</div></div>
 <div class="ttc" id="baseStatement_8hpp_html"><div class="ttname"><a href="baseStatement_8hpp.html">baseStatement.hpp</a></div></div>
 <div class="ttc" id="class__Wolframe_1_1db_1_1SubstitutingStatement_html_aaf418f11bf432295f8fb1ee0b20004bb"><div class="ttname"><a href="class__Wolframe_1_1db_1_1SubstitutingStatement.html#aaf418f11bf432295f8fb1ee0b20004bb">_Wolframe::db::SubstitutingStatement::init</a></div><div class="ttdeci">virtual void init(const std::string &amp;stmtStr)</div><div class="ttdoc">Set new SQL statement. </div></div>
@@ -171,7 +170,7 @@
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 16 2014 15:30:50 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 18 2014 09:15:25 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

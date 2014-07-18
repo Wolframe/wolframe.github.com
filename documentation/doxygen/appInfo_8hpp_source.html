@@ -120,63 +120,60 @@
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> Project Wolframe.</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">************************************************************************/</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">// application wide singleton</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#ifndef _APP_INFO_HPP_INCLUDED</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#define _APP_INFO_HPP_INCLUDED</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="version_8hpp.html">version.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#if defined( _MSC_VER )</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">        #define WOLFRAME_EXPORT __declspec( dllexport )</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="appInfo_8hpp.html#adf892ccaead9224bf5adf236d2d800ad">   45</a></span>&#160;<span class="preprocessor">        #define WOLFRAME_EXPORT</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">namespace </span>_Wolframe     {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1ApplicationInfo.html">   50</a></span>&#160;<span class="keyword">class </span><a class="code" href="class__Wolframe_1_1ApplicationInfo.html">ApplicationInfo</a></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="class__Wolframe_1_1ApplicationInfo.html#ada56b3f9a19c763c4c246aaded4cddbc">~ApplicationInfo</a>();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="appInfo_8hpp.html#adf892ccaead9224bf5adf236d2d800ad">WOLFRAME_EXPORT</a> <span class="keyword">static</span> <a class="code" href="class__Wolframe_1_1ApplicationInfo.html">ApplicationInfo</a>&amp; <a class="code" href="class__Wolframe_1_1ApplicationInfo.html#a7440b38a2a930373bb31515d111cef4b">instance</a>();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="appInfo_8hpp.html#adf892ccaead9224bf5adf236d2d800ad">WOLFRAME_EXPORT</a> <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1Version.html">Version</a>&amp; <a class="code" href="class__Wolframe_1_1ApplicationInfo.html#ad27b2ae651d7144cfce7c2e4d1af8ef5">version</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="appInfo_8hpp.html#adf892ccaead9224bf5adf236d2d800ad">WOLFRAME_EXPORT</a> <span class="keywordtype">void</span> <a class="code" href="class__Wolframe_1_1ApplicationInfo.html#ad27b2ae651d7144cfce7c2e4d1af8ef5">version</a>( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1Version.html">Version</a>&amp; ver );</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="class__Wolframe_1_1ApplicationInfo.html#a1b2c6ed458e837e2c0a7b84849fb9b93">ApplicationInfo</a>();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="comment">// make it noncopyable</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="class__Wolframe_1_1ApplicationInfo.html#a1b2c6ed458e837e2c0a7b84849fb9b93">ApplicationInfo</a>( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1ApplicationInfo.html">ApplicationInfo</a>&amp; );</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1ApplicationInfo.html">ApplicationInfo</a>&amp; <a class="code" href="class__Wolframe_1_1ApplicationInfo.html#acf4d0fb3cac4330a24a5a382aea82b19">operator= </a>( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1ApplicationInfo.html">ApplicationInfo</a>&amp; );</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="comment">// Real object data</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1ApplicationInfo.html#a67f9b4c7565beaf312fe097a15c40a13">   69</a></span>&#160;        <a class="code" href="class__Wolframe_1_1Version.html">Version</a> <a class="code" href="class__Wolframe_1_1ApplicationInfo.html#a67f9b4c7565beaf312fe097a15c40a13">m_version</a>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;} <span class="comment">// namespace _Wolframe</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif // _APP_INFO_HPP_INCLUDED</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#ifndef _APP_INFO_HPP_INCLUDED</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#define _APP_INFO_HPP_INCLUDED</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="version_8hpp.html">version.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#if defined( _MSC_VER )</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">        #define WOLFRAME_EXPORT __declspec( dllexport )</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="appInfo_8hpp.html#adf892ccaead9224bf5adf236d2d800ad">   44</a></span>&#160;<span class="preprocessor">        #define WOLFRAME_EXPORT</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">namespace </span>_Wolframe     {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1ApplicationInfo.html">   51</a></span>&#160;<span class="keyword">class </span><a class="code" href="class__Wolframe_1_1ApplicationInfo.html">ApplicationInfo</a></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="class__Wolframe_1_1ApplicationInfo.html#ada56b3f9a19c763c4c246aaded4cddbc">~ApplicationInfo</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="appInfo_8hpp.html#adf892ccaead9224bf5adf236d2d800ad">WOLFRAME_EXPORT</a> <span class="keyword">static</span> <a class="code" href="class__Wolframe_1_1ApplicationInfo.html">ApplicationInfo</a>&amp; <a class="code" href="class__Wolframe_1_1ApplicationInfo.html#a7440b38a2a930373bb31515d111cef4b">instance</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="appInfo_8hpp.html#adf892ccaead9224bf5adf236d2d800ad">WOLFRAME_EXPORT</a> <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1Version.html">Version</a>&amp; <a class="code" href="class__Wolframe_1_1ApplicationInfo.html#ad27b2ae651d7144cfce7c2e4d1af8ef5">version</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="appInfo_8hpp.html#adf892ccaead9224bf5adf236d2d800ad">WOLFRAME_EXPORT</a> <span class="keywordtype">void</span> <a class="code" href="class__Wolframe_1_1ApplicationInfo.html#ad27b2ae651d7144cfce7c2e4d1af8ef5">version</a>( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1Version.html">Version</a>&amp; ver );</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="class__Wolframe_1_1ApplicationInfo.html#a1b2c6ed458e837e2c0a7b84849fb9b93">ApplicationInfo</a>();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="comment">// make it noncopyable</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="class__Wolframe_1_1ApplicationInfo.html#a1b2c6ed458e837e2c0a7b84849fb9b93">ApplicationInfo</a>( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1ApplicationInfo.html">ApplicationInfo</a>&amp; );</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1ApplicationInfo.html">ApplicationInfo</a>&amp; <a class="code" href="class__Wolframe_1_1ApplicationInfo.html#acf4d0fb3cac4330a24a5a382aea82b19">operator= </a>( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1ApplicationInfo.html">ApplicationInfo</a>&amp; );</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="comment">// Real object data</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1ApplicationInfo.html#a67f9b4c7565beaf312fe097a15c40a13">   70</a></span>&#160;        <a class="code" href="class__Wolframe_1_1Version.html">Version</a> <a class="code" href="class__Wolframe_1_1ApplicationInfo.html#a67f9b4c7565beaf312fe097a15c40a13">m_version</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;} <span class="comment">// namespace _Wolframe</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif // _APP_INFO_HPP_INCLUDED</span></div>
 <div class="ttc" id="class__Wolframe_1_1ApplicationInfo_html_a7440b38a2a930373bb31515d111cef4b"><div class="ttname"><a href="class__Wolframe_1_1ApplicationInfo.html#a7440b38a2a930373bb31515d111cef4b">_Wolframe::ApplicationInfo::instance</a></div><div class="ttdeci">static WOLFRAME_EXPORT ApplicationInfo &amp; instance()</div></div>
 <div class="ttc" id="class__Wolframe_1_1ApplicationInfo_html_a1b2c6ed458e837e2c0a7b84849fb9b93"><div class="ttname"><a href="class__Wolframe_1_1ApplicationInfo.html#a1b2c6ed458e837e2c0a7b84849fb9b93">_Wolframe::ApplicationInfo::ApplicationInfo</a></div><div class="ttdeci">ApplicationInfo()</div></div>
 <div class="ttc" id="class__Wolframe_1_1ApplicationInfo_html_acf4d0fb3cac4330a24a5a382aea82b19"><div class="ttname"><a href="class__Wolframe_1_1ApplicationInfo.html#acf4d0fb3cac4330a24a5a382aea82b19">_Wolframe::ApplicationInfo::operator=</a></div><div class="ttdeci">const ApplicationInfo &amp; operator=(const ApplicationInfo &amp;)</div></div>
-<div class="ttc" id="class__Wolframe_1_1ApplicationInfo_html"><div class="ttname"><a href="class__Wolframe_1_1ApplicationInfo.html">_Wolframe::ApplicationInfo</a></div><div class="ttdef"><b>Definition:</b> appInfo.hpp:50</div></div>
-<div class="ttc" id="appInfo_8hpp_html_adf892ccaead9224bf5adf236d2d800ad"><div class="ttname"><a href="appInfo_8hpp.html#adf892ccaead9224bf5adf236d2d800ad">WOLFRAME_EXPORT</a></div><div class="ttdeci">#define WOLFRAME_EXPORT</div><div class="ttdef"><b>Definition:</b> appInfo.hpp:45</div></div>
-<div class="ttc" id="class__Wolframe_1_1Version_html"><div class="ttname"><a href="class__Wolframe_1_1Version.html">_Wolframe::Version</a></div><div class="ttdoc">version class </div><div class="ttdef"><b>Definition:</b> version.hpp:45</div></div>
-<div class="ttc" id="class__Wolframe_1_1ApplicationInfo_html_a67f9b4c7565beaf312fe097a15c40a13"><div class="ttname"><a href="class__Wolframe_1_1ApplicationInfo.html#a67f9b4c7565beaf312fe097a15c40a13">_Wolframe::ApplicationInfo::m_version</a></div><div class="ttdeci">Version m_version</div><div class="ttdef"><b>Definition:</b> appInfo.hpp:69</div></div>
+<div class="ttc" id="class__Wolframe_1_1ApplicationInfo_html"><div class="ttname"><a href="class__Wolframe_1_1ApplicationInfo.html">_Wolframe::ApplicationInfo</a></div><div class="ttdoc">Application wide singleton for the application info. </div><div class="ttdef"><b>Definition:</b> appInfo.hpp:51</div></div>
+<div class="ttc" id="appInfo_8hpp_html_adf892ccaead9224bf5adf236d2d800ad"><div class="ttname"><a href="appInfo_8hpp.html#adf892ccaead9224bf5adf236d2d800ad">WOLFRAME_EXPORT</a></div><div class="ttdeci">#define WOLFRAME_EXPORT</div><div class="ttdef"><b>Definition:</b> appInfo.hpp:44</div></div>
+<div class="ttc" id="class__Wolframe_1_1Version_html"><div class="ttname"><a href="class__Wolframe_1_1Version.html">_Wolframe::Version</a></div><div class="ttdoc">version class </div><div class="ttdef"><b>Definition:</b> version.hpp:44</div></div>
+<div class="ttc" id="class__Wolframe_1_1ApplicationInfo_html_a67f9b4c7565beaf312fe097a15c40a13"><div class="ttname"><a href="class__Wolframe_1_1ApplicationInfo.html#a67f9b4c7565beaf312fe097a15c40a13">_Wolframe::ApplicationInfo::m_version</a></div><div class="ttdeci">Version m_version</div><div class="ttdef"><b>Definition:</b> appInfo.hpp:70</div></div>
 <div class="ttc" id="class__Wolframe_1_1ApplicationInfo_html_ada56b3f9a19c763c4c246aaded4cddbc"><div class="ttname"><a href="class__Wolframe_1_1ApplicationInfo.html#ada56b3f9a19c763c4c246aaded4cddbc">_Wolframe::ApplicationInfo::~ApplicationInfo</a></div><div class="ttdeci">~ApplicationInfo()</div></div>
 <div class="ttc" id="class__Wolframe_1_1ApplicationInfo_html_ad27b2ae651d7144cfce7c2e4d1af8ef5"><div class="ttname"><a href="class__Wolframe_1_1ApplicationInfo.html#ad27b2ae651d7144cfce7c2e4d1af8ef5">_Wolframe::ApplicationInfo::version</a></div><div class="ttdeci">WOLFRAME_EXPORT const Version &amp; version() const </div></div>
-<div class="ttc" id="version_8hpp_html"><div class="ttname"><a href="version_8hpp.html">version.hpp</a></div></div>
+<div class="ttc" id="version_8hpp_html"><div class="ttname"><a href="version_8hpp.html">version.hpp</a></div><div class="ttdoc">Header file for the Version class. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 16 2014 15:30:48 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 18 2014 09:15:24 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>
