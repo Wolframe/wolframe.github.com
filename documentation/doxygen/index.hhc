@@ -4,6 +4,11 @@
 <param name="FrameName" value="right">
 </OBJECT>
 <UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Wolframe, a modular, 3-tier application server written in C++"><param name="Local" value="index.html"><param name="ImageNumber" value="11"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Writing a content filter module for another format than XML or JSON"><param name="Local" value="index.html#FilterModule"><param name="ImageNumber" value="1"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Writing a module for a form function (struct in, struct out) as function, that is callable by Wolframe and any language binding in your application"><param name="Local" value="index.html#FormFunctionModule"><param name="ImageNumber" value="1"></OBJECT>
+  </UL>
 <LI><OBJECT type="text/sitemap"><param name="Name" value="Namespaces"><param name="ImageNumber" value="1"></OBJECT>
   <UL>
   <LI><OBJECT type="text/sitemap"><param name="Name" value="Namespace List"><param name="Local" value="namespaces.html"><param name="ImageNumber" value="1"></OBJECT>
@@ -4381,11 +4386,13 @@
       <LI><OBJECT type="text/sitemap"><param name="Name" value="isUpdatable"><param name="Local" value="classJobScheduleProvider.html#a810af494fc6fae6d684b3aace9fadd88"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="name"><param name="Local" value="classJobScheduleProvider.html#a495ebd39fbb4d6487bf8f4563b1e8224"><param name="ImageNumber" value="11"></OBJECT>
       </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="LogTraceContext"><param name="Local" value="classLogTraceContext.html"><param name="ImageNumber" value="11"></OBJECT>
     </UL>
   <LI><OBJECT type="text/sitemap"><param name="Name" value="Class Index"><param name="Local" value="classes.html"><param name="ImageNumber" value="11"></OBJECT>
   <LI><OBJECT type="text/sitemap"><param name="Name" value="Class Hierarchy"><param name="Local" value="hierarchy.html"><param name="ImageNumber" value="1"></OBJECT>
     <UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::types::AddressRestriction"><param name="Local" value="class__Wolframe_1_1types_1_1AddressRestriction.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::serialize::ApiFormData"><param name="Local" value="class__Wolframe_1_1serialize_1_1ApiFormData.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::config::ApplicationConfiguration"><param name="Local" value="struct__Wolframe_1_1config_1_1ApplicationConfiguration.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::ApplicationInfo"><param name="Local" value="class__Wolframe_1_1ApplicationInfo.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::utils::ArrayDoublingAllocator"><param name="Local" value="class__Wolframe_1_1utils_1_1ArrayDoublingAllocator.html"><param name="ImageNumber" value="1"></OBJECT>
@@ -4540,6 +4547,35 @@
       </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::utils::FileType"><param name="Local" value="struct__Wolframe_1_1utils_1_1FileType.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::Filter"><param name="Local" value="class__Wolframe_1_1langbind_1_1Filter.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::FilterBase"><param name="Local" value="class__Wolframe_1_1langbind_1_1FilterBase.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::InputFilter"><param name="Local" value="class__Wolframe_1_1langbind_1_1InputFilter.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::BufferingInputFilter"><param name="Local" value="class__Wolframe_1_1langbind_1_1BufferingInputFilter.html"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::InputFilterScope"><param name="Local" value="class__Wolframe_1_1langbind_1_1InputFilterScope.html"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::OutputFilter"><param name="Local" value="class__Wolframe_1_1langbind_1_1OutputFilter.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::TypedInputFilter"><param name="Local" value="class__Wolframe_1_1langbind_1_1TypedInputFilter.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::ExecContextInputFilter"><param name="Local" value="class__Wolframe_1_1langbind_1_1ExecContextInputFilter.html"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::JoinInputFilter"><param name="Local" value="class__Wolframe_1_1langbind_1_1JoinInputFilter.html"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::PropertyTreeInputFilter"><param name="Local" value="class__Wolframe_1_1langbind_1_1PropertyTreeInputFilter.html"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::SingleElementInputFilter"><param name="Local" value="class__Wolframe_1_1langbind_1_1SingleElementInputFilter.html"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::TypedInputFilterScope"><param name="Local" value="class__Wolframe_1_1langbind_1_1TypedInputFilterScope.html"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::TypingInputFilter"><param name="Local" value="class__Wolframe_1_1langbind_1_1TypingInputFilter.html"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::serialize::DDLStructSerializer"><param name="Local" value="class__Wolframe_1_1serialize_1_1DDLStructSerializer.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::serialize::DDLFormSerializer"><param name="Local" value="class__Wolframe_1_1serialize_1_1DDLFormSerializer.html"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::serialize::StructSerializer"><param name="Local" value="class__Wolframe_1_1serialize_1_1StructSerializer.html"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::TypedOutputFilter"><param name="Local" value="class__Wolframe_1_1langbind_1_1TypedOutputFilter.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::PropertyTreeOutputFilter"><param name="Local" value="class__Wolframe_1_1langbind_1_1PropertyTreeOutputFilter.html"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::ToStringFilter"><param name="Local" value="class__Wolframe_1_1langbind_1_1ToStringFilter.html"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::TypingOutputFilter"><param name="Local" value="class__Wolframe_1_1langbind_1_1TypingOutputFilter.html"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::FilterDef"><param name="Local" value="struct__Wolframe_1_1langbind_1_1FilterDef.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::FilterType"><param name="Local" value="class__Wolframe_1_1langbind_1_1FilterType.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
@@ -4566,6 +4602,7 @@
       <UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::AAAA::ConnectInfo"><param name="Local" value="struct__Wolframe_1_1AAAA_1_1ConnectInfo.html"><param name="ImageNumber" value="11"></OBJECT>
       </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::Input"><param name="Local" value="class__Wolframe_1_1langbind_1_1Input.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::db::vm::InstructionSet"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::db::vm::ProgramImage"><param name="Local" value="class__Wolframe_1_1db_1_1vm_1_1ProgramImage.html"><param name="ImageNumber" value="11"></OBJECT>
@@ -4602,6 +4639,7 @@
       <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::protocol::MemBlock::ArrayBoundReadError"><param name="Local" value="struct__Wolframe_1_1protocol_1_1MemBlock_1_1ArrayBoundReadError.html"><param name="ImageNumber" value="11"></OBJECT>
       </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::log::LogLevel"><param name="Local" value="class__Wolframe_1_1log_1_1LogLevel.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="LogTraceContext"><param name="Local" value="classLogTraceContext.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="map"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::types::keymap&lt; ValueType &gt;"><param name="Local" value="struct__Wolframe_1_1types_1_1keymap.html"><param name="ImageNumber" value="11"></OBJECT>
@@ -4686,6 +4724,7 @@
         </UL>
       </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::ObjectPool&lt; objectType &gt;"><param name="Local" value="class__Wolframe_1_1ObjectPool.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::Output"><param name="Local" value="class__Wolframe_1_1langbind_1_1Output.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::db::vm::Output"><param name="Local" value="class__Wolframe_1_1db_1_1vm_1_1Output.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::config::Parser"><param name="Local" value="class__Wolframe_1_1config_1_1Parser.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::protocol::Parser"><param name="Local" value="class__Wolframe_1_1protocol_1_1Parser.html"><param name="ImageNumber" value="1"></OBJECT>
@@ -4721,6 +4760,7 @@
       <UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::GlobalRandomGenerator"><param name="Local" value="class__Wolframe_1_1GlobalRandomGenerator.html"><param name="ImageNumber" value="11"></OBJECT>
       </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::RedirectFilterClosure"><param name="Local" value="class__Wolframe_1_1langbind_1_1RedirectFilterClosure.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::db::Transaction::Result"><param name="Local" value="class__Wolframe_1_1db_1_1Transaction_1_1Result.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::db::vm::ProgramInstance::ResultFlags"><param name="Local" value="struct__Wolframe_1_1db_1_1vm_1_1ProgramInstance_1_1ResultFlags.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::RuntimeEnvironment"><param name="Local" value="class__Wolframe_1_1langbind_1_1RuntimeEnvironment.html"><param name="ImageNumber" value="11"></OBJECT>
@@ -4745,15 +4785,15 @@
         <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::db::SubstitutingStatement"><param name="Local" value="class__Wolframe_1_1db_1_1SubstitutingStatement.html"><param name="ImageNumber" value="11"></OBJECT>
         </UL>
       </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::types::String"><param name="Local" value="class__Wolframe_1_1types_1_1String.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::types::StringConst"><param name="Local" value="class__Wolframe_1_1types_1_1StringConst.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="string"><param name="ImageNumber" value="1"></OBJECT>
       <UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::types::keystring"><param name="Local" value="struct__Wolframe_1_1types_1_1keystring.html"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::types::PropertyTree::Value"><param name="Local" value="class__Wolframe_1_1types_1_1PropertyTree_1_1Value.html"><param name="ImageNumber" value="11"></OBJECT>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::types::SecureString"><param name="Local" value="class__Wolframe_1_1types_1_1SecureString.html"><param name="ImageNumber" value="11"></OBJECT>
-      </UL>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::types::String"><param name="Local" value="class__Wolframe_1_1types_1_1String.html"><param name="ImageNumber" value="1"></OBJECT>
-      <UL>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::types::StringConst"><param name="Local" value="class__Wolframe_1_1types_1_1StringConst.html"><param name="ImageNumber" value="11"></OBJECT>
       </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::types::DateTime::StringFormat"><param name="Local" value="struct__Wolframe_1_1types_1_1DateTime_1_1StringFormat.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::serialize::traits::struct_"><param name="Local" value="struct__Wolframe_1_1serialize_1_1traits_1_1struct__.html"><param name="ImageNumber" value="11"></OBJECT>
@@ -4768,45 +4808,7 @@
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::serialize::traits::has_description_method_noprm&lt; T &gt;::tester_static_signature&lt;&gt;"><param name="Local" value="struct__Wolframe_1_1serialize_1_1traits_1_1has__description__method__noprm_1_1tester__static__signature.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::db::Transaction"><param name="Local" value="class__Wolframe_1_1db_1_1Transaction.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::db::TransactionExecStatemachine"><param name="Local" value="class__Wolframe_1_1db_1_1TransactionExecStatemachine.html"><param name="ImageNumber" value="11"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::utils::TypeSignature"><param name="Local" value="class__Wolframe_1_1utils_1_1TypeSignature.html"><param name="ImageNumber" value="1"></OBJECT>
-      <UL>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::FilterBase"><param name="Local" value="class__Wolframe_1_1langbind_1_1FilterBase.html"><param name="ImageNumber" value="1"></OBJECT>
-        <UL>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::InputFilter"><param name="Local" value="class__Wolframe_1_1langbind_1_1InputFilter.html"><param name="ImageNumber" value="1"></OBJECT>
-          <UL>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::BufferingInputFilter"><param name="Local" value="class__Wolframe_1_1langbind_1_1BufferingInputFilter.html"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::InputFilterScope"><param name="Local" value="class__Wolframe_1_1langbind_1_1InputFilterScope.html"><param name="ImageNumber" value="11"></OBJECT>
-          </UL>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::OutputFilter"><param name="Local" value="class__Wolframe_1_1langbind_1_1OutputFilter.html"><param name="ImageNumber" value="11"></OBJECT>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::TypedInputFilter"><param name="Local" value="class__Wolframe_1_1langbind_1_1TypedInputFilter.html"><param name="ImageNumber" value="1"></OBJECT>
-          <UL>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::ExecContextInputFilter"><param name="Local" value="class__Wolframe_1_1langbind_1_1ExecContextInputFilter.html"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::JoinInputFilter"><param name="Local" value="class__Wolframe_1_1langbind_1_1JoinInputFilter.html"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::PropertyTreeInputFilter"><param name="Local" value="class__Wolframe_1_1langbind_1_1PropertyTreeInputFilter.html"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::SingleElementInputFilter"><param name="Local" value="class__Wolframe_1_1langbind_1_1SingleElementInputFilter.html"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::TypedInputFilterScope"><param name="Local" value="class__Wolframe_1_1langbind_1_1TypedInputFilterScope.html"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::TypingInputFilter"><param name="Local" value="class__Wolframe_1_1langbind_1_1TypingInputFilter.html"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::serialize::DDLStructSerializer"><param name="Local" value="class__Wolframe_1_1serialize_1_1DDLStructSerializer.html"><param name="ImageNumber" value="1"></OBJECT>
-            <UL>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::serialize::DDLFormSerializer"><param name="Local" value="class__Wolframe_1_1serialize_1_1DDLFormSerializer.html"><param name="ImageNumber" value="11"></OBJECT>
-            </UL>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::serialize::StructSerializer"><param name="Local" value="class__Wolframe_1_1serialize_1_1StructSerializer.html"><param name="ImageNumber" value="11"></OBJECT>
-          </UL>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::TypedOutputFilter"><param name="Local" value="class__Wolframe_1_1langbind_1_1TypedOutputFilter.html"><param name="ImageNumber" value="1"></OBJECT>
-          <UL>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::PropertyTreeOutputFilter"><param name="Local" value="class__Wolframe_1_1langbind_1_1PropertyTreeOutputFilter.html"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::ToStringFilter"><param name="Local" value="class__Wolframe_1_1langbind_1_1ToStringFilter.html"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::TypingOutputFilter"><param name="Local" value="class__Wolframe_1_1langbind_1_1TypingOutputFilter.html"><param name="ImageNumber" value="11"></OBJECT>
-          </UL>
-        </UL>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::Input"><param name="Local" value="class__Wolframe_1_1langbind_1_1Input.html"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::Output"><param name="Local" value="class__Wolframe_1_1langbind_1_1Output.html"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::langbind::RedirectFilterClosure"><param name="Local" value="class__Wolframe_1_1langbind_1_1RedirectFilterClosure.html"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::serialize::ApiFormData"><param name="Local" value="class__Wolframe_1_1serialize_1_1ApiFormData.html"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::serialize::CppFormFunctionClosure"><param name="Local" value="class__Wolframe_1_1serialize_1_1CppFormFunctionClosure.html"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::serialize::DDLFormParser"><param name="Local" value="class__Wolframe_1_1serialize_1_1DDLFormParser.html"><param name="ImageNumber" value="11"></OBJECT>
-      <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::serialize::DDLFormSerializer"><param name="Local" value="class__Wolframe_1_1serialize_1_1DDLFormSerializer.html"><param name="ImageNumber" value="11"></OBJECT>
-      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::utils::TypeSignature"><param name="Local" value="class__Wolframe_1_1utils_1_1TypeSignature.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::AAAA::User"><param name="Local" value="class__Wolframe_1_1AAAA_1_1User.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::db::vm::ValueTupleSet"><param name="Local" value="class__Wolframe_1_1db_1_1vm_1_1ValueTupleSet.html"><param name="ImageNumber" value="11"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="_Wolframe::types::Variant"><param name="Local" value="class__Wolframe_1_1types_1_1Variant.html"><param name="ImageNumber" value="1"></OBJECT>
@@ -4953,6 +4955,7 @@
       <LI><OBJECT type="text/sitemap"><param name="Name" value="cpp"><param name="Local" value="dir_5b281f84b2df35b33df74be975fd6c83.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="namespaces.hpp"><param name="Local" value="namespaces_8hpp.html"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="toc.hpp"><param name="Local" value="toc_8hpp.html"><param name="ImageNumber" value="11"></OBJECT>
         </UL>
       </UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="include"><param name="Local" value="dir_d44c64559bbebec7f509842c48db8b23.html"><param name="ImageNumber" value="1"></OBJECT>
@@ -5549,9 +5552,9 @@
           <LI><OBJECT type="text/sitemap"><param name="Name" value="WF_FORM_FUNCTION"><param name="Local" value="cppFormFunctionModuleMacros_8hpp.html#a67e8156f7bd7808f65b17c3090aa08fc"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="WF_FORM_PROCEDURE"><param name="Local" value="cppFormFunctionModuleMacros_8hpp.html#ab55a91ce91d8561560ef3c7ebd86ca1f"><param name="ImageNumber" value="11"></OBJECT>
           </UL>
-        <LI><OBJECT type="text/sitemap"><param name="Name" value="customDatatypeModuleMacros.hpp"><param name="Local" value="customDatatypeModuleMacros_8hpp.html"><param name="ImageNumber" value="1"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="customDataTypeModuleMacros.hpp"><param name="Local" value="customDataTypeModuleMacros_8hpp.html"><param name="ImageNumber" value="1"></OBJECT>
           <UL>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="WF_CUSTOM_DATATYPE"><param name="Local" value="customDatatypeModuleMacros_8hpp.html#a3bf00fa9fee9b2aed5ca8a9468626dd1"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="WF_CUSTOM_DATATYPE"><param name="Local" value="customDataTypeModuleMacros_8hpp.html#a3bf00fa9fee9b2aed5ca8a9468626dd1"><param name="ImageNumber" value="11"></OBJECT>
           </UL>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="ddlCompilerModuleMacros.hpp"><param name="Local" value="ddlCompilerModuleMacros_8hpp.html"><param name="ImageNumber" value="1"></OBJECT>
           <UL>

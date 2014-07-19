@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-	<title>Wolframe: include/appdevel/customDatatypeModuleMacros.hpp Source File</title>
+	<title>Wolframe: include/appdevel/customDataTypeModuleMacros.hpp File Reference</title>
 	<meta name="generator" content="Doxygen 1.8.7"/>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -84,63 +84,73 @@
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
-<div class="title">customDatatypeModuleMacros.hpp</div>  </div>
+<div class="title">customDataTypeModuleMacros.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="customDatatypeModuleMacros_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/************************************************************************</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> Copyright (C) 2011 - 2014 Project Wolframe.</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> All rights reserved.</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> This file is part of Project Wolframe.</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> Commercial Usage</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">    Licensees holding valid Project Wolframe Commercial licenses may</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">    use this file in accordance with the Project Wolframe</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">    Commercial License Agreement provided with the Software or,</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">    alternatively, in accordance with the terms contained</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">    in a written agreement between the licensee and Project Wolframe.</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> GNU General Public License Usage</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">    Alternatively, you can redistribute this file and/or modify it</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">    under the terms of the GNU General Public License as published by</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">    the Free Software Foundation, either version 3 of the License, or</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">    (at your option) any later version.</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">    Wolframe is distributed in the hope that it will be useful,</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">    but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">    GNU General Public License for more details.</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">    You should have received a copy of the GNU General Public License</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">    along with Wolframe.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> If you have questions regarding the use of this file, please contact</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> Project Wolframe.</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">************************************************************************/</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="customDataTypeBuilder_8hpp.html">appdevel/module/customDataTypeBuilder.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="customDatatypeModuleMacros_8hpp.html#a3bf00fa9fee9b2aed5ca8a9468626dd1">   38</a></span>&#160;<span class="preprocessor">#define WF_CUSTOM_DATATYPE(NAME,CONSTRUCTOR)\</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">        {\</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">                struct Constructor\</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">                {\</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">                        static _Wolframe::module::BuilderBase* impl()\</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">                        {\</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">                                return new _Wolframe::module::CustomDataTypeBuilder( &quot;CustomDataType_&quot; #NAME, NAME, CONSTRUCTOR);\</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">                        }\</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">                };\</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">                (*this)(&amp;Constructor ::impl);\</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">        }</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="ttc" id="customDataTypeBuilder_8hpp_html"><div class="ttname"><a href="customDataTypeBuilder_8hpp.html">customDataTypeBuilder.hpp</a></div><div class="ttdoc">Interface template for object builder of form functions. </div></div>
-</div><!-- fragment --></div><!-- contents -->
+
+<p>Macros for defining a custom datatype module.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="customDataTypeBuilder_8hpp_source.html">appdevel/module/customDataTypeBuilder.hpp</a>&quot;</code><br />
+</div>
+<p><a href="customDataTypeModuleMacros_8hpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a3bf00fa9fee9b2aed5ca8a9468626dd1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="customDataTypeModuleMacros_8hpp.html#a3bf00fa9fee9b2aed5ca8a9468626dd1">WF_CUSTOM_DATATYPE</a>(NAME, CONSTRUCTOR)</td></tr>
+<tr class="memdesc:a3bf00fa9fee9b2aed5ca8a9468626dd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a custom datatype in the CUSTOM_DATATYPE_MODULE section.  <a href="#a3bf00fa9fee9b2aed5ca8a9468626dd1">More...</a><br /></td></tr>
+<tr class="separator:a3bf00fa9fee9b2aed5ca8a9468626dd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Macros for defining a custom datatype module. </p>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a3bf00fa9fee9b2aed5ca8a9468626dd1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WF_CUSTOM_DATATYPE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">NAME, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">CONSTRUCTOR&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">{\</div>
+<div class="line">                struct Constructor\</div>
+<div class="line">                {\</div>
+<div class="line">                        static <a class="code" href="class__Wolframe_1_1module_1_1BuilderBase.html">_Wolframe::module::BuilderBase</a>* impl()\</div>
+<div class="line">                        {\</div>
+<div class="line">                                return <span class="keyword">new</span> <a class="code" href="class__Wolframe_1_1module_1_1CustomDataTypeBuilder.html">_Wolframe::module::CustomDataTypeBuilder</a>( <span class="stringliteral">&quot;CustomDataType_&quot;</span> #NAME, NAME, CONSTRUCTOR);\</div>
+<div class="line">                        }\</div>
+<div class="line">                };\</div>
+<div class="line">                (*this)(&amp;Constructor ::impl);\</div>
+<div class="line">        }</div>
+<div class="ttc" id="class__Wolframe_1_1module_1_1CustomDataTypeBuilder_html"><div class="ttname"><a href="class__Wolframe_1_1module_1_1CustomDataTypeBuilder.html">_Wolframe::module::CustomDataTypeBuilder</a></div><div class="ttdoc">Builder of a custom data type constructor for language bindings. </div><div class="ttdef"><b>Definition:</b> customDataTypeBuilder.hpp:92</div></div>
+<div class="ttc" id="class__Wolframe_1_1module_1_1BuilderBase_html"><div class="ttname"><a href="class__Wolframe_1_1module_1_1BuilderBase.html">_Wolframe::module::BuilderBase</a></div><div class="ttdef"><b>Definition:</b> moduleInterface.hpp:52</div></div>
+</div><!-- fragment -->
+<p>Defines a custom datatype in the CUSTOM_DATATYPE_MODULE section. </p>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 18 2014 14:33:40 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jul 19 2014 10:05:55 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

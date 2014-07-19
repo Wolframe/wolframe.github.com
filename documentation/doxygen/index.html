@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-	<title>Wolframe: Main Page</title>
+	<title>Wolframe: Wolframe, a modular, 3-tier application server written in C++</title>
 	<meta name="generator" content="Doxygen 1.8.7"/>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -75,14 +75,79 @@
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">Wolframe Documentation</div>  </div>
+<div class="title">Wolframe, a modular, 3-tier application server written in C++ </div>  </div>
 </div><!--header-->
 <div class="contents">
-</div><!-- contents -->
+<div class="textblock"><h1><a class="anchor" id="FilterModule"></a>
+Writing a content filter module for another format than XML or JSON</h1>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="moduleFrameMacros_8hpp.html">appdevel/moduleFrameMacros.hpp</a>&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="filterModuleMacros_8hpp.html">appdevel/filterModuleMacros.hpp</a>&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="filter_8hpp.html">filter/filter.hpp</a>&quot;</span></div>
+<div class="line"></div>
+<div class="line"><span class="keyword">static</span> <a class="code" href="class__Wolframe_1_1langbind_1_1FilterType.html">_Wolframe::langbind::FilterType</a>* createMyFilterType()</div>
+<div class="line">{</div>
+<div class="line">        <span class="comment">// ... here we create our own filter type object</span></div>
+<div class="line">}</div>
+<div class="line"></div>
+<div class="line"><a class="code" href="moduleFrameMacros_8hpp.html#a5c94abd61d1619c761279522e203a4a4">WF_MODULE_BEGIN</a>( <span class="stringliteral">&quot;MyFilter&quot;</span>, <span class="stringliteral">&quot;my content filter&quot;</span>)</div>
+<div class="line"> <a class="code" href="filterModuleMacros_8hpp.html#ab47a8dc31ae9827e0e6963a957e2858b">WF_FILTER_TYPE</a>( &quot;myfilter&quot;, MyFilterType::create)</div>
+<div class="line"><a class="code" href="moduleFrameMacros_8hpp.html#ad59c3d56591ee809897499a5d99bcd04">WF_MODULE_END</a></div>
+</div><!-- fragment --><h1><a class="anchor" id="FormFunctionModule"></a>
+Writing a module for a form function (struct in, struct out) as function, that is callable by Wolframe and any language binding in your application</h1>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="moduleFrameMacros_8hpp.html">appdevel/moduleFrameMacros.hpp</a>&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="cppFormFunctionModuleMacros_8hpp.html">appdevel/cppFormFunctionModuleMacros.hpp</a>&quot;</span></div>
+<div class="line"></div>
+<div class="line"><span class="keyword">struct </span>MyInput</div>
+<div class="line">{</div>
+<div class="line">        std::string data;</div>
+<div class="line">        <span class="keywordtype">int</span> id;</div>
+<div class="line">        <span class="comment">// ... your data structures are here</span></div>
+<div class="line"></div>
+<div class="line">        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html">_Wolframe::serialize::StructDescriptionBase</a> *getStructDescription()</div>
+<div class="line">};</div>
+<div class="line"></div>
+<div class="line"><span class="keyword">class </span>MyInputDescription :<span class="keyword">public</span> serialize::StructDescription&lt;MyInput&gt;</div>
+<div class="line">{</div>
+<div class="line">        MyInputDescription()</div>
+<div class="line">        {</div>
+<div class="line">                <span class="comment">// here you define introspection for your data:</span></div>
+<div class="line">                (*this)</div>
+<div class="line">                        (<span class="stringliteral">&quot;data&quot;</span>, &amp;MyInput::data)</div>
+<div class="line">                        (<span class="stringliteral">&quot;id&quot;</span>, &amp;MyInput::id)</div>
+<div class="line">                ;</div>
+<div class="line">        }</div>
+<div class="line">}</div>
+<div class="line"></div>
+<div class="line"><span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html">_Wolframe::serialize::StructDescriptionBase</a>* MyInput::getStructDescription()</div>
+<div class="line">{</div>
+<div class="line">        <span class="keyword">static</span> MyInputDescription rt;</div>
+<div class="line">        <span class="keywordflow">return</span> &amp;rt;</div>
+<div class="line">}</div>
+<div class="line"></div>
+<div class="line"><span class="keyword">struct </span>MyOutput</div>
+<div class="line">{</div>
+<div class="line">        <span class="comment">// ... your data structures are here as in MyInput</span></div>
+<div class="line"></div>
+<div class="line">        <span class="keyword">static</span> <span class="keyword">const</span> serialize::StructDescriptionBase *getStructDescription()</div>
+<div class="line">        {</div>
+<div class="line">                <span class="comment">// ... your data structure description is here as for MyInput</span></div>
+<div class="line">        }</div>
+<div class="line">};</div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"><span class="keyword">static</span> <span class="keywordtype">int</span> myFunction( proc::ExecContext* ctx, MyOutput&amp; res, <span class="keyword">const</span> MyInput&amp; param)</div>
+<div class="line">{</div>
+<div class="line">        <span class="comment">// ... your function implementation is here</span></div>
+<div class="line">}</div>
+<div class="line"></div>
+<div class="line"><a class="code" href="moduleFrameMacros_8hpp.html#a5c94abd61d1619c761279522e203a4a4">WF_MODULE_BEGIN</a>( <span class="stringliteral">&quot;MyFunctions&quot;</span>, <span class="stringliteral">&quot;my functions short description&quot;</span>)</div>
+<div class="line"> <a class="code" href="cppFormFunctionModuleMacros_8hpp.html#a67e8156f7bd7808f65b17c3090aa08fc">WF_FORM_FUNCTION</a>( &quot;myfunc&quot;, myFunction, MyOutput, MyInput)</div>
+<div class="line"><a class="code" href="moduleFrameMacros_8hpp.html#ad59c3d56591ee809897499a5d99bcd04">WF_MODULE_END</a></div>
+</div><!-- fragment --> </div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 18 2014 14:34:09 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jul 19 2014 10:06:20 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

@@ -114,14 +114,16 @@ Inheritance diagram for _Wolframe::db::vm::ProgramInstance:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1db_1_1vm_1_1ProgramInstance_1_1ResultFlags.html">ResultFlags</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1db_1_1vm_1_1ProgramInstance_1_1ResultFlags.html">ResultFlags</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags defined in the database command between DO and the statement (NONEMPTY,UNIQUE)  <a href="struct__Wolframe_1_1db_1_1vm_1_1ProgramInstance_1_1ResultFlags.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1db_1_1vm_1_1ProgramInstance_1_1StackElement.html">StackElement</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1db_1_1vm_1_1ProgramInstance_1_1StackElement.html">StackElement</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">State stack element of the virtual machine executing a transaction.  <a href="struct__Wolframe_1_1db_1_1vm_1_1ProgramInstance_1_1StackElement.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a84b140942aa7b326817f63e05b27f275"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramInstance.html#a84b140942aa7b326817f63e05b27f275">LogTraceCallBack</a> )(const LogTraceContext *prgcontext, unsigned int ip_)</td></tr>
+<tr class="memitem:a84b140942aa7b326817f63e05b27f275"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramInstance.html#a84b140942aa7b326817f63e05b27f275">LogTraceCallBack</a> )(const <a class="el" href="classLogTraceContext.html">LogTraceContext</a> *prgcontext, unsigned int ip_)</td></tr>
 <tr class="separator:a84b140942aa7b326817f63e05b27f275"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_struct__Wolframe_1_1db_1_1vm_1_1InstructionSet"><td colspan="2" onclick="javascript:toggleInherit('pub_types_struct__Wolframe_1_1db_1_1vm_1_1InstructionSet')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html">_Wolframe::db::vm::InstructionSet</a></td></tr>
 <tr class="memitem:aab066c2db55711490c3dba7facdedbba inherit pub_types_struct__Wolframe_1_1db_1_1vm_1_1InstructionSet"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1db_1_1vm_1_1InstructionSet.html#aab066c2db55711490c3dba7facdedbba">OpCode</a> { <br />
@@ -238,12 +240,12 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad92e5b5faf1b4351d1362c281074a59f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramInstance.html#ad92e5b5faf1b4351d1362c281074a59f">ProgramInstance</a> ()</td></tr>
-<tr class="memdesc:ad92e5b5faf1b4351d1362c281074a59f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="#ad92e5b5faf1b4351d1362c281074a59f">More...</a><br /></td></tr>
+<tr class="memdesc:ad92e5b5faf1b4351d1362c281074a59f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#ad92e5b5faf1b4351d1362c281074a59f">More...</a><br /></td></tr>
 <tr class="separator:ad92e5b5faf1b4351d1362c281074a59f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbdb19fb6a0e3a96f6cd02765743243e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramInstance.html#afbdb19fb6a0e3a96f6cd02765743243e">ProgramInstance</a> (const <a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramInstance.html">ProgramInstance</a> &amp;o)</td></tr>
 <tr class="memdesc:afbdb19fb6a0e3a96f6cd02765743243e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="#afbdb19fb6a0e3a96f6cd02765743243e">More...</a><br /></td></tr>
 <tr class="separator:afbdb19fb6a0e3a96f6cd02765743243e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88c5ce74e65ef214a74a5d3f954900c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramInstance.html#a88c5ce74e65ef214a74a5d3f954900c8">ProgramInstance</a> (const <a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramImage.html">ProgramImage</a> &amp;program_, <a class="el" href="class__Wolframe_1_1db_1_1TransactionExecStatemachine.html">TransactionExecStatemachine</a> *db_stm_, <a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramInstance.html#a84b140942aa7b326817f63e05b27f275">LogTraceCallBack</a> logTraceCallBack_=0, const LogTraceContext *logTraceContext_=0)</td></tr>
+<tr class="memitem:a88c5ce74e65ef214a74a5d3f954900c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramInstance.html#a88c5ce74e65ef214a74a5d3f954900c8">ProgramInstance</a> (const <a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramImage.html">ProgramImage</a> &amp;program_, <a class="el" href="class__Wolframe_1_1db_1_1TransactionExecStatemachine.html">TransactionExecStatemachine</a> *db_stm_, <a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramInstance.html#a84b140942aa7b326817f63e05b27f275">LogTraceCallBack</a> logTraceCallBack_=0, const <a class="el" href="classLogTraceContext.html">LogTraceContext</a> *logTraceContext_=0)</td></tr>
 <tr class="memdesc:a88c5ce74e65ef214a74a5d3f954900c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a88c5ce74e65ef214a74a5d3f954900c8">More...</a><br /></td></tr>
 <tr class="separator:a88c5ce74e65ef214a74a5d3f954900c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65dc567e399367fce5cd1418914e3f35"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramInstance.html#a65dc567e399367fce5cd1418914e3f35">execute</a> ()</td></tr>
@@ -319,7 +321,7 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a64e7833b8cd5a2e37779a4f22d71b418"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramInstance.html#a84b140942aa7b326817f63e05b27f275">LogTraceCallBack</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramInstance.html#a64e7833b8cd5a2e37779a4f22d71b418">m_logTraceCallBack</a></td></tr>
 <tr class="memdesc:a64e7833b8cd5a2e37779a4f22d71b418"><td class="mdescLeft">&#160;</td><td class="mdescRight">NULL or callback procedure for logging execution that is be called after every instruction executed.  <a href="#a64e7833b8cd5a2e37779a4f22d71b418">More...</a><br /></td></tr>
 <tr class="separator:a64e7833b8cd5a2e37779a4f22d71b418"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9514acd80fda344dafc9a1818c58674b"><td class="memItemLeft" align="right" valign="top">const LogTraceContext *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramInstance.html#a9514acd80fda344dafc9a1818c58674b">m_logTraceContext</a></td></tr>
+<tr class="memitem:a9514acd80fda344dafc9a1818c58674b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classLogTraceContext.html">LogTraceContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramInstance.html#a9514acd80fda344dafc9a1818c58674b">m_logTraceContext</a></td></tr>
 <tr class="memdesc:a9514acd80fda344dafc9a1818c58674b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Context for 'm_logTraceCallBack'.  <a href="#a9514acd80fda344dafc9a1818c58674b">More...</a><br /></td></tr>
 <tr class="separator:a9514acd80fda344dafc9a1818c58674b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -367,7 +369,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* _Wolframe::db::vm::ProgramInstance::LogTraceCallBack)(const LogTraceContext *prgcontext, unsigned int ip_)</td>
+          <td class="memname">typedef void(* _Wolframe::db::vm::ProgramInstance::LogTraceCallBack)(const <a class="el" href="classLogTraceContext.html">LogTraceContext</a> *prgcontext, unsigned int ip_)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -396,7 +398,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Copy constructor. </p>
+<p>Default constructor. </p>
 
 </div>
 </div>
@@ -451,7 +453,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const LogTraceContext *&#160;</td>
+          <td class="paramtype">const <a class="el" href="classLogTraceContext.html">LogTraceContext</a> *&#160;</td>
           <td class="paramname"><em>logTraceContext_</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
@@ -1021,7 +1023,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const LogTraceContext* _Wolframe::db::vm::ProgramInstance::m_logTraceContext</td>
+          <td class="memname">const <a class="el" href="classLogTraceContext.html">LogTraceContext</a>* _Wolframe::db::vm::ProgramInstance::m_logTraceContext</td>
         </tr>
       </table>
   </td>
@@ -1130,7 +1132,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 18 2014 14:33:55 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jul 19 2014 10:06:07 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>
