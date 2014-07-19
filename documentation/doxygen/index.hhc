@@ -6,8 +6,18 @@
 <UL>
 <LI><OBJECT type="text/sitemap"><param name="Name" value="Wolframe, a modular, 3-tier application server written in C++"><param name="Local" value="index.html"><param name="ImageNumber" value="11"></OBJECT>
   <UL>
-  <LI><OBJECT type="text/sitemap"><param name="Name" value="Writing a content filter module for another format than XML or JSON"><param name="Local" value="index.html#FilterModule"><param name="ImageNumber" value="1"></OBJECT>
-  <LI><OBJECT type="text/sitemap"><param name="Name" value="Writing a module for a form function (struct in, struct out) as function, that is callable by Wolframe and any language binding in your application"><param name="Local" value="index.html#FormFunctionModule"><param name="ImageNumber" value="1"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Writing modules for Wolframe"><param name="Local" value="index.html#ModuleTypes"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Introduction"><param name="Local" value="index.html#ModuleTypeIntro"><param name="ImageNumber" value="1"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Module component types in Wolframe"><param name="Local" value="index.html#ModuleObjTypeList"><param name="ImageNumber" value="1"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Special module types in Wolframe"><param name="Local" value="index.html#ModuleTypeList"><param name="ImageNumber" value="1"></OBJECT>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Example modules for Wolframe"><param name="Local" value="index.html#ModuleExamples"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Writing a content filter module for another format than XML or JSON"><param name="Local" value="index.html#FilterModule"><param name="ImageNumber" value="1"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Writing a module for a form function (struct in, struct out) as function, that is callable by Wolframe and any language binding in your application"><param name="Local" value="index.html#FormFunctionModule"><param name="ImageNumber" value="1"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Writing a command handler"><param name="Local" value="index.html#CommandHandlerModule"><param name="ImageNumber" value="1"></OBJECT>
+    </UL>
   </UL>
 <LI><OBJECT type="text/sitemap"><param name="Name" value="Namespaces"><param name="ImageNumber" value="1"></OBJECT>
   <UL>

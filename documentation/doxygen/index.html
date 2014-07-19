@@ -78,8 +78,71 @@
 <div class="title">Wolframe, a modular, 3-tier application server written in C++ </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="FilterModule"></a>
-Writing a content filter module for another format than XML or JSON</h1>
+<div class="textblock"><h1><a class="anchor" id="ModuleTypes"></a>
+Writing modules for Wolframe</h1>
+<h2><a class="anchor" id="ModuleTypeIntro"></a>
+Introduction</h2>
+<p>In Wolframe we can write modules for extending our application. Modules are units that export objects that can be used as components. The main source file of the module contains the following code block that declares the objects to be exported by the module. For using the macros shown in the following examples, we have to include the file <a class="el" href="appDevel_8hpp.html">include/appDevel.hpp</a> or the sub-include files needed. </p><div class="fragment"><div class="line"><a class="code" href="moduleFrameMacros_8hpp.html#a5c94abd61d1619c761279522e203a4a4">WF_MODULE_BEGIN</a>( <span class="stringliteral">&quot;MyModule&quot;</span>, <span class="stringliteral">&quot;this text is a short, one line description of the module&quot;</span>)</div>
+<div class="line"> <span class="comment">// ... here we declare the components to export</span></div>
+<div class="line"><a class="code" href="moduleFrameMacros_8hpp.html#ad59c3d56591ee809897499a5d99bcd04">WF_MODULE_END</a></div>
+</div><!-- fragment --> <h2><a class="anchor" id="ModuleObjTypeList"></a>
+Module component types in Wolframe</h2>
+<ul>
+<li>Command handler<ul>
+<li>A command handler implements a sub part ot the client server protocol. Command handlers are the central processing units also refered to as processors. They are declared in the section Processor of the main configuration. Currently there exist only two types of command handlers:<ol type="1">
+<li>the standard command handler also called direct map. The standard command handler delegates the requests to functions to execute. It uses the filter modules to get an iterator on the input to pass to functions to execute. It uses forms declared to validate input and output.</li>
+<li>the lua command handler</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>Document type detection<ul>
+<li>For each document format processed you need a document type detection. A document type detection recognizes a document format and declares is as its own. Additionally it extracts the document type identifier needed by a command handler to associate a document with a function to execute. Currently there are two document type detection modules implemented:<ol type="1">
+<li>XML</li>
+<li>JSON</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>Filter type</li>
+<li>Form Function</li>
+<li>Program type</li>
+<li>DDL compiler</li>
+<li>Custom data type</li>
+<li>Normalization function</li>
+</ul>
+<h2><a class="anchor" id="ModuleTypeList"></a>
+Special module types in Wolframe</h2>
+<p>The following module types do not have yet macros defined to declare them as the components introduced in the previous section. We have to refer to examples for the time being.</p><ul>
+<li>Authentication<ul>
+<li>An authentication module implements the object authentication unit and authenticator slice. An authentication unit declares one or more authentication mechs that can be chosen by the client for authentication when the module is loaded and configured in the section AAAA of the configuration. When more than one authentication unit implements an authentication mech then the first one in the configuration is chosen. The authentication slice is an instance created to do the authentication procedure. The result of authentication is a User (<a class="el" href="class__Wolframe_1_1AAAA_1_1User.html" title="Data structure containing all login data of a user. ">_Wolframe::AAAA::User</a>) object in the execution context (<a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html" title="Execution context passed to functions for referencing resources and to define authorization dependend...">_Wolframe::proc::ExecContext</a>) that is the base for authorization to do anything (user privileges). The authorization module type does not yet have the constructors declared in the section before. We have to declare four classes involved:<ol type="1">
+<li>configuration (implements <a class="el" href="class__Wolframe_1_1config_1_1NamedConfiguration.html" title="A named configuration is a normal configuration that provides also an className function. ">_Wolframe::config::NamedConfiguration</a>)</li>
+<li>authentication unit (implements <a class="el" href="class__Wolframe_1_1AAAA_1_1AuthenticationUnit.html" title="This is the base class for the authentication unit implementations. ">_Wolframe::AAAA::AuthenticationUnit</a>)</li>
+<li>authenticator slice (implements <a class="el" href="class__Wolframe_1_1AAAA_1_1AuthenticatorSlice.html" title="This is the base class for authenticator slices implementations An authenticator has (usually) severa...">_Wolframe::AAAA::AuthenticatorSlice</a>)</li>
+<li>password changer (implements <a class="el" href="class__Wolframe_1_1AAAA_1_1PasswordChanger.html" title="Password changer interface This the only interface to be used by the system. All other interfaces are...">_Wolframe::AAAA::PasswordChanger</a>)</li>
+</ol>
+</li>
+<li>Have a look at the standard textfile authenticator implementing the mech WOLFRAME-CRAM as example in src/modules/authentication/textfile/TextFileAuth.hpp</li>
+</ul>
+</li>
+<li>Database<ul>
+<li>A database module is a quite complex component. The following interfaces have to be implemented:<ol type="1">
+<li>configuration (implements <a class="el" href="class__Wolframe_1_1config_1_1NamedConfiguration.html" title="A named configuration is a normal configuration that provides also an className function. ">_Wolframe::config::NamedConfiguration</a>)</li>
+<li>database language description (implements <a class="el" href="class__Wolframe_1_1db_1_1LanguageDescription.html" title="Interface to properties of the database language (SQL) ">_Wolframe::db::LanguageDescription</a>)</li>
+<li>database unit (implements <a class="el" href="class__Wolframe_1_1db_1_1DatabaseUnit.html" title="This is the base class for database unit implementations. ">_Wolframe::db::DatabaseUnit</a>)</li>
+<li>database (implements <a class="el" href="class__Wolframe_1_1db_1_1Database.html" title="Base class for database interface. All databases should provide this interface. ">_Wolframe::db::Database</a>)</li>
+<li>transaction (implements <a class="el" href="class__Wolframe_1_1db_1_1Transaction.html" title="Transaction interface. ">_Wolframe::db::Transaction</a>)</li>
+<li>transaction execution statemachine (implements <a class="el" href="class__Wolframe_1_1db_1_1TransactionExecStatemachine.html" title="Interface to the database transaction execution statemechine. ">_Wolframe::db::TransactionExecStatemachine</a>)</li>
+</ol>
+</li>
+<li>Have a look at the database modules currently implemented in src/modules/database as examples</li>
+</ul>
+</li>
+</ul>
+<h1><a class="anchor" id="ModuleExamples"></a>
+Example modules for Wolframe</h1>
+<h2><a class="anchor" id="FilterModule"></a>
+Writing a content filter module for another format than XML or JSON</h2>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="moduleFrameMacros_8hpp.html">appdevel/moduleFrameMacros.hpp</a>&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="filterModuleMacros_8hpp.html">appdevel/filterModuleMacros.hpp</a>&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="filter_8hpp.html">filter/filter.hpp</a>&quot;</span></div>
@@ -92,8 +155,8 @@ Writing a content filter module for another format than XML or JSON</h1>
 <div class="line"><a class="code" href="moduleFrameMacros_8hpp.html#a5c94abd61d1619c761279522e203a4a4">WF_MODULE_BEGIN</a>( <span class="stringliteral">&quot;MyFilter&quot;</span>, <span class="stringliteral">&quot;my content filter&quot;</span>)</div>
 <div class="line"> <a class="code" href="filterModuleMacros_8hpp.html#ab47a8dc31ae9827e0e6963a957e2858b">WF_FILTER_TYPE</a>( &quot;myfilter&quot;, MyFilterType::create)</div>
 <div class="line"><a class="code" href="moduleFrameMacros_8hpp.html#ad59c3d56591ee809897499a5d99bcd04">WF_MODULE_END</a></div>
-</div><!-- fragment --><h1><a class="anchor" id="FormFunctionModule"></a>
-Writing a module for a form function (struct in, struct out) as function, that is callable by Wolframe and any language binding in your application</h1>
+</div><!-- fragment --><h2><a class="anchor" id="FormFunctionModule"></a>
+Writing a module for a form function (struct in, struct out) as function, that is callable by Wolframe and any language binding in your application</h2>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="moduleFrameMacros_8hpp.html">appdevel/moduleFrameMacros.hpp</a>&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="cppFormFunctionModuleMacros_8hpp.html">appdevel/cppFormFunctionModuleMacros.hpp</a>&quot;</span></div>
 <div class="line"></div>
@@ -143,11 +206,34 @@ Writing a module for a form function (struct in, struct out) as function, that i
 <div class="line"><a class="code" href="moduleFrameMacros_8hpp.html#a5c94abd61d1619c761279522e203a4a4">WF_MODULE_BEGIN</a>( <span class="stringliteral">&quot;MyFunctions&quot;</span>, <span class="stringliteral">&quot;my functions short description&quot;</span>)</div>
 <div class="line"> <a class="code" href="cppFormFunctionModuleMacros_8hpp.html#a67e8156f7bd7808f65b17c3090aa08fc">WF_FORM_FUNCTION</a>( &quot;myfunc&quot;, myFunction, MyOutput, MyInput)</div>
 <div class="line"><a class="code" href="moduleFrameMacros_8hpp.html#ad59c3d56591ee809897499a5d99bcd04">WF_MODULE_END</a></div>
+</div><!-- fragment --><h2><a class="anchor" id="CommandHandlerModule"></a>
+Writing a command handler</h2>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="commandHandlerModuleMacros_8hpp.html">appdevel/commandHandlerModuleMacros.hpp</a>&quot;</span></div>
+<div class="line"></div>
+<div class="line"><span class="keyword">class </span>MyCommandHandlerConfig</div>
+<div class="line">        :<span class="keyword">public</span> <a class="code" href="class__Wolframe_1_1config_1_1NamedConfiguration.html">_Wolframe::config::NamedConfiguration</a></div>
+<div class="line">{</div>
+<div class="line">        <span class="comment">// ... your command handler configuration is here</span></div>
+<div class="line">}</div>
+<div class="line"></div>
+<div class="line"><span class="keyword">class </span>MyCommandHandlerUnit</div>
+<div class="line">        :<span class="keyword">public</span> <a class="code" href="class__Wolframe_1_1cmdbind_1_1CommandHandlerUnit.html">_Wolframe::cmdbind::CommandHandlerUnit</a></div>
+<div class="line">{</div>
+<div class="line">        <span class="comment">// ... your command handler unit definition is here</span></div>
+<div class="line">        MyCommandHandlerUnit( <span class="keyword">const</span> MyCommandHandlerConfig* cfg)</div>
+<div class="line">        {</div>
+<div class="line">                <span class="comment">// ... required constructor from configuration</span></div>
+<div class="line">        }</div>
+<div class="line">}</div>
+<div class="line"></div>
+<div class="line"><a class="code" href="moduleFrameMacros_8hpp.html#a5c94abd61d1619c761279522e203a4a4">WF_MODULE_BEGIN</a>( <span class="stringliteral">&quot;MyCommandHandler&quot;</span>, <span class="stringliteral">&quot;my command handler short description&quot;</span>)</div>
+<div class="line"> <a class="code" href="commandHandlerModuleMacros_8hpp.html#aaf2b977b9619e27363795a61e7cdb441">WF_COMMAND_HANDLER</a>( &quot;MyCommandHandler&quot;, &quot;cmdhandler&quot;, &quot;mycmd&quot;, _Wolframe::cmdbind::CommandHandlerUnit, config::NamedConfiguration)</div>
+<div class="line"><a class="code" href="moduleFrameMacros_8hpp.html#ad59c3d56591ee809897499a5d99bcd04">WF_MODULE_END</a></div>
 </div><!-- fragment --> </div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 19 2014 10:06:20 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jul 19 2014 20:49:11 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>
