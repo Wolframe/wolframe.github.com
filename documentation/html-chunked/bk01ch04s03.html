@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>4.3. Authorization</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe documentation" /><link rel="up" href="bk01ch04.html" title="Chapter 4. AAAA" /><link rel="prev" href="bk01ch04s02.html" title="4.2. Authentication" /><link rel="next" href="bk01ch04s04.html" title="4.4. Auditing and accounting" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>4.3. AAAA configuration</title><link rel="stylesheet" type="text/css" href="/layout/styles/main.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /><link rel="home" href="index.html" title="Wolframe documentation" /><link rel="up" href="bk01ch04.html" title="Chapter 4. AAAA" /><link rel="prev" href="bk01ch04s02.html" title="4.2. Embedding AAAA into an existing infrastructure" /><link rel="next" href="bk01ch04s04.html" title="4.4. Authentication" />
 	<title xmlns="">Project Wolframe</title>
 	<meta xmlns="" charset="utf-8" />
 	<meta xmlns="" name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -58,42 +58,20 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.3. Authorization</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch04s02.html">Prev</a> </td><th width="60%" align="center">Chapter 4. AAAA</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch04s04.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1395649420"></a>4.3. Authorization</h2></div></div></div><p>The aspect of authorization is configured in the 
-	subsection <code class="code">Authorization</code> of the <code class="code">AAAA</code> section
-	in the server configuration.
-	Authorization in Wolframe has two levels. The first level is authorization
-	based on connection info, e.g. is a client allowed/denied to connect
-	from a certain ip range. Connection info based authorization happens on
-	connect to the server. The second level is command execution authorization
-	that happens on execution of a function or on access of some resources 
-	based on authentication info and connection info.
-	</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1395638340"></a>4.3.1. Authorization based on connection info</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1395638660"></a>Development status</h4></div></div></div><p>The authorization based on connection info is not
-		implemented yet. Authorization based on connection info
-		will be a subject of the next release.
-		The only working configuration is the
-		default <code class="code">Authorization</code> configuration with 
-		the setting to allow access to anybody authenticated 
-		that is not explicitely denied:
-		</p><pre class="programlisting">
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.3. AAAA configuration</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch04s02.html">Prev</a> </td><th width="60%" align="center">Chapter 4. AAAA</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch04s04.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1379565444"></a>4.3. AAAA configuration</h2></div></div></div><p>
+		The configuration section <code class="code">AAAA</code> bundles the
+		definition of mechanisms and resources needed for AAAA.
+	</p><p>
+	The following example shows an empty <code class="code">AAAA</code> configuration
+	section:
+	</p><pre class="programlisting">
 AAAA
 {
-    Authorization
-    {
-        Authorization {
-            default allow
-        }
-    }
+    ;... configuration for
+    ;    authentication,authorization,auditing and accounting
 }
-		</pre><p>
-		</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1395659284"></a>4.3.2. Command execution authorization</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1395659604"></a>Development status</h4></div></div></div><p>The command execution authorization is not implemented 
-		yet completely. The idea is to have programs that map
-		authorization function calls to Wolframe function calls.
-		The language to describe these programs is not yet defined.
-		The mechanism to map the authorize requests to the function
-		calls already exists.
-		Authorization based on command execution
-		will be a subject of the next release.
-		</p></div></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk01ch04s02.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk01ch04.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk01ch04s04.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">4.2. Authentication </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 4.4. Auditing and accounting</td></tr></table></div></div></div>
+	</pre><p>
+	</p></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bk01ch04s02.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="bk01ch04.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="bk01ch04s04.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">4.2. Embedding AAAA into an existing infrastructure </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 4.4. Authentication</td></tr></table></div></div></div>
 
 <!-- Footer -->
 <div xmlns="" class="wrapper row2">
