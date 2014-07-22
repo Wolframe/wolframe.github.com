@@ -68,6 +68,7 @@
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -126,15 +127,15 @@
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="constructor_8hpp.html">module/constructor.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &lt;boost/lexical_cast.hpp&gt;</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="authenticationModuleMacros_8hpp.html#ab782c01deda60acb1a09e0b63c278dae">   41</a></span>&#160;<span class="preprocessor">#define WF_AUTHENTICATOR(NAME) \</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="authenticationModuleMacros_8hpp.html#a8005c4f132c96c247d0c0a8f9bcb31ac">   41</a></span>&#160;<span class="preprocessor">#define WF_AUTHENTICATOR(NAME,UNITCLASS,CONFIGCLASS) \</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">{\</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">        struct Builder \</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">        {\</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">                static _Wolframe::module::BuilderBase* impl()\</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">                {\</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">                        static _Wolframe::module::ConfiguredBuilderDescription&lt;\</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">                                        _Wolframe::module::AuthenticationConstructor&lt;_Wolframe::AAAA:: NAME ## AuthenticationUnit, _Wolframe::AAAA:: NAME ## AuthenticationConfig&gt;,\</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">                                        _Wolframe::AAAA:: NAME ## AuthenticationConfig &gt;\</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">                                        _Wolframe::module::AuthenticationConstructor&lt;UNITCLASS, CONFIGCLASS&gt;,\</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">                                        CONFIGCLASS &gt;\</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">                                mod( &quot;Authentication &quot; #NAME, &quot;Authentication&quot;, #NAME, #NAME &quot;Authentication&quot;);\</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">                        return &amp;mod;\</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">                }\</span></div>
@@ -150,7 +151,7 @@
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 20 2014 12:58:58 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 22 2014 14:08:39 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

@@ -68,6 +68,7 @@
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -103,14 +104,14 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ab782c01deda60acb1a09e0b63c278dae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="authenticationModuleMacros_8hpp.html#ab782c01deda60acb1a09e0b63c278dae">WF_AUTHENTICATOR</a>(NAME)</td></tr>
-<tr class="memdesc:ab782c01deda60acb1a09e0b63c278dae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a an authentication mechanism.  <a href="#ab782c01deda60acb1a09e0b63c278dae">More...</a><br /></td></tr>
-<tr class="separator:ab782c01deda60acb1a09e0b63c278dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8005c4f132c96c247d0c0a8f9bcb31ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="authenticationModuleMacros_8hpp.html#a8005c4f132c96c247d0c0a8f9bcb31ac">WF_AUTHENTICATOR</a>(NAME, UNITCLASS, CONFIGCLASS)</td></tr>
+<tr class="memdesc:a8005c4f132c96c247d0c0a8f9bcb31ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a an authentication mechanism.  <a href="#a8005c4f132c96c247d0c0a8f9bcb31ac">More...</a><br /></td></tr>
+<tr class="separator:a8005c4f132c96c247d0c0a8f9bcb31ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Macros for a module for defining an authentication mechanism. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="ab782c01deda60acb1a09e0b63c278dae"></a>
+<a class="anchor" id="a8005c4f132c96c247d0c0a8f9bcb31ac"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -118,8 +119,24 @@ Macros</h2></td></tr>
           <td class="memname">#define WF_AUTHENTICATOR</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">NAME</td><td>)</td>
+          <td class="paramname">NAME, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">UNITCLASS, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">CONFIGCLASS&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -129,8 +146,8 @@ Macros</h2></td></tr>
 <div class="line">                static <a class="code" href="class__Wolframe_1_1module_1_1BuilderBase.html">_Wolframe::module::BuilderBase</a>* impl()\</div>
 <div class="line">                {\</div>
 <div class="line">                        static <a class="code" href="class__Wolframe_1_1module_1_1ConfiguredBuilderDescription.html">_Wolframe::module::ConfiguredBuilderDescription</a>&lt;\</div>
-<div class="line">                                        _Wolframe::module::AuthenticationConstructor&lt;_Wolframe::AAAA:: NAME ## AuthenticationUnit, _Wolframe::AAAA:: NAME ## AuthenticationConfig&gt;,\</div>
-<div class="line">                                        _Wolframe::AAAA:: NAME ## AuthenticationConfig &gt;\</div>
+<div class="line">                                        _Wolframe::module::AuthenticationConstructor&lt;UNITCLASS, CONFIGCLASS&gt;,\</div>
+<div class="line">                                        CONFIGCLASS &gt;\</div>
 <div class="line">                                mod( <span class="stringliteral">&quot;Authentication &quot;</span> #NAME, <span class="stringliteral">&quot;Authentication&quot;</span>, #NAME, #NAME <span class="stringliteral">&quot;Authentication&quot;</span>);\</div>
 <div class="line">                        return &amp;mod;\</div>
 <div class="line">                }\</div>
@@ -148,7 +165,7 @@ Macros</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 20 2014 12:59:06 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 22 2014 14:08:48 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

@@ -68,6 +68,7 @@
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -103,17 +104,17 @@
 Macros</h2></td></tr>
 <tr class="memitem:a0303132fe18884bbb9ecdecd5a61db41"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="normalizeModuleMacros_8hpp.html#a0303132fe18884bbb9ecdecd5a61db41">WF_NORMALIZER_RESOURCE</a>(RESOURCECLASS)</td></tr>
 <tr class="separator:a0303132fe18884bbb9ecdecd5a61db41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8dab1a76a06b751225d334f4fe3d18a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="normalizeModuleMacros_8hpp.html#ab8dab1a76a06b751225d334f4fe3d18a">WF_NORMALIZER</a>(NAME, CONSTRUCTOR)</td></tr>
-<tr class="memdesc:ab8dab1a76a06b751225d334f4fe3d18a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines normalization function.  <a href="#ab8dab1a76a06b751225d334f4fe3d18a">More...</a><br /></td></tr>
-<tr class="separator:ab8dab1a76a06b751225d334f4fe3d18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a932becf463320ec50780d2307ff2088d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="normalizeModuleMacros_8hpp.html#a932becf463320ec50780d2307ff2088d">WF_NORMALIZER_WITH_RESOURCE</a>(NAME, CONSTRUCTOR, RESOURCECLASS)</td></tr>
-<tr class="memdesc:a932becf463320ec50780d2307ff2088d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines normalization function.  <a href="#a932becf463320ec50780d2307ff2088d">More...</a><br /></td></tr>
-<tr class="separator:a932becf463320ec50780d2307ff2088d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a469e02a70dae259ebdeabfccee2c8c8d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="normalizeModuleMacros_8hpp.html#a469e02a70dae259ebdeabfccee2c8c8d">WF_NORMALIZER</a>(NAME, NORMALIZERCLASS)</td></tr>
+<tr class="memdesc:a469e02a70dae259ebdeabfccee2c8c8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines normalization function.  <a href="#a469e02a70dae259ebdeabfccee2c8c8d">More...</a><br /></td></tr>
+<tr class="separator:a469e02a70dae259ebdeabfccee2c8c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af778cacef5cef0aababf34eb15ee09e6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="normalizeModuleMacros_8hpp.html#af778cacef5cef0aababf34eb15ee09e6">WF_NORMALIZER_WITH_RESOURCE</a>(NAME, NORMALIZERCLASS, RESOURCECLASS)</td></tr>
+<tr class="memdesc:af778cacef5cef0aababf34eb15ee09e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines normalization function.  <a href="#af778cacef5cef0aababf34eb15ee09e6">More...</a><br /></td></tr>
+<tr class="separator:af778cacef5cef0aababf34eb15ee09e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Macros for defining normalization and validaton function module. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="ab8dab1a76a06b751225d334f4fe3d18a"></a>
+<a class="anchor" id="a469e02a70dae259ebdeabfccee2c8c8d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -127,7 +128,7 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">CONSTRUCTOR&#160;</td>
+          <td class="paramname">NORMALIZERCLASS&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -139,15 +140,21 @@ Macros</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">{\</div>
 <div class="line">        struct Constructor\</div>
 <div class="line">        {\</div>
+<div class="line">                static <a class="code" href="class__Wolframe_1_1types_1_1NormalizeFunction.html">_Wolframe::types::NormalizeFunction</a>* create( <a class="code" href="class__Wolframe_1_1types_1_1NormalizeResourceHandle.html">_Wolframe::types::NormalizeResourceHandle</a>*, <span class="keyword">const</span> std::vector&lt;_Wolframe::types::Variant&gt;&amp; arg)\</div>
+<div class="line">                {\</div>
+<div class="line">                        return <span class="keyword">new</span> NORMALIZERCLASS( arg);\</div>
+<div class="line">                }\</div>
 <div class="line">                static <a class="code" href="class__Wolframe_1_1module_1_1BuilderBase.html">_Wolframe::module::BuilderBase</a>* impl()\</div>
 <div class="line">                {\</div>
-<div class="line">                        return <span class="keyword">new</span> <a class="code" href="class__Wolframe_1_1module_1_1NormalizeFunctionBuilder.html">_Wolframe::module::NormalizeFunctionBuilder</a>( <span class="stringliteral">&quot;NormalizeFunction_&quot;</span> #NAME, NAME, CONSTRUCTOR);\</div>
+<div class="line">                        return <span class="keyword">new</span> <a class="code" href="class__Wolframe_1_1module_1_1NormalizeFunctionBuilder.html">_Wolframe::module::NormalizeFunctionBuilder</a>( <span class="stringliteral">&quot;NormalizeFunction_&quot;</span> #NAME, NAME, create);\</div>
 <div class="line">                }\</div>
 <div class="line">        };\</div>
 <div class="line">        (*this)(&amp;Constructor ::impl);\</div>
 <div class="line">}</div>
+<div class="ttc" id="class__Wolframe_1_1types_1_1NormalizeResourceHandle_html"><div class="ttname"><a href="class__Wolframe_1_1types_1_1NormalizeResourceHandle.html">_Wolframe::types::NormalizeResourceHandle</a></div><div class="ttdoc">Base class for resources for normalization functions. </div><div class="ttdef"><b>Definition:</b> normalizeFunction.hpp:66</div></div>
 <div class="ttc" id="class__Wolframe_1_1module_1_1NormalizeFunctionBuilder_html"><div class="ttname"><a href="class__Wolframe_1_1module_1_1NormalizeFunctionBuilder.html">_Wolframe::module::NormalizeFunctionBuilder</a></div><div class="ttdoc">Builder of a normalization function type constructor. </div><div class="ttdef"><b>Definition:</b> normalizeFunctionBuilder.hpp:91</div></div>
 <div class="ttc" id="class__Wolframe_1_1module_1_1BuilderBase_html"><div class="ttname"><a href="class__Wolframe_1_1module_1_1BuilderBase.html">_Wolframe::module::BuilderBase</a></div><div class="ttdef"><b>Definition:</b> moduleInterface.hpp:52</div></div>
+<div class="ttc" id="class__Wolframe_1_1types_1_1NormalizeFunction_html"><div class="ttname"><a href="class__Wolframe_1_1types_1_1NormalizeFunction.html">_Wolframe::types::NormalizeFunction</a></div><div class="ttdoc">Basic normalization function for atomic values (variant type) </div><div class="ttdef"><b>Definition:</b> normalizeFunction.hpp:52</div></div>
 </div><!-- fragment -->
 <p>Defines normalization function. </p>
 
@@ -181,7 +188,7 @@ Macros</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a932becf463320ec50780d2307ff2088d"></a>
+<a class="anchor" id="af778cacef5cef0aababf34eb15ee09e6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -195,7 +202,7 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">CONSTRUCTOR, </td>
+          <td class="paramname">NORMALIZERCLASS, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -213,15 +220,21 @@ Macros</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">{\</div>
 <div class="line">        struct Constructor\</div>
 <div class="line">        {\</div>
+<div class="line">                static <a class="code" href="class__Wolframe_1_1types_1_1NormalizeFunction.html">_Wolframe::types::NormalizeFunction</a>* create( <a class="code" href="class__Wolframe_1_1types_1_1NormalizeResourceHandle.html">_Wolframe::types::NormalizeResourceHandle</a>* reshnd, <span class="keyword">const</span> std::vector&lt;_Wolframe::types::Variant&gt;&amp; arg)\</div>
+<div class="line">                {\</div>
+<div class="line">                        return <span class="keyword">new</span> NORMALIZERCLASS( reshnd, arg);\</div>
+<div class="line">                }\</div>
 <div class="line">                static <a class="code" href="class__Wolframe_1_1module_1_1BuilderBase.html">_Wolframe::module::BuilderBase</a>* impl()\</div>
 <div class="line">                {\</div>
-<div class="line">                        return <span class="keyword">new</span> <a class="code" href="class__Wolframe_1_1module_1_1NormalizeFunctionBuilder.html">_Wolframe::module::NormalizeFunctionBuilder</a>( <span class="stringliteral">&quot;NormalizeFunction_&quot;</span> #NAME, NAME, CONSTRUCTOR, macro__WF_NORMALIZER_RESOURCE__ ## RESOURCECLASS::get());\</div>
+<div class="line">                        return <span class="keyword">new</span> <a class="code" href="class__Wolframe_1_1module_1_1NormalizeFunctionBuilder.html">_Wolframe::module::NormalizeFunctionBuilder</a>( <span class="stringliteral">&quot;NormalizeFunction_&quot;</span> #NAME, NAME, create, macro__WF_NORMALIZER_RESOURCE__ ## RESOURCECLASS::get());\</div>
 <div class="line">                }\</div>
 <div class="line">        };\</div>
 <div class="line">        (*this)(&amp;Constructor ::impl);\</div>
 <div class="line">}</div>
+<div class="ttc" id="class__Wolframe_1_1types_1_1NormalizeResourceHandle_html"><div class="ttname"><a href="class__Wolframe_1_1types_1_1NormalizeResourceHandle.html">_Wolframe::types::NormalizeResourceHandle</a></div><div class="ttdoc">Base class for resources for normalization functions. </div><div class="ttdef"><b>Definition:</b> normalizeFunction.hpp:66</div></div>
 <div class="ttc" id="class__Wolframe_1_1module_1_1NormalizeFunctionBuilder_html"><div class="ttname"><a href="class__Wolframe_1_1module_1_1NormalizeFunctionBuilder.html">_Wolframe::module::NormalizeFunctionBuilder</a></div><div class="ttdoc">Builder of a normalization function type constructor. </div><div class="ttdef"><b>Definition:</b> normalizeFunctionBuilder.hpp:91</div></div>
 <div class="ttc" id="class__Wolframe_1_1module_1_1BuilderBase_html"><div class="ttname"><a href="class__Wolframe_1_1module_1_1BuilderBase.html">_Wolframe::module::BuilderBase</a></div><div class="ttdef"><b>Definition:</b> moduleInterface.hpp:52</div></div>
+<div class="ttc" id="class__Wolframe_1_1types_1_1NormalizeFunction_html"><div class="ttname"><a href="class__Wolframe_1_1types_1_1NormalizeFunction.html">_Wolframe::types::NormalizeFunction</a></div><div class="ttdoc">Basic normalization function for atomic values (variant type) </div><div class="ttdef"><b>Definition:</b> normalizeFunction.hpp:52</div></div>
 </div><!-- fragment -->
 <p>Defines normalization function. </p>
 
@@ -231,7 +244,7 @@ Macros</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 20 2014 12:59:06 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 22 2014 14:08:49 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

@@ -68,6 +68,7 @@
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -101,14 +102,14 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a505c52e9aff74ff65b3438f37681421f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="doctypeModuleMacros_8hpp.html#a505c52e9aff74ff65b3438f37681421f">WF_DOCUMENT_FORMAT</a>(DOCFORMATNAME, CREATE_DOCTYPE_DETECTOR)</td></tr>
-<tr class="memdesc:a505c52e9aff74ff65b3438f37681421f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a Wolframe document format with a document type detector after the module includes section.  <a href="#a505c52e9aff74ff65b3438f37681421f">More...</a><br /></td></tr>
-<tr class="separator:a505c52e9aff74ff65b3438f37681421f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c8c3f8b3a56ece3457ddfb976d95e85"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="doctypeModuleMacros_8hpp.html#a3c8c3f8b3a56ece3457ddfb976d95e85">WF_DOCUMENT_FORMAT</a>(DOCFORMATNAME, DETECTORCLASS)</td></tr>
+<tr class="memdesc:a3c8c3f8b3a56ece3457ddfb976d95e85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a Wolframe document format with a document type detector after the module includes section and module declaration header.  <a href="#a3c8c3f8b3a56ece3457ddfb976d95e85">More...</a><br /></td></tr>
+<tr class="separator:a3c8c3f8b3a56ece3457ddfb976d95e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Macros for a document type/format module definition. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a505c52e9aff74ff65b3438f37681421f"></a>
+<a class="anchor" id="a3c8c3f8b3a56ece3457ddfb976d95e85"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -122,7 +123,7 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">CREATE_DOCTYPE_DETECTOR&#160;</td>
+          <td class="paramname">DETECTORCLASS&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -134,17 +135,22 @@ Macros</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">{\</div>
 <div class="line">        struct Constructor\</div>
 <div class="line">        {\</div>
+<div class="line">                static <a class="code" href="class__Wolframe_1_1cmdbind_1_1DoctypeDetector.html">_Wolframe::cmdbind::DoctypeDetector</a>* create()\</div>
+<div class="line">                {\</div>
+<div class="line">                        return <span class="keyword">new</span> DETECTORCLASS();\</div>
+<div class="line">                }\</div>
 <div class="line">                static <a class="code" href="class__Wolframe_1_1module_1_1BuilderBase.html">_Wolframe::module::BuilderBase</a>* impl()\</div>
 <div class="line">                {\</div>
-<div class="line">                        return <span class="keyword">new</span> <a class="code" href="class__Wolframe_1_1module_1_1DoctypeDetectorBuilder.html">_Wolframe::module::DoctypeDetectorBuilder</a>( DOCFORMATNAME <span class="stringliteral">&quot;Detector&quot;</span>, DOCFORMATNAME, CREATE_DOCTYPE_DETECTOR);\</div>
+<div class="line">                        return <span class="keyword">new</span> <a class="code" href="class__Wolframe_1_1module_1_1DoctypeDetectorBuilder.html">_Wolframe::module::DoctypeDetectorBuilder</a>( DOCFORMATNAME <span class="stringliteral">&quot;Detector&quot;</span>, DOCFORMATNAME, create);\</div>
 <div class="line">                }\</div>
 <div class="line">        };\</div>
 <div class="line">        (*this)(&amp;Constructor ::impl);\</div>
 <div class="line">}</div>
 <div class="ttc" id="class__Wolframe_1_1module_1_1DoctypeDetectorBuilder_html"><div class="ttname"><a href="class__Wolframe_1_1module_1_1DoctypeDetectorBuilder.html">_Wolframe::module::DoctypeDetectorBuilder</a></div><div class="ttdoc">Document type and format detector builder. </div><div class="ttdef"><b>Definition:</b> doctypeDetectorBuilder.hpp:92</div></div>
 <div class="ttc" id="class__Wolframe_1_1module_1_1BuilderBase_html"><div class="ttname"><a href="class__Wolframe_1_1module_1_1BuilderBase.html">_Wolframe::module::BuilderBase</a></div><div class="ttdef"><b>Definition:</b> moduleInterface.hpp:52</div></div>
+<div class="ttc" id="class__Wolframe_1_1cmdbind_1_1DoctypeDetector_html"><div class="ttname"><a href="class__Wolframe_1_1cmdbind_1_1DoctypeDetector.html">_Wolframe::cmdbind::DoctypeDetector</a></div><div class="ttdoc">Interface to document type and format detection. </div><div class="ttdef"><b>Definition:</b> doctypeDetector.hpp:46</div></div>
 </div><!-- fragment -->
-<p>Defines a Wolframe document format with a document type detector after the module includes section. </p>
+<p>Defines a Wolframe document format with a document type detector after the module includes section and module declaration header. </p>
 
 </div>
 </div>
@@ -152,7 +158,7 @@ Macros</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 20 2014 12:59:06 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 22 2014 14:08:48 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

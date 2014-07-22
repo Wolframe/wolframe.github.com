@@ -68,6 +68,7 @@
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -102,14 +103,14 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ab47a8dc31ae9827e0e6963a957e2858b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filterModuleMacros_8hpp.html#ab47a8dc31ae9827e0e6963a957e2858b">WF_FILTER_TYPE</a>(FILTERNAME, CREATE_FILTERTYPE)</td></tr>
-<tr class="memdesc:ab47a8dc31ae9827e0e6963a957e2858b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a Wolframe filter module after the includes section.  <a href="#ab47a8dc31ae9827e0e6963a957e2858b">More...</a><br /></td></tr>
-<tr class="separator:ab47a8dc31ae9827e0e6963a957e2858b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a708c4ba5dae581944382212a3ef8914b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filterModuleMacros_8hpp.html#a708c4ba5dae581944382212a3ef8914b">WF_FILTER_TYPE</a>(FILTERNAME, FILTERTYPECLASS)</td></tr>
+<tr class="memdesc:a708c4ba5dae581944382212a3ef8914b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a Wolframe filter module after the includes section.  <a href="#a708c4ba5dae581944382212a3ef8914b">More...</a><br /></td></tr>
+<tr class="separator:a708c4ba5dae581944382212a3ef8914b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Macros for a filter modules. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="ab47a8dc31ae9827e0e6963a957e2858b"></a>
+<a class="anchor" id="a708c4ba5dae581944382212a3ef8914b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -123,7 +124,7 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">CREATE_FILTERTYPE&#160;</td>
+          <td class="paramname">FILTERTYPECLASS&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -135,15 +136,20 @@ Macros</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">{\</div>
 <div class="line">        struct Constructor\</div>
 <div class="line">        {\</div>
+<div class="line">                static <a class="code" href="class__Wolframe_1_1langbind_1_1FilterType.html">_Wolframe::langbind::FilterType</a>* create()\</div>
+<div class="line">                {\</div>
+<div class="line">                        return <span class="keyword">new</span> FILTERTYPECLASS();\</div>
+<div class="line">                }\</div>
 <div class="line">                static <a class="code" href="class__Wolframe_1_1module_1_1BuilderBase.html">_Wolframe::module::BuilderBase</a>* impl()\</div>
 <div class="line">                {\</div>
-<div class="line">                        return <span class="keyword">new</span> <a class="code" href="class__Wolframe_1_1module_1_1FilterBuilder.html">_Wolframe::module::FilterBuilder</a>( FILTERNAME <span class="stringliteral">&quot;Filter&quot;</span>, FILTERNAME, CREATE_FILTERTYPE);\</div>
+<div class="line">                        return <span class="keyword">new</span> <a class="code" href="class__Wolframe_1_1module_1_1FilterBuilder.html">_Wolframe::module::FilterBuilder</a>( FILTERNAME <span class="stringliteral">&quot;Filter&quot;</span>, FILTERNAME, create);\</div>
 <div class="line">                }\</div>
 <div class="line">        };\</div>
 <div class="line">        (*this)(&amp;Constructor ::impl);\</div>
 <div class="line">}</div>
 <div class="ttc" id="class__Wolframe_1_1module_1_1FilterBuilder_html"><div class="ttname"><a href="class__Wolframe_1_1module_1_1FilterBuilder.html">_Wolframe::module::FilterBuilder</a></div><div class="ttdoc">Builder of a filter type constructor. </div><div class="ttdef"><b>Definition:</b> filterBuilder.hpp:83</div></div>
 <div class="ttc" id="class__Wolframe_1_1module_1_1BuilderBase_html"><div class="ttname"><a href="class__Wolframe_1_1module_1_1BuilderBase.html">_Wolframe::module::BuilderBase</a></div><div class="ttdef"><b>Definition:</b> moduleInterface.hpp:52</div></div>
+<div class="ttc" id="class__Wolframe_1_1langbind_1_1FilterType_html"><div class="ttname"><a href="class__Wolframe_1_1langbind_1_1FilterType.html">_Wolframe::langbind::FilterType</a></div><div class="ttdoc">Structure defining a type of a filter (used as virtual constructor to create filter instances) ...</div><div class="ttdef"><b>Definition:</b> filter.hpp:112</div></div>
 </div><!-- fragment -->
 <p>Defines a Wolframe filter module after the includes section. </p>
 
@@ -153,7 +159,7 @@ Macros</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 20 2014 12:59:06 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 22 2014 14:08:48 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

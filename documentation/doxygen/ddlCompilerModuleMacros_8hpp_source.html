@@ -68,6 +68,7 @@
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -124,25 +125,29 @@
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="moduleInterface_8hpp.html">module/moduleInterface.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ddlcompilerBuilder_8hpp.html">appdevel/module/ddlcompilerBuilder.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="ddlCompilerModuleMacros_8hpp.html#a7a62d6220f1975e574ddc674e0057d87">   39</a></span>&#160;<span class="preprocessor">#define WF_DDLCOMPILER( LANGUAGE, CREATE_COMPILER)\</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="ddlCompilerModuleMacros_8hpp.html#a3e57138f6593fcdbc9dc5b8dbada9576">   39</a></span>&#160;<span class="preprocessor">#define WF_DDLCOMPILER( LANGUAGE, COMPILERCLASS)\</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">{\</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">        struct Constructor\</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">        {\</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">                static _Wolframe::module::BuilderBase* impl()\</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">                static _Wolframe::langbind::DDLCompiler* create()\</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">                {\</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">                        return new _Wolframe::module::DDLCompilerBuilder( &quot;DDLCompiler_&quot; #LANGUAGE, #LANGUAGE, CREATE_COMPILER);\</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">                        return new COMPILERCLASS();\</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">                }\</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">        };\</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">        (*this)(&amp;Constructor ::impl);\</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">}</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">                static _Wolframe::module::BuilderBase* impl()\</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">                {\</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">                        return new _Wolframe::module::DDLCompilerBuilder( &quot;DDLCompiler_&quot; #LANGUAGE, #LANGUAGE, create);\</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">                }\</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">        };\</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">        (*this)(&amp;Constructor ::impl);\</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">}</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
 <div class="ttc" id="moduleInterface_8hpp_html"><div class="ttname"><a href="moduleInterface_8hpp.html">moduleInterface.hpp</a></div><div class="ttdoc">Basic interface classes that to build objects and the Wolframe module interface. </div></div>
 <div class="ttc" id="ddlcompilerBuilder_8hpp_html"><div class="ttname"><a href="ddlcompilerBuilder_8hpp.html">ddlcompilerBuilder.hpp</a></div><div class="ttdoc">Interface template for object builder of form DDL compilers. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 20 2014 12:58:58 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 22 2014 14:08:40 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

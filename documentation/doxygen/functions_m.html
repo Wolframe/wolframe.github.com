@@ -68,6 +68,7 @@
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -542,6 +543,7 @@
 <li>m_hash
 : <a class="el" href="class__Wolframe_1_1AAAA_1_1PasswordHash_1_1Hash.html#aae3a508af4ce4d387c04f77614c271b6">_Wolframe::AAAA::PasswordHash::Hash</a>
 , <a class="el" href="class__Wolframe_1_1AAAA_1_1PasswordHash.html#a5a92b3d8556d9c738fce024c9cb2940e">_Wolframe::AAAA::PasswordHash</a>
+, <a class="el" href="class__Wolframe_1_1AAAA_1_1UsernameHash.html#a4348fbd0197db1b2a85707e5b99c092a">_Wolframe::AAAA::UsernameHash</a>
 , <a class="el" href="class__Wolframe_1_1crypto_1_1PBKDF2__HMAC__SHA1.html#a660f770f44a9f5b25bd95dc31416a623">_Wolframe::crypto::PBKDF2_HMAC_SHA1</a>
 </li>
 <li>m_hasOsVersion
@@ -968,6 +970,10 @@
 : <a class="el" href="class__Wolframe_1_1AAAA_1_1CRAMsalt.html#a007c98a7ae3704261345804e72508057">_Wolframe::AAAA::CRAMsalt</a>
 , <a class="el" href="class__Wolframe_1_1AAAA_1_1PasswordHash.html#a480b3e69708145ec5751625c00fb42b3">_Wolframe::AAAA::PasswordHash</a>
 , <a class="el" href="class__Wolframe_1_1AAAA_1_1PasswordHash_1_1Salt.html#aab31459302b0b4b56a7155f613e3f049">_Wolframe::AAAA::PasswordHash::Salt</a>
+, <a class="el" href="class__Wolframe_1_1AAAA_1_1UsernameHash.html#ad42205d5be1afdbf6a477232a05e292f">_Wolframe::AAAA::UsernameHash</a>
+</li>
+<li>m_saltSize
+: <a class="el" href="class__Wolframe_1_1AAAA_1_1UsernameHash.html#a6b9de2ffa7f83e8c4f173571d3060cdb">_Wolframe::AAAA::UsernameHash</a>
 </li>
 <li>m_sbuf
 : <a class="el" href="class__Wolframe_1_1protocol_1_1CArgBuffer.html#aa536dfe884a0fbe23fc957b211aada68">_Wolframe::protocol::CArgBuffer&lt; Buffer &gt;</a>
@@ -1173,15 +1179,11 @@
 </li>
 <li>mandatory()
 : <a class="el" href="struct__Wolframe_1_1serialize_1_1StructDescription.html#a48ab1aa76fe8e1041a351a0bc0892b43">_Wolframe::serialize::StructDescription&lt; Structure &gt;</a>
+, <a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a0d573f73bfa9a21aec7c66404fa69071">_Wolframe::serialize::StructDescriptionBase</a>
 </li>
 <li>Mandatory
 : <a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a4a3e2910b5367893fbe92dac03018db4ab8c6d50534cf4b244ffa9bf470f80134">_Wolframe::serialize::StructDescriptionBase</a>
-</li>
-<li>mandatory()
-: <a class="el" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html#a0d573f73bfa9a21aec7c66404fa69071">_Wolframe::serialize::StructDescriptionBase</a>
-</li>
-<li>Mandatory
-: <a class="el" href="struct__Wolframe_1_1types_1_1VariantStructDescription_1_1Element.html#a2879bc52a280af47de5b6ca45555c98da10a0e531fc521c589311a31c63f98b95">_Wolframe::types::VariantStructDescription::Element</a>
+, <a class="el" href="struct__Wolframe_1_1types_1_1VariantStructDescription_1_1Element.html#a2879bc52a280af47de5b6ca45555c98da10a0e531fc521c589311a31c63f98b95">_Wolframe::types::VariantStructDescription::Element</a>
 </li>
 <li>mandatory()
 : <a class="el" href="struct__Wolframe_1_1types_1_1VariantStructDescription_1_1Element.html#a2f0cb00b0941073b39828e6e8b2b3e26">_Wolframe::types::VariantStructDescription::Element</a>
@@ -1234,7 +1236,7 @@
 , <a class="el" href="class__Wolframe_1_1AAAA_1_1Authenticator.html#a255549cfccbdff5519e193cc315f0cde">_Wolframe::AAAA::Authenticator</a>
 </li>
 <li>MemBlock()
-: <a class="el" href="class__Wolframe_1_1protocol_1_1MemBlock.html#a43059a96713eb2c2f27f19248e71464d">_Wolframe::protocol::MemBlock</a>
+: <a class="el" href="class__Wolframe_1_1protocol_1_1MemBlock.html#a5c7fc4d07073263c7538e071c5bde296">_Wolframe::protocol::MemBlock</a>
 </li>
 <li>message
 : <a class="el" href="struct__Wolframe_1_1db_1_1vm_1_1ProgramImage_1_1ErrorHint.html#a887fdec26ec80e4a73963d793c67b6dc">_Wolframe::db::vm::ProgramImage::ErrorHint</a>
@@ -1305,7 +1307,7 @@
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 20 2014 12:59:41 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 22 2014 14:09:20 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

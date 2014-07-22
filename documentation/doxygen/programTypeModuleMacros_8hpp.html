@@ -68,6 +68,7 @@
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -101,14 +102,14 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ae4203ccbf5a4d11257b304dab85ac6ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="programTypeModuleMacros_8hpp.html#ae4203ccbf5a4d11257b304dab85ac6ec">WF_PROGRAM_TYPE</a>(LANGNAME, CREATEPRGFUNC)</td></tr>
-<tr class="memdesc:ae4203ccbf5a4d11257b304dab85ac6ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a Wolframe program type.  <a href="#ae4203ccbf5a4d11257b304dab85ac6ec">More...</a><br /></td></tr>
-<tr class="separator:ae4203ccbf5a4d11257b304dab85ac6ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada457b3078bb96fd6dd9eaf727c5ec09"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="programTypeModuleMacros_8hpp.html#ada457b3078bb96fd6dd9eaf727c5ec09">WF_PROGRAM_TYPE</a>(LANGNAME, PROGRAMCLASS)</td></tr>
+<tr class="memdesc:ada457b3078bb96fd6dd9eaf727c5ec09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a Wolframe program type.  <a href="#ada457b3078bb96fd6dd9eaf727c5ec09">More...</a><br /></td></tr>
+<tr class="separator:ada457b3078bb96fd6dd9eaf727c5ec09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Macros for a module for a program type for a binding language. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="ae4203ccbf5a4d11257b304dab85ac6ec"></a>
+<a class="anchor" id="ada457b3078bb96fd6dd9eaf727c5ec09"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -122,7 +123,7 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">CREATEPRGFUNC&#160;</td>
+          <td class="paramname">PROGRAMCLASS&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -134,13 +135,18 @@ Macros</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">{\</div>
 <div class="line">        struct Constructor\</div>
 <div class="line">        {\</div>
+<div class="line">                static <a class="code" href="struct__Wolframe_1_1prgbind_1_1Program.html">_Wolframe::prgbind::Program</a>* create()\</div>
+<div class="line">                {\</div>
+<div class="line">                        return <span class="keyword">new</span> PROGRAMCLASS();\</div>
+<div class="line">                }\</div>
 <div class="line">                static <a class="code" href="class__Wolframe_1_1module_1_1BuilderBase.html">_Wolframe::module::BuilderBase</a>* impl()\</div>
 <div class="line">                {\</div>
-<div class="line">                        return <span class="keyword">new</span> <a class="code" href="class__Wolframe_1_1module_1_1ProgramTypeBuilder.html">_Wolframe::module::ProgramTypeBuilder</a>( LANGNAME <span class="stringliteral">&quot;ProgramType&quot;</span>, LANGNAME <span class="stringliteral">&quot;Language&quot;</span>, CREATEPRGFUNC);\</div>
+<div class="line">                        return <span class="keyword">new</span> <a class="code" href="class__Wolframe_1_1module_1_1ProgramTypeBuilder.html">_Wolframe::module::ProgramTypeBuilder</a>( LANGNAME <span class="stringliteral">&quot;ProgramType&quot;</span>, LANGNAME <span class="stringliteral">&quot;Language&quot;</span>, create);\</div>
 <div class="line">                }\</div>
 <div class="line">        };\</div>
 <div class="line">        (*this)(&amp;Constructor ::impl);\</div>
 <div class="line">}</div>
+<div class="ttc" id="struct__Wolframe_1_1prgbind_1_1Program_html"><div class="ttname"><a href="struct__Wolframe_1_1prgbind_1_1Program.html">_Wolframe::prgbind::Program</a></div><div class="ttdoc">Interface for programs of a program library. </div><div class="ttdef"><b>Definition:</b> program.hpp:54</div></div>
 <div class="ttc" id="class__Wolframe_1_1module_1_1BuilderBase_html"><div class="ttname"><a href="class__Wolframe_1_1module_1_1BuilderBase.html">_Wolframe::module::BuilderBase</a></div><div class="ttdef"><b>Definition:</b> moduleInterface.hpp:52</div></div>
 <div class="ttc" id="class__Wolframe_1_1module_1_1ProgramTypeBuilder_html"><div class="ttname"><a href="class__Wolframe_1_1module_1_1ProgramTypeBuilder.html">_Wolframe::module::ProgramTypeBuilder</a></div><div class="ttdoc">Builder of a program type constructor. </div><div class="ttdef"><b>Definition:</b> programTypeBuilder.hpp:89</div></div>
 </div><!-- fragment -->
@@ -152,7 +158,7 @@ Macros</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 20 2014 12:59:06 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 22 2014 14:08:49 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

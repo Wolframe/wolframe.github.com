@@ -68,6 +68,7 @@
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -114,6 +115,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4ff4caf18b4824c405c77ff3482051f4"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1AuthenticationUnit.html#a4ff4caf18b4824c405c77ff3482051f4">className</a> () const =0</td></tr>
 <tr class="separator:a4ff4caf18b4824c405c77ff3482051f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7e556fbd73833981f4218f299e48d90"><td class="memItemLeft" align="right" valign="top">virtual const char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1AuthenticationUnit.html#ac7e556fbd73833981f4218f299e48d90">mechs</a> () const =0</td></tr>
+<tr class="memdesc:ac7e556fbd73833981f4218f299e48d90"><td class="mdescLeft">&#160;</td><td class="mdescRight">The list of mechs implemented by this unit.  <a href="#ac7e556fbd73833981f4218f299e48d90">More...</a><br /></td></tr>
 <tr class="separator:ac7e556fbd73833981f4218f299e48d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42888af4db067102ac6c4f86423e4063"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class__Wolframe_1_1AAAA_1_1AuthenticatorSlice.html">AuthenticatorSlice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1AuthenticationUnit.html#a42888af4db067102ac6c4f86423e4063">slice</a> (const std::string &amp;mech, const <a class="el" href="class__Wolframe_1_1net_1_1RemoteEndpoint.html">net::RemoteEndpoint</a> &amp;client)=0</td></tr>
 <tr class="memdesc:a42888af4db067102ac6c4f86423e4063"><td class="mdescLeft">&#160;</td><td class="mdescRight">An <a class="el" href="class__Wolframe_1_1AAAA_1_1AuthenticatorSlice.html" title="This is the base class for authenticator slices implementations An authenticator has (usually) severa...">AuthenticatorSlice</a> for the required mech (or NULL)  <a href="#a42888af4db067102ac6c4f86423e4063">More...</a><br /></td></tr>
@@ -244,7 +246,9 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The list of mechs implemented by this unit </p><dl class="section note"><dt>Note</dt><dd>The authentication unit returns the mechs as an array of strings. The array ends with a NULL Be aware that the other interfaces use a vector instead. </dd></dl>
+
+<p>The list of mechs implemented by this unit. </p>
+<dl class="section note"><dt>Note</dt><dd>The authentication unit returns the mechs as an array of strings. The array ends with a NULL Be aware that the other interfaces use a vector instead. </dd></dl>
 
 </div>
 </div>
@@ -372,7 +376,7 @@ Private Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 20 2014 12:59:12 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 22 2014 14:08:53 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>
