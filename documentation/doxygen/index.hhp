@@ -64,7 +64,6 @@ ioFilterCommandHandlerEscDLF_8hpp_source.html
 lineCommandHandler_8hpp_source.html
 configurationBase_8hpp_source.html
 configurationTree_8hpp_source.html
-structSerialize_8hpp_source.html
 valueParser_8hpp_source.html
 HMAC_8hpp_source.html
 PBKDF2_8hpp_source.html
@@ -133,6 +132,7 @@ buffers_8hpp_source.html
 ioblocks_8hpp_source.html
 iterators_8hpp_source.html
 parser_8hpp_source.html
+configSerialize_8hpp_source.html
 cppFormFunction_8hpp_source.html
 ddlParseStack_8hpp_source.html
 ddlSerializeStack_8hpp_source.html
@@ -140,6 +140,7 @@ ddlStructParser_8hpp_source.html
 ddlStructSerializer_8hpp_source.html
 ddlFormParser_8hpp_source.html
 ddlFormSerializer_8hpp_source.html
+descriptiveConfiguration_8hpp_source.html
 flags_8hpp_source.html
 mapContext_8hpp_source.html
 intrusiveParser_8hpp_source.html
@@ -253,7 +254,6 @@ ioFilterCommandHandlerEscDLF_8hpp.html
 lineCommandHandler_8hpp.html
 configurationBase_8hpp.html
 configurationTree_8hpp.html
-structSerialize_8hpp.html
 valueParser_8hpp.html
 HMAC_8hpp.html
 PBKDF2_8hpp.html
@@ -322,6 +322,7 @@ buffers_8hpp.html
 ioblocks_8hpp.html
 iterators_8hpp.html
 parser_8hpp.html
+configSerialize_8hpp.html
 cppFormFunction_8hpp.html
 ddlParseStack_8hpp.html
 ddlSerializeStack_8hpp.html
@@ -329,6 +330,7 @@ ddlStructParser_8hpp.html
 ddlStructSerializer_8hpp.html
 ddlFormParser_8hpp.html
 ddlFormSerializer_8hpp.html
+descriptiveConfiguration_8hpp.html
 flags_8hpp.html
 mapContext_8hpp.html
 intrusiveParser_8hpp.html
@@ -837,6 +839,8 @@ class__Wolframe_1_1serialize_1_1DDLStructParser.html
 class__Wolframe_1_1serialize_1_1DDLStructParser-members.html
 class__Wolframe_1_1serialize_1_1DDLStructSerializer.html
 class__Wolframe_1_1serialize_1_1DDLStructSerializer-members.html
+class__Wolframe_1_1serialize_1_1DescriptiveConfiguration.html
+class__Wolframe_1_1serialize_1_1DescriptiveConfiguration-members.html
 struct__Wolframe_1_1serialize_1_1EmptyStruct.html
 class__Wolframe_1_1serialize_1_1EmptyStruct-members.html
 struct__Wolframe_1_1serialize_1_1Flags.html
@@ -1270,6 +1274,7 @@ class__Wolframe_1_1serialize_1_1DDLFormParser.png
 class__Wolframe_1_1serialize_1_1DDLFormSerializer.png
 class__Wolframe_1_1serialize_1_1DDLStructParser.png
 class__Wolframe_1_1serialize_1_1DDLStructSerializer.png
+class__Wolframe_1_1serialize_1_1DescriptiveConfiguration.png
 class__Wolframe_1_1serialize_1_1ParseStateStack.png
 struct__Wolframe_1_1serialize_1_1StructDescription.png
 class__Wolframe_1_1serialize_1_1StructDescriptionBase.png

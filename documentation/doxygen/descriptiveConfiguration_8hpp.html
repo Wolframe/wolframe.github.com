@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-	<title>Wolframe: include/config/structSerialize.hpp File Reference</title>
+	<title>Wolframe: include/serialize/descriptiveConfiguration.hpp File Reference</title>
 	<meta name="generator" content="Doxygen 1.8.7"/>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -82,60 +82,48 @@
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_ea664ba48352c10e82f679d554c07e1e.html">config</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_d6dce8604daa6d974602991ede05feb6.html">serialize</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
-<div class="title">structSerialize.hpp File Reference</div>  </div>
+<div class="title">descriptiveConfiguration.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Defines a configuration structure parser.  
+<p>Named configuration defined by description.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="ptreefilter_8hpp_source.html">filter/ptreefilter.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="tostringfilter_8hpp_source.html">filter/tostringfilter.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="typedfilter_8hpp_source.html">filter/typedfilter.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="structSerializer_8hpp_source.html">serialize/struct/structSerializer.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="structParser_8hpp_source.html">serialize/struct/structParser.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="variantStructDescription_8hpp_source.html">types/variantStructDescription.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="variantStruct_8hpp_source.html">types/variantStruct.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="propertyTree_8hpp_source.html">types/propertyTree.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="configurationBase_8hpp_source.html">config/configurationBase.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="configurationTree_8hpp_source.html">config/configurationTree.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="configSerialize_8hpp_source.html">serialize/configSerialize.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="logger-v1_8hpp_source.html">logger-v1.hpp</a>&quot;</code><br />
 </div>
-<p><a href="structSerialize_8hpp_source.html">Go to the source code of this file.</a></p>
+<p><a href="descriptiveConfiguration_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1serialize_1_1DescriptiveConfiguration.html">_Wolframe::serialize::DescriptiveConfiguration</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace__Wolframe"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe.html">_Wolframe</a></td></tr>
 <tr class="memdesc:namespace__Wolframe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toplevel Wolframe namespace. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespace__Wolframe_1_1config"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1config.html">_Wolframe::config</a></td></tr>
-<tr class="memdesc:namespace__Wolframe_1_1config"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interfaces and templates for configuration structures and parsers. <br /></td></tr>
+<tr class="memitem:namespace__Wolframe_1_1serialize"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1serialize.html">_Wolframe::serialize</a></td></tr>
+<tr class="memdesc:namespace__Wolframe_1_1serialize"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialization library (implemented in the library libwolframe_serialize) <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ad7ddfab5ff61fa7ff4c2fcff338b107d"><td class="memTemplParams" colspan="2">template&lt;class Structure &gt; </td></tr>
-<tr class="memitem:ad7ddfab5ff61fa7ff4c2fcff338b107d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1config.html#ad7ddfab5ff61fa7ff4c2fcff338b107d">_Wolframe::config::parseConfigStructure</a> (Structure &amp;st, const ConfigurationNode &amp;pt)</td></tr>
-<tr class="separator:ad7ddfab5ff61fa7ff4c2fcff338b107d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68863988a8dc1f9b4679d221493c0a94"><td class="memTemplParams" colspan="2">template&lt;class Structure &gt; </td></tr>
-<tr class="memitem:a68863988a8dc1f9b4679d221493c0a94"><td class="memTemplItemLeft" align="right" valign="top">types::PropertyTree::Node&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1config.html#a68863988a8dc1f9b4679d221493c0a94">_Wolframe::config::structureToPropertyTree</a> (const Structure &amp;st)</td></tr>
-<tr class="separator:a68863988a8dc1f9b4679d221493c0a94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a083fb9fd59f5b65eb0559a7920050961"><td class="memTemplParams" colspan="2">template&lt;class Structure &gt; </td></tr>
-<tr class="memitem:a083fb9fd59f5b65eb0559a7920050961"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1config.html#a083fb9fd59f5b65eb0559a7920050961">_Wolframe::config::structureToString</a> (const Structure &amp;st)</td></tr>
-<tr class="separator:a083fb9fd59f5b65eb0559a7920050961"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Defines a configuration structure parser. </p>
+<div class="textblock"><p>Named configuration defined by description. </p>
 </div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 22 2014 14:08:49 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 23 2014 19:49:19 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

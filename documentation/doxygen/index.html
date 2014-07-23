@@ -123,20 +123,19 @@ Unfortunately we cannot define a format with array indices as unified format, be
 <li><b>Normalization</b> <b>function:</b> Normalization functions (<a class="el" href="class__Wolframe_1_1types_1_1NormalizeFunction.html" title="Basic normalization function for atomic values (variant type) ">_Wolframe::types::NormalizeFunction</a>) are besides custom data types the basic bricks to define atomic data types in forms. This component type lets you define your own normalization functions. See <a class="el" href="NormalizerModule.html">Normalize function module</a></li>
 <li><b>Runtime</b> <b>environment:</b> A runtime environment (<a class="el" href="class__Wolframe_1_1langbind_1_1RuntimeEnvironment.html" title="Runtime environment for functions that need it. (for example as structure hosting the CLR for ...">_Wolframe::langbind::RuntimeEnvironment</a>) is a configurable environment for functions that need a context for execution. The only case where a runtime environment is currently used in Wolframe is for .NET (Windows only). See <a class="el" href="RuntimeEnvironmentModule.html">Runtime environment host structure module</a></li>
 <li><b>Authenticator</b> <b>unit:</b> An authenticator unit (_Wolframe::AAAA::AuthenticatorUnit) implements one or more authentication mechanisms. An authentication unit is chosen for authentication of the client if it is the first configured authentication unit in the configuration section AAAA that implements the mechanism chosen. The class processing the authentication is called authentication slice (<a class="el" href="class__Wolframe_1_1AAAA_1_1AuthenticatorSlice.html" title="This is the base class for authenticator slices implementations An authenticator has (usually) severa...">_Wolframe::AAAA::AuthenticatorSlice</a>). See <a class="el" href="AuthenticatorModule.html">Authenticator module</a></li>
-<li><b>Database</b> <b>interface:</b> Wolframe has interfaces to execute queries on Sqlite3 and PostgreSQL databases. To define a new database interface, we have to implement the following interfaces:<ul>
+<li><b>Database</b> <b>interface:</b> Wolframe has interfaces to execute queries on Sqlite3 and PostgreSQL databases. To define a new database interface, we have to implement at least the following interfaces:<ul>
 <li>configuration (implements <a class="el" href="class__Wolframe_1_1config_1_1NamedConfiguration.html" title="A named configuration is a normal configuration that provides also an className function. ">_Wolframe::config::NamedConfiguration</a>)</li>
-<li>database language description (implements <a class="el" href="class__Wolframe_1_1db_1_1LanguageDescription.html" title="Interface to properties of the database language (SQL) ">_Wolframe::db::LanguageDescription</a>)</li>
-<li>database unit (implements <a class="el" href="class__Wolframe_1_1db_1_1DatabaseUnit.html" title="This is the base class for database unit implementations. ">_Wolframe::db::DatabaseUnit</a>)</li>
+<li>database language description (override the methods you want from <a class="el" href="class__Wolframe_1_1db_1_1LanguageDescription.html" title="Interface to properties of the database language (SQL) ">_Wolframe::db::LanguageDescription</a>, that describes SQL)</li>
 <li>database (implements <a class="el" href="class__Wolframe_1_1db_1_1Database.html" title="Base class for database interface. All databases should provide this interface. ">_Wolframe::db::Database</a>)</li>
 <li>transaction execution statemachine (implements <a class="el" href="class__Wolframe_1_1db_1_1TransactionExecStatemachine.html" title="Interface to the database transaction execution statemechine. ">_Wolframe::db::TransactionExecStatemachine</a>)</li>
 </ul>
-The database unit and the configuration are the objects you have to declare when implementing a database module. See <a class="el" href="DatabaseModule.html">Database interface module</a>. </li>
+The database and the configuration are the objects you have to declare when implementing a database module. See <a class="el" href="DatabaseModule.html">Database interface module</a>. </li>
 </ul>
 </div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 22 2014 14:09:18 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 23 2014 19:49:36 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

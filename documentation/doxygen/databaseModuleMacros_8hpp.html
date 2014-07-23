@@ -107,6 +107,9 @@ Macros</h2></td></tr>
 <tr class="memitem:acf54fe508db07fdd89870f8272bcf1f7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="databaseModuleMacros_8hpp.html#acf54fe508db07fdd89870f8272bcf1f7">WF_DATABASE</a>(NAME, UNITCLASS, CONFIGCLASS)</td></tr>
 <tr class="memdesc:acf54fe508db07fdd89870f8272bcf1f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a database interface.  <a href="#acf54fe508db07fdd89870f8272bcf1f7">More...</a><br /></td></tr>
 <tr class="separator:acf54fe508db07fdd89870f8272bcf1f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd2d594c3ca81a53f5bc2aaeff4f99b5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="databaseModuleMacros_8hpp.html#abd2d594c3ca81a53f5bc2aaeff4f99b5">WF_SIMPLE_DATABASE</a>(NAME, DBCLASS, CONFIGCLASS)</td></tr>
+<tr class="memdesc:abd2d594c3ca81a53f5bc2aaeff4f99b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a simple database (one database object per unit) interface.  <a href="#abd2d594c3ca81a53f5bc2aaeff4f99b5">More...</a><br /></td></tr>
+<tr class="separator:abd2d594c3ca81a53f5bc2aaeff4f99b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Macros for a module for defining a database interface. </p>
@@ -154,7 +157,7 @@ Macros</h2></td></tr>
 <div class="line">                }\</div>
 <div class="line">                UNITCLASS* object( <span class="keyword">const</span> config::NamedConfiguration&amp; cfgi);\</div>
 <div class="line">                {\</div>
-<div class="line">                        const CONFIGDEF* cfg = <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span>CONFIGDEF*<span class="keyword">&gt;</span>(&amp;cfgi);\</div>
+<div class="line">                        const CONFIGCLASS* cfg = <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span>CONFIGCLASS*<span class="keyword">&gt;</span>(&amp;cfgi);\</div>
 <div class="line">                        return <span class="keyword">new</span> UNITCLASS(*cfg);\</div>
 <div class="line">                }\</div>
 <div class="line">        };\</div>
@@ -178,11 +181,45 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="abd2d594c3ca81a53f5bc2aaeff4f99b5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WF_SIMPLE_DATABASE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">NAME, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">DBCLASS, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">CONFIGCLASS&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines a simple database (one database object per unit) interface. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 22 2014 14:08:48 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 23 2014 19:49:17 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

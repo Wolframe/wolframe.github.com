@@ -80,91 +80,127 @@
 <div class="title">Database interface module </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><div class="fragment"><div class="line"><span class="keyword">class </span>MyDatabaseUnit;</div>
+<div class="textblock"><p>This example shows the simplest case of a database. The macro for its declaration is called WF_SIMPLE_DATABASE because of that. The base classes allow more complex configurations. </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="databaseModuleMacros_8hpp.html">appdevel/databaseModuleMacros.hpp</a>&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="moduleFrameMacros_8hpp.html">appdevel/moduleFrameMacros.hpp</a>&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="configurationBase_8hpp.html">config/configurationBase.hpp</a>&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="database_8hpp.html">database/database.hpp</a>&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="transaction_8hpp.html">database/transaction.hpp</a>&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="variant_8hpp.html">types/variant.hpp</a>&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="descriptiveConfiguration_8hpp.html">serialize/descriptiveConfiguration.hpp</a>&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"></div>
 <div class="line"><span class="keyword">class </span>MyDatabaseConfig</div>
-<div class="line">        :<span class="keyword">public</span> <a class="code" href="class__Wolframe_1_1config_1_1NamedConfiguration.html">_Wolframe::config::NamedConfiguration</a></div>
+<div class="line">        :<span class="keyword">public</span> <a class="code" href="class__Wolframe_1_1serialize_1_1DescriptiveConfiguration.html">_Wolframe::serialize::DescriptiveConfiguration</a></div>
 <div class="line">{</div>
-<div class="line">        <span class="comment">// ... define your database configuration structure here</span></div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">        <span class="comment">// ... define your configuration data elements here</span></div>
+<div class="line"></div>
+<div class="line">        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html">_Wolframe::serialize::StructDescriptionBase</a>* getStructDescription()</div>
+<div class="line">        {</div>
+<div class="line">                <span class="comment">// ... return your introspection description reference of the configuration here</span></div>
+<div class="line">                <span class="keywordflow">return</span> 0;</div>
+<div class="line">        }</div>
+<div class="line">        MyDatabaseConfig( <span class="keyword">const</span> <span class="keywordtype">char</span>* title, <span class="keyword">const</span> <span class="keywordtype">char</span>* logprefix)</div>
+<div class="line">                :_Wolframe::serialize::DescriptiveConfiguration( title, <span class="stringliteral">&quot;database&quot;</span>, logprefix, getStructDescription())</div>
+<div class="line">        {</div>
+<div class="line">                <a class="code" href="class__Wolframe_1_1serialize_1_1DescriptiveConfiguration.html#a7e0083ae311a28fcca166a71dcb9fa01">setBasePtr</a>( (<span class="keywordtype">void</span>*)<span class="keyword">this</span>); <span class="comment">// ... mandatory to set pointer to start of configuration</span></div>
+<div class="line">        }</div>
 <div class="line">};</div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"><span class="keyword">class </span>MyDatabase;</div>
 <div class="line"></div>
 <div class="line"><span class="keyword">class </span>MyTransactionExecStatemachine</div>
 <div class="line">        :<span class="keyword">public</span> <a class="code" href="class__Wolframe_1_1db_1_1TransactionExecStatemachine.html">_Wolframe::db::TransactionExecStatemachine</a></div>
 <div class="line">{</div>
 <div class="line"><span class="keyword">public</span>:</div>
-<div class="line">        MyTransactionExecStatemachine( MyDatabaseUnit* unit)</div>
+<div class="line">        MyTransactionExecStatemachine( MyDatabase* <span class="comment">/*database*/</span>)</div>
 <div class="line">        {</div>
 <div class="line">                <span class="comment">// ... create a statemachine for one transaction on a database of &#39;unit&#39; that will start with the next call of begin()</span></div>
 <div class="line">        }</div>
 <div class="line"></div>
 <div class="line">        <span class="keyword">virtual</span> <span class="keyword">const</span> std::string&amp; <a class="code" href="class__Wolframe_1_1db_1_1TransactionExecStatemachine.html#a9b4aa2e58f47d24687b4c09152588a0d">databaseID</a>()<span class="keyword"> const</span></div>
 <div class="line"><span class="keyword">        </span>{</div>
-<div class="line">                <span class="comment">// ... return the configuration identifier of your database here ...</span></div>
+<div class="line">                <span class="keyword">static</span> <span class="keyword">const</span> std::string my_databaseID(<span class="stringliteral">&quot;mydb&quot;</span>);</div>
+<div class="line">                <span class="keywordflow">return</span> my_databaseID;  <span class="comment">// ... return the configuration identifier of your database</span></div>
 <div class="line">        }</div>
 <div class="line"></div>
 <div class="line">        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class__Wolframe_1_1db_1_1TransactionExecStatemachine.html#a5aab1dbf652982ffdaef6992fcbfc125">begin</a>()</div>
 <div class="line">        {</div>
 <div class="line">                <span class="comment">// ... begin of the current transaction</span></div>
+<div class="line">                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line">        }</div>
 <div class="line"></div>
 <div class="line">        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class__Wolframe_1_1db_1_1TransactionExecStatemachine.html#a07c7984ce051806ccde6ff6c11c997e1">commit</a>()</div>
 <div class="line">        {</div>
 <div class="line">                <span class="comment">// ... commit of the current transaction</span></div>
+<div class="line">                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line">        }</div>
 <div class="line"></div>
 <div class="line">        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class__Wolframe_1_1db_1_1TransactionExecStatemachine.html#a8f9e6c1331282829237c7633831a20f5">rollback</a>()</div>
 <div class="line">        {</div>
 <div class="line">                <span class="comment">// ... rollback of the current transaction</span></div>
+<div class="line">                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line">        }</div>
 <div class="line"></div>
-<div class="line">        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class__Wolframe_1_1db_1_1TransactionExecStatemachine.html#a6ab1aee63011a960b9a791f0fad92d82">start</a>( <span class="keyword">const</span> std::string&amp; statement)=0;</div>
+<div class="line">        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class__Wolframe_1_1db_1_1TransactionExecStatemachine.html#a6ab1aee63011a960b9a791f0fad92d82">start</a>( <span class="keyword">const</span> std::string&amp; <span class="comment">/*statement*/</span>)</div>
 <div class="line">        {</div>
 <div class="line">                <span class="comment">// ... create a new statement instance from string</span></div>
+<div class="line">                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line">        }</div>
 <div class="line"></div>
-<div class="line">        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class__Wolframe_1_1db_1_1TransactionExecStatemachine.html#a82a38d640bc600576d86321e90038eb0">bind</a>( std::size_t idx, <span class="keyword">const</span> types::VariantConst&amp; value)</div>
+<div class="line">        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class__Wolframe_1_1db_1_1TransactionExecStatemachine.html#a82a38d640bc600576d86321e90038eb0">bind</a>( std::size_t <span class="comment">/*idx*/</span>, <span class="keyword">const</span> <a class="code" href="struct__Wolframe_1_1types_1_1VariantConst.html">_Wolframe::types::VariantConst</a>&amp; <span class="comment">/*value*/</span>)</div>
 <div class="line">        {</div>
 <div class="line">                <span class="comment">// ... bind a parameter (idx &gt;= 1) of the current statement instance</span></div>
+<div class="line">                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line">        }</div>
 <div class="line"></div>
 <div class="line">        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class__Wolframe_1_1db_1_1TransactionExecStatemachine.html#a43f6d008670c03c30934463e305dd3ad">execute</a>()</div>
 <div class="line">        {</div>
 <div class="line">                <span class="comment">// ... execute the built instance of the current statement</span></div>
+<div class="line">                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line">        }</div>
 <div class="line"></div>
 <div class="line">        <span class="keyword">virtual</span> std::size_t <a class="code" href="class__Wolframe_1_1db_1_1TransactionExecStatemachine.html#a8d2de417992ac34648b7b2e2fd96932b">nofColumns</a>()</div>
 <div class="line">        {</div>
 <div class="line">                <span class="comment">// ... get the number of columns of the last result, 0 if there was no result</span></div>
+<div class="line">                <span class="keywordflow">return</span> 0;</div>
 <div class="line">        }</div>
 <div class="line"></div>
-<div class="line">        <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="class__Wolframe_1_1db_1_1TransactionExecStatemachine.html#a5a318baae562f8148cdf22604b49d55e">columnName</a>( std::size_t idx)</div>
+<div class="line">        <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="class__Wolframe_1_1db_1_1TransactionExecStatemachine.html#a5a318baae562f8148cdf22604b49d55e">columnName</a>( std::size_t <span class="comment">/*idx*/</span>)</div>
 <div class="line">        {</div>
 <div class="line">                <span class="comment">// ... get the name of a column by index (idx &gt;= 1) of the last result</span></div>
+<div class="line">                <span class="keywordflow">return</span> 0;</div>
 <div class="line">        }</div>
 <div class="line"></div>
-<div class="line">        <span class="keyword">virtual</span> types::VariantConst <span class="keyword">get</span>( std::size_t idx)</div>
+<div class="line">        <span class="keyword">virtual</span> <a class="code" href="struct__Wolframe_1_1types_1_1VariantConst.html">_Wolframe::types::VariantConst</a> <span class="keyword">get</span>( std::size_t <span class="comment">/*idx*/</span>)</div>
 <div class="line">        {</div>
 <div class="line">                <span class="comment">// ... get the value of a column by index (idx &gt;= 1) of the last result</span></div>
+<div class="line">                <span class="keywordflow">return</span> <a class="code" href="struct__Wolframe_1_1types_1_1VariantConst.html">_Wolframe::types::VariantConst</a>();</div>
 <div class="line">        }</div>
 <div class="line"></div>
 <div class="line">        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class__Wolframe_1_1db_1_1TransactionExecStatemachine.html#ac1ed14daaed3f8fbf722cc2e109ef804">next</a>()</div>
 <div class="line">        {</div>
 <div class="line">                <span class="comment">// ... skip to the next result, return false, if there is no result left</span></div>
+<div class="line">                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line">        }</div>
 <div class="line"></div>
 <div class="line">        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class__Wolframe_1_1db_1_1TransactionExecStatemachine.html#a25e389264fb6cf4e7f4a571c508ae689">hasResult</a>()</div>
 <div class="line">        {</div>
 <div class="line">                <span class="comment">// ... return true, if the last database statement returned at least one result row</span></div>
+<div class="line">                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line">        }</div>
 <div class="line"></div>
-<div class="line">        <span class="keyword">virtual</span> <span class="keyword">const</span> db::DatabaseError* <a class="code" href="class__Wolframe_1_1db_1_1TransactionExecStatemachine.html#af32801d74dd680543aab5fcd695ecc83">getLastError</a>()</div>
+<div class="line">        <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1db_1_1DatabaseError.html">_Wolframe::db::DatabaseError</a>* <a class="code" href="class__Wolframe_1_1db_1_1TransactionExecStatemachine.html#af32801d74dd680543aab5fcd695ecc83">getLastError</a>()</div>
 <div class="line">        {</div>
 <div class="line">                <span class="comment">// ... return the last database error as structure here</span></div>
+<div class="line">                <span class="keywordflow">return</span> 0;</div>
 <div class="line">        }</div>
 <div class="line"></div>
 <div class="line">        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class__Wolframe_1_1db_1_1TransactionExecStatemachine.html#a68601b6a017d7b90a4b73bea579960bf">isCaseSensitive</a>()</div>
 <div class="line">        {</div>
 <div class="line">                <span class="comment">// ... return true, if the database language is case sensitive (SQL is case insensitive)</span></div>
+<div class="line">                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line">        }</div>
 <div class="line">};</div>
 <div class="line"></div>
@@ -172,9 +208,15 @@
 <div class="line">        :<span class="keyword">public</span> <a class="code" href="class__Wolframe_1_1db_1_1Database.html">_Wolframe::db::Database</a></div>
 <div class="line">{</div>
 <div class="line"><span class="keyword">public</span>:</div>
+<div class="line">        MyDatabase( <span class="keyword">const</span> MyDatabaseConfig&amp; <span class="comment">/*config*/</span>)</div>
+<div class="line">        {</div>
+<div class="line">                <span class="comment">// ... define your database from configuration here</span></div>
+<div class="line">        }</div>
+<div class="line"></div>
 <div class="line">        <span class="keyword">virtual</span> <span class="keyword">const</span> std::string&amp; <a class="code" href="class__Wolframe_1_1db_1_1Database.html#ac328da357a65760222e9e5570ddf1744">ID</a>()<span class="keyword"> const</span></div>
 <div class="line"><span class="keyword">        </span>{</div>
-<div class="line">                <span class="comment">// ... return the identifier of the database here</span></div>
+<div class="line">                <span class="keyword">static</span> <span class="keyword">const</span> std::string my_ID(<span class="stringliteral">&quot;mydb&quot;</span>);</div>
+<div class="line">                <span class="keywordflow">return</span> my_ID;    <span class="comment">// ... return the configuration identifier of your database</span></div>
 <div class="line">        }</div>
 <div class="line"></div>
 <div class="line">        <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="class__Wolframe_1_1db_1_1Database.html#a8fc33e6ef3cc401a1a0937bbccacbe51">className</a>()<span class="keyword"> const</span></div>
@@ -184,46 +226,25 @@
 <div class="line"></div>
 <div class="line">        <span class="keyword">virtual</span> <a class="code" href="class__Wolframe_1_1db_1_1Transaction.html">_Wolframe::db::Transaction</a>* <a class="code" href="class__Wolframe_1_1db_1_1Database.html#aecc470dd38b40a9c46dc84f9e6bf53a4">transaction</a>( <span class="keyword">const</span> std::string&amp; name_)</div>
 <div class="line">        {</div>
-<div class="line">                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class__Wolframe_1_1db_1_1Transaction.html">_Wolframe::db::Transaction</a>( name_, <span class="keyword">new</span> MyTransactionExecStatemachine( <span class="keyword">this</span>));</div>
+<div class="line">                <a class="code" href="namespace__Wolframe_1_1db.html#ab3d3fa46f95d886ce2ea62150e21be66">_Wolframe::db::TransactionExecStatemachineR</a> stm( <span class="keyword">new</span> MyTransactionExecStatemachine( <span class="keyword">this</span>));</div>
+<div class="line">                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class__Wolframe_1_1db_1_1Transaction.html">_Wolframe::db::Transaction</a>( name_, stm);</div>
 <div class="line">        }</div>
 <div class="line"></div>
-<div class="line">        <span class="keyword">virtual</span> <span class="keyword">const</span> LanguageDescription* <a class="code" href="class__Wolframe_1_1db_1_1Database.html#a843c5c072cbd31bdebcd86ec2dceb3c5">getLanguageDescription</a>()<span class="keyword"> const</span></div>
+<div class="line">        <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1db_1_1LanguageDescription.html">_Wolframe::db::LanguageDescription</a>* <a class="code" href="class__Wolframe_1_1db_1_1Database.html#a843c5c072cbd31bdebcd86ec2dceb3c5">getLanguageDescription</a>()<span class="keyword"> const</span></div>
 <div class="line"><span class="keyword">        </span>{</div>
 <div class="line">                <span class="keyword">static</span> <a class="code" href="class__Wolframe_1_1db_1_1LanguageDescription.html">_Wolframe::db::LanguageDescription</a> langdescr;</div>
 <div class="line">                <span class="keywordflow">return</span> &amp;langdescr;</div>
 <div class="line">        }</div>
 <div class="line">};</div>
 <div class="line"></div>
-<div class="line"><span class="keyword">class </span>MyDatabaseUnit</div>
-<div class="line">{</div>
-<div class="line"><span class="keyword">public</span>:</div>
-<div class="line">        MyDatabaseUnit( <span class="keyword">const</span> MyDatabaseConfig&amp; config)</div>
-<div class="line">        {</div>
-<div class="line">                <span class="comment">// ... create the database unit from configuration here</span></div>
-<div class="line">        }</div>
-<div class="line"></div>
-<div class="line">        <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* className()<span class="keyword"> const</span></div>
-<div class="line"><span class="keyword">        </span>{</div>
-<div class="line">                <span class="keywordflow">return</span> <span class="stringliteral">&quot;MyDatabaseUnit&quot;</span>;</div>
-<div class="line">        }</div>
-<div class="line"></div>
-<div class="line">        <span class="keyword">virtual</span> <span class="keyword">const</span> std::string&amp; ID()<span class="keyword"> const</span></div>
-<div class="line"><span class="keyword">        </span>{</div>
-<div class="line">        }</div>
-<div class="line"></div>
-<div class="line">        <span class="keyword">virtual</span> Database* database()</div>
-<div class="line">        {</div>
-<div class="line">        }</div>
-<div class="line">};</div>
-<div class="line"></div>
 <div class="line"><a class="code" href="moduleFrameMacros_8hpp.html#a5c94abd61d1619c761279522e203a4a4">WF_MODULE_BEGIN</a>( <span class="stringliteral">&quot;MyDatabase&quot;</span>, <span class="stringliteral">&quot;my database module&quot;</span>)</div>
-<div class="line"> <a class="code" href="databaseModuleMacros_8hpp.html#acf54fe508db07fdd89870f8272bcf1f7">WF_DATABASE</a>(&quot;MyDB&quot;,MyDatabaseUnit,MyDatabaseConfig)</div>
+<div class="line"> <a class="code" href="databaseModuleMacros_8hpp.html#abd2d594c3ca81a53f5bc2aaeff4f99b5">WF_SIMPLE_DATABASE</a>( &quot;MyDB&quot;, MyDatabase, MyDatabaseConfig)</div>
 <div class="line"><a class="code" href="moduleFrameMacros_8hpp.html#ad59c3d56591ee809897499a5d99bcd04">WF_MODULE_END</a></div>
 </div><!-- fragment --> </div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 22 2014 14:08:52 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 23 2014 19:49:20 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>
