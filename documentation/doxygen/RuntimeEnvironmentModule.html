@@ -80,22 +80,36 @@
 <div class="title">Runtime environment host structure module </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="runtimeEnvironmentModuleMacros_8hpp.html">appdevel/runtimeEnvironmentModuleMacros.hpp</a>&quot;</span></div>
+<div class="textblock"><p>The configuration of the runtime environment module example is defined in a descriptive way. If you want to learn more about how to define a configuration by declaring first the data members and then the description for introspection, you will find an example at <a class="el" href="ConfigDescription.html">Descriptive configuration declaration example</a></p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="runtimeEnvironmentModuleMacros_8hpp.html">appdevel/runtimeEnvironmentModuleMacros.hpp</a>&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="moduleFrameMacros_8hpp.html">appdevel/moduleFrameMacros.hpp</a>&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="descriptiveConfiguration_8hpp.html">serialize/descriptiveConfiguration.hpp</a>&quot;</span></div>
 <div class="line"></div>
-<div class="line"><span class="keyword">static</span> initMyRuntimeEnvironment()</div>
+<div class="line"><span class="keyword">static</span> <span class="keywordtype">int</span> initMyRuntimeEnvironment()</div>
 <div class="line">{</div>
-<div class="line">    <span class="comment">// ... put your global initializations here</span></div>
+<div class="line">        <span class="comment">// ... put your global initializations here</span></div>
+<div class="line">        <span class="comment">// ... return 0 on success, an error code != 0 else</span></div>
 <div class="line">}</div>
 <div class="line"></div>
 <div class="line"><span class="keyword">class </span>MyRuntimeEnvironmentConfig</div>
-<div class="line">        :<span class="keyword">public</span> config::NamedConfiguration</div>
+<div class="line">        :<span class="keyword">public</span> <a class="code" href="class__Wolframe_1_1serialize_1_1DescriptiveConfiguration.html">_Wolframe::serialize::DescriptiveConfiguration</a></div>
 <div class="line">{</div>
-<div class="line">        <span class="comment">// ... put your runtime environment configuration here</span></div>
-<div class="line">}</div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">        <span class="comment">// ... define your runtime environment configuration data members here</span></div>
+<div class="line"></div>
+<div class="line">        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html">_Wolframe::serialize::StructDescriptionBase</a>* getStructDescription()</div>
+<div class="line">        {</div>
+<div class="line">                <span class="comment">// ... return your introspection description reference of the configuration here</span></div>
+<div class="line">        }</div>
+<div class="line">        MyRuntimeEnvironmentConfig( <span class="keyword">const</span> <span class="keywordtype">char</span>* classname, <span class="keyword">const</span> <span class="keywordtype">char</span>* title, <span class="keyword">const</span> <span class="keywordtype">char</span>* logprefix, <span class="keyword">const</span> <span class="keywordtype">char</span>* subsection)</div>
+<div class="line">                :_Wolframe::serialize::DescriptiveConfiguration( title, <span class="stringliteral">&quot;authentication&quot;</span>, logprefix, getStructDescription())</div>
+<div class="line">        {</div>
+<div class="line">                <a class="code" href="class__Wolframe_1_1serialize_1_1DescriptiveConfiguration.html#a7e0083ae311a28fcca166a71dcb9fa01">setBasePtr</a>( (<span class="keywordtype">void</span>*)<span class="keyword">this</span>); <span class="comment">// ... mandatory to set pointer to start of configuration</span></div>
+<div class="line">        }</div>
+<div class="line">};</div>
 <div class="line"></div>
 <div class="line"><span class="keyword">class </span>MyRuntimeEnvironment</div>
-<div class="line">        :<span class="keyword">public</span> langbind::RuntimeEnvironment</div>
+<div class="line">        :<span class="keyword">public</span> <a class="code" href="class__Wolframe_1_1langbind_1_1RuntimeEnvironment.html">_Wolframe::langbind::RuntimeEnvironment</a></div>
 <div class="line">{</div>
 <div class="line"><span class="keyword">public</span>:</div>
 <div class="line">        <span class="comment">// ... put your runtime environment host structures here</span></div>
@@ -104,7 +118,21 @@
 <div class="line">        {</div>
 <div class="line">                <span class="comment">// ... create your runtime environment from its configuration here</span></div>
 <div class="line">        }</div>
-<div class="line">}</div>
+<div class="line">        <span class="keyword">virtual</span> <a class="code" href="class__Wolframe_1_1langbind_1_1FormFunctionClosure.html">_Wolframe::langbind::FormFunctionClosure</a>* <a class="code" href="class__Wolframe_1_1langbind_1_1RuntimeEnvironment.html#a910301c73fb406214fc741dceb0b99e4">createClosure</a>( <span class="keyword">const</span> std::string&amp; funcname)<span class="keyword"> const</span></div>
+<div class="line"><span class="keyword">        </span>{</div>
+<div class="line">                <span class="comment">// ... create and return a closure to execute the function &#39;funcname&#39; here</span></div>
+<div class="line">        }</div>
+<div class="line"></div>
+<div class="line">        <span class="keyword">virtual</span> std::vector&lt;std::string&gt; <a class="code" href="class__Wolframe_1_1langbind_1_1RuntimeEnvironment.html#a79890ca413c6b0f0d8c279e7fff4b981">functions</a>()<span class="keyword"> const</span></div>
+<div class="line"><span class="keyword">        </span>{</div>
+<div class="line">                <span class="comment">// ... return the list of functions that are exported by the runtime environment here</span></div>
+<div class="line">        }</div>
+<div class="line"></div>
+<div class="line">        <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="class__Wolframe_1_1langbind_1_1RuntimeEnvironment.html#a2972d58c0b3639fa5c0c30ad536807e7">name</a>()<span class="keyword"> const</span></div>
+<div class="line"><span class="keyword">        </span>{</div>
+<div class="line">                <span class="comment">// ... return the name of the runtime environment here</span></div>
+<div class="line">        }</div>
+<div class="line">};</div>
 <div class="line"></div>
 <div class="line"><a class="code" href="moduleFrameMacros_8hpp.html#a5c94abd61d1619c761279522e203a4a4">WF_MODULE_BEGIN</a>( <span class="stringliteral">&quot;MyRuntimeEnvironment&quot;</span>, <span class="stringliteral">&quot;runtime environment for my programs&quot;</span>)</div>
 <div class="line"> <a class="code" href="runtimeEnvironmentModuleMacros_8hpp.html#ab44205579c359567d735638706f3cdc2">WF_RUNTIME_ENVIRONMENT</a>( &quot;my runtime environment&quot;, &quot;runtimeenv&quot;, &quot;myrunenv&quot;, MyRuntimeEnvironment, MyRuntimeEnvironmentConfig, initMyRuntimeEnvironment)</div>
@@ -113,7 +141,7 @@
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 23 2014 19:49:20 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 24 2014 15:26:15 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

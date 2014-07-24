@@ -124,30 +124,34 @@
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">************************************************************************/</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="moduleInterface_8hpp.html">module/moduleInterface.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="programTypeBuilder_8hpp.html">appdevel/module/programTypeBuilder.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="programTypeModuleMacros_8hpp.html#ada457b3078bb96fd6dd9eaf727c5ec09">   39</a></span>&#160;<span class="preprocessor">#define WF_PROGRAM_TYPE( LANGNAME, PROGRAMCLASS)\</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">{\</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">        struct Constructor\</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">        {\</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">                static _Wolframe::prgbind::Program* create()\</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">                {\</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">                        return new PROGRAMCLASS();\</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">                }\</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">                static _Wolframe::module::BuilderBase* impl()\</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">                {\</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">                        return new _Wolframe::module::ProgramTypeBuilder( LANGNAME &quot;ProgramType&quot;, LANGNAME &quot;Language&quot;, create);\</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">                }\</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">        };\</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">        (*this)(&amp;Constructor ::impl);\</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">}</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="program_8hpp.html">prgbind/program.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="programLibrary_8hpp.html">prgbind/programLibrary.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="programTypeModuleMacros_8hpp.html#ada457b3078bb96fd6dd9eaf727c5ec09">   41</a></span>&#160;<span class="preprocessor">#define WF_PROGRAM_TYPE( LANGNAME, PROGRAMCLASS)\</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">{\</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">        struct Constructor\</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">        {\</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">                static _Wolframe::prgbind::Program* create()\</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">                {\</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">                        return new PROGRAMCLASS();\</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">                }\</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">                static _Wolframe::module::BuilderBase* impl()\</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">                {\</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">                        return new _Wolframe::module::ProgramTypeBuilder( LANGNAME &quot;ProgramType&quot;, LANGNAME &quot;Language&quot;, create);\</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">                }\</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">        };\</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">        (*this)(&amp;Constructor ::impl);\</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">}</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
 <div class="ttc" id="programTypeBuilder_8hpp_html"><div class="ttname"><a href="programTypeBuilder_8hpp.html">programTypeBuilder.hpp</a></div><div class="ttdoc">Interface template for object builder of arbitrary program types implementing form functions...</div></div>
 <div class="ttc" id="moduleInterface_8hpp_html"><div class="ttname"><a href="moduleInterface_8hpp.html">moduleInterface.hpp</a></div><div class="ttdoc">Basic interface classes that to build objects and the Wolframe module interface. </div></div>
+<div class="ttc" id="program_8hpp_html"><div class="ttname"><a href="program_8hpp.html">program.hpp</a></div><div class="ttdoc">Interface for programs loaded by the processor provider. </div></div>
+<div class="ttc" id="programLibrary_8hpp_html"><div class="ttname"><a href="programLibrary_8hpp.html">programLibrary.hpp</a></div><div class="ttdoc">Program library interface. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 23 2014 19:49:12 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 24 2014 15:26:07 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

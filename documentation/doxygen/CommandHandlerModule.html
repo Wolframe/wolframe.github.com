@@ -80,19 +80,34 @@
 <div class="title">Command handler module </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="commandHandlerModuleMacros_8hpp.html">appdevel/commandHandlerModuleMacros.hpp</a>&quot;</span></div>
+<div class="textblock"><p>The configuration of the command handler module example is defined in a descriptive way. If you want to learn more about how to define a configuration by declaring first the data members and then the description for introspection, you will find an example at <a class="el" href="ConfigDescription.html">Descriptive configuration declaration example</a></p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="commandHandlerModuleMacros_8hpp.html">appdevel/commandHandlerModuleMacros.hpp</a>&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="moduleFrameMacros_8hpp.html">appdevel/moduleFrameMacros.hpp</a>&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="commandHandlerUnit_8hpp.html">cmdbind/commandHandlerUnit.hpp</a>&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="descriptiveConfiguration_8hpp.html">serialize/descriptiveConfiguration.hpp</a>&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"></div>
 <div class="line"><span class="keyword">class </span>MyCommandHandlerConfig</div>
-<div class="line">        :<span class="keyword">public</span> <a class="code" href="class__Wolframe_1_1config_1_1NamedConfiguration.html">_Wolframe::config::NamedConfiguration</a></div>
+<div class="line">        :<span class="keyword">public</span> <a class="code" href="class__Wolframe_1_1serialize_1_1DescriptiveConfiguration.html">_Wolframe::serialize::DescriptiveConfiguration</a></div>
 <div class="line">{</div>
-<div class="line">        <span class="comment">// ... your command handler configuration is here</span></div>
-<div class="line">}</div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">        <span class="comment">// ... define your configuration data members here</span></div>
+<div class="line"></div>
+<div class="line">        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html">_Wolframe::serialize::StructDescriptionBase</a>* getStructDescription()</div>
+<div class="line">        {</div>
+<div class="line">                <span class="comment">// ... return your introspection description reference of the configuration here</span></div>
+<div class="line">        }</div>
+<div class="line">        MyCommandHandlerConfig( <span class="keyword">const</span> <span class="keywordtype">char</span>* classname, <span class="keyword">const</span> <span class="keywordtype">char</span>* title, <span class="keyword">const</span> <span class="keywordtype">char</span>* logprefix, <span class="keyword">const</span> <span class="keywordtype">char</span>* subsection)</div>
+<div class="line">                :_Wolframe::serialize::DescriptiveConfiguration( title, <span class="stringliteral">&quot;authentication&quot;</span>, logprefix, getStructDescription())</div>
+<div class="line">        {</div>
+<div class="line">                <a class="code" href="class__Wolframe_1_1serialize_1_1DescriptiveConfiguration.html#a7e0083ae311a28fcca166a71dcb9fa01">setBasePtr</a>( (<span class="keywordtype">void</span>*)<span class="keyword">this</span>); <span class="comment">// ... mandatory to set pointer to start of configuration</span></div>
+<div class="line">        }</div>
+<div class="line">};</div>
 <div class="line"></div>
 <div class="line"><span class="keyword">class </span>MyCommandHandlerUnit</div>
 <div class="line">        :<span class="keyword">public</span> <a class="code" href="class__Wolframe_1_1cmdbind_1_1CommandHandlerUnit.html">_Wolframe::cmdbind::CommandHandlerUnit</a></div>
 <div class="line">{</div>
+<div class="line"><span class="keyword">public</span>:</div>
 <div class="line">        <span class="comment">// ... your command handler unit definition is here</span></div>
 <div class="line">        MyCommandHandlerUnit( <span class="keyword">const</span> MyCommandHandlerConfig* cfg)</div>
 <div class="line">        {</div>
@@ -112,7 +127,7 @@
 <div class="line">        {</div>
 <div class="line">                <span class="comment">// ... create and return an instance of a command handler for executing the command cmdname here</span></div>
 <div class="line">        }</div>
-<div class="line">}</div>
+<div class="line">};</div>
 <div class="line"></div>
 <div class="line"><a class="code" href="moduleFrameMacros_8hpp.html#a5c94abd61d1619c761279522e203a4a4">WF_MODULE_BEGIN</a>( <span class="stringliteral">&quot;MyCommandHandler&quot;</span>, <span class="stringliteral">&quot;my command handler short description&quot;</span>)</div>
 <div class="line"> <a class="code" href="commandHandlerModuleMacros_8hpp.html#aaf2b977b9619e27363795a61e7cdb441">WF_COMMAND_HANDLER</a>( &quot;MyCommandHandler&quot;, &quot;cmdhandler&quot;, &quot;mycmd&quot;, MyCommandHandlerUnit, MyCommandHandlerConfig)</div>
@@ -121,7 +136,7 @@
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 23 2014 19:49:20 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 24 2014 15:26:15 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

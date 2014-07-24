@@ -152,11 +152,11 @@
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">                }\</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">        };\</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">        class RuntimeEnvBuilder\</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">                :public ConfiguredBuilder\</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">                :public _Wolframe::module::ConfiguredBuilder\</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">        {\</span></div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">        public:\</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">                RuntimeEnvBuilder()\</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">                        :ConfiguredBuilder( DESCRIPTION, CONFIG_SECTION, CONFIG_TITLE, CONFIG_TITLE &quot;RuntimeEnvironment&quot;)\</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">                        :_Wolframe::module::ConfiguredBuilder( DESCRIPTION, CONFIG_SECTION, CONFIG_TITLE, CONFIG_TITLE &quot;RuntimeEnvironment&quot;)\</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">                {\</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">                        int err;\</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">                        if (0!=(err=INITFUNCTION())) throw std::runtime_error(std::string(&quot;failed to initialize runtime environment (error code &quot;) + boost::lexical_cast&lt;std::string&gt;(err) + &quot;)&quot;);\</span></div>
@@ -193,7 +193,7 @@
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 23 2014 19:49:12 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 24 2014 15:26:08 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

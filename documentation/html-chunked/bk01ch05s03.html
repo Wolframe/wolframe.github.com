@@ -58,16 +58,16 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">5.3. Command handler</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch05s02.html">Prev</a> </td><th width="60%" align="center">Chapter 5. Data processing</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch05s04.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1376396668"></a>5.3. Command handler</h2></div></div></div><p>Command handlers define the mapping of server requests to functions to
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">5.3. Command handler</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch05s02.html">Prev</a> </td><th width="60%" align="center">Chapter 5. Data processing</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch05s04.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1388235668"></a>5.3. Command handler</h2></div></div></div><p>Command handlers define the mapping of server requests to functions to
 execute. This chapter introduces the standard command handler.
-</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1376387884"></a>5.3.1. The standard command handler</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376386740"></a>Introduction</h4></div></div></div><p>
+</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1388261276"></a>5.3.1. The standard command handler</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1388261596"></a>Introduction</h4></div></div></div><p>
 		The <span class="application">Wolframe</span> standard command handler is called <em class="glossterm">directmap</em> and named so
 		in the configuration because it only declares a redirection of the commands to functions based on 
 		the document type and the command identifier specified by the client in the request.
 	</p><p>
 		The declarations of the <span class="application">Wolframe</span> Standard Command Handler (<em class="glossterm">directmap</em>)
 		are specified in a program source file with the extension '.dmap' that is declared in the configuration.
-	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376431068"></a>Example configuration</h4></div></div></div><p>The following annotated configuration example
+	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1388233156"></a>Example configuration</h4></div></div></div><p>The following annotated configuration example
 		declares (1) a program <code class="code">example.tdl</code> written in the
 		transaction definition language (<acronym class="acronym">TDL</acronym>)
 		to contain the function declarations that can be called by
@@ -105,7 +105,7 @@ Processor
 
 
 		</pre><p>
-		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376474884"></a>Example command description</h4></div></div></div><p>The following source example could be one of the <code class="code">example.dmap</code>
+		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1388265996"></a>Example command description</h4></div></div></div><p>The following source example could be one of the <code class="code">example.dmap</code>
 		in the configuration example introduced above. It defines two commands. The first one links a command "insert" with document type
 		"Customer" as content to a transaction function "doInsertCustomer". The content is validated 
 		automatically against a form named "Customer" if not explicitly defined else. 
@@ -121,17 +121,17 @@ COMMAND get Employee SKIP CALL doSelectEmployee RETURN Employee;
 
 
 		</pre><p>
-	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1376477404"></a>Command description language</h4></div></div></div><p>
+	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1388268612"></a>Command description language</h4></div></div></div><p>
 		A command map description file like our example shown consists of instructions started with 
 		<code class="code">COMMAND</code> and terminated by semicolon ';'. The first argument after <code class="code">COMMAND</code> is the name of the
 		command followed by the name of the document type of the input document. The name of the command
 		is optional. If not specified the first argument after <code class="code">COMMAND</code> names the input document type.
-	</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376478924"></a>Keywords</h5></div></div></div><p>
+	</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1388326700"></a>Keywords</h5></div></div></div><p>
 			Conflicts with keywords and names are solved by using strings instead
 			of identifiers. The standard command handler description language has 
 			the following keywords:
 			</p><table border="0" summary="Simple list" class="simplelist"><tr><td>COMMAND</td></tr><tr><td>CALL</td></tr><tr><td>CONTEXT</td></tr><tr><td>RETURN</td></tr><tr><td>SKIP</td></tr><tr><td>FILTER</td></tr><tr><td>INPUT</td></tr><tr><td>OUTPUT</td></tr><tr><td>AUTHORIZE</td></tr></table><p>
-			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376481844"></a>Simple document map</h5></div></div></div><p>
+			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1388329620"></a>Simple document map</h5></div></div></div><p>
 				The following example shows the simplest possible declaration. It states that documents with the
 				document type "Document" are forwarded to a function with the same name "Document".
 				</p><pre class="programlisting">
@@ -139,7 +139,7 @@ COMMAND get Employee SKIP CALL doSelectEmployee RETURN Employee;
 COMMAND Document;
 
 				</pre><p>
-			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376483508"></a>Command with action prefix</h5></div></div></div><p>
+			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1388331284"></a>Command with action prefix</h5></div></div></div><p>
 				The next example adds a action name to the declaration. The implicit name of the function called is
 				insertDocument:
 				</p><pre class="programlisting">
@@ -147,14 +147,14 @@ COMMAND Document;
 COMMAND insert Document;
 
 				</pre><p>
-			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376485108"></a>Explicit function name declaration</h5></div></div></div><p>
+			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1388332884"></a>Explicit function name declaration</h5></div></div></div><p>
 				For declaring the function called explicitly like for example a function <code class="code">doInsertDocument</code> we need to declare it with <code class="code">CALL &lt;functionname&gt;</code>:
 				</p><pre class="programlisting">
 
 COMMAND insert Document CALL doInsertDocument;
 
 				</pre><p>
-			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376487180"></a>Returned document declaration</h5></div></div></div><p>
+			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1388334956"></a>Returned document declaration</h5></div></div></div><p>
 				The document type returned is specified with <code class="code">RETURN &lt;doctype&gt;</code>:
 				</p><pre class="programlisting">
 
@@ -167,7 +167,7 @@ COMMAND process Document RETURN Document;
 COMMAND process Document CALL doProcessDocument RETURN Document;
 
 				</pre><p>
-			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376489948"></a>Returned document meta data</h5></div></div></div><p>We can define additional document meta data or overload existing
+			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1388337724"></a>Returned document meta data</h5></div></div></div><p>We can define additional document meta data or overload existing
 			document meta or inherited document meta from input or a referenced 
 			form in the output.
 			This is done with a comma separated list of attribute assignments in
@@ -179,7 +179,7 @@ COMMAND process Document
         RETURN Document { root = 'doc', schema = 'bla.com/schema' };
 
 			</pre><p>
-			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376491732"></a>Skipping the document validation</h5></div></div></div><p>
+			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1388339508"></a>Skipping the document validation</h5></div></div></div><p>
 				If you want to skip the input document validation, either because you are dealing
 				with legacy software where a strict definition of a schema is not possible or
 				because the function called has strict typing and validates the input on its own (.NET,C++),
@@ -215,7 +215,7 @@ COMMAND process Document
 	CALL doProcessDocument RETURN SKIP Document {root='list'};
 
 				</pre><p>
-			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376433180"></a>Return a standalone document</h5></div></div></div><p>
+			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1388286732"></a>Return a standalone document</h5></div></div></div><p>
 				If we want to return a document as standalone 
 				(standalone="yes" in the header in case of XML) without validation,
 				we have to declare this with explicit document meta data as
@@ -227,7 +227,7 @@ COMMAND process Document
 	RETURN SKIP {standalone='yes',root='list'};
 
 				</pre><p>
-			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376435228"></a>Explicit filter definitions for a command</h5></div></div></div><p>
+			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1388288780"></a>Explicit filter definitions for a command</h5></div></div></div><p>
 				For most processing it's enough to declare the standard filters in the configuration of the command handler.
 				But in certain cases we want to declare a filter explicitly for a command, for
 				example to preprocess a certain document type with an XSLT filter. Explicitly declared
@@ -242,7 +242,7 @@ COMMAND process Document FILTER INPUT myXsltInputFilter
     CALL doProcessDocument RETURN Document;
 
 				</pre><p>
-			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376439316"></a>Authorization checks</h5></div></div></div><p>
+			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1388292868"></a>Authorization checks</h5></div></div></div><p>
 				We can tag a command to be allowed only after an authorization check.
 				The check denies command execution with an error if the login of the
 				user does not allow the execution of the command. The call is the same
@@ -250,7 +250,7 @@ COMMAND process Document FILTER INPUT myXsltInputFilter
 				Authorization checks are triggered by the AUTHORIZE attribute with
 				one or two arguments as follows:
 				</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><code class="code">AUTHORIZE &lt;authfunc&gt;</code> or</p></li><li class="listitem"><p><code class="code">AUTHORIZE &lt;authfunc&gt; &lt;resource&gt;</code></p></li></ul></div><p>
-			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376513316"></a>Adding parameters from the execution context</h5></div></div></div><p>
+			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1388361092"></a>Adding parameters from the execution context</h5></div></div></div><p>
 				Wolframe functions that are written in a language
 				other than C++ are usually pure data in / data out
 				functions. So the input document defines the input.
@@ -279,7 +279,7 @@ COMMAND insert UserData CONTEXT { uname = UserName }
 				to inject some login dependent data in a controlled way,
 				without exposing an API to all language bindings
 				for being able to access everything from everywhere.
-			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376515924"></a>Using brackets</h5></div></div></div><p>
+			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1388363684"></a>Using brackets</h5></div></div></div><p>
 				For better readability you can use optional '(' ')' brackets on 
 				the arguments of the command declaration:
 				</p><pre class="programlisting">
@@ -289,11 +289,11 @@ COMMAND ( process Document )
     RETURN Document;
 
 				</pre><p>
-			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1376517532"></a>Overview</h5></div></div></div><p>Each command declaration has as already explained the form
+			</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1388365292"></a>Overview</h5></div></div></div><p>Each command declaration has as already explained the form
 		</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><code class="code">COMMAND &lt;doctype&gt; [OPTIONS] ;</code> or</p></li><li class="listitem"><p><code class="code">COMMAND &lt;action&gt; &lt;doctype&gt; [OPTIONS] ;</code></p></li></ul></div><p>
 		The following table shows an overview of the elements that can be used in the <code class="code">[OPTIONS]</code> part of the command:
 
-		</p><div class="table"><a id="idp1376519364"></a><p class="title"><strong>Table 5.1. Options</strong></p><div class="table-contents"><table summary="Options" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th>Keywords</th><th>Arguments</th><th>Description</th></tr></thead><tbody><tr><td>CALL</td><td>Function Name</td><td>Names the function to be called for processing the request</td></tr><tr><td>RETURN</td><td>Document Type</td><td>Specifies the type of the document returned and forces validation of the output</td></tr><tr><td>RETURN SKIP</td><td>Document Type</td><td>Specifies the type of the document returned but skips validation of the output</td></tr><tr><td>SKIP</td><td>(no arguments)</td><td>Specifies the input document validation to be skipped</td></tr><tr><td>FILTER INPUT</td><td>Filter Name</td><td>Specifies that the filter &lt;Name&gt; should be used as input filter</td></tr><tr><td>FILTER OUTPUT</td><td>Filter Name</td><td>Specifies that the filter &lt;Name&gt; should be used as output filter</td></tr><tr><td>FILTER</td><td>Filter Name</td><td>Specifies that the filter &lt;Name&gt; should be used both as input and output filter</td></tr><tr><td>AUTHORIZE</td><td>func res</td><td>Specifies that the function &lt;func&gt; should be 
+		</p><div class="table"><a id="idp1388367124"></a><p class="title"><strong>Table 5.1. Options</strong></p><div class="table-contents"><table summary="Options" border="1"><colgroup><col /><col /><col /></colgroup><thead><tr><th>Keywords</th><th>Arguments</th><th>Description</th></tr></thead><tbody><tr><td>CALL</td><td>Function Name</td><td>Names the function to be called for processing the request</td></tr><tr><td>RETURN</td><td>Document Type</td><td>Specifies the type of the document returned and forces validation of the output</td></tr><tr><td>RETURN SKIP</td><td>Document Type</td><td>Specifies the type of the document returned but skips validation of the output</td></tr><tr><td>SKIP</td><td>(no arguments)</td><td>Specifies the input document validation to be skipped</td></tr><tr><td>FILTER INPUT</td><td>Filter Name</td><td>Specifies that the filter &lt;Name&gt; should be used as input filter</td></tr><tr><td>FILTER OUTPUT</td><td>Filter Name</td><td>Specifies that the filter &lt;Name&gt; should be used as output filter</td></tr><tr><td>FILTER</td><td>Filter Name</td><td>Specifies that the filter &lt;Name&gt; should be used both as input and output filter</td></tr><tr><td>AUTHORIZE</td><td>func res</td><td>Specifies that the function &lt;func&gt; should be 
 					called with the resource &lt;res&gt; to check if the user is
 					allowed to execute the command.</td></tr></tbody></table></div></div><p><br class="table-break" />
 

@@ -87,12 +87,19 @@
 <div class="line"><span class="keyword">class </span>MyInputFilter</div>
 <div class="line">        :<span class="keyword">public</span> <a class="code" href="class__Wolframe_1_1langbind_1_1InputFilter.html">_Wolframe::langbind::InputFilter</a></div>
 <div class="line">{</div>
-<div class="line">        <span class="keyword">virtual</span> InputFilter* <a class="code" href="class__Wolframe_1_1langbind_1_1InputFilter.html#a2faf58ca7c3bb901f842931486c366ca">copy</a>()<span class="keyword"> const</span></div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">        MyInputFilter()</div>
+<div class="line">                :_Wolframe::langbind::InputFilter(<span class="stringliteral">&quot;myfilter&quot;</span>)</div>
+<div class="line">        {</div>
+<div class="line">                <span class="comment">// ... initialize your input filter here</span></div>
+<div class="line">        }</div>
+<div class="line"></div>
+<div class="line">        <span class="keyword">virtual</span> <a class="code" href="class__Wolframe_1_1langbind_1_1InputFilter.html">_Wolframe::langbind::InputFilter</a>* <a class="code" href="class__Wolframe_1_1langbind_1_1InputFilter.html#a2faf58ca7c3bb901f842931486c366ca">copy</a>()<span class="keyword"> const</span></div>
 <div class="line"><span class="keyword">        </span>{</div>
 <div class="line">                <span class="comment">// ... create a copy of this input filter here</span></div>
 <div class="line">        }</div>
 <div class="line"></div>
-<div class="line">        <span class="keyword">virtual</span> InputFilter* <a class="code" href="class__Wolframe_1_1langbind_1_1InputFilter.html#a6e46775ee5e0973acb599d5bc930bba7">initcopy</a>()<span class="keyword"> const</span></div>
+<div class="line">        <span class="keyword">virtual</span> <a class="code" href="class__Wolframe_1_1langbind_1_1InputFilter.html">_Wolframe::langbind::InputFilter</a>* <a class="code" href="class__Wolframe_1_1langbind_1_1InputFilter.html#a6e46775ee5e0973acb599d5bc930bba7">initcopy</a>()<span class="keyword"> const</span></div>
 <div class="line"><span class="keyword">        </span>{</div>
 <div class="line">                <span class="comment">// ... create a copy of this in first initialization state here</span></div>
 <div class="line">        }</div>
@@ -135,9 +142,16 @@
 <div class="line"><span class="keyword">class </span>MyOutputFilter</div>
 <div class="line">        :<span class="keyword">public</span> <a class="code" href="class__Wolframe_1_1langbind_1_1OutputFilter.html">_Wolframe::langbind::OutputFilter</a></div>
 <div class="line">{</div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">        MyOutputFilter()</div>
+<div class="line">                :_Wolframe::langbind::OutputFilter(<span class="stringliteral">&quot;myfilter&quot;</span>)</div>
+<div class="line">        {</div>
+<div class="line">                <span class="comment">// ... initialize your input filter here</span></div>
+<div class="line">        }</div>
+<div class="line"></div>
 <div class="line">        <span class="keyword">virtual</span> <a class="code" href="class__Wolframe_1_1langbind_1_1OutputFilter.html">_Wolframe::langbind::OutputFilter</a>* <a class="code" href="class__Wolframe_1_1langbind_1_1OutputFilter.html#aa4f6302acd594750a417fbde93bdd6f0">copy</a>()<span class="keyword"> const</span></div>
 <div class="line"><span class="keyword">        </span>{</div>
-<div class="line">                <span class="comment">// ... create a copy of this output filter here</span></div>
+<div class="line">                <span class="comment">// ... create and return a copy of this output filter here</span></div>
 <div class="line">        }</div>
 <div class="line"></div>
 <div class="line">        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class__Wolframe_1_1langbind_1_1OutputFilter.html#ae678bc78e4d0b84d5430471efb81b3a8">print</a>( <span class="keyword">typename</span> <a class="code" href="class__Wolframe_1_1langbind_1_1FilterBase.html#a293c57a669e78026544777e502574fb1">_Wolframe::langbind::OutputFilter::ElementType</a> type, <span class="keyword">const</span> <span class="keywordtype">void</span>* element, std::size_t elementsize)</div>
@@ -156,8 +170,9 @@
 <div class="line"><span class="keyword">class </span>MyFilter</div>
 <div class="line">        :<span class="keyword">public</span> <a class="code" href="class__Wolframe_1_1langbind_1_1Filter.html">_Wolframe::langbind::Filter</a></div>
 <div class="line">{</div>
+<div class="line"><span class="keyword">public</span>:</div>
 <div class="line">        MyFilter()</div>
-<div class="line">                :_Wolframe::langbind::Filter( new _Wolframe::langbind::InputFilter(), new _Wolframe::langbind::OutputFilter()){}</div>
+<div class="line">                :_Wolframe::langbind::Filter( new MyInputFilter(), new MyOutputFilter()){}</div>
 <div class="line">};</div>
 <div class="line"></div>
 <div class="line"><span class="keyword">class </span>MyFilterType</div>
@@ -180,7 +195,7 @@
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 23 2014 19:49:20 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 24 2014 15:26:15 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-	<title>Wolframe: Form function module</title>
+	<title>Wolframe: C++ form function module</title>
 	<meta name="generator" content="Doxygen 1.8.7"/>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -77,11 +77,13 @@
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">Form function module </div>  </div>
+<div class="title">C++ form function module </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="moduleFrameMacros_8hpp.html">appdevel/moduleFrameMacros.hpp</a>&quot;</span></div>
+<div class="textblock"><p>The following example of a form function in C++ declares structures for input and output with help of serialization. If you have a function with an empty input or empty output (procedure) then you can use the predefined structure <a class="el" href="struct__Wolframe_1_1serialize_1_1EmptyStruct.html" title="Class representing an empty structure. ">_Wolframe::serialize::EmptyStruct</a> for that.</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="moduleFrameMacros_8hpp.html">appdevel/moduleFrameMacros.hpp</a>&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="cppFormFunctionModuleMacros_8hpp.html">appdevel/cppFormFunctionModuleMacros.hpp</a>&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="structDescription_8hpp.html">serialize/struct/structDescription.hpp</a>&quot;</span></div>
 <div class="line"></div>
 <div class="line"><span class="keyword">struct </span>MyInput</div>
 <div class="line">{</div>
@@ -89,11 +91,12 @@
 <div class="line">        <span class="keywordtype">int</span> id;</div>
 <div class="line">        <span class="comment">// ... your data structures are here</span></div>
 <div class="line"></div>
-<div class="line">        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html">_Wolframe::serialize::StructDescriptionBase</a> *getStructDescription()</div>
+<div class="line">        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html">_Wolframe::serialize::StructDescriptionBase</a> *getStructDescription();</div>
 <div class="line">};</div>
 <div class="line"></div>
-<div class="line"><span class="keyword">class </span>MyInputDescription :<span class="keyword">public</span> serialize::StructDescription&lt;MyInput&gt;</div>
+<div class="line"><span class="keyword">class </span>MyInputDescription :<span class="keyword">public</span> <a class="code" href="struct__Wolframe_1_1serialize_1_1StructDescription.html">_Wolframe::serialize::StructDescription</a>&lt;MyInput&gt;</div>
 <div class="line">{</div>
+<div class="line"><span class="keyword">public</span>:</div>
 <div class="line">        MyInputDescription()</div>
 <div class="line">        {</div>
 <div class="line">                <span class="comment">// here you define introspection for your data:</span></div>
@@ -102,9 +105,9 @@
 <div class="line">                        (<span class="stringliteral">&quot;id&quot;</span>, &amp;MyInput::id)</div>
 <div class="line">                ;</div>
 <div class="line">        }</div>
-<div class="line">}</div>
+<div class="line">};</div>
 <div class="line"></div>
-<div class="line"><span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html">_Wolframe::serialize::StructDescriptionBase</a>* MyInput::getStructDescription()</div>
+<div class="line"><span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html">_Wolframe::serialize::StructDescriptionBase</a>* MyInput::getStructDescription()</div>
 <div class="line">{</div>
 <div class="line">        <span class="keyword">static</span> MyInputDescription rt;</div>
 <div class="line">        <span class="keywordflow">return</span> &amp;rt;</div>
@@ -114,16 +117,17 @@
 <div class="line">{</div>
 <div class="line">        <span class="comment">// ... your data structures are here as in MyInput</span></div>
 <div class="line"></div>
-<div class="line">        <span class="keyword">static</span> <span class="keyword">const</span> serialize::StructDescriptionBase *getStructDescription()</div>
+<div class="line">        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1serialize_1_1StructDescriptionBase.html">_Wolframe::serialize::StructDescriptionBase</a> *getStructDescription()</div>
 <div class="line">        {</div>
 <div class="line">                <span class="comment">// ... your data structure description is here as for MyInput</span></div>
 <div class="line">        }</div>
 <div class="line">};</div>
 <div class="line"></div>
 <div class="line"></div>
-<div class="line"><span class="keyword">static</span> <span class="keywordtype">int</span> myFunction( proc::ExecContext* ctx, MyOutput&amp; res, <span class="keyword">const</span> MyInput&amp; param)</div>
+<div class="line"><span class="keywordtype">int</span> myFunction( <a class="code" href="class__Wolframe_1_1proc_1_1ExecContext.html">_Wolframe::proc::ExecContext</a>* ctx, MyOutput&amp; res, <span class="keyword">const</span> MyInput&amp; param)</div>
 <div class="line">{</div>
 <div class="line">        <span class="comment">// ... your function implementation is here</span></div>
+<div class="line">        <span class="comment">// ... it returns 0 on success or else an error code</span></div>
 <div class="line">}</div>
 <div class="line"></div>
 <div class="line"><a class="code" href="moduleFrameMacros_8hpp.html#a5c94abd61d1619c761279522e203a4a4">WF_MODULE_BEGIN</a>( <span class="stringliteral">&quot;MyFunctions&quot;</span>, <span class="stringliteral">&quot;my functions short description&quot;</span>)</div>
@@ -133,7 +137,7 @@
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 23 2014 19:49:20 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 24 2014 15:26:15 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

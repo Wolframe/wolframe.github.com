@@ -10,12 +10,13 @@
     <UL>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="Introduction"><param name="Local" value="index.html#ModuleTypeIntro"><param name="ImageNumber" value="1"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Name" value="Module component types"><param name="Local" value="index.html#ModuleObjTypeList"><param name="ImageNumber" value="1"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Defining a module configuration"><param name="Local" value="index.html#ModuleConfiguration"><param name="ImageNumber" value="1"></OBJECT>
     </UL>
   </UL>
 <LI><OBJECT type="text/sitemap"><param name="Name" value="Command handler module"><param name="Local" value="CommandHandlerModule.html"><param name="ImageNumber" value="11"></OBJECT>
 <LI><OBJECT type="text/sitemap"><param name="Name" value="Document type detection module"><param name="Local" value="DoctypeDetectionModule.html"><param name="ImageNumber" value="11"></OBJECT>
 <LI><OBJECT type="text/sitemap"><param name="Name" value="Filter module"><param name="Local" value="FilterModule.html"><param name="ImageNumber" value="11"></OBJECT>
-<LI><OBJECT type="text/sitemap"><param name="Name" value="Form function module"><param name="Local" value="FormFunctionModule.html"><param name="ImageNumber" value="11"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="C++ form function module"><param name="Local" value="FormFunctionModule.html"><param name="ImageNumber" value="11"></OBJECT>
 <LI><OBJECT type="text/sitemap"><param name="Name" value="Program type module"><param name="Local" value="ProgramTypeModule.html"><param name="ImageNumber" value="11"></OBJECT>
 <LI><OBJECT type="text/sitemap"><param name="Name" value="Data definition language (DDL) compiler module"><param name="Local" value="DDLCompilerModule.html"><param name="ImageNumber" value="11"></OBJECT>
 <LI><OBJECT type="text/sitemap"><param name="Name" value="Custom data type module"><param name="Local" value="CustomDataTypeModule.html"><param name="ImageNumber" value="11"></OBJECT>
@@ -23,6 +24,7 @@
 <LI><OBJECT type="text/sitemap"><param name="Name" value="Runtime environment host structure module"><param name="Local" value="RuntimeEnvironmentModule.html"><param name="ImageNumber" value="11"></OBJECT>
 <LI><OBJECT type="text/sitemap"><param name="Name" value="Authenticator module"><param name="Local" value="AuthenticatorModule.html"><param name="ImageNumber" value="11"></OBJECT>
 <LI><OBJECT type="text/sitemap"><param name="Name" value="Database interface module"><param name="Local" value="DatabaseModule.html"><param name="ImageNumber" value="11"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Descriptive configuration declaration example"><param name="Local" value="ConfigDescription.html"><param name="ImageNumber" value="11"></OBJECT>
 <LI><OBJECT type="text/sitemap"><param name="Name" value="Namespaces"><param name="ImageNumber" value="1"></OBJECT>
   <UL>
   <LI><OBJECT type="text/sitemap"><param name="Name" value="Namespace List"><param name="Local" value="namespaces.html"><param name="ImageNumber" value="1"></OBJECT>
@@ -2932,7 +2934,7 @@
           <LI><OBJECT type="text/sitemap"><param name="Name" value="check"><param name="Local" value="class__Wolframe_1_1serialize_1_1DescriptiveConfiguration.html#a9ebda2bd63a6792b03cb98ce961f1eab"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="className"><param name="Local" value="class__Wolframe_1_1serialize_1_1DescriptiveConfiguration.html#af480d1adbd754e5d7ce313bd2f45dd7e"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="parse"><param name="Local" value="class__Wolframe_1_1serialize_1_1DescriptiveConfiguration.html#a38fba09aa691dd8d733e2b6cd1104f81"><param name="ImageNumber" value="11"></OBJECT>
-          <LI><OBJECT type="text/sitemap"><param name="Name" value="print"><param name="Local" value="class__Wolframe_1_1serialize_1_1DescriptiveConfiguration.html#a966df292e33684bcdb06dd83f14e1628"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="print"><param name="Local" value="class__Wolframe_1_1serialize_1_1DescriptiveConfiguration.html#a7b18625f5f7035f590649176c084176b"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="setBasePtr"><param name="Local" value="class__Wolframe_1_1serialize_1_1DescriptiveConfiguration.html#a7e0083ae311a28fcca166a71dcb9fa01"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="m_baseptr"><param name="Local" value="class__Wolframe_1_1serialize_1_1DescriptiveConfiguration.html#ae6b5317529423e1630bfa7efe0c43940"><param name="ImageNumber" value="11"></OBJECT>
           <LI><OBJECT type="text/sitemap"><param name="Name" value="m_classname"><param name="Local" value="class__Wolframe_1_1serialize_1_1DescriptiveConfiguration.html#af8a52a8bbea98b69b30ee80d83295a38"><param name="ImageNumber" value="11"></OBJECT>
@@ -8535,7 +8537,7 @@
             <LI><OBJECT type="text/sitemap"><param name="Name" value="check"><param name="Local" value="class__Wolframe_1_1serialize_1_1DescriptiveConfiguration.html#a9ebda2bd63a6792b03cb98ce961f1eab"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="className"><param name="Local" value="class__Wolframe_1_1serialize_1_1DescriptiveConfiguration.html#af480d1adbd754e5d7ce313bd2f45dd7e"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="parse"><param name="Local" value="class__Wolframe_1_1serialize_1_1DescriptiveConfiguration.html#a38fba09aa691dd8d733e2b6cd1104f81"><param name="ImageNumber" value="11"></OBJECT>
-            <LI><OBJECT type="text/sitemap"><param name="Name" value="print"><param name="Local" value="class__Wolframe_1_1serialize_1_1DescriptiveConfiguration.html#a966df292e33684bcdb06dd83f14e1628"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="print"><param name="Local" value="class__Wolframe_1_1serialize_1_1DescriptiveConfiguration.html#a7b18625f5f7035f590649176c084176b"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="setBasePtr"><param name="Local" value="class__Wolframe_1_1serialize_1_1DescriptiveConfiguration.html#a7e0083ae311a28fcca166a71dcb9fa01"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="m_baseptr"><param name="Local" value="class__Wolframe_1_1serialize_1_1DescriptiveConfiguration.html#ae6b5317529423e1630bfa7efe0c43940"><param name="ImageNumber" value="11"></OBJECT>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="m_classname"><param name="Local" value="class__Wolframe_1_1serialize_1_1DescriptiveConfiguration.html#af8a52a8bbea98b69b30ee80d83295a38"><param name="ImageNumber" value="11"></OBJECT>
