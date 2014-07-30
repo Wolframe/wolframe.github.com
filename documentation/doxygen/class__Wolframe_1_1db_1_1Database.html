@@ -114,10 +114,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aecc470dd38b40a9c46dc84f9e6bf53a4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class__Wolframe_1_1db_1_1Transaction.html">Transaction</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1Database.html#aecc470dd38b40a9c46dc84f9e6bf53a4">transaction</a> (const std::string &amp;name)=0</td></tr>
 <tr class="memdesc:aecc470dd38b40a9c46dc84f9e6bf53a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a database transaction object.  <a href="#aecc470dd38b40a9c46dc84f9e6bf53a4">More...</a><br /></td></tr>
 <tr class="separator:aecc470dd38b40a9c46dc84f9e6bf53a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a843c5c072cbd31bdebcd86ec2dceb3c5"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class__Wolframe_1_1db_1_1LanguageDescription.html">LanguageDescription</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1Database.html#a843c5c072cbd31bdebcd86ec2dceb3c5">getLanguageDescription</a> () const </td></tr>
-<tr class="separator:a843c5c072cbd31bdebcd86ec2dceb3c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7268fea9dcaff46214f01c4c9e290247"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1Database.html#a7268fea9dcaff46214f01c4c9e290247">close</a> ()</td></tr>
-<tr class="separator:a7268fea9dcaff46214f01c4c9e290247"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a149323993a3a14c44d7957dad276b9fe"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class__Wolframe_1_1db_1_1LanguageDescription.html">LanguageDescription</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1Database.html#a149323993a3a14c44d7957dad276b9fe">getLanguageDescription</a> () const =0</td></tr>
+<tr class="separator:a149323993a3a14c44d7957dad276b9fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for database interface. All databases should provide this interface. </p>
@@ -171,31 +169,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7268fea9dcaff46214f01c4c9e290247"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void _Wolframe::db::Database::close </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Close the database connetion This exists for no good reason (mostly to make the code look uniform) </p>
-
-</div>
-</div>
-<a class="anchor" id="a843c5c072cbd31bdebcd86ec2dceb3c5"></a>
+<a class="anchor" id="a149323993a3a14c44d7957dad276b9fe"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -211,7 +185,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -276,7 +250,7 @@ Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 24 2014 15:26:19 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 30 2014 12:36:33 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

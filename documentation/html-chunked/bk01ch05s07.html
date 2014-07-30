@@ -58,11 +58,11 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">5.7. Testing and defect handling</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch05s06.html">Prev</a> </td><th width="60%" align="center">Chapter 5. Data processing</th><td width="20%" align="right"> <a accesskey="n" href="bk01go01.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1389641612"></a>5.7. Testing and defect handling</h2></div></div></div><p>In this chapter we learn how parts of a <span class="application">Wolframe</span>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">5.7. Testing and defect handling</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch05s06.html">Prev</a> </td><th width="60%" align="center">Chapter 5. Data processing</th><td width="20%" align="right"> <a accesskey="n" href="bk01go01.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1386703284"></a>5.7. Testing and defect handling</h2></div></div></div><p>In this chapter we learn how parts of a <span class="application">Wolframe</span>
 application can be verified to work correctly. The basis for testing and debugging
 a <span class="application">Wolframe</span> application is the command line tool 
 <span class="application">wolfilter</span>. 
-</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1389546860"></a>5.7.1. Using wolfilter</h3></div></div></div><p>The command line program <span class="application">wolfilter</span> allows you 
+</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1386608540"></a>5.7.1. Using wolfilter</h3></div></div></div><p>The command line program <span class="application">wolfilter</span> allows you 
 	to call any <span class="application">Wolframe</span> function or filter or mapping 
 	into a form structure on command line. The program is mapping stdin or if 
 	specified the contents of a file to stdout.
@@ -74,7 +74,7 @@ a <span class="application">Wolframe</span> application is the command line tool
 	to be specified.
 	</p><p>The following examples assume the input file name to be in.xml or in.json and
 	the output file to be named out.xml or out.json respectively.
-	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1389675348"></a>Test configuration</h4></div></div></div><p>For the examples needing a configuration, we prepare the following simple
+	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1386737020"></a>Test configuration</h4></div></div></div><p>For the examples needing a configuration, we prepare the following simple
 		configuration, just declaring the processing stuff, we need. Of course wolfilter
 		can also work with any wolframe server configuration. The configuration will be
 		referenced as 'test.conf'.
@@ -94,7 +94,7 @@ Processor
     program myform.sfrm
 }
 		</pre><p>
-		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1389676924"></a>Testing a filter</h4></div></div></div><p>The following example shows the mapping through a libxml2 filter.
+		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1386738620"></a>Testing a filter</h4></div></div></div><p>The following example shows the mapping through a libxml2 filter.
 		Filters are tested by passing a dash '-' command to execute.
 		Because we do not need to load programs, we can call wolfilter without
 		a test configuration.
@@ -112,7 +112,7 @@ cat in.xml | wolfilter -e libxml2 -m mod_filter_libxml2 - &gt; out.xml
 
 cat in.xml | wolfilter -i myfilter -o token -c test.conf - &gt; out.xml
 		</pre><p>
-		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1389679388"></a>Testing a Form</h4></div></div></div><p>The following example shows the mapping through a form defined with simpleform DDL.
+		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1386741108"></a>Testing a Form</h4></div></div></div><p>The following example shows the mapping through a form defined with simpleform DDL.
 		Mapping through forms is tested by passing the name of the form as command to execute.
 		Because forms have to be loaded as programs, we have to specify a 
 		configuration (test.conf) too.
@@ -122,7 +122,7 @@ cat in.xml | wolfilter -e libxml2 -c test.conf MyForm &gt; out.xml
 		</pre><p>
 		we assume here that the form to use is defined in myform.sfrm that is declared
 		as program in the configuration and that the form is called MyForm.
-		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1389680972"></a>Testing a Function</h4></div></div></div><p>The following example shows the execution of a function written in Lua.
+		</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1386742692"></a>Testing a Function</h4></div></div></div><p>The following example shows the execution of a function written in Lua.
 		A JSON filter is used for input and output.
 		</p><pre class="programlisting">
 

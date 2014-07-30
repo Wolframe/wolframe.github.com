@@ -80,7 +80,7 @@
 <div class="title">Database interface module </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>This example shows the simplest case of a database. The macro for its declaration is called WF_SIMPLE_DATABASE because of that. The base classes allow to handle more complex system configurations. The configuration of the database example is defined in a descriptive way. If you want to learn more about how to define a configuration by declaring first the data members and then the description for introspection, you will find an example at <a class="el" href="ConfigDescription.html">Descriptive configuration declaration example</a></p>
+<div class="textblock"><p>This example shows the declaration of a database. The configuration of the database example is defined in a descriptive way. If you want to learn more about how to define a configuration by declaring first the data members and then the description for introspection, you will find an example at <a class="el" href="ConfigDescription.html">Descriptive configuration declaration example</a></p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="databaseModuleMacros_8hpp.html">appdevel/databaseModuleMacros.hpp</a>&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="moduleFrameMacros_8hpp.html">appdevel/moduleFrameMacros.hpp</a>&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="configurationBase_8hpp.html">config/configurationBase.hpp</a>&quot;</span></div>
@@ -217,21 +217,21 @@
 <div class="line">                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class__Wolframe_1_1db_1_1Transaction.html">_Wolframe::db::Transaction</a>( name_, stm);</div>
 <div class="line">        }</div>
 <div class="line"></div>
-<div class="line">        <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1db_1_1LanguageDescription.html">_Wolframe::db::LanguageDescription</a>* <a class="code" href="class__Wolframe_1_1db_1_1Database.html#a843c5c072cbd31bdebcd86ec2dceb3c5">getLanguageDescription</a>()<span class="keyword"> const</span></div>
+<div class="line">        <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1db_1_1LanguageDescription.html">_Wolframe::db::LanguageDescription</a>* <a class="code" href="class__Wolframe_1_1db_1_1Database.html#a149323993a3a14c44d7957dad276b9fe">getLanguageDescription</a>()<span class="keyword"> const</span></div>
 <div class="line"><span class="keyword">        </span>{</div>
-<div class="line">                <span class="keyword">static</span> <a class="code" href="class__Wolframe_1_1db_1_1LanguageDescription.html">_Wolframe::db::LanguageDescription</a> langdescr;</div>
+<div class="line">                <span class="keyword">static</span> <a class="code" href="class__Wolframe_1_1db_1_1LanguageDescriptionSQL.html">_Wolframe::db::LanguageDescriptionSQL</a> langdescr;</div>
 <div class="line">                <span class="keywordflow">return</span> &amp;langdescr;</div>
 <div class="line">        }</div>
 <div class="line">};</div>
 <div class="line"></div>
 <div class="line"><a class="code" href="moduleFrameMacros_8hpp.html#a5c94abd61d1619c761279522e203a4a4">WF_MODULE_BEGIN</a>( <span class="stringliteral">&quot;MyDatabase&quot;</span>, <span class="stringliteral">&quot;my database module&quot;</span>)</div>
-<div class="line"> <a class="code" href="databaseModuleMacros_8hpp.html#abd2d594c3ca81a53f5bc2aaeff4f99b5">WF_SIMPLE_DATABASE</a>( &quot;MyDB&quot;, MyDatabase, MyDatabaseConfig)</div>
+<div class="line"> <a class="code" href="databaseModuleMacros_8hpp.html#a9ef6c4da575418898263eeb296374e80">WF_DATABASE</a>( &quot;MyDB&quot;, MyDatabase, MyDatabaseConfig)</div>
 <div class="line"><a class="code" href="moduleFrameMacros_8hpp.html#ad59c3d56591ee809897499a5d99bcd04">WF_MODULE_END</a></div>
 </div><!-- fragment --> </div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 24 2014 15:26:15 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 30 2014 12:36:24 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

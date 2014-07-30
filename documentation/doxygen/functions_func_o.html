@@ -135,7 +135,6 @@
 , <a class="el" href="class__Wolframe_1_1module_1_1DoctypeDetectorConstructor.html#a711ea78d91b36d49434d995a4635309b">_Wolframe::module::DoctypeDetectorConstructor</a>
 , <a class="el" href="class__Wolframe_1_1module_1_1FilterConstructor.html#af4ed2fc841ac5b847bce914a0576becf">_Wolframe::module::FilterConstructor</a>
 , <a class="el" href="class__Wolframe_1_1module_1_1ProgramTypeConstructor.html#abc58b55654d91d97adc265a70a839037">_Wolframe::module::ProgramTypeConstructor</a>
-, <a class="el" href="class__Wolframe_1_1PoolObject.html#a668c63726389fbe7f0d1f14ae4e5a321">_Wolframe::PoolObject&lt; objectType &gt;</a>
 , <a class="el" href="class__Wolframe_1_1serialize_1_1StructParser.html#a269316025d779f2fa57b41c67a905a3b">_Wolframe::serialize::StructParser</a>
 </li>
 <li>objectClassName()
@@ -155,6 +154,9 @@
 </li>
 <li>ObjectPool()
 : <a class="el" href="class__Wolframe_1_1ObjectPool.html#afe95eb4434cd7482e80848de74800b1e">_Wolframe::ObjectPool&lt; objectType &gt;</a>
+</li>
+<li>ObjectPoolTimeout()
+: <a class="el" href="class__Wolframe_1_1ObjectPoolTimeout.html#a5c3b2bbab1d3bac22398751a8619b346">_Wolframe::ObjectPoolTimeout</a>
 </li>
 <li>objectsBegin()
 : <a class="el" href="class__Wolframe_1_1module_1_1ModulesDirectory.html#adf1e3b80c045de5f70dad7fc7d92d579">_Wolframe::module::ModulesDirectory</a>
@@ -237,7 +239,6 @@
 </li>
 <li>operator*()
 : <a class="el" href="class__Wolframe_1_1module_1_1ModulesDirectory_1_1simpleBuilder__iterator.html#af1967e9a4825a7c660f3c7db16683864">_Wolframe::module::ModulesDirectory::simpleBuilder_iterator</a>
-, <a class="el" href="class__Wolframe_1_1PoolObject.html#afbd46b7a1f3d8ad8641f7c7d06e5f52b">_Wolframe::PoolObject&lt; objectType &gt;</a>
 , <a class="el" href="class__Wolframe_1_1protocol_1_1iterator__t.html#ada2d9a3508a1ce32f9052238c049547e">_Wolframe::protocol::iterator_t&lt; array_type_, size_type_, value_type_, access_type_, deref_type_ &gt;</a>
 , <a class="el" href="class__Wolframe_1_1types_1_1CountedReference.html#a90535efd6cd34dc9c9d101a752971f9d">_Wolframe::types::CountedReference&lt; OBJ &gt;</a>
 , <a class="el" href="class__Wolframe_1_1types_1_1VariantStruct_1_1const__iterator.html#a27cbd73b2a5c02f863dc931295afa10c">_Wolframe::types::VariantStruct::const_iterator</a>
@@ -281,7 +282,6 @@
 <li>operator-&gt;()
 : <a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ValueTupleSet_1_1const__iterator.html#ad7ffcef3bab5688552f1a7f9526aaf5c">_Wolframe::db::vm::ValueTupleSet::const_iterator</a>
 , <a class="el" href="class__Wolframe_1_1module_1_1ModulesDirectory_1_1simpleBuilder__iterator.html#ac4439629d2f2568724fdaa8aa057321c">_Wolframe::module::ModulesDirectory::simpleBuilder_iterator</a>
-, <a class="el" href="class__Wolframe_1_1PoolObject.html#a662006671db3798d2556f4e571b27e7b">_Wolframe::PoolObject&lt; objectType &gt;</a>
 , <a class="el" href="class__Wolframe_1_1protocol_1_1iterator__t.html#a09fca224c9b14e39ec96b04e8e4a6e0f">_Wolframe::protocol::iterator_t&lt; array_type_, size_type_, value_type_, access_type_, deref_type_ &gt;</a>
 , <a class="el" href="class__Wolframe_1_1types_1_1CountedReference.html#aa543c21fa17d237c54362e9926dde2f5">_Wolframe::types::CountedReference&lt; OBJ &gt;</a>
 , <a class="el" href="class__Wolframe_1_1types_1_1VariantStruct_1_1const__iterator.html#a28a058659a65a3e7ff313af1f9ce7286">_Wolframe::types::VariantStruct::const_iterator</a>
@@ -339,14 +339,14 @@
 , <a class="el" href="class__Wolframe_1_1types_1_1SecureReference.html#a6a02c06088385ca0bee9f3be065d7c0c">_Wolframe::types::SecureReference&lt; P &gt;</a>
 , <a class="el" href="class__Wolframe_1_1types_1_1Variant.html#ae855ba99ef9ee323dc474d2b126fa410">_Wolframe::types::Variant</a>
 , <a class="el" href="struct__Wolframe_1_1types_1_1VariantConst.html#acd72b556a52514833d04bbee930435eb">_Wolframe::types::VariantConst</a>
-, <a class="el" href="class__Wolframe_1_1types_1_1VariantStruct.html#a343b8a854c7fe2e5183b29fda3f6101f">_Wolframe::types::VariantStruct</a>
+, <a class="el" href="class__Wolframe_1_1types_1_1VariantStruct.html#a8aa8abcf1bbf39e9a8e2bbce1723251c">_Wolframe::types::VariantStruct</a>
 , <a class="el" href="class__Wolframe_1_1types_1_1VariantStructConst.html#a863332a7cffb41d141e5ec7c5fc66c5d">_Wolframe::types::VariantStructConst</a>
 </li>
 <li>operator==()
-: <a class="el" href="class__Wolframe_1_1AAAA_1_1CRAMresponse.html#a0369a3a09eaee3b7e3d76ec09a6ba492">_Wolframe::AAAA::CRAMresponse</a>
+: <a class="el" href="class__Wolframe_1_1AAAA_1_1CRAMresponse.html#a1adcc66176cf29d1f38a6dcf4f279a73">_Wolframe::AAAA::CRAMresponse</a>
 , <a class="el" href="class__Wolframe_1_1AAAA_1_1PasswordHash_1_1Hash.html#a931f29e2bde3301e3edac318e52f280a">_Wolframe::AAAA::PasswordHash::Hash</a>
 , <a class="el" href="class__Wolframe_1_1AAAA_1_1PasswordHash_1_1Salt.html#a423c6f184abf44cefb0c0c52d0d140c8">_Wolframe::AAAA::PasswordHash::Salt</a>
-, <a class="el" href="class__Wolframe_1_1AAAA_1_1UsernameHash.html#a5266783b0f4febfa9c1317aaa13682eb">_Wolframe::AAAA::UsernameHash</a>
+, <a class="el" href="class__Wolframe_1_1AAAA_1_1UsernameHash.html#ab275ffd68796bcaefb0bda8aef9a8ab0">_Wolframe::AAAA::UsernameHash</a>
 , <a class="el" href="class__Wolframe_1_1crypto_1_1HMAC__SHA1.html#aeca8782e9a978bc8c87199484e1a939c">_Wolframe::crypto::HMAC_SHA1</a>
 , <a class="el" href="class__Wolframe_1_1crypto_1_1HMAC__SHA256.html#a6f643b95aca807ea4376c4434ee5d914">_Wolframe::crypto::HMAC_SHA256</a>
 , <a class="el" href="class__Wolframe_1_1crypto_1_1PBKDF2__HMAC__SHA1.html#acaa6f1b4bd34d1c751a56053ce40dd4f">_Wolframe::crypto::PBKDF2_HMAC_SHA1</a>
@@ -390,15 +390,15 @@
 </li>
 <li>operator[]()
 : <a class="el" href="struct__Wolframe_1_1cmdbind_1_1LineCommandHandlerSTMTemplate.html#a284af9176c615f90dfbc3d602afeaa15">_Wolframe::cmdbind::LineCommandHandlerSTMTemplate&lt; LineCommandHandlerImpl &gt;</a>
-, <a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramCode.html#a22f94aa15134ab43e136c1a8f37d733c">_Wolframe::db::vm::ProgramCode</a>
+, <a class="el" href="class__Wolframe_1_1db_1_1vm_1_1ProgramCode.html#aed26ca39c5143f9f0525179a12a2d7c5">_Wolframe::db::vm::ProgramCode</a>
 , <a class="el" href="class__Wolframe_1_1protocol_1_1CArgBuffer.html#a49c7e355568bb37ad9b57e3f8dbb087c">_Wolframe::protocol::CArgBuffer&lt; Buffer &gt;</a>
 , <a class="el" href="class__Wolframe_1_1protocol_1_1CmdParser.html#a05a80e6c9b6b48cf472f4b9df4c9262a">_Wolframe::protocol::CmdParser&lt; CmdBufferType &gt;</a>
 , <a class="el" href="class__Wolframe_1_1protocol_1_1iterator__t.html#a448c1282c6c1a5c3daba23e01d522b5b">_Wolframe::protocol::iterator_t&lt; array_type_, size_type_, value_type_, access_type_, deref_type_ &gt;</a>
-, <a class="el" href="class__Wolframe_1_1protocol_1_1MemBlock.html#a582055063ddb5afe9099058af50a3db6">_Wolframe::protocol::MemBlock</a>
+, <a class="el" href="class__Wolframe_1_1protocol_1_1MemBlock.html#a63220fe45e56ecb0a6aafa9db51c8ca3">_Wolframe::protocol::MemBlock</a>
 , <a class="el" href="class__Wolframe_1_1types_1_1VariantStruct.html#a0a04eac0703aa628a9699eb451e09056">_Wolframe::types::VariantStruct</a>
 , <a class="el" href="class__Wolframe_1_1utils_1_1CharTable.html#a47fb2ca123ec1cde4a8eaee0fed331eb">_Wolframe::utils::CharTable</a>
 , <a class="el" href="class__Wolframe_1_1utils_1_1IdentifierTable.html#a68c2e5877ed58b2cc6e30acf812fd96f">_Wolframe::utils::IdentifierTable</a>
-, <a class="el" href="struct__Wolframe_1_1utils_1_1TypedArrayDoublingAllocator.html#a1574580ed448073b8e5e6895654531ee">_Wolframe::utils::TypedArrayDoublingAllocator&lt; Type &gt;</a>
+, <a class="el" href="struct__Wolframe_1_1utils_1_1TypedArrayDoublingAllocator.html#a74da9cb125ea5d2505e2e28d48bc7edc">_Wolframe::utils::TypedArrayDoublingAllocator&lt; Type &gt;</a>
 </li>
 <li>optional()
 : <a class="el" href="struct__Wolframe_1_1serialize_1_1StructDescription.html#a00c52872fc50beaae828ca00be45100d">_Wolframe::serialize::StructDescription&lt; Structure &gt;</a>
@@ -443,7 +443,7 @@
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 24 2014 15:26:33 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 30 2014 12:37:21 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

@@ -58,11 +58,11 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.3. Logger configuration</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch03s02.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Configuration</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch03s04.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1387708324"></a>3.3. Logger configuration</h2></div></div></div><p>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.3. Logger configuration</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch03s02.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Configuration</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch03s04.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1384758868"></a>3.3. Logger configuration</h2></div></div></div><p>
 	The logger configuration is defined in the <code class="code">Logging</code>
 	section. The logger is defined for different backends.
 	We can define several backends for the logger. 
-	</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1387709196"></a>3.3.1. Log message types and log levels</h3></div></div></div><p>
+	</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1384759740"></a>3.3.1. Log message types and log levels</h3></div></div></div><p>
 	Each backend defines the level (verbosity) of logging. For the
 	log levels we use the type of the log message. The types of log
 	messages can be listed in ascending order of their severity.
@@ -71,11 +71,11 @@
 	type. The log message types are listed in the following table.
 	They are listed in ascending order of severity:
 
-	</p><div class="table"><a id="idp1387697956"></a><p class="title"><strong>Table 3.7. Log message types</strong></p><div class="table-contents"><table summary="Log message types" border="1"><colgroup><col class="col1" /><col class="col2" /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>DATA2</td><td>Processing data messages, not truncated</td></tr><tr><td>DATA</td><td>Processing data messages with big chunks truncated</td></tr><tr><td>TRACE</td><td>Processing trace messages</td></tr><tr><td>DEBUG</td><td>Debug messages</td></tr><tr><td>INFO</td><td>Information messages</td></tr><tr><td>NOTICE</td><td>Important information messages</td></tr><tr><td>WARNING</td><td>Warning messages</td></tr><tr><td>ERROR</td><td>Processing error messages</td></tr><tr><td>SEVERE</td><td>Severe errors that should be analyzed.</td></tr><tr><td>CRITICAL</td><td>Critical errors that have to notified.</td></tr><tr><td>ALERT</td><td>Critical errors that have to be escalated to a person responsible immediately.</td></tr><tr><td>FATAL</td><td>Fatal errors that cause the server to shut down.</td></tr></tbody></table></div></div><p><br class="table-break" />
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1387750044"></a>3.3.2. Log backends</h3></div></div></div><p>
+	</p><div class="table"><a id="idp1384748428"></a><p class="title"><strong>Table 3.7. Log message types</strong></p><div class="table-contents"><table summary="Log message types" border="1"><colgroup><col class="col1" /><col class="col2" /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>DATA2</td><td>Processing data messages, not truncated</td></tr><tr><td>DATA</td><td>Processing data messages with big chunks truncated</td></tr><tr><td>TRACE</td><td>Processing trace messages</td></tr><tr><td>DEBUG</td><td>Debug messages</td></tr><tr><td>INFO</td><td>Information messages</td></tr><tr><td>NOTICE</td><td>Important information messages</td></tr><tr><td>WARNING</td><td>Warning messages</td></tr><tr><td>ERROR</td><td>Processing error messages</td></tr><tr><td>SEVERE</td><td>Severe errors that should be analyzed.</td></tr><tr><td>CRITICAL</td><td>Critical errors that have to notified.</td></tr><tr><td>ALERT</td><td>Critical errors that have to be escalated to a person responsible immediately.</td></tr><tr><td>FATAL</td><td>Fatal errors that cause the server to shut down.</td></tr></tbody></table></div></div><p><br class="table-break" />
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1384800532"></a>3.3.2. Log backends</h3></div></div></div><p>
 	In the following sub sections we list the different backends and how 
 	they can be configured.
-	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1387750660"></a>Backend console</h4></div></div></div><p>For defining the backend to log to console (stderr), we
+	</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1384801148"></a>Backend console</h4></div></div></div><p>For defining the backend to log to console (stderr), we
 			have to configure a subsection <code class="code">stderr</code> of the
 			<code class="code">Logging</code> section. For console logging we just
 			can define the logging level with <code class="code">level</code>.
@@ -88,7 +88,7 @@ Logging
     }
 }
 </pre><p>
-			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1387752476"></a>Backend logfile</h4></div></div></div><p>For defining the backend to log to a file, we
+			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1384802964"></a>Backend logfile</h4></div></div></div><p>For defining the backend to log to a file, we
 			have to configure a subsection <code class="code">LogFile</code> of the
 			<code class="code">Logging</code> section. For logging to file we 
 			can define the logging level with <code class="code">Level</code>
@@ -103,7 +103,7 @@ Logging
     }
 }
 </pre><p>
-			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1387754524"></a>Backend syslog</h4></div></div></div><p>For defining the backend to log to syslog, we
+			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1384805012"></a>Backend syslog</h4></div></div></div><p>For defining the backend to log to syslog, we
 			have to configure a subsection <code class="code">Syslog</code> of the
 			<code class="code">Logging</code> section. For logging to syslog we 
 			can define the logging level with <code class="code">Level</code>,
@@ -120,7 +120,7 @@ Logging
     }
 }
 </pre><p>
-			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1387756844"></a>Backend eventlog</h4></div></div></div><p>On Windows we can also log to eventlog.
+			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1384807332"></a>Backend eventlog</h4></div></div></div><p>On Windows we can also log to eventlog.
 			For defining the backend to log to eventlog, we
 			have to configure a subsection <code class="code">Eventlog</code> of the
 			<code class="code">Logging</code> section. For logging to eventlog we 

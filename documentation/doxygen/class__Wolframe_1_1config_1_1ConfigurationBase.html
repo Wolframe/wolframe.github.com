@@ -120,8 +120,8 @@ Inheritance diagram for _Wolframe::config::ConfigurationBase:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1ebd505903a49ae807f7a2b5a411a7bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1config_1_1ConfigurationBase.html#a1ebd505903a49ae807f7a2b5a411a7bb">ConfigurationBase</a> (const char *name, const char *logParent, const char *logName)</td></tr>
-<tr class="separator:a1ebd505903a49ae807f7a2b5a411a7bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8878ff777b141428d4fd39127ee873aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1config_1_1ConfigurationBase.html#a8878ff777b141428d4fd39127ee873aa">ConfigurationBase</a> (const char *sectionName_, const char *logParent_, const char *logName_)</td></tr>
+<tr class="separator:a8878ff777b141428d4fd39127ee873aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11974d88b9f041e519a80c616a66a5d5"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1config_1_1ConfigurationBase.html#a11974d88b9f041e519a80c616a66a5d5">~ConfigurationBase</a> ()</td></tr>
 <tr class="separator:a11974d88b9f041e519a80c616a66a5d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab27bb96d7c0f7994938d452797d1bc50"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1config_1_1ConfigurationBase.html#ab27bb96d7c0f7994938d452797d1bc50">sectionName</a> () const </td></tr>
@@ -149,7 +149,7 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for the configuration structures. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a1ebd505903a49ae807f7a2b5a411a7bb"></a>
+<a class="anchor" id="a8878ff777b141428d4fd39127ee873aa"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -160,19 +160,19 @@ Private Attributes</h2></td></tr>
           <td class="memname">_Wolframe::config::ConfigurationBase::ConfigurationBase </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
+          <td class="paramname"><em>sectionName_</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>logParent</em>, </td>
+          <td class="paramname"><em>logParent_</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>logName</em>&#160;</td>
+          <td class="paramname"><em>logName_</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -188,9 +188,9 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Class constructor. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>the name that will be displayed for this configuration section in messages (log, print ...) It has no other processing purpose </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">logParent</td><td>the logging prefix of the parent. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">logName</td><td>the logging name of this section. Combined with the logParent parameter will form the whole logging prefix for of the section. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sectionName_</td><td>the name that will be displayed for this configuration section in messages (log, print ...) It has no other processing purpose </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">logParent_</td><td>the logging prefix of the parent. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">logName_</td><td>the logging name of this section. Combined with the logParent parameter will form the whole logging prefix for of the section. </td></tr>
   </table>
   </dd>
 </dl>
@@ -319,7 +319,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class__Wolframe_1_1config_1_1ServiceBanner.html#a8358b391e473f5b873321bf8616b21fb">_Wolframe::config::ServiceBanner</a>, <a class="el" href="struct__Wolframe_1_1config_1_1ServiceConfiguration.html#a586048801dc5929309298e409b397b42">_Wolframe::config::ServiceConfiguration</a>, <a class="el" href="struct__Wolframe_1_1log_1_1LoggerConfiguration.html#a7695a4e8f2bafd41d73e18cc994bf45c">_Wolframe::log::LoggerConfiguration</a>, <a class="el" href="struct__Wolframe_1_1net_1_1Configuration.html#a11e13c7c70864020273cb3a95b94cfd2">_Wolframe::net::Configuration</a>, <a class="el" href="class__Wolframe_1_1serialize_1_1DescriptiveConfiguration.html#a38fba09aa691dd8d733e2b6cd1104f81">_Wolframe::serialize::DescriptiveConfiguration</a>, <a class="el" href="class__Wolframe_1_1AAAA_1_1AAAAconfiguration.html#a2aa12fa258cdeda9b382e21609697062">_Wolframe::AAAA::AAAAconfiguration</a>, <a class="el" href="class__Wolframe_1_1db_1_1DBproviderConfig.html#a192eed8f64a007b0e0561542758abaca">_Wolframe::db::DBproviderConfig</a>, and <a class="el" href="class__Wolframe_1_1proc_1_1ProcProviderConfig.html#a2fbcb6b5f655adf2be01f2acf4c93ed3">_Wolframe::proc::ProcProviderConfig</a>.</p>
+<p>Implemented in <a class="el" href="class__Wolframe_1_1config_1_1ServiceBanner.html#a8358b391e473f5b873321bf8616b21fb">_Wolframe::config::ServiceBanner</a>, <a class="el" href="struct__Wolframe_1_1config_1_1ServiceConfiguration.html#a586048801dc5929309298e409b397b42">_Wolframe::config::ServiceConfiguration</a>, <a class="el" href="struct__Wolframe_1_1log_1_1LoggerConfiguration.html#a7695a4e8f2bafd41d73e18cc994bf45c">_Wolframe::log::LoggerConfiguration</a>, <a class="el" href="class__Wolframe_1_1serialize_1_1DescriptiveConfiguration.html#a38fba09aa691dd8d733e2b6cd1104f81">_Wolframe::serialize::DescriptiveConfiguration</a>, <a class="el" href="struct__Wolframe_1_1net_1_1Configuration.html#a11e13c7c70864020273cb3a95b94cfd2">_Wolframe::net::Configuration</a>, <a class="el" href="class__Wolframe_1_1AAAA_1_1AAAAconfiguration.html#a2aa12fa258cdeda9b382e21609697062">_Wolframe::AAAA::AAAAconfiguration</a>, <a class="el" href="class__Wolframe_1_1db_1_1DBproviderConfig.html#a192eed8f64a007b0e0561542758abaca">_Wolframe::db::DBproviderConfig</a>, and <a class="el" href="class__Wolframe_1_1proc_1_1ProcProviderConfig.html#a2fbcb6b5f655adf2be01f2acf4c93ed3">_Wolframe::proc::ProcProviderConfig</a>.</p>
 
 </div>
 </div>
@@ -472,7 +472,7 @@ Private Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 24 2014 15:26:18 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 30 2014 12:36:31 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

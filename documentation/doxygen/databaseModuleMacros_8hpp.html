@@ -104,89 +104,22 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:acf54fe508db07fdd89870f8272bcf1f7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="databaseModuleMacros_8hpp.html#acf54fe508db07fdd89870f8272bcf1f7">WF_DATABASE</a>(NAME, UNITCLASS, CONFIGCLASS)</td></tr>
-<tr class="memdesc:acf54fe508db07fdd89870f8272bcf1f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a database interface.  <a href="#acf54fe508db07fdd89870f8272bcf1f7">More...</a><br /></td></tr>
-<tr class="separator:acf54fe508db07fdd89870f8272bcf1f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd2d594c3ca81a53f5bc2aaeff4f99b5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="databaseModuleMacros_8hpp.html#abd2d594c3ca81a53f5bc2aaeff4f99b5">WF_SIMPLE_DATABASE</a>(NAME, DBCLASS, CONFIGCLASS)</td></tr>
-<tr class="memdesc:abd2d594c3ca81a53f5bc2aaeff4f99b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a simple database (one database object per unit) interface.  <a href="#abd2d594c3ca81a53f5bc2aaeff4f99b5">More...</a><br /></td></tr>
-<tr class="separator:abd2d594c3ca81a53f5bc2aaeff4f99b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ef6c4da575418898263eeb296374e80"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="databaseModuleMacros_8hpp.html#a9ef6c4da575418898263eeb296374e80">WF_DATABASE</a>(NAME, DBCLASS, CONFIGCLASS)</td></tr>
+<tr class="memdesc:a9ef6c4da575418898263eeb296374e80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a simple database (one database object per unit) interface.  <a href="#a9ef6c4da575418898263eeb296374e80">More...</a><br /></td></tr>
+<tr class="separator:a9ef6c4da575418898263eeb296374e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a290ddc2a815f7bd7e3f5e71e2cb8fb71"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="databaseModuleMacros_8hpp.html#a290ddc2a815f7bd7e3f5e71e2cb8fb71">WF_TEST_DATABASE</a>(NAME, DBCLASS, CONFIGCLASS, DBINITCLASS)</td></tr>
+<tr class="memdesc:a290ddc2a815f7bd7e3f5e71e2cb8fb71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a test database interface (simple database with initializer class with configuration as constructor argument that is constructed before the database and destructed after)  <a href="#a290ddc2a815f7bd7e3f5e71e2cb8fb71">More...</a><br /></td></tr>
+<tr class="separator:a290ddc2a815f7bd7e3f5e71e2cb8fb71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Macros for a module for defining a database interface. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="acf54fe508db07fdd89870f8272bcf1f7"></a>
+<a class="anchor" id="a9ef6c4da575418898263eeb296374e80"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">#define WF_DATABASE</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">NAME, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">UNITCLASS, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">CONFIGCLASS&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{\</div>
-<div class="line">        class Constructor :<span class="keyword">public</span> <a class="code" href="class__Wolframe_1_1ConfiguredObjectConstructor.html">_Wolframe::ConfiguredObjectConstructor&lt;UNITCLASS&gt;</a>\</div>
-<div class="line">        {\</div>
-<div class="line">        public:<a class="code" href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2e">\</a></div>
-<div class="line"><a class="code" href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2e">		_Wolframe::ObjectConstructorBase::ObjectType</a> objectType() const\</div>
-<div class="line">                {\</div>
-<div class="line">                        return DATABASE_OBJECT;\</div>
-<div class="line">                }\</div>
-<div class="line">                const <span class="keywordtype">char</span>* objectClassName() const\</div>
-<div class="line">                {\</div>
-<div class="line">                        return NAME <span class="stringliteral">&quot;Database&quot;</span>;\</div>
-<div class="line">                }\</div>
-<div class="line">                UNITCLASS* object( <span class="keyword">const</span> config::NamedConfiguration&amp; cfgi);\</div>
-<div class="line">                {\</div>
-<div class="line">                        const CONFIGCLASS* cfg = <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span>CONFIGCLASS*<span class="keyword">&gt;</span>(&amp;cfgi);\</div>
-<div class="line">                        return <span class="keyword">new</span> UNITCLASS(*cfg);\</div>
-<div class="line">                }\</div>
-<div class="line">        };\</div>
-<div class="line">        struct Builder \</div>
-<div class="line">        {\</div>
-<div class="line">                static <a class="code" href="class__Wolframe_1_1module_1_1BuilderBase.html">_Wolframe::module::BuilderBase</a>* impl()\</div>
-<div class="line">                {\</div>
-<div class="line">                        static <a class="code" href="class__Wolframe_1_1module_1_1ConfiguredBuilderDescription.html">_Wolframe::module::ConfiguredBuilderDescription&lt;Constructor,CONFIGCLASS&gt;\</a></div>
-<div class="line"><a class="code" href="class__Wolframe_1_1module_1_1ConfiguredBuilderDescription.html">				mod</a>( <span class="stringliteral">&quot;Database interface to &quot;</span> NAME, <span class="stringliteral">&quot;Database&quot;</span>, NAME, NAME <span class="stringliteral">&quot;Database&quot;</span>);\</div>
-<div class="line">                        return &amp;mod;\</div>
-<div class="line">                }\</div>
-<div class="line">        };\</div>
-<div class="line">        (*this)(&amp;Builder::impl);\</div>
-<div class="line">}</div>
-<div class="ttc" id="class__Wolframe_1_1module_1_1ConfiguredBuilderDescription_html"><div class="ttname"><a href="class__Wolframe_1_1module_1_1ConfiguredBuilderDescription.html">_Wolframe::module::ConfiguredBuilderDescription</a></div><div class="ttdoc">Template for constructing a configured builder. </div><div class="ttdef"><b>Definition:</b> moduleInterface.hpp:130</div></div>
-<div class="ttc" id="class__Wolframe_1_1ObjectConstructorBase_html_a36260b1c4ec3cfbf32e9e58f86737c2e"><div class="ttname"><a href="class__Wolframe_1_1ObjectConstructorBase.html#a36260b1c4ec3cfbf32e9e58f86737c2e">_Wolframe::ObjectConstructorBase::ObjectType</a></div><div class="ttdeci">ObjectType</div><div class="ttdef"><b>Definition:</b> constructor.hpp:47</div></div>
-<div class="ttc" id="class__Wolframe_1_1module_1_1BuilderBase_html"><div class="ttname"><a href="class__Wolframe_1_1module_1_1BuilderBase.html">_Wolframe::module::BuilderBase</a></div><div class="ttdef"><b>Definition:</b> moduleInterface.hpp:52</div></div>
-<div class="ttc" id="class__Wolframe_1_1ConfiguredObjectConstructor_html"><div class="ttname"><a href="class__Wolframe_1_1ConfiguredObjectConstructor.html">_Wolframe::ConfiguredObjectConstructor</a></div><div class="ttdoc">Constructor of a configured object. </div><div class="ttdef"><b>Definition:</b> constructor.hpp:105</div></div>
-</div><!-- fragment -->
-<p>Defines a database interface. </p>
-
-</div>
-</div>
-<a class="anchor" id="abd2d594c3ca81a53f5bc2aaeff4f99b5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WF_SIMPLE_DATABASE</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">NAME, </td>
@@ -215,11 +148,51 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a290ddc2a815f7bd7e3f5e71e2cb8fb71"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WF_TEST_DATABASE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">NAME, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">DBCLASS, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">CONFIGCLASS, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">DBINITCLASS&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines a test database interface (simple database with initializer class with configuration as constructor argument that is constructed before the database and destructed after) </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 24 2014 15:26:12 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 30 2014 12:36:17 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

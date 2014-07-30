@@ -113,16 +113,16 @@ Inheritance diagram for _Wolframe::config::NamedConfiguration:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac861eecb67ae3b4c74caaa268fd10e00"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1config_1_1NamedConfiguration.html#ac861eecb67ae3b4c74caaa268fd10e00">NamedConfiguration</a> (const char *name, const char *logParent, const char *logName)</td></tr>
-<tr class="memdesc:ac861eecb67ae3b4c74caaa268fd10e00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class constructor.  <a href="#ac861eecb67ae3b4c74caaa268fd10e00">More...</a><br /></td></tr>
-<tr class="separator:ac861eecb67ae3b4c74caaa268fd10e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06219ae6fb32da9759272ce0e10e8b59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1config_1_1NamedConfiguration.html#a06219ae6fb32da9759272ce0e10e8b59">NamedConfiguration</a> (const char *sectionName_, const char *logParent_, const char *logPrefix_)</td></tr>
+<tr class="memdesc:a06219ae6fb32da9759272ce0e10e8b59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class constructor.  <a href="#a06219ae6fb32da9759272ce0e10e8b59">More...</a><br /></td></tr>
+<tr class="separator:a06219ae6fb32da9759272ce0e10e8b59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0abfc058c037309cf95b1a9cd048f2e0"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1config_1_1NamedConfiguration.html#a0abfc058c037309cf95b1a9cd048f2e0">~NamedConfiguration</a> ()</td></tr>
 <tr class="separator:a0abfc058c037309cf95b1a9cd048f2e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34386bd19e997d908d54063a86e6a74c"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1config_1_1NamedConfiguration.html#a34386bd19e997d908d54063a86e6a74c">className</a> () const =0</td></tr>
 <tr class="separator:a34386bd19e997d908d54063a86e6a74c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class__Wolframe_1_1config_1_1ConfigurationBase"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class__Wolframe_1_1config_1_1ConfigurationBase')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class__Wolframe_1_1config_1_1ConfigurationBase.html">_Wolframe::config::ConfigurationBase</a></td></tr>
-<tr class="memitem:a1ebd505903a49ae807f7a2b5a411a7bb inherit pub_methods_class__Wolframe_1_1config_1_1ConfigurationBase"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1config_1_1ConfigurationBase.html#a1ebd505903a49ae807f7a2b5a411a7bb">ConfigurationBase</a> (const char *name, const char *logParent, const char *logName)</td></tr>
-<tr class="separator:a1ebd505903a49ae807f7a2b5a411a7bb inherit pub_methods_class__Wolframe_1_1config_1_1ConfigurationBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8878ff777b141428d4fd39127ee873aa inherit pub_methods_class__Wolframe_1_1config_1_1ConfigurationBase"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1config_1_1ConfigurationBase.html#a8878ff777b141428d4fd39127ee873aa">ConfigurationBase</a> (const char *sectionName_, const char *logParent_, const char *logName_)</td></tr>
+<tr class="separator:a8878ff777b141428d4fd39127ee873aa inherit pub_methods_class__Wolframe_1_1config_1_1ConfigurationBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11974d88b9f041e519a80c616a66a5d5 inherit pub_methods_class__Wolframe_1_1config_1_1ConfigurationBase"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1config_1_1ConfigurationBase.html#a11974d88b9f041e519a80c616a66a5d5">~ConfigurationBase</a> ()</td></tr>
 <tr class="separator:a11974d88b9f041e519a80c616a66a5d5 inherit pub_methods_class__Wolframe_1_1config_1_1ConfigurationBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab27bb96d7c0f7994938d452797d1bc50 inherit pub_methods_class__Wolframe_1_1config_1_1ConfigurationBase"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1config_1_1ConfigurationBase.html#ab27bb96d7c0f7994938d452797d1bc50">sectionName</a> () const </td></tr>
@@ -143,7 +143,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A named configuration is a normal configuration that provides also an className function. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ac861eecb67ae3b4c74caaa268fd10e00"></a>
+<a class="anchor" id="a06219ae6fb32da9759272ce0e10e8b59"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -154,19 +154,19 @@ Public Member Functions</h2></td></tr>
           <td class="memname">_Wolframe::config::NamedConfiguration::NamedConfiguration </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
+          <td class="paramname"><em>sectionName_</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>logParent</em>, </td>
+          <td class="paramname"><em>logParent_</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>logName</em>&#160;</td>
+          <td class="paramname"><em>logPrefix_</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -241,7 +241,7 @@ Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 24 2014 15:26:18 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 30 2014 12:36:31 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

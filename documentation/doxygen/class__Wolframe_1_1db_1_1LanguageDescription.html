@@ -93,14 +93,23 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class__Wolframe_1_1db_1_1LanguageDescription-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">_Wolframe::db::LanguageDescription Class Reference</div>  </div>
+<div class="title">_Wolframe::db::LanguageDescription Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Interface to properties of the database language (SQL)  
+<p>Interface to properties of the database language used.  
  <a href="class__Wolframe_1_1db_1_1LanguageDescription.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="databaseLanguage_8hpp_source.html">databaseLanguage.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for _Wolframe::db::LanguageDescription:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class__Wolframe_1_1db_1_1LanguageDescription.png" usemap="#_Wolframe::db::LanguageDescription_map" alt=""/>
+  <map id="_Wolframe::db::LanguageDescription_map" name="_Wolframe::db::LanguageDescription_map">
+<area href="class__Wolframe_1_1db_1_1LanguageDescriptionSQL.html" alt="_Wolframe::db::LanguageDescriptionSQL" shape="rect" coords="0,56,243,80"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -111,32 +120,30 @@ std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4061242dff22ab7d3ad928624672ab9f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1LanguageDescription.html#a4061242dff22ab7d3ad928624672ab9f">LanguageDescription</a> ()</td></tr>
-<tr class="memdesc:a4061242dff22ab7d3ad928624672ab9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a4061242dff22ab7d3ad928624672ab9f">More...</a><br /></td></tr>
-<tr class="separator:a4061242dff22ab7d3ad928624672ab9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81c568032b0b50ffddb4ebfaa2dd2128"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1LanguageDescription.html#a81c568032b0b50ffddb4ebfaa2dd2128">~LanguageDescription</a> ()</td></tr>
 <tr class="memdesc:a81c568032b0b50ffddb4ebfaa2dd2128"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a81c568032b0b50ffddb4ebfaa2dd2128">More...</a><br /></td></tr>
 <tr class="separator:a81c568032b0b50ffddb4ebfaa2dd2128"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a198d96b218fa3b6af5c5dfcc6e92d076"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1LanguageDescription.html#a198d96b218fa3b6af5c5dfcc6e92d076">eoln_commentopr</a> () const </td></tr>
-<tr class="memdesc:a198d96b218fa3b6af5c5dfcc6e92d076"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operator marking the start of an end of line comment. Default is the SQL standard EOLN comment marker.  <a href="#a198d96b218fa3b6af5c5dfcc6e92d076">More...</a><br /></td></tr>
-<tr class="separator:a198d96b218fa3b6af5c5dfcc6e92d076"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8e74fdeaafe760c11def065200af43d"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1LanguageDescription.html#af8e74fdeaafe760c11def065200af43d">stm_argument_reference</a> (int index) const </td></tr>
-<tr class="memdesc:af8e74fdeaafe760c11def065200af43d"><td class="mdescLeft">&#160;</td><td class="mdescRight">String used for declaring a reference to an argument by index (starting with 1). Default is the SQL standard argument reference in embedded database statements.  <a href="#af8e74fdeaafe760c11def065200af43d">More...</a><br /></td></tr>
-<tr class="separator:af8e74fdeaafe760c11def065200af43d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0569dbf5f5afd4cfd8536d48e916fbc8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1LanguageDescription.html#a0569dbf5f5afd4cfd8536d48e916fbc8">isEmbeddedStatement</a> (std::string::const_iterator si, std::string::const_iterator se) const </td></tr>
-<tr class="memdesc:a0569dbf5f5afd4cfd8536d48e916fbc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate if the start of the block specified as argument is forming an embedded statement in the database language.  <a href="#a0569dbf5f5afd4cfd8536d48e916fbc8">More...</a><br /></td></tr>
-<tr class="separator:a0569dbf5f5afd4cfd8536d48e916fbc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89b9c1238df44512ba2b617670dff2f5"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1LanguageDescription.html#a89b9c1238df44512ba2b617670dff2f5">parseEmbeddedStatement</a> (std::string::const_iterator &amp;si, std::string::const_iterator se) const </td></tr>
-<tr class="memdesc:a89b9c1238df44512ba2b617670dff2f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse an embedded statement in the database language.  <a href="#a89b9c1238df44512ba2b617670dff2f5">More...</a><br /></td></tr>
-<tr class="separator:a89b9c1238df44512ba2b617670dff2f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf7d420f8f6b02ed7d76031607a9f958"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1LanguageDescription.html#adf7d420f8f6b02ed7d76031607a9f958">substituteTemplateArguments</a> (const std::string &amp;cmd, const std::vector&lt; <a class="el" href="class__Wolframe_1_1db_1_1LanguageDescription.html#a6dc9c99555b6a56647fd3a26a50a02b2">TemplateArgumentAssignment</a> &gt; &amp;arg) const </td></tr>
-<tr class="separator:adf7d420f8f6b02ed7d76031607a9f958"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebc61440dbdfdc47fe150198b5e740d2"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1LanguageDescription.html#aebc61440dbdfdc47fe150198b5e740d2">isCaseSensitive</a> () const </td></tr>
-<tr class="memdesc:aebc61440dbdfdc47fe150198b5e740d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define if a database is case-insensitive. This has influence on TDL parsing Default is according SQL standard 'false'.  <a href="#aebc61440dbdfdc47fe150198b5e740d2">More...</a><br /></td></tr>
-<tr class="separator:aebc61440dbdfdc47fe150198b5e740d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a018e58e1b85d629c47862c6d1fd2ad9b"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1LanguageDescription.html#a018e58e1b85d629c47862c6d1fd2ad9b">eoln_commentopr</a> () const =0</td></tr>
+<tr class="memdesc:a018e58e1b85d629c47862c6d1fd2ad9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operator marking the start of an end of line comment.  <a href="#a018e58e1b85d629c47862c6d1fd2ad9b">More...</a><br /></td></tr>
+<tr class="separator:a018e58e1b85d629c47862c6d1fd2ad9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a557a4dfd7e2f38087943b73349ee303c"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1LanguageDescription.html#a557a4dfd7e2f38087943b73349ee303c">stm_argument_reference</a> (int index) const =0</td></tr>
+<tr class="memdesc:a557a4dfd7e2f38087943b73349ee303c"><td class="mdescLeft">&#160;</td><td class="mdescRight">String used for declaring a reference to an argument by index (starting with 1). Default is the SQL standard argument reference in embedded database statements.  <a href="#a557a4dfd7e2f38087943b73349ee303c">More...</a><br /></td></tr>
+<tr class="separator:a557a4dfd7e2f38087943b73349ee303c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab21d2c7242fa6b8a0dd5e073cebc4577"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1LanguageDescription.html#ab21d2c7242fa6b8a0dd5e073cebc4577">isEmbeddedStatement</a> (std::string::const_iterator si, std::string::const_iterator se) const =0</td></tr>
+<tr class="memdesc:ab21d2c7242fa6b8a0dd5e073cebc4577"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate if the start of the block specified as argument is forming an embedded statement in the database language.  <a href="#ab21d2c7242fa6b8a0dd5e073cebc4577">More...</a><br /></td></tr>
+<tr class="separator:ab21d2c7242fa6b8a0dd5e073cebc4577"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e6e191ae4fe9f1a0fb923d47efdb575"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1LanguageDescription.html#a8e6e191ae4fe9f1a0fb923d47efdb575">parseEmbeddedStatement</a> (std::string::const_iterator &amp;si, std::string::const_iterator se) const =0</td></tr>
+<tr class="memdesc:a8e6e191ae4fe9f1a0fb923d47efdb575"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse an embedded statement in the database language.  <a href="#a8e6e191ae4fe9f1a0fb923d47efdb575">More...</a><br /></td></tr>
+<tr class="separator:a8e6e191ae4fe9f1a0fb923d47efdb575"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7e073accaf37bc5fe08667818929652"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1LanguageDescription.html#ac7e073accaf37bc5fe08667818929652">substituteTemplateArguments</a> (const std::string &amp;cmd, const std::vector&lt; <a class="el" href="class__Wolframe_1_1db_1_1LanguageDescription.html#a6dc9c99555b6a56647fd3a26a50a02b2">TemplateArgumentAssignment</a> &gt; &amp;arg) const =0</td></tr>
+<tr class="separator:ac7e073accaf37bc5fe08667818929652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ad54c1aca5dc2bd5eef2301bbf0b62f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1db_1_1LanguageDescription.html#a5ad54c1aca5dc2bd5eef2301bbf0b62f">isCaseSensitive</a> () const =0</td></tr>
+<tr class="memdesc:a5ad54c1aca5dc2bd5eef2301bbf0b62f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define if a database is case-insensitive. This has influence on TDL parsing Default is according SQL standard 'false'.  <a href="#a5ad54c1aca5dc2bd5eef2301bbf0b62f">More...</a><br /></td></tr>
+<tr class="separator:a5ad54c1aca5dc2bd5eef2301bbf0b62f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Interface to properties of the database language (SQL) </p>
+<div class="textblock"><p>Interface to properties of the database language used. </p>
+<p>Interface to properties of the database language (SQL) </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a6dc9c99555b6a56647fd3a26a50a02b2"></a>
 <div class="memitem">
@@ -160,31 +167,6 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a4061242dff22ab7d3ad928624672ab9f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">_Wolframe::db::LanguageDescription::LanguageDescription </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Default constructor. </p>
-
-</div>
-</div>
 <a class="anchor" id="a81c568032b0b50ffddb4ebfaa2dd2128"></a>
 <div class="memitem">
 <div class="memproto">
@@ -211,7 +193,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a198d96b218fa3b6af5c5dfcc6e92d076"></a>
+<a class="anchor" id="a018e58e1b85d629c47862c6d1fd2ad9b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -227,16 +209,18 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Operator marking the start of an end of line comment. Default is the SQL standard EOLN comment marker. </p>
+<p>Operator marking the start of an end of line comment. </p>
+
+<p>Implemented in <a class="el" href="class__Wolframe_1_1db_1_1LanguageDescriptionSQL.html#a3cd648b51dadb8588e5879e08c833c20">_Wolframe::db::LanguageDescriptionSQL</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aebc61440dbdfdc47fe150198b5e740d2"></a>
+<a class="anchor" id="a5ad54c1aca5dc2bd5eef2301bbf0b62f"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -252,16 +236,18 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Define if a database is case-insensitive. This has influence on TDL parsing Default is according SQL standard 'false'. </p>
 
+<p>Implemented in <a class="el" href="class__Wolframe_1_1db_1_1LanguageDescriptionSQL.html#aaa7e8a87e38ff6011f3936ffa4894a2b">_Wolframe::db::LanguageDescriptionSQL</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="a0569dbf5f5afd4cfd8536d48e916fbc8"></a>
+<a class="anchor" id="ab21d2c7242fa6b8a0dd5e073cebc4577"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -288,16 +274,18 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Evaluate if the start of the block specified as argument is forming an embedded statement in the database language. </p>
 
+<p>Implemented in <a class="el" href="class__Wolframe_1_1db_1_1LanguageDescriptionSQL.html#a4686ff2c4dd19b835ac6b18600dab72b">_Wolframe::db::LanguageDescriptionSQL</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="a89b9c1238df44512ba2b617670dff2f5"></a>
+<a class="anchor" id="a8e6e191ae4fe9f1a0fb923d47efdb575"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -324,16 +312,18 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Parse an embedded statement in the database language. </p>
 
+<p>Implemented in <a class="el" href="class__Wolframe_1_1db_1_1LanguageDescriptionSQL.html#ae8e87c7931ee4888d0723407826db2cb">_Wolframe::db::LanguageDescriptionSQL</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="af8e74fdeaafe760c11def065200af43d"></a>
+<a class="anchor" id="a557a4dfd7e2f38087943b73349ee303c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -350,16 +340,18 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>String used for declaring a reference to an argument by index (starting with 1). Default is the SQL standard argument reference in embedded database statements. </p>
 
+<p>Implemented in <a class="el" href="class__Wolframe_1_1db_1_1LanguageDescriptionSQL.html#a43a80a15bbdd5c77aa3a81e0508ce663">_Wolframe::db::LanguageDescriptionSQL</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="adf7d420f8f6b02ed7d76031607a9f958"></a>
+<a class="anchor" id="ac7e073accaf37bc5fe08667818929652"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -386,10 +378,12 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class__Wolframe_1_1db_1_1LanguageDescriptionSQL.html#a070bf89a88a81f628362842423d75637">_Wolframe::db::LanguageDescriptionSQL</a>.</p>
 
 </div>
 </div>
@@ -400,7 +394,7 @@ Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 24 2014 15:26:19 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 30 2014 12:36:34 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>
