@@ -92,7 +92,7 @@
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">_Wolframe::cmdbind::IOFilterCommandHandler Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -109,9 +109,7 @@ Inheritance diagram for _Wolframe::cmdbind::IOFilterCommandHandler:</div>
  <div class="center">
   <img src="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.png" usemap="#_Wolframe::cmdbind::IOFilterCommandHandler_map" alt=""/>
   <map id="_Wolframe::cmdbind::IOFilterCommandHandler_map" name="_Wolframe::cmdbind::IOFilterCommandHandler_map">
-<area href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html" title="Command handler interface. " alt="_Wolframe::cmdbind::CommandHandler" shape="rect" coords="0,0,347,24"/>
-<area href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html" title="Command handler processing filter input/output with end of content marked as Dot (&#39;.&#39;) LF or Dot CR LF. " alt="_Wolframe::cmdbind::IOFilterCommandHandlerEscDLF" shape="rect" coords="0,112,347,136"/>
-<area href="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF.html" title="Command handler that does nothing but seek for the end of content marker. Used to delegate protocol i..." alt="_Wolframe::cmdbind::DiscardInputCommandHandlerEscDLF" shape="rect" coords="0,168,347,192"/>
+<area href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html" title="Command handler interface. " alt="_Wolframe::cmdbind::CommandHandler" shape="rect" coords="0,0,273,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -136,23 +134,45 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a754c75777afc8dfb13db78585605116b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#a754c75777afc8dfb13db78585605116b">IOFilterCommandHandler</a> ()</td></tr>
 <tr class="memdesc:a754c75777afc8dfb13db78585605116b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a754c75777afc8dfb13db78585605116b">More...</a><br /></td></tr>
 <tr class="separator:a754c75777afc8dfb13db78585605116b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35bc70613297f8ccb08d1256335a04fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#a35bc70613297f8ccb08d1256335a04fa">IOFilterCommandHandler</a> (const std::string &amp;docformat_)</td></tr>
+<tr class="memdesc:a35bc70613297f8ccb08d1256335a04fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a35bc70613297f8ccb08d1256335a04fa">More...</a><br /></td></tr>
+<tr class="separator:a35bc70613297f8ccb08d1256335a04fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8063afdf49c7a1069a0627a1b05adcf"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#aa8063afdf49c7a1069a0627a1b05adcf">~IOFilterCommandHandler</a> ()</td></tr>
 <tr class="memdesc:aa8063afdf49c7a1069a0627a1b05adcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#aa8063afdf49c7a1069a0627a1b05adcf">More...</a><br /></td></tr>
 <tr class="separator:aa8063afdf49c7a1069a0627a1b05adcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2733d000c1e0bb50b2e0f6bba65b908"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#ac2733d000c1e0bb50b2e0f6bba65b908">setFilter</a> (const <a class="el" href="namespace__Wolframe_1_1langbind.html#a046dc9147f2f4882eef3c2eba1d2dd3b">langbind::InputFilterR</a> &amp;in)</td></tr>
-<tr class="separator:ac2733d000c1e0bb50b2e0f6bba65b908"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a074155875e5b6cec240e28944b6af2dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#a074155875e5b6cec240e28944b6af2dc">setFilter</a> (const <a class="el" href="namespace__Wolframe_1_1langbind.html#ac5bb920dab2c87c39f03d7d5993e66ab">langbind::OutputFilterR</a> &amp;out)</td></tr>
-<tr class="separator:a074155875e5b6cec240e28944b6af2dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac955ebfe5ef0ea48caa611ded6effd03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#ac955ebfe5ef0ea48caa611ded6effd03">setInputFilter</a> (const <a class="el" href="namespace__Wolframe_1_1langbind.html#a046dc9147f2f4882eef3c2eba1d2dd3b">langbind::InputFilterR</a> &amp;in)</td></tr>
+<tr class="memdesc:ac955ebfe5ef0ea48caa611ded6effd03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define the input filter to use (makes an own copy of it)  <a href="#ac955ebfe5ef0ea48caa611ded6effd03">More...</a><br /></td></tr>
+<tr class="separator:ac955ebfe5ef0ea48caa611ded6effd03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09dd3fcf4dadf5d1610511ec06a72e95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#a09dd3fcf4dadf5d1610511ec06a72e95">setOutputFilter</a> (const <a class="el" href="namespace__Wolframe_1_1langbind.html#ac5bb920dab2c87c39f03d7d5993e66ab">langbind::OutputFilterR</a> &amp;out)</td></tr>
+<tr class="memdesc:a09dd3fcf4dadf5d1610511ec06a72e95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define the output filter to use (makes an own copy of it)  <a href="#a09dd3fcf4dadf5d1610511ec06a72e95">More...</a><br /></td></tr>
+<tr class="separator:a09dd3fcf4dadf5d1610511ec06a72e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f610db72721afb235d94d0ceb720083"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace__Wolframe_1_1langbind.html#a046dc9147f2f4882eef3c2eba1d2dd3b">langbind::InputFilterR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#a5f610db72721afb235d94d0ceb720083">inputfilter</a> ()</td></tr>
+<tr class="memdesc:a5f610db72721afb235d94d0ceb720083"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a reference to the input filter.  <a href="#a5f610db72721afb235d94d0ceb720083">More...</a><br /></td></tr>
 <tr class="separator:a5f610db72721afb235d94d0ceb720083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a279ba78ab5e905f88a3a0fc21b6051a7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class__Wolframe_1_1langbind_1_1Output.html">langbind::Output</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#a279ba78ab5e905f88a3a0fc21b6051a7">output</a> ()</td></tr>
+<tr class="memdesc:a279ba78ab5e905f88a3a0fc21b6051a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a const reference to the output object.  <a href="#a279ba78ab5e905f88a3a0fc21b6051a7">More...</a><br /></td></tr>
+<tr class="separator:a279ba78ab5e905f88a3a0fc21b6051a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f58f507b949dc7b6998914b6bc50c35"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class__Wolframe_1_1langbind_1_1Input.html">langbind::Input</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#a9f58f507b949dc7b6998914b6bc50c35">input</a> ()</td></tr>
+<tr class="memdesc:a9f58f507b949dc7b6998914b6bc50c35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a const reference to the input object.  <a href="#a9f58f507b949dc7b6998914b6bc50c35">More...</a><br /></td></tr>
+<tr class="separator:a9f58f507b949dc7b6998914b6bc50c35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a724412d1217a85ccf00cf785d39a0902"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace__Wolframe_1_1langbind.html#ac5bb920dab2c87c39f03d7d5993e66ab">langbind::OutputFilterR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#a724412d1217a85ccf00cf785d39a0902">outputfilter</a> ()</td></tr>
+<tr class="memdesc:a724412d1217a85ccf00cf785d39a0902"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a reference to the output filter.  <a href="#a724412d1217a85ccf00cf785d39a0902">More...</a><br /></td></tr>
 <tr class="separator:a724412d1217a85ccf00cf785d39a0902"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad67d0e25e817475326f64944906df90b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#ad67d0e25e817475326f64944906df90b">setFilterAs</a> (const <a class="el" href="namespace__Wolframe_1_1langbind.html#a046dc9147f2f4882eef3c2eba1d2dd3b">langbind::InputFilterR</a> &amp;in)</td></tr>
-<tr class="separator:ad67d0e25e817475326f64944906df90b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7454c1e7b2fbd6b547dd1cc157f0064a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#a7454c1e7b2fbd6b547dd1cc157f0064a">setFilterAs</a> (const <a class="el" href="namespace__Wolframe_1_1langbind.html#ac5bb920dab2c87c39f03d7d5993e66ab">langbind::OutputFilterR</a> &amp;out)</td></tr>
-<tr class="separator:a7454c1e7b2fbd6b547dd1cc157f0064a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28d410e6f3d97b266c715d494761e71c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#ae444085bce521d157642df59085f7d9d">Operation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#a28d410e6f3d97b266c715d494761e71c">nextOperation</a> ()</td></tr>
+<tr class="memdesc:a28d410e6f3d97b266c715d494761e71c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next operation to do for the connection handler.  <a href="#a28d410e6f3d97b266c715d494761e71c">More...</a><br /></td></tr>
+<tr class="separator:a28d410e6f3d97b266c715d494761e71c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f355d63066e2d100ab91bc319b231e0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#a4f355d63066e2d100ab91bc319b231e0">putInput</a> (const void *begin, std::size_t bytesTransferred, bool eod)</td></tr>
+<tr class="memdesc:a4f355d63066e2d100ab91bc319b231e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Passes the network input to the command handler (READ operation)  <a href="#a4f355d63066e2d100ab91bc319b231e0">More...</a><br /></td></tr>
+<tr class="separator:a4f355d63066e2d100ab91bc319b231e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a265f55e959a602ee7db9c5fdf0d30a24"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#a265f55e959a602ee7db9c5fdf0d30a24">getOutput</a> (const void *&amp;begin, std::size_t &amp;bytesToTransfer)</td></tr>
+<tr class="memdesc:a265f55e959a602ee7db9c5fdf0d30a24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next output chunk from the command handler (WRITE operation)  <a href="#a265f55e959a602ee7db9c5fdf0d30a24">More...</a><br /></td></tr>
+<tr class="separator:a265f55e959a602ee7db9c5fdf0d30a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91064aba46fd02fa20af8905354922a9"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#aecc292c24bc75e9f0e087f2f1f8edfd1">CallResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#a91064aba46fd02fa20af8905354922a9">call</a> (const char *&amp;err)=0</td></tr>
+<tr class="memdesc:a91064aba46fd02fa20af8905354922a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hook to call function to execute.  <a href="#a91064aba46fd02fa20af8905354922a9">More...</a><br /></td></tr>
 <tr class="separator:a91064aba46fd02fa20af8905354922a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a104b29bbc5d82e7e396788481f9f6d92"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#a104b29bbc5d82e7e396788481f9f6d92">setOutputChunkSize</a> (std::size_t outputChunkSize_)</td></tr>
+<tr class="memdesc:a104b29bbc5d82e7e396788481f9f6d92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloaded setter of the size of output chunk, setting it also in output.  <a href="#a104b29bbc5d82e7e396788481f9f6d92">More...</a><br /></td></tr>
+<tr class="separator:a104b29bbc5d82e7e396788481f9f6d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html">_Wolframe::cmdbind::CommandHandler</a></td></tr>
 <tr class="memitem:ac56e42b5910ca2843c0c31bf2f8217d4 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#ac56e42b5910ca2843c0c31bf2f8217d4">CommandHandler</a> ()</td></tr>
 <tr class="memdesc:ac56e42b5910ca2843c0c31bf2f8217d4 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defaul constructor.  <a href="#ac56e42b5910ca2843c0c31bf2f8217d4">More...</a><br /></td></tr>
@@ -160,62 +180,51 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a54eab343d789f586542baaeaeae0d752 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a54eab343d789f586542baaeaeae0d752">~CommandHandler</a> ()</td></tr>
 <tr class="memdesc:a54eab343d789f586542baaeaeae0d752 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a54eab343d789f586542baaeaeae0d752">More...</a><br /></td></tr>
 <tr class="separator:a54eab343d789f586542baaeaeae0d752 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d608e288bfb124e41eef6332503adac inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a6d608e288bfb124e41eef6332503adac">setInputBuffer</a> (void *buf, std::size_t allocsize)=0</td></tr>
-<tr class="memdesc:a6d608e288bfb124e41eef6332503adac inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define the input buffer for processing the command.  <a href="#a6d608e288bfb124e41eef6332503adac">More...</a><br /></td></tr>
-<tr class="separator:a6d608e288bfb124e41eef6332503adac inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58f6998ee667b80d3545f1acb2727645 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a58f6998ee667b80d3545f1acb2727645">setOutputBuffer</a> (void *buf, std::size_t size, std::size_t pos)=0</td></tr>
-<tr class="memdesc:a58f6998ee667b80d3545f1acb2727645 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define the input buffer for processing the command.  <a href="#a58f6998ee667b80d3545f1acb2727645">More...</a><br /></td></tr>
-<tr class="separator:a58f6998ee667b80d3545f1acb2727645 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a885829984f0c561a0bd42f77a6a7c472 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#ae444085bce521d157642df59085f7d9d">Operation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a885829984f0c561a0bd42f77a6a7c472">nextOperation</a> ()=0</td></tr>
-<tr class="memdesc:a885829984f0c561a0bd42f77a6a7c472 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next operation to do for the connection handler.  <a href="#a885829984f0c561a0bd42f77a6a7c472">More...</a><br /></td></tr>
-<tr class="separator:a885829984f0c561a0bd42f77a6a7c472 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0747663057b4cca61befd4360c0ee40 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#aa0747663057b4cca61befd4360c0ee40">putInput</a> (const void *begin, std::size_t bytesTransferred)=0</td></tr>
-<tr class="memdesc:aa0747663057b4cca61befd4360c0ee40 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Passes the network input to the command handler (READ operation)  <a href="#aa0747663057b4cca61befd4360c0ee40">More...</a><br /></td></tr>
-<tr class="separator:aa0747663057b4cca61befd4360c0ee40 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4675bb59d501f7ae07f64ec39cbadace inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a4675bb59d501f7ae07f64ec39cbadace">getInputBlock</a> (void *&amp;begin, std::size_t &amp;maxBlockSize)=0</td></tr>
-<tr class="memdesc:a4675bb59d501f7ae07f64ec39cbadace inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the input block request (READ operation)  <a href="#a4675bb59d501f7ae07f64ec39cbadace">More...</a><br /></td></tr>
-<tr class="separator:a4675bb59d501f7ae07f64ec39cbadace inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeaf4ba80d6b5a3defe5f3779f60025ad inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#aeaf4ba80d6b5a3defe5f3779f60025ad">getOutput</a> (const void *&amp;begin, std::size_t &amp;bytesToTransfer)=0</td></tr>
-<tr class="memdesc:aeaf4ba80d6b5a3defe5f3779f60025ad inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next output chunk from the command handler (WRITE operation)  <a href="#aeaf4ba80d6b5a3defe5f3779f60025ad">More...</a><br /></td></tr>
-<tr class="separator:aeaf4ba80d6b5a3defe5f3779f60025ad inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fd9d98e772104ce2b96d2972725cf80 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a1fd9d98e772104ce2b96d2972725cf80">getDataLeft</a> (const void *&amp;begin, std::size_t &amp;nofBytes)=0</td></tr>
-<tr class="memdesc:a1fd9d98e772104ce2b96d2972725cf80 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the data left unprocessed after close. The data belongs to the caller to process.  <a href="#a1fd9d98e772104ce2b96d2972725cf80">More...</a><br /></td></tr>
-<tr class="separator:a1fd9d98e772104ce2b96d2972725cf80 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adad840aa8a67adc4b18a4467778a80bb inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#adad840aa8a67adc4b18a4467778a80bb">lastError</a> () const </td></tr>
 <tr class="memdesc:adad840aa8a67adc4b18a4467778a80bb inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the last error message of command execution to be returned to the client.  <a href="#adad840aa8a67adc4b18a4467778a80bb">More...</a><br /></td></tr>
 <tr class="separator:adad840aa8a67adc4b18a4467778a80bb inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90c6a8e6efde45becb01c101730f6868 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a90c6a8e6efde45becb01c101730f6868">setLastError</a> (const std::string &amp;msg)</td></tr>
 <tr class="memdesc:a90c6a8e6efde45becb01c101730f6868 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the last error message of command execution to be returned to the client.  <a href="#a90c6a8e6efde45becb01c101730f6868">More...</a><br /></td></tr>
 <tr class="separator:a90c6a8e6efde45becb01c101730f6868 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7abb118a267ecdb3b3fd2723573b085b inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a7abb118a267ecdb3b3fd2723573b085b">setExecContext</a> (<a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html">proc::ExecContext</a> *c)</td></tr>
-<tr class="memdesc:a7abb118a267ecdb3b3fd2723573b085b inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass the reference to the execution context to the command handler.  <a href="#a7abb118a267ecdb3b3fd2723573b085b">More...</a><br /></td></tr>
-<tr class="separator:a7abb118a267ecdb3b3fd2723573b085b inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9c30b3da547cfd920bfa7cca83d1006 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#ac9c30b3da547cfd920bfa7cca83d1006">setExecContext</a> (<a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html">proc::ExecContext</a> *c)</td></tr>
+<tr class="memdesc:ac9c30b3da547cfd920bfa7cca83d1006 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass the reference to the execution context to the command handler.  <a href="#ac9c30b3da547cfd920bfa7cca83d1006">More...</a><br /></td></tr>
+<tr class="separator:ac9c30b3da547cfd920bfa7cca83d1006 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae308d6a0b7db1463712323709e79b480 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html">proc::ExecContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#ae308d6a0b7db1463712323709e79b480">execContext</a> ()</td></tr>
 <tr class="memdesc:ae308d6a0b7db1463712323709e79b480 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the reference to the processor provider.  <a href="#ae308d6a0b7db1463712323709e79b480">More...</a><br /></td></tr>
 <tr class="separator:ae308d6a0b7db1463712323709e79b480 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4ddcd6002e80f6b991aa1321f41dea1 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#ab4ddcd6002e80f6b991aa1321f41dea1">passParameters</a> (const std::string &amp;nam, int argc, const char **argv)</td></tr>
-<tr class="memdesc:ab4ddcd6002e80f6b991aa1321f41dea1 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass the parameters for the next command handler call.  <a href="#ab4ddcd6002e80f6b991aa1321f41dea1">More...</a><br /></td></tr>
-<tr class="separator:ab4ddcd6002e80f6b991aa1321f41dea1 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68189b98b1317fdc305dc21ddadd555a inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a68189b98b1317fdc305dc21ddadd555a">interruptDataSessionMarker</a> () const </td></tr>
-<tr class="memdesc:a68189b98b1317fdc305dc21ddadd555a inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the termination marker to send for an abort of a running data session.  <a href="#a68189b98b1317fdc305dc21ddadd555a">More...</a><br /></td></tr>
-<tr class="separator:a68189b98b1317fdc305dc21ddadd555a inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16aa3d1b4da08d46803590b18c855597 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class__Wolframe_1_1types_1_1DoctypeInfo.html">types::DoctypeInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a16aa3d1b4da08d46803590b18c855597">doctypeInfo</a> () const </td></tr>
+<tr class="memdesc:a16aa3d1b4da08d46803590b18c855597 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get info about processed document type.  <a href="#a16aa3d1b4da08d46803590b18c855597">More...</a><br /></td></tr>
+<tr class="separator:a16aa3d1b4da08d46803590b18c855597 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c35010680a708e3e97699aabd650cc1 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a3c35010680a708e3e97699aabd650cc1">setDoctypeInfo</a> (const <a class="el" href="namespace__Wolframe_1_1types.html#a0128f6aa3c39b8de7114c4bc35f15580">types::DoctypeInfoR</a> &amp;doctypeinfo_)</td></tr>
+<tr class="memdesc:a3c35010680a708e3e97699aabd650cc1 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set info about processed document type.  <a href="#a3c35010680a708e3e97699aabd650cc1">More...</a><br /></td></tr>
+<tr class="separator:a3c35010680a708e3e97699aabd650cc1 inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ba415b991a4938fe7906fe2548e73bc inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a9ba415b991a4938fe7906fe2548e73bc">outputChunkSize</a> () const </td></tr>
+<tr class="memdesc:a9ba415b991a4938fe7906fe2548e73bc inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a hint for the size of output chunks in bytes.  <a href="#a9ba415b991a4938fe7906fe2548e73bc">More...</a><br /></td></tr>
+<tr class="separator:a9ba415b991a4938fe7906fe2548e73bc inherit pub_methods_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a0adf722d86e821eb36a9cf95141a967e"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#a0adf722d86e821eb36a9cf95141a967e">callResultName</a> (<a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#aecc292c24bc75e9f0e087f2f1f8edfd1">CallResult</a> cr)</td></tr>
+<tr class="memdesc:a0adf722d86e821eb36a9cf95141a967e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an enumeration value of call states as string.  <a href="#a0adf722d86e821eb36a9cf95141a967e">More...</a><br /></td></tr>
 <tr class="separator:a0adf722d86e821eb36a9cf95141a967e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a935bdc0c63fdfb555dab3f8f1fd00998"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace__Wolframe_1_1langbind.html#a046dc9147f2f4882eef3c2eba1d2dd3b">langbind::InputFilterR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#a935bdc0c63fdfb555dab3f8f1fd00998">m_inputfilter</a></td></tr>
-<tr class="separator:a935bdc0c63fdfb555dab3f8f1fd00998"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae99a2ff7c8f35c605b7c51b803faa4e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace__Wolframe_1_1langbind.html#ac5bb920dab2c87c39f03d7d5993e66ab">langbind::OutputFilterR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#ae99a2ff7c8f35c605b7c51b803faa4e7">m_outputfilter</a></td></tr>
-<tr class="separator:ae99a2ff7c8f35c605b7c51b803faa4e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class__Wolframe_1_1cmdbind_1_1CommandHandler')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html">_Wolframe::cmdbind::CommandHandler</a></td></tr>
-<tr class="memitem:a8cd91f2c4234298b9e70f60fc62eb89f inherit pro_attribs_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a8cd91f2c4234298b9e70f60fc62eb89f">m_name</a></td></tr>
-<tr class="separator:a8cd91f2c4234298b9e70f60fc62eb89f inherit pro_attribs_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a712d5654687812e89948d78d60a44fd5 inherit pro_attribs_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a712d5654687812e89948d78d60a44fd5">m_argBuffer</a></td></tr>
-<tr class="separator:a712d5654687812e89948d78d60a44fd5 inherit pro_attribs_class__Wolframe_1_1cmdbind_1_1CommandHandler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a106ee473cb719f03dc82d944e031c7c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1langbind_1_1Input.html">langbind::Input</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#a106ee473cb719f03dc82d944e031c7c1">m_input</a></td></tr>
+<tr class="memdesc:a106ee473cb719f03dc82d944e031c7c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Input interface for this command handler.  <a href="#a106ee473cb719f03dc82d944e031c7c1">More...</a><br /></td></tr>
+<tr class="separator:a106ee473cb719f03dc82d944e031c7c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c69268b70a9431c6b2519d18748de96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1langbind_1_1Output.html">langbind::Output</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#a3c69268b70a9431c6b2519d18748de96">m_output</a></td></tr>
+<tr class="memdesc:a3c69268b70a9431c6b2519d18748de96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output interface for this command handler.  <a href="#a3c69268b70a9431c6b2519d18748de96">More...</a><br /></td></tr>
+<tr class="separator:a3c69268b70a9431c6b2519d18748de96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1ec4e897a85c52ab44e17f5c12e8692"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#ac1ec4e897a85c52ab44e17f5c12e8692">m_writeptr</a></td></tr>
+<tr class="memdesc:ac1ec4e897a85c52ab44e17f5c12e8692"><td class="mdescLeft">&#160;</td><td class="mdescRight">What to write next.  <a href="#ac1ec4e897a85c52ab44e17f5c12e8692">More...</a><br /></td></tr>
+<tr class="separator:ac1ec4e897a85c52ab44e17f5c12e8692"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a375f7d18c2ccdcc92ffd353f2942d7"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#a2a375f7d18c2ccdcc92ffd353f2942d7">m_writesize</a></td></tr>
+<tr class="memdesc:a2a375f7d18c2ccdcc92ffd353f2942d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of what to write next in bytes.  <a href="#a2a375f7d18c2ccdcc92ffd353f2942d7">More...</a><br /></td></tr>
+<tr class="separator:a2a375f7d18c2ccdcc92ffd353f2942d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc8f71879517bb5353935a6127798ade"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#acc8f71879517bb5353935a6127798ade">m_done</a></td></tr>
+<tr class="memdesc:acc8f71879517bb5353935a6127798ade"><td class="mdescLeft">&#160;</td><td class="mdescRight">Terminated.  <a href="#acc8f71879517bb5353935a6127798ade">More...</a><br /></td></tr>
+<tr class="separator:acc8f71879517bb5353935a6127798ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Abstract class for command handler processing filter input/output. </p>
@@ -254,6 +263,32 @@ Protected Attributes</h2></td></tr>
           <td class="memname">_Wolframe::cmdbind::IOFilterCommandHandler::IOFilterCommandHandler </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+
+</div>
+</div>
+<a class="anchor" id="a35bc70613297f8ccb08d1256335a04fa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_Wolframe::cmdbind::IOFilterCommandHandler::IOFilterCommandHandler </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>docformat_</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -315,6 +350,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Hook to call function to execute. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">err</td><td>error code in case of error </td></tr>
@@ -322,8 +359,6 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>CallResult status of the filter input for the state machine of this command handler </dd></dl>
-
-<p>Implemented in <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a5734f798dbd5e553a3a211f869f5187f">_Wolframe::cmdbind::IOFilterCommandHandlerEscDLF</a>, and <a class="el" href="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF.html#a89ec74b491d3f38b84f907ce691b5f66">_Wolframe::cmdbind::DiscardInputCommandHandlerEscDLF</a>.</p>
 
 </div>
 </div>
@@ -349,6 +384,78 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Get an enumeration value of call states as string. </p>
+
+</div>
+</div>
+<a class="anchor" id="a265f55e959a602ee7db9c5fdf0d30a24"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void _Wolframe::cmdbind::IOFilterCommandHandler::getOutput </td>
+          <td>(</td>
+          <td class="paramtype">const void *&amp;&#160;</td>
+          <td class="paramname"><em>begin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t &amp;&#160;</td>
+          <td class="paramname"><em>bytesToTransfer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the next output chunk from the command handler (WRITE operation) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">begin</td><td>start of the output chunk </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">bytesToTransfer</td><td>size of the output chunk to send in bytes </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#aeaf4ba80d6b5a3defe5f3779f60025ad">_Wolframe::cmdbind::CommandHandler</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9f58f507b949dc7b6998914b6bc50c35"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class__Wolframe_1_1langbind_1_1Input.html">langbind::Input</a>&amp; _Wolframe::cmdbind::IOFilterCommandHandler::input </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a const reference to the input object. </p>
+
 </div>
 </div>
 <a class="anchor" id="a5f610db72721afb235d94d0ceb720083"></a>
@@ -371,6 +478,61 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Get a reference to the input filter. </p>
+
+</div>
+</div>
+<a class="anchor" id="a28d410e6f3d97b266c715d494761e71c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#ae444085bce521d157642df59085f7d9d">Operation</a> _Wolframe::cmdbind::IOFilterCommandHandler::nextOperation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the next operation to do for the connection handler. </p>
+<dl class="section return"><dt>Returns</dt><dd>the next operation for the connection handler </dd></dl>
+
+<p>Implements <a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a885829984f0c561a0bd42f77a6a7c472">_Wolframe::cmdbind::CommandHandler</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a279ba78ab5e905f88a3a0fc21b6051a7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class__Wolframe_1_1langbind_1_1Output.html">langbind::Output</a>&amp; _Wolframe::cmdbind::IOFilterCommandHandler::output </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a const reference to the output object. </p>
 
 </div>
 </div>
@@ -395,9 +557,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Get a reference to the output filter. </p>
+
 </div>
 </div>
-<a class="anchor" id="ac2733d000c1e0bb50b2e0f6bba65b908"></a>
+<a class="anchor" id="a4f355d63066e2d100ab91bc319b231e0"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -405,23 +569,69 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void _Wolframe::cmdbind::IOFilterCommandHandler::setFilter </td>
+          <td class="memname">virtual void _Wolframe::cmdbind::IOFilterCommandHandler::putInput </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>begin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>bytesTransferred</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>eod</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Passes the network input to the command handler (READ operation) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">begin</td><td>start of the network input block. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bytesTransferred</td><td>number of bytes passed in the input block </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">eod</td><td>(end of data) true, if the passed chunk is the last one </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a17321526c17d8abe0ebb452f6c5191b7">_Wolframe::cmdbind::CommandHandler</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac955ebfe5ef0ea48caa611ded6effd03"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _Wolframe::cmdbind::IOFilterCommandHandler::setInputFilter </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespace__Wolframe_1_1langbind.html#a046dc9147f2f4882eef3c2eba1d2dd3b">langbind::InputFilterR</a> &amp;&#160;</td>
           <td class="paramname"><em>in</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+
+<p>Define the input filter to use (makes an own copy of it) </p>
 
 </div>
 </div>
-<a class="anchor" id="a074155875e5b6cec240e28944b6af2dc"></a>
+<a class="anchor" id="a104b29bbc5d82e7e396788481f9f6d92"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -429,72 +639,46 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void _Wolframe::cmdbind::IOFilterCommandHandler::setFilter </td>
+          <td class="memname">virtual void _Wolframe::cmdbind::IOFilterCommandHandler::setOutputChunkSize </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>outputChunkSize_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Overloaded setter of the size of output chunk, setting it also in output. </p>
+
+<p>Reimplemented from <a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#ac0ad2c088a632b89bf6fb3e035185c3a">_Wolframe::cmdbind::CommandHandler</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a09dd3fcf4dadf5d1610511ec06a72e95"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _Wolframe::cmdbind::IOFilterCommandHandler::setOutputFilter </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespace__Wolframe_1_1langbind.html#ac5bb920dab2c87c39f03d7d5993e66ab">langbind::OutputFilterR</a> &amp;&#160;</td>
           <td class="paramname"><em>out</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="ad67d0e25e817475326f64944906df90b"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void _Wolframe::cmdbind::IOFilterCommandHandler::setFilterAs </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespace__Wolframe_1_1langbind.html#a046dc9147f2f4882eef3c2eba1d2dd3b">langbind::InputFilterR</a> &amp;&#160;</td>
-          <td class="paramname"><em>in</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a7454c1e7b2fbd6b547dd1cc157f0064a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void _Wolframe::cmdbind::IOFilterCommandHandler::setFilterAs </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespace__Wolframe_1_1langbind.html#ac5bb920dab2c87c39f03d7d5993e66ab">langbind::OutputFilterR</a> &amp;&#160;</td>
-          <td class="paramname"><em>out</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>Define the output filter to use (makes an own copy of it) </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a935bdc0c63fdfb555dab3f8f1fd00998"></a>
+<a class="anchor" id="acc8f71879517bb5353935a6127798ade"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -502,19 +686,21 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace__Wolframe_1_1langbind.html#a046dc9147f2f4882eef3c2eba1d2dd3b">langbind::InputFilterR</a> _Wolframe::cmdbind::IOFilterCommandHandler::m_inputfilter</td>
+          <td class="memname">bool _Wolframe::cmdbind::IOFilterCommandHandler::m_done</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
+<p>Terminated. </p>
+
 </div>
 </div>
-<a class="anchor" id="ae99a2ff7c8f35c605b7c51b803faa4e7"></a>
+<a class="anchor" id="a106ee473cb719f03dc82d944e031c7c1"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -522,15 +708,83 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace__Wolframe_1_1langbind.html#ac5bb920dab2c87c39f03d7d5993e66ab">langbind::OutputFilterR</a> _Wolframe::cmdbind::IOFilterCommandHandler::m_outputfilter</td>
+          <td class="memname"><a class="el" href="class__Wolframe_1_1langbind_1_1Input.html">langbind::Input</a> _Wolframe::cmdbind::IOFilterCommandHandler::m_input</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Input interface for this command handler. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3c69268b70a9431c6b2519d18748de96"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class__Wolframe_1_1langbind_1_1Output.html">langbind::Output</a> _Wolframe::cmdbind::IOFilterCommandHandler::m_output</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Output interface for this command handler. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac1ec4e897a85c52ab44e17f5c12e8692"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const void* _Wolframe::cmdbind::IOFilterCommandHandler::m_writeptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>What to write next. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2a375f7d18c2ccdcc92ffd353f2942d7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t _Wolframe::cmdbind::IOFilterCommandHandler::m_writesize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Size of what to write next in bytes. </p>
 
 </div>
 </div>
@@ -541,7 +795,7 @@ Protected Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 30 2014 12:36:29 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Aug 28 2014 16:06:17 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

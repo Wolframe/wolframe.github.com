@@ -101,10 +101,10 @@
 <code>#include &quot;<a class="el" href="vmTransactionOutput_8hpp_source.html">database/vmTransactionOutput.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="transactionExecStatemachine_8hpp_source.html">database/transactionExecStatemachine.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="databaseError_8hpp_source.html">database/databaseError.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="countedReference_8hpp_source.html">types/countedReference.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="variant_8hpp_source.html">types/variant.hpp</a>&quot;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;boost/shared_ptr.hpp&gt;</code><br />
 </div>
 <p><a href="transaction_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -128,10 +128,9 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a361d9fdd8c35bed787132c00995c49b7"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-types::CountedReference<br class="typebreak" />
-&lt; Transaction &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1db.html#a361d9fdd8c35bed787132c00995c49b7">_Wolframe::db::TransactionR</a></td></tr>
-<tr class="separator:a361d9fdd8c35bed787132c00995c49b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a4de6263fe185a0064f854ef5fe741e"><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak" />
+&lt; Transaction &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1db.html#a7a4de6263fe185a0064f854ef5fe741e">_Wolframe::db::TransactionR</a></td></tr>
+<tr class="separator:a7a4de6263fe185a0064f854ef5fe741e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface of a database transaction. </p>
@@ -139,7 +138,7 @@ types::CountedReference<br class="typebreak" />
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 30 2014 12:36:19 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Aug 28 2014 16:06:12 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

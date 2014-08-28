@@ -118,9 +118,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af921228307ece2bfd6c6ee369d2bc1e5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html">cmdbind::CommandHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#af921228307ece2bfd6c6ee369d2bc1e5">cmdhandler</a> (const std::string &amp;command, const std::string &amp;docformat) const =0</td></tr>
 <tr class="memdesc:af921228307ece2bfd6c6ee369d2bc1e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a command handler for a specific command and doc format.  <a href="#af921228307ece2bfd6c6ee369d2bc1e5">More...</a><br /></td></tr>
 <tr class="separator:af921228307ece2bfd6c6ee369d2bc1e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bc5c529300483bd311930aa9d5114d7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#a4bc5c529300483bd311930aa9d5114d7">existcmd</a> (const std::string &amp;command) const =0</td></tr>
-<tr class="memdesc:a4bc5c529300483bd311930aa9d5114d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find out if there exists a command handler for a specific command without creating it.  <a href="#a4bc5c529300483bd311930aa9d5114d7">More...</a><br /></td></tr>
-<tr class="separator:a4bc5c529300483bd311930aa9d5114d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3736fe2df85067abf5082abffb6ec8e4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class__Wolframe_1_1cmdbind_1_1ProtocolHandler.html">cmdbind::ProtocolHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#a3736fe2df85067abf5082abffb6ec8e4">protocolHandler</a> (const std::string &amp;protocol) const =0</td></tr>
+<tr class="memdesc:a3736fe2df85067abf5082abffb6ec8e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new protocol handler for a command and for a document format (e.g. XML,JSON,...)  <a href="#a3736fe2df85067abf5082abffb6ec8e4">More...</a><br /></td></tr>
+<tr class="separator:a3736fe2df85067abf5082abffb6ec8e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad242bae405ee25f3f506ffca312d47f3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#ad242bae405ee25f3f506ffca312d47f3">hasProtocol</a> (const std::string &amp;protocol) const =0</td></tr>
+<tr class="memdesc:ad242bae405ee25f3f506ffca312d47f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find out if a protocol with a specific name exists.  <a href="#ad242bae405ee25f3f506ffca312d47f3">More...</a><br /></td></tr>
+<tr class="separator:ad242bae405ee25f3f506ffca312d47f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea6f65fe2a9163b988b45a7c4be90cfd"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#aea6f65fe2a9163b988b45a7c4be90cfd">hasCommand</a> (const std::string &amp;command) const =0</td></tr>
+<tr class="memdesc:aea6f65fe2a9163b988b45a7c4be90cfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find out if there exists a command handler for a specific command without creating it.  <a href="#aea6f65fe2a9163b988b45a7c4be90cfd">More...</a><br /></td></tr>
+<tr class="separator:aea6f65fe2a9163b988b45a7c4be90cfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a474707e221de6e81a98b5c7016774098"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class__Wolframe_1_1db_1_1Database.html">db::Database</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProviderInterface.html#a474707e221de6e81a98b5c7016774098">transactionDatabase</a> () const =0</td></tr>
 <tr class="memdesc:a474707e221de6e81a98b5c7016774098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the database for transactions.  <a href="#a474707e221de6e81a98b5c7016774098">More...</a><br /></td></tr>
 <tr class="separator:a474707e221de6e81a98b5c7016774098"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -377,41 +383,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4bc5c529300483bd311930aa9d5114d7"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool _Wolframe::proc::ProcessorProviderInterface::existcmd </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>command</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Find out if there exists a command handler for a specific command without creating it. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">command</td><td>name of the command </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true, if yes </dd></dl>
-
-<p>Implemented in <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#a63acc54788598da4455a10fa0e129f5c">_Wolframe::proc::ProcessorProvider</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a5cca27e0ed64e7880b6b4e08a8c45f6e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -517,6 +488,76 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aea6f65fe2a9163b988b45a7c4be90cfd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool _Wolframe::proc::ProcessorProviderInterface::hasCommand </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>command</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Find out if there exists a command handler for a specific command without creating it. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">command</td><td>name of the command </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true, if yes </dd></dl>
+
+<p>Implemented in <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#a742c11a480490eab188c2cc46e757d16">_Wolframe::proc::ProcessorProvider</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad242bae405ee25f3f506ffca312d47f3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool _Wolframe::proc::ProcessorProviderInterface::hasProtocol </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>protocol</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Find out if a protocol with a specific name exists. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">protocol</td><td>name of the protocol </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true, if yes </dd></dl>
+
+<p>Implemented in <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#a296a1777566e0ba0fc0dd7c29847f970">_Wolframe::proc::ProcessorProvider</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="aab8e9d3be245c373074cf5dbc8318700"></a>
 <div class="memitem">
 <div class="memproto">
@@ -584,6 +625,40 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>reference to normalization function type </dd></dl>
 
 <p>Implemented in <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#a99f00fe132a2bcae0cf79bd23d4c2836">_Wolframe::proc::ProcessorProvider</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3736fe2df85067abf5082abffb6ec8e4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class__Wolframe_1_1cmdbind_1_1ProtocolHandler.html">cmdbind::ProtocolHandler</a>* _Wolframe::proc::ProcessorProviderInterface::protocolHandler </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>protocol</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a new protocol handler for a command and for a document format (e.g. XML,JSON,...) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">protocol</td><td>name of the protocol </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class__Wolframe_1_1proc_1_1ProcessorProvider.html#afac4490fe36ee566812785191309c954">_Wolframe::proc::ProcessorProvider</a>.</p>
 
 </div>
 </div>
@@ -731,7 +806,7 @@ Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 30 2014 12:36:50 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Aug 28 2014 16:06:24 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

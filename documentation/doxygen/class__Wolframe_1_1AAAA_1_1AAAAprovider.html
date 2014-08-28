@@ -90,6 +90,7 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class__Wolframe_1_1AAAA_1_1AAAAprovider-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -97,7 +98,7 @@
 </div><!--header-->
 <div class="contents">
 
-<p>Global provider interface to create <a class="el" href="namespace__Wolframe_1_1AAAA.html" title="Interfaces for authentication, authorization, auditing and accounting. ">AAAA</a> related objects.  
+<p>Global provider object to create <a class="el" href="namespace__Wolframe_1_1AAAA.html" title="Interfaces for authentication, authorization, auditing and accounting. ">AAAA</a> related objects.  
  <a href="class__Wolframe_1_1AAAA_1_1AAAAprovider.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="AAAAprovider_8hpp_source.html">AAAAprovider.hpp</a>&gt;</code></p>
@@ -107,6 +108,7 @@ Inheritance diagram for _Wolframe::AAAA::AAAAprovider:</div>
  <div class="center">
   <img src="class__Wolframe_1_1AAAA_1_1AAAAprovider.png" usemap="#_Wolframe::AAAA::AAAAprovider_map" alt=""/>
   <map id="_Wolframe::AAAA::AAAAprovider_map" name="_Wolframe::AAAA::AAAAprovider_map">
+<area href="class__Wolframe_1_1AAAA_1_1AAAAproviderInterface.html" title="Provider interface to create AAAA related objects. " alt="_Wolframe::AAAA::AAAAproviderInterface" shape="rect" coords="0,0,254,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -119,21 +121,39 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adb014b48cc5d68da2972bb87bd267002"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1AAAAprovider.html#adb014b48cc5d68da2972bb87bd267002">resolveDB</a> (const <a class="el" href="class__Wolframe_1_1db_1_1DatabaseProvider.html">db::DatabaseProvider</a> &amp;db)</td></tr>
 <tr class="separator:adb014b48cc5d68da2972bb87bd267002"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6c6816b021701a646bb48969c72c8d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1AAAA_1_1Authenticator.html">Authenticator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1AAAAprovider.html#ae6c6816b021701a646bb48969c72c8d6">authenticator</a> (const <a class="el" href="class__Wolframe_1_1net_1_1RemoteEndpoint.html">net::RemoteEndpoint</a> &amp;client) const </td></tr>
+<tr class="memdesc:ae6c6816b021701a646bb48969c72c8d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an return an authenticator object.  <a href="#ae6c6816b021701a646bb48969c72c8d6">More...</a><br /></td></tr>
 <tr class="separator:ae6c6816b021701a646bb48969c72c8d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a835ce1936bb4c4fbe3e581972d2d334c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1AAAA_1_1PasswordChanger.html">PasswordChanger</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1AAAAprovider.html#a835ce1936bb4c4fbe3e581972d2d334c">passwordChanger</a> (const <a class="el" href="class__Wolframe_1_1AAAA_1_1User.html">User</a> &amp;user, const <a class="el" href="class__Wolframe_1_1net_1_1RemoteEndpoint.html">net::RemoteEndpoint</a> &amp;client) const </td></tr>
+<tr class="memdesc:a835ce1936bb4c4fbe3e581972d2d334c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an return a password changer object.  <a href="#a835ce1936bb4c4fbe3e581972d2d334c">More...</a><br /></td></tr>
 <tr class="separator:a835ce1936bb4c4fbe3e581972d2d334c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6be6e8541c14b6b506959c7bcdfaa35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1AAAA_1_1Authorizer.html">Authorizer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1AAAAprovider.html#ad6be6e8541c14b6b506959c7bcdfaa35">authorizer</a> () const </td></tr>
+<tr class="memdesc:ad6be6e8541c14b6b506959c7bcdfaa35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an return an authorizer object.  <a href="#ad6be6e8541c14b6b506959c7bcdfaa35">More...</a><br /></td></tr>
 <tr class="separator:ad6be6e8541c14b6b506959c7bcdfaa35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afedbcf04c67c48942bd165d7b0529eee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1AAAA_1_1Auditor.html">Auditor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1AAAAprovider.html#afedbcf04c67c48942bd165d7b0529eee">auditor</a> () const </td></tr>
+<tr class="memdesc:afedbcf04c67c48942bd165d7b0529eee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an return an auditor object.  <a href="#afedbcf04c67c48942bd165d7b0529eee">More...</a><br /></td></tr>
 <tr class="separator:afedbcf04c67c48942bd165d7b0529eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class__Wolframe_1_1AAAA_1_1AAAAproviderInterface"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class__Wolframe_1_1AAAA_1_1AAAAproviderInterface')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class__Wolframe_1_1AAAA_1_1AAAAproviderInterface.html">_Wolframe::AAAA::AAAAproviderInterface</a></td></tr>
+<tr class="memitem:a251a0e34ec173fdf75ca1043e70e75be inherit pub_methods_class__Wolframe_1_1AAAA_1_1AAAAproviderInterface"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1AAAAproviderInterface.html#a251a0e34ec173fdf75ca1043e70e75be">~AAAAproviderInterface</a> ()</td></tr>
+<tr class="memdesc:a251a0e34ec173fdf75ca1043e70e75be inherit pub_methods_class__Wolframe_1_1AAAA_1_1AAAAproviderInterface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a251a0e34ec173fdf75ca1043e70e75be">More...</a><br /></td></tr>
+<tr class="separator:a251a0e34ec173fdf75ca1043e70e75be inherit pub_methods_class__Wolframe_1_1AAAA_1_1AAAAproviderInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a63a82ea96e2112be71ae9499ced21fca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1AAAAprovider.html#a63a82ea96e2112be71ae9499ced21fca">AAAAprovider</a> (const <a class="el" href="class__Wolframe_1_1AAAA_1_1AAAAprovider.html">AAAAprovider</a> &amp;)</td></tr>
+<tr class="memdesc:a63a82ea96e2112be71ae9499ced21fca"><td class="mdescLeft">&#160;</td><td class="mdescRight">non copyable  <a href="#a63a82ea96e2112be71ae9499ced21fca">More...</a><br /></td></tr>
+<tr class="separator:a63a82ea96e2112be71ae9499ced21fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4077162443c917a7b7b884bfaff6e1e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1AAAA_1_1AAAAprovider.html">AAAAprovider</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1AAAAprovider.html#ad4077162443c917a7b7b884bfaff6e1e">operator=</a> (const <a class="el" href="class__Wolframe_1_1AAAA_1_1AAAAprovider.html">AAAAprovider</a> &amp;)</td></tr>
+<tr class="memdesc:ad4077162443c917a7b7b884bfaff6e1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">non copyable  <a href="#ad4077162443c917a7b7b884bfaff6e1e">More...</a><br /></td></tr>
+<tr class="separator:ad4077162443c917a7b7b884bfaff6e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a16190715bfe200fce09406dfc1a88ac4"><td class="memItemLeft" align="right" valign="top">AAAAprovider_Impl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1AAAA_1_1AAAAprovider.html#a16190715bfe200fce09406dfc1a88ac4">m_impl</a></td></tr>
+<tr class="memdesc:a16190715bfe200fce09406dfc1a88ac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">PIMPL class.  <a href="#a16190715bfe200fce09406dfc1a88ac4">More...</a><br /></td></tr>
 <tr class="separator:a16190715bfe200fce09406dfc1a88ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Global provider interface to create <a class="el" href="namespace__Wolframe_1_1AAAA.html" title="Interfaces for authentication, authorization, auditing and accounting. ">AAAA</a> related objects. </p>
+<div class="textblock"><p>Global provider object to create <a class="el" href="namespace__Wolframe_1_1AAAA.html" title="Interfaces for authentication, authorization, auditing and accounting. ">AAAA</a> related objects. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a05ac2aa6a16ffd42b0ef4b9439aef31c"></a>
 <div class="memitem">
@@ -176,10 +196,39 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a63a82ea96e2112be71ae9499ced21fca"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">_Wolframe::AAAA::AAAAprovider::AAAAprovider </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class__Wolframe_1_1AAAA_1_1AAAAprovider.html">AAAAprovider</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>non copyable </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="afedbcf04c67c48942bd165d7b0529eee"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class__Wolframe_1_1AAAA_1_1Auditor.html">Auditor</a>* _Wolframe::AAAA::AAAAprovider::auditor </td>
@@ -188,13 +237,25 @@ Private Attributes</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Create an return an auditor object. </p>
+
+<p>Implements <a class="el" href="class__Wolframe_1_1AAAA_1_1AAAAproviderInterface.html#a9494d00542aecb05c796ece0e3438231">_Wolframe::AAAA::AAAAproviderInterface</a>.</p>
 
 </div>
 </div>
 <a class="anchor" id="ae6c6816b021701a646bb48969c72c8d6"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class__Wolframe_1_1AAAA_1_1Authenticator.html">Authenticator</a>* _Wolframe::AAAA::AAAAprovider::authenticator </td>
@@ -204,13 +265,25 @@ Private Attributes</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Create an return an authenticator object. </p>
+
+<p>Implements <a class="el" href="class__Wolframe_1_1AAAA_1_1AAAAproviderInterface.html#aea36abceec7b1d6da8cbdcc786d018f5">_Wolframe::AAAA::AAAAproviderInterface</a>.</p>
 
 </div>
 </div>
 <a class="anchor" id="ad6be6e8541c14b6b506959c7bcdfaa35"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class__Wolframe_1_1AAAA_1_1Authorizer.html">Authorizer</a>* _Wolframe::AAAA::AAAAprovider::authorizer </td>
@@ -219,13 +292,51 @@ Private Attributes</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Create an return an authorizer object. </p>
+
+<p>Implements <a class="el" href="class__Wolframe_1_1AAAA_1_1AAAAproviderInterface.html#af3792db92f965508f785725ba3e8419b">_Wolframe::AAAA::AAAAproviderInterface</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad4077162443c917a7b7b884bfaff6e1e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class__Wolframe_1_1AAAA_1_1AAAAprovider.html">AAAAprovider</a>&amp; _Wolframe::AAAA::AAAAprovider::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class__Wolframe_1_1AAAA_1_1AAAAprovider.html">AAAAprovider</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>non copyable </p>
 
 </div>
 </div>
 <a class="anchor" id="a835ce1936bb4c4fbe3e581972d2d334c"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class__Wolframe_1_1AAAA_1_1PasswordChanger.html">PasswordChanger</a>* _Wolframe::AAAA::AAAAprovider::passwordChanger </td>
@@ -245,7 +356,16 @@ Private Attributes</h2></td></tr>
           <td></td><td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Create an return a password changer object. </p>
+
+<p>Implements <a class="el" href="class__Wolframe_1_1AAAA_1_1AAAAproviderInterface.html#a0c5c22d32ca1dc7e66d0e97bda5837c8">_Wolframe::AAAA::AAAAproviderInterface</a>.</p>
 
 </div>
 </div>
@@ -284,6 +404,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>PIMPL class. </p>
+<p>PIMPL </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -293,7 +416,7 @@ Private Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 30 2014 12:36:26 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Aug 28 2014 16:06:15 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

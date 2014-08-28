@@ -129,6 +129,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a63e94cfae867907554181b283afeed4d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1ToStringFilter.html#a63e94cfae867907554181b283afeed4d">print</a> (<a class="el" href="class__Wolframe_1_1langbind_1_1FilterBase.html#a293c57a669e78026544777e502574fb1">ElementType</a> type, const <a class="el" href="struct__Wolframe_1_1types_1_1VariantConst.html">types::VariantConst</a> &amp;element)</td></tr>
 <tr class="memdesc:a63e94cfae867907554181b283afeed4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of <a class="el" href="class__Wolframe_1_1langbind_1_1TypedOutputFilter.html#a511952e6d1498e2f5e5d5855b6d5c0b2" title="Get next element. ">TypedOutputFilter::print(ElementType,const types::VariantConst&amp;)</a>  <a href="#a63e94cfae867907554181b283afeed4d">More...</a><br /></td></tr>
 <tr class="separator:a63e94cfae867907554181b283afeed4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b785adfd1e8646f407078976d0246c0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1ToStringFilter.html#a5b785adfd1e8646f407078976d0246c0">getOutput</a> (const void *&amp;buf, std::size_t &amp;bufsize)</td></tr>
+<tr class="separator:a5b785adfd1e8646f407078976d0246c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54243579693053899984cf1cd8669893"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1ToStringFilter.html#a54243579693053899984cf1cd8669893">content</a> () const </td></tr>
 <tr class="memdesc:a54243579693053899984cf1cd8669893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the content.  <a href="#a54243579693053899984cf1cd8669893">More...</a><br /></td></tr>
 <tr class="separator:a54243579693053899984cf1cd8669893"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,18 +157,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7dc64c072919cfe4819ad5f3057fe238 inherit pub_methods_class__Wolframe_1_1langbind_1_1FilterBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44e878d6dce8bf6a6e468977243c238b inherit pub_methods_class__Wolframe_1_1langbind_1_1FilterBase"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1FilterBase.html#a44e878d6dce8bf6a6e468977243c238b">~FilterBase</a> ()</td></tr>
 <tr class="separator:a44e878d6dce8bf6a6e468977243c238b inherit pub_methods_class__Wolframe_1_1langbind_1_1FilterBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05d86ffda4489c764f41524028cb014b inherit pub_methods_class__Wolframe_1_1langbind_1_1FilterBase"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1FilterBase.html#a05d86ffda4489c764f41524028cb014b">getError</a> () const </td></tr>
-<tr class="memdesc:a05d86ffda4489c764f41524028cb014b inherit pub_methods_class__Wolframe_1_1langbind_1_1FilterBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the las error in case of error state.  <a href="#a05d86ffda4489c764f41524028cb014b">More...</a><br /></td></tr>
-<tr class="separator:a05d86ffda4489c764f41524028cb014b inherit pub_methods_class__Wolframe_1_1langbind_1_1FilterBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a507dab5ad6980b3007aa110d6c9f30a7 inherit pub_methods_class__Wolframe_1_1langbind_1_1FilterBase"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1FilterBase.html#a507dab5ad6980b3007aa110d6c9f30a7">getError</a> () const </td></tr>
+<tr class="memdesc:a507dab5ad6980b3007aa110d6c9f30a7 inherit pub_methods_class__Wolframe_1_1langbind_1_1FilterBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the las error in case of error state.  <a href="#a507dab5ad6980b3007aa110d6c9f30a7">More...</a><br /></td></tr>
+<tr class="separator:a507dab5ad6980b3007aa110d6c9f30a7 inherit pub_methods_class__Wolframe_1_1langbind_1_1FilterBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6b55aa0be6c66e04a7942c1ab358822 inherit pub_methods_class__Wolframe_1_1langbind_1_1FilterBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1FilterBase.html#ac6b55aa0be6c66e04a7942c1ab358822">setError</a> (const char *msg=0)</td></tr>
 <tr class="memdesc:ac6b55aa0be6c66e04a7942c1ab358822 inherit pub_methods_class__Wolframe_1_1langbind_1_1FilterBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set input filter error message.  <a href="#ac6b55aa0be6c66e04a7942c1ab358822">More...</a><br /></td></tr>
 <tr class="separator:ac6b55aa0be6c66e04a7942c1ab358822 inherit pub_methods_class__Wolframe_1_1langbind_1_1FilterBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c4628ccc536fb6b90a804bb0d8110ff inherit pub_methods_class__Wolframe_1_1langbind_1_1FilterBase"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1FilterBase.html#a2c4628ccc536fb6b90a804bb0d8110ff">getValue</a> (const char *, std::string &amp;) const </td></tr>
-<tr class="memdesc:a2c4628ccc536fb6b90a804bb0d8110ff inherit pub_methods_class__Wolframe_1_1langbind_1_1FilterBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a member value of the filter. Throws on conversion error.  <a href="#a2c4628ccc536fb6b90a804bb0d8110ff">More...</a><br /></td></tr>
-<tr class="separator:a2c4628ccc536fb6b90a804bb0d8110ff inherit pub_methods_class__Wolframe_1_1langbind_1_1FilterBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19d37dce59079acc64ed50466c650191 inherit pub_methods_class__Wolframe_1_1langbind_1_1FilterBase"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1FilterBase.html#a19d37dce59079acc64ed50466c650191">setValue</a> (const char *, const std::string &amp;)</td></tr>
-<tr class="memdesc:a19d37dce59079acc64ed50466c650191 inherit pub_methods_class__Wolframe_1_1langbind_1_1FilterBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a member value of the filter. Throws on conversion error.  <a href="#a19d37dce59079acc64ed50466c650191">More...</a><br /></td></tr>
-<tr class="separator:a19d37dce59079acc64ed50466c650191 inherit pub_methods_class__Wolframe_1_1langbind_1_1FilterBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9db18a4bb7bdc27f67b546eb0b4d5f03 inherit pub_methods_class__Wolframe_1_1langbind_1_1FilterBase"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1FilterBase.html#a9db18a4bb7bdc27f67b546eb0b4d5f03">flag</a> (<a class="el" href="class__Wolframe_1_1langbind_1_1FilterBase.html#a38fc65e847310d5c4e3a7bdb64f7f138">Flags</a> f) const </td></tr>
 <tr class="memdesc:a9db18a4bb7bdc27f67b546eb0b4d5f03 inherit pub_methods_class__Wolframe_1_1langbind_1_1FilterBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query a flag (or a set of flags)  <a href="#a9db18a4bb7bdc27f67b546eb0b4d5f03">More...</a><br /></td></tr>
 <tr class="separator:a9db18a4bb7bdc27f67b546eb0b4d5f03 inherit pub_methods_class__Wolframe_1_1langbind_1_1FilterBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,9 +172,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a17c6bf4e3c7703145f6e6c21aad8d041 inherit pub_methods_class__Wolframe_1_1langbind_1_1FilterBase"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1FilterBase.html#a17c6bf4e3c7703145f6e6c21aad8d041">setFlags</a> (<a class="el" href="class__Wolframe_1_1langbind_1_1FilterBase.html#a38fc65e847310d5c4e3a7bdb64f7f138">Flags</a> f)</td></tr>
 <tr class="memdesc:a17c6bf4e3c7703145f6e6c21aad8d041 inherit pub_methods_class__Wolframe_1_1langbind_1_1FilterBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a flag (or a set of flags)  <a href="#a17c6bf4e3c7703145f6e6c21aad8d041">More...</a><br /></td></tr>
 <tr class="separator:a17c6bf4e3c7703145f6e6c21aad8d041 inherit pub_methods_class__Wolframe_1_1langbind_1_1FilterBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebe3fd9e5040f5099591057ec022117b inherit pub_methods_class__Wolframe_1_1langbind_1_1FilterBase"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1FilterBase.html#aebe3fd9e5040f5099591057ec022117b">resetFlags</a> ()</td></tr>
-<tr class="memdesc:aebe3fd9e5040f5099591057ec022117b inherit pub_methods_class__Wolframe_1_1langbind_1_1FilterBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset set all flags.  <a href="#aebe3fd9e5040f5099591057ec022117b">More...</a><br /></td></tr>
-<tr class="separator:aebe3fd9e5040f5099591057ec022117b inherit pub_methods_class__Wolframe_1_1langbind_1_1FilterBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cd7c3a96a3689abfea4a4aa407eea5b inherit pub_methods_class__Wolframe_1_1langbind_1_1FilterBase"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1FilterBase.html#a4cd7c3a96a3689abfea4a4aa407eea5b">checkSetFlags</a> (<a class="el" href="class__Wolframe_1_1langbind_1_1FilterBase.html#a38fc65e847310d5c4e3a7bdb64f7f138">Flags</a>) const </td></tr>
 <tr class="memdesc:a4cd7c3a96a3689abfea4a4aa407eea5b inherit pub_methods_class__Wolframe_1_1langbind_1_1FilterBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test if a flag can be set (allowed)  <a href="#a4cd7c3a96a3689abfea4a4aa407eea5b">More...</a><br /></td></tr>
 <tr class="separator:a4cd7c3a96a3689abfea4a4aa407eea5b inherit pub_methods_class__Wolframe_1_1langbind_1_1FilterBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -191,6 +184,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:aefe90b279e5e59d3f01af6c623036393"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1ToStringFilter.html#aefe90b279e5e59d3f01af6c623036393">m_content</a></td></tr>
 <tr class="memdesc:aefe90b279e5e59d3f01af6c623036393"><td class="mdescLeft">&#160;</td><td class="mdescRight">content string  <a href="#aefe90b279e5e59d3f01af6c623036393">More...</a><br /></td></tr>
 <tr class="separator:aefe90b279e5e59d3f01af6c623036393"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8389085d665bcdc3f2d71f588ffa017e"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1ToStringFilter.html#a8389085d665bcdc3f2d71f588ffa017e">m_contentpos</a></td></tr>
+<tr class="memdesc:a8389085d665bcdc3f2d71f588ffa017e"><td class="mdescLeft">&#160;</td><td class="mdescRight">position in content string  <a href="#a8389085d665bcdc3f2d71f588ffa017e">More...</a><br /></td></tr>
+<tr class="separator:a8389085d665bcdc3f2d71f588ffa017e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab054a09ab04b2ed7fbd2bf413c409570"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1langbind_1_1FilterBase.html#a293c57a669e78026544777e502574fb1">FilterBase::ElementType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1ToStringFilter.html#ab054a09ab04b2ed7fbd2bf413c409570">m_lasttype</a></td></tr>
 <tr class="memdesc:ab054a09ab04b2ed7fbd2bf413c409570"><td class="mdescLeft">&#160;</td><td class="mdescRight">last parsed element type  <a href="#ab054a09ab04b2ed7fbd2bf413c409570">More...</a><br /></td></tr>
 <tr class="separator:ab054a09ab04b2ed7fbd2bf413c409570"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -368,6 +364,40 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a5b785adfd1e8646f407078976d0246c0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void _Wolframe::langbind::ToStringFilter::getOutput </td>
+          <td>(</td>
+          <td class="paramtype">const void *&amp;&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t &amp;&#160;</td>
+          <td class="paramname"><em>bufsize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a63e94cfae867907554181b283afeed4d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -426,6 +456,28 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>content string </p>
+
+</div>
+</div>
+<a class="anchor" id="a8389085d665bcdc3f2d71f588ffa017e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t _Wolframe::langbind::ToStringFilter::m_contentpos</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>position in content string </p>
 
 </div>
 </div>
@@ -524,7 +576,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 30 2014 12:36:41 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Aug 28 2014 16:06:21 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

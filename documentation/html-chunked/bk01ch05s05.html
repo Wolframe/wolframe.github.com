@@ -58,7 +58,7 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">5.5. Forms</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch05s04.html">Prev</a> </td><th width="60%" align="center">Chapter 5. Data processing</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch05s06.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1386399724"></a>5.5. Forms</h2></div></div></div><p>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">5.5. Forms</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch05s04.html">Prev</a> </td><th width="60%" align="center">Chapter 5. Data processing</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch05s06.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1382537628"></a>5.5. Forms</h2></div></div></div><p>
 Forms are data structures used to validate input and output data and to do some basic normalization
 in order to make data accessible in a uniform way. Forms are defined in a data definition language
 (<acronym class="acronym">DDL</acronym>) and translated by a compiler at startup. Those compilers are defined as loadable
@@ -76,7 +76,7 @@ language (<acronym class="acronym">DDL</acronym>) could be added.
 Be aware that you have to configure a data description language type (<acronym class="acronym">DDL</acronym> compiler) of the logic tier 
 in <span class="application">Wolframe</span> before using it. Each chapter introducing a data form description language will have 
 a section that describes how the server configuration of <span class="application">Wolframe</span> has to be extended for its availability.
-</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1386446604"></a>5.5.1. Form data definition languages</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1386446924"></a>Introduction</h4></div></div></div><p>
+</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1382584508"></a>5.5.1. Form data definition languages</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1382584828"></a>Introduction</h4></div></div></div><p>
 		Form data structures can be defined in a <acronym class="acronym">DDL</acronym> (Data Definition Language).
 		It depends very much on the application what <acronym class="acronym">DDL</acronym> is best to use.
 		Users may already have their data definitions defined in a certain way.
@@ -94,14 +94,14 @@ a section that describes how the server configuration of <span class="applicatio
 		input to output without control flow aware programming.
 	</p><p>
 		All types of data forms introduced here are equivalent in use for all programs.
-	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1386437252"></a>Forms in simpleform DDL</h4></div></div></div><p>
+	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1382575156"></a>Forms in simpleform DDL</h4></div></div></div><p>
 		As example of a form <acronym class="acronym">DDL</acronym> we provide the <em class="glossterm">simpleform</em> <acronym class="acronym">DDL</acronym>. 
 		In simple form we forms, subtructures for reuse inside structures and forms
 		and includes that help you to organize your code.
-	</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1386480764"></a>Commands</h5></div></div></div><p>
+	</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1382618668"></a>Commands</h5></div></div></div><p>
 		The <em class="glossterm">simpleform</em> language has 3 commands:
 		</p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="code">FORM</code></td><td>Declare the name of the form, some document meta data and the structure that represents the description of the document content of this form</td></tr><tr><td><code class="code">STRUCT</code></td><td>Declare the name of the structure, the structure that can be referenced by name in structures of subsequent FORM or STRUCT declarations</td></tr><tr><td><code class="code">INCLUDE</code></td><td>include the file given as argument</td></tr></table><p>
-	</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1386483876"></a>Structures</h5></div></div></div><p>
+	</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1382621780"></a>Structures</h5></div></div></div><p>
 		Structures in <code class="code">FORM</code> or <code class="code">STRUCT</code> declarations
 		are defined as list of elements in curly brackets '{' '}'.
 	</p><p>The following example shows an empty structure declaration
@@ -116,7 +116,7 @@ FORM myDocumentSchema
 {
 }
 	</pre><p>
-	</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1386486548"></a>Elements of structures</h5></div></div></div><p>
+	</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1382624452"></a>Elements of structures</h5></div></div></div><p>
 		An element in the list is either a declaration of a substructure or
 		an atomic element. The elements are separated by comma ',' or end of line.
 	</p><p>The following example shows a structure that is a list with 3 elements separated by end of line
@@ -140,7 +140,7 @@ FORM myDocumentSchema
 		later. The element type is either an embedded substructure in '{' '}' 
 		brackets or an identifier naming an atomic type or a substructure 
 		declared previously as a <code class="code">STRUCT</code>. 
-	</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1386489724"></a>Embedded structure definitions</h5></div></div></div><p>Here is an example with a embedded substructure
+	</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1382627628"></a>Embedded structure definitions</h5></div></div></div><p>Here is an example with a embedded substructure
 		</p><pre class="programlisting">
 {
     number int
@@ -153,7 +153,7 @@ FORM myDocumentSchema
 	</p><p>
 		Embedded substructure declarations follow recursively the same rules as 
 		structures defined here.
-	</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1386491276"></a>Default atomic value assignments</h5></div></div></div><p>
+	</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1382629180"></a>Default atomic value assignments</h5></div></div></div><p>
 		Named types referencing atomic types can be followed by an assignment
 		operator '=' and a string that declared a default value initialization of
 		the structure element. Here is an example with a default value assignment
@@ -163,21 +163,21 @@ FORM myDocumentSchema
     name string
 }
 		</pre><p>
-	</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1386492644"></a>Types of atomic values</h5></div></div></div><p>
+	</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1382630548"></a>Types of atomic values</h5></div></div></div><p>
 		The atomic element type names are either the reserved keyword <code class="code">string</code>
 		or a type defined as sequence of <em class="glossterm">normalizer</em> functions 
 		in a normalize definition file. The <em class="glossterm">normalizer</em> 
 		functions assigned to a type validate the value and transform it to its 
 		normalized form. The next section will explain how data types are defined.
-	</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1386494212"></a>Element attributes</h5></div></div></div><p>
+	</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1382632116"></a>Element attributes</h5></div></div></div><p>
 		The element attributes are marked with some special characters listed and
 		explained in the following table:
-		</p><div class="table"><a id="idp1386494804"></a><p class="title"><strong>Table 5.15. Element attributes in simpleform</strong></p><div class="table-contents"><table summary="Element attributes in simpleform" border="1"><colgroup><col class="col1" /><col class="col2" /><col class="col3" /><col class="col4" /></colgroup><thead><tr><th> </th><th>Location</th><th>Example</th><th>Description</th></tr></thead><tbody><tr><td>@</td><td>prefix of data type</td><td><code class="code">id @int</code></td><td>Expresses that the element is an attribute and not a content element of the structure. This has only influence on the XML or similar representation of the form content</td></tr><tr><td>?</td><td>prefix of data type</td><td><code class="code">value ?string</code></td><td>Expresses that the element is optional also in strict validation</td></tr><tr><td>^</td><td>prefix of form name</td><td><code class="code">ltree ^bintree</code></td><td>Expresses that the element is optional and refers to a structure defined in the same module that is expanded only if the element is present. With this construct it is possible to define recursive structures like trees.</td></tr><tr><td>!</td><td>prefix of data type</td><td><code class="code">id !int</code></td><td>Expresses that the element is always mandatory (also in non strict validation)</td></tr><tr><td>[]</td><td>suffix of data type</td><td><code class="code">values string[]</code></td><td>Expresses that the element is an array of this type</td></tr><tr><td>[]</td><td>without data type</td><td><code class="code">ar [] { }</code></td><td>Expresses this element is an array of structures and that the structure defined describes the prototype (initialization) element of the array.</td></tr><tr><td>='..'</td><td>end of data type declaration</td><td><code class="code">id int = 1</code></td><td>Expresses that '..' is the default initialization value of this element.</td></tr></tbody></table></div></div><p><br class="table-break" />
+		</p><div class="table"><a id="idp1382632708"></a><p class="title"><strong>Table 5.15. Element attributes in simpleform</strong></p><div class="table-contents"><table summary="Element attributes in simpleform" border="1"><colgroup><col class="col1" /><col class="col2" /><col class="col3" /><col class="col4" /></colgroup><thead><tr><th> </th><th>Location</th><th>Example</th><th>Description</th></tr></thead><tbody><tr><td>@</td><td>prefix of data type</td><td><code class="code">id @int</code></td><td>Expresses that the element is an attribute and not a content element of the structure. This has only influence on the XML or similar representation of the form content</td></tr><tr><td>?</td><td>prefix of data type</td><td><code class="code">value ?string</code></td><td>Expresses that the element is optional also in strict validation</td></tr><tr><td>^</td><td>prefix of form name</td><td><code class="code">ltree ^bintree</code></td><td>Expresses that the element is optional and refers to a structure defined in the same module that is expanded only if the element is present. With this construct it is possible to define recursive structures like trees.</td></tr><tr><td>!</td><td>prefix of data type</td><td><code class="code">id !int</code></td><td>Expresses that the element is always mandatory (also in non strict validation)</td></tr><tr><td>[]</td><td>suffix of data type</td><td><code class="code">values string[]</code></td><td>Expresses that the element is an array of this type</td></tr><tr><td>[]</td><td>without data type</td><td><code class="code">ar [] { }</code></td><td>Expresses this element is an array of structures and that the structure defined describes the prototype (initialization) element of the array.</td></tr><tr><td>='..'</td><td>end of data type declaration</td><td><code class="code">id int = 1</code></td><td>Expresses that '..' is the default initialization value of this element.</td></tr></tbody></table></div></div><p><br class="table-break" />
 		Non contradicting attributes can be combined:
 		</p><pre class="programlisting">
 id ?@int = 1
 		</pre><p>
-	</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1386508444"></a>Embedding elements and inheritance</h5></div></div></div><p>
+	</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1382646228"></a>Embedding elements and inheritance</h5></div></div></div><p>
 		Using a single underscore '_' as atomic element name means that the 
 		atomic element is representing the unnamed content value of the structure.
 		Using a single underscore for a substructure means that the substructure
@@ -197,7 +197,7 @@ FORM insertedContent
     _ content
 }
 		</pre><p>
-	</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1386510268"></a>Declaring document meta data</h5></div></div></div><p>
+	</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1382648052"></a>Declaring document meta data</h5></div></div></div><p>
 		Document meta data in <code class="code">FORM</code> definitions are declared after the
 		form declaration header and before the form structure declaration.
 		A meta data declaration starts with a dash '-' followed by the meta data
@@ -217,7 +217,7 @@ FORM myDoc
 {
 }
 		</pre><p>
-	</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1386513004"></a>Example form definition</h5></div></div></div><p>
+	</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1382650788"></a>Example form definition</h5></div></div></div><p>
 		Now all elements of <em class="glossterm">simpleform</em> are explained.
 		Here is an example that shows a complete form definition in <em class="glossterm">simpleform</em> <acronym class="acronym">DDL</acronym>.
 		</p><pre class="programlisting">
@@ -233,7 +233,7 @@ FORM Customer
 }
 
 		</pre><p>
-	</p></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1386527556"></a>5.5.2. Datatypes in DDLs</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1386527876"></a>Introduction</h4></div></div></div><p>The basic elements to build atomic data types in <span class="application">Wolframe</span>
+	</p></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1382665436"></a>5.5.2. Datatypes in DDLs</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1382665756"></a>Introduction</h4></div></div></div><p>The basic elements to build atomic data types in <span class="application">Wolframe</span>
 		are normalization functions. Basic normalization functions are written in C++
 		and loadable as modules.
 	</p><p>
@@ -253,7 +253,7 @@ FORM Customer
 		the final output for the last one.
 		Each normalization step validates the input as atomic type (arithmetic,string,etc.)
 		and transforms it to another atomic type.
-	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1386528508"></a>Example</h4></div></div></div><p>
+	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1382666388"></a>Example</h4></div></div></div><p>
 		The example defines 3 numeric types including trimming of the input string for mode tolerant
 		parsing and a string type that is converted to lowercase as normalization.
 	</p><p>
@@ -265,7 +265,7 @@ currency=trim,fixedpoint( 13, 2);
 name=trim,lcname;
 
 		</pre><p>
-	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1386562436"></a>Language description</h4></div></div></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1386562788"></a>Type assignments</h5></div></div></div><p>
+	</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1382700316"></a>Language description</h4></div></div></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1382700668"></a>Type assignments</h5></div></div></div><p>
 			Each type declaration in a <code class="code">.wnmp</code> file starts with an identifier followed by an assignment 
 			operator '='. The left side identifier specifies the name of the type. 
 			This type name can be used in a DDL as name instead of the built-in
@@ -277,10 +277,10 @@ name=trim,lcname;
 			The interpretation of the arguments depend on the function type. 
 			An integer type for example could have the maximum number of digits 
 			of the integer type.
-		</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1386564516"></a>Standard modules for normalizers</h5></div></div></div><p>
+		</p></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1382702420"></a>Standard modules for normalizers</h5></div></div></div><p>
 			There are some standard modules you can use when you define your own type system.
 			They are delivered with <span class="application">Wolframe</span>:
-		</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>mod_normalize_locale: Unicode string composite normalization</p></li><li class="listitem"><p>mod_normalize_string: Basic string normalization (like trim, etc.)</p></li><li class="listitem"><p>mod_normalize_base64: Base64 encoding/decoding</p></li><li class="listitem"><p>mod_datatype_datetime: Custom data type for date and time arithmetics and normalization</p></li><li class="listitem"><p>mod_datatype_bcdnumber: Custom data type for bid number arithmetics and normalization</p></li></ul></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1386567540"></a>Configuration</h4></div></div></div><p>For declaring and using a .wnmp file in our example above, we have to load 
+		</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>mod_normalize_locale: Unicode string composite normalization</p></li><li class="listitem"><p>mod_normalize_string: Basic string normalization (like trim, etc.)</p></li><li class="listitem"><p>mod_normalize_base64: Base64 encoding/decoding</p></li><li class="listitem"><p>mod_datatype_datetime: Custom data type for date and time arithmetics and normalization</p></li><li class="listitem"><p>mod_datatype_bcdnumber: Custom data type for bid number arithmetics and normalization</p></li></ul></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1382705444"></a>Configuration</h4></div></div></div><p>For declaring and using a .wnmp file in our example above, we have to load 
 	the module 'mod_normalize_string' and the module 'mod_normalize_number'.
 	For this we add the following two lines to the LoadModules section of our <span class="application">Wolframe</span> configuration:
 		</p><pre class="programlisting">

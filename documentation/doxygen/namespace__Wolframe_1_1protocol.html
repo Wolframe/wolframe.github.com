@@ -86,9 +86,6 @@
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">_Wolframe::protocol Namespace Reference</div>  </div>
 </div><!--header-->
@@ -96,104 +93,13 @@
 
 <p>Helper classes for implementing the protocol and handling buffers.  
 <a href="#details">More...</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1protocol_1_1Buffer.html">Buffer</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant size byte (ASCII) character buffer that implements a subset of the std::string interface.  <a href="class__Wolframe_1_1protocol_1_1Buffer.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1protocol_1_1CArgBuffer.html">CArgBuffer</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class__Wolframe_1_1protocol_1_1Buffer.html" title="Constant size byte (ASCII) character buffer that implements a subset of the std::string interface...">Buffer</a> for multi argument parsing (fixed array of null terminated byte character strings)  <a href="class__Wolframe_1_1protocol_1_1CArgBuffer.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1protocol_1_1CharBuffer.html">CharBuffer</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class__Wolframe_1_1protocol_1_1Buffer.html" title="Constant size byte (ASCII) character buffer that implements a subset of the std::string interface...">Buffer</a> for an arbitrary size string (with array doubling strategy for the allocator)  <a href="struct__Wolframe_1_1protocol_1_1CharBuffer.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1protocol_1_1CmdParser.html">CmdParser</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class__Wolframe_1_1protocol_1_1Parser.html" title="helper functions for protocol parsing ">Parser</a> for ascii protocol commands.  <a href="class__Wolframe_1_1protocol_1_1CmdParser.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1protocol_1_1EscapeBuffer.html">EscapeBuffer</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Statemachine used for replacing "LF DOT" sequences in a buffer with "LF DOT DOT".  <a href="class__Wolframe_1_1protocol_1_1EscapeBuffer.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1protocol_1_1InputBlock.html">InputBlock</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Input memory block of the protocol for network input with iterators for the processing of the data.  <a href="class__Wolframe_1_1protocol_1_1InputBlock.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1protocol_1_1iterator__t.html">iterator_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">template for STL conform random access iterators for arrays as used by the protocol  <a href="class__Wolframe_1_1protocol_1_1iterator__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1protocol_1_1MemBlock.html">MemBlock</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory block base structure for input/output network messages of the protocol.  <a href="class__Wolframe_1_1protocol_1_1MemBlock.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1protocol_1_1OutputBlock.html">OutputBlock</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Protocol output buffer.  <a href="class__Wolframe_1_1protocol_1_1OutputBlock.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1protocol_1_1Parser.html">Parser</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper functions for protocol parsing  <a href="class__Wolframe_1_1protocol_1_1Parser.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:acc3394bd9adfa07193f75b4ece203448"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1protocol.html#acc3394bd9adfa07193f75b4ece203448">escapeStringDLF</a> (const std::string &amp;src)</td></tr>
-<tr class="memdesc:acc3394bd9adfa07193f75b4ece203448"><td class="mdescLeft">&#160;</td><td class="mdescRight">escapes LF DOT sequences  <a href="#acc3394bd9adfa07193f75b4ece203448">More...</a><br /></td></tr>
-<tr class="separator:acc3394bd9adfa07193f75b4ece203448"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9b0d21e8469b5bdfb5f308614623947"><td class="memItemLeft" align="right" valign="top">std::string::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1protocol.html#ad9b0d21e8469b5bdfb5f308614623947">unescapeStringDLF</a> (const std::string &amp;src, std::string &amp;buf)</td></tr>
-<tr class="memdesc:ad9b0d21e8469b5bdfb5f308614623947"><td class="mdescLeft">&#160;</td><td class="mdescRight">unescapes LF DOT sequences  <a href="#ad9b0d21e8469b5bdfb5f308614623947">More...</a><br /></td></tr>
-<tr class="separator:ad9b0d21e8469b5bdfb5f308614623947"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Helper classes for implementing the protocol and handling buffers. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="acc3394bd9adfa07193f75b4ece203448"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string _Wolframe::protocol::escapeStringDLF </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>src</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>escapes LF DOT sequences </p>
-
-</div>
-</div>
-<a class="anchor" id="ad9b0d21e8469b5bdfb5f308614623947"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string::const_iterator _Wolframe::protocol::unescapeStringDLF </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::string &amp;&#160;</td>
-          <td class="paramname"><em>buf</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>unescapes LF DOT sequences </p>
-<dl class="section remark"><dt>Remarks</dt><dd>Has no statemachine and assumes that the string is complete (does not end in the middle of a line) </dd></dl>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 30 2014 12:36:50 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Aug 28 2014 16:06:24 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

@@ -91,7 +91,6 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class__Wolframe_1_1cmdbind_1_1CommandHandler-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -109,11 +108,7 @@ Inheritance diagram for _Wolframe::cmdbind::CommandHandler:</div>
  <div class="center">
   <img src="class__Wolframe_1_1cmdbind_1_1CommandHandler.png" usemap="#_Wolframe::cmdbind::CommandHandler_map" alt=""/>
   <map id="_Wolframe::cmdbind::CommandHandler_map" name="_Wolframe::cmdbind::CommandHandler_map">
-<area href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html" title="Abstract class for command handler processing filter input/output. " alt="_Wolframe::cmdbind::IOFilterCommandHandler" shape="rect" coords="0,56,475,80"/>
-<area href="class__Wolframe_1_1cmdbind_1_1LineCommandHandler.html" title="Command handler for text-line based protocols. " alt="_Wolframe::cmdbind::LineCommandHandler" shape="rect" coords="485,56,960,80"/>
-<area href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html" title="Command handler processing filter input/output with end of content marked as Dot (&#39;.&#39;) LF or Dot CR LF. " alt="_Wolframe::cmdbind::IOFilterCommandHandlerEscDLF" shape="rect" coords="0,112,475,136"/>
-<area href="struct__Wolframe_1_1cmdbind_1_1LineCommandHandlerTemplate.html" title="Defines some template based extensions to line command handler. " alt="_Wolframe::cmdbind::LineCommandHandlerTemplate&lt; LineCommandHandlerImpl &gt;" shape="rect" coords="485,112,960,136"/>
-<area href="class__Wolframe_1_1cmdbind_1_1DiscardInputCommandHandlerEscDLF.html" title="Command handler that does nothing but seek for the end of content marker. Used to delegate protocol i..." alt="_Wolframe::cmdbind::DiscardInputCommandHandlerEscDLF" shape="rect" coords="0,168,475,192"/>
+<area href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html" title="Abstract class for command handler processing filter input/output. " alt="_Wolframe::cmdbind::IOFilterCommandHandler" shape="rect" coords="0,56,273,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -134,59 +129,54 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a54eab343d789f586542baaeaeae0d752"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a54eab343d789f586542baaeaeae0d752">~CommandHandler</a> ()</td></tr>
 <tr class="memdesc:a54eab343d789f586542baaeaeae0d752"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a54eab343d789f586542baaeaeae0d752">More...</a><br /></td></tr>
 <tr class="separator:a54eab343d789f586542baaeaeae0d752"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d608e288bfb124e41eef6332503adac"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a6d608e288bfb124e41eef6332503adac">setInputBuffer</a> (void *buf, std::size_t allocsize)=0</td></tr>
-<tr class="memdesc:a6d608e288bfb124e41eef6332503adac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define the input buffer for processing the command.  <a href="#a6d608e288bfb124e41eef6332503adac">More...</a><br /></td></tr>
-<tr class="separator:a6d608e288bfb124e41eef6332503adac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58f6998ee667b80d3545f1acb2727645"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a58f6998ee667b80d3545f1acb2727645">setOutputBuffer</a> (void *buf, std::size_t size, std::size_t pos)=0</td></tr>
-<tr class="memdesc:a58f6998ee667b80d3545f1acb2727645"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define the input buffer for processing the command.  <a href="#a58f6998ee667b80d3545f1acb2727645">More...</a><br /></td></tr>
-<tr class="separator:a58f6998ee667b80d3545f1acb2727645"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a885829984f0c561a0bd42f77a6a7c472"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#ae444085bce521d157642df59085f7d9d">Operation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a885829984f0c561a0bd42f77a6a7c472">nextOperation</a> ()=0</td></tr>
 <tr class="memdesc:a885829984f0c561a0bd42f77a6a7c472"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next operation to do for the connection handler.  <a href="#a885829984f0c561a0bd42f77a6a7c472">More...</a><br /></td></tr>
 <tr class="separator:a885829984f0c561a0bd42f77a6a7c472"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0747663057b4cca61befd4360c0ee40"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#aa0747663057b4cca61befd4360c0ee40">putInput</a> (const void *begin, std::size_t bytesTransferred)=0</td></tr>
-<tr class="memdesc:aa0747663057b4cca61befd4360c0ee40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Passes the network input to the command handler (READ operation)  <a href="#aa0747663057b4cca61befd4360c0ee40">More...</a><br /></td></tr>
-<tr class="separator:aa0747663057b4cca61befd4360c0ee40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4675bb59d501f7ae07f64ec39cbadace"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a4675bb59d501f7ae07f64ec39cbadace">getInputBlock</a> (void *&amp;begin, std::size_t &amp;maxBlockSize)=0</td></tr>
-<tr class="memdesc:a4675bb59d501f7ae07f64ec39cbadace"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the input block request (READ operation)  <a href="#a4675bb59d501f7ae07f64ec39cbadace">More...</a><br /></td></tr>
-<tr class="separator:a4675bb59d501f7ae07f64ec39cbadace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17321526c17d8abe0ebb452f6c5191b7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a17321526c17d8abe0ebb452f6c5191b7">putInput</a> (const void *begin, std::size_t bytesTransferred, bool eod)=0</td></tr>
+<tr class="memdesc:a17321526c17d8abe0ebb452f6c5191b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Passes the network input to the command handler (READ operation)  <a href="#a17321526c17d8abe0ebb452f6c5191b7">More...</a><br /></td></tr>
+<tr class="separator:a17321526c17d8abe0ebb452f6c5191b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeaf4ba80d6b5a3defe5f3779f60025ad"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#aeaf4ba80d6b5a3defe5f3779f60025ad">getOutput</a> (const void *&amp;begin, std::size_t &amp;bytesToTransfer)=0</td></tr>
 <tr class="memdesc:aeaf4ba80d6b5a3defe5f3779f60025ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next output chunk from the command handler (WRITE operation)  <a href="#aeaf4ba80d6b5a3defe5f3779f60025ad">More...</a><br /></td></tr>
 <tr class="separator:aeaf4ba80d6b5a3defe5f3779f60025ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fd9d98e772104ce2b96d2972725cf80"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a1fd9d98e772104ce2b96d2972725cf80">getDataLeft</a> (const void *&amp;begin, std::size_t &amp;nofBytes)=0</td></tr>
-<tr class="memdesc:a1fd9d98e772104ce2b96d2972725cf80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the data left unprocessed after close. The data belongs to the caller to process.  <a href="#a1fd9d98e772104ce2b96d2972725cf80">More...</a><br /></td></tr>
-<tr class="separator:a1fd9d98e772104ce2b96d2972725cf80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adad840aa8a67adc4b18a4467778a80bb"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#adad840aa8a67adc4b18a4467778a80bb">lastError</a> () const </td></tr>
 <tr class="memdesc:adad840aa8a67adc4b18a4467778a80bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the last error message of command execution to be returned to the client.  <a href="#adad840aa8a67adc4b18a4467778a80bb">More...</a><br /></td></tr>
 <tr class="separator:adad840aa8a67adc4b18a4467778a80bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90c6a8e6efde45becb01c101730f6868"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a90c6a8e6efde45becb01c101730f6868">setLastError</a> (const std::string &amp;msg)</td></tr>
 <tr class="memdesc:a90c6a8e6efde45becb01c101730f6868"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the last error message of command execution to be returned to the client.  <a href="#a90c6a8e6efde45becb01c101730f6868">More...</a><br /></td></tr>
 <tr class="separator:a90c6a8e6efde45becb01c101730f6868"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7abb118a267ecdb3b3fd2723573b085b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a7abb118a267ecdb3b3fd2723573b085b">setExecContext</a> (<a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html">proc::ExecContext</a> *c)</td></tr>
-<tr class="memdesc:a7abb118a267ecdb3b3fd2723573b085b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass the reference to the execution context to the command handler.  <a href="#a7abb118a267ecdb3b3fd2723573b085b">More...</a><br /></td></tr>
-<tr class="separator:a7abb118a267ecdb3b3fd2723573b085b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9c30b3da547cfd920bfa7cca83d1006"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#ac9c30b3da547cfd920bfa7cca83d1006">setExecContext</a> (<a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html">proc::ExecContext</a> *c)</td></tr>
+<tr class="memdesc:ac9c30b3da547cfd920bfa7cca83d1006"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass the reference to the execution context to the command handler.  <a href="#ac9c30b3da547cfd920bfa7cca83d1006">More...</a><br /></td></tr>
+<tr class="separator:ac9c30b3da547cfd920bfa7cca83d1006"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae308d6a0b7db1463712323709e79b480"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html">proc::ExecContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#ae308d6a0b7db1463712323709e79b480">execContext</a> ()</td></tr>
 <tr class="memdesc:ae308d6a0b7db1463712323709e79b480"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the reference to the processor provider.  <a href="#ae308d6a0b7db1463712323709e79b480">More...</a><br /></td></tr>
 <tr class="separator:ae308d6a0b7db1463712323709e79b480"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4ddcd6002e80f6b991aa1321f41dea1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#ab4ddcd6002e80f6b991aa1321f41dea1">passParameters</a> (const std::string &amp;nam, int argc, const char **argv)</td></tr>
-<tr class="memdesc:ab4ddcd6002e80f6b991aa1321f41dea1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass the parameters for the next command handler call.  <a href="#ab4ddcd6002e80f6b991aa1321f41dea1">More...</a><br /></td></tr>
-<tr class="separator:ab4ddcd6002e80f6b991aa1321f41dea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68189b98b1317fdc305dc21ddadd555a"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a68189b98b1317fdc305dc21ddadd555a">interruptDataSessionMarker</a> () const </td></tr>
-<tr class="memdesc:a68189b98b1317fdc305dc21ddadd555a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the termination marker to send for an abort of a running data session.  <a href="#a68189b98b1317fdc305dc21ddadd555a">More...</a><br /></td></tr>
-<tr class="separator:a68189b98b1317fdc305dc21ddadd555a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a8cd91f2c4234298b9e70f60fc62eb89f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a8cd91f2c4234298b9e70f60fc62eb89f">m_name</a></td></tr>
-<tr class="separator:a8cd91f2c4234298b9e70f60fc62eb89f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a712d5654687812e89948d78d60a44fd5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a712d5654687812e89948d78d60a44fd5">m_argBuffer</a></td></tr>
-<tr class="separator:a712d5654687812e89948d78d60a44fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16aa3d1b4da08d46803590b18c855597"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class__Wolframe_1_1types_1_1DoctypeInfo.html">types::DoctypeInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a16aa3d1b4da08d46803590b18c855597">doctypeInfo</a> () const </td></tr>
+<tr class="memdesc:a16aa3d1b4da08d46803590b18c855597"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get info about processed document type.  <a href="#a16aa3d1b4da08d46803590b18c855597">More...</a><br /></td></tr>
+<tr class="separator:a16aa3d1b4da08d46803590b18c855597"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c35010680a708e3e97699aabd650cc1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a3c35010680a708e3e97699aabd650cc1">setDoctypeInfo</a> (const <a class="el" href="namespace__Wolframe_1_1types.html#a0128f6aa3c39b8de7114c4bc35f15580">types::DoctypeInfoR</a> &amp;doctypeinfo_)</td></tr>
+<tr class="memdesc:a3c35010680a708e3e97699aabd650cc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set info about processed document type.  <a href="#a3c35010680a708e3e97699aabd650cc1">More...</a><br /></td></tr>
+<tr class="separator:a3c35010680a708e3e97699aabd650cc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ba415b991a4938fe7906fe2548e73bc"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a9ba415b991a4938fe7906fe2548e73bc">outputChunkSize</a> () const </td></tr>
+<tr class="memdesc:a9ba415b991a4938fe7906fe2548e73bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a hint for the size of output chunks in bytes.  <a href="#a9ba415b991a4938fe7906fe2548e73bc">More...</a><br /></td></tr>
+<tr class="separator:a9ba415b991a4938fe7906fe2548e73bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0ad2c088a632b89bf6fb3e035185c3a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#ac0ad2c088a632b89bf6fb3e035185c3a">setOutputChunkSize</a> (std::size_t outputChunkSize_)</td></tr>
+<tr class="memdesc:ac0ad2c088a632b89bf6fb3e035185c3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a hint for the size of output chunks in bytes.  <a href="#ac0ad2c088a632b89bf6fb3e035185c3a">More...</a><br /></td></tr>
+<tr class="separator:ac0ad2c088a632b89bf6fb3e035185c3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a9ffa4a3a898d6a41274d202c86b20f03"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a9ffa4a3a898d6a41274d202c86b20f03">m_lastError</a></td></tr>
+<tr class="memdesc:a9ffa4a3a898d6a41274d202c86b20f03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error operation for the client.  <a href="#a9ffa4a3a898d6a41274d202c86b20f03">More...</a><br /></td></tr>
 <tr class="separator:a9ffa4a3a898d6a41274d202c86b20f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e2485fab70c28dd5647fdb0b619846d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html">proc::ExecContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a5e2485fab70c28dd5647fdb0b619846d">m_execContext</a></td></tr>
+<tr class="memdesc:a5e2485fab70c28dd5647fdb0b619846d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The reference to the execution context of the connection.  <a href="#a5e2485fab70c28dd5647fdb0b619846d">More...</a><br /></td></tr>
 <tr class="separator:a5e2485fab70c28dd5647fdb0b619846d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7146e9c1bc08832aa9bc61cda83a05d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace__Wolframe_1_1types.html#a0128f6aa3c39b8de7114c4bc35f15580">types::DoctypeInfoR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a7146e9c1bc08832aa9bc61cda83a05d1">m_doctypeinfo</a></td></tr>
+<tr class="memdesc:a7146e9c1bc08832aa9bc61cda83a05d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Document type information.  <a href="#a7146e9c1bc08832aa9bc61cda83a05d1">More...</a><br /></td></tr>
+<tr class="separator:a7146e9c1bc08832aa9bc61cda83a05d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49e836001e49ea37f40f89829a00a330"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#a49e836001e49ea37f40f89829a00a330">m_outputChunkSize</a></td></tr>
+<tr class="memdesc:a49e836001e49ea37f40f89829a00a330"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hint for the size of output chunks.  <a href="#a49e836001e49ea37f40f89829a00a330">More...</a><br /></td></tr>
+<tr class="separator:a49e836001e49ea37f40f89829a00a330"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Command handler interface. </p>
@@ -268,6 +258,31 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a16aa3d1b4da08d46803590b18c855597"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class__Wolframe_1_1types_1_1DoctypeInfo.html">types::DoctypeInfo</a>* _Wolframe::cmdbind::CommandHandler::doctypeInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get info about processed document type. </p>
+
+</div>
+</div>
 <a class="anchor" id="ae308d6a0b7db1463712323709e79b480"></a>
 <div class="memitem">
 <div class="memproto">
@@ -291,96 +306,6 @@ Private Attributes</h2></td></tr>
 
 <p>Get the reference to the processor provider. </p>
 <dl class="section return"><dt>Returns</dt><dd>the reference to the processor provider </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a1fd9d98e772104ce2b96d2972725cf80"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void _Wolframe::cmdbind::CommandHandler::getDataLeft </td>
-          <td>(</td>
-          <td class="paramtype">const void *&amp;&#160;</td>
-          <td class="paramname"><em>begin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::size_t &amp;&#160;</td>
-          <td class="paramname"><em>nofBytes</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the data left unprocessed after close. The data belongs to the caller to process. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">begin</td><td>returned start of the data chunk </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">nofBytes</td><td>size of the returned data chunk in bytes </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implemented in <a class="el" href="class__Wolframe_1_1cmdbind_1_1LineCommandHandler.html#aeba6a857c66a8b09a00218ca5da833a1">_Wolframe::cmdbind::LineCommandHandler</a>, and <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#af555dbade9a515df2287e1cbf705c67f">_Wolframe::cmdbind::IOFilterCommandHandlerEscDLF</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a4675bb59d501f7ae07f64ec39cbadace"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void _Wolframe::cmdbind::CommandHandler::getInputBlock </td>
-          <td>(</td>
-          <td class="paramtype">void *&amp;&#160;</td>
-          <td class="paramname"><em>begin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::size_t &amp;&#160;</td>
-          <td class="paramname"><em>maxBlockSize</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the input block request (READ operation) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">begin</td><td>start of the network input buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">maxBlockSize</td><td>maximum size of data in bytes to pass with the subsequent <a class="el" href="class__Wolframe_1_1cmdbind_1_1CommandHandler.html#aa0747663057b4cca61befd4360c0ee40" title="Passes the network input to the command handler (READ operation) ">putInput(const void*,std::size_t)</a> call </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implemented in <a class="el" href="class__Wolframe_1_1cmdbind_1_1LineCommandHandler.html#a646c1c297f790f4e02fec6baf5a4b763">_Wolframe::cmdbind::LineCommandHandler</a>, and <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#abf91de1c72415fd3773eddad2ad127ce">_Wolframe::cmdbind::IOFilterCommandHandlerEscDLF</a>.</p>
 
 </div>
 </div>
@@ -425,34 +350,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class__Wolframe_1_1cmdbind_1_1LineCommandHandler.html#aca651324aaae30872547837850777faa">_Wolframe::cmdbind::LineCommandHandler</a>, and <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a6e5acd827ec746af98d988d5b4f25142">_Wolframe::cmdbind::IOFilterCommandHandlerEscDLF</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a68189b98b1317fdc305dc21ddadd555a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const char* _Wolframe::cmdbind::CommandHandler::interruptDataSessionMarker </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the termination marker to send for an abort of a running data session. </p>
-
-<p>Reimplemented in <a class="el" href="class__Wolframe_1_1cmdbind_1_1LineCommandHandler.html#a84437aa2d03187ad7efc2a3efaa8827b">_Wolframe::cmdbind::LineCommandHandler</a>, and <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a512380dacf4d5f6fc6c7c45feb31e037">_Wolframe::cmdbind::IOFilterCommandHandlerEscDLF</a>.</p>
+<p>Implemented in <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#a265f55e959a602ee7db9c5fdf0d30a24">_Wolframe::cmdbind::IOFilterCommandHandler</a>.</p>
 
 </div>
 </div>
@@ -505,11 +403,11 @@ Private Attributes</h2></td></tr>
 <p>Get the next operation to do for the connection handler. </p>
 <dl class="section return"><dt>Returns</dt><dd>the next operation for the connection handler </dd></dl>
 
-<p>Implemented in <a class="el" href="class__Wolframe_1_1cmdbind_1_1LineCommandHandler.html#aad613d9fc7c7e4022d17ef29875c7db8">_Wolframe::cmdbind::LineCommandHandler</a>, and <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a7de43c749ef09bd9ddfa57a9e19665d8">_Wolframe::cmdbind::IOFilterCommandHandlerEscDLF</a>.</p>
+<p>Implemented in <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#a28d410e6f3d97b266c715d494761e71c">_Wolframe::cmdbind::IOFilterCommandHandler</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ab4ddcd6002e80f6b991aa1321f41dea1"></a>
+<a class="anchor" id="a9ba415b991a4938fe7906fe2548e73bc"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -517,27 +415,10 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void _Wolframe::cmdbind::CommandHandler::passParameters </td>
+          <td class="memname">std::size_t _Wolframe::cmdbind::CommandHandler::outputChunkSize </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>nam</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>argc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char **&#160;</td>
-          <td class="paramname"><em>argv</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -547,11 +428,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Pass the parameters for the next command handler call. </p>
+<p>Get a hint for the size of output chunks in bytes. </p>
 
 </div>
 </div>
-<a class="anchor" id="aa0747663057b4cca61befd4360c0ee40"></a>
+<a class="anchor" id="a17321526c17d8abe0ebb452f6c5191b7"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -568,7 +449,13 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>bytesTransferred</em>&#160;</td>
+          <td class="paramname"><em>bytesTransferred</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>eod</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -588,15 +475,16 @@ Private Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">begin</td><td>start of the network input block. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">bytesTransferred</td><td>number of bytes passed in the input block </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">eod</td><td>(end of data) true, if the passed chunk is the last one </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class__Wolframe_1_1cmdbind_1_1LineCommandHandler.html#a864d06222fa26c9ba3339563ba23e60c">_Wolframe::cmdbind::LineCommandHandler</a>, and <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#afc306f77c15ab90a345e3ae100247036">_Wolframe::cmdbind::IOFilterCommandHandlerEscDLF</a>.</p>
+<p>Implemented in <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#a4f355d63066e2d100ab91bc319b231e0">_Wolframe::cmdbind::IOFilterCommandHandler</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a7abb118a267ecdb3b3fd2723573b085b"></a>
+<a class="anchor" id="a3c35010680a708e3e97699aabd650cc1"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -604,7 +492,33 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void _Wolframe::cmdbind::CommandHandler::setExecContext </td>
+          <td class="memname">virtual void _Wolframe::cmdbind::CommandHandler::setDoctypeInfo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespace__Wolframe_1_1types.html#a0128f6aa3c39b8de7114c4bc35f15580">types::DoctypeInfoR</a> &amp;&#160;</td>
+          <td class="paramname"><em>doctypeinfo_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set info about processed document type. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac9c30b3da547cfd920bfa7cca83d1006"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void _Wolframe::cmdbind::CommandHandler::setExecContext </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class__Wolframe_1_1proc_1_1ExecContext.html">proc::ExecContext</a> *&#160;</td>
           <td class="paramname"><em>c</em></td><td>)</td>
@@ -613,7 +527,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -625,51 +539,6 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a class="anchor" id="a6d608e288bfb124e41eef6332503adac"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void _Wolframe::cmdbind::CommandHandler::setInputBuffer </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>allocsize</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Define the input buffer for processing the command. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>buffer for the data to process </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">allocsize</td><td>allocation size of the buffer for the data to process in bytes </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implemented in <a class="el" href="class__Wolframe_1_1cmdbind_1_1LineCommandHandler.html#a48e2047928f99e53f09e0599915f8bea">_Wolframe::cmdbind::LineCommandHandler</a>, and <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a32c33bfa8d8da553925acb60b0c89f78">_Wolframe::cmdbind::IOFilterCommandHandlerEscDLF</a>.</p>
 
 </div>
 </div>
@@ -699,7 +568,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a58f6998ee667b80d3545f1acb2727645"></a>
+<a class="anchor" id="ac0ad2c088a632b89bf6fb3e035185c3a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -707,52 +576,28 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void _Wolframe::cmdbind::CommandHandler::setOutputBuffer </td>
+          <td class="memname">virtual void _Wolframe::cmdbind::CommandHandler::setOutputChunkSize </td>
           <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>outputChunkSize_</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>pos</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Define the input buffer for processing the command. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>buffer for the data to process </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>size of the buffer for the data to process in bytes </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pos</td><td>cursor position in the buffer defining byte position of the start of the the data to process </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Set a hint for the size of output chunks in bytes. </p>
 
-<p>Implemented in <a class="el" href="class__Wolframe_1_1cmdbind_1_1LineCommandHandler.html#ac89cdd0171dfefb7abbadff049f3a014">_Wolframe::cmdbind::LineCommandHandler</a>, and <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandlerEscDLF.html#a27faead7bde14a50b7637a46427bb669">_Wolframe::cmdbind::IOFilterCommandHandlerEscDLF</a>.</p>
+<p>Reimplemented in <a class="el" href="class__Wolframe_1_1cmdbind_1_1IOFilterCommandHandler.html#a104b29bbc5d82e7e396788481f9f6d92">_Wolframe::cmdbind::IOFilterCommandHandler</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a712d5654687812e89948d78d60a44fd5"></a>
+<a class="anchor" id="a7146e9c1bc08832aa9bc61cda83a05d1"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -760,15 +605,17 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::string &gt; _Wolframe::cmdbind::CommandHandler::m_argBuffer</td>
+          <td class="memname"><a class="el" href="namespace__Wolframe_1_1types.html#a0128f6aa3c39b8de7114c4bc35f15580">types::DoctypeInfoR</a> _Wolframe::cmdbind::CommandHandler::m_doctypeinfo</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Document type information. </p>
 
 </div>
 </div>
@@ -790,6 +637,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The reference to the execution context of the connection. </p>
+
 </div>
 </div>
 <a class="anchor" id="a9ffa4a3a898d6a41274d202c86b20f03"></a>
@@ -810,9 +659,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Error operation for the client. </p>
+
 </div>
 </div>
-<a class="anchor" id="a8cd91f2c4234298b9e70f60fc62eb89f"></a>
+<a class="anchor" id="a49e836001e49ea37f40f89829a00a330"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -820,15 +671,17 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string _Wolframe::cmdbind::CommandHandler::m_name</td>
+          <td class="memname">std::size_t _Wolframe::cmdbind::CommandHandler::m_outputChunkSize</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Hint for the size of output chunks. </p>
 
 </div>
 </div>
@@ -839,7 +692,7 @@ Private Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 30 2014 12:36:29 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Aug 28 2014 16:06:16 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

@@ -134,10 +134,9 @@
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
 <div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1AAAA_1_1Auditor.html">   48</a></span>&#160;<span class="keyword">class </span><a class="code" href="class__Wolframe_1_1AAAA_1_1Auditor.html">Auditor</a> {</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1AAAA_1_1Auditor.html#ada9ea04c433697787325302904a341fc">   50</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class__Wolframe_1_1AAAA_1_1Auditor.html#ada9ea04c433697787325302904a341fc">~Auditor</a>()                              {}</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1AAAA_1_1Auditor.html#ada9ea04c433697787325302904a341fc">   50</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class__Wolframe_1_1AAAA_1_1Auditor.html#ada9ea04c433697787325302904a341fc">~Auditor</a>(){}</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="comment">// close the auditor</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1AAAA_1_1Auditor.html#ac4a46452c824ac19b529dc179f12d074">   53</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class__Wolframe_1_1AAAA_1_1Auditor.html#ac4a46452c824ac19b529dc179f12d074">close</a>()                            {}</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class__Wolframe_1_1AAAA_1_1Auditor.html#ac4a46452c824ac19b529dc179f12d074">   53</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class__Wolframe_1_1AAAA_1_1Auditor.html#ac4a46452c824ac19b529dc179f12d074">close</a>(){}</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class__Wolframe_1_1AAAA_1_1Auditor.html#a1e8b628a560ba5c3d4374724ac421a83">audit</a>( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1AAAA_1_1Information.html">Information</a>&amp; auditObject ) = 0;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
@@ -155,16 +154,11 @@
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class__Wolframe_1_1AAAA_1_1AuditUnit.html#af35d7c32541e50eaf98e6f3e2e378d47">required</a>() = 0;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class__Wolframe_1_1AAAA_1_1AuditUnit.html#af2f4324c43ef5e0878ff97235795b92a">audit</a>( <span class="keyword">const</span> <a class="code" href="class__Wolframe_1_1AAAA_1_1Information.html">Information</a>&amp; auditObject ) = 0;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">//      virtual bool log( AuditMsg_Connect &amp; msg ) = 0;</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">//      virtual bool log( AuditMsg_Login&amp; msg ) = 0;</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">//      virtual bool log( AuditMsg_Logout&amp; msg ) = 0;</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">//      virtual bool log( AuditMsg_Transaction&amp; msg ) = 0;</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}} <span class="comment">// namespace _Wolframe::AAAA</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif // _AUDIT_HPP_INCLUDED</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}} <span class="comment">// namespace _Wolframe::AAAA</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif // _AUDIT_HPP_INCLUDED</span></div>
 <div class="ttc" id="class__Wolframe_1_1AAAA_1_1Auditor_html_a1e8b628a560ba5c3d4374724ac421a83"><div class="ttname"><a href="class__Wolframe_1_1AAAA_1_1Auditor.html#a1e8b628a560ba5c3d4374724ac421a83">_Wolframe::AAAA::Auditor::audit</a></div><div class="ttdeci">virtual bool audit(const Information &amp;auditObject)=0</div></div>
 <div class="ttc" id="class__Wolframe_1_1AAAA_1_1AuditUnit_html"><div class="ttname"><a href="class__Wolframe_1_1AAAA_1_1AuditUnit.html">_Wolframe::AAAA::AuditUnit</a></div><div class="ttdef"><b>Definition:</b> audit.hpp:61</div></div>
 <div class="ttc" id="class__Wolframe_1_1AAAA_1_1Auditor_html"><div class="ttname"><a href="class__Wolframe_1_1AAAA_1_1Auditor.html">_Wolframe::AAAA::Auditor</a></div><div class="ttdoc">Virtual base (interface) for auditor classes. </div><div class="ttdef"><b>Definition:</b> audit.hpp:48</div></div>
@@ -172,7 +166,7 @@
 <div class="ttc" id="DBprovider_8hpp_html"><div class="ttname"><a href="DBprovider_8hpp.html">DBprovider.hpp</a></div><div class="ttdoc">Database provider interface. </div></div>
 <div class="ttc" id="class__Wolframe_1_1db_1_1DatabaseProvider_html"><div class="ttname"><a href="class__Wolframe_1_1db_1_1DatabaseProvider.html">_Wolframe::db::DatabaseProvider</a></div><div class="ttdoc">Database provider. </div><div class="ttdef"><b>Definition:</b> DBprovider.hpp:70</div></div>
 <div class="ttc" id="class__Wolframe_1_1AAAA_1_1AuditUnit_html_a5f35d49f957a469bf16e2d78e26e1fa0"><div class="ttname"><a href="class__Wolframe_1_1AAAA_1_1AuditUnit.html#a5f35d49f957a469bf16e2d78e26e1fa0">_Wolframe::AAAA::AuditUnit::~AuditUnit</a></div><div class="ttdeci">virtual ~AuditUnit()</div><div class="ttdef"><b>Definition:</b> audit.hpp:64</div></div>
-<div class="ttc" id="class__Wolframe_1_1AAAA_1_1Auditor_html_ac4a46452c824ac19b529dc179f12d074"><div class="ttname"><a href="class__Wolframe_1_1AAAA_1_1Auditor.html#ac4a46452c824ac19b529dc179f12d074">_Wolframe::AAAA::Auditor::close</a></div><div class="ttdeci">virtual void close()</div><div class="ttdef"><b>Definition:</b> audit.hpp:53</div></div>
+<div class="ttc" id="class__Wolframe_1_1AAAA_1_1Auditor_html_ac4a46452c824ac19b529dc179f12d074"><div class="ttname"><a href="class__Wolframe_1_1AAAA_1_1Auditor.html#ac4a46452c824ac19b529dc179f12d074">_Wolframe::AAAA::Auditor::close</a></div><div class="ttdeci">virtual void close()</div><div class="ttdoc">Close the auditor. </div><div class="ttdef"><b>Definition:</b> audit.hpp:53</div></div>
 <div class="ttc" id="class__Wolframe_1_1AAAA_1_1Auditor_html_ada9ea04c433697787325302904a341fc"><div class="ttname"><a href="class__Wolframe_1_1AAAA_1_1Auditor.html#ada9ea04c433697787325302904a341fc">_Wolframe::AAAA::Auditor::~Auditor</a></div><div class="ttdeci">virtual ~Auditor()</div><div class="ttdef"><b>Definition:</b> audit.hpp:50</div></div>
 <div class="ttc" id="AAAAinformation_8hpp_html"><div class="ttname"><a href="AAAAinformation_8hpp.html">AAAAinformation.hpp</a></div><div class="ttdoc">Header file for the objects used for AAAA information. </div></div>
 <div class="ttc" id="class__Wolframe_1_1AAAA_1_1AuditUnit_html_aaa5606d2f2cc8767f6079a5cd4af045d"><div class="ttname"><a href="class__Wolframe_1_1AAAA_1_1AuditUnit.html#aaa5606d2f2cc8767f6079a5cd4af045d">_Wolframe::AAAA::AuditUnit::resolveDB</a></div><div class="ttdeci">virtual bool resolveDB(const db::DatabaseProvider &amp;)</div><div class="ttdef"><b>Definition:</b> audit.hpp:68</div></div>
@@ -183,7 +177,7 @@
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 30 2014 12:36:02 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Aug 28 2014 16:06:06 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

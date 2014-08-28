@@ -106,11 +106,14 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1AuthorizationFunction.html">AuthorizationFunction</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface of a an authorization function.  <a href="class__Wolframe_1_1langbind_1_1AuthorizationFunction.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1BufferingInputFilter.html">BufferingInputFilter</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class__Wolframe_1_1langbind_1_1Input.html" title="Input as seen from the application processor program. ">Input</a> filter that buffers the input before redirecting to <a class="el" href="class__Wolframe_1_1langbind_1_1InputFilter.html#a06abb93d070376e9f15c356c522b9eea" title="Get next element. ">InputFilter::getNext(ElementType&amp;,const void*&amp;,std::size_t&amp;)</a>  <a href="class__Wolframe_1_1langbind_1_1BufferingInputFilter.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1ContentFilterBase.html">ContentFilterBase</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base of a content input/ouput filter.  <a href="class__Wolframe_1_1langbind_1_1ContentFilterBase.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1langbind_1_1DDLCompiler.html">DDLCompiler</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface for DDL compilers.  <a href="struct__Wolframe_1_1langbind_1_1DDLCompiler.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1EnvelopeInputFilter.html">EnvelopeInputFilter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Envelope for a input filter and its context.  <a href="class__Wolframe_1_1langbind_1_1EnvelopeInputFilter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__Wolframe_1_1langbind_1_1ExecContextElement.html">ExecContextElement</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">One element of an execution context input filter definition.  <a href="struct__Wolframe_1_1langbind_1_1ExecContextElement.html#details">More...</a><br /></td></tr>
@@ -207,13 +210,11 @@ std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 <tr class="memitem:a12a6a1975fc3b829f228ca959f397196"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class__Wolframe_1_1langbind_1_1FilterType.html">FilterType</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1langbind.html#a12a6a1975fc3b829f228ca959f397196">CreateFilterType</a> )()</td></tr>
 <tr class="memdesc:a12a6a1975fc3b829f228ca959f397196"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class__Wolframe_1_1langbind_1_1Filter.html" title="Structure defining a filter for input and output as unit. ">Filter</a> type constructor function.  <a href="#a12a6a1975fc3b829f228ca959f397196">More...</a><br /></td></tr>
 <tr class="separator:a12a6a1975fc3b829f228ca959f397196"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a046dc9147f2f4882eef3c2eba1d2dd3b"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-<a class="el" href="class__Wolframe_1_1types_1_1CountedReference.html">types::CountedReference</a><br class="typebreak" />
+<tr class="memitem:a046dc9147f2f4882eef3c2eba1d2dd3b"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class__Wolframe_1_1types_1_1SharedReference.html">types::SharedReference</a><br class="typebreak" />
 &lt; <a class="el" href="class__Wolframe_1_1langbind_1_1InputFilter.html">InputFilter</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1langbind.html#a046dc9147f2f4882eef3c2eba1d2dd3b">InputFilterR</a></td></tr>
 <tr class="memdesc:a046dc9147f2f4882eef3c2eba1d2dd3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared input filter (<a class="el" href="class__Wolframe_1_1langbind_1_1InputFilter.html" title="Input filter. ">langbind::InputFilter</a>) reference.  <a href="#a046dc9147f2f4882eef3c2eba1d2dd3b">More...</a><br /></td></tr>
 <tr class="separator:a046dc9147f2f4882eef3c2eba1d2dd3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5bb920dab2c87c39f03d7d5993e66ab"><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak" />
-<a class="el" href="class__Wolframe_1_1types_1_1CountedReference.html">types::CountedReference</a><br class="typebreak" />
+<tr class="memitem:ac5bb920dab2c87c39f03d7d5993e66ab"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class__Wolframe_1_1types_1_1SharedReference.html">types::SharedReference</a><br class="typebreak" />
 &lt; <a class="el" href="class__Wolframe_1_1langbind_1_1OutputFilter.html">OutputFilter</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace__Wolframe_1_1langbind.html#ac5bb920dab2c87c39f03d7d5993e66ab">OutputFilterR</a></td></tr>
 <tr class="memdesc:ac5bb920dab2c87c39f03d7d5993e66ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared output filter (<a class="el" href="class__Wolframe_1_1langbind_1_1OutputFilter.html" title="Output filter. ">langbind::OutputFilter</a>) reference.  <a href="#ac5bb920dab2c87c39f03d7d5993e66ab">More...</a><br /></td></tr>
 <tr class="separator:ac5bb920dab2c87c39f03d7d5993e66ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -519,7 +520,7 @@ Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 30 2014 12:36:37 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Aug 28 2014 16:06:19 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

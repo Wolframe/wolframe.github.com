@@ -58,7 +58,7 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.4. Step 4 - Implement server side customer list</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch02s03.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Steps</th><td width="20%" align="right"> <a accesskey="n" href="ch02s05.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1399496652"></a>2.4. Step 4 - Implement server side customer list</h2></div></div></div><p>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.4. Step 4 - Implement server side customer list</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch02s03.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Steps</th><td width="20%" align="right"> <a accesskey="n" href="ch02s05.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1394870748"></a>2.4. Step 4 - Implement server side customer list</h2></div></div></div><p>
 		We want to store the customer data in a database.
 		As language to describe this transaction we use TDL
 		(Transaction Definition Language) and as database
@@ -67,6 +67,7 @@
 		database module for Sqlite:
 		</p><pre class="programlisting">
 LoadModules {
+    Module mod_protocol_wolframe
     <span class="bold"><strong>Module mod_command_tdl</strong></span>
     <span class="bold"><strong>Module mod_db_sqlite3</strong></span>
 }
@@ -105,7 +106,7 @@ Database {
 		When we restart the server we see:
 
 		</p><pre class="programlisting">
-DEBUG: SQLite database unit 'db' created with 3 connections to file 'tutorial.db'
+DEBUG: SQLite database unit 'db' created with 4 connections to file 'tutorial.db'
 		</pre><p>
 	</p><p>
 		Now we want to use some XML filters to send/receive XML over the protocol,
@@ -113,6 +114,7 @@ DEBUG: SQLite database unit 'db' created with 3 connections to file 'tutorial.db
 
 		</p><pre class="programlisting">
 LoadModules {
+    Module mod_protocol_wolframe
     Module mod_command_tdl
     Module mod_db_sqlite3
     <span class="bold"><strong>Module mod_doctype_xml</strong></span>
@@ -134,10 +136,11 @@ LoadModules {
 		</p><pre class="programlisting">
 ..
 Module files to load:
-  /usr/lib/wolframe/modules/mod_command_tdl
-  /usr/lib/wolframe/modules/mod_db_sqlite3
-  /usr/lib/wolframe/modules/mod_doctype_xml
-  /usr/lib/wolframe/modules/mod_filter_libxml2
+   /usr/lib/wolframe/modules/mod_protocol_wolframe.so
+   /usr/lib/wolframe/modules/mod_command_tdl.so
+   /usr/lib/wolframe/modules/mod_db_sqlite3.so
+   /usr/lib/wolframe/modules/mod_doctype_xml.so
+   /usr/lib/wolframe/modules/mod_filter_libxml2.so
 ..
 		</pre><p>
 		which looks ok.
@@ -148,6 +151,7 @@ Module files to load:
 
 		</p><pre class="programlisting">
 LoadModules {
+    Module mod_protocol_wolframe
     Module mod_command_tdl
     Module mod_db_sqlite3
     Module mod_doctype_xml
@@ -228,6 +232,7 @@ END
 
 		</p><pre class="programlisting">
 LoadModules {
+    Module mod_protocol_wolframe
     Module mod_command_tdl
     Module mod_db_sqlite3
     Module mod_doctype_xml
@@ -260,7 +265,7 @@ FORM CustomerListRequest
 }
 		</pre><p>
 	</p><p>
-		We have to restart the wolframe daemon now and restart it with:
+		We have to restart the Wolframe daemon now and restart it with:
 		</p><pre class="programlisting">
 pkill wolframed
 /usr/sbin/wolframed -f -c tutorial.conf			

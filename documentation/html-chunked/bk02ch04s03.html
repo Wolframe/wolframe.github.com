@@ -58,7 +58,7 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.3. Programming the interface</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk02ch04s02.html">Prev</a> </td><th width="60%" align="center">Chapter 4. Clients with Qt</th><td width="20%" align="right"> <a accesskey="n" href="bk02ch04s04.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1387564268"></a>4.3. Programming the interface</h2></div></div></div><p>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.3. Programming the interface</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk02ch04s02.html">Prev</a> </td><th width="60%" align="center">Chapter 4. Clients with Qt</th><td width="20%" align="right"> <a accesskey="n" href="bk02ch04s04.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1383702140"></a>4.3. Programming the interface</h2></div></div></div><p>
 		Programming means we annotate the XML of the UI form files with
 		some extra properties. They control the following things:
 		</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
@@ -72,7 +72,7 @@
 				with all the data in the text fields of the form added to the request
 				XML.
 			</p></li></ul></div><p>
-	</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1387561324"></a>4.3.1. Mapping XML data</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1387561644"></a>Starting position</h4></div></div></div><p>For mapping data structures from the user interface elements to the
+	</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1383699196"></a>4.3.1. Mapping XML data</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1383699516"></a>Starting position</h4></div></div></div><p>For mapping data structures from the user interface elements to the
 			data description needed to fulfill an interface for a server request we need
 			some kind of translation. An implicit mapping would only be able to describe
 			very trivial data mappings. After drawing the user interface this translation
@@ -80,7 +80,7 @@
 			has to be mapped to be shown in the user interface elements view. Here applies
 			the same: Some kind of translation is needed to map a server data structure
 			to the user interface elements.
-			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1387562844"></a>First example</h4></div></div></div><p>
+			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1383700716"></a>First example</h4></div></div></div><p>
 				Let's have a look at a <code class="classname">QLineEdit</code>
 				element of a form and a possible XML representation of the
 				data used for a request.
@@ -118,7 +118,7 @@
 			</p><pre class="programlisting">
 			Customer customer {name{{main.name}}; address{{main.address}}}
 
-			</pre></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1387627708"></a>Another example</h4></div></div></div><p>
+			</pre></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1383765580"></a>Another example</h4></div></div></div><p>
 				Some elements are more complicated than that.
 				They present the user a list of options or items the user to pick from, e.g. a list of cities.
 			</p><div class="screenshot"><div class="mediaobject"><img src="images/clients/complex_form.png" /></div></div><p>
@@ -163,7 +163,7 @@
 &lt;city id='6'&gt;London&lt;/city&gt;
 &lt;/cities&gt;
 
-			</pre></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1387636124"></a>4.3.2. Switching UI forms</h3></div></div></div><p>
+			</pre></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1383773996"></a>4.3.2. Switching UI forms</h3></div></div></div><p>
 			A UI form contains a set of widgets, the dynamic property
 			<code class="code">form</code> contains the name of a widget (without
 			extension <span class="emphasis"><em>.ui</em></span>) to load.
@@ -179,14 +179,14 @@
 			Before loading the next form the client terminates all current
 			requests, for instance a save request of the form data.
 			In case of an error in an action any defined switching of the form is cancelled.
-		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1387641236"></a>4.3.3. States and behaviour</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1387641588"></a>Reserved private dynamic properties</h4></div></div></div><p>The <code class="code">_w_</code> prefix is used for internal widget properties not of interest for the user.
-			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1387642500"></a>Reserved public dynamic properties</h4></div></div></div><p>The dynamic properties introduced here are edited by the user to stear application behaviour:
-		</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1387643156"></a>Stearing of widget behaviour</h5></div></div></div><p>The following properties are reserved for states steering the behavior of the user interface:
-			</p><div class="table"><a id="idp1387643812"></a><p class="title"><strong>Table 4.1. Properties</strong></p><div class="table-contents"><table summary="Properties" border="1"><colgroup><col /><col /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>initialFocus</td><td><p>Boolean value for one widget in a form that should
-						get the initial keyboard focus.</p></td></tr></tbody></table></div></div><br class="table-break" /></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1387646772"></a>User interface flow</h5></div></div></div><p>The following properties stear the user interface elements flow:
-			</p><div class="table"><a id="idp1387647388"></a><p class="title"><strong>Table 4.2. Properties</strong></p><div class="table-contents"><table summary="Properties" border="1"><colgroup><col /><col /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>form</td><td><p>Defines a form to be opened on click (push button). If the widget has an action defined, then the action is executed before and the form is opened when the action succeeds and not opened when it fails.</p></td></tr><tr><td>form:IDENTIFIER</td><td><p>Defines a form related to a context menu entry with identifier IDENTIFIER. If the context menu entry has also an action defined, then the action is executed before. The form is opened only if the action succeeds.</p></td></tr></tbody></table></div></div><br class="table-break" /></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1387651164"></a>Additional interface elements</h5></div></div></div><p>The following properties define additional interface elements:
-			</p><div class="table"><a id="idp1387651788"></a><p class="title"><strong>Table 4.3. Properties</strong></p><div class="table-contents"><table summary="Properties" border="1"><colgroup><col /><col /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>contextmenu</td><td><p>Defines a context menu with a comma separated list of identifiers of actions defined as propery value. Two following commas without menu entry identifier are used to define a separator.</p></td></tr><tr><td>contextmenu:NAME</td><td><p>Defines the (translatable) text of a context menu entry. NAME refers to a non empty name in the list of context menu entries.</p></td></tr></tbody></table></div></div><br class="table-break" /></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1387655460"></a>Defining server request/answer</h5></div></div></div><p>The following properties are used for the communication with the server:
-			</p><div class="table"><a id="idp1387656100"></a><p class="title"><strong>Table 4.4. Properties</strong></p><div class="table-contents"><table summary="Properties" border="1"><colgroup><col /><col /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>action</td><td><p>Defines a server request. This can either be
+		</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1383779108"></a>4.3.3. States and behaviour</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1383779460"></a>Reserved private dynamic properties</h4></div></div></div><p>The <code class="code">_w_</code> prefix is used for internal widget properties not of interest for the user.
+			</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp1383780372"></a>Reserved public dynamic properties</h4></div></div></div><p>The dynamic properties introduced here are edited by the user to stear application behaviour:
+		</p><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1383781028"></a>Stearing of widget behaviour</h5></div></div></div><p>The following properties are reserved for states steering the behavior of the user interface:
+			</p><div class="table"><a id="idp1383781684"></a><p class="title"><strong>Table 4.1. Properties</strong></p><div class="table-contents"><table summary="Properties" border="1"><colgroup><col /><col /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>initialFocus</td><td><p>Boolean value for one widget in a form that should
+						get the initial keyboard focus.</p></td></tr></tbody></table></div></div><br class="table-break" /></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1383784644"></a>User interface flow</h5></div></div></div><p>The following properties stear the user interface elements flow:
+			</p><div class="table"><a id="idp1383785260"></a><p class="title"><strong>Table 4.2. Properties</strong></p><div class="table-contents"><table summary="Properties" border="1"><colgroup><col /><col /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>form</td><td><p>Defines a form to be opened on click (push button). If the widget has an action defined, then the action is executed before and the form is opened when the action succeeds and not opened when it fails.</p></td></tr><tr><td>form:IDENTIFIER</td><td><p>Defines a form related to a context menu entry with identifier IDENTIFIER. If the context menu entry has also an action defined, then the action is executed before. The form is opened only if the action succeeds.</p></td></tr></tbody></table></div></div><br class="table-break" /></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1383789036"></a>Additional interface elements</h5></div></div></div><p>The following properties define additional interface elements:
+			</p><div class="table"><a id="idp1383789660"></a><p class="title"><strong>Table 4.3. Properties</strong></p><div class="table-contents"><table summary="Properties" border="1"><colgroup><col /><col /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>contextmenu</td><td><p>Defines a context menu with a comma separated list of identifiers of actions defined as propery value. Two following commas without menu entry identifier are used to define a separator.</p></td></tr><tr><td>contextmenu:NAME</td><td><p>Defines the (translatable) text of a context menu entry. NAME refers to a non empty name in the list of context menu entries.</p></td></tr></tbody></table></div></div><br class="table-break" /></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1383793332"></a>Defining server request/answer</h5></div></div></div><p>The following properties are used for the communication with the server:
+			</p><div class="table"><a id="idp1383793972"></a><p class="title"><strong>Table 4.4. Properties</strong></p><div class="table-contents"><table summary="Properties" border="1"><colgroup><col /><col /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>action</td><td><p>Defines a server request. This can either be
 							a load action request for a widget that is not a push button
 							or an action request without answer than OK/ERROR for a push button
 						</p></td></tr><tr><td>action:IDENTIFIER</td><td><p>Defines an action request either
@@ -218,8 +218,8 @@
 						is the same for a 'dropmove:OBJECTNAME' action.
 						</p></td></tr><tr><td>answer</td><td><p>Defines the format of the action request answer linked to the widget activation (for example a click on a push button).
 						</p></td></tr><tr><td>answer:IDENTIFIER</td><td><p>Defines the format of the request answer of the action defined as 'action:IDENTIFIER'
-						</p></td></tr></tbody></table></div></div><br class="table-break" /></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1387573492"></a>Variables and symbolic links</h5></div></div></div><p>
-			</p><div class="table"><a id="idp1387574044"></a><p class="title"><strong>Table 4.5. Properties</strong></p><div class="table-contents"><table summary="Properties" border="1"><colgroup><col /><col /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>global:IDENTIFIER</td><td><p>Defines an assignment from a global variable IDENTIFIER at initialization and writing the global variable when closing the widget.
+						</p></td></tr></tbody></table></div></div><br class="table-break" /></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1383711364"></a>Variables and symbolic links</h5></div></div></div><p>
+			</p><div class="table"><a id="idp1383711916"></a><p class="title"><strong>Table 4.5. Properties</strong></p><div class="table-contents"><table summary="Properties" border="1"><colgroup><col /><col /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>global:IDENTIFIER</td><td><p>Defines an assignment from a global variable IDENTIFIER at initialization and writing the global variable when closing the widget.
 						</p></td></tr><tr><td>assign:PROP</td><td><p>Defines an assingment of property PROP to the property defined as value "assign:PROP" on data load and refresh
 						</p></td></tr><tr><td>link:IDENTIFIER</td><td><p>Defines a symbolic link to another widget.
 						Defining the property "link:&lt;name&gt;" = &lt;widgetid&gt;: defines &lt;name&gt; to be a reference to the widget with the widgetid set to &lt;widgetid&gt;.
@@ -232,8 +232,8 @@
 						of the widget.
 						</p></td></tr><tr><td>synonym:NAME</td><td><p>Defines a renaming of the identifier NAME to the identifier in the property value.
 						Be careful when using synonyms. They are the last construct you should consider to use in the client.
-						</p></td></tr></tbody></table></div></div><br class="table-break" /></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1387680748"></a>Widget states depending on data</h5></div></div></div><p>
-			</p><div class="table"><a id="idp1387681260"></a><p class="title"><strong>Table 4.6. Properties</strong></p><div class="table-contents"><table summary="Properties" border="1"><colgroup><col /><col /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>state:IDENFITIER</td><td><p>Defines a state of the widget dependent on a condition.
+						</p></td></tr></tbody></table></div></div><br class="table-break" /></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1383818620"></a>Widget states depending on data</h5></div></div></div><p>
+			</p><div class="table"><a id="idp1383819132"></a><p class="title"><strong>Table 4.6. Properties</strong></p><div class="table-contents"><table summary="Properties" border="1"><colgroup><col /><col /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>state:IDENFITIER</td><td><p>Defines a state of the widget dependent on a condition.
 							IDENTIFIER is one of 'enabled', 'disabled', 'hidden', 'visible'. 
 							The state condition is defined the property value.
 							The value can be a property reference in '{' '}' brackets.
@@ -244,8 +244,8 @@
 							Valid operators are: '==' (string),'!=' (string),'&lt;=' (integer), '&lt;' (integer) ,'&gt;=' (integer), '&gt;' (integer)
 							For 'action' definitions the state 'state:enabled' is dependent on the
 							properties referenced in the 'action' value.
-						</p></td></tr></tbody></table></div></div><br class="table-break" /></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1387684724"></a>Additional signals and slots</h5></div></div></div><p>
-			</p><div class="table"><a id="idp1387685276"></a><p class="title"><strong>Table 4.7. Properties</strong></p><div class="table-contents"><table summary="Properties" border="1"><colgroup><col /><col /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>datasignal:IDENTIFIER</td><td><p>
+						</p></td></tr></tbody></table></div></div><br class="table-break" /></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1383822596"></a>Additional signals and slots</h5></div></div></div><p>
+			</p><div class="table"><a id="idp1383823148"></a><p class="title"><strong>Table 4.7. Properties</strong></p><div class="table-contents"><table summary="Properties" border="1"><colgroup><col /><col /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>datasignal:IDENTIFIER</td><td><p>
 						Defines a signal of type IDENTIFIER (clicked, doubleclicked, destroyed, signaled, loaded, drag, drop) 
 						with the slot name and destination address defined as property value of "datasignal:IDENTIFIER"
 						Datasignal destinations can be defined as follows: As widgetid, as slot 
@@ -256,7 +256,7 @@
 						widget then the form is closed. Every other 
 						identifier causes a reload of the widget.
 						</p></td></tr><tr><td>dataslot</td><td><p>Defines a comma separated list of slots for the signal of with the property value as slot identifer and optionally followed by a widget id in '(..)' brackets that sepcifies a sender from where the signal is accepted.
-						</p></td></tr></tbody></table></div></div><br class="table-break" /></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1387689492"></a>Drag and drop</h5></div></div></div><p>
+						</p></td></tr></tbody></table></div></div><br class="table-break" /></div><div class="sect4"><div class="titlepage"><div><div><h5 class="title"><a id="idp1383827364"></a>Drag and drop</h5></div></div></div><p>
 				Drag and Drop events are defined with the properties 'dropmove' and 'dropcopy'
 				that define the action requests issued on a drop event.
 				See description of the properties in "Defining Server Request/Answer".
@@ -281,7 +281,7 @@
 				'datasignal:drag' and 'datasignal:drop' that can be used to specify the needed
 				widget refresh signals that have to be performed after the drag and drop
 				operation.
-			</p></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1387692236"></a>4.3.4. Widget properties as dynamic property values</h3></div></div></div><p>
+			</p></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1383830108"></a>4.3.4. Widget properties as dynamic property values</h3></div></div></div><p>
 			Dynamic properties can reference properties of widgets
 			like for example <code class="code">property = {variable expression}</code>.
 		</p><p>

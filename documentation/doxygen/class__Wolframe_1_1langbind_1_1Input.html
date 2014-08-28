@@ -110,9 +110,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9770c2c8cdf0104d5ac656c8fd0c42a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1Input.html#a9770c2c8cdf0104d5ac656c8fd0c42a5">Input</a> (const <a class="el" href="class__Wolframe_1_1langbind_1_1Input.html">Input</a> &amp;o)</td></tr>
 <tr class="memdesc:a9770c2c8cdf0104d5ac656c8fd0c42a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="#a9770c2c8cdf0104d5ac656c8fd0c42a5">More...</a><br /></td></tr>
 <tr class="separator:a9770c2c8cdf0104d5ac656c8fd0c42a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b2687029e11dccd9794439c0feac824"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1Input.html#a8b2687029e11dccd9794439c0feac824">Input</a> (const <a class="el" href="namespace__Wolframe_1_1langbind.html#a046dc9147f2f4882eef3c2eba1d2dd3b">InputFilterR</a> &amp;inputfilter_, const std::string &amp;docformat_)</td></tr>
-<tr class="memdesc:a8b2687029e11dccd9794439c0feac824"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor by input filter.  <a href="#a8b2687029e11dccd9794439c0feac824">More...</a><br /></td></tr>
-<tr class="separator:a8b2687029e11dccd9794439c0feac824"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f10607a9064620adeff830689f373b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1Input.html#a0f10607a9064620adeff830689f373b0">Input</a> (const std::string &amp;docformat_)</td></tr>
+<tr class="memdesc:a0f10607a9064620adeff830689f373b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor by input filter.  <a href="#a0f10607a9064620adeff830689f373b0">More...</a><br /></td></tr>
+<tr class="separator:a0f10607a9064620adeff830689f373b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5a4ff185f4443365a80acbec0f5e816"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1Input.html#ae5a4ff185f4443365a80acbec0f5e816">Input</a> (const std::string &amp;docformat_, const std::string &amp;content_)</td></tr>
 <tr class="memdesc:ae5a4ff185f4443365a80acbec0f5e816"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor by content.  <a href="#ae5a4ff185f4443365a80acbec0f5e816">More...</a><br /></td></tr>
 <tr class="separator:ae5a4ff185f4443365a80acbec0f5e816"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,9 +140,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aaedf5cdb77b82376e23920df95fbc35f"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1Input.html#aaedf5cdb77b82376e23920df95fbc35f">documentsize</a> () const </td></tr>
 <tr class="memdesc:aaedf5cdb77b82376e23920df95fbc35f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get size of the content source string if input is not from network.  <a href="#aaedf5cdb77b82376e23920df95fbc35f">More...</a><br /></td></tr>
 <tr class="separator:aaedf5cdb77b82376e23920df95fbc35f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e0affd505f5c7332f56b0867bdce5f8"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1Input.html#a6e0affd505f5c7332f56b0867bdce5f8">allocContentCopy</a> (const void *ptr, std::size_t size)</td></tr>
-<tr class="memdesc:a6e0affd505f5c7332f56b0867bdce5f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a copy of the content to the input for a filter attached.  <a href="#a6e0affd505f5c7332f56b0867bdce5f8">More...</a><br /></td></tr>
-<tr class="separator:a6e0affd505f5c7332f56b0867bdce5f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76a63524e6821aed7e07cce0fe240e19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1Input.html#a76a63524e6821aed7e07cce0fe240e19">putInput</a> (const void *data, std::size_t datasize, bool eod)</td></tr>
+<tr class="memdesc:a76a63524e6821aed7e07cce0fe240e19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put input data to filter or buffer it.  <a href="#a76a63524e6821aed7e07cce0fe240e19">More...</a><br /></td></tr>
+<tr class="separator:a76a63524e6821aed7e07cce0fe240e19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ceabcf9482b51c6b18c5498e393b838"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1Input.html#a4ceabcf9482b51c6b18c5498e393b838">setInputFilter</a> (const <a class="el" href="namespace__Wolframe_1_1langbind.html#a046dc9147f2f4882eef3c2eba1d2dd3b">InputFilterR</a> &amp;filter)</td></tr>
+<tr class="memdesc:a4ceabcf9482b51c6b18c5498e393b838"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defined the input filter and attach unconsumed input.  <a href="#a4ceabcf9482b51c6b18c5498e393b838">More...</a><br /></td></tr>
+<tr class="separator:a4ceabcf9482b51c6b18c5498e393b838"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01cfcc2a403283d49df38d975c738cce"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1Input.html#a01cfcc2a403283d49df38d975c738cce">gotEoD</a> () const </td></tr>
+<tr class="memdesc:a01cfcc2a403283d49df38d975c738cce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find out if the input has reached end of data.  <a href="#a01cfcc2a403283d49df38d975c738cce">More...</a><br /></td></tr>
+<tr class="separator:a01cfcc2a403283d49df38d975c738cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -161,9 +167,12 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a85ecf5ceee24d022a5a1a51a4f1b3c52"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1Input.html#a85ecf5ceee24d022a5a1a51a4f1b3c52">m_contentsize</a></td></tr>
 <tr class="memdesc:a85ecf5ceee24d022a5a1a51a4f1b3c52"><td class="mdescLeft">&#160;</td><td class="mdescRight">size of content in bytes  <a href="#a85ecf5ceee24d022a5a1a51a4f1b3c52">More...</a><br /></td></tr>
 <tr class="separator:a85ecf5ceee24d022a5a1a51a4f1b3c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a163686b87e439aac9a8d3a82b77645a6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1Input.html#a163686b87e439aac9a8d3a82b77645a6">m_isProcessorInput</a></td></tr>
-<tr class="memdesc:a163686b87e439aac9a8d3a82b77645a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">true, if this <a class="el" href="class__Wolframe_1_1langbind_1_1Input.html" title="Input as seen from the application processor program. ">Input</a> object represents a document and not the processor input  <a href="#a163686b87e439aac9a8d3a82b77645a6">More...</a><br /></td></tr>
-<tr class="separator:a163686b87e439aac9a8d3a82b77645a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff6a8808e39d4d7e6a46197559afc7c6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1Input.html#aff6a8808e39d4d7e6a46197559afc7c6">m_unconsumedInput</a></td></tr>
+<tr class="memdesc:aff6a8808e39d4d7e6a46197559afc7c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">unconsumed network input  <a href="#aff6a8808e39d4d7e6a46197559afc7c6">More...</a><br /></td></tr>
+<tr class="separator:aff6a8808e39d4d7e6a46197559afc7c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31e7cf893319f6728af6a43fb29a434e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class__Wolframe_1_1langbind_1_1Input.html#a31e7cf893319f6728af6a43fb29a434e">m_gotEoD</a></td></tr>
+<tr class="memdesc:a31e7cf893319f6728af6a43fb29a434e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Got end of data.  <a href="#a31e7cf893319f6728af6a43fb29a434e">More...</a><br /></td></tr>
+<tr class="separator:a31e7cf893319f6728af6a43fb29a434e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class__Wolframe_1_1langbind_1_1Input.html" title="Input as seen from the application processor program. ">Input</a> as seen from the application processor program. </p>
@@ -217,26 +226,16 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8b2687029e11dccd9794439c0feac824"></a>
+<a class="anchor" id="a0f10607a9064620adeff830689f373b0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">_Wolframe::langbind::Input::Input </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespace__Wolframe_1_1langbind.html#a046dc9147f2f4882eef3c2eba1d2dd3b">InputFilterR</a> &amp;&#160;</td>
-          <td class="paramname"><em>inputfilter_</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>docformat_</em>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>docformat_</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -244,7 +243,6 @@ Private Attributes</h2></td></tr>
 <p>Constructor by input filter. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">inputfilter_</td><td>input filter reference </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">docformat_</td><td>document format </td></tr>
   </table>
   </dd>
@@ -313,35 +311,6 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a6e0affd505f5c7332f56b0867bdce5f8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const void* _Wolframe::langbind::Input::allocContentCopy </td>
-          <td>(</td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>ptr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Allocate a copy of the content to the input for a filter attached. </p>
-<dl class="section return"><dt>Returns</dt><dd>the copy (managed by the input object) </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="a9099fd2dc63343fb806dc474a6297be2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -438,6 +407,31 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a01cfcc2a403283d49df38d975c738cce"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _Wolframe::langbind::Input::gotEoD </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Find out if the input has reached end of data. </p>
+
+</div>
+</div>
 <a class="anchor" id="a1b435bb6472950bc427a052170d8f322"></a>
 <div class="memitem">
 <div class="memproto">
@@ -516,6 +510,72 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a76a63524e6821aed7e07cce0fe240e19"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _Wolframe::langbind::Input::putInput </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>datasize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>eod</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Put input data to filter or buffer it. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>pointer to input data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">datasize</td><td>size of input data in bytes </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">eod</td><td>end of data </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a4ceabcf9482b51c6b18c5498e393b838"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _Wolframe::langbind::Input::setInputFilter </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespace__Wolframe_1_1langbind.html#a046dc9147f2f4882eef3c2eba1d2dd3b">InputFilterR</a> &amp;&#160;</td>
+          <td class="paramname"><em>filter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defined the input filter and attach unconsumed input. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filter</td><td>input filter </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="ac6f0478e7a3eb63994e4681aee04ced7"></a>
 <div class="memitem">
@@ -583,6 +643,28 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a31e7cf893319f6728af6a43fb29a434e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _Wolframe::langbind::Input::m_gotEoD</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Got end of data. </p>
+
+</div>
+</div>
 <a class="anchor" id="ac04142307036176e2781e1f5aafc977f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -605,7 +687,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a163686b87e439aac9a8d3a82b77645a6"></a>
+<a class="anchor" id="aff6a8808e39d4d7e6a46197559afc7c6"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -613,7 +695,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool _Wolframe::langbind::Input::m_isProcessorInput</td>
+          <td class="memname">std::string _Wolframe::langbind::Input::m_unconsumedInput</td>
         </tr>
       </table>
   </td>
@@ -623,7 +705,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>true, if this <a class="el" href="class__Wolframe_1_1langbind_1_1Input.html" title="Input as seen from the application processor program. ">Input</a> object represents a document and not the processor input </p>
+<p>unconsumed network input </p>
 
 </div>
 </div>
@@ -656,7 +738,7 @@ Private Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.5-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 30 2014 12:36:38 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Aug 28 2014 16:06:20 for Wolframe by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>
