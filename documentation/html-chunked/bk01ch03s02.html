@@ -58,7 +58,7 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.2. Server configuration</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch03.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Configuration</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch03s03.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1380801436"></a>3.2. Server configuration</h2></div></div></div><p>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.2. Server configuration</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch03.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Configuration</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch03s03.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1388676388"></a>3.2. Server configuration</h2></div></div></div><p>
 	The server configuration is defined in the <code class="code">Server</code>
 	section. The server specifies the set of sockets a client can
 	connect to. It defines rules for how and from where a client
@@ -66,7 +66,7 @@
 	</p><p>
 	It also defines some global settings listed in the following table:
 
-	</p><div class="table"><a id="idp1380811300"></a><p class="title"><strong>Table 3.3. Global server settings</strong></p><div class="table-contents"><table summary="Global server settings" border="1"><colgroup><col class="col1" /><col class="col2" /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>MaxConnections</td><td>The maximum number of total simultaneous connections (clients). If not specified the default is used. The default is the operating system limit.</td></tr><tr><td>Threads</td><td>Number of threads for serving client connections.</td></tr></tbody></table></div></div><p><br class="table-break" />
+	</p><div class="table"><a id="idp1388686252"></a><p class="title"><strong>Table 3.3. Global server settings</strong></p><div class="table-contents"><table summary="Global server settings" border="1"><colgroup><col class="col1" /><col class="col2" /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>MaxConnections</td><td>The maximum number of total simultaneous connections (clients). If not specified the default is used. The default is the operating system limit.</td></tr><tr><td>Threads</td><td>Number of threads for serving client connections.</td></tr></tbody></table></div></div><p><br class="table-break" />
 	Here is an example configuration of the server global settings:
 	</p><pre class="programlisting">
 Server
@@ -82,11 +82,11 @@ Server
 	<code class="code">Listen</code> on the other hand is describing a plain 
 	TCP/IP connection.
 	In the following two sections they are introduced:
-	</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1380858308"></a>3.2.1. Listen</h3></div></div></div><p>In the subsections named <code class="code">Listen</code> of the server
+	</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1388733260"></a>3.2.1. Listen</h3></div></div></div><p>In the subsections named <code class="code">Listen</code> of the server
 	configuration we define sockets providing plain connections based 
 	on TCP/IP. The following table describes the attributes you can set 
 	for plain TCP/IP connections:
-	</p><div class="table"><a id="idp1380859140"></a><p class="title"><strong>Table 3.4. Listen settings</strong></p><div class="table-contents"><table summary="Listen settings" border="1"><colgroup><col class="col1" /><col class="col2" /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>Address</td><td>Listening address (IPv4 or IPv6) 
+	</p><div class="table"><a id="idp1388734092"></a><p class="title"><strong>Table 3.4. Listen settings</strong></p><div class="table-contents"><table summary="Listen settings" border="1"><colgroup><col class="col1" /><col class="col2" /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>Address</td><td>Listening address (IPv4 or IPv6) 
 					of the server. '127.0.0.1' and '::1' 
 					stand for the loopback address 
 					(IPv4 an IPv6 respectively).
@@ -122,14 +122,14 @@ Server
     }
 }
 	</pre><p>
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1380867220"></a>3.2.2. ListenSSL</h3></div></div></div><p>In the subsections named <code class="code">ListenSSL</code> of the 
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1388742172"></a>3.2.2. ListenSSL</h3></div></div></div><p>In the subsections named <code class="code">ListenSSL</code> of the 
 	server configuration we define sockets providing secured connections
 	with full transport layer encryption based on SSL/TLS.
 	The following table describes the attributes you can set for secured
 	connections. The first five attributes are the same as for
 	sockets configured as plain TCP/IP (<code class="code">Listen</code>) 
 	as shown before:
-	</p><div class="table"><a id="idp1380868364"></a><p class="title"><strong>Table 3.5. ListenSSL settings</strong></p><div class="table-contents"><table summary="ListenSSL settings" border="1"><colgroup><col class="col1" /><col class="col2" /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>Address</td><td>Listening address (IPv4 or IPv6) of 
+	</p><div class="table"><a id="idp1388743316"></a><p class="title"><strong>Table 3.5. ListenSSL settings</strong></p><div class="table-contents"><table summary="ListenSSL settings" border="1"><colgroup><col class="col1" /><col class="col2" /></colgroup><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>Address</td><td>Listening address (IPv4 or IPv6) of 
 					the server. '127.0.0.1' and '::1'
 					stand for the loopback address 
 					(IPv4 an IPv6 respectively).
@@ -172,7 +172,7 @@ Server
 	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="sectionIpRestrictions"></a>3.2.3. IP restrictions</h3></div></div></div><p>IP restrictions are defined as sub section <code class="code">restrictions</code>
 	of the socket configurations (<code class="code">Listener</code> and <code class="code">ListenerSSL</code>)
 	in the server configuration.
-	</p><div class="table"><a id="idp1380880780"></a><p class="title"><strong>Table 3.6. Restrictions settings</strong></p><div class="table-contents"><table summary="Restrictions settings" border="1"><colgroup><col class="col1" /><col class="col2" /><col class="col3" /></colgroup><thead><tr><th>Name</th><th>Argument</th><th>Description</th></tr></thead><tbody><tr><td>Allow</td><td>IP address with optional network mask</td><td>Define an IP or network address
+	</p><div class="table"><a id="idp1388755692"></a><p class="title"><strong>Table 3.6. Restrictions settings</strong></p><div class="table-contents"><table summary="Restrictions settings" border="1"><colgroup><col class="col1" /><col class="col2" /><col class="col3" /></colgroup><thead><tr><th>Name</th><th>Argument</th><th>Description</th></tr></thead><tbody><tr><td>Allow</td><td>IP address with optional network mask</td><td>Define an IP or network address
 				as allowed to connect from, if not explicitely
 				defined by a <code class="code">Deny</code> directive.
 				If no <code class="code">allow</code> is specified then 

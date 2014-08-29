@@ -58,24 +58,24 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.4. Authentication</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch04s03.html">Prev</a> </td><th width="60%" align="center">Chapter 4. AAAA</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch04s05.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1381336036"></a>4.4. Authentication</h2></div></div></div><p>The identitiy of a user is authenticated after his login.
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.4. Authentication</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch04s03.html">Prev</a> </td><th width="60%" align="center">Chapter 4. AAAA</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch04s05.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1389211172"></a>4.4. Authentication</h2></div></div></div><p>The identitiy of a user is authenticated after his login.
 	The identity and the method he was 
 	The aspect of authentication is configured in the 
 	subsection <code class="code">Authentication</code> of the <code class="code">AAAA</code> section
 	in the server configuration.
-	</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1381366196"></a>4.4.1. Requirements</h3></div></div></div><p>In order to use authentication in Wolframe you have to configure the 
+	</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1389207660"></a>4.4.1. Requirements</h3></div></div></div><p>In order to use authentication in Wolframe you have to configure the 
 loading of the module implementing it. The authentication mech explained 
 here as example is implemented in the module mod_auth_textfile.
 For using it you have to declare the module <code class="code">mod_auth_textfile</code>
 in the <code class="code">LoadModules</code> section of your configuration before.
-</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1381333500"></a>4.4.2. Configuration settings</h3></div></div></div><p>The following table shows the configuration settings for Authentication
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1389208996"></a>4.4.2. Configuration settings</h3></div></div></div><p>The following table shows the configuration settings for Authentication
 in Wolframe.
-</p><div class="table"><a id="idp1381334380"></a><p class="title"><strong>Table 4.1. Authentication configuration settings</strong></p><div class="table-contents"><table summary="Authentication configuration settings" border="1"><colgroup><col class="col1" /><col class="col2" /><col class="col3" /></colgroup><thead><tr><th>Name</th><th>Parameter</th><th>Description</th></tr></thead><tbody><tr><td>RandomDevice</td><td>address or path</td><td>Specifies the random device to be used. This
+</p><div class="table"><a id="idp1389209876"></a><p class="title"><strong>Table 4.1. Authentication configuration settings</strong></p><div class="table-contents"><table summary="Authentication configuration settings" border="1"><colgroup><col class="col1" /><col class="col2" /><col class="col3" /></colgroup><thead><tr><th>Name</th><th>Parameter</th><th>Description</th></tr></thead><tbody><tr><td>RandomDevice</td><td>address or path</td><td>Specifies the random device to be used. This
 				configuration setting is optional. The
 				system should have a reasonable default
 				for most applications.</td></tr><tr><td>Textfile</td><td>section</td><td>Specifies the block with the configuration for
 				authentication based on a textfile with
-				WOLFRAME-CRAM as authentication mech.</td></tr></tbody></table></div></div><br class="table-break" /></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1381383956"></a>4.4.3. Example configuration</h3></div></div></div><p>
+				WOLFRAME-CRAM as authentication mech.</td></tr></tbody></table></div></div><br class="table-break" /></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1389258860"></a>4.4.3. Example configuration</h3></div></div></div><p>
 	The following example shows an <code class="code">Authentication</code>
 	configuration with the Wolframe textfile authentication module
 	that provides an authentication over the "WOLFRAME-CRAM" protocol:
@@ -92,14 +92,14 @@ AAAA
         }
 }
 	</pre><p>
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1381385492"></a>4.4.4. Authentication mechs</h3></div></div></div><p>Currently only the authentication protocol for
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1389260396"></a>4.4.4. Authentication mechs</h3></div></div></div><p>Currently only the authentication protocol for
 	<code class="code">WOLFRAME-CRAM</code> is implemented. The 
 	client can choose between no authentication
 	(if configured to allow no authentication)
 	or <code class="code">WOLFRAME-CRAM</code>. You configure
 	it as shown in the example above. For the setup of a
 	client see the chapter "Clients".
-	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1381386740"></a>4.4.5. Development status</h3></div></div></div><p>We are currently developing other authentication methods
+	</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1389261644"></a>4.4.5. Development status</h3></div></div></div><p>We are currently developing other authentication methods
 	like <code class="code">PAM</code>, <code class="code">SASL</code> and database based
 	authentication implementing <code class="code">WOLFRAME-CRAM</code></p>.
 	They will be subject of the next release.

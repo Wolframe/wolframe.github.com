@@ -58,17 +58,17 @@
 </div>
 
 <!-- ################################################################################################ -->
-<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.2. Other Unix systems</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch02.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Installation via binary packages</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch03.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1380665052"></a>2.2. Other Unix systems</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1380665500"></a>2.2.1. FreeBSD</h3></div></div></div><p>
+<div class="wrapper row3"><div id="container"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.2. Other Unix systems</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bk01ch02.html">Prev</a> </td><th width="60%" align="center">Chapter 2. Installation via binary packages</th><td width="20%" align="right"> <a accesskey="n" href="bk01ch03.html">Next</a></td></tr></table><hr /></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp1388539900"></a>2.2. Other Unix systems</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1388540348"></a>2.2.1. FreeBSD</h3></div></div></div><p>
 				Download the package file (we choose 64-bit FreeBSD 9 for example):
 				</p><pre class="programlisting">
-	wget http://sourceforge.net/projects/wolframe/files/wolframe-binaries/0.0.2
-/FreeBSD-9/x86_64/wolframe-0.0.2
+	wget http://sourceforge.net/projects/wolframe/files/wolframe-binaries/0.0.3
+/FreeBSD-9/x86_64/wolframe-0.0.3
 -x86_64.tgz
 				</pre><p>
 			</p><p>
 				You install the Wolframe package with:
 				</p><pre class="programlisting">
-	pkg_add wolframe-0.0.2
+	pkg_add wolframe-0.0.3
 -x86_64.tgz 
 				</pre><p>
 			
@@ -91,17 +91,17 @@
 				</p><pre class="programlisting">
 	service wolframed start
 				</pre><p>
-			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1380670100"></a>2.2.2. NetBSD</h3></div></div></div><p>
+			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1388544948"></a>2.2.2. NetBSD</h3></div></div></div><p>
 				Download the package file (we choose 64-bit NetBSD 6 for example):
 				</p><pre class="programlisting">
-	wget http://sourceforge.net/projects/wolframe/files/wolframe-binaries/0.0.2
-/NetBSD-6/x86_64/wolframe-0.0.2
+	wget http://sourceforge.net/projects/wolframe/files/wolframe-binaries/0.0.3
+/NetBSD-6/x86_64/wolframe-0.0.3
 -x86_64.tgz
 				</pre><p>
 			</p><p>
 				You install the Wolframe package with:
 				</p><pre class="programlisting">
-	pkg_add wolframe-0.0.2
+	pkg_add wolframe-0.0.3
 -x86_64.tgz 
 				</pre><p>
 			
@@ -130,17 +130,17 @@
 				</p><pre class="programlisting">
 	/etc/rc.d/wolframed
 				</pre><p>
-			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1380675076"></a>2.2.3. Solaris 10</h3></div></div></div><p>
+			</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp1388549924"></a>2.2.3. Solaris 10</h3></div></div></div><p>
 				Download the package file for SPARC Solaris 10 (the only one we can build at the moment):
 				</p><pre class="programlisting">
-	wget http://sourceforge.net/projects/wolframe/files/wolframe-binaries/0.0.2
-/Solaris-10/sparc/wolframe-0.0.2
+	wget http://sourceforge.net/projects/wolframe/files/wolframe-binaries/0.0.3
+/Solaris-10/sparc/wolframe-0.0.3
 -sparc-5.10.pkg.Z
 				</pre><p>
 			</p><p>
 				You install the Wolframe package with:
 				</p><pre class="programlisting">
-	uncompress wolframe-0.0.2
+	uncompress wolframe-0.0.3
 -sparc-5.10.pkg.Z
 	pkgadd -d wolframe-0.0.2-sparc-5.10.pkg all
 				</pre><p>
